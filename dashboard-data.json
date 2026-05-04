@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04 06:11 PDT",
+  "generatedAt": "2026-05-04 10:44 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -1056,13 +1056,14 @@
     "engagementRateWeekToDate": 84.32924416303918
   },
   "plainEnglishInsights": [
-    "Traffic fell 35.9% versus the prior complete week.",
-    "Engaged sessions weakened 21.4%, and engagement rate moved from 66.2% to 66.5%.",
-    "Stripe-visible sales continued: 0 payments and $0.00 in the latest complete week.",
-    "The dashboard is still watching whether paid campaign activity turns into repeat viewing, purchases, and ad value.",
+    "Traffic fell 35.9% versus the prior complete week, but that drop should be read in context: Meta shifted from landing-page traffic and button-click leads to direct app-install campaigns, which bypass the website landing page by design.",
+    "Meta reported 1,465 mobile app installs from Apr 28-May 3 at about $0.49 per install; Google Play was cheaper at about $0.41 per install, while iOS was about $0.65 per install.",
+    "Engaged sessions weakened 21.4%, but engagement rate moved from 66.2% to 66.5%, so the week looks more like a lower-volume traffic mix than a collapse in visit quality.",
+    "Stripe-visible sales continued: 0 payments and $0.00 in the latest complete week, with Apple App Store and Google Play sales still outside this Stripe view.",
+    "The right test for the app-install phase is whether installs turn into app opens, repeat viewing, Live TV use, purchases, and ad value, not whether landing-page traffic stays high.",
     "Top watched titles in GA4 this week include Electric Now (ElectricNOW), Everyone Wanted to Be On This Ship (The Ark), ElectricNOW en Espa\u00f1ol, Get Out and Push (The Ark), and Finding Mabuhay (Almost Paradise).",
     "Live viewing is also measurable: 279 active users generated 4.5K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, Stoner TV Network, Daily Flash, and Horror Asylum.",
-    "GA4 and Stripe should still be reconciled with Apple App Store, Google Play, Amagi, ad-server, YouTube, and Meta reporting before making final business decisions."
+    "GA4, Meta, Stripe, Apple App Store, Google Play, Amagi, ad-server, and YouTube reporting should be reconciled before making final business decisions."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
@@ -1869,5 +1870,37 @@
         "activeUsers": 15
       }
     ]
+  },
+  "metaCampaignContext": {
+    "source": "ENow-TV-April-1st-May-3rd-Meta-Ads.xlsx, Raw Data Report!A1:W361",
+    "note": "Meta campaign objective shifted from landing-page traffic, to app-store button-click leads, to direct app-install campaigns starting Apr 28. The app-install phase bypasses the website landing page, so lower landing-page traffic is expected and should not be judged as a standalone negative.",
+    "phases": [
+      {
+        "phase": "Traffic to landing page",
+        "dateRange": "Apr 16-Apr 23",
+        "objective": "Link clicks",
+        "results": "5,656 link clicks",
+        "spend": "$887.22",
+        "costPerResult": "$0.16"
+      },
+      {
+        "phase": "Leads / app-store button clicks",
+        "dateRange": "Apr 23-May 1",
+        "objective": "Website leads / app-store button clicks",
+        "results": "2,095 button-click leads",
+        "spend": "$1,452.24",
+        "costPerResult": "$0.69"
+      },
+      {
+        "phase": "Direct app-install campaigns",
+        "dateRange": "Apr 28-May 3",
+        "objective": "Mobile app installs",
+        "results": "1,465 installs",
+        "spend": "$723.72",
+        "costPerResult": "$0.49"
+      }
+    ],
+    "appInstallBreakout": "Through May 3, Meta reported 516 iOS installs at about $0.65 each and 949 Google Play installs at about $0.41 each.",
+    "interpretation": "Judge the newest phase by installs, app opens, viewing, Live usage, purchases, and ad value rather than by landing-page traffic."
   }
 }
