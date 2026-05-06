@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05 21:41 PDT",
+  "generatedAt": "2026-05-06 07:44 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -72,7 +72,7 @@
       "engagedSessions": 10696.0,
       "engagementRate": 76.11727867919157,
       "screenPageViews": 38383.0,
-      "eventCount": 998219.0,
+      "eventCount": 998222.0,
       "purchaseRevenue": 0.0
     },
     "weekToDate": {
@@ -82,11 +82,67 @@
       "engagedSessions": 10696.0,
       "engagementRate": 76.11727867919157,
       "screenPageViews": 38383.0,
-      "eventCount": 998219.0,
+      "eventCount": 998222.0,
       "purchaseRevenue": 0.0
     }
   },
   "scorecards": [
+    {
+      "key": "totalGa4ActiveUsers",
+      "label": "Total GA4 users",
+      "baseline": 8739.0,
+      "launchBaseline": 8739.0,
+      "previousWeek": 12843.0,
+      "current": 8115.0,
+      "deltaPct": -36.813828544732544,
+      "deltaVsLaunchPct": -7.140405080672846,
+      "deltaVsPreviousPct": -36.813828544732544,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "All active users tracked in GA4 across web, iOS, and Android."
+    },
+    {
+      "key": "landingPageUsers",
+      "label": "Landing-page users",
+      "baseline": 1045,
+      "launchBaseline": 1045,
+      "previousWeek": 3950,
+      "current": 2352,
+      "deltaPct": -40.45569620253164,
+      "deltaVsLaunchPct": 125.07177033492822,
+      "deltaVsPreviousPct": -40.45569620253164,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Users reaching pages with \u201clanding\u201d in the path."
+    },
+    {
+      "key": "devicesPageUsers",
+      "label": "Devices-page users",
+      "baseline": 2028,
+      "launchBaseline": 2028,
+      "previousWeek": 5067,
+      "current": 1037,
+      "deltaPct": -79.5342411683442,
+      "deltaVsLaunchPct": -48.865877712031555,
+      "deltaVsPreviousPct": -79.5342411683442,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Users reaching pages with \u201cdevices\u201d in the path."
+    },
+    {
+      "key": "paidSocialUsers",
+      "label": "Paid social users",
+      "baseline": 4441,
+      "launchBaseline": 4441,
+      "previousWeek": 7159,
+      "current": 3141,
+      "deltaPct": -56.125157144852636,
+      "deltaVsLaunchPct": -29.272686331907227,
+      "deltaVsPreviousPct": -56.125157144852636,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Users from GA4 source/medium values containing Facebook, Instagram, or Meta."
+    },
     {
       "key": "appActiveUsers",
       "label": "App active users",
@@ -102,46 +158,60 @@
       "context": "People using the iOS or Android app."
     },
     {
-      "key": "viewingUsers",
-      "label": "Viewing users",
-      "baseline": 830,
-      "launchBaseline": 830,
-      "previousWeek": 1372,
-      "current": 1691,
-      "deltaPct": 23.25072886297376,
-      "deltaVsLaunchPct": 103.73493975903614,
-      "deltaVsPreviousPct": 23.25072886297376,
+      "key": "appSessions",
+      "label": "App sessions",
+      "baseline": 3328,
+      "launchBaseline": 3328,
+      "previousWeek": 4980,
+      "current": 5938,
+      "deltaPct": 19.236947791164656,
+      "deltaVsLaunchPct": 78.42548076923077,
+      "deltaVsPreviousPct": 19.236947791164656,
       "deltaType": "percent",
       "format": "number",
-      "context": "App users who started an on-demand video or watched Live."
+      "context": "GA4 sessions on iOS and Android."
     },
     {
-      "key": "viewingShare",
-      "label": "Viewing share",
-      "baseline": 48.566413107080166,
-      "launchBaseline": 48.566413107080166,
-      "previousWeek": 48.965024982155605,
-      "current": 50.0,
-      "deltaPct": 1.0349750178443955,
-      "deltaVsLaunchPct": 1.433586892919834,
-      "deltaVsPreviousPct": 1.0349750178443955,
+      "key": "appEngagementRate",
+      "label": "App engagement rate",
+      "baseline": 81.18990384615384,
+      "launchBaseline": 81.18990384615384,
+      "previousWeek": 86.3855421686747,
+      "current": 84.77601886156955,
+      "deltaPct": -1.6095233071051496,
+      "deltaVsLaunchPct": 3.5861150154157144,
+      "deltaVsPreviousPct": -1.6095233071051496,
       "deltaType": "points",
       "format": "percent",
-      "context": "Share of app users who watched something."
+      "context": "Engaged app sessions divided by app sessions."
+    },
+    {
+      "key": "viewingEventUsers",
+      "label": "Viewing event users",
+      "baseline": 1155,
+      "launchBaseline": 1155,
+      "previousWeek": 1819,
+      "current": 2053,
+      "deltaPct": 12.864211105002749,
+      "deltaVsLaunchPct": 77.74891774891775,
+      "deltaVsPreviousPct": 12.864211105002749,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Users who triggered on-demand video_start or Live play events."
     },
     {
       "key": "onDemandStartUsers",
       "label": "On-demand start users",
-      "baseline": 744,
-      "launchBaseline": 744,
-      "previousWeek": 1220,
-      "current": 1546,
-      "deltaPct": 26.721311475409838,
-      "deltaVsLaunchPct": 107.79569892473117,
-      "deltaVsPreviousPct": 26.721311475409838,
+      "baseline": 1069,
+      "launchBaseline": 1069,
+      "previousWeek": 1667,
+      "current": 1908,
+      "deltaPct": 14.457108578284345,
+      "deltaVsLaunchPct": 78.4845650140318,
+      "deltaVsPreviousPct": 14.457108578284345,
       "deltaType": "percent",
       "format": "number",
-      "context": "Unique app users who started an on-demand video."
+      "context": "Users who triggered video_start outside the Live screen."
     },
     {
       "key": "liveChannelViewers",
@@ -155,7 +225,21 @@
       "deltaVsPreviousPct": -9.844559585492227,
       "deltaType": "percent",
       "format": "number",
-      "context": "Unique app users who played a Live channel."
+      "context": "Users who triggered a Live play event."
+    },
+    {
+      "key": "videoCompleteUsers",
+      "label": "Video complete users",
+      "baseline": 219,
+      "launchBaseline": 219,
+      "previousWeek": 276,
+      "current": 212,
+      "deltaPct": -23.18840579710145,
+      "deltaVsLaunchPct": -3.1963470319634704,
+      "deltaVsPreviousPct": -23.18840579710145,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Users who triggered video_complete."
     },
     {
       "key": "livePlayEvents",
@@ -169,21 +253,21 @@
       "deltaVsPreviousPct": 5.925755130274384,
       "deltaType": "percent",
       "format": "number",
-      "context": "Total Live play events on iOS and Android."
+      "context": "Total Live play events, not unique users."
     },
     {
-      "key": "appEngagementRate",
-      "label": "App engagement rate",
-      "baseline": 81.18990384615384,
-      "launchBaseline": 81.18990384615384,
-      "previousWeek": 86.3855421686747,
-      "current": 84.7423374873695,
-      "deltaPct": -1.6432046813052068,
-      "deltaVsLaunchPct": 3.552433641215657,
-      "deltaVsPreviousPct": -1.6432046813052068,
-      "deltaType": "points",
-      "format": "percent",
-      "context": "GA4 engaged app sessions divided by app sessions."
+      "key": "adRequestEvents",
+      "label": "Ad request events",
+      "baseline": 10589,
+      "launchBaseline": 10589,
+      "previousWeek": 26966,
+      "current": 29281,
+      "deltaPct": 8.58488466958392,
+      "deltaVsLaunchPct": 176.5228066861838,
+      "deltaVsPreviousPct": 8.58488466958392,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Total ad request events generated by viewing activity."
     },
     {
       "key": "avgEngagedMinutesPerUser",
@@ -197,7 +281,7 @@
       "deltaVsPreviousPct": 13.750647079867207,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Total engaged time divided by active users. This answers: how long the average person spent with ElectricNOW during the week."
+      "context": "Total engaged time divided by active users."
     },
     {
       "key": "avgEngagedMinutesPerSession",
@@ -205,13 +289,27 @@
       "baseline": 16.282458939348967,
       "launchBaseline": 16.282458939348967,
       "previousWeek": 14.968730488150985,
-      "current": 20.25432862397788,
-      "deltaPct": 5.285598135826895,
-      "deltaVsLaunchPct": 3.9718696846289134,
-      "deltaVsPreviousPct": 5.285598135826895,
+      "current": 20.25148171574484,
+      "deltaPct": 5.282751227593856,
+      "deltaVsLaunchPct": 3.9690227763958745,
+      "deltaVsPreviousPct": 5.282751227593856,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Total engaged time divided by sessions. This answers: how long the average visit or viewing session lasted."
+      "context": "Total engaged time divided by sessions."
+    },
+    {
+      "key": "totalEngagementHours",
+      "label": "Total engaged hours",
+      "baseline": 3657.0402777777776,
+      "launchBaseline": 3657.0402777777776,
+      "previousWeek": 4688.206388888889,
+      "current": 4802.638888888889,
+      "deltaPct": 2.4408588382799534,
+      "deltaVsLaunchPct": 31.32584068248876,
+      "deltaVsPreviousPct": 2.4408588382799534,
+      "deltaType": "percent",
+      "format": "number",
+      "context": "Total GA4 engaged time converted to hours."
     }
   ],
   "trend": [
@@ -440,11 +538,11 @@
       "rawDate": "20260503",
       "activeUsers": 606,
       "newUsers": 306,
-      "sessions": 838,
-      "engagedSessions": 705,
+      "sessions": 840,
+      "engagedSessions": 707,
       "screenPageViews": 404,
-      "eventCount": 23377,
-      "engagementRate": 84.1288782816229
+      "eventCount": 23380,
+      "engagementRate": 84.16666666666667
     }
   ],
   "eventCards": [
@@ -938,14 +1036,14 @@
         "platform": "iOS",
         "activeUsers": 1567,
         "newUsers": 1120,
-        "sessions": 2685,
-        "engagedSessions": 2329,
+        "sessions": 2687,
+        "engagedSessions": 2331,
         "screenPageViews": 1512,
-        "eventCount": 92954,
-        "engagementRate": 86.74115456238361
+        "eventCount": 92957,
+        "engagementRate": 86.75102344622255
       },
       "activeUsersDeltaPct": 5.7354925775978405,
-      "engagementRateCurrent": 86.74115456238361
+      "engagementRateCurrent": 86.75102344622255
     },
     {
       "platform": "Android",
@@ -991,8 +1089,8 @@
         "platform": "iOS app",
         "activeUsers": 1567,
         "sharePct": 16.8,
-        "sessions": 2685,
-        "engagedSessions": 2329,
+        "sessions": 2687,
+        "engagedSessions": 2331,
         "detail": "ElectricNOW iPhone, iPad, and Apple TV app activity."
       },
       {
@@ -1033,7 +1131,7 @@
       "newUsers": 2552,
       "sessions": 5631,
       "engagedSessions": 4698,
-      "eventCount": 193207,
+      "eventCount": 193210,
       "engagementRate": 83.43100692594567
     },
     {
@@ -1312,10 +1410,12 @@
     "engagementRateWeekToDate": 96.13349613349614
   },
   "plainEnglishInsights": [
-    "Traffic is now being judged by actual app use, not landing-page visits: 3.4K iOS/Android app active users this week, up 97.9% from launch baseline and up 20.7% from the previous week.",
+    "Acquisition and app usage are now separated: total GA4 users were 8.1K, down 36.8% from the previous week, while landing-page users were down 40.5%.",
+    "Mobile app usage improved: 3.4K iOS/Android app active users this week, up 97.9% from launch baseline and up 20.7% from the previous week.",
     "Viewing also improved: 1.7K app users watched on-demand or Live content, up 103.7% from launch baseline and up 23.3% from the previous week.",
     "Roughly 50.0% of app users watched something, compared with 48.6% during launch week and 49.0% the prior week, so the viewing conversion rate is steady while the audience is growing.",
     "On-demand is carrying most of the viewing growth with 1.5K starter users; Live remains meaningful at 174 viewers, up 43.8% from launch baseline and down 9.8% from the previous week.",
+    "Actual viewing behavior is measured separately: 2.1K users triggered a viewing event, up 12.9% from the previous week; video-complete users were down 23.2%.",
     "Average time on platform is 35.6 engaged minutes per active user across all GA4-tracked platforms, up 10.5 minutes from launch week and up 13.8 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
     "Stripe-visible sales continued: 0 payments and $0.00 in the latest complete week, but this excludes Apple App Store and Google Play purchases.",
@@ -1354,24 +1454,24 @@
     },
     "weekToDate": {
       "label": "Stripe week to date",
-      "range": "May 4-May 5, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0,
-      "revenuePerPurchase": 0,
+      "range": "May 4-May 6, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "revenuePerPurchase": 14.99,
       "deltaPurchasesPct": null,
       "deltaRevenuePct": null
     },
     "lifetimeObserved": {
-      "range": "Through May 5, 2026 pull",
-      "purchases": 10,
-      "purchaseRevenue": 144.9,
-      "revenuePerPurchase": 14.49
+      "range": "Through May 6, 2026 pull",
+      "purchases": 11,
+      "purchaseRevenue": 159.89,
+      "revenuePerPurchase": 14.54
     },
     "mix": [
       {
         "label": "Title purchases",
-        "purchases": 9,
-        "purchaseRevenue": 134.91
+        "purchases": 10,
+        "purchaseRevenue": 149.9
       },
       {
         "label": "Bundle purchases",
@@ -1635,7 +1735,7 @@
       "total": {
         "screenPageViews": 3784,
         "activeUsers": 978,
-        "eventCount": 4534
+        "eventCount": 4535
       },
       "platforms": [
         {
@@ -1657,7 +1757,7 @@
           "screen": "On Demand",
           "screenPageViews": 289,
           "activeUsers": 80,
-          "eventCount": 718
+          "eventCount": 719
         }
       ],
       "note": "On Demand usage is based on GA4 screen name 'On Demand'. Title-level viewing is shown below from GA4 video_title play events."
@@ -2234,8 +2334,8 @@
       "range": "Apr 27-May 3, 2026",
       "appActiveUsers": 3382,
       "appSessions": 5938,
-      "appEngagedSessions": 5032,
-      "appEngagementRate": 84.7423374873695,
+      "appEngagedSessions": 5034,
+      "appEngagementRate": 84.77601886156955,
       "viewingUsers": 1691,
       "viewingShare": 50.0,
       "onDemandStartUsers": 1546,
@@ -2306,7 +2406,7 @@
           "engagedSessions": 8059,
           "avgEngagedMinutesPerUser": 13.577526207537154,
           "avgEngagedMinutesPerSession": 9.899643228599762,
-          "ga4AverageSessionMinutes": 12.026644475862904
+          "ga4AverageSessionMinutes": 12.0266444758629
         },
         {
           "platform": "iOS",
@@ -2332,14 +2432,14 @@
     "currentWeek": {
       "range": "Apr 27-May 3, 2026",
       "activeUsers": 8085,
-      "sessions": 14227,
-      "engagedSessions": 10676,
-      "engagementRate": 75.04041611021297,
+      "sessions": 14229,
+      "engagedSessions": 10678,
+      "engagementRate": 75.04392437978775,
       "totalEngagementSeconds": 17289500,
       "totalEngagementHours": 4802.638888888889,
       "avgEngagedMinutesPerUser": 35.64110492681922,
-      "avgEngagedMinutesPerSession": 20.25432862397788,
-      "ga4AverageSessionMinutes": 36.88471286178979,
+      "avgEngagedMinutesPerSession": 20.25148171574484,
+      "ga4AverageSessionMinutes": 36.87953275947595,
       "platformBreakout": [
         {
           "platform": "web",
@@ -2362,14 +2462,356 @@
         {
           "platform": "iOS",
           "activeUsers": 1567,
-          "sessions": 2685,
-          "engagedSessions": 2329,
+          "sessions": 2687,
+          "engagedSessions": 2331,
           "avgEngagedMinutesPerUser": 53.21018932142098,
-          "avgEngagedMinutesPerSession": 31.054140285536935,
-          "ga4AverageSessionMinutes": 34.1749137386406
+          "avgEngagedMinutesPerSession": 31.031025927304306,
+          "ga4AverageSessionMinutes": 34.14949949317083
         }
       ],
       "note": "All-platform time is based on GA4 userEngagementDuration across every platform currently reporting into property 497892271. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     }
-  }
+  },
+  "acquisitionSummary": {
+    "launchBaseline": {
+      "range": "Apr 13-Apr 19, 2026",
+      "totalGa4ActiveUsers": 8739.0,
+      "totalGa4Sessions": 13421.0,
+      "totalGa4EngagementRate": 59.310036509947096,
+      "landingPageUsers": 1045,
+      "landingPageSessions": 1485,
+      "devicesPageUsers": 2028,
+      "devicesPageSessions": 2119,
+      "paidSocialUsers": 4441,
+      "paidSocialSessions": 4547
+    },
+    "previousWeek": {
+      "range": "Apr 20-Apr 26, 2026",
+      "totalGa4ActiveUsers": 12843.0,
+      "totalGa4Sessions": 18759.0,
+      "totalGa4EngagementRate": 66.24020470174317,
+      "landingPageUsers": 3950,
+      "landingPageSessions": 4553,
+      "devicesPageUsers": 5067,
+      "devicesPageSessions": 5329,
+      "paidSocialUsers": 7159,
+      "paidSocialSessions": 7601
+    },
+    "currentWeek": {
+      "range": "Apr 27-May 3, 2026",
+      "totalGa4ActiveUsers": 8115.0,
+      "totalGa4Sessions": 14052.0,
+      "totalGa4EngagementRate": 76.11727867919157,
+      "landingPageUsers": 2352,
+      "landingPageSessions": 2766,
+      "devicesPageUsers": 1037,
+      "devicesPageSessions": 1117,
+      "paidSocialUsers": 3141,
+      "paidSocialSessions": 3701
+    }
+  },
+  "viewingBehavior": {
+    "launchBaseline": {
+      "range": "Apr 13-Apr 19, 2026",
+      "viewingEventUsers": 1155,
+      "videoStartUsers": 1152,
+      "videoStartEvents": 14853,
+      "videoPlayUsers": 324,
+      "videoPlayEvents": 4643,
+      "videoCompleteUsers": 219,
+      "videoCompleteEvents": 2980,
+      "onDemandStartUsers": 1069,
+      "onDemandStartEvents": 12780,
+      "liveChannelViewers": 121,
+      "livePlayEvents": 3952,
+      "adRequestEvents": 10589,
+      "adErrorEvents": 158
+    },
+    "previousWeek": {
+      "range": "Apr 20-Apr 26, 2026",
+      "viewingEventUsers": 1819,
+      "videoStartUsers": 1813,
+      "videoStartEvents": 19206,
+      "videoPlayUsers": 448,
+      "videoPlayEvents": 8121,
+      "videoCompleteUsers": 276,
+      "videoCompleteEvents": 3270,
+      "onDemandStartUsers": 1667,
+      "onDemandStartEvents": 16987,
+      "liveChannelViewers": 193,
+      "livePlayEvents": 4337,
+      "adRequestEvents": 26966,
+      "adErrorEvents": 253
+    },
+    "currentWeek": {
+      "range": "Apr 27-May 3, 2026",
+      "viewingEventUsers": 2053,
+      "videoStartUsers": 2046,
+      "videoStartEvents": 19859,
+      "videoPlayUsers": 362,
+      "videoPlayEvents": 8464,
+      "videoCompleteUsers": 212,
+      "videoCompleteEvents": 3204,
+      "onDemandStartUsers": 1908,
+      "onDemandStartEvents": 17301,
+      "liveChannelViewers": 174,
+      "livePlayEvents": 4594,
+      "adRequestEvents": 29281,
+      "adErrorEvents": 3
+    }
+  },
+  "scorecardGroups": [
+    {
+      "title": "Acquisition / Web Traffic",
+      "eyebrow": "Who arrived before entering the product",
+      "definition": "Website, landing-page, device-page, and paid-social traffic. These metrics explain acquisition and campaign reach, not app viewing.",
+      "cards": [
+        {
+          "key": "totalGa4ActiveUsers",
+          "label": "Total GA4 users",
+          "baseline": 8739.0,
+          "launchBaseline": 8739.0,
+          "previousWeek": 12843.0,
+          "current": 8115.0,
+          "deltaPct": -36.813828544732544,
+          "deltaVsLaunchPct": -7.140405080672846,
+          "deltaVsPreviousPct": -36.813828544732544,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "All active users tracked in GA4 across web, iOS, and Android."
+        },
+        {
+          "key": "landingPageUsers",
+          "label": "Landing-page users",
+          "baseline": 1045,
+          "launchBaseline": 1045,
+          "previousWeek": 3950,
+          "current": 2352,
+          "deltaPct": -40.45569620253164,
+          "deltaVsLaunchPct": 125.07177033492822,
+          "deltaVsPreviousPct": -40.45569620253164,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users reaching pages with \u201clanding\u201d in the path."
+        },
+        {
+          "key": "devicesPageUsers",
+          "label": "Devices-page users",
+          "baseline": 2028,
+          "launchBaseline": 2028,
+          "previousWeek": 5067,
+          "current": 1037,
+          "deltaPct": -79.5342411683442,
+          "deltaVsLaunchPct": -48.865877712031555,
+          "deltaVsPreviousPct": -79.5342411683442,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users reaching pages with \u201cdevices\u201d in the path."
+        },
+        {
+          "key": "paidSocialUsers",
+          "label": "Paid social users",
+          "baseline": 4441,
+          "launchBaseline": 4441,
+          "previousWeek": 7159,
+          "current": 3141,
+          "deltaPct": -56.125157144852636,
+          "deltaVsLaunchPct": -29.272686331907227,
+          "deltaVsPreviousPct": -56.125157144852636,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users from GA4 source/medium values containing Facebook, Instagram, or Meta."
+        }
+      ]
+    },
+    {
+      "title": "App Usage",
+      "eyebrow": "Who used the mobile apps",
+      "definition": "iOS and Android app activity only. These are not website landing-page users.",
+      "cards": [
+        {
+          "key": "appActiveUsers",
+          "label": "App active users",
+          "baseline": 1709,
+          "launchBaseline": 1709,
+          "previousWeek": 2802,
+          "current": 3382,
+          "deltaPct": 20.69950035688794,
+          "deltaVsLaunchPct": 97.89350497366881,
+          "deltaVsPreviousPct": 20.69950035688794,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "People using the iOS or Android app."
+        },
+        {
+          "key": "appSessions",
+          "label": "App sessions",
+          "baseline": 3328,
+          "launchBaseline": 3328,
+          "previousWeek": 4980,
+          "current": 5938,
+          "deltaPct": 19.236947791164656,
+          "deltaVsLaunchPct": 78.42548076923077,
+          "deltaVsPreviousPct": 19.236947791164656,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "GA4 sessions on iOS and Android."
+        },
+        {
+          "key": "appEngagementRate",
+          "label": "App engagement rate",
+          "baseline": 81.18990384615384,
+          "launchBaseline": 81.18990384615384,
+          "previousWeek": 86.3855421686747,
+          "current": 84.77601886156955,
+          "deltaPct": -1.6095233071051496,
+          "deltaVsLaunchPct": 3.5861150154157144,
+          "deltaVsPreviousPct": -1.6095233071051496,
+          "deltaType": "points",
+          "format": "percent",
+          "context": "Engaged app sessions divided by app sessions."
+        }
+      ]
+    },
+    {
+      "title": "Viewing Behavior",
+      "eyebrow": "Who actually watched or started video",
+      "definition": "Event-based viewing metrics across GA4-tracked platforms. Users are deduped within each event filter; event counts are labeled separately.",
+      "cards": [
+        {
+          "key": "viewingEventUsers",
+          "label": "Viewing event users",
+          "baseline": 1155,
+          "launchBaseline": 1155,
+          "previousWeek": 1819,
+          "current": 2053,
+          "deltaPct": 12.864211105002749,
+          "deltaVsLaunchPct": 77.74891774891775,
+          "deltaVsPreviousPct": 12.864211105002749,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users who triggered on-demand video_start or Live play events."
+        },
+        {
+          "key": "onDemandStartUsers",
+          "label": "On-demand start users",
+          "baseline": 1069,
+          "launchBaseline": 1069,
+          "previousWeek": 1667,
+          "current": 1908,
+          "deltaPct": 14.457108578284345,
+          "deltaVsLaunchPct": 78.4845650140318,
+          "deltaVsPreviousPct": 14.457108578284345,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users who triggered video_start outside the Live screen."
+        },
+        {
+          "key": "liveChannelViewers",
+          "label": "Live channel viewers",
+          "baseline": 121,
+          "launchBaseline": 121,
+          "previousWeek": 193,
+          "current": 174,
+          "deltaPct": -9.844559585492227,
+          "deltaVsLaunchPct": 43.80165289256198,
+          "deltaVsPreviousPct": -9.844559585492227,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users who triggered a Live play event."
+        },
+        {
+          "key": "videoCompleteUsers",
+          "label": "Video complete users",
+          "baseline": 219,
+          "launchBaseline": 219,
+          "previousWeek": 276,
+          "current": 212,
+          "deltaPct": -23.18840579710145,
+          "deltaVsLaunchPct": -3.1963470319634704,
+          "deltaVsPreviousPct": -23.18840579710145,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Users who triggered video_complete."
+        },
+        {
+          "key": "livePlayEvents",
+          "label": "Live play events",
+          "baseline": 3952,
+          "launchBaseline": 3952,
+          "previousWeek": 4337,
+          "current": 4594,
+          "deltaPct": 5.925755130274384,
+          "deltaVsLaunchPct": 16.24493927125506,
+          "deltaVsPreviousPct": 5.925755130274384,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Total Live play events, not unique users."
+        },
+        {
+          "key": "adRequestEvents",
+          "label": "Ad request events",
+          "baseline": 10589,
+          "launchBaseline": 10589,
+          "previousWeek": 26966,
+          "current": 29281,
+          "deltaPct": 8.58488466958392,
+          "deltaVsLaunchPct": 176.5228066861838,
+          "deltaVsPreviousPct": 8.58488466958392,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Total ad request events generated by viewing activity."
+        }
+      ]
+    },
+    {
+      "title": "Time on Platform",
+      "eyebrow": "How long people stayed",
+      "definition": "All GA4-tracked platforms. Per user measures weekly attention per person; per session measures the average visit or viewing session.",
+      "cards": [
+        {
+          "key": "avgEngagedMinutesPerUser",
+          "label": "Avg time per user",
+          "baseline": 25.096925159174962,
+          "launchBaseline": 25.096925159174962,
+          "previousWeek": 21.89045784695201,
+          "current": 35.64110492681922,
+          "deltaPct": 13.750647079867207,
+          "deltaVsLaunchPct": 10.544179767644255,
+          "deltaVsPreviousPct": 13.750647079867207,
+          "deltaType": "minutes",
+          "format": "minutes",
+          "context": "Total engaged time divided by active users."
+        },
+        {
+          "key": "avgEngagedMinutesPerSession",
+          "label": "Avg time per session",
+          "baseline": 16.282458939348967,
+          "launchBaseline": 16.282458939348967,
+          "previousWeek": 14.968730488150985,
+          "current": 20.25148171574484,
+          "deltaPct": 5.282751227593856,
+          "deltaVsLaunchPct": 3.9690227763958745,
+          "deltaVsPreviousPct": 5.282751227593856,
+          "deltaType": "minutes",
+          "format": "minutes",
+          "context": "Total engaged time divided by sessions."
+        },
+        {
+          "key": "totalEngagementHours",
+          "label": "Total engaged hours",
+          "baseline": 3657.0402777777776,
+          "launchBaseline": 3657.0402777777776,
+          "previousWeek": 4688.206388888889,
+          "current": 4802.638888888889,
+          "deltaPct": 2.4408588382799534,
+          "deltaVsLaunchPct": 31.32584068248876,
+          "deltaVsPreviousPct": 2.4408588382799534,
+          "deltaType": "percent",
+          "format": "number",
+          "context": "Total GA4 engaged time converted to hours."
+        }
+      ]
+    }
+  ]
 }
