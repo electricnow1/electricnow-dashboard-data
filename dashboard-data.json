@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05 21:35 PDT",
+  "generatedAt": "2026-05-05 21:41 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -187,7 +187,7 @@
     },
     {
       "key": "avgEngagedMinutesPerUser",
-      "label": "Avg time on platform",
+      "label": "Avg time per user",
       "baseline": 25.096925159174962,
       "launchBaseline": 25.096925159174962,
       "previousWeek": 21.89045784695201,
@@ -197,7 +197,7 @@
       "deltaVsPreviousPct": 13.750647079867207,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Average engaged minutes per active user across all GA4-tracked platforms."
+      "context": "Total engaged time divided by active users. This answers: how long the average person spent with ElectricNOW during the week."
     },
     {
       "key": "avgEngagedMinutesPerSession",
@@ -211,7 +211,7 @@
       "deltaVsPreviousPct": 5.285598135826895,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Average engaged minutes per session across all GA4-tracked platforms."
+      "context": "Total engaged time divided by sessions. This answers: how long the average visit or viewing session lasted."
     }
   ],
   "trend": [
@@ -1317,6 +1317,7 @@
     "Roughly 50.0% of app users watched something, compared with 48.6% during launch week and 49.0% the prior week, so the viewing conversion rate is steady while the audience is growing.",
     "On-demand is carrying most of the viewing growth with 1.5K starter users; Live remains meaningful at 174 viewers, up 43.8% from launch baseline and down 9.8% from the previous week.",
     "Average time on platform is 35.6 engaged minutes per active user across all GA4-tracked platforms, up 10.5 minutes from launch week and up 13.8 minutes from the previous week.",
+    "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
     "Stripe-visible sales continued: 0 payments and $0.00 in the latest complete week, but this excludes Apple App Store and Google Play purchases.",
     "Top watched titles in GA4 this week include Electric Now (ElectricNOW), Everyone Wanted to Be On This Ship (The Ark), ElectricNOW en Espa\u00f1ol, Get Out and Push (The Ark), and Finding Mabuhay (Almost Paradise).",
     "The most watched Live channels generated 4.6K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, Stoner TV Network, Daily Flash, and Horror Asylum.",
