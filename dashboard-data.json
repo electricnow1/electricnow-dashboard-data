@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07 08:45 PDT",
+  "generatedAt": "2026-05-07 09:05 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -1499,23 +1499,135 @@
       "deltaRevenuePct": null,
       "detail": "Stripe shows 4 visible payments totaling $54.96 during the prior complete week."
     },
-    "currentCompleteWeek": {
-      "label": "Latest Stripe week",
+    "yearToDate": {
+      "label": "Sales this year",
+      "range": "Jan 1-May 7, 2026",
+      "purchases": 11,
+      "purchaseRevenue": 159.89,
+      "revenuePerPurchase": 14.54,
+      "deltaPurchasesPct": null,
+      "deltaRevenuePct": null,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 26",
+          "createdAt": "2026-04-26 20:13 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 24",
+          "createdAt": "2026-04-24 15:38 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22 09:46 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22 02:25 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 20",
+          "createdAt": "2026-04-20 18:31 PDT",
+          "amount": 14.99,
+          "description": "Anonymous Customer - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 18",
+          "createdAt": "2026-04-18 17:51 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 16",
+          "createdAt": "2026-04-16 18:58 PDT",
+          "amount": 9.99,
+          "description": "Customer User - Purchase Bundle 10: Signup payment"
+        }
+      ]
+    },
+    "monthToDate": {
+      "label": "Sales this month",
+      "range": "May 1-May 7, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "revenuePerPurchase": 14.99,
+      "deltaPurchasesPct": null,
+      "deltaRevenuePct": null,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        }
+      ]
+    },
+    "lastWeek": {
+      "label": "Sales last week",
       "range": "Apr 27-May 3, 2026",
       "purchases": 0,
       "purchaseRevenue": 0,
       "revenuePerPurchase": 0,
       "deltaPurchasesPct": -100.0,
-      "deltaRevenuePct": -100.0
+      "deltaRevenuePct": -100.0,
+      "payments": []
     },
-    "weekToDate": {
-      "label": "Stripe week to date",
+    "thisWeek": {
+      "label": "Sales this week",
       "range": "May 4-May 7, 2026",
       "purchases": 1,
       "purchaseRevenue": 14.99,
       "revenuePerPurchase": 14.99,
       "deltaPurchasesPct": null,
-      "deltaRevenuePct": null
+      "deltaRevenuePct": null,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        }
+      ]
+    },
+    "currentCompleteWeek": {
+      "label": "Sales last week",
+      "range": "Apr 27-May 3, 2026",
+      "purchases": 0,
+      "purchaseRevenue": 0,
+      "revenuePerPurchase": 0,
+      "deltaPurchasesPct": -100.0,
+      "deltaRevenuePct": -100.0,
+      "payments": []
+    },
+    "weekToDate": {
+      "label": "Sales this week",
+      "range": "May 4-May 7, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "revenuePerPurchase": 14.99,
+      "deltaPurchasesPct": null,
+      "deltaRevenuePct": null,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        }
+      ]
     },
     "recent12Days": {
       "label": "Stripe last 12 days",
@@ -1542,15 +1654,15 @@
     },
     "lifetimeObserved": {
       "range": "Through May 7, 2026 pull",
-      "purchases": 10,
-      "purchaseRevenue": 144.9,
-      "revenuePerPurchase": 14.49
+      "purchases": 11,
+      "purchaseRevenue": 159.89,
+      "revenuePerPurchase": 14.54
     },
     "mix": [
       {
         "label": "Title purchases",
-        "purchases": 9,
-        "purchaseRevenue": 134.91
+        "purchases": 10,
+        "purchaseRevenue": 149.9
       },
       {
         "label": "Bundle purchases",
@@ -1633,6 +1745,13 @@
         "createdAt": "2026-04-16 14:35 PDT",
         "amount": 14.99,
         "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
+        "date": "Apr 10",
+        "createdAt": "2026-04-10 21:55 PDT",
+        "amount": 14.99,
+        "description": "pi_3TKta2LG0Cw1zW4e26XmyZs9"
       }
     ],
     "dailyTrend": [
@@ -1787,7 +1906,7 @@
         "purchaseRevenue": 0
       }
     ],
-    "note": "Stripe-visible sales show 0 payments and $0.00 in the latest completed reporting week (Apr 27-May 3, 2026). The rolling 12-day audit window is a separate check and shows 2 payments / $29.98; it includes Apr 26 and the current week to date, so it can show purchases while Apr 27-May 3 remains $0. Add Apple App Store and Google Play reports before treating this as total sales."
+    "note": "Stripe-visible sales show 11 payments and $159.89 year to date, 1 payment and $14.99 this month, 0 payments and $0.00 last week, and 1 payment and $14.99 this week. Add Apple App Store and Google Play reports before treating this as total sales."
   },
   "contentUsage": {
     "period": "Apr 27-May 3, 2026",
@@ -2572,7 +2691,7 @@
       "totalEngagementHours": 4688.206388888889,
       "avgEngagedMinutesPerUser": 21.89045784695201,
       "avgEngagedMinutesPerSession": 14.968730488150985,
-      "ga4AverageSessionMinutes": 23.246476716168228,
+      "ga4AverageSessionMinutes": 23.24647671616822,
       "platformBreakout": [
         {
           "platform": "web",
@@ -2581,7 +2700,7 @@
           "engagedSessions": 8059,
           "avgEngagedMinutesPerUser": 13.577526207537154,
           "avgEngagedMinutesPerSession": 9.899643228599762,
-          "ga4AverageSessionMinutes": 12.026644475862904
+          "ga4AverageSessionMinutes": 12.0266444758629
         },
         {
           "platform": "iOS",
@@ -2599,7 +2718,7 @@
           "engagedSessions": 2110,
           "avgEngagedMinutesPerUser": 46.91517676767676,
           "avgEngagedMinutesPerSession": 24.672523240371845,
-          "ga4AverageSessionMinutes": 70.62410003828684
+          "ga4AverageSessionMinutes": 70.62410003828683
         }
       ],
       "note": "All-platform time is based on GA4 userEngagementDuration across every platform currently reporting into property 497892271. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
