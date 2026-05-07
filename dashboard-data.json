@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07 07:01 PDT",
+  "generatedAt": "2026-05-07 08:45 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -1517,17 +1517,26 @@
       "deltaPurchasesPct": null,
       "deltaRevenuePct": null
     },
+    "recent12Days": {
+      "label": "Stripe last 12 days",
+      "range": "Apr 26-May 7, 2026",
+      "purchases": 2,
+      "purchaseRevenue": 29.98,
+      "revenuePerPurchase": 14.99,
+      "deltaPurchasesPct": null,
+      "deltaRevenuePct": null
+    },
     "lifetimeObserved": {
       "range": "Through May 7, 2026 pull",
-      "purchases": 11,
-      "purchaseRevenue": 159.89,
-      "revenuePerPurchase": 14.54
+      "purchases": 10,
+      "purchaseRevenue": 144.9,
+      "revenuePerPurchase": 14.49
     },
     "mix": [
       {
         "label": "Title purchases",
-        "purchases": 10,
-        "purchaseRevenue": 149.9
+        "purchases": 9,
+        "purchaseRevenue": 134.91
       },
       {
         "label": "Bundle purchases",
@@ -1538,6 +1547,78 @@
         "label": "Subscriptions",
         "purchases": 0,
         "purchaseRevenue": 0
+      }
+    ],
+    "recentPayments": [
+      {
+        "id": "pi_3TU0PpLG0Cw1zW4e1xA1B4CB",
+        "date": "May 6",
+        "createdAt": "2026-05-06 01:02 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TQfbqLG0Cw1zW4e0xCVetD1",
+        "date": "Apr 26",
+        "createdAt": "2026-04-26 20:13 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TPsMQLG0Cw1zW4e1KupKuAF",
+        "date": "Apr 24",
+        "createdAt": "2026-04-24 15:38 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TP3uxLG0Cw1zW4e0LSedyYu",
+        "date": "Apr 22",
+        "createdAt": "2026-04-22 09:46 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TOx2ZLG0Cw1zW4e1W7SJZXg",
+        "date": "Apr 22",
+        "createdAt": "2026-04-22 02:25 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TOTAALG0Cw1zW4e0dIkMbV1",
+        "date": "Apr 20",
+        "createdAt": "2026-04-20 18:31 PDT",
+        "amount": 14.99,
+        "description": "Anonymous Customer - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TNjaVLG0Cw1zW4e2up0QKdp",
+        "date": "Apr 18",
+        "createdAt": "2026-04-18 17:51 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TN1fjLG0Cw1zW4e1efwz7Hc",
+        "date": "Apr 16",
+        "createdAt": "2026-04-16 18:58 PDT",
+        "amount": 9.99,
+        "description": "Customer User - Purchase Bundle 10: Signup payment"
+      },
+      {
+        "id": "pi_3TMxdiLG0Cw1zW4e0ApnxCmW",
+        "date": "Apr 16",
+        "createdAt": "2026-04-16 14:39 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
+      },
+      {
+        "id": "pi_3TMxZHLG0Cw1zW4e0RXKnWOb",
+        "date": "Apr 16",
+        "createdAt": "2026-04-16 14:35 PDT",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment"
       }
     ],
     "dailyTrend": [
@@ -1666,9 +1747,33 @@
         "rawDate": "20260503",
         "purchases": 0,
         "purchaseRevenue": 0
+      },
+      {
+        "date": "May 4",
+        "rawDate": "20260504",
+        "purchases": 0,
+        "purchaseRevenue": 0
+      },
+      {
+        "date": "May 5",
+        "rawDate": "20260505",
+        "purchases": 0,
+        "purchaseRevenue": 0
+      },
+      {
+        "date": "May 6",
+        "rawDate": "20260506",
+        "purchases": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "date": "May 7",
+        "rawDate": "20260507",
+        "purchases": 0,
+        "purchaseRevenue": 0
       }
     ],
-    "note": "Stripe-visible sales show 0 payments and $0.00 in the latest complete week, compared with 4 payments and $54.96 in the prior complete week. Add Apple App Store and Google Play reports before treating this as total sales."
+    "note": "Stripe-visible sales show 0 payments and $0.00 in the latest complete week, 1 payment and $14.99 week to date, and 2 payments / $29.98 over the last 12 days. Add Apple App Store and Google Play reports before treating this as total sales."
   },
   "contentUsage": {
     "period": "Apr 27-May 3, 2026",
