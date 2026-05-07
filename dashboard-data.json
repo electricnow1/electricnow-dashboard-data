@@ -1524,7 +1524,21 @@
       "purchaseRevenue": 29.98,
       "revenuePerPurchase": 14.99,
       "deltaPurchasesPct": null,
-      "deltaRevenuePct": null
+      "deltaRevenuePct": null,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "date": "Apr 26",
+          "createdAt": "2026-04-26 20:13 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        }
+      ]
     },
     "lifetimeObserved": {
       "range": "Through May 7, 2026 pull",
@@ -1773,7 +1787,7 @@
         "purchaseRevenue": 0
       }
     ],
-    "note": "Stripe-visible sales show 0 payments and $0.00 in the latest complete week, 1 payment and $14.99 week to date, and 2 payments / $29.98 over the last 12 days. Add Apple App Store and Google Play reports before treating this as total sales."
+    "note": "Stripe-visible sales show 0 payments and $0.00 in the latest completed reporting week (Apr 27-May 3, 2026). The rolling 12-day audit window is a separate check and shows 2 payments / $29.98; it includes Apr 26 and the current week to date, so it can show purchases while Apr 27-May 3 remains $0. Add Apple App Store and Google Play reports before treating this as total sales."
   },
   "contentUsage": {
     "period": "Apr 27-May 3, 2026",
