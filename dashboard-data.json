@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08 07:46 PDT",
+  "generatedAt": "2026-05-08 08:12 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -88,32 +88,32 @@
   },
   "scorecards": [
     {
-      "key": "totalGa4ActiveUsers",
-      "label": "Total measured users",
-      "baseline": 8739.0,
-      "launchBaseline": 8739.0,
-      "previousWeek": 12843.0,
-      "current": 8115.0,
-      "deltaPct": -36.813828544732544,
-      "deltaVsLaunchPct": -7.140405080672846,
-      "deltaVsPreviousPct": -36.813828544732544,
+      "key": "platformActiveUsers",
+      "label": "Platform active users",
+      "baseline": 8709,
+      "launchBaseline": 8709,
+      "previousWeek": 11472,
+      "current": 7298,
+      "deltaPct": -36.38423988842399,
+      "deltaVsLaunchPct": -16.201630497186816,
+      "deltaVsPreviousPct": -36.38423988842399,
       "deltaType": "percent",
       "format": "number",
-      "context": "Deduped active users across all GA4-tracked ElectricNOW streams."
+      "context": "GA4 active users excluding landing-page acquisition paths."
     },
     {
-      "key": "totalGa4Sessions",
-      "label": "Total sessions",
-      "baseline": 13421.0,
-      "launchBaseline": 13421.0,
-      "previousWeek": 18759.0,
-      "current": 14023.0,
-      "deltaPct": -25.2465483234714,
-      "deltaVsLaunchPct": 4.485507786305044,
-      "deltaVsPreviousPct": -25.2465483234714,
+      "key": "platformSessions",
+      "label": "Platform sessions",
+      "baseline": 13316,
+      "launchBaseline": 13316,
+      "previousWeek": 17223,
+      "current": 13008,
+      "deltaPct": -24.473088312140742,
+      "deltaVsLaunchPct": -2.3130069089816763,
+      "deltaVsPreviousPct": -24.473088312140742,
       "deltaType": "percent",
       "format": "number",
-      "context": "All GA4-tracked sessions across the measured ElectricNOW ecosystem."
+      "context": "GA4 sessions excluding landing-page acquisition paths."
     },
     {
       "key": "viewingEventUsers",
@@ -132,13 +132,13 @@
     {
       "key": "totalEngagementHours",
       "label": "Total engaged hours",
-      "baseline": 3657.0402777777776,
-      "launchBaseline": 3657.0402777777776,
-      "previousWeek": 4688.206388888889,
-      "current": 4802.638888888889,
-      "deltaPct": 2.4408588382799534,
-      "deltaVsLaunchPct": 31.32584068248876,
-      "deltaVsPreviousPct": 2.4408588382799534,
+      "baseline": 3652.995,
+      "launchBaseline": 3652.995,
+      "previousWeek": 4680.391111111111,
+      "current": 4798.652777777777,
+      "deltaPct": 2.526747527272167,
+      "deltaVsLaunchPct": 31.362150174795683,
+      "deltaVsPreviousPct": 2.526747527272167,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -146,16 +146,16 @@
     {
       "key": "avgEngagedMinutesPerUser",
       "label": "Avg time per user",
-      "baseline": 25.096925159174962,
-      "launchBaseline": 25.096925159174962,
-      "previousWeek": 21.89045784695201,
-      "current": 35.64110492681922,
-      "deltaPct": 13.750647079867207,
-      "deltaVsLaunchPct": 10.544179767644255,
-      "deltaVsPreviousPct": 13.750647079867207,
+      "baseline": 25.072031571722718,
+      "launchBaseline": 25.072031571722718,
+      "previousWeek": 24.614205159669268,
+      "current": 39.505922978411995,
+      "deltaPct": 14.891717818742727,
+      "deltaVsLaunchPct": 14.433891406689277,
+      "deltaVsPreviousPct": 14.891717818742727,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Total engaged time divided by active users across all GA4-tracked surfaces."
+      "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
     },
     {
       "key": "landingPageUsers",
@@ -328,13 +328,13 @@
     {
       "key": "avgEngagedMinutesPerUser",
       "label": "Avg time per user",
-      "baseline": 25.096925159174962,
-      "launchBaseline": 25.096925159174962,
-      "previousWeek": 21.89045784695201,
-      "current": 35.64110492681922,
-      "deltaPct": 13.750647079867207,
-      "deltaVsLaunchPct": 10.544179767644255,
-      "deltaVsPreviousPct": 13.750647079867207,
+      "baseline": 25.072031571722718,
+      "launchBaseline": 25.072031571722718,
+      "previousWeek": 24.614205159669268,
+      "current": 39.505922978411995,
+      "deltaPct": 14.891717818742727,
+      "deltaVsLaunchPct": 14.433891406689277,
+      "deltaVsPreviousPct": 14.891717818742727,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users."
@@ -342,13 +342,13 @@
     {
       "key": "avgEngagedMinutesPerSession",
       "label": "Avg time per session",
-      "baseline": 16.282458939348967,
-      "launchBaseline": 16.282458939348967,
-      "previousWeek": 14.968730488150985,
-      "current": 20.268575179948886,
-      "deltaPct": 5.299844691797901,
-      "deltaVsLaunchPct": 3.9861162405999195,
-      "deltaVsPreviousPct": 5.299844691797901,
+      "baseline": 16.417955056179775,
+      "launchBaseline": 16.417955056179775,
+      "previousWeek": 16.333593128986603,
+      "current": 21.792246947219702,
+      "deltaPct": 5.458653818233099,
+      "deltaVsLaunchPct": 5.3742918910399275,
+      "deltaVsPreviousPct": 5.458653818233099,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by sessions."
@@ -356,13 +356,13 @@
     {
       "key": "totalEngagementHours",
       "label": "Total engaged hours",
-      "baseline": 3657.0402777777776,
-      "launchBaseline": 3657.0402777777776,
-      "previousWeek": 4688.206388888889,
-      "current": 4802.638888888889,
-      "deltaPct": 2.4408588382799534,
-      "deltaVsLaunchPct": 31.32584068248876,
-      "deltaVsPreviousPct": 2.4408588382799534,
+      "baseline": 3652.995,
+      "launchBaseline": 3652.995,
+      "previousWeek": 4680.391111111111,
+      "current": 4798.652777777777,
+      "deltaPct": 2.526747527272167,
+      "deltaVsLaunchPct": 31.362150174795683,
+      "deltaVsPreviousPct": 2.526747527272167,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -1466,13 +1466,14 @@
     "engagementRateWeekToDate": 96.13192182410424
   },
   "plainEnglishInsights": [
-    "Total measured ElectricNOW audience was 8.1K GA4 active users across all currently tracked streams, down 36.8% from the previous week; landing-page users were down 40.5%.",
+    "Measured ElectricNOW platform audience was 7.3K GA4 active users excluding landing-page acquisition paths, down 36.4% from the previous week.",
+    "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 8.1K, down 36.8% from the previous week; landing-page users were down 40.5%.",
     "Measured mobile app usage improved: 3.2K iOS/Android mobile app active users this week, up 104.3% from launch baseline and up 24.9% from the previous week.",
     "Viewing also improved: 1.5K app users watched on-demand or Live content, up 109.9% from launch baseline and up 27.6% from the previous week.",
     "Roughly 48.5% of app users watched something, compared with 47.2% during launch week and 47.5% the prior week, so the viewing conversion rate is steady while the audience is growing.",
     "On-demand is carrying most of the viewing growth with 1.5K starter users; Live remains meaningful at 59 viewers, up 28.3% from launch baseline and down 10.6% from the previous week.",
     "Actual viewing behavior is measured separately: 2.1K users triggered a viewing event, up 12.9% from the previous week; video-complete users were down 23.2%.",
-    "Average time on platform is 35.6 engaged minutes per active user across all GA4-tracked platforms, up 10.5 minutes from launch week and up 13.8 minutes from the previous week.",
+    "Average time on platform is 39.5 engaged minutes per active user across all GA4-tracked platforms, up 14.4 minutes from launch week and up 14.9 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
     "Stripe-visible sales continued: 0 payments and $0.00 in the latest complete week, but this excludes Apple App Store and Google Play purchases.",
     "Top watched titles in GA4 this week include Electric Now (ElectricNOW), Everyone Wanted to Be On This Ship (The Ark), ElectricNOW en Espa\u00f1ol, Get Out and Push (The Ark), and Finding Mabuhay (Almost Paradise).",
@@ -2641,24 +2642,24 @@
   "platformTime": {
     "launchBaseline": {
       "range": "Apr 13-Apr 19, 2026",
-      "activeUsers": 8743,
-      "sessions": 13476,
-      "engagedSessions": 7932,
-      "engagementRate": 58.86019590382902,
-      "totalEngagementSeconds": 13165345,
-      "totalEngagementHours": 3657.0402777777776,
-      "avgEngagedMinutesPerUser": 25.096925159174962,
-      "avgEngagedMinutesPerSession": 16.282458939348967,
-      "ga4AverageSessionMinutes": 22.602128200341344,
+      "activeUsers": 8742,
+      "sessions": 13350,
+      "engagedSessions": 7917,
+      "engagementRate": 59.30337078651685,
+      "totalEngagementSeconds": 13150782,
+      "totalEngagementHours": 3652.995,
+      "avgEngagedMinutesPerUser": 25.072031571722718,
+      "avgEngagedMinutesPerSession": 16.417955056179775,
+      "ga4AverageSessionMinutes": 22.769179101851424,
       "platformBreakout": [
         {
           "platform": "web",
-          "activeUsers": 7034,
-          "sessions": 10157,
-          "engagedSessions": 5236,
-          "avgEngagedMinutesPerUser": 16.247042934319023,
-          "avgEngagedMinutesPerSession": 11.251521118440484,
-          "ga4AverageSessionMinutes": 13.155060409556627
+          "activeUsers": 7033,
+          "sessions": 10031,
+          "engagedSessions": 5221,
+          "avgEngagedMinutesPerUser": 16.21484193563676,
+          "avgEngagedMinutesPerSession": 11.368655501279367,
+          "ga4AverageSessionMinutes": 13.258718967379442
         },
         {
           "platform": "iOS",
@@ -2676,31 +2677,31 @@
           "engagedSessions": 1424,
           "avgEngagedMinutesPerUser": 58.89753997539976,
           "avgEngagedMinutesPerSession": 25.308509513742074,
-          "ga4AverageSessionMinutes": 56.587736760967225
+          "ga4AverageSessionMinutes": 56.58773676096723
         }
       ],
-      "note": "All-platform time is based on GA4 userEngagementDuration across every platform currently reporting into property 497892271. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
+      "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     },
     "previousWeek": {
       "range": "Apr 20-Apr 26, 2026",
-      "activeUsers": 12850,
-      "sessions": 18792,
-      "engagedSessions": 12385,
-      "engagementRate": 65.90570455512984,
-      "totalEngagementSeconds": 16877543,
-      "totalEngagementHours": 4688.206388888889,
-      "avgEngagedMinutesPerUser": 21.89045784695201,
-      "avgEngagedMinutesPerSession": 14.968730488150985,
-      "ga4AverageSessionMinutes": 23.246476716168228,
+      "activeUsers": 11409,
+      "sessions": 17193,
+      "engagedSessions": 12215,
+      "engagementRate": 71.04635607514686,
+      "totalEngagementSeconds": 16849408,
+      "totalEngagementHours": 4680.391111111111,
+      "avgEngagedMinutesPerUser": 24.614205159669268,
+      "avgEngagedMinutesPerSession": 16.333593128986603,
+      "ga4AverageSessionMinutes": 25.290401194827357,
       "platformBreakout": [
         {
           "platform": "web",
-          "activeUsers": 10048,
-          "sessions": 13781,
-          "engagedSessions": 8059,
-          "avgEngagedMinutesPerUser": 13.577526207537154,
-          "avgEngagedMinutesPerSession": 9.899643228599762,
-          "ga4AverageSessionMinutes": 12.026644475862904
+          "activeUsers": 8607,
+          "sessions": 12182,
+          "engagedSessions": 7889,
+          "avgEngagedMinutesPerUser": 15.796220130901203,
+          "avgEngagedMinutesPerSession": 11.16057024024517,
+          "ga4AverageSessionMinutes": 13.438619669537024
         },
         {
           "platform": "iOS",
@@ -2718,31 +2719,31 @@
           "engagedSessions": 2110,
           "avgEngagedMinutesPerUser": 46.91517676767676,
           "avgEngagedMinutesPerSession": 24.672523240371845,
-          "ga4AverageSessionMinutes": 70.62410003828684
+          "ga4AverageSessionMinutes": 70.62410003828685
         }
       ],
-      "note": "All-platform time is based on GA4 userEngagementDuration across every platform currently reporting into property 497892271. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
+      "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     },
     "currentWeek": {
       "range": "Apr 27-May 3, 2026",
-      "activeUsers": 8085,
-      "sessions": 14217,
-      "engagedSessions": 10667,
-      "engagementRate": 75.0298937891257,
-      "totalEngagementSeconds": 17289500,
-      "totalEngagementHours": 4802.638888888889,
-      "avgEngagedMinutesPerUser": 35.64110492681922,
-      "avgEngagedMinutesPerSession": 20.268575179948886,
-      "ga4AverageSessionMinutes": 36.91015596007011,
+      "activeUsers": 7288,
+      "sessions": 13212,
+      "engagedSessions": 10565,
+      "engagementRate": 79.96518316681804,
+      "totalEngagementSeconds": 17275150,
+      "totalEngagementHours": 4798.652777777777,
+      "avgEngagedMinutesPerUser": 39.505922978411995,
+      "avgEngagedMinutesPerSession": 21.792246947219702,
+      "ga4AverageSessionMinutes": 39.62178647706756,
       "platformBreakout": [
         {
           "platform": "web",
-          "activeUsers": 4703,
-          "sessions": 8296,
-          "engagedSessions": 5715,
-          "avgEngagedMinutesPerUser": 30.90509249415267,
-          "avgEngagedMinutesPerSession": 17.520087994214077,
-          "ga4AverageSessionMinutes": 20.481031245704756
+          "activeUsers": 3906,
+          "sessions": 7291,
+          "engagedSessions": 5613,
+          "avgEngagedMinutesPerUser": 37.14989332650623,
+          "avgEngagedMinutesPerSession": 19.902274493667996,
+          "ga4AverageSessionMinutes": 23.130159218909156
         },
         {
           "platform": "Android",
@@ -2763,7 +2764,7 @@
           "ga4AverageSessionMinutes": 34.2600314811248
         }
       ],
-      "note": "All-platform time is based on GA4 userEngagementDuration across every platform currently reporting into property 497892271. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
+      "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     }
   },
   "acquisitionSummary": {
@@ -2856,37 +2857,37 @@
   },
   "scorecardGroups": [
     {
-      "title": "Total Measured ElectricNOW Audience",
+      "title": "Measured ElectricNOW Platform Audience",
       "eyebrow": "Is the measured platform growing or shrinking?",
-      "definition": "Property-level GA4 totals across every surface currently reporting into property 497892271: web, mobile apps, Roku, Android TV, and any other configured streams. This is the headline measured-audience view, pending reconciliation with Amagi, app stores, ad servers, and platform dashboards.",
+      "definition": "GA4 active users across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Landing-page traffic is reported only in Web Acquisition. Reconcile with Amagi, app stores, ad servers, and platform dashboards before treating this as total company-wide audience.",
       "cards": [
         {
-          "key": "totalGa4ActiveUsers",
-          "label": "Total measured users",
-          "baseline": 8739.0,
-          "launchBaseline": 8739.0,
-          "previousWeek": 12843.0,
-          "current": 8115.0,
-          "deltaPct": -36.813828544732544,
-          "deltaVsLaunchPct": -7.140405080672846,
-          "deltaVsPreviousPct": -36.813828544732544,
+          "key": "platformActiveUsers",
+          "label": "Platform active users",
+          "baseline": 8709,
+          "launchBaseline": 8709,
+          "previousWeek": 11472,
+          "current": 7298,
+          "deltaPct": -36.38423988842399,
+          "deltaVsLaunchPct": -16.201630497186816,
+          "deltaVsPreviousPct": -36.38423988842399,
           "deltaType": "percent",
           "format": "number",
-          "context": "Deduped active users across all GA4-tracked ElectricNOW streams."
+          "context": "GA4 active users excluding landing-page acquisition paths."
         },
         {
-          "key": "totalGa4Sessions",
-          "label": "Total sessions",
-          "baseline": 13421.0,
-          "launchBaseline": 13421.0,
-          "previousWeek": 18759.0,
-          "current": 14023.0,
-          "deltaPct": -25.2465483234714,
-          "deltaVsLaunchPct": 4.485507786305044,
-          "deltaVsPreviousPct": -25.2465483234714,
+          "key": "platformSessions",
+          "label": "Platform sessions",
+          "baseline": 13316,
+          "launchBaseline": 13316,
+          "previousWeek": 17223,
+          "current": 13008,
+          "deltaPct": -24.473088312140742,
+          "deltaVsLaunchPct": -2.3130069089816763,
+          "deltaVsPreviousPct": -24.473088312140742,
           "deltaType": "percent",
           "format": "number",
-          "context": "All GA4-tracked sessions across the measured ElectricNOW ecosystem."
+          "context": "GA4 sessions excluding landing-page acquisition paths."
         },
         {
           "key": "viewingEventUsers",
@@ -2905,13 +2906,13 @@
         {
           "key": "totalEngagementHours",
           "label": "Total engaged hours",
-          "baseline": 3657.0402777777776,
-          "launchBaseline": 3657.0402777777776,
-          "previousWeek": 4688.206388888889,
-          "current": 4802.638888888889,
-          "deltaPct": 2.4408588382799534,
-          "deltaVsLaunchPct": 31.32584068248876,
-          "deltaVsPreviousPct": 2.4408588382799534,
+          "baseline": 3652.995,
+          "launchBaseline": 3652.995,
+          "previousWeek": 4680.391111111111,
+          "current": 4798.652777777777,
+          "deltaPct": 2.526747527272167,
+          "deltaVsLaunchPct": 31.362150174795683,
+          "deltaVsPreviousPct": 2.526747527272167,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -2919,16 +2920,16 @@
         {
           "key": "avgEngagedMinutesPerUser",
           "label": "Avg time per user",
-          "baseline": 25.096925159174962,
-          "launchBaseline": 25.096925159174962,
-          "previousWeek": 21.89045784695201,
-          "current": 35.64110492681922,
-          "deltaPct": 13.750647079867207,
-          "deltaVsLaunchPct": 10.544179767644255,
-          "deltaVsPreviousPct": 13.750647079867207,
+          "baseline": 25.072031571722718,
+          "launchBaseline": 25.072031571722718,
+          "previousWeek": 24.614205159669268,
+          "current": 39.505922978411995,
+          "deltaPct": 14.891717818742727,
+          "deltaVsLaunchPct": 14.433891406689277,
+          "deltaVsPreviousPct": 14.891717818742727,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total engaged time divided by active users across all GA4-tracked surfaces."
+          "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
         }
       ]
     },
@@ -3129,13 +3130,13 @@
         {
           "key": "avgEngagedMinutesPerUser",
           "label": "Avg time per user",
-          "baseline": 25.096925159174962,
-          "launchBaseline": 25.096925159174962,
-          "previousWeek": 21.89045784695201,
-          "current": 35.64110492681922,
-          "deltaPct": 13.750647079867207,
-          "deltaVsLaunchPct": 10.544179767644255,
-          "deltaVsPreviousPct": 13.750647079867207,
+          "baseline": 25.072031571722718,
+          "launchBaseline": 25.072031571722718,
+          "previousWeek": 24.614205159669268,
+          "current": 39.505922978411995,
+          "deltaPct": 14.891717818742727,
+          "deltaVsLaunchPct": 14.433891406689277,
+          "deltaVsPreviousPct": 14.891717818742727,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users."
@@ -3143,13 +3144,13 @@
         {
           "key": "avgEngagedMinutesPerSession",
           "label": "Avg time per session",
-          "baseline": 16.282458939348967,
-          "launchBaseline": 16.282458939348967,
-          "previousWeek": 14.968730488150985,
-          "current": 20.268575179948886,
-          "deltaPct": 5.299844691797901,
-          "deltaVsLaunchPct": 3.9861162405999195,
-          "deltaVsPreviousPct": 5.299844691797901,
+          "baseline": 16.417955056179775,
+          "launchBaseline": 16.417955056179775,
+          "previousWeek": 16.333593128986603,
+          "current": 21.792246947219702,
+          "deltaPct": 5.458653818233099,
+          "deltaVsLaunchPct": 5.3742918910399275,
+          "deltaVsPreviousPct": 5.458653818233099,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by sessions."
@@ -3157,13 +3158,13 @@
         {
           "key": "totalEngagementHours",
           "label": "Total engaged hours",
-          "baseline": 3657.0402777777776,
-          "launchBaseline": 3657.0402777777776,
-          "previousWeek": 4688.206388888889,
-          "current": 4802.638888888889,
-          "deltaPct": 2.4408588382799534,
-          "deltaVsLaunchPct": 31.32584068248876,
-          "deltaVsPreviousPct": 2.4408588382799534,
+          "baseline": 3652.995,
+          "launchBaseline": 3652.995,
+          "previousWeek": 4680.391111111111,
+          "current": 4798.652777777777,
+          "deltaPct": 2.526747527272167,
+          "deltaVsLaunchPct": 31.362150174795683,
+          "deltaVsPreviousPct": 2.526747527272167,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -3449,6 +3450,35 @@
         }
       ],
       "note": "Surface rows come from GA4 streamName/streamId. The headline total measured audience is deduped at the property level; surface rows may not dedupe the same person across multiple surfaces."
+    }
+  },
+  "platformAudience": {
+    "launchBaseline": {
+      "range": "Apr 13-Apr 19, 2026",
+      "platformActiveUsers": 8709,
+      "platformSessions": 13316,
+      "platformEngagedSessions": 7950,
+      "platformEventCount": 701653,
+      "platformEngagementRate": 59.702613397416634,
+      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
+    },
+    "previousWeek": {
+      "range": "Apr 20-Apr 26, 2026",
+      "platformActiveUsers": 11472,
+      "platformSessions": 17223,
+      "platformEngagedSessions": 12241,
+      "platformEventCount": 938886,
+      "platformEngagementRate": 71.07356441967137,
+      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
+    },
+    "currentWeek": {
+      "range": "Apr 27-May 3, 2026",
+      "platformActiveUsers": 7298,
+      "platformSessions": 13008,
+      "platformEngagedSessions": 10574,
+      "platformEventCount": 989117,
+      "platformEngagementRate": 81.28843788437884,
+      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     }
   }
 }
