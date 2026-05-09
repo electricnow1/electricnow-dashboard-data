@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08 21:14 PDT",
+  "generatedAt": "2026-05-08 21:18 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -1475,7 +1475,7 @@
     "Actual viewing behavior is measured separately: 2.1K users triggered a viewing event, up 12.9% from the previous week; video-complete users were down 23.2%.",
     "Average time on platform is 39.5 engaged minutes per active user across all GA4-tracked platforms, up 14.4 minutes from launch week and up 14.9 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
-    "Stripe-visible sales continued: 0 payments and $0.00 in the latest complete week, but this excludes Apple App Store and Google Play purchases.",
+    "Stripe-visible sales show 0 payments and $0.00 last week, plus 1 payments and $14.99 so far this week; this excludes Apple App Store and Google Play purchases.",
     "Top watched titles in GA4 this week include Electric Now (ElectricNOW), Everyone Wanted to Be On This Ship (The Ark), ElectricNOW en Espa\u00f1ol, Get Out and Push (The Ark), and Finding Mabuhay (Almost Paradise).",
     "The most watched Live channels generated 4.6K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, Stoner TV Network, Daily Flash, and Horror Asylum.",
     "GA4 and Stripe should still be reconciled with Apple App Store, Google Play, Amagi, ad-server, YouTube, and Meta reporting before making final business decisions."
