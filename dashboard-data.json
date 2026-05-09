@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08 08:12 PDT",
+  "generatedAt": "2026-05-08 21:14 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -2650,7 +2650,7 @@
       "totalEngagementHours": 3652.995,
       "avgEngagedMinutesPerUser": 25.072031571722718,
       "avgEngagedMinutesPerSession": 16.417955056179775,
-      "ga4AverageSessionMinutes": 22.769179101851424,
+      "ga4AverageSessionMinutes": 22.769179101851435,
       "platformBreakout": [
         {
           "platform": "web",
@@ -2659,7 +2659,7 @@
           "engagedSessions": 5221,
           "avgEngagedMinutesPerUser": 16.21484193563676,
           "avgEngagedMinutesPerSession": 11.368655501279367,
-          "ga4AverageSessionMinutes": 13.258718967379442
+          "ga4AverageSessionMinutes": 13.258718967379458
         },
         {
           "platform": "iOS",
@@ -2692,7 +2692,7 @@
       "totalEngagementHours": 4680.391111111111,
       "avgEngagedMinutesPerUser": 24.614205159669268,
       "avgEngagedMinutesPerSession": 16.333593128986603,
-      "ga4AverageSessionMinutes": 25.290401194827357,
+      "ga4AverageSessionMinutes": 25.290401194827346,
       "platformBreakout": [
         {
           "platform": "web",
@@ -2701,7 +2701,7 @@
           "engagedSessions": 7889,
           "avgEngagedMinutesPerUser": 15.796220130901203,
           "avgEngagedMinutesPerSession": 11.16057024024517,
-          "ga4AverageSessionMinutes": 13.438619669537024
+          "ga4AverageSessionMinutes": 13.438619669537017
         },
         {
           "platform": "iOS",
