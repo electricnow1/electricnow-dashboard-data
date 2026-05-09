@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08 21:18 PDT",
+  "generatedAt": "2026-05-08 21:32 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -201,7 +201,7 @@
     },
     {
       "key": "appActiveUsers",
-      "label": "Mobile app active users",
+      "label": "App stream active users",
       "baseline": 1547,
       "launchBaseline": 1547,
       "previousWeek": 2531,
@@ -211,11 +211,11 @@
       "deltaVsPreviousPct": 24.891347293559857,
       "deltaType": "percent",
       "format": "number",
-      "context": "People using the iOS or Android mobile app streams."
+      "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream."
     },
     {
       "key": "appSessions",
-      "label": "Mobile app sessions",
+      "label": "App stream sessions",
       "baseline": 2889,
       "launchBaseline": 2889,
       "previousWeek": 4488,
@@ -225,11 +225,11 @@
       "deltaVsPreviousPct": 20.989304812834224,
       "deltaType": "percent",
       "format": "number",
-      "context": "GA4 sessions on the iOS and Android mobile app streams."
+      "context": "GA4 sessions on the Apple/iOS and Android app streams."
     },
     {
       "key": "appEngagementRate",
-      "label": "Mobile app engagement rate",
+      "label": "App stream engagement rate",
       "baseline": 80.96227068189685,
       "launchBaseline": 80.96227068189685,
       "previousWeek": 85.5392156862745,
@@ -239,7 +239,7 @@
       "deltaVsPreviousPct": -1.4508178962192488,
       "deltaType": "points",
       "format": "percent",
-      "context": "Engaged mobile-app sessions divided by mobile-app sessions."
+      "context": "Engaged app-stream sessions divided by app-stream sessions."
     },
     {
       "key": "viewingEventUsers",
@@ -1130,48 +1130,78 @@
   "platformMix": {
     "period": "Apr 27-May 3, 2026",
     "metric": "Active users",
-    "totalViewers": 9329,
-    "note": "Viewer share uses GA4 active users grouped from stream and device data. People who use more than one platform may appear in more than one bucket. Amazon/Fire TV is inferred from Amazon AFT smart-TV device models until the developer confirms a cleaner Fire TV label.",
+    "totalViewers": 8086,
+    "note": "Viewer share uses GA4 active users grouped by stream and device data where available. People who use more than one platform may appear in more than one bucket. Apple TV is not separately broken out yet; Amazon/Fire TV is inferred from Amazon AFT smart-TV device models until the developer confirms a cleaner Fire TV label.",
     "groups": [
       {
         "platform": "Web",
-        "activeUsers": 4703,
-        "sharePct": 50.4,
-        "sessions": 8296,
-        "engagedSessions": 5715,
-        "detail": "Browser and web playback across mobile, desktop, and tablet."
+        "category": "Web",
+        "tracked": true,
+        "activeUsers": 3459,
+        "sharePct": 42.8,
+        "sessions": 4579,
+        "engagedSessions": 2761,
+        "detail": "Browser and web playback from the electricnow-web GA4 stream."
       },
       {
-        "platform": "iOS app",
+        "platform": "Apple app stream",
+        "category": "App",
+        "tracked": true,
         "activeUsers": 1567,
-        "sharePct": 16.8,
+        "sharePct": 19.4,
         "sessions": 2679,
         "engagedSessions": 2323,
-        "detail": "ElectricNOW iPhone, iPad, and Apple TV app activity."
+        "detail": "iPhone and iPad app activity; Apple TV may also be included here until it is tagged separately."
       },
       {
-        "platform": "Google Play / Android",
-        "activeUsers": 1700,
-        "sharePct": 18.2,
-        "sessions": 2986,
-        "engagedSessions": 2393,
-        "detail": "Android mobile plus Android/Google TV, excluding likely Amazon Fire TV."
+        "platform": "Android mobile app",
+        "category": "App",
+        "tracked": true,
+        "activeUsers": 1594,
+        "sharePct": 19.7,
+        "sessions": 2665,
+        "engagedSessions": 2162,
+        "detail": "Android phone/tablet activity from the ElectricNOW Android GA4 stream."
       },
       {
         "platform": "Roku",
+        "category": "Connected TV",
+        "tracked": true,
         "activeUsers": 1244,
-        "sharePct": 13.3,
+        "sharePct": 15.4,
         "sessions": 3643,
         "engagedSessions": 2859,
-        "detail": "GA4 stream electricnow-roku."
+        "detail": "Roku activity from the electricnow-roku GA4 stream."
       },
       {
         "platform": "Amazon / Fire TV",
+        "category": "Connected TV",
+        "tracked": true,
         "activeUsers": 115,
-        "sharePct": 1.2,
+        "sharePct": 1.4,
         "sessions": 256,
         "engagedSessions": 236,
-        "detail": "Likely Fire TV devices identified by Amazon AFT smart-TV model codes."
+        "detail": "Likely Fire TV activity inferred from Amazon AFT smart-TV model codes."
+      },
+      {
+        "platform": "Android TV / Google TV",
+        "category": "Connected TV",
+        "tracked": true,
+        "activeUsers": 107,
+        "sharePct": 1.3,
+        "sessions": 254,
+        "engagedSessions": 233,
+        "detail": "Android TV / Google TV stream activity, excluding likely Fire TV devices where GA4 exposes Amazon AFT models."
+      },
+      {
+        "platform": "Apple TV",
+        "category": "Connected TV",
+        "tracked": false,
+        "activeUsers": null,
+        "sharePct": null,
+        "sessions": null,
+        "engagedSessions": null,
+        "detail": "Not separately broken out yet. It is likely inside the Apple app stream until the developer sends a distinct Apple TV platform or stream."
       }
     ],
     "comingSoon": [
@@ -1468,7 +1498,7 @@
   "plainEnglishInsights": [
     "Measured ElectricNOW platform audience was 7.3K GA4 active users excluding landing-page acquisition paths, down 36.4% from the previous week.",
     "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 8.1K, down 36.8% from the previous week; landing-page users were down 40.5%.",
-    "Measured mobile app usage improved: 3.2K iOS/Android mobile app active users this week, up 104.3% from launch baseline and up 24.9% from the previous week.",
+    "Measured Apple/Android app-stream usage improved: 3.2K active users this week, up 104.3% from launch baseline and up 24.9% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
     "Viewing also improved: 1.5K app users watched on-demand or Live content, up 109.9% from launch baseline and up 27.6% from the previous week.",
     "Roughly 48.5% of app users watched something, compared with 47.2% during launch week and 47.5% the prior week, so the viewing conversion rate is steady while the audience is growing.",
     "On-demand is carrying most of the viewing growth with 1.5K starter users; Live remains meaningful at 59 viewers, up 28.3% from launch baseline and down 10.6% from the previous week.",
@@ -2983,13 +3013,13 @@
       ]
     },
     {
-      "title": "Mobile App Usage",
-      "eyebrow": "Who used the iOS and Android mobile app streams",
-      "definition": "GA4 iOS and Android mobile app streams only: stream IDs 12950551103 and 12982344897. Excludes web, Roku, Android TV, Samsung/Tizen, and LG/webOS unless separately stated.",
+      "title": "Apple and Android App Stream Usage",
+      "eyebrow": "Who used the Apple/iOS and Android app streams",
+      "definition": "GA4 Apple/iOS and Android app streams only: stream IDs 12950551103 and 12982344897. The Apple/iOS stream may include iPhone, iPad, and Apple TV until Apple TV is separated by the app developer. Excludes web, Roku, Android TV, Samsung/Tizen, and LG/webOS unless separately stated.",
       "cards": [
         {
           "key": "appActiveUsers",
-          "label": "Mobile app active users",
+          "label": "App stream active users",
           "baseline": 1547,
           "launchBaseline": 1547,
           "previousWeek": 2531,
@@ -2999,11 +3029,11 @@
           "deltaVsPreviousPct": 24.891347293559857,
           "deltaType": "percent",
           "format": "number",
-          "context": "People using the iOS or Android mobile app streams."
+          "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream."
         },
         {
           "key": "appSessions",
-          "label": "Mobile app sessions",
+          "label": "App stream sessions",
           "baseline": 2889,
           "launchBaseline": 2889,
           "previousWeek": 4488,
@@ -3013,11 +3043,11 @@
           "deltaVsPreviousPct": 20.989304812834224,
           "deltaType": "percent",
           "format": "number",
-          "context": "GA4 sessions on the iOS and Android mobile app streams."
+          "context": "GA4 sessions on the Apple/iOS and Android app streams."
         },
         {
           "key": "appEngagementRate",
-          "label": "Mobile app engagement rate",
+          "label": "App stream engagement rate",
           "baseline": 80.96227068189685,
           "launchBaseline": 80.96227068189685,
           "previousWeek": 85.5392156862745,
@@ -3027,7 +3057,7 @@
           "deltaVsPreviousPct": -1.4508178962192488,
           "deltaType": "points",
           "format": "percent",
-          "context": "Engaged mobile-app sessions divided by mobile-app sessions."
+          "context": "Engaged app-stream sessions divided by app-stream sessions."
         }
       ]
     },
@@ -3203,7 +3233,7 @@
           "avgEngagedMinutesPerSession": 29.30181200453001
         },
         {
-          "surface": "iOS mobile app",
+          "surface": "iOS / Apple app stream",
           "streamName": "ElectricNow",
           "streamId": "12982344897",
           "platform": "iOS",
@@ -3274,7 +3304,7 @@
           "avgEngagedMinutesPerSession": 1.8942232748773769
         },
         {
-          "surface": "iOS mobile app",
+          "surface": "iOS / Apple app stream",
           "streamName": "ElectricNow",
           "streamId": "12982344897",
           "platform": "iOS",
@@ -3384,7 +3414,7 @@
           "avgEngagedMinutesPerSession": 5.462020012507818
         },
         {
-          "surface": "iOS mobile app",
+          "surface": "iOS / Apple app stream",
           "streamName": "ElectricNow",
           "streamId": "12982344897",
           "platform": "iOS",
