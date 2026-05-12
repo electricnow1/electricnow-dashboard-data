@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11 15:05 PDT",
+  "generatedAt": "2026-05-12 12:04 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -66,23 +66,23 @@
       "purchaseRevenue": 0.0
     },
     "currentWeek": {
-      "activeUsers": 4656.0,
-      "newUsers": 3015.0,
-      "sessions": 9951.0,
+      "activeUsers": 4659.0,
+      "newUsers": 3016.0,
+      "sessions": 9934.0,
       "engagedSessions": 8242.0,
-      "engagementRate": 82.82584664857802,
-      "screenPageViews": 28637.0,
-      "eventCount": 910345.0,
+      "engagementRate": 82.96758606804913,
+      "screenPageViews": 28641.0,
+      "eventCount": 910416.0,
       "purchaseRevenue": 0.0
     },
     "weekToDate": {
-      "activeUsers": 4656.0,
-      "newUsers": 3015.0,
-      "sessions": 9951.0,
+      "activeUsers": 4659.0,
+      "newUsers": 3016.0,
+      "sessions": 9934.0,
       "engagedSessions": 8242.0,
-      "engagementRate": 82.82584664857802,
-      "screenPageViews": 28637.0,
-      "eventCount": 910345.0,
+      "engagementRate": 82.96758606804913,
+      "screenPageViews": 28641.0,
+      "eventCount": 910416.0,
       "purchaseRevenue": 0.0
     }
   },
@@ -93,10 +93,10 @@
       "baseline": 8709,
       "launchBaseline": 8709,
       "previousWeek": 7298,
-      "current": 4619,
-      "deltaPct": -36.70868731159222,
-      "deltaVsLaunchPct": -46.96291193018716,
-      "deltaVsPreviousPct": -36.70868731159222,
+      "current": 4622,
+      "deltaPct": -36.66758015894766,
+      "deltaVsLaunchPct": -46.928464806521994,
+      "deltaVsPreviousPct": -36.66758015894766,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 active users excluding landing-page acquisition paths."
@@ -107,10 +107,10 @@
       "baseline": 13316,
       "launchBaseline": 13316,
       "previousWeek": 13008,
-      "current": 9891,
-      "deltaPct": -23.962177121771216,
-      "deltaVsLaunchPct": -25.7209372183839,
-      "deltaVsPreviousPct": -23.962177121771216,
+      "current": 9869,
+      "deltaPct": -24.13130381303813,
+      "deltaVsLaunchPct": -25.886151997596873,
+      "deltaVsPreviousPct": -24.13130381303813,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -135,10 +135,10 @@
       "baseline": 3652.995,
       "launchBaseline": 3652.995,
       "previousWeek": 4798.652777777777,
-      "current": 4520.885555555556,
-      "deltaPct": -5.788441779087293,
-      "deltaVsLaunchPct": 23.758328592170415,
-      "deltaVsPreviousPct": -5.788441779087293,
+      "current": 4522.016944444445,
+      "deltaPct": -5.764864559786735,
+      "deltaVsLaunchPct": 23.789300134395056,
+      "deltaVsPreviousPct": -5.764864559786735,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -149,10 +149,10 @@
       "baseline": 25.072031571722718,
       "launchBaseline": 25.072031571722718,
       "previousWeek": 39.505922978411995,
-      "current": 58.71279942279942,
-      "deltaPct": 19.206876444387426,
-      "deltaVsLaunchPct": 33.6407678510767,
-      "deltaVsPreviousPct": 19.206876444387426,
+      "current": 58.689382796164104,
+      "deltaPct": 19.18345981775211,
+      "deltaVsLaunchPct": 33.617351224441386,
+      "deltaVsPreviousPct": 19.18345981775211,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
@@ -205,10 +205,10 @@
       "baseline": 1547,
       "launchBaseline": 1547,
       "previousWeek": 3161,
-      "current": 2602,
-      "deltaPct": -17.6842771274913,
-      "deltaVsLaunchPct": 68.19650937297996,
-      "deltaVsPreviousPct": -17.6842771274913,
+      "current": 2605,
+      "deltaPct": -17.589370452388483,
+      "deltaVsLaunchPct": 68.39043309631545,
+      "deltaVsPreviousPct": -17.589370452388483,
       "deltaType": "percent",
       "format": "number",
       "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream."
@@ -219,10 +219,10 @@
       "baseline": 2889,
       "launchBaseline": 2889,
       "previousWeek": 5430,
-      "current": 4579,
-      "deltaPct": -15.67219152854512,
-      "deltaVsLaunchPct": 58.49775008653514,
-      "deltaVsPreviousPct": -15.67219152854512,
+      "current": 4550,
+      "deltaPct": -16.206261510128915,
+      "deltaVsLaunchPct": 57.49394254067152,
+      "deltaVsPreviousPct": -16.206261510128915,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions on the Apple/iOS and Android app streams."
@@ -233,10 +233,10 @@
       "baseline": 80.96227068189685,
       "launchBaseline": 80.96227068189685,
       "previousWeek": 84.08839779005525,
-      "current": 81.371478488753,
-      "deltaPct": -2.716919301302255,
-      "deltaVsLaunchPct": 0.4092078068561449,
-      "deltaVsPreviousPct": -2.716919301302255,
+      "current": 81.86813186813187,
+      "deltaPct": -2.220265921923385,
+      "deltaVsLaunchPct": 0.9058611862350148,
+      "deltaVsPreviousPct": -2.220265921923385,
       "deltaType": "points",
       "format": "percent",
       "context": "Engaged app-stream sessions divided by app-stream sessions."
@@ -303,10 +303,10 @@
       "baseline": 3952,
       "launchBaseline": 3952,
       "previousWeek": 4594,
-      "current": 3988,
-      "deltaPct": -13.191118850674794,
-      "deltaVsLaunchPct": 0.9109311740890688,
-      "deltaVsPreviousPct": -13.191118850674794,
+      "current": 3991,
+      "deltaPct": -13.125816282107097,
+      "deltaVsLaunchPct": 0.9868421052631579,
+      "deltaVsPreviousPct": -13.125816282107097,
       "deltaType": "percent",
       "format": "number",
       "context": "Total Live play events, not unique users."
@@ -317,10 +317,10 @@
       "baseline": 10589,
       "launchBaseline": 10589,
       "previousWeek": 29282,
-      "current": 25140,
-      "deltaPct": -14.145208660610614,
-      "deltaVsLaunchPct": 137.41618660874494,
-      "deltaVsPreviousPct": -14.145208660610614,
+      "current": 25143,
+      "deltaPct": -14.13496345878014,
+      "deltaVsLaunchPct": 137.44451789592972,
+      "deltaVsPreviousPct": -14.13496345878014,
       "deltaType": "percent",
       "format": "number",
       "context": "Total ad request events generated by viewing activity."
@@ -331,10 +331,10 @@
       "baseline": 25.072031571722718,
       "launchBaseline": 25.072031571722718,
       "previousWeek": 39.505922978411995,
-      "current": 58.71279942279942,
-      "deltaPct": 19.206876444387426,
-      "deltaVsLaunchPct": 33.6407678510767,
-      "deltaVsPreviousPct": 19.206876444387426,
+      "current": 58.689382796164104,
+      "deltaPct": 19.18345981775211,
+      "deltaVsLaunchPct": 33.617351224441386,
+      "deltaVsPreviousPct": 19.18345981775211,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users."
@@ -345,10 +345,10 @@
       "baseline": 16.417955056179775,
       "launchBaseline": 16.417955056179775,
       "previousWeek": 21.792246947219702,
-      "current": 27.311028325949792,
-      "deltaPct": 5.51878137873009,
-      "deltaVsLaunchPct": 10.893073269770017,
-      "deltaVsPreviousPct": 5.51878137873009,
+      "current": 27.29862326860516,
+      "deltaPct": 5.506376321385456,
+      "deltaVsLaunchPct": 10.880668212425384,
+      "deltaVsPreviousPct": 5.506376321385456,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by sessions."
@@ -359,10 +359,10 @@
       "baseline": 3652.995,
       "launchBaseline": 3652.995,
       "previousWeek": 4798.652777777777,
-      "current": 4520.885555555556,
-      "deltaPct": -5.788441779087293,
-      "deltaVsLaunchPct": 23.758328592170415,
-      "deltaVsPreviousPct": -5.788441779087293,
+      "current": 4522.016944444445,
+      "deltaPct": -5.764864559786735,
+      "deltaVsLaunchPct": 23.789300134395056,
+      "deltaVsPreviousPct": -5.764864559786735,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -649,33 +649,33 @@
       "rawDate": "20260508",
       "activeUsers": 493,
       "newUsers": 228,
-      "sessions": 661,
-      "engagedSessions": 541,
+      "sessions": 659,
+      "engagedSessions": 539,
       "screenPageViews": 104,
-      "eventCount": 17935,
-      "engagementRate": 81.84568835098335
+      "eventCount": 17938,
+      "engagementRate": 81.79059180576631
     },
     {
       "date": "May 9",
       "rawDate": "20260509",
-      "activeUsers": 469,
+      "activeUsers": 470,
       "newUsers": 218,
-      "sessions": 622,
+      "sessions": 624,
       "engagedSessions": 521,
       "screenPageViews": 103,
-      "eventCount": 16410,
-      "engagementRate": 83.7620578778135
+      "eventCount": 16418,
+      "engagementRate": 83.49358974358975
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
-      "activeUsers": 532,
-      "newUsers": 262,
-      "sessions": 758,
-      "engagedSessions": 615,
+      "activeUsers": 534,
+      "newUsers": 263,
+      "sessions": 742,
+      "engagedSessions": 612,
       "screenPageViews": 141,
-      "eventCount": 21727,
-      "engagementRate": 81.13456464379946
+      "eventCount": 21752,
+      "engagementRate": 82.47978436657682
     }
   ],
   "eventCards": [
@@ -692,45 +692,45 @@
       "event": "application_install",
       "label": "Application installs",
       "baseline": 3686,
-      "current": 2626,
-      "weekToDate": 2626,
-      "deltaPct": -28.757460661964192,
-      "activeUsersCurrent": 2368
+      "current": 2628,
+      "weekToDate": 2628,
+      "deltaPct": -28.703201302224635,
+      "activeUsersCurrent": 2370
     },
     {
       "event": "first_open",
       "label": "First opens",
       "baseline": 2522,
-      "current": 1732,
-      "weekToDate": 1732,
-      "deltaPct": -31.324345757335447,
-      "activeUsersCurrent": 1732
+      "current": 1733,
+      "weekToDate": 1733,
+      "deltaPct": -31.28469468675654,
+      "activeUsersCurrent": 1733
     },
     {
       "event": "app_open",
       "label": "App opens",
       "baseline": 1737,
-      "current": 1467,
-      "weekToDate": 1467,
-      "deltaPct": -15.544041450777202,
+      "current": 1469,
+      "weekToDate": 1469,
+      "deltaPct": -15.428900402993667,
       "activeUsersCurrent": 318
     },
     {
       "event": "play",
       "label": "Plays",
       "baseline": 46718,
-      "current": 45696,
-      "weekToDate": 45696,
-      "deltaPct": -2.187593646988313,
+      "current": 45704,
+      "weekToDate": 45704,
+      "deltaPct": -2.1704696262682477,
       "activeUsersCurrent": 1552
     },
     {
       "event": "video_start",
       "label": "Video starts",
       "baseline": 19859,
-      "current": 18514,
-      "weekToDate": 18514,
-      "deltaPct": -6.772747872501133,
+      "current": 18517,
+      "weekToDate": 18517,
+      "deltaPct": -6.7576413716702755,
       "activeUsersCurrent": 1525
     },
     {
@@ -755,18 +755,18 @@
       "event": "ads_request",
       "label": "Ad requests",
       "baseline": 29282,
-      "current": 25140,
-      "weekToDate": 25140,
-      "deltaPct": -14.145208660610614,
+      "current": 25143,
+      "weekToDate": 25143,
+      "deltaPct": -14.13496345878014,
       "activeUsersCurrent": 510
     },
     {
       "event": "ads_impression",
       "label": "Ad impressions",
       "baseline": 50777,
-      "current": 43068,
-      "weekToDate": 43068,
-      "deltaPct": -15.182070622525949,
+      "current": 43071,
+      "weekToDate": 43071,
+      "deltaPct": -15.17616243574847,
       "activeUsersCurrent": 490
     },
     {
@@ -809,27 +809,27 @@
       "event": "ad_complete",
       "label": "Ad complete",
       "baseline": 17578,
-      "current": 15569,
-      "weekToDate": 15569,
-      "deltaPct": -11.429059051086586,
+      "current": 15571,
+      "weekToDate": 15571,
+      "deltaPct": -11.417681192399591,
       "activeUsersCurrent": 382
     },
     {
       "event": "vmap_ad_request",
       "label": "VMAP ad request",
       "baseline": 5884,
-      "current": 2591,
-      "weekToDate": 2591,
-      "deltaPct": -55.96532970768185,
+      "current": 2592,
+      "weekToDate": 2592,
+      "deltaPct": -55.94833446634942,
       "activeUsersCurrent": 577
     },
     {
       "event": "vmap_ad_loaded",
       "label": "VMAP ad loaded",
       "baseline": 21875,
-      "current": 13205,
-      "weekToDate": 13205,
-      "deltaPct": -39.63428571428572,
+      "current": 13209,
+      "weekToDate": 13209,
+      "deltaPct": -39.616,
       "activeUsersCurrent": 519
     },
     {
@@ -851,7 +851,7 @@
       "weekToDate": 0,
       "deltaPct": -100.0,
       "tracked": true,
-      "note": "Launch baseline: 4 purchases / $54.96"
+      "note": "Launch baseline: 9 purchases / $129.91"
     },
     {
       "event": "go_ad_free_click",
@@ -1186,21 +1186,21 @@
       "rawDate": "20260509",
       "purchaseRevenue": 0,
       "in_app_purchase": 0,
-      "application_install": 369,
+      "application_install": 370,
       "first_open": 222,
-      "app_open": 258,
-      "play": 6268,
-      "ads_impression": 5506
+      "app_open": 259,
+      "play": 6274,
+      "ads_impression": 5509
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
       "purchaseRevenue": 0,
       "in_app_purchase": 0,
-      "application_install": 382,
-      "first_open": 263,
-      "app_open": 220,
-      "play": 6364,
+      "application_install": 383,
+      "first_open": 264,
+      "app_open": 221,
+      "play": 6366,
       "ads_impression": 5117
     }
   ],
@@ -1246,14 +1246,14 @@
         "platform": "iOS",
         "activeUsers": 1293,
         "newUsers": 779,
-        "sessions": 2345,
-        "engagedSessions": 2000,
+        "sessions": 2326,
+        "engagedSessions": 1992,
         "screenPageViews": 683,
-        "eventCount": 74123,
-        "engagementRate": 85.28784648187633
+        "eventCount": 74146,
+        "engagementRate": 85.64058469475493
       },
       "activeUsersDeltaPct": -17.485641352903638,
-      "engagementRateCurrent": 85.28784648187633
+      "engagementRateCurrent": 85.64058469475493
     },
     {
       "platform": "Android",
@@ -1269,22 +1269,22 @@
       },
       "current": {
         "platform": "Android",
-        "activeUsers": 1453,
-        "newUsers": 953,
-        "sessions": 2599,
-        "engagedSessions": 2092,
-        "screenPageViews": 1613,
-        "eventCount": 88626,
-        "engagementRate": 80.49249711427471
+        "activeUsers": 1456,
+        "newUsers": 954,
+        "sessions": 2597,
+        "engagedSessions": 2091,
+        "screenPageViews": 1617,
+        "eventCount": 88674,
+        "engagementRate": 80.51597997689642
       },
-      "activeUsersDeltaPct": -19.94490358126722,
-      "engagementRateCurrent": 80.49249711427471
+      "activeUsersDeltaPct": -19.77961432506887,
+      "engagementRateCurrent": 80.51597997689642
     }
   ],
   "platformMix": {
     "period": "May 4-May 10, 2026",
     "metric": "Active users",
-    "totalViewers": 4657,
+    "totalViewers": 4660,
     "note": "Viewer share uses GA4 active users grouped by stream and device data where available. People who use more than one platform may appear in more than one bucket. Apple TV is not separately broken out yet; Amazon/Fire TV is inferred from Amazon AFT smart-TV device models until the developer confirms a cleaner Fire TV label.",
     "groups": [
       {
@@ -1302,19 +1302,19 @@
         "category": "App",
         "tracked": true,
         "activeUsers": 1293,
-        "sharePct": 27.8,
-        "sessions": 2345,
-        "engagedSessions": 2000,
+        "sharePct": 27.7,
+        "sessions": 2353,
+        "engagedSessions": 2003,
         "detail": "iPhone and iPad app activity; Apple TV may also be included here until it is tagged separately."
       },
       {
         "platform": "Android mobile app",
         "category": "App",
         "tracked": true,
-        "activeUsers": 1309,
-        "sharePct": 28.1,
-        "sessions": 2247,
-        "engagedSessions": 1772,
+        "activeUsers": 1312,
+        "sharePct": 28.2,
+        "sessions": 2249,
+        "engagedSessions": 1775,
         "detail": "Android phone/tablet activity from the ElectricNOW Android GA4 stream."
       },
       {
@@ -1333,8 +1333,8 @@
         "tracked": true,
         "activeUsers": 77,
         "sharePct": 1.7,
-        "sessions": 181,
-        "engagedSessions": 165,
+        "sessions": 179,
+        "engagedSessions": 163,
         "detail": "Likely Fire TV activity inferred from Amazon AFT smart-TV model codes."
       },
       {
@@ -1343,8 +1343,8 @@
         "tracked": true,
         "activeUsers": 67,
         "sharePct": 1.4,
-        "sessions": 168,
-        "engagedSessions": 153,
+        "sessions": 166,
+        "engagedSessions": 151,
         "detail": "Android TV / Google TV stream activity, excluding likely Fire TV devices where GA4 exposes Amazon AFT models."
       },
       {
@@ -1367,12 +1367,12 @@
   "acquisition": [
     {
       "sourceMedium": "(direct) / (none)",
-      "activeUsers": 2416,
-      "newUsers": 1523,
-      "sessions": 4373,
-      "engagedSessions": 3677,
-      "eventCount": 151720,
-      "engagementRate": 84.08415275554539
+      "activeUsers": 2419,
+      "newUsers": 1524,
+      "sessions": 4344,
+      "engagedSessions": 3668,
+      "eventCount": 151789,
+      "engagementRate": 84.43830570902394
     },
     {
       "sourceMedium": "apps.facebook.com / (not set)",
@@ -1403,12 +1403,12 @@
     },
     {
       "sourceMedium": "google-play / organic",
-      "activeUsers": 167,
+      "activeUsers": 168,
       "newUsers": 113,
       "sessions": 281,
-      "engagedSessions": 244,
-      "eventCount": 12341,
-      "engagementRate": 86.83274021352312
+      "engagedSessions": 245,
+      "eventCount": 12343,
+      "engagementRate": 87.18861209964413
     },
     {
       "sourceMedium": "apps.instagram.com / (not set)",
@@ -1421,11 +1421,11 @@
     },
     {
       "sourceMedium": "(not set)",
-      "activeUsers": 98,
+      "activeUsers": 99,
       "newUsers": 16,
-      "sessions": 174,
+      "sessions": 172,
       "engagedSessions": 0,
-      "eventCount": 44378,
+      "eventCount": 44377,
       "engagementRate": 0.0
     },
     {
@@ -1478,16 +1478,16 @@
     {
       "path": "(not set)",
       "screen": "(not set)",
-      "activeUsers": 3827,
+      "activeUsers": 3832,
       "views": 3383,
-      "eventCount": 795881
+      "eventCount": 796020
     },
     {
       "path": "(not set)",
       "screen": "Splash",
       "activeUsers": 1302,
-      "views": 3820,
-      "eventCount": 4560
+      "views": 3821,
+      "eventCount": 4562
     },
     {
       "path": "(not set)",
@@ -1501,7 +1501,7 @@
       "screen": "On Demand",
       "activeUsers": 786,
       "views": 3298,
-      "eventCount": 3690
+      "eventCount": 3691
     },
     {
       "path": "/landing",
@@ -1521,8 +1521,8 @@
       "path": "(not set)",
       "screen": "PDP",
       "activeUsers": 333,
-      "views": 3027,
-      "eventCount": 3288
+      "views": 3028,
+      "eventCount": 3289
     },
     {
       "path": "/live-tv",
@@ -1542,8 +1542,8 @@
       "path": "(not set)",
       "screen": "Live",
       "activeUsers": 110,
-      "views": 1966,
-      "eventCount": 20585
+      "views": 1967,
+      "eventCount": 20630
     },
     {
       "path": "/english",
@@ -1556,8 +1556,8 @@
       "path": "(not set)",
       "screen": "Player",
       "activeUsers": 71,
-      "views": 2583,
-      "eventCount": 23827
+      "views": 2584,
+      "eventCount": 23848
     },
     {
       "path": "(not set)",
@@ -1626,40 +1626,40 @@
     },
     "current": {
       "activeUsers": 381,
-      "sessions": 1810,
-      "engagedSessions": 1693,
-      "screenPageViews": 3473,
-      "eventCount": 47292
+      "sessions": 1803,
+      "engagedSessions": 1688,
+      "screenPageViews": 3474,
+      "eventCount": 47307
     },
     "deltas": {
       "activeUsers": -63.5755258126195,
-      "sessions": -26.302931596091206,
-      "engagedSessions": -28.293096145700975,
-      "screenPageViews": -25.03777250161882,
-      "eventCount": -5.725221274220557
+      "sessions": -26.587947882736156,
+      "engagedSessions": -28.504870817450232,
+      "screenPageViews": -25.016188214979497,
+      "eventCount": -5.695319352523722
     },
     "engagementRateBaseline": 96.13192182410424,
-    "engagementRateCurrent": 93.53591160220994,
+    "engagementRateCurrent": 93.62174154187464,
     "weekToDate": {
       "activeUsers": 381,
-      "sessions": 1810,
-      "engagedSessions": 1693,
-      "screenPageViews": 3473,
-      "eventCount": 47292
+      "sessions": 1803,
+      "engagedSessions": 1688,
+      "screenPageViews": 3474,
+      "eventCount": 47307
     },
-    "engagementRateWeekToDate": 93.53591160220994
+    "engagementRateWeekToDate": 93.62174154187464
   },
   "plainEnglishInsights": [
     "Measured ElectricNOW platform audience was 4.6K GA4 active users excluding landing-page acquisition paths, down 36.7% from the previous week.",
     "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 4.7K, down 42.6% from the previous week; landing-page users were down 77.6%.",
-    "Measured Apple/Android app-stream usage improved: 2.6K active users this week, up 68.2% from launch baseline and down 17.7% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
+    "Measured Apple/Android app-stream usage improved: 2.6K active users this week, up 68.4% from launch baseline and down 17.6% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
     "Viewing also improved: 1.2K app users watched on-demand or Live content, up 60.5% from launch baseline and down 23.5% from the previous week.",
     "Roughly 45.0% of app users watched something, compared with 47.2% during launch week and 48.5% the prior week, so the viewing conversion rate is steady while the audience is growing.",
     "On-demand is carrying most of the viewing growth with 1.1K starter users; Live remains meaningful at 34 viewers, down 26.1% from launch baseline and down 42.4% from the previous week.",
     "Actual viewing behavior is measured separately: 1.5K users triggered a viewing event, down 25.6% from the previous week; video-complete users were down 14.6%.",
     "Average time on platform is 58.7 engaged minutes per active user across all GA4-tracked platforms, up 33.6 minutes from launch week and up 19.2 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
-    "Stripe-visible sales show 1 payments and $14.99 last week, plus 0 payments and $0.00 so far this week; this excludes Apple App Store and Google Play purchases.",
+    "Visible platform sales now combine Stripe and Roku: 2 purchases and $29.98 last week, plus 0 purchases and $0.00 so far this week; this still excludes Apple App Store and Google Play purchases.",
     "Top watched programs in GA4 this week include ElectricNOW, Leverage, The Ark, Almost Paradise, and Leverage: Redemption.",
     "The most watched Live channels generated 4.0K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, Daily Flash, Kung Fu Movies, and AMPD TV.",
     "GA4 and Stripe should still be reconciled with Apple App Store, Google Play, Amagi, ad-server, YouTube, and Meta reporting before making final business decisions."
@@ -1672,170 +1672,1179 @@
     "Live TV should be reconciled with Amagi and ad-server reporting."
   ],
   "salesSummary": {
-    "sourceLabel": "Stripe-visible payments",
-    "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account only. It is not total ElectricNOW sales because Apple App Store and Google Play purchases are handled separately.",
-    "baselineWindow": {
-      "label": "Stripe launch baseline",
-      "range": "Apr 13-Apr 19, 2026",
-      "purchases": 4,
-      "purchaseRevenue": 54.96,
-      "revenuePerPurchase": 13.74,
-      "deltaPurchasesPct": null,
-      "deltaRevenuePct": null,
-      "detail": "Stripe shows 4 visible payments totaling $54.96 during the prior complete week."
-    },
-    "yearToDate": {
-      "label": "Sales this year",
-      "range": "Jan 1-May 11, 2026",
-      "purchases": 11,
-      "purchaseRevenue": 159.89,
-      "revenuePerPurchase": 14.54,
-      "deltaPurchasesPct": null,
-      "deltaRevenuePct": null,
-      "payments": [
+    "sourceLabel": "Visible platform sales",
+    "sourceDetail": "This combines Stripe-visible payments and Roku-visible sales from the latest Roku email report. It is still not total ElectricNOW sales because Apple App Store and Google Play purchases are handled separately.",
+    "stripe": {
+      "sourceLabel": "Stripe-visible payments",
+      "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account only. It is not total ElectricNOW sales because Apple App Store and Google Play purchases are handled separately.",
+      "baselineWindow": {
+        "label": "Stripe launch baseline",
+        "range": "Apr 13-Apr 19, 2026",
+        "purchases": 4,
+        "purchaseRevenue": 54.96,
+        "revenuePerPurchase": 13.74,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "detail": "Stripe shows 4 visible payments totaling $54.96 during the prior complete week."
+      },
+      "yearToDate": {
+        "label": "Sales this year",
+        "range": "Jan 1-May 12, 2026",
+        "purchases": 11,
+        "purchaseRevenue": 159.89,
+        "revenuePerPurchase": 14.54,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": [
+          {
+            "date": "May 6",
+            "createdAt": "2026-05-06 01:02 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 26",
+            "createdAt": "2026-04-26 20:13 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 24",
+            "createdAt": "2026-04-24 15:38 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 22",
+            "createdAt": "2026-04-22 09:46 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 22",
+            "createdAt": "2026-04-22 02:25 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 20",
+            "createdAt": "2026-04-20 18:31 PDT",
+            "amount": 14.99,
+            "description": "Anonymous Customer - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 18",
+            "createdAt": "2026-04-18 17:51 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "date": "Apr 16",
+            "createdAt": "2026-04-16 18:58 PDT",
+            "amount": 9.99,
+            "description": "Customer User - Purchase Bundle 10: Signup payment"
+          }
+        ]
+      },
+      "monthToDate": {
+        "label": "Sales this month",
+        "range": "May 1-May 12, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": [
+          {
+            "date": "May 6",
+            "createdAt": "2026-05-06 01:02 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          }
+        ]
+      },
+      "lastWeek": {
+        "label": "Sales last week",
+        "range": "May 4-May 10, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": -75.0,
+        "deltaRevenuePct": -72.72561863173217,
+        "payments": [
+          {
+            "date": "May 6",
+            "createdAt": "2026-05-06 01:02 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          }
+        ]
+      },
+      "thisWeek": {
+        "label": "Sales this week",
+        "range": "May 11-May 12, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": []
+      },
+      "currentCompleteWeek": {
+        "label": "Sales last week",
+        "range": "May 4-May 10, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": -75.0,
+        "deltaRevenuePct": -72.72561863173217,
+        "payments": [
+          {
+            "date": "May 6",
+            "createdAt": "2026-05-06 01:02 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          }
+        ]
+      },
+      "weekToDate": {
+        "label": "Sales this week",
+        "range": "May 11-May 12, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": []
+      },
+      "recent12Days": {
+        "label": "Stripe last 12 days",
+        "range": "May 1-May 12, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": [
+          {
+            "date": "May 6",
+            "createdAt": "2026-05-06 01:02 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          }
+        ]
+      },
+      "lifetimeObserved": {
+        "range": "Through May 12, 2026 pull",
+        "purchases": 11,
+        "purchaseRevenue": 159.89,
+        "revenuePerPurchase": 14.54
+      },
+      "mix": [
         {
+          "label": "Title purchases",
+          "purchases": 10,
+          "purchaseRevenue": 149.9
+        },
+        {
+          "label": "Bundle purchases",
+          "purchases": 1,
+          "purchaseRevenue": 9.99
+        },
+        {
+          "label": "Subscriptions",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        }
+      ],
+      "recentPayments": [
+        {
+          "id": "pi_3TU0PpLG0Cw1zW4e1xA1B4CB",
           "date": "May 6",
           "createdAt": "2026-05-06 01:02 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TQfbqLG0Cw1zW4e0xCVetD1",
           "date": "Apr 26",
           "createdAt": "2026-04-26 20:13 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TPsMQLG0Cw1zW4e1KupKuAF",
           "date": "Apr 24",
           "createdAt": "2026-04-24 15:38 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TP3uxLG0Cw1zW4e0LSedyYu",
           "date": "Apr 22",
           "createdAt": "2026-04-22 09:46 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TOx2ZLG0Cw1zW4e1W7SJZXg",
           "date": "Apr 22",
           "createdAt": "2026-04-22 02:25 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TOTAALG0Cw1zW4e0dIkMbV1",
           "date": "Apr 20",
           "createdAt": "2026-04-20 18:31 PDT",
           "amount": 14.99,
           "description": "Anonymous Customer - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TNjaVLG0Cw1zW4e2up0QKdp",
           "date": "Apr 18",
           "createdAt": "2026-04-18 17:51 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
         },
         {
+          "id": "pi_3TN1fjLG0Cw1zW4e1efwz7Hc",
           "date": "Apr 16",
           "createdAt": "2026-04-16 18:58 PDT",
           "amount": 9.99,
           "description": "Customer User - Purchase Bundle 10: Signup payment"
+        },
+        {
+          "id": "pi_3TMxdiLG0Cw1zW4e0ApnxCmW",
+          "date": "Apr 16",
+          "createdAt": "2026-04-16 14:39 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "id": "pi_3TMxZHLG0Cw1zW4e0RXKnWOb",
+          "date": "Apr 16",
+          "createdAt": "2026-04-16 14:35 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment"
+        },
+        {
+          "id": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
+          "date": "Apr 10",
+          "createdAt": "2026-04-10 21:55 PDT",
+          "amount": 14.99,
+          "description": "pi_3TKta2LG0Cw1zW4e26XmyZs9"
         }
-      ]
+      ],
+      "dailyTrend": [
+        {
+          "date": "Apr 13",
+          "rawDate": "20260413",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 14",
+          "rawDate": "20260414",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 15",
+          "rawDate": "20260415",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 16",
+          "rawDate": "20260416",
+          "purchases": 3,
+          "purchaseRevenue": 39.97
+        },
+        {
+          "date": "Apr 17",
+          "rawDate": "20260417",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 18",
+          "rawDate": "20260418",
+          "purchases": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "date": "Apr 19",
+          "rawDate": "20260419",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 20",
+          "rawDate": "20260420",
+          "purchases": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "date": "Apr 21",
+          "rawDate": "20260421",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 22",
+          "rawDate": "20260422",
+          "purchases": 2,
+          "purchaseRevenue": 29.98
+        },
+        {
+          "date": "Apr 23",
+          "rawDate": "20260423",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 24",
+          "rawDate": "20260424",
+          "purchases": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "date": "Apr 25",
+          "rawDate": "20260425",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 26",
+          "rawDate": "20260426",
+          "purchases": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "date": "Apr 27",
+          "rawDate": "20260427",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 28",
+          "rawDate": "20260428",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 29",
+          "rawDate": "20260429",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "Apr 30",
+          "rawDate": "20260430",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 1",
+          "rawDate": "20260501",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 2",
+          "rawDate": "20260502",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 3",
+          "rawDate": "20260503",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 4",
+          "rawDate": "20260504",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 5",
+          "rawDate": "20260505",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 6",
+          "rawDate": "20260506",
+          "purchases": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "date": "May 7",
+          "rawDate": "20260507",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 8",
+          "rawDate": "20260508",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 9",
+          "rawDate": "20260509",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 10",
+          "rawDate": "20260510",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 11",
+          "rawDate": "20260511",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 12",
+          "rawDate": "20260512",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        }
+      ],
+      "note": "Stripe-visible sales show 11 payments and $159.89 year to date, 1 payment and $14.99 this month, 1 payment and $14.99 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
     },
-    "monthToDate": {
-      "label": "Sales this month",
-      "range": "May 1-May 11, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
-      "revenuePerPurchase": 14.99,
-      "deltaPurchasesPct": null,
-      "deltaRevenuePct": null,
+    "roku": {
+      "sourceLabel": "Roku-visible sales",
+      "sourceDetail": "Roku-visible sales come from the latest emailed Roku Sales Activity Report PDF. These are not total ElectricNOW sales.",
+      "reportEmailDate": "2026-05-12T18:52:16+00:00",
+      "reportGenerated": "May 12, 2026 at 11:51 AM PDT",
+      "baselineWindow": {
+        "label": "Roku launch baseline",
+        "range": "Apr 13-Apr 19, 2026",
+        "purchases": 5,
+        "purchaseRevenue": 74.95,
+        "developerRevShare": 59.95,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null
+      },
+      "yearToDate": {
+        "label": "Roku sales this year",
+        "range": "Jan 1-May 12, 2026",
+        "purchases": 7,
+        "purchaseRevenue": 144.93,
+        "developerRevShare": 115.93,
+        "revenuePerPurchase": 20.7,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": [
+          {
+            "date": "May 4",
+            "createdAt": "2026-05-04",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          },
+          {
+            "date": "Apr 22",
+            "createdAt": "2026-04-22",
+            "amount": 54.99,
+            "developerRevShare": 43.99,
+            "description": "Roku - Purchase Bundle 55",
+            "source": "Roku"
+          },
+          {
+            "date": "Apr 19",
+            "createdAt": "2026-04-19",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          },
+          {
+            "date": "Apr 17",
+            "createdAt": "2026-04-17",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          },
+          {
+            "date": "Apr 16",
+            "createdAt": "2026-04-16",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          },
+          {
+            "date": "Apr 14",
+            "createdAt": "2026-04-14",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          },
+          {
+            "date": "Apr 13",
+            "createdAt": "2026-04-13",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          }
+        ]
+      },
+      "monthToDate": {
+        "label": "Roku sales this month",
+        "range": "May 1-May 12, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": [
+          {
+            "date": "May 4",
+            "createdAt": "2026-05-04",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          }
+        ]
+      },
+      "lastWeek": {
+        "label": "Roku sales last week",
+        "range": "May 4-May 10, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": -80.0,
+        "deltaRevenuePct": -80.0,
+        "payments": [
+          {
+            "date": "May 4",
+            "createdAt": "2026-05-04",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          }
+        ]
+      },
+      "thisWeek": {
+        "label": "Roku sales this week",
+        "range": "May 11-May 12, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "developerRevShare": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": []
+      },
+      "currentCompleteWeek": {
+        "label": "Roku sales last week",
+        "range": "May 4-May 10, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99,
+        "revenuePerPurchase": 14.99,
+        "deltaPurchasesPct": -80.0,
+        "deltaRevenuePct": -80.0,
+        "payments": [
+          {
+            "date": "May 4",
+            "createdAt": "2026-05-04",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          }
+        ]
+      },
+      "weekToDate": {
+        "label": "Roku sales this week",
+        "range": "May 11-May 12, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "developerRevShare": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": null,
+        "deltaRevenuePct": null,
+        "payments": []
+      },
+      "lifetimeObserved": {
+        "range": "Through May 12, 2026 pull",
+        "purchases": 7,
+        "purchaseRevenue": 144.93,
+        "developerRevShare": 115.93
+      },
+      "mix": [
+        {
+          "label": "Roku title purchases",
+          "purchases": 6,
+          "purchaseRevenue": 89.94
+        },
+        {
+          "label": "Roku bundle purchases",
+          "purchases": 1,
+          "purchaseRevenue": 54.99
+        }
+      ],
+      "recentPayments": [
+        {
+          "date": "May 4",
+          "createdAt": "2026-05-04",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22",
+          "amount": 54.99,
+          "developerRevShare": 43.99,
+          "description": "Roku - Purchase Bundle 55",
+          "source": "Roku"
+        },
+        {
+          "date": "Apr 19",
+          "createdAt": "2026-04-19",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
+        },
+        {
+          "date": "Apr 17",
+          "createdAt": "2026-04-17",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
+        },
+        {
+          "date": "Apr 16",
+          "createdAt": "2026-04-16",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
+        },
+        {
+          "date": "Apr 14",
+          "createdAt": "2026-04-14",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
+        },
+        {
+          "date": "Apr 13",
+          "createdAt": "2026-04-13",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
+        }
+      ],
+      "dailyTrend": [
+        {
+          "date": "Apr 13",
+          "rawDate": "20260413",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 11.99
+        },
+        {
+          "date": "Apr 14",
+          "rawDate": "20260414",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 11.99
+        },
+        {
+          "date": "Apr 15",
+          "rawDate": "20260415",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 16",
+          "rawDate": "20260416",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 11.99
+        },
+        {
+          "date": "Apr 17",
+          "rawDate": "20260417",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 11.99
+        },
+        {
+          "date": "Apr 18",
+          "rawDate": "20260418",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 19",
+          "rawDate": "20260419",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 11.99
+        },
+        {
+          "date": "Apr 20",
+          "rawDate": "20260420",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 21",
+          "rawDate": "20260421",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 22",
+          "rawDate": "20260422",
+          "purchases": 1,
+          "purchaseRevenue": 54.99,
+          "developerRevShare": 43.99
+        },
+        {
+          "date": "Apr 23",
+          "rawDate": "20260423",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 24",
+          "rawDate": "20260424",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 25",
+          "rawDate": "20260425",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 26",
+          "rawDate": "20260426",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 27",
+          "rawDate": "20260427",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 28",
+          "rawDate": "20260428",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 29",
+          "rawDate": "20260429",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "Apr 30",
+          "rawDate": "20260430",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 1",
+          "rawDate": "20260501",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 2",
+          "rawDate": "20260502",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 3",
+          "rawDate": "20260503",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 4",
+          "rawDate": "20260504",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 11.99
+        },
+        {
+          "date": "May 5",
+          "rawDate": "20260505",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 6",
+          "rawDate": "20260506",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 7",
+          "rawDate": "20260507",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 8",
+          "rawDate": "20260508",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 9",
+          "rawDate": "20260509",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 10",
+          "rawDate": "20260510",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 11",
+          "rawDate": "20260511",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 12",
+          "rawDate": "20260512",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        }
+      ],
+      "note": "Roku report shows 7 purchases and $144.93 gross sales year to date, with $115.93 developer rev share."
+    },
+    "sourceBreakout": [
+      {
+        "source": "Stripe",
+        "purchases": 11,
+        "purchaseRevenue": 159.89,
+        "developerRevShare": 0.0,
+        "detail": "This shows Stripe-visible sales from the connected electricnow.tv account only. It is not total ElectricNOW sales because Apple App Store and Google Play purchases are handled separately."
+      },
+      {
+        "source": "Roku",
+        "purchases": 7,
+        "purchaseRevenue": 144.93,
+        "developerRevShare": 115.93,
+        "detail": "Roku-visible sales come from the latest emailed Roku Sales Activity Report PDF. These are not total ElectricNOW sales."
+      }
+    ],
+    "baselineWindow": {
+      "label": "Launch baseline",
+      "range": "Apr 13-Apr 19, 2026",
+      "purchases": 9,
+      "purchaseRevenue": 129.91,
+      "developerRevShare": 59.95,
+      "revenuePerPurchase": 14.43,
+      "payments": []
+    },
+    "yearToDate": {
+      "label": "Sales this year",
+      "range": "Jan 1-May 12, 2026",
+      "purchases": 18,
+      "purchaseRevenue": 304.82,
+      "developerRevShare": 115.93,
+      "revenuePerPurchase": 16.93,
       "payments": [
         {
           "date": "May 6",
           "createdAt": "2026-05-06 01:02 PDT",
           "amount": 14.99,
-          "description": "Customer User - Purchase this title: Signup payment"
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 26",
+          "createdAt": "2026-04-26 20:13 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 24",
+          "createdAt": "2026-04-24 15:38 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22 09:46 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22 02:25 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 20",
+          "createdAt": "2026-04-20 18:31 PDT",
+          "amount": 14.99,
+          "description": "Anonymous Customer - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 18",
+          "createdAt": "2026-04-18 17:51 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 16",
+          "createdAt": "2026-04-16 18:58 PDT",
+          "amount": 9.99,
+          "description": "Customer User - Purchase Bundle 10: Signup payment",
+          "source": "Stripe"
+        }
+      ]
+    },
+    "monthToDate": {
+      "label": "Sales this month",
+      "range": "May 1-May 12, 2026",
+      "purchases": 2,
+      "purchaseRevenue": 29.98,
+      "developerRevShare": 11.99,
+      "revenuePerPurchase": 14.99,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "May 4",
+          "createdAt": "2026-05-04",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
         }
       ]
     },
     "lastWeek": {
       "label": "Sales last week",
       "range": "May 4-May 10, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
+      "purchases": 2,
+      "purchaseRevenue": 29.98,
+      "developerRevShare": 11.99,
       "revenuePerPurchase": 14.99,
-      "deltaPurchasesPct": -75.0,
-      "deltaRevenuePct": -72.72561863173217,
       "payments": [
         {
           "date": "May 6",
           "createdAt": "2026-05-06 01:02 PDT",
           "amount": 14.99,
-          "description": "Customer User - Purchase this title: Signup payment"
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "May 4",
+          "createdAt": "2026-05-04",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
         }
-      ]
+      ],
+      "deltaPurchasesPct": -77.77777777777779,
+      "deltaRevenuePct": -76.92248479716727
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "May 11-May 11, 2026",
+      "range": "May 11-May 12, 2026",
       "purchases": 0,
-      "purchaseRevenue": 0,
+      "purchaseRevenue": 0.0,
+      "developerRevShare": 0.0,
       "revenuePerPurchase": 0,
-      "deltaPurchasesPct": null,
-      "deltaRevenuePct": null,
       "payments": []
     },
     "currentCompleteWeek": {
       "label": "Sales last week",
       "range": "May 4-May 10, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
+      "purchases": 2,
+      "purchaseRevenue": 29.98,
+      "developerRevShare": 11.99,
       "revenuePerPurchase": 14.99,
-      "deltaPurchasesPct": -75.0,
-      "deltaRevenuePct": -72.72561863173217,
       "payments": [
         {
           "date": "May 6",
           "createdAt": "2026-05-06 01:02 PDT",
           "amount": 14.99,
-          "description": "Customer User - Purchase this title: Signup payment"
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "May 4",
+          "createdAt": "2026-05-04",
+          "amount": 14.99,
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
         }
-      ]
+      ],
+      "deltaPurchasesPct": -77.77777777777779,
+      "deltaRevenuePct": -76.92248479716727
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "May 11-May 11, 2026",
+      "range": "May 11-May 12, 2026",
       "purchases": 0,
-      "purchaseRevenue": 0,
+      "purchaseRevenue": 0.0,
+      "developerRevShare": 0.0,
       "revenuePerPurchase": 0,
-      "deltaPurchasesPct": null,
-      "deltaRevenuePct": null,
       "payments": []
     },
     "recent12Days": {
-      "label": "Stripe last 12 days",
-      "range": "Apr 30-May 11, 2026",
+      "label": "Visible sales last 12 days",
+      "range": "May 1-May 12, 2026",
       "purchases": 1,
       "purchaseRevenue": 14.99,
+      "developerRevShare": 0.0,
       "revenuePerPurchase": 14.99,
-      "deltaPurchasesPct": null,
-      "deltaRevenuePct": null,
       "payments": [
         {
           "date": "May 6",
           "createdAt": "2026-05-06 01:02 PDT",
           "amount": 14.99,
-          "description": "Customer User - Purchase this title: Signup payment"
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
         }
       ]
     },
     "lifetimeObserved": {
-      "range": "Through May 11, 2026 pull",
-      "purchases": 11,
-      "purchaseRevenue": 159.89,
-      "revenuePerPurchase": 14.54
+      "label": "Sales this year",
+      "range": "Jan 1-May 12, 2026",
+      "purchases": 18,
+      "purchaseRevenue": 304.82,
+      "developerRevShare": 115.93,
+      "revenuePerPurchase": 16.93,
+      "payments": [
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 26",
+          "createdAt": "2026-04-26 20:13 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 24",
+          "createdAt": "2026-04-24 15:38 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22 09:46 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 22",
+          "createdAt": "2026-04-22 02:25 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 20",
+          "createdAt": "2026-04-20 18:31 PDT",
+          "amount": 14.99,
+          "description": "Anonymous Customer - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 18",
+          "createdAt": "2026-04-18 17:51 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "Apr 16",
+          "createdAt": "2026-04-16 18:58 PDT",
+          "amount": 9.99,
+          "description": "Customer User - Purchase Bundle 10: Signup payment",
+          "source": "Stripe"
+        }
+      ]
     },
     "mix": [
       {
@@ -1852,6 +2861,16 @@
         "label": "Subscriptions",
         "purchases": 0,
         "purchaseRevenue": 0
+      },
+      {
+        "label": "Roku title purchases",
+        "purchases": 6,
+        "purchaseRevenue": 89.94
+      },
+      {
+        "label": "Roku bundle purchases",
+        "purchases": 1,
+        "purchaseRevenue": 54.99
       }
     ],
     "recentPayments": [
@@ -1860,264 +2879,319 @@
         "date": "May 6",
         "createdAt": "2026-05-06 01:02 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TQfbqLG0Cw1zW4e0xCVetD1",
         "date": "Apr 26",
         "createdAt": "2026-04-26 20:13 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TPsMQLG0Cw1zW4e1KupKuAF",
         "date": "Apr 24",
         "createdAt": "2026-04-24 15:38 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TP3uxLG0Cw1zW4e0LSedyYu",
         "date": "Apr 22",
         "createdAt": "2026-04-22 09:46 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TOx2ZLG0Cw1zW4e1W7SJZXg",
         "date": "Apr 22",
         "createdAt": "2026-04-22 02:25 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TOTAALG0Cw1zW4e0dIkMbV1",
         "date": "Apr 20",
         "createdAt": "2026-04-20 18:31 PDT",
         "amount": 14.99,
-        "description": "Anonymous Customer - Purchase this title: Signup payment"
+        "description": "Anonymous Customer - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TNjaVLG0Cw1zW4e2up0QKdp",
         "date": "Apr 18",
         "createdAt": "2026-04-18 17:51 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TN1fjLG0Cw1zW4e1efwz7Hc",
         "date": "Apr 16",
         "createdAt": "2026-04-16 18:58 PDT",
         "amount": 9.99,
-        "description": "Customer User - Purchase Bundle 10: Signup payment"
+        "description": "Customer User - Purchase Bundle 10: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TMxdiLG0Cw1zW4e0ApnxCmW",
         "date": "Apr 16",
         "createdAt": "2026-04-16 14:39 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TMxZHLG0Cw1zW4e0RXKnWOb",
         "date": "Apr 16",
         "createdAt": "2026-04-16 14:35 PDT",
         "amount": 14.99,
-        "description": "Customer User - Purchase this title: Signup payment"
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe"
       },
       {
         "id": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
         "date": "Apr 10",
         "createdAt": "2026-04-10 21:55 PDT",
         "amount": 14.99,
-        "description": "pi_3TKta2LG0Cw1zW4e26XmyZs9"
+        "description": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
+        "source": "Stripe"
+      },
+      {
+        "date": "May 4",
+        "createdAt": "2026-05-04",
+        "amount": 14.99,
+        "developerRevShare": 11.99,
+        "description": "Roku - Purchase HD 15",
+        "source": "Roku"
       }
     ],
     "dailyTrend": [
       {
         "date": "Apr 13",
         "rawDate": "20260413",
-        "purchases": 0,
-        "purchaseRevenue": 0
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99
       },
       {
         "date": "Apr 14",
         "rawDate": "20260414",
-        "purchases": 0,
-        "purchaseRevenue": 0
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99
       },
       {
         "date": "Apr 15",
         "rawDate": "20260415",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 16",
         "rawDate": "20260416",
-        "purchases": 3,
-        "purchaseRevenue": 39.97
+        "purchases": 4,
+        "purchaseRevenue": 54.96,
+        "developerRevShare": 11.99
       },
       {
         "date": "Apr 17",
         "rawDate": "20260417",
-        "purchases": 0,
-        "purchaseRevenue": 0
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99
       },
       {
         "date": "Apr 18",
         "rawDate": "20260418",
         "purchases": 1,
-        "purchaseRevenue": 14.99
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 19",
         "rawDate": "20260419",
-        "purchases": 0,
-        "purchaseRevenue": 0
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99
       },
       {
         "date": "Apr 20",
         "rawDate": "20260420",
         "purchases": 1,
-        "purchaseRevenue": 14.99
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 21",
         "rawDate": "20260421",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 22",
         "rawDate": "20260422",
-        "purchases": 2,
-        "purchaseRevenue": 29.98
+        "purchases": 3,
+        "purchaseRevenue": 84.97,
+        "developerRevShare": 43.99
       },
       {
         "date": "Apr 23",
         "rawDate": "20260423",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 24",
         "rawDate": "20260424",
         "purchases": 1,
-        "purchaseRevenue": 14.99
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 25",
         "rawDate": "20260425",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 26",
         "rawDate": "20260426",
         "purchases": 1,
-        "purchaseRevenue": 14.99
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 27",
         "rawDate": "20260427",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 28",
         "rawDate": "20260428",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 29",
         "rawDate": "20260429",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "Apr 30",
         "rawDate": "20260430",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 1",
         "rawDate": "20260501",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 2",
         "rawDate": "20260502",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 3",
         "rawDate": "20260503",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 4",
         "rawDate": "20260504",
-        "purchases": 0,
-        "purchaseRevenue": 0
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99
       },
       {
         "date": "May 5",
         "rawDate": "20260505",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 6",
         "rawDate": "20260506",
         "purchases": 1,
-        "purchaseRevenue": 14.99
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 7",
         "rawDate": "20260507",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 8",
         "rawDate": "20260508",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 9",
         "rawDate": "20260509",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 10",
         "rawDate": "20260510",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
         "date": "May 11",
         "rawDate": "20260511",
         "purchases": 0,
-        "purchaseRevenue": 0
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "May 12",
+        "rawDate": "20260512",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       }
     ],
-    "note": "Stripe-visible sales show 11 payments and $159.89 year to date, 1 payment and $14.99 this month, 1 payment and $14.99 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
+    "note": "Visible platform sales show 18 purchases and $304.82 year to date, 2 purchases and $29.98 this month, 2 purchases and $29.98 last week, and 0 purchases and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
   },
   "contentUsage": {
     "period": "May 4-May 10, 2026",
     "live": {
       "total": {
-        "screenPageViews": 1966,
+        "screenPageViews": 1967,
         "activeUsers": 110,
-        "eventCount": 20615
+        "eventCount": 20630
       },
       "platforms": [
         {
@@ -2130,33 +3204,33 @@
         {
           "platform": "Android",
           "screen": "Live",
-          "screenPageViews": 200,
+          "screenPageViews": 201,
           "activeUsers": 65,
-          "eventCount": 10696
+          "eventCount": 10707
         },
         {
           "platform": "iOS",
           "screen": "Live",
           "screenPageViews": 92,
           "activeUsers": 35,
-          "eventCount": 8245
+          "eventCount": 8249
         }
       ],
       "playback": {
-        "play": 3988,
-        "video_start": 2047,
+        "play": 3991,
+        "video_start": 2049,
         "end_playback": 239
       },
       "playbackRows": [
         {
           "event": "play",
           "label": "Play events",
-          "eventCount": 3988
+          "eventCount": 3991
         },
         {
           "event": "video_start",
           "label": "Video starts",
-          "eventCount": 2047
+          "eventCount": 2049
         },
         {
           "event": "end_playback",
@@ -2167,7 +3241,7 @@
       "topChannels": [
         {
           "title": "ElectricNOW",
-          "plays": 3292,
+          "plays": 3295,
           "activeUsers": 98,
           "rank": 1
         },
@@ -2267,7 +3341,7 @@
       {
         "rank": 1,
         "program": "ElectricNOW",
-        "plays": 8783,
+        "plays": 8786,
         "activeUsers": 1139,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
@@ -2279,7 +3353,7 @@
       {
         "rank": 2,
         "program": "Leverage",
-        "plays": 8155,
+        "plays": 8160,
         "activeUsers": 75,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 62,
@@ -2781,7 +3855,7 @@
       {
         "rank": 1,
         "title": "Electric Now",
-        "plays": 8780,
+        "plays": 8783,
         "activeUsers": 1139,
         "group": "ElectricNOW"
       },
@@ -3133,13 +4207,13 @@
       {
         "rank": 1,
         "title": "ElectricNOW",
-        "plays": 7988,
+        "plays": 7991,
         "activeUsers": 942
       },
       {
         "rank": 2,
         "title": "Leverage",
-        "plays": 5413,
+        "plays": 5418,
         "activeUsers": 46
       },
       {
@@ -3343,12 +4417,12 @@
     },
     "currentWeek": {
       "range": "May 4-May 10, 2026",
-      "appActiveUsers": 2602,
-      "appSessions": 4579,
-      "appEngagedSessions": 3726,
-      "appEngagementRate": 81.371478488753,
+      "appActiveUsers": 2605,
+      "appSessions": 4550,
+      "appEngagedSessions": 3725,
+      "appEngagementRate": 81.86813186813187,
       "viewingUsers": 1172,
-      "viewingShare": 45.04227517294389,
+      "viewingShare": 44.990403071017276,
       "onDemandStartUsers": 1146,
       "onDemandStartEvents": 5082,
       "liveChannelViewers": 34,
@@ -3375,7 +4449,7 @@
           "engagedSessions": 5221,
           "avgEngagedMinutesPerUser": 16.21484193563676,
           "avgEngagedMinutesPerSession": 11.368655501279367,
-          "ga4AverageSessionMinutes": 13.258718967379455
+          "ga4AverageSessionMinutes": 13.258718967379451
         },
         {
           "platform": "iOS",
@@ -3408,7 +4482,7 @@
       "totalEngagementHours": 4798.652777777777,
       "avgEngagedMinutesPerUser": 39.505922978411995,
       "avgEngagedMinutesPerSession": 21.792246947219702,
-      "ga4AverageSessionMinutes": 39.62178647706756,
+      "ga4AverageSessionMinutes": 39.621786477067566,
       "platformBreakout": [
         {
           "platform": "web",
@@ -3417,7 +4491,7 @@
           "engagedSessions": 5613,
           "avgEngagedMinutesPerUser": 37.14989332650623,
           "avgEngagedMinutesPerSession": 19.902274493667996,
-          "ga4AverageSessionMinutes": 23.130159218909156
+          "ga4AverageSessionMinutes": 23.13015921890916
         },
         {
           "platform": "Android",
@@ -3442,15 +4516,15 @@
     },
     "currentWeek": {
       "range": "May 4-May 10, 2026",
-      "activeUsers": 4620,
-      "sessions": 9932,
-      "engagedSessions": 8178,
-      "engagementRate": 82.33991139750302,
-      "totalEngagementSeconds": 16275188,
-      "totalEngagementHours": 4520.885555555556,
-      "avgEngagedMinutesPerUser": 58.71279942279942,
-      "avgEngagedMinutesPerSession": 27.311028325949792,
-      "ga4AverageSessionMinutes": 45.545839592691976,
+      "activeUsers": 4623,
+      "sessions": 9939,
+      "engagedSessions": 8182,
+      "engagementRate": 82.32216520776738,
+      "totalEngagementSeconds": 16279261,
+      "totalEngagementHours": 4522.016944444445,
+      "avgEngagedMinutesPerUser": 58.689382796164104,
+      "avgEngagedMinutesPerSession": 27.29862326860516,
+      "ga4AverageSessionMinutes": 45.51741651398028,
       "platformBreakout": [
         {
           "platform": "web",
@@ -3459,25 +4533,25 @@
           "engagedSessions": 4100,
           "avgEngagedMinutesPerUser": 75.26255780860903,
           "avgEngagedMinutesPerSession": 28.10722067224658,
-          "ga4AverageSessionMinutes": 32.393263271977546
+          "ga4AverageSessionMinutes": 32.39326327197755
         },
         {
           "platform": "Android",
-          "activeUsers": 1453,
-          "sessions": 2591,
-          "engagedSessions": 2088,
-          "avgEngagedMinutesPerUser": 37.653659096122965,
-          "avgEngagedMinutesPerSession": 21.11569535571851,
-          "ga4AverageSessionMinutes": 78.54787006570179
+          "activeUsers": 1456,
+          "sessions": 2597,
+          "engagedSessions": 2091,
+          "avgEngagedMinutesPerUser": 37.58149038461538,
+          "avgEngagedMinutesPerSession": 21.069946091644205,
+          "ga4AverageSessionMinutes": 78.34706330635348
         },
         {
           "platform": "iOS",
           "activeUsers": 1293,
-          "sessions": 2323,
-          "engagedSessions": 1990,
-          "avgEngagedMinutesPerUser": 58.391595772106214,
-          "avgEngagedMinutesPerSession": 32.501219687186115,
-          "ga4AverageSessionMinutes": 37.147805594317695
+          "sessions": 2324,
+          "engagedSessions": 1991,
+          "avgEngagedMinutesPerUser": 58.4379994844032,
+          "avgEngagedMinutesPerSession": 32.51305220883534,
+          "ga4AverageSessionMinutes": 37.16905517515777
         }
       ],
       "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
@@ -3510,9 +4584,9 @@
     },
     "currentWeek": {
       "range": "May 4-May 10, 2026",
-      "totalGa4ActiveUsers": 4656.0,
-      "totalGa4Sessions": 9951.0,
-      "totalGa4EngagementRate": 82.82584664857802,
+      "totalGa4ActiveUsers": 4659.0,
+      "totalGa4Sessions": 9934.0,
+      "totalGa4EngagementRate": 82.96758606804913,
       "landingPageUsers": 526,
       "landingPageSessions": 808,
       "devicesPageUsers": 112,
@@ -3558,16 +4632,16 @@
       "range": "May 4-May 10, 2026",
       "viewingEventUsers": 1527,
       "videoStartUsers": 1525,
-      "videoStartEvents": 18514,
+      "videoStartEvents": 18517,
       "videoPlayUsers": 263,
       "videoPlayEvents": 7931,
       "videoCompleteUsers": 181,
       "videoCompleteEvents": 3261,
       "onDemandStartUsers": 1449,
-      "onDemandStartEvents": 16467,
+      "onDemandStartEvents": 16468,
       "liveChannelViewers": 99,
-      "livePlayEvents": 3988,
-      "adRequestEvents": 25140,
+      "livePlayEvents": 3991,
+      "adRequestEvents": 25143,
       "adErrorEvents": 13
     }
   },
@@ -3583,10 +4657,10 @@
           "baseline": 8709,
           "launchBaseline": 8709,
           "previousWeek": 7298,
-          "current": 4619,
-          "deltaPct": -36.70868731159222,
-          "deltaVsLaunchPct": -46.96291193018716,
-          "deltaVsPreviousPct": -36.70868731159222,
+          "current": 4622,
+          "deltaPct": -36.66758015894766,
+          "deltaVsLaunchPct": -46.928464806521994,
+          "deltaVsPreviousPct": -36.66758015894766,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 active users excluding landing-page acquisition paths."
@@ -3597,10 +4671,10 @@
           "baseline": 13316,
           "launchBaseline": 13316,
           "previousWeek": 13008,
-          "current": 9891,
-          "deltaPct": -23.962177121771216,
-          "deltaVsLaunchPct": -25.7209372183839,
-          "deltaVsPreviousPct": -23.962177121771216,
+          "current": 9869,
+          "deltaPct": -24.13130381303813,
+          "deltaVsLaunchPct": -25.886151997596873,
+          "deltaVsPreviousPct": -24.13130381303813,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -3625,10 +4699,10 @@
           "baseline": 3652.995,
           "launchBaseline": 3652.995,
           "previousWeek": 4798.652777777777,
-          "current": 4520.885555555556,
-          "deltaPct": -5.788441779087293,
-          "deltaVsLaunchPct": 23.758328592170415,
-          "deltaVsPreviousPct": -5.788441779087293,
+          "current": 4522.016944444445,
+          "deltaPct": -5.764864559786735,
+          "deltaVsLaunchPct": 23.789300134395056,
+          "deltaVsPreviousPct": -5.764864559786735,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -3639,10 +4713,10 @@
           "baseline": 25.072031571722718,
           "launchBaseline": 25.072031571722718,
           "previousWeek": 39.505922978411995,
-          "current": 58.71279942279942,
-          "deltaPct": 19.206876444387426,
-          "deltaVsLaunchPct": 33.6407678510767,
-          "deltaVsPreviousPct": 19.206876444387426,
+          "current": 58.689382796164104,
+          "deltaPct": 19.18345981775211,
+          "deltaVsLaunchPct": 33.617351224441386,
+          "deltaVsPreviousPct": 19.18345981775211,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
@@ -3709,10 +4783,10 @@
           "baseline": 1547,
           "launchBaseline": 1547,
           "previousWeek": 3161,
-          "current": 2602,
-          "deltaPct": -17.6842771274913,
-          "deltaVsLaunchPct": 68.19650937297996,
-          "deltaVsPreviousPct": -17.6842771274913,
+          "current": 2605,
+          "deltaPct": -17.589370452388483,
+          "deltaVsLaunchPct": 68.39043309631545,
+          "deltaVsPreviousPct": -17.589370452388483,
           "deltaType": "percent",
           "format": "number",
           "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream."
@@ -3723,10 +4797,10 @@
           "baseline": 2889,
           "launchBaseline": 2889,
           "previousWeek": 5430,
-          "current": 4579,
-          "deltaPct": -15.67219152854512,
-          "deltaVsLaunchPct": 58.49775008653514,
-          "deltaVsPreviousPct": -15.67219152854512,
+          "current": 4550,
+          "deltaPct": -16.206261510128915,
+          "deltaVsLaunchPct": 57.49394254067152,
+          "deltaVsPreviousPct": -16.206261510128915,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions on the Apple/iOS and Android app streams."
@@ -3737,10 +4811,10 @@
           "baseline": 80.96227068189685,
           "launchBaseline": 80.96227068189685,
           "previousWeek": 84.08839779005525,
-          "current": 81.371478488753,
-          "deltaPct": -2.716919301302255,
-          "deltaVsLaunchPct": 0.4092078068561449,
-          "deltaVsPreviousPct": -2.716919301302255,
+          "current": 81.86813186813187,
+          "deltaPct": -2.220265921923385,
+          "deltaVsLaunchPct": 0.9058611862350148,
+          "deltaVsPreviousPct": -2.220265921923385,
           "deltaType": "points",
           "format": "percent",
           "context": "Engaged app-stream sessions divided by app-stream sessions."
@@ -3814,10 +4888,10 @@
           "baseline": 3952,
           "launchBaseline": 3952,
           "previousWeek": 4594,
-          "current": 3988,
-          "deltaPct": -13.191118850674794,
-          "deltaVsLaunchPct": 0.9109311740890688,
-          "deltaVsPreviousPct": -13.191118850674794,
+          "current": 3991,
+          "deltaPct": -13.125816282107097,
+          "deltaVsLaunchPct": 0.9868421052631579,
+          "deltaVsPreviousPct": -13.125816282107097,
           "deltaType": "percent",
           "format": "number",
           "context": "Total Live play events, not unique users."
@@ -3828,10 +4902,10 @@
           "baseline": 10589,
           "launchBaseline": 10589,
           "previousWeek": 29282,
-          "current": 25140,
-          "deltaPct": -14.145208660610614,
-          "deltaVsLaunchPct": 137.41618660874494,
-          "deltaVsPreviousPct": -14.145208660610614,
+          "current": 25143,
+          "deltaPct": -14.13496345878014,
+          "deltaVsLaunchPct": 137.44451789592972,
+          "deltaVsPreviousPct": -14.13496345878014,
           "deltaType": "percent",
           "format": "number",
           "context": "Total ad request events generated by viewing activity."
@@ -3849,10 +4923,10 @@
           "baseline": 25.072031571722718,
           "launchBaseline": 25.072031571722718,
           "previousWeek": 39.505922978411995,
-          "current": 58.71279942279942,
-          "deltaPct": 19.206876444387426,
-          "deltaVsLaunchPct": 33.6407678510767,
-          "deltaVsPreviousPct": 19.206876444387426,
+          "current": 58.689382796164104,
+          "deltaPct": 19.18345981775211,
+          "deltaVsLaunchPct": 33.617351224441386,
+          "deltaVsPreviousPct": 19.18345981775211,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users."
@@ -3863,10 +4937,10 @@
           "baseline": 16.417955056179775,
           "launchBaseline": 16.417955056179775,
           "previousWeek": 21.792246947219702,
-          "current": 27.311028325949792,
-          "deltaPct": 5.51878137873009,
-          "deltaVsLaunchPct": 10.893073269770017,
-          "deltaVsPreviousPct": 5.51878137873009,
+          "current": 27.29862326860516,
+          "deltaPct": 5.506376321385456,
+          "deltaVsLaunchPct": 10.880668212425384,
+          "deltaVsPreviousPct": 5.506376321385456,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by sessions."
@@ -3877,10 +4951,10 @@
           "baseline": 3652.995,
           "launchBaseline": 3652.995,
           "previousWeek": 4798.652777777777,
-          "current": 4520.885555555556,
-          "deltaPct": -5.788441779087293,
-          "deltaVsLaunchPct": 23.758328592170415,
-          "deltaVsPreviousPct": -5.788441779087293,
+          "current": 4522.016944444445,
+          "deltaPct": -5.764864559786735,
+          "deltaVsLaunchPct": 23.789300134395056,
+          "deltaVsPreviousPct": -5.764864559786735,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -4078,13 +5152,13 @@
           "streamName": "ElectricNOW",
           "streamId": "12950551103",
           "platform": "Android",
-          "activeUsers": 1309,
-          "sessions": 2247,
-          "engagedSessions": 1772,
-          "eventCount": 63156,
-          "engagementRate": 78.86070315976858,
-          "avgEngagedMinutesPerUser": 11.468169085816145,
-          "avgEngagedMinutesPerSession": 6.68083370419819
+          "activeUsers": 1312,
+          "sessions": 2249,
+          "engagedSessions": 1775,
+          "eventCount": 63169,
+          "engagementRate": 78.9239662072032,
+          "avgEngagedMinutesPerUser": 11.447192581300813,
+          "avgEngagedMinutesPerSession": 6.67795316436935
         },
         {
           "surface": "iOS / Apple app stream",
@@ -4092,12 +5166,12 @@
           "streamId": "12982344897",
           "platform": "iOS",
           "activeUsers": 1293,
-          "sessions": 2345,
-          "engagedSessions": 2000,
-          "eventCount": 74123,
-          "engagementRate": 85.28784648187633,
-          "avgEngagedMinutesPerUser": 58.391595772106214,
-          "avgEngagedMinutesPerSession": 32.196304193319115
+          "sessions": 2326,
+          "engagedSessions": 1992,
+          "eventCount": 74146,
+          "engagementRate": 85.64058469475493,
+          "avgEngagedMinutesPerUser": 58.4379994844032,
+          "avgEngagedMinutesPerSession": 32.48509601605044
         },
         {
           "surface": "Roku",
@@ -4131,12 +5205,12 @@
           "streamId": "13118400722",
           "platform": "Android",
           "activeUsers": 144,
-          "sessions": 349,
-          "engagedSessions": 318,
-          "eventCount": 25470,
-          "engagementRate": 91.11747851002865,
-          "avgEngagedMinutesPerUser": 275.68703703703704,
-          "avgEngagedMinutesPerSession": 113.7505253104107
+          "sessions": 345,
+          "engagedSessions": 314,
+          "eventCount": 25505,
+          "engagementRate": 91.01449275362319,
+          "avgEngagedMinutesPerUser": 275.6939814814815,
+          "avgEngagedMinutesPerSession": 115.07227053140097
         },
         {
           "surface": "LG / webOS",
@@ -4176,11 +5250,11 @@
     },
     "currentWeek": {
       "range": "May 4-May 10, 2026",
-      "platformActiveUsers": 4619,
-      "platformSessions": 9891,
+      "platformActiveUsers": 4622,
+      "platformSessions": 9869,
       "platformEngagedSessions": 8233,
-      "platformEventCount": 908697,
-      "platformEngagementRate": 83.2372864219998,
+      "platformEventCount": 908768,
+      "platformEngagementRate": 83.42283919343399,
       "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     }
   },
@@ -4234,33 +5308,33 @@
       "rawDate": "20260508",
       "activeUsers": 493,
       "newUsers": 228,
-      "sessions": 661,
-      "engagedSessions": 541,
+      "sessions": 659,
+      "engagedSessions": 539,
       "screenPageViews": 104,
-      "eventCount": 17935,
-      "engagementRate": 81.84568835098335
+      "eventCount": 17938,
+      "engagementRate": 81.79059180576631
     },
     {
       "date": "May 9",
       "rawDate": "20260509",
-      "activeUsers": 469,
+      "activeUsers": 470,
       "newUsers": 218,
-      "sessions": 622,
+      "sessions": 624,
       "engagedSessions": 521,
       "screenPageViews": 103,
-      "eventCount": 16410,
-      "engagementRate": 83.7620578778135
+      "eventCount": 16418,
+      "engagementRate": 83.49358974358975
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
-      "activeUsers": 532,
-      "newUsers": 262,
-      "sessions": 758,
-      "engagedSessions": 615,
+      "activeUsers": 534,
+      "newUsers": 263,
+      "sessions": 742,
+      "engagedSessions": 612,
       "screenPageViews": 141,
-      "eventCount": 21727,
-      "engagementRate": 81.13456464379946
+      "eventCount": 21752,
+      "engagementRate": 82.47978436657682
     }
   ],
   "monthlyTrend": [
@@ -4544,33 +5618,33 @@
       "rawDate": "20260508",
       "activeUsers": 493,
       "newUsers": 228,
-      "sessions": 661,
-      "engagedSessions": 541,
+      "sessions": 659,
+      "engagedSessions": 539,
       "screenPageViews": 104,
-      "eventCount": 17935,
-      "engagementRate": 81.84568835098335
+      "eventCount": 17938,
+      "engagementRate": 81.79059180576631
     },
     {
       "date": "May 9",
       "rawDate": "20260509",
-      "activeUsers": 469,
+      "activeUsers": 470,
       "newUsers": 218,
-      "sessions": 622,
+      "sessions": 624,
       "engagedSessions": 521,
       "screenPageViews": 103,
-      "eventCount": 16410,
-      "engagementRate": 83.7620578778135
+      "eventCount": 16418,
+      "engagementRate": 83.49358974358975
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
-      "activeUsers": 532,
-      "newUsers": 262,
-      "sessions": 758,
-      "engagedSessions": 615,
+      "activeUsers": 534,
+      "newUsers": 263,
+      "sessions": 742,
+      "engagedSessions": 612,
       "screenPageViews": 141,
-      "eventCount": 21727,
-      "engagementRate": 81.13456464379946
+      "eventCount": 21752,
+      "engagementRate": 82.47978436657682
     }
   ],
   "appSectionUsage": {
@@ -4583,13 +5657,13 @@
         "activeUsers": 873,
         "sessions": 2967,
         "engagedSessions": 2807,
-        "screenPageViews": 10178,
-        "eventCount": 36639,
+        "screenPageViews": 10180,
+        "eventCount": 36661,
         "engagementRate": 94.60734748904618,
-        "totalEngagementSeconds": 664259,
-        "totalEngagementHours": 184.51638888888888,
-        "avgEngagedMinutesPerUser": 12.681538755250095,
-        "avgEngagedMinutesPerSession": 3.731372879451747,
+        "totalEngagementSeconds": 664274,
+        "totalEngagementHours": 184.52055555555555,
+        "avgEngagedMinutesPerUser": 12.681825124093166,
+        "avgEngagedMinutesPerSession": 3.731457139647231,
         "sharePct": 61.5
       },
       {
@@ -4613,13 +5687,13 @@
         "activeUsers": 381,
         "sessions": 1803,
         "engagedSessions": 1688,
-        "screenPageViews": 3473,
-        "eventCount": 47292,
+        "screenPageViews": 3474,
+        "eventCount": 47307,
         "engagementRate": 93.62174154187464,
-        "totalEngagementSeconds": 4696673,
-        "totalEngagementHours": 1304.631388888889,
-        "avgEngagedMinutesPerUser": 205.4537620297463,
-        "avgEngagedMinutesPerSession": 43.41535403956369,
+        "totalEngagementSeconds": 4696712,
+        "totalEngagementHours": 1304.6422222222222,
+        "avgEngagedMinutesPerUser": 205.4554680664917,
+        "avgEngagedMinutesPerSession": 43.415714549824365,
         "sharePct": 26.8
       },
       {
