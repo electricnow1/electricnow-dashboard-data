@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12 12:04 PDT",
+  "generatedAt": "2026-05-12 12:26 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -1303,8 +1303,8 @@
         "tracked": true,
         "activeUsers": 1293,
         "sharePct": 27.7,
-        "sessions": 2353,
-        "engagedSessions": 2003,
+        "sessions": 2326,
+        "engagedSessions": 1992,
         "detail": "iPhone and iPad app activity; Apple TV may also be included here until it is tagged separately."
       },
       {
@@ -5728,5 +5728,32 @@
       }
     ],
     "note": "This section uses the current GA4 screen/path labels to infer the five app navigation areas in the order Home, En Espanol, Live TV, My Stuff, and Settings. A user can appear in more than one section. For cleaner reporting, the app should send a stable app_section value with exactly these five section names."
+  },
+  "rokuAppEngagement": {
+    "sourceLabel": "Roku App Engagement email report",
+    "sourceDetail": "Roku app engagement is parsed from the latest Roku App Engagement PDF emailed from bdp_noreply@data.roku.com. It measures Roku app/channel-store usage and is shown separately from GA4 app/web metrics.",
+    "reportPeriod": "8 days ago for 7 days Time Grain is day",
+    "channelStoreCode": "us",
+    "reportGenerated": "May 12, 2026 at 12:16 PM PDT",
+    "dateLabels": [
+      "Mon May 4",
+      "Tue May 5",
+      "Wed May 6",
+      "Thu May 7",
+      "Fri May 8",
+      "Sat May 9",
+      "Sun May 10"
+    ],
+    "metrics": {
+      "newInstalls": 159,
+      "uninstalls": 145,
+      "netInstalls": 14,
+      "cumulativeInstalls": 287371,
+      "avgDailyViewers": 249,
+      "avgMinPerViewer": 70.59,
+      "totalHoursStreamed": 2051
+    },
+    "reportEmailDate": "2026-05-12T19:17:03+00:00",
+    "attachmentFilename": "App_Engagement_2026-05-12T1216.pdf"
   }
 }
