@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12 12:26 PDT",
+  "generatedAt": "2026-05-12 12:57 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -1650,6 +1650,7 @@
     "engagementRateWeekToDate": 93.62174154187464
   },
   "plainEnglishInsights": [
+    "Overall, ElectricNOW\u2019s latest measured week shows that measured platform audience was down 36.7%, viewing was down 23.5%, and time spent improved by 19.2 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
     "Measured ElectricNOW platform audience was 4.6K GA4 active users excluding landing-page acquisition paths, down 36.7% from the previous week.",
     "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 4.7K, down 42.6% from the previous week; landing-page users were down 77.6%.",
     "Measured Apple/Android app-stream usage improved: 2.6K active users this week, up 68.4% from launch baseline and down 17.6% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
