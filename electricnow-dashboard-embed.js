@@ -442,16 +442,17 @@ function renderRokuAppEngagement() {
   section.hidden = false;
   const metrics = report.metrics;
   const dateRange = report.dateLabels?.length ? `${report.dateLabels[0]}-${report.dateLabels.at(-1)}` : report.reportPeriod;
+  const reportRange = dateRange || report.reportPeriod || 'the latest Roku report';
   $('#roku-app-period').textContent = dateRange || 'Latest Roku report';
   $('#roku-app-note').textContent =
     `${report.sourceDetail || 'Roku app metrics are parsed from the latest emailed Roku App Engagement PDF.'} Report generated ${report.reportGenerated || report.reportEmailDate || 'by Roku'}.`;
   const cards = [
-    ['New installs', fmt.number(metrics.newInstalls), 'Roku app installs in the report period'],
-    ['Uninstalls', fmt.number(metrics.uninstalls), 'Roku app uninstalls in the report period'],
-    ['Net installs', fmt.number(metrics.netInstalls), 'New installs minus uninstalls'],
-    ['Avg daily viewers', fmt.number(metrics.avgDailyViewers), 'Average Roku viewers per day'],
-    ['Avg min per viewer', fmt.minutes(metrics.avgMinPerViewer), 'Average viewing time per Roku viewer'],
-    ['Total hours streamed', fmt.number(metrics.totalHoursStreamed), 'Total Roku app streaming hours'],
+    ['New installs', fmt.number(metrics.newInstalls), `Roku app installs for ${reportRange}`],
+    ['Uninstalls', fmt.number(metrics.uninstalls), `Roku app uninstalls for ${reportRange}`],
+    ['Net installs', fmt.number(metrics.netInstalls), `Installs minus uninstalls for ${reportRange}`],
+    ['Avg daily viewers', fmt.number(metrics.avgDailyViewers), `Average Roku viewers per day for ${reportRange}`],
+    ['Avg min per viewer', fmt.minutes(metrics.avgMinPerViewer), `Average viewing time per Roku viewer for ${reportRange}`],
+    ['Total hours streamed', fmt.number(metrics.totalHoursStreamed), `Total Roku app streaming hours for ${reportRange}`],
   ];
   $('#roku-app-summary').innerHTML = cards
     .map(([label, value, detail]) => usageStat(label, value, detail))
