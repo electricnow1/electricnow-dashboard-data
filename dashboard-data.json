@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12 12:57 PDT",
+  "generatedAt": "2026-05-13 07:12 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -68,21 +68,21 @@
     "currentWeek": {
       "activeUsers": 4659.0,
       "newUsers": 3016.0,
-      "sessions": 9934.0,
-      "engagedSessions": 8242.0,
-      "engagementRate": 82.96758606804913,
+      "sessions": 9937.0,
+      "engagedSessions": 8253.0,
+      "engagementRate": 83.05323538291235,
       "screenPageViews": 28641.0,
-      "eventCount": 910416.0,
+      "eventCount": 910432.0,
       "purchaseRevenue": 0.0
     },
     "weekToDate": {
       "activeUsers": 4659.0,
       "newUsers": 3016.0,
-      "sessions": 9934.0,
-      "engagedSessions": 8242.0,
-      "engagementRate": 82.96758606804913,
+      "sessions": 9937.0,
+      "engagedSessions": 8253.0,
+      "engagementRate": 83.05323538291235,
       "screenPageViews": 28641.0,
-      "eventCount": 910416.0,
+      "eventCount": 910432.0,
       "purchaseRevenue": 0.0
     }
   },
@@ -107,10 +107,10 @@
       "baseline": 13316,
       "launchBaseline": 13316,
       "previousWeek": 13008,
-      "current": 9869,
-      "deltaPct": -24.13130381303813,
-      "deltaVsLaunchPct": -25.886151997596873,
-      "deltaVsPreviousPct": -24.13130381303813,
+      "current": 9873,
+      "deltaPct": -24.100553505535053,
+      "deltaVsLaunchPct": -25.856112946830876,
+      "deltaVsPreviousPct": -24.100553505535053,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -135,10 +135,10 @@
       "baseline": 3652.995,
       "launchBaseline": 3652.995,
       "previousWeek": 4798.652777777777,
-      "current": 4522.016944444445,
-      "deltaPct": -5.764864559786735,
-      "deltaVsLaunchPct": 23.789300134395056,
-      "deltaVsPreviousPct": -5.764864559786735,
+      "current": 4522.968611111111,
+      "deltaPct": -5.7450326046372835,
+      "deltaVsLaunchPct": 23.815351817101078,
+      "deltaVsPreviousPct": -5.7450326046372835,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -149,10 +149,10 @@
       "baseline": 25.072031571722718,
       "launchBaseline": 25.072031571722718,
       "previousWeek": 39.505922978411995,
-      "current": 58.689382796164104,
-      "deltaPct": 19.18345981775211,
-      "deltaVsLaunchPct": 33.617351224441386,
-      "deltaVsPreviousPct": 19.18345981775211,
+      "current": 58.70173408320715,
+      "deltaPct": 19.195811104795155,
+      "deltaVsLaunchPct": 33.62970251148443,
+      "deltaVsPreviousPct": 19.195811104795155,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
@@ -219,10 +219,10 @@
       "baseline": 2889,
       "launchBaseline": 2889,
       "previousWeek": 5430,
-      "current": 4550,
-      "deltaPct": -16.206261510128915,
-      "deltaVsLaunchPct": 57.49394254067152,
-      "deltaVsPreviousPct": -16.206261510128915,
+      "current": 4555,
+      "deltaPct": -16.114180478821364,
+      "deltaVsLaunchPct": 57.667012807199725,
+      "deltaVsPreviousPct": -16.114180478821364,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions on the Apple/iOS and Android app streams."
@@ -233,10 +233,10 @@
       "baseline": 80.96227068189685,
       "launchBaseline": 80.96227068189685,
       "previousWeek": 84.08839779005525,
-      "current": 81.86813186813187,
-      "deltaPct": -2.220265921923385,
-      "deltaVsLaunchPct": 0.9058611862350148,
-      "deltaVsPreviousPct": -2.220265921923385,
+      "current": 81.95389681668496,
+      "deltaPct": -2.1345009733702938,
+      "deltaVsLaunchPct": 0.9916261347881061,
+      "deltaVsPreviousPct": -2.1345009733702938,
       "deltaType": "points",
       "format": "percent",
       "context": "Engaged app-stream sessions divided by app-stream sessions."
@@ -331,10 +331,10 @@
       "baseline": 25.072031571722718,
       "launchBaseline": 25.072031571722718,
       "previousWeek": 39.505922978411995,
-      "current": 58.689382796164104,
-      "deltaPct": 19.18345981775211,
-      "deltaVsLaunchPct": 33.617351224441386,
-      "deltaVsPreviousPct": 19.18345981775211,
+      "current": 58.70173408320715,
+      "deltaPct": 19.195811104795155,
+      "deltaVsLaunchPct": 33.62970251148443,
+      "deltaVsPreviousPct": 19.195811104795155,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users."
@@ -345,10 +345,10 @@
       "baseline": 16.417955056179775,
       "launchBaseline": 16.417955056179775,
       "previousWeek": 21.792246947219702,
-      "current": 27.29862326860516,
-      "deltaPct": 5.506376321385456,
-      "deltaVsLaunchPct": 10.880668212425384,
-      "deltaVsPreviousPct": 5.506376321385456,
+      "current": 27.304368313378276,
+      "deltaPct": 5.512121366158574,
+      "deltaVsLaunchPct": 10.886413257198502,
+      "deltaVsPreviousPct": 5.512121366158574,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by sessions."
@@ -359,10 +359,10 @@
       "baseline": 3652.995,
       "launchBaseline": 3652.995,
       "previousWeek": 4798.652777777777,
-      "current": 4522.016944444445,
-      "deltaPct": -5.764864559786735,
-      "deltaVsLaunchPct": 23.789300134395056,
-      "deltaVsPreviousPct": -5.764864559786735,
+      "current": 4522.968611111111,
+      "deltaPct": -5.7450326046372835,
+      "deltaVsLaunchPct": 23.815351817101078,
+      "deltaVsPreviousPct": -5.7450326046372835,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -660,22 +660,22 @@
       "rawDate": "20260509",
       "activeUsers": 470,
       "newUsers": 218,
-      "sessions": 624,
-      "engagedSessions": 521,
+      "sessions": 625,
+      "engagedSessions": 522,
       "screenPageViews": 103,
-      "eventCount": 16418,
-      "engagementRate": 83.49358974358975
+      "eventCount": 16426,
+      "engagementRate": 83.52000000000001
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
       "activeUsers": 534,
       "newUsers": 263,
-      "sessions": 742,
-      "engagedSessions": 612,
+      "sessions": 745,
+      "engagedSessions": 615,
       "screenPageViews": 141,
-      "eventCount": 21752,
-      "engagementRate": 82.47978436657682
+      "eventCount": 21760,
+      "engagementRate": 82.5503355704698
     }
   ],
   "eventCards": [
@@ -692,10 +692,10 @@
       "event": "application_install",
       "label": "Application installs",
       "baseline": 3686,
-      "current": 2628,
-      "weekToDate": 2628,
-      "deltaPct": -28.703201302224635,
-      "activeUsersCurrent": 2370
+      "current": 2629,
+      "weekToDate": 2629,
+      "deltaPct": -28.676071622354854,
+      "activeUsersCurrent": 2371
     },
     {
       "event": "first_open",
@@ -1197,7 +1197,7 @@
       "rawDate": "20260510",
       "purchaseRevenue": 0,
       "in_app_purchase": 0,
-      "application_install": 383,
+      "application_install": 384,
       "first_open": 264,
       "app_open": 221,
       "play": 6366,
@@ -1246,14 +1246,14 @@
         "platform": "iOS",
         "activeUsers": 1293,
         "newUsers": 779,
-        "sessions": 2326,
-        "engagedSessions": 1992,
+        "sessions": 2329,
+        "engagedSessions": 1995,
         "screenPageViews": 683,
-        "eventCount": 74146,
-        "engagementRate": 85.64058469475493
+        "eventCount": 74158,
+        "engagementRate": 85.65908115070846
       },
       "activeUsersDeltaPct": -17.485641352903638,
-      "engagementRateCurrent": 85.64058469475493
+      "engagementRateCurrent": 85.65908115070846
     },
     {
       "platform": "Android",
@@ -1271,14 +1271,14 @@
         "platform": "Android",
         "activeUsers": 1456,
         "newUsers": 954,
-        "sessions": 2597,
-        "engagedSessions": 2091,
+        "sessions": 2598,
+        "engagedSessions": 2092,
         "screenPageViews": 1617,
-        "eventCount": 88674,
-        "engagementRate": 80.51597997689642
+        "eventCount": 88678,
+        "engagementRate": 80.52347959969207
       },
       "activeUsersDeltaPct": -19.77961432506887,
-      "engagementRateCurrent": 80.51597997689642
+      "engagementRateCurrent": 80.52347959969207
     }
   ],
   "platformMix": {
@@ -1303,8 +1303,8 @@
         "tracked": true,
         "activeUsers": 1293,
         "sharePct": 27.7,
-        "sessions": 2326,
-        "engagedSessions": 1992,
+        "sessions": 2329,
+        "engagedSessions": 1995,
         "detail": "iPhone and iPad app activity; Apple TV may also be included here until it is tagged separately."
       },
       {
@@ -1313,8 +1313,8 @@
         "tracked": true,
         "activeUsers": 1312,
         "sharePct": 28.2,
-        "sessions": 2249,
-        "engagedSessions": 1775,
+        "sessions": 2250,
+        "engagedSessions": 1776,
         "detail": "Android phone/tablet activity from the ElectricNOW Android GA4 stream."
       },
       {
@@ -1369,10 +1369,10 @@
       "sourceMedium": "(direct) / (none)",
       "activeUsers": 2419,
       "newUsers": 1524,
-      "sessions": 4344,
-      "engagedSessions": 3668,
-      "eventCount": 151789,
-      "engagementRate": 84.43830570902394
+      "sessions": 4349,
+      "engagedSessions": 3672,
+      "eventCount": 151801,
+      "engagementRate": 84.4332030351805
     },
     {
       "sourceMedium": "apps.facebook.com / (not set)",
@@ -1405,10 +1405,10 @@
       "sourceMedium": "google-play / organic",
       "activeUsers": 168,
       "newUsers": 113,
-      "sessions": 281,
-      "engagedSessions": 245,
-      "eventCount": 12343,
-      "engagementRate": 87.18861209964413
+      "sessions": 282,
+      "engagedSessions": 246,
+      "eventCount": 12347,
+      "engagementRate": 87.2340425531915
     },
     {
       "sourceMedium": "apps.instagram.com / (not set)",
@@ -1626,28 +1626,28 @@
     },
     "current": {
       "activeUsers": 381,
-      "sessions": 1803,
-      "engagedSessions": 1688,
+      "sessions": 1804,
+      "engagedSessions": 1689,
       "screenPageViews": 3474,
-      "eventCount": 47307
+      "eventCount": 47309
     },
     "deltas": {
       "activeUsers": -63.5755258126195,
-      "sessions": -26.587947882736156,
-      "engagedSessions": -28.504870817450232,
+      "sessions": -26.547231270358306,
+      "engagedSessions": -28.46251588310038,
       "screenPageViews": -25.016188214979497,
-      "eventCount": -5.695319352523722
+      "eventCount": -5.691332429630811
     },
     "engagementRateBaseline": 96.13192182410424,
-    "engagementRateCurrent": 93.62174154187464,
+    "engagementRateCurrent": 93.62527716186253,
     "weekToDate": {
       "activeUsers": 381,
-      "sessions": 1803,
-      "engagedSessions": 1688,
+      "sessions": 1804,
+      "engagedSessions": 1689,
       "screenPageViews": 3474,
-      "eventCount": 47307
+      "eventCount": 47309
     },
-    "engagementRateWeekToDate": 93.62174154187464
+    "engagementRateWeekToDate": 93.62527716186253
   },
   "plainEnglishInsights": [
     "Overall, ElectricNOW\u2019s latest measured week shows that measured platform audience was down 36.7%, viewing was down 23.5%, and time spent improved by 19.2 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
@@ -1690,7 +1690,7 @@
       },
       "yearToDate": {
         "label": "Sales this year",
-        "range": "Jan 1-May 12, 2026",
+        "range": "Jan 1-May 13, 2026",
         "purchases": 11,
         "purchaseRevenue": 159.89,
         "revenuePerPurchase": 14.54,
@@ -1749,7 +1749,7 @@
       },
       "monthToDate": {
         "label": "Sales this month",
-        "range": "May 1-May 12, 2026",
+        "range": "May 1-May 13, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "revenuePerPurchase": 14.99,
@@ -1783,7 +1783,7 @@
       },
       "thisWeek": {
         "label": "Sales this week",
-        "range": "May 11-May 12, 2026",
+        "range": "May 11-May 13, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -1810,7 +1810,7 @@
       },
       "weekToDate": {
         "label": "Sales this week",
-        "range": "May 11-May 12, 2026",
+        "range": "May 11-May 13, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -1820,7 +1820,7 @@
       },
       "recent12Days": {
         "label": "Stripe last 12 days",
-        "range": "May 1-May 12, 2026",
+        "range": "May 2-May 13, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "revenuePerPurchase": 14.99,
@@ -1836,7 +1836,7 @@
         ]
       },
       "lifetimeObserved": {
-        "range": "Through May 12, 2026 pull",
+        "range": "Through May 13, 2026 pull",
         "purchases": 11,
         "purchaseRevenue": 159.89,
         "revenuePerPurchase": 14.54
@@ -2117,6 +2117,12 @@
           "rawDate": "20260512",
           "purchases": 0,
           "purchaseRevenue": 0
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "purchases": 0,
+          "purchaseRevenue": 0
         }
       ],
       "note": "Stripe-visible sales show 11 payments and $159.89 year to date, 1 payment and $14.99 this month, 1 payment and $14.99 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
@@ -2138,7 +2144,7 @@
       },
       "yearToDate": {
         "label": "Roku sales this year",
-        "range": "Jan 1-May 12, 2026",
+        "range": "Jan 1-May 13, 2026",
         "purchases": 7,
         "purchaseRevenue": 144.93,
         "developerRevShare": 115.93,
@@ -2206,7 +2212,7 @@
       },
       "monthToDate": {
         "label": "Roku sales this month",
-        "range": "May 1-May 12, 2026",
+        "range": "May 1-May 13, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "developerRevShare": 11.99,
@@ -2246,7 +2252,7 @@
       },
       "thisWeek": {
         "label": "Roku sales this week",
-        "range": "May 11-May 12, 2026",
+        "range": "May 11-May 13, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "developerRevShare": 0,
@@ -2277,7 +2283,7 @@
       },
       "weekToDate": {
         "label": "Roku sales this week",
-        "range": "May 11-May 12, 2026",
+        "range": "May 11-May 13, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "developerRevShare": 0,
@@ -2287,7 +2293,7 @@
         "payments": []
       },
       "lifetimeObserved": {
-        "range": "Through May 12, 2026 pull",
+        "range": "Through May 13, 2026 pull",
         "purchases": 7,
         "purchaseRevenue": 144.93,
         "developerRevShare": 115.93
@@ -2572,6 +2578,13 @@
           "purchases": 0,
           "purchaseRevenue": 0,
           "developerRevShare": 0
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
         }
       ],
       "note": "Roku report shows 7 purchases and $144.93 gross sales year to date, with $115.93 developer rev share."
@@ -2603,7 +2616,7 @@
     },
     "yearToDate": {
       "label": "Sales this year",
-      "range": "Jan 1-May 12, 2026",
+      "range": "Jan 1-May 13, 2026",
       "purchases": 18,
       "purchaseRevenue": 304.82,
       "developerRevShare": 115.93,
@@ -2669,7 +2682,7 @@
     },
     "monthToDate": {
       "label": "Sales this month",
-      "range": "May 1-May 12, 2026",
+      "range": "May 1-May 13, 2026",
       "purchases": 2,
       "purchaseRevenue": 29.98,
       "developerRevShare": 11.99,
@@ -2721,7 +2734,7 @@
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "May 11-May 12, 2026",
+      "range": "May 11-May 13, 2026",
       "purchases": 0,
       "purchaseRevenue": 0.0,
       "developerRevShare": 0.0,
@@ -2757,7 +2770,7 @@
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "May 11-May 12, 2026",
+      "range": "May 11-May 13, 2026",
       "purchases": 0,
       "purchaseRevenue": 0.0,
       "developerRevShare": 0.0,
@@ -2766,7 +2779,7 @@
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
-      "range": "May 1-May 12, 2026",
+      "range": "May 2-May 13, 2026",
       "purchases": 1,
       "purchaseRevenue": 14.99,
       "developerRevShare": 0.0,
@@ -2783,7 +2796,7 @@
     },
     "lifetimeObserved": {
       "label": "Sales this year",
-      "range": "Jan 1-May 12, 2026",
+      "range": "Jan 1-May 13, 2026",
       "purchases": 18,
       "purchaseRevenue": 304.82,
       "developerRevShare": 115.93,
@@ -3182,6 +3195,13 @@
         "purchases": 0,
         "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
+      },
+      {
+        "date": "May 13",
+        "rawDate": "20260513",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       }
     ],
     "note": "Visible platform sales show 18 purchases and $304.82 year to date, 2 purchases and $29.98 this month, 2 purchases and $29.98 last week, and 0 purchases and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
@@ -3192,7 +3212,7 @@
       "total": {
         "screenPageViews": 1967,
         "activeUsers": 110,
-        "eventCount": 20630
+        "eventCount": 20632
       },
       "platforms": [
         {
@@ -3214,7 +3234,7 @@
           "screen": "Live",
           "screenPageViews": 92,
           "activeUsers": 35,
-          "eventCount": 8249
+          "eventCount": 8251
         }
       ],
       "playback": {
@@ -4419,9 +4439,9 @@
     "currentWeek": {
       "range": "May 4-May 10, 2026",
       "appActiveUsers": 2605,
-      "appSessions": 4550,
-      "appEngagedSessions": 3725,
-      "appEngagementRate": 81.86813186813187,
+      "appSessions": 4555,
+      "appEngagedSessions": 3733,
+      "appEngagementRate": 81.95389681668496,
       "viewingUsers": 1172,
       "viewingShare": 44.990403071017276,
       "onDemandStartUsers": 1146,
@@ -4441,7 +4461,7 @@
       "totalEngagementHours": 3652.995,
       "avgEngagedMinutesPerUser": 25.072031571722718,
       "avgEngagedMinutesPerSession": 16.417955056179775,
-      "ga4AverageSessionMinutes": 22.76917910185143,
+      "ga4AverageSessionMinutes": 22.769179101851435,
       "platformBreakout": [
         {
           "platform": "web",
@@ -4450,7 +4470,7 @@
           "engagedSessions": 5221,
           "avgEngagedMinutesPerUser": 16.21484193563676,
           "avgEngagedMinutesPerSession": 11.368655501279367,
-          "ga4AverageSessionMinutes": 13.258718967379451
+          "ga4AverageSessionMinutes": 13.258718967379458
         },
         {
           "platform": "iOS",
@@ -4483,7 +4503,7 @@
       "totalEngagementHours": 4798.652777777777,
       "avgEngagedMinutesPerUser": 39.505922978411995,
       "avgEngagedMinutesPerSession": 21.792246947219702,
-      "ga4AverageSessionMinutes": 39.621786477067566,
+      "ga4AverageSessionMinutes": 39.62178647706756,
       "platformBreakout": [
         {
           "platform": "web",
@@ -4492,7 +4512,7 @@
           "engagedSessions": 5613,
           "avgEngagedMinutesPerUser": 37.14989332650623,
           "avgEngagedMinutesPerSession": 19.902274493667996,
-          "ga4AverageSessionMinutes": 23.13015921890916
+          "ga4AverageSessionMinutes": 23.130159218909156
         },
         {
           "platform": "Android",
@@ -4519,13 +4539,13 @@
       "range": "May 4-May 10, 2026",
       "activeUsers": 4623,
       "sessions": 9939,
-      "engagedSessions": 8182,
-      "engagementRate": 82.32216520776738,
-      "totalEngagementSeconds": 16279261,
-      "totalEngagementHours": 4522.016944444445,
-      "avgEngagedMinutesPerUser": 58.689382796164104,
-      "avgEngagedMinutesPerSession": 27.29862326860516,
-      "ga4AverageSessionMinutes": 45.51741651398028,
+      "engagedSessions": 8183,
+      "engagementRate": 82.33222658215112,
+      "totalEngagementSeconds": 16282687,
+      "totalEngagementHours": 4522.968611111111,
+      "avgEngagedMinutesPerUser": 58.70173408320715,
+      "avgEngagedMinutesPerSession": 27.304368313378276,
+      "ga4AverageSessionMinutes": 45.5232441374803,
       "platformBreakout": [
         {
           "platform": "web",
@@ -4534,25 +4554,25 @@
           "engagedSessions": 4100,
           "avgEngagedMinutesPerUser": 75.26255780860903,
           "avgEngagedMinutesPerSession": 28.10722067224658,
-          "ga4AverageSessionMinutes": 32.39326327197755
+          "ga4AverageSessionMinutes": 32.393263271977546
         },
         {
           "platform": "Android",
           "activeUsers": 1456,
           "sessions": 2597,
-          "engagedSessions": 2091,
-          "avgEngagedMinutesPerUser": 37.58149038461538,
-          "avgEngagedMinutesPerSession": 21.069946091644205,
-          "ga4AverageSessionMinutes": 78.34706330635348
+          "engagedSessions": 2092,
+          "avgEngagedMinutesPerUser": 37.582016941391934,
+          "avgEngagedMinutesPerSession": 21.070241304068798,
+          "ga4AverageSessionMinutes": 78.34755388522653
         },
         {
           "platform": "iOS",
           "activeUsers": 1293,
           "sessions": 2324,
           "engagedSessions": 1991,
-          "avgEngagedMinutesPerUser": 58.4379994844032,
-          "avgEngagedMinutesPerSession": 32.51305220883534,
-          "ga4AverageSessionMinutes": 37.16905517515777
+          "avgEngagedMinutesPerUser": 58.48156741428203,
+          "avgEngagedMinutesPerSession": 32.53729202524383,
+          "ga4AverageSessionMinutes": 37.193429838080895
         }
       ],
       "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
@@ -4586,8 +4606,8 @@
     "currentWeek": {
       "range": "May 4-May 10, 2026",
       "totalGa4ActiveUsers": 4659.0,
-      "totalGa4Sessions": 9934.0,
-      "totalGa4EngagementRate": 82.96758606804913,
+      "totalGa4Sessions": 9937.0,
+      "totalGa4EngagementRate": 83.05323538291235,
       "landingPageUsers": 526,
       "landingPageSessions": 808,
       "devicesPageUsers": 112,
@@ -4672,10 +4692,10 @@
           "baseline": 13316,
           "launchBaseline": 13316,
           "previousWeek": 13008,
-          "current": 9869,
-          "deltaPct": -24.13130381303813,
-          "deltaVsLaunchPct": -25.886151997596873,
-          "deltaVsPreviousPct": -24.13130381303813,
+          "current": 9873,
+          "deltaPct": -24.100553505535053,
+          "deltaVsLaunchPct": -25.856112946830876,
+          "deltaVsPreviousPct": -24.100553505535053,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -4700,10 +4720,10 @@
           "baseline": 3652.995,
           "launchBaseline": 3652.995,
           "previousWeek": 4798.652777777777,
-          "current": 4522.016944444445,
-          "deltaPct": -5.764864559786735,
-          "deltaVsLaunchPct": 23.789300134395056,
-          "deltaVsPreviousPct": -5.764864559786735,
+          "current": 4522.968611111111,
+          "deltaPct": -5.7450326046372835,
+          "deltaVsLaunchPct": 23.815351817101078,
+          "deltaVsPreviousPct": -5.7450326046372835,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -4714,10 +4734,10 @@
           "baseline": 25.072031571722718,
           "launchBaseline": 25.072031571722718,
           "previousWeek": 39.505922978411995,
-          "current": 58.689382796164104,
-          "deltaPct": 19.18345981775211,
-          "deltaVsLaunchPct": 33.617351224441386,
-          "deltaVsPreviousPct": 19.18345981775211,
+          "current": 58.70173408320715,
+          "deltaPct": 19.195811104795155,
+          "deltaVsLaunchPct": 33.62970251148443,
+          "deltaVsPreviousPct": 19.195811104795155,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
@@ -4798,10 +4818,10 @@
           "baseline": 2889,
           "launchBaseline": 2889,
           "previousWeek": 5430,
-          "current": 4550,
-          "deltaPct": -16.206261510128915,
-          "deltaVsLaunchPct": 57.49394254067152,
-          "deltaVsPreviousPct": -16.206261510128915,
+          "current": 4555,
+          "deltaPct": -16.114180478821364,
+          "deltaVsLaunchPct": 57.667012807199725,
+          "deltaVsPreviousPct": -16.114180478821364,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions on the Apple/iOS and Android app streams."
@@ -4812,10 +4832,10 @@
           "baseline": 80.96227068189685,
           "launchBaseline": 80.96227068189685,
           "previousWeek": 84.08839779005525,
-          "current": 81.86813186813187,
-          "deltaPct": -2.220265921923385,
-          "deltaVsLaunchPct": 0.9058611862350148,
-          "deltaVsPreviousPct": -2.220265921923385,
+          "current": 81.95389681668496,
+          "deltaPct": -2.1345009733702938,
+          "deltaVsLaunchPct": 0.9916261347881061,
+          "deltaVsPreviousPct": -2.1345009733702938,
           "deltaType": "points",
           "format": "percent",
           "context": "Engaged app-stream sessions divided by app-stream sessions."
@@ -4924,10 +4944,10 @@
           "baseline": 25.072031571722718,
           "launchBaseline": 25.072031571722718,
           "previousWeek": 39.505922978411995,
-          "current": 58.689382796164104,
-          "deltaPct": 19.18345981775211,
-          "deltaVsLaunchPct": 33.617351224441386,
-          "deltaVsPreviousPct": 19.18345981775211,
+          "current": 58.70173408320715,
+          "deltaPct": 19.195811104795155,
+          "deltaVsLaunchPct": 33.62970251148443,
+          "deltaVsPreviousPct": 19.195811104795155,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users."
@@ -4938,10 +4958,10 @@
           "baseline": 16.417955056179775,
           "launchBaseline": 16.417955056179775,
           "previousWeek": 21.792246947219702,
-          "current": 27.29862326860516,
-          "deltaPct": 5.506376321385456,
-          "deltaVsLaunchPct": 10.880668212425384,
-          "deltaVsPreviousPct": 5.506376321385456,
+          "current": 27.304368313378276,
+          "deltaPct": 5.512121366158574,
+          "deltaVsLaunchPct": 10.886413257198502,
+          "deltaVsPreviousPct": 5.512121366158574,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by sessions."
@@ -4952,10 +4972,10 @@
           "baseline": 3652.995,
           "launchBaseline": 3652.995,
           "previousWeek": 4798.652777777777,
-          "current": 4522.016944444445,
-          "deltaPct": -5.764864559786735,
-          "deltaVsLaunchPct": 23.789300134395056,
-          "deltaVsPreviousPct": -5.764864559786735,
+          "current": 4522.968611111111,
+          "deltaPct": -5.7450326046372835,
+          "deltaVsLaunchPct": 23.815351817101078,
+          "deltaVsPreviousPct": -5.7450326046372835,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -5154,12 +5174,12 @@
           "streamId": "12950551103",
           "platform": "Android",
           "activeUsers": 1312,
-          "sessions": 2249,
-          "engagedSessions": 1775,
-          "eventCount": 63169,
-          "engagementRate": 78.9239662072032,
-          "avgEngagedMinutesPerUser": 11.447192581300813,
-          "avgEngagedMinutesPerSession": 6.67795316436935
+          "sessions": 2250,
+          "engagedSessions": 1776,
+          "eventCount": 63173,
+          "engagementRate": 78.93333333333334,
+          "avgEngagedMinutesPerUser": 11.44777693089431,
+          "avgEngagedMinutesPerSession": 6.675325925925926
         },
         {
           "surface": "iOS / Apple app stream",
@@ -5167,12 +5187,12 @@
           "streamId": "12982344897",
           "platform": "iOS",
           "activeUsers": 1293,
-          "sessions": 2326,
-          "engagedSessions": 1992,
-          "eventCount": 74146,
-          "engagementRate": 85.64058469475493,
-          "avgEngagedMinutesPerUser": 58.4379994844032,
-          "avgEngagedMinutesPerSession": 32.48509601605044
+          "sessions": 2329,
+          "engagedSessions": 1995,
+          "eventCount": 74158,
+          "engagementRate": 85.65908115070846,
+          "avgEngagedMinutesPerUser": 58.48156741428203,
+          "avgEngagedMinutesPerSession": 32.467439530556746
         },
         {
           "surface": "Roku",
@@ -5252,10 +5272,10 @@
     "currentWeek": {
       "range": "May 4-May 10, 2026",
       "platformActiveUsers": 4622,
-      "platformSessions": 9869,
-      "platformEngagedSessions": 8233,
-      "platformEventCount": 908768,
-      "platformEngagementRate": 83.42283919343399,
+      "platformSessions": 9873,
+      "platformEngagedSessions": 8244,
+      "platformEventCount": 908784,
+      "platformEngagementRate": 83.50045578851413,
       "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     }
   },
@@ -5320,22 +5340,22 @@
       "rawDate": "20260509",
       "activeUsers": 470,
       "newUsers": 218,
-      "sessions": 624,
-      "engagedSessions": 521,
+      "sessions": 625,
+      "engagedSessions": 522,
       "screenPageViews": 103,
-      "eventCount": 16418,
-      "engagementRate": 83.49358974358975
+      "eventCount": 16426,
+      "engagementRate": 83.52000000000001
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
       "activeUsers": 534,
       "newUsers": 263,
-      "sessions": 742,
-      "engagedSessions": 612,
+      "sessions": 745,
+      "engagedSessions": 615,
       "screenPageViews": 141,
-      "eventCount": 21752,
-      "engagementRate": 82.47978436657682
+      "eventCount": 21760,
+      "engagementRate": 82.5503355704698
     }
   ],
   "monthlyTrend": [
@@ -5630,22 +5650,22 @@
       "rawDate": "20260509",
       "activeUsers": 470,
       "newUsers": 218,
-      "sessions": 624,
-      "engagedSessions": 521,
+      "sessions": 625,
+      "engagedSessions": 522,
       "screenPageViews": 103,
-      "eventCount": 16418,
-      "engagementRate": 83.49358974358975
+      "eventCount": 16426,
+      "engagementRate": 83.52000000000001
     },
     {
       "date": "May 10",
       "rawDate": "20260510",
       "activeUsers": 534,
       "newUsers": 263,
-      "sessions": 742,
-      "engagedSessions": 612,
+      "sessions": 745,
+      "engagedSessions": 615,
       "screenPageViews": 141,
-      "eventCount": 21752,
-      "engagementRate": 82.47978436657682
+      "eventCount": 21760,
+      "engagementRate": 82.5503355704698
     }
   ],
   "appSectionUsage": {
@@ -5689,7 +5709,7 @@
         "sessions": 1803,
         "engagedSessions": 1688,
         "screenPageViews": 3474,
-        "eventCount": 47307,
+        "eventCount": 47309,
         "engagementRate": 93.62174154187464,
         "totalEngagementSeconds": 4696712,
         "totalEngagementHours": 1304.6422222222222,
