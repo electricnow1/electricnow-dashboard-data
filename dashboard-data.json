@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16 16:57 PDT",
+  "generatedAt": "2026-05-17 08:53 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -5824,5 +5824,29 @@
     },
     "reportEmailDate": "2026-05-16T14:37:12+00:00",
     "attachmentFilename": "App_Engagement_2026-05-16T0736.pdf"
+  },
+  "visitSummary": {
+    "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
+    "weekly": {
+      "label": "Weekly visits",
+      "range": "May 4-May 10, 2026",
+      "sessions": 9879,
+      "activeUsers": 4622,
+      "engagedSessions": 8240,
+      "previousRange": "Apr 27-May 3, 2026",
+      "previousSessions": 13008,
+      "deltaVsPreviousPct": -24.054428044280442
+    },
+    "monthly": {
+      "label": "Monthly visits",
+      "range": "Apr 13-May 10, 2026",
+      "sessions": 53047,
+      "activeUsers": 28394,
+      "engagedSessions": 38568,
+      "previousRange": "Mar 16-Apr 12, 2026",
+      "previousSessions": 4398,
+      "deltaVsPreviousPct": 1106.161891768986
+    },
+    "note": "Visits are GA4 sessions, not unique people. Landing-page traffic remains acquisition-only and is not included here."
   }
 }
