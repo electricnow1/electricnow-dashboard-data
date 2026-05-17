@@ -103,7 +103,7 @@ function renderKpis() {
           <div class="kpi-compare-grid" aria-label="${card.label} comparisons">
             <small>vs launch baseline</small>
             <em class="delta ${deltaClass(card.deltaVsLaunchPct)}">${deltaText(card, card.deltaVsLaunchPct)}</em>
-            <small>vs previous week</small>
+            <small>vs previous 7 days</small>
             <em class="delta ${deltaClass(card.deltaVsPreviousPct)}">${deltaText(card, card.deltaVsPreviousPct)}</em>
           </div>
           ${card.context ? `<p>${card.context}</p>` : ''}
