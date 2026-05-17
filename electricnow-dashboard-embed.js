@@ -338,12 +338,12 @@ function renderUsagePlatformList(selector, rows) {
               <strong>${escapeHtml(row.platform)}</strong>
               <span>${fmt.number(row.activeUsers)} active users</span>
             </div>
-            <b>${fmt.number(row.screenPageViews)}</b>
+            <b>${fmt.number(row.activeUsers)}</b>
           </header>
           <div class="share-track" aria-hidden="true">
             <div class="share-fill" style="width:${Math.max(5, ((row.activeUsers || 0) / max) * 100)}%"></div>
           </div>
-          <p>${fmt.number(row.eventCount)} events</p>
+          <p>${fmt.number(row.screenPageViews)} screen views · ${fmt.number(row.eventCount)} events</p>
         </article>
       `,
     )
