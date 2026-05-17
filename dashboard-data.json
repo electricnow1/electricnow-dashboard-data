@@ -5835,7 +5835,8 @@
       "engagedSessions": 8240,
       "previousRange": "Apr 27-May 3, 2026",
       "previousSessions": 13008,
-      "deltaVsPreviousPct": -24.054428044280442
+      "deltaVsPreviousPct": -24.054428044280442,
+      "comparisonLabel": "vs previous week"
     },
     "monthly": {
       "label": "Monthly visits",
@@ -5845,8 +5846,9 @@
       "engagedSessions": 38568,
       "previousRange": "Mar 16-Apr 12, 2026",
       "previousSessions": 4398,
-      "deltaVsPreviousPct": 1106.161891768986
+      "deltaVsPreviousPct": null,
+      "comparisonLabel": "latest 28 days"
     },
-    "note": "Visits are GA4 sessions, not unique people. Landing-page traffic remains acquisition-only and is not included here."
+    "note": "Visits are GA4 sessions, not unique people. Landing-page traffic remains acquisition-only and is not included here. Monthly visits show the latest 28 days because the prior 28-day comparison falls before the app launch baseline."
   }
 }

@@ -144,7 +144,7 @@ function renderVisitSummary() {
               <strong>${fmt.number(card.sessions)}</strong>
               <div class="visit-card-meta">
                 <small>${escapeHtml(card.range)}</small>
-                <em class="delta ${deltaClass(card.deltaVsPreviousPct)}">${deltaText({ deltaType: 'percent' }, card.deltaVsPreviousPct)} vs previous ${card.label.toLowerCase().includes('monthly') ? '28 days' : 'week'}</em>
+                <em class="delta ${deltaClass(card.deltaVsPreviousPct)}">${card.deltaVsPreviousPct === null || card.deltaVsPreviousPct === undefined ? escapeHtml(card.comparisonLabel || 'latest period') : `${deltaText({ deltaType: 'percent' }, card.deltaVsPreviousPct)} ${escapeHtml(card.comparisonLabel || '')}`}</em>
               </div>
               <p>${fmt.number(card.activeUsers)} active users · ${fmt.number(card.engagedSessions)} engaged sessions</p>
             </article>
