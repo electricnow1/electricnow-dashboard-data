@@ -279,7 +279,8 @@ function renderPurchases() {
     <div class="sales-callout">
       <span>${escapeHtml(sourceLabel)} this year</span>
       <strong>${fmt.number(yearToDate.purchases)} purchases / ${fmt.currency(yearToDate.purchaseRevenue)}</strong>
-      <p>${yearToDate.range}. This is year-to-date visible sales from connected/reporting sources; Apple App Store and Google Play purchases are not included yet.</p>
+      <p>${yearToDate.range}. This is visible sales from connected/reporting sources plus any manual snapshots. Apple App Store is included from the current manual screenshot; Google Play is not included yet.</p>
+      ${yearToDate.developerRevShare ? `<p class="sales-net">Estimated net after platform fees visible here: ${fmt.currency(yearToDate.developerRevShare)}</p>` : ''}
       ${sourceBreakout ? `<ul class="sales-source-list">${sourceBreakout}</ul>` : ''}
     </div>
     <div class="sales-stat-grid">
@@ -302,7 +303,7 @@ function renderPurchases() {
     ${recentPaymentLine ? `<div class="sales-audit">
       <span>Most recent visible sales</span>
       <strong>${recentPaymentLine}</strong>
-      <p>These are the latest sales visible through the sources currently connected or emailed into the dashboard. They remain a partial sales view until Apple App Store and Google Play sales are reconciled.</p>
+      <p>These are the latest sales visible through the sources currently connected, emailed, or manually snapshotted into the dashboard. They remain a partial sales view until Apple App Store is API-connected and Google Play sales are reconciled.</p>
     </div>` : ''}
     ${sales.sourceDetail ? `<p class="sales-source">${sales.sourceDetail}</p>` : ''}
     <p class="sales-note">${sales.note}</p>
