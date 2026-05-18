@@ -8,21 +8,42 @@ let data = window.DASHBOARD_DATA || window.ELECTRICNOW_DASHBOARD_DATA || null;
 const API_BASE = '__PORT_8000__'.startsWith('__') ? 'http://127.0.0.1:8000' : '__PORT_8000__';
 const HOSTED_DATA_URL = window.DASHBOARD_DATA_URL || 'https://raw.githubusercontent.com/electricnow1/electricnow-dashboard-data/main/dashboard-data.json';
 
+const NOT_AVAILABLE = 'Not available';
+function toFiniteNumber(value) {
+  if (value === null || value === undefined || value === '') return null;
+  if (typeof value === 'number') return Number.isFinite(value) ? value : null;
+  if (typeof value === 'string') {
+    const cleaned = value.replace(/,/g, '').trim();
+    if (!cleaned) return null;
+    const n = Number(cleaned);
+    return Number.isFinite(n) ? n : null;
+  }
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+}
+
 const fmt = {
   number(value) {
-    const n = Number(value || 0);
+    const n = toFiniteNumber(value);
+    if (n === null) return NOT_AVAILABLE;
     if (Math.abs(n) >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
     if (Math.abs(n) >= 1_000) return `${(n / 1_000).toFixed(n >= 10_000 ? 0 : 1)}K`;
     return n.toLocaleString();
   },
   percent(value) {
-    return `${Number(value || 0).toFixed(1)}%`;
+    const n = toFiniteNumber(value);
+    if (n === null) return NOT_AVAILABLE;
+    return `${n.toFixed(1)}%`;
   },
   minutes(value) {
-    return `${Number(value || 0).toFixed(1)} min`;
+    const n = toFiniteNumber(value);
+    if (n === null) return NOT_AVAILABLE;
+    return `${n.toFixed(1)} min`;
   },
   currency(value) {
-    return `$${Number(value || 0).toLocaleString(undefined, {
+    const n = toFiniteNumber(value);
+    if (n === null) return NOT_AVAILABLE;
+    return `$${n.toLocaleString(undefined, {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     })}`;
@@ -342,10 +363,11 @@ function renderMetricList() {
 }
 
 function usageStat(label, value, detail = '') {
+  const display = typeof value === 'string' ? (value || NOT_AVAILABLE) : fmt.number(value);
   return `
     <article class="usage-stat">
       <span>${label}</span>
-      <strong>${fmt.number(value)}</strong>
+      <strong>${display}</strong>
       ${detail ? `<em>${detail}</em>` : ''}
     </article>
   `;
