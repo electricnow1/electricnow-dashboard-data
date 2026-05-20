@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18 12:35 PDT",
+  "generatedAt": "2026-05-20T02:05:13.539727+00:00",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -2906,9 +2906,9 @@
     },
     "apple": {
       "sourceLabel": "Apple App Store manual snapshot",
-      "sourceDetail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Known dated Apple sales: Purchase HD 15 on Apr 16, 2026 for $29.98 and Purchase Bundle 10 on Apr 21, 2026 for $9.99. Purchase Bundle 30 for $29.99 is included in the Apple total but remains undated until its detail screen is provided. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance.",
+      "sourceDetail": "Apple App Store in-app purchase snapshots manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. Latest manual snapshot added May 12-May 18, 2026 sales for Purchase Bundle 30 and Purchase HD 15.",
       "isManualSnapshot": true,
-      "snapshotRange": "Apr 6-May 10, 2026",
+      "snapshotRange": "Apr 6-May 18, 2026",
       "platformFeePct": 30,
       "estimatedNetPct": 70,
       "baselineWindow": {
@@ -2930,63 +2930,168 @@
       "lastWeek": {
         "label": "Apple sales last week",
         "range": "May 11-May 17, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 20.99,
+        "revenuePerPurchase": 29.99,
+        "payments": [
+          {
+            "date": "May 13",
+            "rawDate": "20260513",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          }
+        ]
       },
       "thisWeek": {
         "label": "Apple sales this week",
-        "range": "May 18-May 18, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "range": "May 18-May 19, 2026",
+        "purchases": 2,
+        "purchaseRevenue": 44.98,
+        "developerRevShare": 31.49,
+        "revenuePerPurchase": 22.49,
+        "payments": [
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 14.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
+          }
+        ]
       },
       "monthToDate": {
         "label": "Apple sales this month",
-        "range": "May 1-May 18, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "range": "May 1-May 19, 2026",
+        "purchases": 3,
+        "purchaseRevenue": 74.97,
+        "developerRevShare": 52.48,
+        "revenuePerPurchase": 24.99,
+        "payments": [
+          {
+            "date": "May 13",
+            "rawDate": "20260513",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 14.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
+          }
+        ]
       },
       "recent12Days": {
         "label": "Apple sales last 12 days",
-        "range": "May 7-May 18, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "range": "May 8-May 19, 2026",
+        "purchases": 3,
+        "purchaseRevenue": 74.97,
+        "developerRevShare": 52.48,
+        "revenuePerPurchase": 24.99,
+        "payments": [
+          {
+            "date": "May 13",
+            "rawDate": "20260513",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 14.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
+          }
+        ]
       },
       "yearToDate": {
         "label": "Apple App Store snapshot",
-        "range": "Jan 1-May 18, 2026",
-        "purchases": 4,
-        "purchaseRevenue": 69.96,
-        "developerRevShare": 48.97,
-        "revenuePerPurchase": 17.49,
+        "range": "Jan 1-May 19, 2026",
+        "purchases": 7,
+        "purchaseRevenue": 144.93,
+        "developerRevShare": 101.45,
+        "revenuePerPurchase": 20.7,
         "payments": [
           {
             "date": "Apr 16",
             "amount": 29.98,
             "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
+            "source": "Apple App Store",
+            "rawDate": "20260416",
+            "count": 2
           },
           {
             "date": "Apr 21",
             "amount": 9.99,
             "description": "Apple App Store - Purchase Bundle 10",
-            "source": "Apple App Store"
+            "source": "Apple App Store",
+            "rawDate": "20260421",
+            "count": 1
           },
           {
             "date": "Apr 6-May 10",
             "amount": 29.99,
             "description": "Apple App Store - Purchase Bundle 30, date pending",
+            "source": "Apple App Store",
+            "count": 1
+          },
+          {
+            "date": "May 13",
+            "rawDate": "20260513",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 29.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase Bundle 30",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "amount": 14.99,
+            "count": 1,
+            "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
           }
         ]
@@ -3005,6 +3110,20 @@
           "purchases": 1,
           "purchaseRevenue": 9.99,
           "developerRevShare": 6.99
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "purchases": 1,
+          "purchaseRevenue": 29.99,
+          "developerRevShare": 20.99
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "purchases": 2,
+          "purchaseRevenue": 44.98,
+          "developerRevShare": 31.49
         }
       ],
       "undatedSales": [
@@ -3018,14 +3137,20 @@
       "mix": [
         {
           "label": "Apple Purchase Bundle 30",
-          "purchases": 1,
-          "purchaseRevenue": 29.99,
-          "developerRevShare": 20.99
+          "purchases": 2,
+          "purchaseRevenue": 59.98,
+          "developerRevShare": 41.99
         },
         {
           "label": "Apple Purchase HD 15",
-          "purchases": 2,
-          "purchaseRevenue": 29.98,
+          "purchases": 3,
+          "purchaseRevenue": 44.97,
+          "developerRevShare": 31.48
+        },
+        {
+          "label": "Apple Purchase Bundle 30, date pending",
+          "purchases": 1,
+          "purchaseRevenue": 29.99,
           "developerRevShare": 20.99
         },
         {
@@ -3035,7 +3160,7 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $69.96 gross in-app purchase sales from Apr 6-May 10, 2026, or approximately $48.97 after Apple’s 30% platform fee. $39.97 is dated to Apr 16 and Apr 21; the remaining $29.99 Bundle 30 sale is included in the Apple total but is not assigned to a weekly bucket until its exact date is confirmed."
+      "note": "Apple App Store screenshots now show $144.93 gross in-app purchase sales through May 18, 2026, or approximately $101.45 after Apple’s 30% platform fee. Newly added from the May 12-May 18 screenshots: Bundle 30 on May 13 ($29.99), Bundle 30 on May 18 ($29.99), and HD 15 on May 18 ($14.99)."
     },
     "sourceBreakout": [
       {
@@ -3054,10 +3179,10 @@
       },
       {
         "source": "Apple App Store",
-        "purchases": 4,
-        "purchaseRevenue": 69.96,
-        "developerRevShare": 48.97,
-        "detail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Known dated Apple sales: Purchase HD 15 on Apr 16, 2026 for $29.98 and Purchase Bundle 10 on Apr 21, 2026 for $9.99. Purchase Bundle 30 for $29.99 is included in the Apple total but remains undated until its detail screen is provided. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance."
+        "purchases": 7,
+        "purchaseRevenue": 144.93,
+        "developerRevShare": 101.45,
+        "detail": "Apple App Store in-app purchase snapshots manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. Latest manual snapshot added May 12-May 18, 2026 sales for Purchase Bundle 30 and Purchase HD 15."
       }
     ],
     "baselineWindow": {
@@ -3079,10 +3204,10 @@
     "yearToDate": {
       "label": "Sales this year",
       "range": "Jan 1-May 14, 2026",
-      "purchases": 27,
-      "purchaseRevenue": 406.73,
-      "developerRevShare": 190.45,
-      "revenuePerPurchase": 15.06,
+      "purchases": 30,
+      "purchaseRevenue": 481.7,
+      "developerRevShare": 242.93,
+      "revenuePerPurchase": 16.06,
       "payments": [
         {
           "date": "May 6",
@@ -3139,16 +3264,40 @@
           "amount": 9.99,
           "description": "Customer User - Purchase Bundle 10: Signup payment",
           "source": "Stripe"
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 14.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
         }
       ]
     },
     "monthToDate": {
       "label": "Sales this month",
       "range": "May 1-May 18, 2026",
-      "purchases": 6,
-      "purchaseRevenue": 46.94,
-      "developerRevShare": 37.54,
-      "revenuePerPurchase": 7.82,
+      "purchases": 9,
+      "purchaseRevenue": 121.91,
+      "developerRevShare": 90.02,
+      "revenuePerPurchase": 13.55,
       "payments": [
         {
           "date": "May 16",
@@ -3189,16 +3338,40 @@
           "developerRevShare": 11.99,
           "description": "Roku - Purchase HD 15",
           "source": "Roku"
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 14.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
         }
       ]
     },
     "lastWeek": {
       "label": "Sales last week",
       "range": "May 11-May 17, 2026",
-      "purchases": 5,
-      "purchaseRevenue": 31.95,
-      "developerRevShare": 25.55,
-      "revenuePerPurchase": 6.39,
+      "purchases": 6,
+      "purchaseRevenue": 61.94,
+      "developerRevShare": 46.54,
+      "revenuePerPurchase": 10.32,
       "payments": [
         {
           "date": "May 16",
@@ -3231,6 +3404,14 @@
           "developerRevShare": 4.78,
           "description": "Roku - Purchase HD 3",
           "source": "Roku"
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
         }
       ],
       "deltaPurchasesPct": -54.54545454545454,
@@ -3239,19 +3420,36 @@
     "thisWeek": {
       "label": "Sales this week",
       "range": "May 11-May 14, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "developerRevShare": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": []
+      "purchases": 2,
+      "purchaseRevenue": 44.98,
+      "developerRevShare": 31.49,
+      "revenuePerPurchase": 22.49,
+      "payments": [
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 14.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
     },
     "currentCompleteWeek": {
       "label": "Sales last week",
       "range": "May 11-May 17, 2026",
-      "purchases": 5,
-      "purchaseRevenue": 31.95,
-      "developerRevShare": 25.55,
-      "revenuePerPurchase": 6.39,
+      "purchases": 6,
+      "purchaseRevenue": 61.94,
+      "developerRevShare": 46.54,
+      "revenuePerPurchase": 10.32,
       "payments": [
         {
           "date": "May 16",
@@ -3284,6 +3482,14 @@
           "developerRevShare": 4.78,
           "description": "Roku - Purchase HD 3",
           "source": "Roku"
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
         }
       ],
       "deltaPurchasesPct": -54.54545454545454,
@@ -3292,28 +3498,70 @@
     "weekToDate": {
       "label": "Sales this week",
       "range": "May 11-May 14, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "developerRevShare": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": []
+      "purchases": 2,
+      "purchaseRevenue": 44.98,
+      "developerRevShare": 31.49,
+      "revenuePerPurchase": 22.49,
+      "payments": [
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 14.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
       "range": "May 7-May 18, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "developerRevShare": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": []
+      "purchases": 3,
+      "purchaseRevenue": 74.97,
+      "developerRevShare": 52.48,
+      "revenuePerPurchase": 24.99,
+      "payments": [
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 14.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
     },
     "lifetimeObserved": {
       "label": "Sales this year",
       "range": "Jan 1-May 14, 2026",
-      "purchases": 27,
-      "purchaseRevenue": 406.73,
-      "developerRevShare": 190.45,
-      "revenuePerPurchase": 15.06,
+      "purchases": 30,
+      "purchaseRevenue": 481.7,
+      "developerRevShare": 242.93,
+      "revenuePerPurchase": 16.06,
       "payments": [
         {
           "date": "May 6",
@@ -3370,6 +3618,30 @@
           "amount": 9.99,
           "description": "Customer User - Purchase Bundle 10: Signup payment",
           "source": "Stripe"
+        },
+        {
+          "date": "May 13",
+          "rawDate": "20260513",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 29.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase Bundle 30",
+          "source": "Apple App Store"
+        },
+        {
+          "date": "May 18",
+          "rawDate": "20260518",
+          "amount": 14.99,
+          "count": 1,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
         }
       ]
     },
@@ -3401,14 +3673,20 @@
       },
       {
         "label": "Apple Purchase Bundle 30",
-        "purchases": 1,
-        "purchaseRevenue": 29.99,
-        "developerRevShare": 20.99
+        "purchases": 2,
+        "purchaseRevenue": 59.98,
+        "developerRevShare": 41.99
       },
       {
         "label": "Apple Purchase HD 15",
-        "purchases": 2,
-        "purchaseRevenue": 29.98,
+        "purchases": 3,
+        "purchaseRevenue": 44.97,
+        "developerRevShare": 31.48
+      },
+      {
+        "label": "Apple Purchase Bundle 30, date pending",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
         "developerRevShare": 20.99
       },
       {
@@ -3730,9 +4008,9 @@
       {
         "date": "May 13",
         "rawDate": "20260513",
-        "purchases": 1,
-        "purchaseRevenue": 2.99,
-        "developerRevShare": 2.39
+        "purchases": 2,
+        "purchaseRevenue": 32.98,
+        "developerRevShare": 23.38
       },
       {
         "date": "May 14",
@@ -3765,12 +4043,12 @@
       {
         "date": "May 18",
         "rawDate": "20260518",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchases": 2,
+        "purchaseRevenue": 44.98,
+        "developerRevShare": 31.48
       }
     ],
-    "note": "Visible platform sales show 27 purchases and $406.73 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $69.96, with estimated net-to-Electric of $48.97 after Apple’s 30% platform fee. Add Google Play reports before treating this as total sales."
+    "note": "Visible platform sales combine Stripe-visible, Roku-visible, and manually entered Apple App Store snapshot sales. This is still not total ElectricNOW sales because Google Play and any other app-store/platform channels may be missing."
   },
   "contentUsage": {
     "period": "May 11-May 17, 2026",
@@ -6415,5 +6693,36 @@
       "comparisonLabel": "latest 28 days"
     },
     "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Landing-page traffic remains acquisition-only and is not included here."
+  },
+  "manualAppleSalesUpdate": {
+    "updatedAt": "2026-05-20T02:05:13.539727+00:00",
+    "addedPayments": [
+      {
+        "date": "May 13",
+        "rawDate": "20260513",
+        "amount": 29.99,
+        "count": 1,
+        "description": "Apple App Store - Purchase Bundle 30",
+        "source": "Apple App Store"
+      },
+      {
+        "date": "May 18",
+        "rawDate": "20260518",
+        "amount": 29.99,
+        "count": 1,
+        "description": "Apple App Store - Purchase Bundle 30",
+        "source": "Apple App Store"
+      },
+      {
+        "date": "May 18",
+        "rawDate": "20260518",
+        "amount": 14.99,
+        "count": 1,
+        "description": "Apple App Store - Purchase HD 15",
+        "source": "Apple App Store"
+      }
+    ],
+    "source": "User-provided Apple App Store screenshots for May 12-May 18, 2026",
+    "dedupeNote": "Existing dashboard had one undated Apple Bundle 30 sale from Apr 6-May 10; new screenshots are dated May 13 and May 18, so these were treated as new non-overlapping sales."
   }
 }
