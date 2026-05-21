@@ -1805,6 +1805,7 @@
   },
   "plainEnglishInsights": [
     "Overall, ElectricNOW’s latest measured week shows that measured platform audience grew 68.6%, viewing grew 78.9%, and time spent softened by 16.9 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
+    "Ad-performance audit for May 11-17, 2026 (review of internal email): Android active-user growth (+107.8% WoW) and iOS active-user growth (+61.6% WoW) are confirmed in GA4; the watched-video user count (~2.4K), the average-time-per-user decline of ~17 minutes, and the low video-completion rate (~10%) are also confirmed. However, total paid spend, total clicks, CPI, CPC and per-creative cost figures (Poly Couple, The Ark, UGC videos) come from Nathan's Google Ads / Meta accounts and cannot be independently verified from Electric's available data - GA4 only sees one linked Google Ads campaign (PCSM - ElectricNow App Promotion - Android: $105.55 spend, 821 clicks, $0.13 CPC, 466 conversions). The 2,864 reported installs is a paid-attributed subset, not total GA4 first_open events (which were 4,024). YTD purchase count (~27) also reflects Stripe/Apple/Roku reporting, not GA4 in_app_purchase events (7 YTD).",
     "Measured ElectricNOW platform audience was 7.8K GA4 active users excluding landing-page acquisition paths, up 68.6% from the previous week.",
     "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 7.9K, up 69.6% from the previous week; landing-page users were up 54.2%.",
     "Measured Apple/Android app-stream usage improved: 4.9K active users this week, up 217.5% from launch baseline and up 88.6% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
@@ -1824,7 +1825,11 @@
     "No separate GA4 event found for video_purchase yet.",
     "No separate GA4 event found for collection_purchase yet.",
     "Stripe is now one visible sales source in the dashboard; total sales still require Apple App Store and Google Play reporting, and GA4 purchase events still need to be split into go-ad-free, individual video, and collection purchase actions.",
-    "Live TV should be reconciled with Amagi and ad-server reporting."
+    "Live TV should be reconciled with Amagi and ad-server reporting.",
+    "Google Ads account access is held by the vendor (Nathan); Electric's GA4 only sees one linked Google Ads campaign (PCSM - ElectricNow App Promotion - Android: $105.55 spend, 821 clicks, 466 conversions for May 11-17). Total paid spend, clicks, CPI/CPC, per-platform CPI, and per-creative cost/download figures in vendor emails are not independently verifiable from this property and should be labeled 'vendor-reported'.",
+    "Paid-install attribution is vendor-reported. GA4 recorded 4,024 first_open events for May 11-17 (Android 2,497, iOS 1,527); the 2,864 installs figure in the vendor email is a paid-attributed subset and should not be read as total app installs.",
+    "Per-title ad_complete share (e.g. The Ark vs Poly Couple) and per-creative cost/download require a title or creative dimension on the ad_complete event that GA4 does not currently expose; these comparisons rely on the ad server / Meta Ads Manager and are not reproducible from GA4 alone.",
+    "GA4 in_app_purchase coverage is incomplete: GA4 has logged 7 in_app_purchase events / 5 users / $134.93 revenue YTD against the vendor-reported ~27 purchases. Source-of-truth for purchases is Stripe + Apple App Store + Roku + Google Play, not GA4."
   ],
   "salesSummary": {
     "sourceLabel": "Visible platform sales",
@@ -6724,5 +6729,195 @@
     ],
     "source": "User-provided Apple App Store screenshots for May 12-May 18, 2026",
     "dedupeNote": "Existing dashboard had one undated Apple Bundle 30 sale from Apr 6-May 10; new screenshots are dated May 13 and May 18, so these were treated as new non-overlapping sales."
+  },
+  "adPerformanceAudit": {
+    "label": "Ad-performance audit: May 11-17, 2026",
+    "generatedAt": "2026-05-21",
+    "source": "Internal email from Nathan reviewed against GA4 property 497892271",
+    "accessCaveat": "Electric does not have direct access to the Google Ads account Nathan uses; GA4-linked Google Ads data shows only one Android Google Ads campaign slice. Total paid spend, clicks, CPI, CPC, per-platform CPI, and per-creative cost/download figures should be treated as vendor-reported and not independently verified.",
+    "confirmed": [
+      {
+        "claim": "Android active users up ~107.8% WoW",
+        "ga4Reading": "Android active users 1,456 (May 4-10) -> 3,026 (May 11-17), +107.8% exactly",
+        "status": "Confirmed"
+      },
+      {
+        "claim": "iOS active users up ~61.5% WoW",
+        "ga4Reading": "iOS active users 1,293 -> 2,089, +61.6%",
+        "status": "Confirmed"
+      },
+      {
+        "claim": "Average time per user declined ~17 minutes WoW",
+        "ga4Reading": "Dashboard avg engaged minutes per user: 58.70 -> 41.82, delta -16.88 min",
+        "status": "Confirmed"
+      },
+      {
+        "claim": "Video-completion rate is low (~11%)",
+        "ga4Reading": "Dashboard videoCompleteUsers 263 / viewingEventUsers 2,504 = 10.5%. Direction and magnitude match (GA4 per-platform sum of unique video_complete users is 216, lower than the de-duped dashboard total of 263)",
+        "status": "Confirmed - directionally"
+      }
+    ],
+    "closeButImprecise": [
+      {
+        "claim": "4.9K app stream active users",
+        "ga4Reading": "Dashboard appActiveUsers = 4,912 (matches). GA4 simple platform sum is 5,115 because some users use both platforms.",
+        "status": "Close"
+      },
+      {
+        "claim": "7.8K app sessions",
+        "ga4Reading": "Dashboard appSessions = 7,752 (matches). GA4 platform sum 8,189.",
+        "status": "Close"
+      },
+      {
+        "claim": "82.4% engagement rate",
+        "ga4Reading": "Dashboard appEngagementRate = 82.37% (matches). GA4 weighted by sessions = 84.14%.",
+        "status": "Close"
+      },
+      {
+        "claim": "2.5K users watched video",
+        "ga4Reading": "Dashboard viewingEventUsers = 2,504. GA4 simple sum of unique video_start/play users by platform = 2,400.",
+        "status": "Close"
+      }
+    ],
+    "vendorReportedNotVerified": [
+      {
+        "claim": "Total paid spend ~$2,293",
+        "ga4Reading": "Only $105.55 in linked Google Ads cost is visible in GA4 (PCSM - ElectricNow App Promotion - Android). Meta spend, full Google Ads spend, and any other platforms are not in this GA4 property.",
+        "status": "Vendor-reported only"
+      },
+      {
+        "claim": "Total clicks 7,428 and CPC ~$0.31",
+        "ga4Reading": "GA4 shows 821 advertiserAdClicks at $0.13 CPC for the single linked Android Google Ads campaign. Other clicks/CPC come from Meta and other paid sources not joined to GA4 cost data.",
+        "status": "Vendor-reported only"
+      },
+      {
+        "claim": "Total installs 2,864; Android 1,842 @ $0.62-$0.63 CPI; iOS 1,022 @ $1.08-$1.16 CPI",
+        "ga4Reading": "GA4 first_open events May 11-17: Android 2,497 / iOS 1,527 / total 4,024 (application_install events: Android 2,473 / iOS 1,481 / total 3,954). The 2,864 reported installs is a paid-attributed subset rather than total app installs. Per-platform CPI relies on vendor spend Electric cannot see.",
+        "status": "Vendor-reported and partially inconsistent with GA4 install events"
+      },
+      {
+        "claim": "UGC-style video ads carry performance; Poly Couple has ~3x cost/download",
+        "ga4Reading": "Creative-level cost/download is not present in GA4. No way to verify from Electric-side data.",
+        "status": "Vendor-reported only"
+      },
+      {
+        "claim": "Poly Couple ~2% of ad_complete events; The Ark over 35%; ~7x volume difference",
+        "ga4Reading": "GA4 app-stream ad_complete totals May 11-17: Android 7,233 events / 355 users, iOS 7,696 events / 312 users (total 14,929 events). GA4 does not currently carry a per-title / per-creative dimension on ad_complete, so the within-title split cannot be reproduced.",
+        "status": "Vendor-reported only"
+      },
+      {
+        "claim": "Top content driving watch time: The Ark 6.8K play events, Leverage 5.5K, ElectricNOW Live ~10K events",
+        "ga4Reading": "Dashboard already lists top watched titles (ElectricNOW, The Ark, Leverage, Leverage: Redemption, Almost Paradise) and top Live channels with 4.2K Live play events; exact per-title event counts were not re-pulled in this audit.",
+        "status": "Not re-verified in this audit"
+      }
+    ],
+    "conflictsWithGa4": [
+      {
+        "claim": "~27 in-app purchases YTD",
+        "ga4Reading": "GA4 in_app_purchase events Jan 1-May 17 2026: 7 events / 5 users / $134.93 revenue (Android 4 / iOS 3). Nathan's ~27 figure must come from Stripe + Apple App Store + Roku + Google Play reporting; GA4 is undercounting purchase events.",
+        "status": "GA4 purchase tracking is incomplete; trust the storefront / Stripe rollup for revenue, not GA4 events"
+      }
+    ],
+    "ga4LinkedGoogleAds": {
+      "campaign": "PCSM - ElectricNow App Promotion - Android",
+      "platform": "Android (firstUserCampaignName)",
+      "dateRange": "May 11-May 17, 2026",
+      "advertiserAdCost": 105.55,
+      "advertiserAdClicks": 821,
+      "cpc": 0.1286,
+      "conversions": 466,
+      "note": "This is the only Google Ads campaign with cost/clicks visible in GA4 for this window. It does not represent the full paid buy."
+    },
+    "ga4InstallEvents": {
+      "dateRange": "May 11-May 17, 2026",
+      "first_open": {
+        "android": 2497,
+        "ios": 1527,
+        "total": 4024
+      },
+      "application_install": {
+        "android": 2473,
+        "ios": 1481,
+        "total": 3954
+      },
+      "topFirstUserSourcesAndroid": [
+        {
+          "source": "apps.facebook.com / (not set) (fb4a)",
+          "users": 1714
+        },
+        {
+          "source": "(direct)",
+          "users": 225
+        },
+        {
+          "source": "google / cpc (PCSM - ElectricNow App Promotion - Android)",
+          "users": 202
+        },
+        {
+          "source": "google-play / organic",
+          "users": 199
+        },
+        {
+          "source": "apps.instagram.com / (not set) (ig4a)",
+          "users": 156
+        }
+      ],
+      "topFirstUserSourcesIos": [
+        {
+          "source": "(direct)",
+          "users": 1500
+        }
+      ],
+      "note": "Nathan's 2,864 installs figure does not equal total GA4 first_open events (4,024) and is likely the paid-attributed subset."
+    },
+    "ga4ViewingAndCompletion": {
+      "dateRange": "May 11-May 17, 2026",
+      "video_start": {
+        "androidEvents": 7730,
+        "androidUsers": 1222,
+        "iosEvents": 2422,
+        "iosUsers": 997
+      },
+      "play": {
+        "androidEvents": 23126,
+        "androidUsers": 1396,
+        "iosEvents": 5427,
+        "iosUsers": 905
+      },
+      "uniqueViewingUsersBySimpleSum": 2400,
+      "video_complete": {
+        "androidEvents": 332,
+        "androidUsers": 118,
+        "iosEvents": 319,
+        "iosUsers": 98,
+        "userSimpleSum": 216,
+        "eventTotal": 651
+      },
+      "completionRateUsersSimpleSum": "9.0%",
+      "completionRateNathan": "10.5%",
+      "note": "Video-completion problem direction is confirmed but exact user counts differ from Nathan because dashboard videoCompleteUsers (263) is GA4's de-duped cross-platform unique-user metric, while the per-platform simple sum is 216."
+    },
+    "ga4PurchasesYearToDate": {
+      "dateRange": "Jan 1-May 17, 2026",
+      "in_app_purchase": {
+        "android": {
+          "events": 4,
+          "users": 3,
+          "revenue": 74.96
+        },
+        "ios": {
+          "events": 3,
+          "users": 2,
+          "revenue": 59.97
+        },
+        "total": {
+          "events": 7,
+          "users": 5,
+          "revenue": 134.93
+        }
+      },
+      "note": "GA4 in_app_purchase coverage is incomplete; rely on Stripe + Apple + Roku + Google Play for purchase counts and revenue."
+    },
+    "summary": "Nathan's qualitative read on the week is largely correct: Android and iOS active-user growth, the average-time-per-user decline, and the weak video-completion rate are all confirmed in GA4. However, every dollar/click/CPI/CPC figure and every per-creative or per-title cost comparison is vendor-reported and cannot be independently verified from Electric's available data, because Electric does not have access to Nathan's Google Ads account and GA4 sees only a small slice of Google Ads cost. The total-installs figure (2,864) is a paid-attributed subset rather than total GA4 first_open events (4,024). The YTD purchase count uses storefront reporting, not GA4."
   }
 }
