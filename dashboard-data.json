@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T02:05:13.539727+00:00",
+  "generatedAt": "2026-05-22T15:23:38.861969+00:00",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -6724,5 +6724,231 @@
     ],
     "source": "User-provided Apple App Store screenshots for May 12-May 18, 2026",
     "dedupeNote": "Existing dashboard had one undated Apple Bundle 30 sale from Apr 6-May 10; new screenshots are dated May 13 and May 18, so these were treated as new non-overlapping sales."
+  },
+  "googleAdsSummary": {
+    "source": "Google Ads connector",
+    "accountId": "4342267711",
+    "customerClientId": "4342267711",
+    "accountName": "Electric Entertainment",
+    "period": "May 11-May 21, 2026",
+    "campaignName": "PCSM - ElectricNow App Promotion - Android",
+    "campaignId": "23836266606",
+    "campaignType": "Android App Campaign",
+    "status": "Enabled / Eligible",
+    "impressions": 36923,
+    "clicks": 1175,
+    "ctrPct": 3.18,
+    "cost": 176.44,
+    "avgCpc": 0.15,
+    "conversions": 349.0,
+    "allConversions": 753.0,
+    "conversionRatePct": 29.7,
+    "costPerConversion": 0.51,
+    "daily": [
+      {
+        "date": "2026-05-12",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 1376,
+        "clicks": 70,
+        "ctrPct": 5.09,
+        "cost": 7.91,
+        "avgCpc": 0.11,
+        "conversions": 27.0,
+        "allConversions": 61.0,
+        "conversionRatePct": 9.47,
+        "costPerConversion": 0.29,
+        "conversionValue": 27.0
+      },
+      {
+        "date": "2026-05-13",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 3833,
+        "clicks": 137,
+        "ctrPct": 3.57,
+        "cost": 17.96,
+        "avgCpc": 0.13,
+        "conversions": 32.0,
+        "allConversions": 83.0,
+        "conversionRatePct": 5.72,
+        "costPerConversion": 0.56,
+        "conversionValue": 32.0
+      },
+      {
+        "date": "2026-05-14",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 3437,
+        "clicks": 120,
+        "ctrPct": 3.49,
+        "cost": 12.86,
+        "avgCpc": 0.11,
+        "conversions": 41.0,
+        "allConversions": 87.0,
+        "conversionRatePct": 21.35,
+        "costPerConversion": 0.31,
+        "conversionValue": 41.0
+      },
+      {
+        "date": "2026-05-15",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 6090,
+        "clicks": 151,
+        "ctrPct": 2.48,
+        "cost": 18.24,
+        "avgCpc": 0.12,
+        "conversions": 40.0,
+        "allConversions": 94.0,
+        "conversionRatePct": 16.88,
+        "costPerConversion": 0.46,
+        "conversionValue": 40.0
+      },
+      {
+        "date": "2026-05-16",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 6188,
+        "clicks": 201,
+        "ctrPct": 3.25,
+        "cost": 29.14,
+        "avgCpc": 0.14,
+        "conversions": 46.0,
+        "allConversions": 101.0,
+        "conversionRatePct": 9.94,
+        "costPerConversion": 0.63,
+        "conversionValue": 46.0
+      },
+      {
+        "date": "2026-05-17",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 4517,
+        "clicks": 142,
+        "ctrPct": 3.14,
+        "cost": 19.35,
+        "avgCpc": 0.14,
+        "conversions": 35.0,
+        "allConversions": 72.0,
+        "conversionRatePct": 8.08,
+        "costPerConversion": 0.55,
+        "conversionValue": 35.0
+      },
+      {
+        "date": "2026-05-18",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 4126,
+        "clicks": 127,
+        "ctrPct": 3.08,
+        "cost": 22.38,
+        "avgCpc": 0.18,
+        "conversions": 40.0,
+        "allConversions": 79.0,
+        "conversionRatePct": 6.62,
+        "costPerConversion": 0.56,
+        "conversionValue": 40.0
+      },
+      {
+        "date": "2026-05-19",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 2716,
+        "clicks": 71,
+        "ctrPct": 2.61,
+        "cost": 16.68,
+        "avgCpc": 0.23,
+        "conversions": 34.0,
+        "allConversions": 71.0,
+        "conversionRatePct": 7.17,
+        "costPerConversion": 0.49,
+        "conversionValue": 34.0
+      },
+      {
+        "date": "2026-05-20",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 2337,
+        "clicks": 87,
+        "ctrPct": 3.72,
+        "cost": 14.85,
+        "avgCpc": 0.17,
+        "conversions": 24.0,
+        "allConversions": 54.0,
+        "conversionRatePct": 4.34,
+        "costPerConversion": 0.62,
+        "conversionValue": 24.0
+      },
+      {
+        "date": "2026-05-21",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 2303,
+        "clicks": 69,
+        "ctrPct": 3.0,
+        "cost": 17.07,
+        "avgCpc": 0.25,
+        "conversions": 30.0,
+        "allConversions": 51.0,
+        "conversionRatePct": 6.76,
+        "costPerConversion": 0.57,
+        "conversionValue": 30.0
+      }
+    ],
+    "deviceBreakout": [
+      {
+        "device": "MOBILE",
+        "impressions": 30293,
+        "clicks": 988,
+        "ctrPct": 3.26,
+        "cost": 149.6,
+        "conversions": 292.0,
+        "allConversions": 632.0,
+        "costPerConversion": 0.51
+      },
+      {
+        "device": "TABLET",
+        "impressions": 6629,
+        "clicks": 187,
+        "ctrPct": 2.82,
+        "cost": 26.82,
+        "conversions": 57.0,
+        "allConversions": 121.0,
+        "costPerConversion": 0.47
+      },
+      {
+        "device": "CONNECTED_TV",
+        "impressions": 1,
+        "clicks": 0,
+        "ctrPct": 0.0,
+        "cost": 0.01,
+        "conversions": 0.0,
+        "allConversions": 0.0,
+        "costPerConversion": null
+      }
+    ],
+    "conversionActions": [
+      {
+        "name": "electricnow-4fbb4 - com.electric.now (Android) First open",
+        "conversions": 349.0,
+        "allConversions": 391.0,
+        "conversionValue": 349.0
+      },
+      {
+        "name": "Android installs (all other apps)",
+        "conversions": 0.0,
+        "allConversions": 362.0,
+        "conversionValue": 0.0
+      }
+    ],
+    "plainEnglish": "Google Ads is now useful for judging paid Android app-campaign efficiency directly: it shows spend, clicks, installs/first-opens, conversion rate, and cost per conversion. This should sit beside GA4 viewing quality so we can see not only whether ads are buying installs, but whether those installs become viewers."
+  },
+  "adSuccessSummary": {
+    "googleAds": {
+      "period": "May 11-May 21, 2026",
+      "campaignName": "PCSM - ElectricNow App Promotion - Android",
+      "spend": 176.44,
+      "impressions": 36923,
+      "clicks": 1175,
+      "ctrPct": 3.18,
+      "avgCpc": 0.15,
+      "firstOpenConversions": 349.0,
+      "allConversions": 753.0,
+      "conversionRatePct": 29.7,
+      "costPerConversion": 0.51,
+      "source": "Google Ads connector",
+      "note": "Google Ads is now useful for judging paid Android app-campaign efficiency directly: it shows spend, clicks, installs/first-opens, conversion rate, and cost per conversion. This should sit beside GA4 viewing quality so we can see not only whether ads are buying installs, but whether those installs become viewers."
+    }
   }
 }
