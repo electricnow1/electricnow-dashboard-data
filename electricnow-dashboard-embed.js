@@ -1936,16 +1936,18 @@
       "Average time on platform is 40.0 engaged minutes per active user across all GA4-tracked platforms, up 14.9 minutes from launch week and down 6.5 minutes from the previous week.",
       "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
       "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 1 purchases and $19.99 in the latest 7 complete days, plus 0 purchases and $0.00 so far this week; this still excludes Google Play purchases. The Apple App Store contribution is currently a manual snapshot of $69.96 gross, or about $48.97 after Apple\u2019s 30% platform fee.",
+      "Separately, GA4 detected Android in-app purchase activity on May 21, 2026 that is not currently represented in Stripe, Roku, or the Apple App Store dashboard sales: 2 in_app_purchase events totaling $29.98 (1 Android mobile in Philadelphia at appVersion 16.019, and 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing and is shown as a GA4 purchase signal only \u2014 it should be reconciled with Google Play Console before being treated as final revenue, and it is intentionally kept out of the visible platform sales rollup until then.",
       "Ad-sales readiness is mixed: GA4 counted 34.1K ad impressions in the latest 7 complete days, down 9.7% from the previous 7 days; ad requests were up 6.5%; completed ad events were down 21.6%. This tells us ad inventory delivery inside the tracked app experience, but actual ad revenue still needs to be reconciled with the ad server because GA4 ad events are not the same thing as booked or collected ad sales.",
       "Top watched programs in GA4 this week include ElectricNOW, The Ark, Leverage, The Librarians, and Almost Paradise.",
       "The most watched Live channels generated 3.8K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, spot on news, Cartoon Classics, and ToonOvation.",
-      "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions."
+      "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions; the new GA4 in-app purchase signal section above is the first directional read of Android/Google Play activity and is not yet a financial sales source."
     ],
     "instrumentationGaps": [
       "No separate GA4 event found for go_ad_free_click yet.",
       "No separate GA4 event found for video_purchase yet.",
       "No separate GA4 event found for collection_purchase yet.",
       "Stripe is now one visible sales source in the dashboard; total sales still require Apple App Store and Google Play reporting, and GA4 purchase events still need to be split into go-ad-free, individual video, and collection purchase actions.",
+      "GA4 in_app_purchase events on Android are now surfaced in a dedicated GA4 In-App Purchase Signals section as directional Google Play / Android billing signals. They are kept out of visible platform sales until they can be reconciled against Google Play Console reporting.",
       "Live TV should be reconciled with Amagi and ad-server reporting."
     ],
     "salesSummary": {
@@ -3853,6 +3855,105 @@
         }
       ],
       "note": "Visible platform sales show 27 purchases and $406.73 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $69.96, with estimated net-to-Electric of $48.97 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
+    },
+    "ga4PurchaseSignals": {
+      "sourceLabel": "GA4 In-App Purchase Signals",
+      "sourceShortLabel": "Google Play / Android purchase signals",
+      "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+      "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
+      "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
+      "isFinancialRevenue": false,
+      "excludedFromVisiblePlatformSales": true,
+      "latestDay": {
+        "label": "GA4 in-app purchase signals on May 21, 2026",
+        "date": "2026-05-21",
+        "range": "May 21, 2026 (America/Los_Angeles)",
+        "purchaseRevenue": 29.98,
+        "eventCount": 2,
+        "events": [
+          {
+            "dateHour": "2026052106",
+            "eventName": "in_app_purchase",
+            "platform": "Android",
+            "deviceCategory": "mobile",
+            "operatingSystem": "Android",
+            "appVersion": "16.019",
+            "country": "United States",
+            "region": "Pennsylvania",
+            "city": "Philadelphia",
+            "sourceMedium": "(direct) / (none)",
+            "transactionId": "(not set)",
+            "purchaseRevenue": 14.99
+          },
+          {
+            "dateHour": "2026052121",
+            "eventName": "in_app_purchase",
+            "platform": "Android",
+            "deviceCategory": "smart tv",
+            "operatingSystem": "Android",
+            "appVersion": "16.026",
+            "country": "United States",
+            "region": "Washington",
+            "city": "Vancouver",
+            "sourceMedium": "(direct) / (none)",
+            "transactionId": "(not set)",
+            "purchaseRevenue": 14.99
+          }
+        ]
+      },
+      "platformSplit": [
+        {
+          "label": "Android \u00b7 mobile",
+          "platform": "Android",
+          "deviceCategory": "mobile",
+          "eventCount": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "label": "Android \u00b7 smart tv",
+          "platform": "Android",
+          "deviceCategory": "smart tv",
+          "eventCount": 1,
+          "purchaseRevenue": 14.99
+        }
+      ],
+      "appVersionSplit": [
+        {
+          "appVersion": "16.019",
+          "platform": "Android",
+          "deviceCategory": "mobile",
+          "eventCount": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "appVersion": "16.026",
+          "platform": "Android",
+          "deviceCategory": "smart tv",
+          "eventCount": 1,
+          "purchaseRevenue": 14.99
+        }
+      ],
+      "geoSplit": [
+        {
+          "country": "United States",
+          "region": "Pennsylvania",
+          "city": "Philadelphia",
+          "eventCount": 1,
+          "purchaseRevenue": 14.99
+        },
+        {
+          "country": "United States",
+          "region": "Washington",
+          "city": "Vancouver",
+          "eventCount": 1,
+          "purchaseRevenue": 14.99
+        }
+      ],
+      "comparisonProperty": {
+        "property": "213042706",
+        "result": "No in_app_purchase rows returned for 2026-05-21 from the older GA4 property; signal is only present in property 497892271."
+      },
+      "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
     },
     "contentUsage": {
       "period": "May 15-May 21, 2026",
@@ -7513,6 +7614,185 @@
     $('#google-ads-plain').textContent = plain;
   }
 
+  function ensureGa4PurchaseSection() {
+    let section = document.getElementById('ga4-purchase-signals');
+    if (section) return section;
+    const purchases = document.getElementById('purchases');
+    if (!purchases) return null;
+    const sideNav = document.querySelector('#electricnow-dashboard-embed .side-nav');
+    if (sideNav && !sideNav.querySelector('a[href="#ga4-purchase-signals"]')) {
+      const purchaseLink = sideNav.querySelector('a[href="#purchases"]');
+      const link = document.createElement('a');
+      link.href = '#ga4-purchase-signals';
+      link.setAttribute('data-testid', 'nav-ga4-purchase-signals');
+      link.textContent = 'GA4 purchase signals';
+      if (purchaseLink && purchaseLink.nextSibling) {
+        sideNav.insertBefore(link, purchaseLink.nextSibling);
+      } else {
+        sideNav.appendChild(link);
+      }
+    }
+    section = document.createElement('section');
+    section.className = 'panel';
+    section.id = 'ga4-purchase-signals';
+    section.setAttribute('aria-labelledby', 'ga4-purchase-signals-title');
+    section.setAttribute('data-testid', 'section-ga4-purchase-signals');
+    section.innerHTML = `
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">GA4 purchase signal — not reconciled revenue</p>
+          <h2 id="ga4-purchase-signals-title">GA4 In-App Purchase Signals (Google Play / Android)</h2>
+        </div>
+        <span class="period-chip" id="ga4-purchase-signals-period">Latest</span>
+      </div>
+      <p id="ga4-purchase-signals-note" class="panel-note"></p>
+      <div id="ga4-purchase-signals-callout" class="sales-summary"></div>
+      <div id="ga4-purchase-signals-splits" class="sales-summary"></div>
+      <div id="ga4-purchase-signals-events" class="table-wrap"></div>
+      <p id="ga4-purchase-signals-reconcile" class="sales-note"></p>
+    `;
+    const parent = purchases.parentNode;
+    if (!parent) return null;
+    if (parent.classList && parent.classList.contains('dashboard-grid')) {
+      parent.parentNode.insertBefore(section, parent.nextSibling);
+    } else {
+      parent.insertBefore(section, purchases.nextSibling);
+    }
+    return section;
+  }
+
+  function renderGa4PurchaseSignals() {
+    const signals = data.ga4PurchaseSignals;
+    const section = ensureGa4PurchaseSection();
+    if (!section) return;
+    if (!signals || typeof signals !== 'object') {
+      section.hidden = true;
+      return;
+    }
+    section.hidden = false;
+
+    const latest = signals.latestDay || {};
+    const periodChip = $('#ga4-purchase-signals-period');
+    if (periodChip) periodChip.textContent = latest.range || latest.date || 'Latest GA4 signal';
+
+    const noteEl = $('#ga4-purchase-signals-note');
+    if (noteEl) noteEl.textContent = signals.sourceDetail || '';
+
+    const platformRows = (signals.platformSplit || [])
+      .map((row) => `
+        <li>
+          <span>${escapeHtml(row.label || `${row.platform || ''} · ${row.deviceCategory || ''}`)}</span>
+          <strong>${fmt.number(row.eventCount)} events / ${fmt.currency(row.purchaseRevenue)}</strong>
+        </li>
+      `)
+      .join('');
+    const appVersionRows = (signals.appVersionSplit || [])
+      .map((row) => `
+        <li>
+          <span>${escapeHtml(`appVersion ${row.appVersion || 'unknown'} · ${row.platform || ''} ${row.deviceCategory || ''}`.trim())}</span>
+          <strong>${fmt.number(row.eventCount)} events / ${fmt.currency(row.purchaseRevenue)}</strong>
+        </li>
+      `)
+      .join('');
+    const geoRows = (signals.geoSplit || [])
+      .map((row) => {
+        const place = [row.city, row.region, row.country].filter(Boolean).join(', ');
+        return `
+        <li>
+          <span>${escapeHtml(place || 'Unknown location')}</span>
+          <strong>${fmt.number(row.eventCount)} events / ${fmt.currency(row.purchaseRevenue)}</strong>
+        </li>
+      `;
+      })
+      .join('');
+
+    const callout = $('#ga4-purchase-signals-callout');
+    if (callout) {
+      callout.innerHTML = `
+        <div class="sales-callout">
+          <span>${escapeHtml(signals.sourceLabel || 'GA4 In-App Purchase Signals')}</span>
+          <strong>${fmt.number(latest.eventCount)} events / ${fmt.currency(latest.purchaseRevenue)}</strong>
+          <p>${escapeHtml(latest.label || latest.range || '')}. ${escapeHtml(signals.reconciliationLabel || '')}. ${escapeHtml(signals.reconciliationDetail || '')}</p>
+        </div>
+        <div class="sales-audit">
+          <span>Why this is separated</span>
+          <strong>Not in visible platform sales</strong>
+          <p>This GA4 in_app_purchase signal is excluded from the Stripe / Roku / Apple visible-sales rollup above. It is shown here as a directional Google Play / Android billing signal until it can be reconciled against Google Play Console reporting.</p>
+        </div>
+      `;
+    }
+
+    const splits = $('#ga4-purchase-signals-splits');
+    if (splits) {
+      const hasSplits = platformRows || appVersionRows || geoRows;
+      splits.innerHTML = hasSplits
+        ? `
+          <div class="sales-callout">
+            <span>Platform / device split</span>
+            <ul class="sales-source-list">${platformRows || '<li><span>No split</span><strong>—</strong></li>'}</ul>
+          </div>
+          <div class="sales-callout">
+            <span>App version split</span>
+            <ul class="sales-source-list">${appVersionRows || '<li><span>No split</span><strong>—</strong></li>'}</ul>
+          </div>
+          <div class="sales-callout">
+            <span>Geography</span>
+            <ul class="sales-source-list">${geoRows || '<li><span>No split</span><strong>—</strong></li>'}</ul>
+          </div>
+        `
+        : '';
+    }
+
+    const eventsWrap = $('#ga4-purchase-signals-events');
+    const events = (latest && latest.events) || [];
+    if (eventsWrap) {
+      if (events.length) {
+        const headerRow = `
+          <thead>
+            <tr>
+              <th>Date / hour</th>
+              <th>Event</th>
+              <th>Platform / device</th>
+              <th>App version</th>
+              <th>Location</th>
+              <th>Source / medium</th>
+              <th>Transaction ID</th>
+              <th>Revenue</th>
+            </tr>
+          </thead>
+        `;
+        const bodyRows = events
+          .map((row) => {
+            const place = [row.city, row.region, row.country].filter(Boolean).join(', ');
+            return `
+              <tr>
+                <td>${escapeHtml(row.dateHour || '')}</td>
+                <td>${escapeHtml(row.eventName || '')}</td>
+                <td>${escapeHtml(`${row.platform || ''} · ${row.deviceCategory || ''}`.trim())}</td>
+                <td>${escapeHtml(row.appVersion || '')}</td>
+                <td>${escapeHtml(place)}</td>
+                <td>${escapeHtml(row.sourceMedium || '')}</td>
+                <td>${escapeHtml(row.transactionId || '(not set)')}</td>
+                <td><strong>${fmt.currency(row.purchaseRevenue)}</strong></td>
+              </tr>
+            `;
+          })
+          .join('');
+        eventsWrap.innerHTML = `<table>${headerRow}<tbody>${bodyRows}</tbody></table>`;
+      } else {
+        eventsWrap.innerHTML = '';
+      }
+    }
+
+    const reconcile = $('#ga4-purchase-signals-reconcile');
+    if (reconcile) {
+      const comparison = signals.comparisonProperty
+        ? ` ${signals.comparisonProperty.result || ''}`
+        : '';
+      reconcile.textContent = `${signals.note || ''}${comparison}`.trim();
+    }
+  }
+
   function renderAll() {
     $('#trend-period').textContent =
       selectedPeriod === 'weekToDate' ? data.periods.weekToDate.range : data.periods.currentWeek.range;
@@ -7522,6 +7802,7 @@
     renderTrafficChart();
     renderPurchaseChart();
     renderPurchases();
+    renderGa4PurchaseSignals();
     renderMetricList();
     renderEventLists();
     renderPlatformMix();

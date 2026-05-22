@@ -1904,16 +1904,18 @@
     "Average time on platform is 38.7 engaged minutes per active user across all GA4-tracked platforms, up 13.7 minutes from launch week and down 7.7 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
     "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 3 purchases and $64.97 in the latest 7 complete days, plus 2 purchases and $44.98 so far this week; this still excludes Google Play purchases. The Apple App Store contribution is currently a manual snapshot of $144.93 gross, or about $101.45 after Apple\u2019s 30% platform fee.",
+    "Separately, GA4 detected Android in-app purchase activity on May 21, 2026 that is not currently represented in Stripe, Roku, or the Apple App Store dashboard sales: 2 in_app_purchase events totaling $29.98 (1 Android mobile in Philadelphia at appVersion 16.019, and 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing and is shown as a GA4 purchase signal only \u2014 it should be reconciled with Google Play Console before being treated as final revenue, and it is intentionally kept out of the visible platform sales rollup until then.",
     "Ad-sales readiness is mixed: GA4 counted 34.7K ad impressions in the latest 7 complete days, down 8.0% from the previous 7 days; ad requests were up 8.7%; completed ad events were down 20.3%. This tells us ad inventory delivery inside the tracked app experience, but actual ad revenue still needs to be reconciled with the ad server because GA4 ad events are not the same thing as booked or collected ad sales.",
     "Top watched programs in GA4 this week include ElectricNOW, The Ark, Leverage, The Librarians, and Leverage: Redemption.",
     "The most watched Live channels generated 3.9K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, spot on news, Cartoon Classics, and ToonOvation.",
-    "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions."
+    "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions; the new GA4 in-app purchase signal section above is the first directional read of Android/Google Play activity and is not yet a financial sales source."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
     "No separate GA4 event found for video_purchase yet.",
     "No separate GA4 event found for collection_purchase yet.",
     "Stripe is now one visible sales source in the dashboard; total sales still require Apple App Store and Google Play reporting, and GA4 purchase events still need to be split into go-ad-free, individual video, and collection purchase actions.",
+    "GA4 in_app_purchase events on Android are now surfaced in a dedicated GA4 In-App Purchase Signals section as directional Google Play / Android billing signals. They are kept out of visible platform sales until they can be reconciled against Google Play Console reporting.",
     "Live TV should be reconciled with Amagi and ad-server reporting."
   ],
   "salesSummary": {
@@ -4011,6 +4013,105 @@
       }
     ],
     "note": "Visible platform sales show 30 purchases and $481.70 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $144.93, with estimated net-to-Electric of $101.45 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
+  },
+  "ga4PurchaseSignals": {
+    "sourceLabel": "GA4 In-App Purchase Signals",
+    "sourceShortLabel": "Google Play / Android purchase signals",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
+    "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
+    "isFinancialRevenue": false,
+    "excludedFromVisiblePlatformSales": true,
+    "latestDay": {
+      "label": "GA4 in-app purchase signals on May 21, 2026",
+      "date": "2026-05-21",
+      "range": "May 21, 2026 (America/Los_Angeles)",
+      "purchaseRevenue": 29.98,
+      "eventCount": 2,
+      "events": [
+        {
+          "dateHour": "2026052106",
+          "eventName": "in_app_purchase",
+          "platform": "Android",
+          "deviceCategory": "mobile",
+          "operatingSystem": "Android",
+          "appVersion": "16.019",
+          "country": "United States",
+          "region": "Pennsylvania",
+          "city": "Philadelphia",
+          "sourceMedium": "(direct) / (none)",
+          "transactionId": "(not set)",
+          "purchaseRevenue": 14.99
+        },
+        {
+          "dateHour": "2026052121",
+          "eventName": "in_app_purchase",
+          "platform": "Android",
+          "deviceCategory": "smart tv",
+          "operatingSystem": "Android",
+          "appVersion": "16.026",
+          "country": "United States",
+          "region": "Washington",
+          "city": "Vancouver",
+          "sourceMedium": "(direct) / (none)",
+          "transactionId": "(not set)",
+          "purchaseRevenue": 14.99
+        }
+      ]
+    },
+    "platformSplit": [
+      {
+        "label": "Android \u00b7 mobile",
+        "platform": "Android",
+        "deviceCategory": "mobile",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "label": "Android \u00b7 smart tv",
+        "platform": "Android",
+        "deviceCategory": "smart tv",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      }
+    ],
+    "appVersionSplit": [
+      {
+        "appVersion": "16.019",
+        "platform": "Android",
+        "deviceCategory": "mobile",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "appVersion": "16.026",
+        "platform": "Android",
+        "deviceCategory": "smart tv",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      }
+    ],
+    "geoSplit": [
+      {
+        "country": "United States",
+        "region": "Pennsylvania",
+        "city": "Philadelphia",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "country": "United States",
+        "region": "Washington",
+        "city": "Vancouver",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      }
+    ],
+    "comparisonProperty": {
+      "property": "213042706",
+      "result": "No in_app_purchase rows returned for 2026-05-21 from the older GA4 property; signal is only present in property 497892271."
+    },
+    "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
   },
   "contentUsage": {
     "period": "May 15-May 21, 2026",
