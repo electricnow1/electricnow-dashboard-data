@@ -1004,7 +1004,7 @@
         "weekToDate": 2,
         "deltaPct": -60.0,
         "tracked": true,
-        "note": "Launch baseline: 11 purchases / $159.89"
+        "note": "Stripe lifetime through May 22, 2026: 13 purchases / $189.87"
       },
       {
         "event": "go_ad_free_click",
@@ -1935,7 +1935,7 @@
       "Actual viewing behavior is measured separately: 2.7K users triggered a viewing event, up 34.4% from the previous week; video-complete users were up 43.1%.",
       "Average time on platform is 40.0 engaged minutes per active user across all GA4-tracked platforms, up 14.9 minutes from launch week and down 6.5 minutes from the previous week.",
       "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
-      "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 1 purchases and $19.99 in the latest 7 complete days, plus 0 purchases and $0.00 so far this week; this still excludes Google Play purchases. The Apple App Store contribution is currently a manual snapshot of $69.96 gross, or about $48.97 after Apple\u2019s 30% platform fee.",
+      "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 2 purchases and $34.98 in the latest 7 complete days (1 Stripe on May 17, 1 Roku on May 16), plus 0 purchases and $0.00 so far this week; this still excludes Google Play purchases. Stripe contributes 13 succeeded payments and $189.87 year to date now that the Stripe connector is reconnected. The Apple App Store contribution is currently a manual snapshot of $69.96 gross, or about $48.97 after Apple\u2019s 30% platform fee.",
       "Separately, GA4 detected Android in-app purchase activity on May 21, 2026 that is not currently represented in Stripe, Roku, or the Apple App Store dashboard sales: 2 in_app_purchase events totaling $29.98 (1 Android mobile in Philadelphia at appVersion 16.019, and 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing and is shown as a GA4 purchase signal only \u2014 it should be reconciled with Google Play Console before being treated as final revenue, and it is intentionally kept out of the visible platform sales rollup until then.",
       "Ad-sales readiness is mixed: GA4 counted 34.1K ad impressions in the latest 7 complete days, down 9.7% from the previous 7 days; ad requests were up 6.5%; completed ad events were down 21.6%. This tells us ad inventory delivery inside the tracked app experience, but actual ad revenue still needs to be reconciled with the ad server because GA4 ad events are not the same thing as booked or collected ad sales.",
       "Top watched programs in GA4 this week include ElectricNOW, The Ark, Leverage, The Librarians, and Almost Paradise.",
@@ -1955,7 +1955,26 @@
       "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from the latest Roku email report, and a manual Apple App Store screenshot snapshot. It is still not total ElectricNOW sales because Google Play purchases are handled separately and Apple is not yet API-connected.",
       "stripe": {
         "sourceLabel": "Stripe-visible payments",
-        "sourceDetail": "Stripe-visible sales are shown from the last successful pull. Latest live Stripe refresh failed: {\"error\": \"auth_required\", \"auth_url\": \"https://www.perplexity.ai/rest/connector-service/auth/oauth-redirect?source_id=stripe\", \"source_id\": \"stripe\"}\n",
+        "sourceDetail": "Stripe-visible sales are shown from the latest live Stripe pull (connector re-established May 22, 2026). Source account: electricnow.tv (acct_1HZdStLG0Cw1zW4e). 13 succeeded payment intents and $189.87 returned from list_payment_intents; list_invoices and list_subscriptions both returned empty. One $1,800.00 payment intent (pi_3Qk3NgLG0Cw1zW4e0hgSXvz0) was canceled and is excluded from sales.",
+        "connectorStatus": {
+          "sourceId": "stripe",
+          "status": "CONNECTED",
+          "accountId": "acct_1HZdStLG0Cw1zW4e",
+          "displayName": "electricnow.tv",
+          "lastSuccessfulPull": "2026-05-22 16:52 PDT",
+          "invoicesReturned": 0,
+          "subscriptionsReturned": 0,
+          "paymentIntentsReturned": 14,
+          "succeededPaymentIntents": 13,
+          "canceledPaymentIntents": 1,
+          "canceledPaymentIntent": {
+            "id": "pi_3Qk3NgLG0Cw1zW4e0hgSXvz0",
+            "amount": 1800.00,
+            "status": "canceled",
+            "customer": null,
+            "note": "Excluded from Stripe-visible sales."
+          }
+        },
         "baselineWindow": {
           "label": "Stripe launch baseline",
           "range": "Apr 13-Apr 19, 2026",
@@ -1968,13 +1987,25 @@
         },
         "yearToDate": {
           "label": "Sales this year",
-          "range": "Jan 1-May 14, 2026",
-          "purchases": 11,
-          "purchaseRevenue": 159.89,
-          "revenuePerPurchase": 14.54,
+          "range": "Jan 1-May 22, 2026",
+          "purchases": 13,
+          "purchaseRevenue": 189.87,
+          "revenuePerPurchase": 14.61,
           "deltaPurchasesPct": null,
           "deltaRevenuePct": null,
           "payments": [
+            {
+              "date": "May 17",
+              "createdAt": "2026-05-17 21:26 PDT",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment"
+            },
+            {
+              "date": "May 14",
+              "createdAt": "2026-05-14 20:09 PDT",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment"
+            },
             {
               "date": "May 6",
               "createdAt": "2026-05-06 01:02 PDT",
@@ -2027,13 +2058,25 @@
         },
         "monthToDate": {
           "label": "Sales this month",
-          "range": "May 1-May 14, 2026",
-          "purchases": 1,
-          "purchaseRevenue": 14.99,
+          "range": "May 1-May 22, 2026",
+          "purchases": 3,
+          "purchaseRevenue": 44.97,
           "revenuePerPurchase": 14.99,
           "deltaPurchasesPct": null,
           "deltaRevenuePct": null,
           "payments": [
+            {
+              "date": "May 17",
+              "createdAt": "2026-05-17 21:26 PDT",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment"
+            },
+            {
+              "date": "May 14",
+              "createdAt": "2026-05-14 20:09 PDT",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment"
+            },
             {
               "date": "May 6",
               "createdAt": "2026-05-06 01:02 PDT",
@@ -2044,16 +2087,16 @@
         },
         "lastWeek": {
           "label": "Sales last week",
-          "range": "May 4-May 10, 2026",
+          "range": "May 15-May 21, 2026",
           "purchases": 1,
           "purchaseRevenue": 14.99,
           "revenuePerPurchase": 14.99,
-          "deltaPurchasesPct": -75.0,
-          "deltaRevenuePct": -72.72561863173217,
+          "deltaPurchasesPct": 0.0,
+          "deltaRevenuePct": 0.0,
           "payments": [
             {
-              "date": "May 6",
-              "createdAt": "2026-05-06 01:02 PDT",
+              "date": "May 17",
+              "createdAt": "2026-05-17 21:26 PDT",
               "amount": 14.99,
               "description": "Customer User - Purchase this title: Signup payment"
             }
@@ -2061,7 +2104,7 @@
         },
         "thisWeek": {
           "label": "Sales this week",
-          "range": "May 11-May 14, 2026",
+          "range": "May 18-May 22, 2026",
           "purchases": 0,
           "purchaseRevenue": 0,
           "revenuePerPurchase": 0,
@@ -2071,16 +2114,16 @@
         },
         "currentCompleteWeek": {
           "label": "Sales last week",
-          "range": "May 4-May 10, 2026",
+          "range": "May 15-May 21, 2026",
           "purchases": 1,
           "purchaseRevenue": 14.99,
           "revenuePerPurchase": 14.99,
-          "deltaPurchasesPct": -75.0,
-          "deltaRevenuePct": -72.72561863173217,
+          "deltaPurchasesPct": 0.0,
+          "deltaRevenuePct": 0.0,
           "payments": [
             {
-              "date": "May 6",
-              "createdAt": "2026-05-06 01:02 PDT",
+              "date": "May 17",
+              "createdAt": "2026-05-17 21:26 PDT",
               "amount": 14.99,
               "description": "Customer User - Purchase this title: Signup payment"
             }
@@ -2088,7 +2131,7 @@
         },
         "weekToDate": {
           "label": "Sales this week",
-          "range": "May 11-May 14, 2026",
+          "range": "May 18-May 22, 2026",
           "purchases": 0,
           "purchaseRevenue": 0,
           "revenuePerPurchase": 0,
@@ -2098,32 +2141,38 @@
         },
         "recent12Days": {
           "label": "Stripe last 12 days",
-          "range": "May 3-May 14, 2026",
-          "purchases": 1,
-          "purchaseRevenue": 14.99,
+          "range": "May 11-May 22, 2026",
+          "purchases": 2,
+          "purchaseRevenue": 29.98,
           "revenuePerPurchase": 14.99,
           "deltaPurchasesPct": null,
           "deltaRevenuePct": null,
           "payments": [
             {
-              "date": "May 6",
-              "createdAt": "2026-05-06 01:02 PDT",
+              "date": "May 17",
+              "createdAt": "2026-05-17 21:26 PDT",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment"
+            },
+            {
+              "date": "May 14",
+              "createdAt": "2026-05-14 20:09 PDT",
               "amount": 14.99,
               "description": "Customer User - Purchase this title: Signup payment"
             }
           ]
         },
         "lifetimeObserved": {
-          "range": "Through May 14, 2026 pull",
-          "purchases": 11,
-          "purchaseRevenue": 159.89,
-          "revenuePerPurchase": 14.54
+          "range": "Through May 22, 2026 pull",
+          "purchases": 13,
+          "purchaseRevenue": 189.87,
+          "revenuePerPurchase": 14.61
         },
         "mix": [
           {
             "label": "Title purchases",
-            "purchases": 10,
-            "purchaseRevenue": 149.9
+            "purchases": 12,
+            "purchaseRevenue": 179.88
           },
           {
             "label": "Bundle purchases",
@@ -2137,6 +2186,20 @@
           }
         ],
         "recentPayments": [
+          {
+            "id": "pi_3TYIl0LG0Cw1zW4e29yDkQvy",
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "id": "pi_3TXC7jLG0Cw1zW4e0aTDzJEJ",
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment"
+          },
           {
             "id": "pi_3TU0PpLG0Cw1zW4e1xA1B4CB",
             "date": "May 6",
@@ -2405,11 +2468,59 @@
           {
             "date": "May 14",
             "rawDate": "20260514",
+            "purchases": 1,
+            "purchaseRevenue": 14.99
+          },
+          {
+            "date": "May 15",
+            "rawDate": "20260515",
+            "purchases": 0,
+            "purchaseRevenue": 0
+          },
+          {
+            "date": "May 16",
+            "rawDate": "20260516",
+            "purchases": 0,
+            "purchaseRevenue": 0
+          },
+          {
+            "date": "May 17",
+            "rawDate": "20260517",
+            "purchases": 1,
+            "purchaseRevenue": 14.99
+          },
+          {
+            "date": "May 18",
+            "rawDate": "20260518",
+            "purchases": 0,
+            "purchaseRevenue": 0
+          },
+          {
+            "date": "May 19",
+            "rawDate": "20260519",
+            "purchases": 0,
+            "purchaseRevenue": 0
+          },
+          {
+            "date": "May 20",
+            "rawDate": "20260520",
+            "purchases": 0,
+            "purchaseRevenue": 0
+          },
+          {
+            "date": "May 21",
+            "rawDate": "20260521",
+            "purchases": 0,
+            "purchaseRevenue": 0
+          },
+          {
+            "date": "May 22",
+            "rawDate": "20260522",
             "purchases": 0,
             "purchaseRevenue": 0
           }
         ],
-        "note": "Stripe-visible sales show 11 payments and $159.89 year to date, 1 payment and $14.99 this month, 1 payment and $14.99 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
+        "note": "Stripe-visible sales show 13 payments and $189.87 year to date, 3 payments and $44.97 this month, 1 payment and $14.99 last week (May 17), and 0 payments and $0.00 this week. The latest succeeded Stripe payment is $14.99 on May 17, 2026 9:26 PM PDT. Add Apple App Store and Google Play reports before treating this as total sales."
       },
       "roku": {
         "sourceLabel": "Roku-visible sales",
@@ -3144,10 +3255,10 @@
       "sourceBreakout": [
         {
           "source": "Stripe",
-          "purchases": 11,
-          "purchaseRevenue": 159.89,
+          "purchases": 13,
+          "purchaseRevenue": 189.87,
           "developerRevShare": 0.0,
-          "detail": "Stripe-visible sales are shown from the last successful pull. Latest live Stripe refresh failed: {\"error\": \"auth_required\", \"auth_url\": \"https://www.perplexity.ai/rest/connector-service/auth/oauth-redirect?source_id=stripe\", \"source_id\": \"stripe\"}\n"
+          "detail": "Stripe-visible sales come from the latest live Stripe pull (connector re-established May 22, 2026 on account electricnow.tv, acct_1HZdStLG0Cw1zW4e). 13 succeeded payment intents and $189.87 gross; no invoices or subscriptions returned. The canceled $1,800.00 payment intent (pi_3Qk3NgLG0Cw1zW4e0hgSXvz0) is excluded from sales."
         },
         {
           "source": "Roku",
@@ -3182,12 +3293,26 @@
       },
       "yearToDate": {
         "label": "Sales this year",
-        "range": "Jan 1-May 14, 2026",
-        "purchases": 27,
-        "purchaseRevenue": 406.73,
+        "range": "Jan 1-May 22, 2026",
+        "purchases": 29,
+        "purchaseRevenue": 436.71,
         "developerRevShare": 190.45,
         "revenuePerPurchase": 15.06,
         "payments": [
+          {
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
           {
             "date": "May 6",
             "createdAt": "2026-05-06 01:02 PDT",
@@ -3249,11 +3374,25 @@
       "monthToDate": {
         "label": "Sales this month",
         "range": "May 1-May 22, 2026",
-        "purchases": 6,
-        "purchaseRevenue": 46.94,
+        "purchases": 8,
+        "purchaseRevenue": 76.92,
         "developerRevShare": 37.54,
-        "revenuePerPurchase": 7.82,
+        "revenuePerPurchase": 9.62,
         "payments": [
+          {
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
           {
             "date": "May 16",
             "createdAt": "2026-05-16",
@@ -3299,11 +3438,18 @@
       "lastWeek": {
         "label": "Sales last week",
         "range": "May 15-May 21, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 19.99,
+        "purchases": 2,
+        "purchaseRevenue": 34.98,
         "developerRevShare": 15.99,
-        "revenuePerPurchase": 19.99,
+        "revenuePerPurchase": 17.49,
         "payments": [
+          {
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
           {
             "date": "May 16",
             "createdAt": "2026-05-16",
@@ -3313,26 +3459,41 @@
             "source": "Roku"
           }
         ],
-        "deltaPurchasesPct": -90.9090909090909,
-        "deltaRevenuePct": -87.49765463756331
+        "deltaPurchasesPct": -81.81818181818183,
+        "deltaRevenuePct": -78.12121739701036
       },
       "thisWeek": {
         "label": "Sales this week",
         "range": "May 11-May 14, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
         "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "revenuePerPurchase": 14.99,
+        "payments": [
+          {
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          }
+        ]
       },
       "currentCompleteWeek": {
         "label": "Sales last week",
         "range": "May 15-May 21, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 19.99,
+        "purchases": 2,
+        "purchaseRevenue": 34.98,
         "developerRevShare": 15.99,
-        "revenuePerPurchase": 19.99,
+        "revenuePerPurchase": 17.49,
         "payments": [
+          {
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
           {
             "date": "May 16",
             "createdAt": "2026-05-16",
@@ -3342,35 +3503,72 @@
             "source": "Roku"
           }
         ],
-        "deltaPurchasesPct": -90.9090909090909,
-        "deltaRevenuePct": -87.49765463756331
+        "deltaPurchasesPct": -81.81818181818183,
+        "deltaRevenuePct": -78.12121739701036
       },
       "weekToDate": {
         "label": "Sales this week",
         "range": "May 11-May 14, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
         "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "revenuePerPurchase": 14.99,
+        "payments": [
+          {
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          }
+        ]
       },
       "recent12Days": {
         "label": "Visible sales last 12 days",
         "range": "May 11-May 22, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
+        "purchases": 2,
+        "purchaseRevenue": 29.98,
         "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "revenuePerPurchase": 14.99,
+        "payments": [
+          {
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          }
+        ]
       },
       "lifetimeObserved": {
         "label": "Sales this year",
-        "range": "Jan 1-May 14, 2026",
-        "purchases": 27,
-        "purchaseRevenue": 406.73,
+        "range": "Jan 1-May 22, 2026",
+        "purchases": 29,
+        "purchaseRevenue": 436.71,
         "developerRevShare": 190.45,
         "revenuePerPurchase": 15.06,
         "payments": [
+          {
+            "date": "May 17",
+            "createdAt": "2026-05-17 21:26 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "May 14",
+            "createdAt": "2026-05-14 20:09 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe"
+          },
           {
             "date": "May 6",
             "createdAt": "2026-05-06 01:02 PDT",
@@ -3432,8 +3630,8 @@
       "mix": [
         {
           "label": "Title purchases",
-          "purchases": 10,
-          "purchaseRevenue": 149.9
+          "purchases": 12,
+          "purchaseRevenue": 179.88
         },
         {
           "label": "Bundle purchases",
@@ -3475,6 +3673,22 @@
         }
       ],
       "recentPayments": [
+        {
+          "id": "pi_3TYIl0LG0Cw1zW4e29yDkQvy",
+          "date": "May 17",
+          "createdAt": "2026-05-17 21:26 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "id": "pi_3TXC7jLG0Cw1zW4e0aTDzJEJ",
+          "date": "May 14",
+          "createdAt": "2026-05-14 20:09 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
         {
           "id": "pi_3TU0PpLG0Cw1zW4e1xA1B4CB",
           "date": "May 6",
@@ -3793,8 +4007,8 @@
         {
           "date": "May 14",
           "rawDate": "20260514",
-          "purchases": 1,
-          "purchaseRevenue": 2.99,
+          "purchases": 2,
+          "purchaseRevenue": 17.98,
           "developerRevShare": 2.39
         },
         {
@@ -3814,8 +4028,8 @@
         {
           "date": "May 17",
           "rawDate": "20260517",
-          "purchases": 0,
-          "purchaseRevenue": 0.0,
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
           "developerRevShare": 0.0
         },
         {
@@ -3854,7 +4068,7 @@
           "developerRevShare": 0.0
         }
       ],
-      "note": "Visible platform sales show 27 purchases and $406.73 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $69.96, with estimated net-to-Electric of $48.97 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
+      "note": "Visible platform sales show 29 purchases and $436.71 year to date, including the manual Apple App Store snapshot. Stripe contributes 13 succeeded payments and $189.87 (connector re-established May 22, 2026; latest succeeded payment $14.99 on May 17). Apple gross sales in the snapshot are $69.96, with estimated net-to-Electric of $48.97 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
     },
     "ga4PurchaseSignals": {
       "sourceLabel": "GA4 In-App Purchase Signals",
