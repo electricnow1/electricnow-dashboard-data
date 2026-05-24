@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-22 12:36 PDT",
+  "generatedAt": "2026-05-24 13:03 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -11,27 +11,27 @@
     },
     "previousWeek": {
       "label": "Previous 7 complete days",
-      "range": "May 8-May 14, 2026",
-      "start": "2026-05-08",
-      "end": "2026-05-14"
+      "range": "May 10-May 16, 2026",
+      "start": "2026-05-10",
+      "end": "2026-05-16"
     },
     "baseline": {
       "label": "Previous 7 complete days",
-      "range": "May 8-May 14, 2026",
-      "start": "2026-05-08",
-      "end": "2026-05-14"
+      "range": "May 10-May 16, 2026",
+      "start": "2026-05-10",
+      "end": "2026-05-16"
     },
     "currentWeek": {
       "label": "Latest 7 complete days",
-      "range": "May 15-May 21, 2026",
-      "start": "2026-05-15",
-      "end": "2026-05-21"
+      "range": "May 17-May 23, 2026",
+      "start": "2026-05-17",
+      "end": "2026-05-23"
     },
     "weekToDate": {
       "label": "Latest 7 complete days",
-      "range": "May 15-May 21, 2026",
-      "start": "2026-05-15",
-      "end": "2026-05-21"
+      "range": "May 17-May 23, 2026",
+      "start": "2026-05-17",
+      "end": "2026-05-23"
     }
   },
   "periodTotals": {
@@ -46,43 +46,43 @@
       "purchaseRevenue": 89.94999999999999
     },
     "previousWeek": {
-      "activeUsers": 6337.0,
-      "newUsers": 4646.0,
-      "sessions": 11873.0,
-      "engagedSessions": 9506.0,
-      "engagementRate": 80.06401078076307,
-      "screenPageViews": 29797.0,
-      "eventCount": 941395.0,
+      "activeUsers": 7341.0,
+      "newUsers": 5740.0,
+      "sessions": 13428.0,
+      "engagedSessions": 10599.0,
+      "engagementRate": 78.93208221626452,
+      "screenPageViews": 31060.0,
+      "eventCount": 968566.0,
       "purchaseRevenue": 0.0
     },
     "baseline": {
-      "activeUsers": 6337.0,
-      "newUsers": 4646.0,
-      "sessions": 11873.0,
-      "engagedSessions": 9506.0,
-      "engagementRate": 80.06401078076307,
-      "screenPageViews": 29797.0,
-      "eventCount": 941395.0,
+      "activeUsers": 7341.0,
+      "newUsers": 5740.0,
+      "sessions": 13428.0,
+      "engagedSessions": 10599.0,
+      "engagementRate": 78.93208221626452,
+      "screenPageViews": 31060.0,
+      "eventCount": 968566.0,
       "purchaseRevenue": 0.0
     },
     "currentWeek": {
-      "activeUsers": 8045.0,
-      "newUsers": 6066.0,
-      "sessions": 14567.0,
-      "engagedSessions": 11942.0,
-      "engagementRate": 81.97981739548294,
-      "screenPageViews": 31156.0,
-      "eventCount": 1008165.0,
+      "activeUsers": 7821.0,
+      "newUsers": 5698.0,
+      "sessions": 14564.0,
+      "engagedSessions": 11847.0,
+      "engagementRate": 81.34441087613294,
+      "screenPageViews": 30139.0,
+      "eventCount": 1015479.0,
       "purchaseRevenue": 59.97
     },
     "weekToDate": {
-      "activeUsers": 8045.0,
-      "newUsers": 6066.0,
-      "sessions": 14567.0,
-      "engagedSessions": 11942.0,
-      "engagementRate": 81.97981739548294,
-      "screenPageViews": 31156.0,
-      "eventCount": 1008165.0,
+      "activeUsers": 7821.0,
+      "newUsers": 5698.0,
+      "sessions": 14564.0,
+      "engagedSessions": 11847.0,
+      "engagementRate": 81.34441087613294,
+      "screenPageViews": 30139.0,
+      "eventCount": 1015479.0,
       "purchaseRevenue": 59.97
     }
   },
@@ -92,11 +92,11 @@
       "label": "Platform active users",
       "baseline": 8709,
       "launchBaseline": 8709,
-      "previousWeek": 6250,
-      "current": 7965,
-      "deltaPct": 27.439999999999998,
-      "deltaVsLaunchPct": -8.542886668963142,
-      "deltaVsPreviousPct": 27.439999999999998,
+      "previousWeek": 7234,
+      "current": 7739,
+      "deltaPct": 6.980923417196571,
+      "deltaVsLaunchPct": -11.137903318406247,
+      "deltaVsPreviousPct": 6.980923417196571,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 active users excluding landing-page acquisition paths."
@@ -106,11 +106,11 @@
       "label": "Platform sessions",
       "baseline": 13316,
       "launchBaseline": 13316,
-      "previousWeek": 11732,
-      "current": 14405,
-      "deltaPct": 22.783839072621888,
-      "deltaVsLaunchPct": 8.178131571042355,
-      "deltaVsPreviousPct": 22.783839072621888,
+      "previousWeek": 13246,
+      "current": 14378,
+      "deltaPct": 8.545976143741507,
+      "deltaVsLaunchPct": 7.975367978371883,
+      "deltaVsPreviousPct": 8.545976143741507,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -120,11 +120,11 @@
       "label": "Viewing event users",
       "baseline": 1155,
       "launchBaseline": 1155,
-      "previousWeek": 1997,
-      "current": 2749,
-      "deltaPct": 37.656484727090636,
-      "deltaVsLaunchPct": 138.00865800865802,
-      "deltaVsPreviousPct": 37.656484727090636,
+      "previousWeek": 2326,
+      "current": 2675,
+      "deltaPct": 15.004299226139295,
+      "deltaVsLaunchPct": 131.60173160173161,
+      "deltaVsPreviousPct": 15.004299226139295,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered on-demand video_start or Live play events."
@@ -134,11 +134,11 @@
       "label": "Total engaged hours",
       "baseline": 3652.995,
       "launchBaseline": 3652.995,
-      "previousWeek": 4854.243333333333,
-      "current": 5134.3613888888885,
-      "deltaPct": 5.77058124861662,
-      "deltaVsLaunchPct": 40.552105570604084,
-      "deltaVsPreviousPct": 5.77058124861662,
+      "previousWeek": 5032.519722222222,
+      "current": 5207.0552777777775,
+      "deltaPct": 3.4681544273906018,
+      "deltaVsLaunchPct": 42.54208609039371,
+      "deltaVsPreviousPct": 3.4681544273906018,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -148,11 +148,11 @@
       "label": "Avg time per user",
       "baseline": 25.072031571722718,
       "launchBaseline": 25.072031571722718,
-      "previousWeek": 46.466911295469046,
-      "current": 38.745023686748,
-      "deltaPct": -7.7218876087210475,
-      "deltaVsLaunchPct": 13.67299211502528,
-      "deltaVsPreviousPct": -7.7218876087210475,
+      "previousWeek": 41.37451128162967,
+      "current": 40.53760434237274,
+      "deltaPct": -0.8369069392569344,
+      "deltaVsLaunchPct": 15.46557277065002,
+      "deltaVsPreviousPct": -0.8369069392569344,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
@@ -162,11 +162,11 @@
       "label": "Landing-page users",
       "baseline": 1045,
       "launchBaseline": 1045,
-      "previousWeek": 715,
-      "current": 657,
-      "deltaPct": -8.111888111888112,
-      "deltaVsLaunchPct": -37.12918660287081,
-      "deltaVsPreviousPct": -8.111888111888112,
+      "previousWeek": 769,
+      "current": 694,
+      "deltaPct": -9.752925877763328,
+      "deltaVsLaunchPct": -33.588516746411486,
+      "deltaVsPreviousPct": -9.752925877763328,
       "deltaType": "percent",
       "format": "number",
       "context": "Users reaching pages with \u201clanding\u201d in the path."
@@ -176,11 +176,11 @@
       "label": "Devices-page users",
       "baseline": 2028,
       "launchBaseline": 2028,
-      "previousWeek": 564,
-      "current": 349,
-      "deltaPct": -38.12056737588653,
-      "deltaVsLaunchPct": -82.79092702169625,
-      "deltaVsPreviousPct": -38.12056737588653,
+      "previousWeek": 734,
+      "current": 201,
+      "deltaPct": -72.6158038147139,
+      "deltaVsLaunchPct": -90.08875739644971,
+      "deltaVsPreviousPct": -72.6158038147139,
       "deltaType": "percent",
       "format": "number",
       "context": "Users reaching pages with \u201cdevices\u201d in the path."
@@ -190,11 +190,11 @@
       "label": "Paid social users",
       "baseline": 4441,
       "launchBaseline": 4441,
-      "previousWeek": 1961,
-      "current": 2715,
-      "deltaPct": 38.44977052524222,
-      "deltaVsLaunchPct": -38.86512046836298,
-      "deltaVsPreviousPct": 38.44977052524222,
+      "previousWeek": 2556,
+      "current": 2531,
+      "deltaPct": -0.9780907668231612,
+      "deltaVsLaunchPct": -43.00833145687908,
+      "deltaVsPreviousPct": -0.9780907668231612,
       "deltaType": "percent",
       "format": "number",
       "context": "Users from GA4 source/medium values containing Facebook, Instagram, or Meta."
@@ -204,11 +204,11 @@
       "label": "App stream active users",
       "baseline": 1547,
       "launchBaseline": 1547,
-      "previousWeek": 3678,
-      "current": 5501,
-      "deltaPct": 49.56498096791734,
-      "deltaVsLaunchPct": 255.5914673561732,
-      "deltaVsPreviousPct": 49.56498096791734,
+      "previousWeek": 4484,
+      "current": 5383,
+      "deltaPct": 20.04906333630687,
+      "deltaVsLaunchPct": 247.96380090497738,
+      "deltaVsPreviousPct": 20.04906333630687,
       "deltaType": "percent",
       "format": "number",
       "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream."
@@ -218,11 +218,11 @@
       "label": "App stream sessions",
       "baseline": 2889,
       "launchBaseline": 2889,
-      "previousWeek": 5824,
-      "current": 8768,
-      "deltaPct": 50.54945054945055,
-      "deltaVsLaunchPct": 203.49601938386982,
-      "deltaVsPreviousPct": 50.54945054945055,
+      "previousWeek": 6977,
+      "current": 8668,
+      "deltaPct": 24.236777984807222,
+      "deltaVsLaunchPct": 200.03461405330563,
+      "deltaVsPreviousPct": 24.236777984807222,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions on the Apple/iOS and Android app streams."
@@ -232,11 +232,11 @@
       "label": "App stream engagement rate",
       "baseline": 80.96227068189685,
       "launchBaseline": 80.96227068189685,
-      "previousWeek": 83.17307692307693,
-      "current": 82.47034671532847,
-      "deltaPct": -0.7027302077484592,
-      "deltaVsLaunchPct": 1.508076033431621,
-      "deltaVsPreviousPct": -0.7027302077484592,
+      "previousWeek": 83.13028522287517,
+      "current": 81.76049838486387,
+      "deltaPct": -1.3697868380113079,
+      "deltaVsLaunchPct": 0.7982277029670115,
+      "deltaVsPreviousPct": -1.3697868380113079,
       "deltaType": "points",
       "format": "percent",
       "context": "Engaged app-stream sessions divided by app-stream sessions."
@@ -246,11 +246,11 @@
       "label": "Viewing event users",
       "baseline": 1155,
       "launchBaseline": 1155,
-      "previousWeek": 1997,
-      "current": 2749,
-      "deltaPct": 37.656484727090636,
-      "deltaVsLaunchPct": 138.00865800865802,
-      "deltaVsPreviousPct": 37.656484727090636,
+      "previousWeek": 2326,
+      "current": 2675,
+      "deltaPct": 15.004299226139295,
+      "deltaVsLaunchPct": 131.60173160173161,
+      "deltaVsPreviousPct": 15.004299226139295,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered on-demand video_start or Live play events."
@@ -260,11 +260,11 @@
       "label": "On-demand start users",
       "baseline": 1069,
       "launchBaseline": 1069,
-      "previousWeek": 1905,
-      "current": 2634,
-      "deltaPct": 38.267716535433074,
-      "deltaVsLaunchPct": 146.39850327408794,
-      "deltaVsPreviousPct": 38.267716535433074,
+      "previousWeek": 2226,
+      "current": 2551,
+      "deltaPct": 14.600179694519316,
+      "deltaVsLaunchPct": 138.63423760523855,
+      "deltaVsPreviousPct": 14.600179694519316,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered video_start outside the Live screen."
@@ -274,11 +274,11 @@
       "label": "Live channel viewers",
       "baseline": 121,
       "launchBaseline": 121,
-      "previousWeek": 112,
-      "current": 128,
-      "deltaPct": 14.285714285714285,
-      "deltaVsLaunchPct": 5.785123966942149,
-      "deltaVsPreviousPct": 14.285714285714285,
+      "previousWeek": 115,
+      "current": 141,
+      "deltaPct": 22.608695652173914,
+      "deltaVsLaunchPct": 16.528925619834713,
+      "deltaVsPreviousPct": 22.608695652173914,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered a Live play event."
@@ -288,11 +288,11 @@
       "label": "Video complete users",
       "baseline": 219,
       "launchBaseline": 219,
-      "previousWeek": 204,
-      "current": 298,
-      "deltaPct": 46.07843137254902,
-      "deltaVsLaunchPct": 36.07305936073059,
-      "deltaVsPreviousPct": 46.07843137254902,
+      "previousWeek": 242,
+      "current": 282,
+      "deltaPct": 16.528925619834713,
+      "deltaVsLaunchPct": 28.767123287671232,
+      "deltaVsPreviousPct": 16.528925619834713,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered video_complete."
@@ -302,11 +302,11 @@
       "label": "Live play events",
       "baseline": 3952,
       "launchBaseline": 3952,
-      "previousWeek": 4433,
-      "current": 3897,
-      "deltaPct": -12.091134671779834,
-      "deltaVsLaunchPct": -1.3917004048582995,
-      "deltaVsPreviousPct": -12.091134671779834,
+      "previousWeek": 4273,
+      "current": 4143,
+      "deltaPct": -3.0423589983618067,
+      "deltaVsLaunchPct": 4.832995951417004,
+      "deltaVsPreviousPct": -3.0423589983618067,
       "deltaType": "percent",
       "format": "number",
       "context": "Total Live play events, not unique users."
@@ -316,11 +316,11 @@
       "label": "Ad request events",
       "baseline": 10589,
       "launchBaseline": 10589,
-      "previousWeek": 23800,
-      "current": 25861,
-      "deltaPct": 8.659663865546218,
-      "deltaVsLaunchPct": 144.22513929549532,
-      "deltaVsPreviousPct": 8.659663865546218,
+      "previousWeek": 24493,
+      "current": 25547,
+      "deltaPct": 4.303270322132854,
+      "deltaVsLaunchPct": 141.25979790348475,
+      "deltaVsPreviousPct": 4.303270322132854,
       "deltaType": "percent",
       "format": "number",
       "context": "Total ad request events generated by viewing activity."
@@ -330,11 +330,11 @@
       "label": "Avg time per user",
       "baseline": 25.072031571722718,
       "launchBaseline": 25.072031571722718,
-      "previousWeek": 46.466911295469046,
-      "current": 38.745023686748,
-      "deltaPct": -7.7218876087210475,
-      "deltaVsLaunchPct": 13.67299211502528,
-      "deltaVsPreviousPct": -7.7218876087210475,
+      "previousWeek": 41.37451128162967,
+      "current": 40.53760434237274,
+      "deltaPct": -0.8369069392569344,
+      "deltaVsLaunchPct": 15.46557277065002,
+      "deltaVsPreviousPct": -0.8369069392569344,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by active users."
@@ -344,11 +344,11 @@
       "label": "Avg time per session",
       "baseline": 16.417955056179775,
       "launchBaseline": 16.417955056179775,
-      "previousWeek": 24.758126487589255,
-      "current": 21.387231556049244,
-      "deltaPct": -3.370894931540011,
-      "deltaVsLaunchPct": 4.969276499869469,
-      "deltaVsPreviousPct": -3.370894931540011,
+      "previousWeek": 22.993541222459136,
+      "current": 21.904460258477645,
+      "deltaPct": -1.0890809639814911,
+      "deltaVsLaunchPct": 5.48650520229787,
+      "deltaVsPreviousPct": -1.0890809639814911,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total engaged time divided by sessions."
@@ -358,11 +358,11 @@
       "label": "Total engaged hours",
       "baseline": 3652.995,
       "launchBaseline": 3652.995,
-      "previousWeek": 4854.243333333333,
-      "current": 5134.3613888888885,
-      "deltaPct": 5.77058124861662,
-      "deltaVsLaunchPct": 40.552105570604084,
-      "deltaVsPreviousPct": 5.77058124861662,
+      "previousWeek": 5032.519722222222,
+      "current": 5207.0552777777775,
+      "deltaPct": 3.4681544273906018,
+      "deltaVsLaunchPct": 42.54208609039371,
+      "deltaVsPreviousPct": 3.4681544273906018,
       "deltaType": "percent",
       "format": "number",
       "context": "Total GA4 engaged time converted to hours."
@@ -718,7 +718,7 @@
       "sessions": 1265,
       "engagedSessions": 1073,
       "screenPageViews": 109,
-      "eventCount": 26505,
+      "eventCount": 26504,
       "engagementRate": 84.82213438735178
     },
     {
@@ -729,18 +729,18 @@
       "sessions": 1237,
       "engagedSessions": 1018,
       "screenPageViews": 58,
-      "eventCount": 27804,
+      "eventCount": 27801,
       "engagementRate": 82.29587712206953
     },
     {
       "date": "May 16",
       "rawDate": "20260516",
       "activeUsers": 978,
-      "newUsers": 1285,
+      "newUsers": 643,
       "sessions": 1268,
       "engagedSessions": 1062,
       "screenPageViews": 93,
-      "eventCount": 26149,
+      "eventCount": 24315,
       "engagementRate": 83.75394321766562
     },
     {
@@ -773,30 +773,52 @@
       "sessions": 1245,
       "engagedSessions": 999,
       "screenPageViews": 111,
-      "eventCount": 30255,
+      "eventCount": 30256,
       "engagementRate": 80.24096385542168
     },
     {
       "date": "May 20",
       "rawDate": "20260520",
-      "activeUsers": 987,
-      "newUsers": 580,
-      "sessions": 1273,
+      "activeUsers": 988,
+      "newUsers": 581,
+      "sessions": 1274,
       "engagedSessions": 1043,
       "screenPageViews": 96,
-      "eventCount": 33076,
-      "engagementRate": 81.9324430479183
+      "eventCount": 33086,
+      "engagementRate": 81.86813186813187
     },
     {
       "date": "May 21",
       "rawDate": "20260521",
-      "activeUsers": 1025,
-      "newUsers": 619,
-      "sessions": 1358,
-      "engagedSessions": 1093,
-      "screenPageViews": 69,
-      "eventCount": 29411,
-      "engagementRate": 80.4860088365243
+      "activeUsers": 1030,
+      "newUsers": 620,
+      "sessions": 1339,
+      "engagedSessions": 1090,
+      "screenPageViews": 71,
+      "eventCount": 29661,
+      "engagementRate": 81.40403286034355
+    },
+    {
+      "date": "May 22",
+      "rawDate": "20260522",
+      "activeUsers": 899,
+      "newUsers": 507,
+      "sessions": 1168,
+      "engagedSessions": 937,
+      "screenPageViews": 65,
+      "eventCount": 22584,
+      "engagementRate": 80.22260273972603
+    },
+    {
+      "date": "May 23",
+      "rawDate": "20260523",
+      "activeUsers": 951,
+      "newUsers": 535,
+      "sessions": 1303,
+      "engagedSessions": 1022,
+      "screenPageViews": 111,
+      "eventCount": 25864,
+      "engagementRate": 78.43438219493477
     }
   ],
   "eventCards": [
@@ -812,155 +834,155 @@
     {
       "event": "application_install",
       "label": "Application installs",
-      "baseline": 3601,
-      "current": 5245,
-      "weekToDate": 5245,
-      "deltaPct": 45.653985004165506,
-      "activeUsersCurrent": 4929
+      "baseline": 4446,
+      "current": 4984,
+      "weekToDate": 4984,
+      "deltaPct": 12.10076473234368,
+      "activeUsersCurrent": 4687
     },
     {
       "event": "first_open",
       "label": "First opens",
-      "baseline": 2750,
-      "current": 4379,
-      "weekToDate": 4379,
-      "deltaPct": 59.236363636363635,
-      "activeUsersCurrent": 4377
+      "baseline": 3599,
+      "current": 4140,
+      "weekToDate": 4140,
+      "deltaPct": 15.03195332036677,
+      "activeUsersCurrent": 4138
     },
     {
       "event": "app_open",
       "label": "App opens",
-      "baseline": 1578,
-      "current": 1813,
-      "weekToDate": 1813,
-      "deltaPct": 14.892268694550062,
-      "activeUsersCurrent": 410
+      "baseline": 1625,
+      "current": 1816,
+      "weekToDate": 1816,
+      "deltaPct": 11.753846153846153,
+      "activeUsersCurrent": 418
     },
     {
       "event": "play",
       "label": "Plays",
-      "baseline": 46871,
-      "current": 52324,
-      "weekToDate": 52324,
-      "deltaPct": 11.634059439738857,
-      "activeUsersCurrent": 2835
+      "baseline": 49123,
+      "current": 56633,
+      "weekToDate": 56633,
+      "deltaPct": 15.288154225108402,
+      "activeUsersCurrent": 2766
     },
     {
       "event": "video_start",
       "label": "Video starts",
-      "baseline": 19749,
-      "current": 22280,
-      "weekToDate": 22280,
-      "deltaPct": 12.815838776646919,
-      "activeUsersCurrent": 2746
+      "baseline": 20934,
+      "current": 22020,
+      "weekToDate": 22020,
+      "deltaPct": 5.187732874749211,
+      "activeUsersCurrent": 2672
     },
     {
       "event": "video_play",
       "label": "Video plays",
-      "baseline": 7619,
-      "current": 7642,
-      "weekToDate": 7642,
-      "deltaPct": 0.3018768867305421,
-      "activeUsersCurrent": 249
+      "baseline": 7180,
+      "current": 7894,
+      "weekToDate": 7894,
+      "deltaPct": 9.944289693593316,
+      "activeUsersCurrent": 267
     },
     {
       "event": "video_complete",
       "label": "Video completes",
-      "baseline": 3298,
-      "current": 3381,
-      "weekToDate": 3381,
-      "deltaPct": 2.5166767738023044,
-      "activeUsersCurrent": 298
+      "baseline": 3345,
+      "current": 3730,
+      "weekToDate": 3730,
+      "deltaPct": 11.509715994020926,
+      "activeUsersCurrent": 282
     },
     {
       "event": "ads_request",
       "label": "Ad requests",
-      "baseline": 23800,
-      "current": 25861,
-      "weekToDate": 25861,
-      "deltaPct": 8.659663865546218,
-      "activeUsersCurrent": 1009
+      "baseline": 24493,
+      "current": 25547,
+      "weekToDate": 25547,
+      "deltaPct": 4.303270322132854,
+      "activeUsersCurrent": 935
     },
     {
       "event": "ads_impression",
       "label": "Ad impressions",
-      "baseline": 37761,
-      "current": 34728,
-      "weekToDate": 34728,
-      "deltaPct": -8.032096607611027,
-      "activeUsersCurrent": 964
+      "baseline": 35973,
+      "current": 34692,
+      "weekToDate": 34692,
+      "deltaPct": -3.561004086398132,
+      "activeUsersCurrent": 891
     },
     {
       "event": "ads_loaded",
       "label": "Ads loaded",
-      "baseline": 22370,
-      "current": 17774,
-      "weekToDate": 17774,
-      "deltaPct": -20.545373267769335,
+      "baseline": 19937,
+      "current": 18106,
+      "weekToDate": 18106,
+      "deltaPct": -9.183929377539249,
       "activeUsersCurrent": 1
     },
     {
       "event": "ads_started",
       "label": "Ads started",
-      "baseline": 22356,
-      "current": 17772,
-      "weekToDate": 17772,
-      "deltaPct": -20.50456253354804,
+      "baseline": 19925,
+      "current": 18105,
+      "weekToDate": 18105,
+      "deltaPct": -9.134253450439147,
       "activeUsersCurrent": 1
     },
     {
       "event": "ads_complete",
       "label": "Ads complete",
-      "baseline": 21659,
-      "current": 17270,
-      "weekToDate": 17270,
-      "deltaPct": -20.26409344845099,
+      "baseline": 19272,
+      "current": 17596,
+      "weekToDate": 17596,
+      "deltaPct": -8.696554586965547,
       "activeUsersCurrent": 1
     },
     {
       "event": "ad_request",
       "label": "Ad request",
-      "baseline": 3329,
-      "current": 3729,
-      "weekToDate": 3729,
-      "deltaPct": 12.015620306398318,
-      "activeUsersCurrent": 78
+      "baseline": 3154,
+      "current": 3603,
+      "weekToDate": 3603,
+      "deltaPct": 14.23589093214965,
+      "activeUsersCurrent": 67
     },
     {
       "event": "ad_complete",
       "label": "Ad complete",
-      "baseline": 14261,
-      "current": 15439,
-      "weekToDate": 15439,
-      "deltaPct": 8.260290302222845,
-      "activeUsersCurrent": 735
+      "baseline": 14763,
+      "current": 15133,
+      "weekToDate": 15133,
+      "deltaPct": 2.506265664160401,
+      "activeUsersCurrent": 680
     },
     {
       "event": "vmap_ad_request",
       "label": "VMAP ad request",
-      "baseline": 2827,
-      "current": 4284,
-      "weekToDate": 4284,
-      "deltaPct": 51.538733639900954,
-      "activeUsersCurrent": 1134
+      "baseline": 3383,
+      "current": 4159,
+      "weekToDate": 4159,
+      "deltaPct": 22.93822051433639,
+      "activeUsersCurrent": 1071
     },
     {
       "event": "vmap_ad_loaded",
       "label": "VMAP ad loaded",
-      "baseline": 12295,
-      "current": 30653,
-      "weekToDate": 30653,
-      "deltaPct": 149.31272875152501,
-      "activeUsersCurrent": 1016
+      "baseline": 13399,
+      "current": 38366,
+      "weekToDate": 38366,
+      "deltaPct": 186.33480110456006,
+      "activeUsersCurrent": 948
     },
     {
       "event": "click",
       "label": "Clicks",
-      "baseline": 79,
-      "current": 47,
-      "weekToDate": 47,
-      "deltaPct": -40.50632911392405,
-      "activeUsersCurrent": 37
+      "baseline": 85,
+      "current": 41,
+      "weekToDate": 41,
+      "deltaPct": -51.76470588235295,
+      "activeUsersCurrent": 29
     }
   ],
   "purchaseFunnel": [
@@ -1385,7 +1407,7 @@
       "purchaseRevenue": 0,
       "in_app_purchase": 0,
       "application_install": 801,
-      "first_open": 1323,
+      "first_open": 662,
       "app_open": 261,
       "play": 6923,
       "ads_impression": 4107
@@ -1429,7 +1451,7 @@
       "purchaseRevenue": 0,
       "in_app_purchase": 0,
       "application_install": 718,
-      "first_open": 592,
+      "first_open": 593,
       "app_open": 298,
       "play": 8314,
       "ads_impression": 5706
@@ -1439,11 +1461,33 @@
       "rawDate": "20260521",
       "purchaseRevenue": 29.98,
       "in_app_purchase": 2,
-      "application_install": 722,
-      "first_open": 628,
-      "app_open": 269,
-      "play": 8181,
-      "ads_impression": 5474
+      "application_install": 725,
+      "first_open": 629,
+      "app_open": 271,
+      "play": 8218,
+      "ads_impression": 5513
+    },
+    {
+      "date": "May 22",
+      "rawDate": "20260522",
+      "purchaseRevenue": 0,
+      "in_app_purchase": 0,
+      "application_install": 631,
+      "first_open": 520,
+      "app_open": 242,
+      "play": 7380,
+      "ads_impression": 5449
+    },
+    {
+      "date": "May 23",
+      "rawDate": "20260523",
+      "purchaseRevenue": 0,
+      "in_app_purchase": 0,
+      "application_install": 671,
+      "first_open": 546,
+      "app_open": 268,
+      "play": 10718,
+      "ads_impression": 3916
     }
   ],
   "platforms": [
@@ -1451,142 +1495,142 @@
       "platform": "web",
       "baseline": {
         "platform": "web",
-        "activeUsers": 2517,
-        "newUsers": 1896,
-        "sessions": 5614,
-        "engagedSessions": 4185,
-        "screenPageViews": 27280,
-        "eventCount": 767319,
-        "engagementRate": 74.54577841111507
+        "activeUsers": 2743,
+        "newUsers": 2141,
+        "sessions": 5846,
+        "engagedSessions": 4299,
+        "screenPageViews": 28538,
+        "eventCount": 777017,
+        "engagementRate": 73.53746151214506
       },
       "current": {
         "platform": "web",
-        "activeUsers": 2322,
-        "newUsers": 1795,
-        "sessions": 5389,
-        "engagedSessions": 4227,
-        "screenPageViews": 28325,
-        "eventCount": 777844,
-        "engagementRate": 78.43755798849509
+        "activeUsers": 2200,
+        "newUsers": 1558,
+        "sessions": 5312,
+        "engagedSessions": 4243,
+        "screenPageViews": 27120,
+        "eventCount": 778094,
+        "engagementRate": 79.8757530120482
       },
-      "activeUsersDeltaPct": -7.747318235995232,
-      "engagementRateCurrent": 78.43755798849509
+      "activeUsersDeltaPct": -19.79584396646008,
+      "engagementRateCurrent": 79.8757530120482
     },
     {
       "platform": "iOS",
       "baseline": {
         "platform": "iOS",
-        "activeUsers": 1676,
-        "newUsers": 1131,
-        "sessions": 2784,
-        "engagedSessions": 2435,
-        "screenPageViews": 650,
-        "eventCount": 80470,
-        "engagementRate": 87.46408045977012
+        "activeUsers": 1939,
+        "newUsers": 1395,
+        "sessions": 3123,
+        "engagedSessions": 2806,
+        "screenPageViews": 594,
+        "eventCount": 87392,
+        "engagementRate": 89.84950368235671
       },
       "current": {
         "platform": "iOS",
-        "activeUsers": 2336,
-        "newUsers": 1896,
-        "sessions": 3890,
-        "engagedSessions": 3311,
-        "screenPageViews": 631,
-        "eventCount": 94462,
-        "engagementRate": 85.11568123393316
+        "activeUsers": 2320,
+        "newUsers": 1622,
+        "sessions": 3839,
+        "engagedSessions": 3225,
+        "screenPageViews": 658,
+        "eventCount": 87685,
+        "engagementRate": 84.00625162802812
       },
-      "activeUsersDeltaPct": 39.37947494033413,
-      "engagementRateCurrent": 85.11568123393316
+      "activeUsersDeltaPct": 19.64930376482723,
+      "engagementRateCurrent": 84.00625162802812
     },
     {
       "platform": "Android",
       "baseline": {
         "platform": "Android",
-        "activeUsers": 2161,
-        "newUsers": 1619,
-        "sessions": 3506,
-        "engagedSessions": 2845,
-        "screenPageViews": 1867,
-        "eventCount": 93606,
-        "engagementRate": 81.1466058185967
+        "activeUsers": 2724,
+        "newUsers": 2204,
+        "sessions": 4331,
+        "engagedSessions": 3473,
+        "screenPageViews": 1928,
+        "eventCount": 104157,
+        "engagementRate": 80.18933271761718
       },
       "current": {
         "platform": "Android",
-        "activeUsers": 3374,
-        "newUsers": 3144,
-        "sessions": 5300,
-        "engagedSessions": 4345,
-        "screenPageViews": 2200,
-        "eventCount": 138454,
-        "engagementRate": 81.98113207547169
+        "activeUsers": 3275,
+        "newUsers": 2518,
+        "sessions": 5331,
+        "engagedSessions": 4390,
+        "screenPageViews": 2361,
+        "eventCount": 149700,
+        "engagementRate": 82.34852748077284
       },
-      "activeUsersDeltaPct": 56.13142063859324,
-      "engagementRateCurrent": 81.98113207547169
+      "activeUsersDeltaPct": 20.227606461086637,
+      "engagementRateCurrent": 82.34852748077284
     }
   ],
   "platformMix": {
-    "period": "May 15-May 21, 2026",
+    "period": "May 17-May 23, 2026",
     "metric": "Active users",
-    "totalViewers": 8032,
+    "totalViewers": 7795,
     "note": "Viewer share uses GA4 active users grouped by stream and device data where available. People who use more than one platform may appear in more than one bucket. Apple TV is not separately broken out yet; Amazon/Fire TV is inferred from Amazon AFT smart-TV device models until the developer confirms a cleaner Fire TV label.",
     "groups": [
       {
         "platform": "Web",
         "category": "Web",
         "tracked": true,
-        "activeUsers": 1150,
-        "sharePct": 14.3,
-        "sessions": 1929,
-        "engagedSessions": 1371,
+        "activeUsers": 1031,
+        "sharePct": 13.2,
+        "sessions": 1858,
+        "engagedSessions": 1432,
         "detail": "Browser and web playback from the electricnow-web GA4 stream."
       },
       {
         "platform": "Apple app stream",
         "category": "App",
         "tracked": true,
-        "activeUsers": 2336,
-        "sharePct": 29.1,
-        "sessions": 3890,
-        "engagedSessions": 3311,
+        "activeUsers": 2320,
+        "sharePct": 29.8,
+        "sessions": 3839,
+        "engagedSessions": 3225,
         "detail": "iPhone and iPad app activity; Apple TV may also be included here until it is tagged separately."
       },
       {
         "platform": "Android mobile app",
         "category": "App",
         "tracked": true,
-        "activeUsers": 3165,
-        "sharePct": 39.4,
-        "sessions": 4832,
-        "engagedSessions": 3894,
+        "activeUsers": 3063,
+        "sharePct": 39.3,
+        "sessions": 4870,
+        "engagedSessions": 3919,
         "detail": "Android phone/tablet activity from the ElectricNOW Android GA4 stream."
       },
       {
         "platform": "Roku",
         "category": "Connected TV",
         "tracked": true,
-        "activeUsers": 1172,
-        "sharePct": 14.6,
-        "sessions": 3448,
-        "engagedSessions": 2825,
+        "activeUsers": 1169,
+        "sharePct": 15.0,
+        "sessions": 3421,
+        "engagedSessions": 2781,
         "detail": "Roku activity from the electricnow-roku GA4 stream."
       },
       {
         "platform": "Amazon / Fire TV",
         "category": "Connected TV",
         "tracked": true,
-        "activeUsers": 93,
+        "activeUsers": 95,
         "sharePct": 1.2,
-        "sessions": 239,
-        "engagedSessions": 225,
+        "sessions": 247,
+        "engagedSessions": 231,
         "detail": "Likely Fire TV activity inferred from Amazon AFT smart-TV model codes."
       },
       {
         "platform": "Android TV / Google TV",
         "category": "Connected TV",
         "tracked": true,
-        "activeUsers": 116,
-        "sharePct": 1.4,
-        "sessions": 243,
-        "engagedSessions": 228,
+        "activeUsers": 117,
+        "sharePct": 1.5,
+        "sessions": 240,
+        "engagedSessions": 226,
         "detail": "Android TV / Google TV stream activity, excluding likely Fire TV devices where GA4 exposes Amazon AFT models."
       },
       {
@@ -1609,313 +1653,311 @@
   "acquisition": [
     {
       "sourceMedium": "(direct) / (none)",
-      "activeUsers": 3539,
-      "newUsers": 2874,
-      "sessions": 6000,
-      "engagedSessions": 5060,
-      "eventCount": 174327,
-      "engagementRate": 84.33333333333334
+      "activeUsers": 3504,
+      "newUsers": 2486,
+      "sessions": 6056,
+      "engagedSessions": 5037,
+      "eventCount": 178949,
+      "engagementRate": 83.17371202113605
     },
     {
       "sourceMedium": "apps.facebook.com / (not set)",
-      "activeUsers": 2064,
-      "newUsers": 2131,
-      "sessions": 2797,
-      "engagedSessions": 2230,
-      "eventCount": 40384,
-      "engagementRate": 79.72828030032177
+      "activeUsers": 1945,
+      "newUsers": 1636,
+      "sessions": 2699,
+      "engagedSessions": 2116,
+      "eventCount": 37132,
+      "engagementRate": 78.39940718784734
     },
     {
       "sourceMedium": "homescreen / (not set)",
-      "activeUsers": 674,
-      "newUsers": 231,
-      "sessions": 2462,
-      "engagedSessions": 2130,
-      "eventCount": 499637,
-      "engagementRate": 86.51502843216898
-    },
-    {
-      "sourceMedium": "google-play / organic",
-      "activeUsers": 304,
-      "newUsers": 270,
-      "sessions": 493,
-      "engagedSessions": 426,
-      "eventCount": 20863,
-      "engagementRate": 86.40973630831643
+      "activeUsers": 678,
+      "newUsers": 194,
+      "sessions": 2477,
+      "engagedSessions": 2158,
+      "eventCount": 525949,
+      "engagementRate": 87.12151796528059
     },
     {
       "sourceMedium": "apps.instagram.com / (not set)",
-      "activeUsers": 298,
-      "newUsers": 286,
-      "sessions": 415,
-      "engagedSessions": 304,
-      "eventCount": 12362,
-      "engagementRate": 73.25301204819277
+      "activeUsers": 357,
+      "newUsers": 327,
+      "sessions": 490,
+      "engagedSessions": 376,
+      "eventCount": 13842,
+      "engagementRate": 76.73469387755102
+    },
+    {
+      "sourceMedium": "google-play / organic",
+      "activeUsers": 312,
+      "newUsers": 235,
+      "sessions": 534,
+      "engagedSessions": 472,
+      "eventCount": 25205,
+      "engagementRate": 88.38951310861424
     },
     {
       "sourceMedium": "google / organic",
-      "activeUsers": 282,
-      "newUsers": 228,
-      "sessions": 540,
-      "engagedSessions": 469,
-      "eventCount": 10876,
-      "engagementRate": 86.85185185185185
+      "activeUsers": 306,
+      "newUsers": 251,
+      "sessions": 575,
+      "engagedSessions": 508,
+      "eventCount": 12390,
+      "engagementRate": 88.34782608695653
     },
     {
       "sourceMedium": "google / cpc",
-      "activeUsers": 225,
-      "newUsers": 240,
-      "sessions": 320,
-      "engagedSessions": 291,
-      "eventCount": 8311,
-      "engagementRate": 90.9375
-    },
-    {
-      "sourceMedium": "facebook.com / referral",
-      "activeUsers": 116,
-      "newUsers": 116,
-      "sessions": 116,
-      "engagedSessions": 19,
-      "eventCount": 531,
-      "engagementRate": 16.379310344827587
-    },
-    {
-      "sourceMedium": "lm.facebook.com / referral",
-      "activeUsers": 109,
-      "newUsers": 113,
-      "sessions": 112,
-      "engagedSessions": 22,
-      "eventCount": 508,
-      "engagementRate": 19.642857142857142
+      "activeUsers": 165,
+      "newUsers": 130,
+      "sessions": 257,
+      "engagedSessions": 226,
+      "eventCount": 6509,
+      "engagementRate": 87.93774319066148
     },
     {
       "sourceMedium": "(not set)",
-      "activeUsers": 101,
-      "newUsers": 13,
-      "sessions": 208,
+      "activeUsers": 109,
+      "newUsers": 19,
+      "sessions": 227,
       "engagedSessions": 0,
-      "eventCount": 81847,
+      "eventCount": 70302,
       "engagementRate": 0.0
     },
     {
       "sourceMedium": "fb / paid",
-      "activeUsers": 92,
-      "newUsers": 29,
-      "sessions": 123,
-      "engagedSessions": 108,
-      "eventCount": 1362,
-      "engagementRate": 87.8048780487805
+      "activeUsers": 87,
+      "newUsers": 25,
+      "sessions": 113,
+      "engagedSessions": 94,
+      "eventCount": 972,
+      "engagementRate": 83.1858407079646
+    },
+    {
+      "sourceMedium": "facebook.com / referral",
+      "activeUsers": 81,
+      "newUsers": 81,
+      "sessions": 81,
+      "engagedSessions": 21,
+      "eventCount": 364,
+      "engagementRate": 25.925925925925924
     },
     {
       "sourceMedium": "hs-search / (not set)",
       "activeUsers": 76,
-      "newUsers": 32,
-      "sessions": 284,
-      "engagedSessions": 212,
-      "eventCount": 42093,
-      "engagementRate": 74.64788732394366
+      "newUsers": 27,
+      "sessions": 262,
+      "engagedSessions": 189,
+      "eventCount": 37879,
+      "engagementRate": 72.13740458015268
+    },
+    {
+      "sourceMedium": "m.facebook.com / referral",
+      "activeUsers": 58,
+      "newUsers": 57,
+      "sessions": 59,
+      "engagedSessions": 13,
+      "eventCount": 275,
+      "engagementRate": 22.033898305084744
     }
   ],
   "topPages": [
     {
       "path": "(not set)",
       "screen": "(not set)",
-      "activeUsers": 6892,
-      "views": 3469,
-      "eventCount": 896162
+      "activeUsers": 6789,
+      "views": 3352,
+      "eventCount": 891609
     },
     {
       "path": "(not set)",
       "screen": "Splash",
-      "activeUsers": 1450,
-      "views": 4025,
-      "eventCount": 4935
+      "activeUsers": 1455,
+      "views": 3925,
+      "eventCount": 4859
     },
     {
       "path": "(not set)",
       "screen": "Intro",
-      "activeUsers": 1304,
-      "views": 3009,
-      "eventCount": 3180
+      "activeUsers": 1292,
+      "views": 2865,
+      "eventCount": 3033
     },
     {
       "path": "(not set)",
       "screen": "On Demand",
-      "activeUsers": 889,
-      "views": 3482,
-      "eventCount": 3939
+      "activeUsers": 922,
+      "views": 3424,
+      "eventCount": 3883
     },
     {
       "path": "/landing",
       "screen": "/landing",
-      "activeUsers": 593,
-      "views": 1255,
-      "eventCount": 2081
+      "activeUsers": 627,
+      "views": 1298,
+      "eventCount": 2175
     },
     {
       "path": "/",
       "screen": "/",
-      "activeUsers": 547,
-      "views": 1468,
-      "eventCount": 3903
+      "activeUsers": 574,
+      "views": 1540,
+      "eventCount": 4030
     },
     {
       "path": "(not set)",
       "screen": "PDP",
       "activeUsers": 346,
-      "views": 3441,
-      "eventCount": 3720
+      "views": 3243,
+      "eventCount": 3528
     },
     {
       "path": "/live-tv",
       "screen": "/live-tv",
-      "activeUsers": 258,
-      "views": 1220,
-      "eventCount": 22272
+      "activeUsers": 276,
+      "views": 1396,
+      "eventCount": 23227
     },
     {
       "path": "(not set)",
       "screen": "Category",
-      "activeUsers": 153,
-      "views": 380,
-      "eventCount": 413
+      "activeUsers": 156,
+      "views": 367,
+      "eventCount": 397
     },
     {
       "path": "(not set)",
       "screen": "Live",
-      "activeUsers": 135,
-      "views": 1979,
-      "eventCount": 20452
+      "activeUsers": 151,
+      "views": 1899,
+      "eventCount": 21714
     },
     {
       "path": "(not set)",
       "screen": "Player",
-      "activeUsers": 82,
-      "views": 2828,
-      "eventCount": 22010
-    },
-    {
-      "path": "/devices",
-      "screen": "/devices",
-      "activeUsers": 66,
-      "views": 85,
-      "eventCount": 316
-    },
-    {
-      "path": "/english",
-      "screen": "/english",
-      "activeUsers": 65,
-      "views": 120,
-      "eventCount": 158
+      "activeUsers": 78,
+      "views": 2611,
+      "eventCount": 30301
     },
     {
       "path": "(not set)",
       "screen": "Search",
-      "activeUsers": 63,
-      "views": 598,
-      "eventCount": 633
+      "activeUsers": 78,
+      "views": 644,
+      "eventCount": 705
+    },
+    {
+      "path": "/english",
+      "screen": "/english",
+      "activeUsers": 73,
+      "views": 120,
+      "eventCount": 159
+    },
+    {
+      "path": "/devices",
+      "screen": "/devices",
+      "activeUsers": 60,
+      "views": 74,
+      "eventCount": 287
     },
     {
       "path": "(not set)",
       "screen": "Settings",
-      "activeUsers": 46,
-      "views": 235,
-      "eventCount": 286
+      "activeUsers": 43,
+      "views": 187,
+      "eventCount": 226
     },
     {
       "path": "(not set)",
       "screen": "Mylist",
-      "activeUsers": 30,
-      "views": 333,
-      "eventCount": 333
+      "activeUsers": 38,
+      "views": 345,
+      "eventCount": 345
     },
     {
       "path": "/profiles?after_selection=%2F",
       "screen": "/profiles?after_selection=%2F",
-      "activeUsers": 29,
+      "activeUsers": 27,
       "views": 35,
       "eventCount": 41
     },
     {
-      "path": "/about",
-      "screen": "/about",
-      "activeUsers": 23,
-      "views": 26,
-      "eventCount": 72
+      "path": "/watch/the-ark-2?_id=691698915572586b0a2328be",
+      "screen": "/watch/the-ark-2?_id=691698915572586b0a2328be",
+      "activeUsers": 20,
+      "views": 35,
+      "eventCount": 1777
     },
     {
-      "path": "(not set)",
-      "screen": "AboutUs",
-      "activeUsers": 21,
-      "views": 79,
-      "eventCount": 79
+      "path": "/watch/the-ark-2?_id=691698915572586b0a2328be?_id=691698915572586b0a2328be",
+      "screen": "/watch/the-ark-2?_id=691698915572586b0a2328be?_id=691698915572586b0a2328be",
+      "activeUsers": 20,
+      "views": 36,
+      "eventCount": 36
     },
     {
-      "path": "(not set)",
-      "screen": "ConnectWithUs",
-      "activeUsers": 21,
-      "views": 79,
-      "eventCount": 79
+      "path": "/live-tv/electric-now",
+      "screen": "/live-tv/electric-now",
+      "activeUsers": 19,
+      "views": 137,
+      "eventCount": 3008
     }
   ],
   "liveTv": {
     "baseline": {
-      "activeUsers": 422,
-      "sessions": 1763,
-      "engagedSessions": 1660,
-      "screenPageViews": 3302,
-      "eventCount": 45958
+      "activeUsers": 412,
+      "sessions": 1753,
+      "engagedSessions": 1668,
+      "screenPageViews": 3382,
+      "eventCount": 44818
     },
     "current": {
-      "activeUsers": 396,
-      "sessions": 1798,
-      "engagedSessions": 1732,
-      "screenPageViews": 3407,
-      "eventCount": 47040
+      "activeUsers": 433,
+      "sessions": 1861,
+      "engagedSessions": 1789,
+      "screenPageViews": 3521,
+      "eventCount": 48954
     },
     "deltas": {
-      "activeUsers": -6.161137440758294,
-      "sessions": 1.9852524106636416,
-      "engagedSessions": 4.337349397590361,
-      "screenPageViews": 3.179890975166566,
-      "eventCount": 2.3543235127725315
+      "activeUsers": 5.097087378640777,
+      "sessions": 6.160867084997148,
+      "engagedSessions": 7.254196642685851,
+      "screenPageViews": 4.109994086339444,
+      "eventCount": 9.228435003793118
     },
-    "engagementRateBaseline": 94.15768576290414,
-    "engagementRateCurrent": 96.32925472747496,
+    "engagementRateBaseline": 95.15116942384483,
+    "engagementRateCurrent": 96.13111230521226,
     "weekToDate": {
-      "activeUsers": 396,
-      "sessions": 1798,
-      "engagedSessions": 1732,
-      "screenPageViews": 3407,
-      "eventCount": 47040
+      "activeUsers": 433,
+      "sessions": 1861,
+      "engagedSessions": 1789,
+      "screenPageViews": 3521,
+      "eventCount": 48954
     },
-    "engagementRateWeekToDate": 96.32925472747496
+    "engagementRateWeekToDate": 96.13111230521226
   },
   "plainEnglishInsights": [
-    "Overall, ElectricNOW\u2019s latest measured week shows that measured platform audience grew 27.4%, viewing grew 28.2%, and time spent softened by 7.7 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
-    "Measured ElectricNOW platform audience was 8.0K GA4 active users excluding landing-page acquisition paths, up 27.4% from the previous week.",
-    "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 8.0K, up 27.0% from the previous week; landing-page users were down 8.1%.",
-    "Paid advertising is now being measured more directly through the connected Google Ads account: PCSM - ElectricNow App Promotion - Android spent $176.44 from May 11-May 21, 2026, generated 36.9K impressions, 1.2K clicks, and 349 Android first-open conversions at about $0.51 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself.",
-    "Measured Apple/Android app-stream usage improved: 5.5K active users this week, up 255.6% from launch baseline and up 49.6% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
-    "Viewing also improved: 2.1K app users watched on-demand or Live content, up 183.3% from launch baseline and up 28.2% from the previous week.",
-    "Roughly 37.6% of app users watched something, compared with 47.2% during launch week and 43.9% the prior week, so the viewing conversion rate is steady while the audience is growing.",
-    "On-demand is carrying most of the viewing growth with 2.3K starter users; Live remains meaningful at 31 viewers, down 32.6% from launch baseline and down 29.5% from the previous week.",
-    "Actual viewing behavior is measured separately: 2.7K users triggered a viewing event, up 37.7% from the previous week; video-complete users were up 46.1%.",
-    "Average time on platform is 38.7 engaged minutes per active user across all GA4-tracked platforms, up 13.7 minutes from launch week and down 7.7 minutes from the previous week.",
+    "Overall, ElectricNOW\u2019s latest measured week shows that measured platform audience grew 7.0%, viewing grew 16.4%, and time spent softened by 0.8 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
+    "Measured ElectricNOW platform audience was 7.7K GA4 active users excluding landing-page acquisition paths, up 7.0% from the previous week.",
+    "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 7.8K, up 6.5% from the previous week; landing-page users were down 9.8%.",
+    "Paid advertising is now being measured more directly through the connected Google Ads account: the Android App Campaign spent $192.24 from May 12-May 23, 2026, generated 40,010 impressions, 1,258 clicks, and 372 Android first-open conversions at about $0.52 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself.",
+    "Measured Apple/Android app-stream usage improved: 5.4K active users this week, up 248.0% from launch baseline and up 20.0% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
+    "Viewing also improved: 2.3K app users watched on-demand or Live content, up 209.5% from launch baseline and up 16.4% from the previous week.",
+    "Roughly 42.0% of app users watched something, compared with 47.2% during launch week and 43.3% the prior week, so the viewing conversion rate is steady while the audience is growing.",
+    "On-demand is carrying most of the viewing growth with 2.2K starter users; Live remains meaningful at 35 viewers, down 23.9% from launch baseline and down 10.3% from the previous week.",
+    "Actual viewing behavior is measured separately: 2.7K users triggered a viewing event, up 15.0% from the previous week; video-complete users were up 16.5%.",
+    "Average time on platform is 40.5 engaged minutes per active user across all GA4-tracked platforms, up 15.5 minutes from launch week and down 0.8 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
-    "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 4 purchases and $79.96 in the latest 7 complete days (1 Stripe, 1 Roku, 2 Apple), plus 2 purchases and $44.98 so far this week; this still excludes Google Play purchases. Stripe contributes 13 succeeded payments and $189.87 year to date now that the Stripe connector is reconnected (latest succeeded payment $14.99 on May 17, 2026). The Apple App Store contribution is currently a manual snapshot of $144.93 gross, or about $101.45 after Apple\u2019s 30% platform fee.",
-    "Separately, GA4 detected Android in-app purchase activity on May 21, 2026 that is not currently represented in Stripe, Roku, or the Apple App Store dashboard sales: 2 in_app_purchase events totaling $29.98 (1 Android mobile in Philadelphia at appVersion 16.019, and 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing and is shown as a GA4 purchase signal only \u2014 it should be reconciled with Google Play Console before being treated as final revenue, and it is intentionally kept out of the visible platform sales rollup until then.",
-    "Ad-sales readiness is mixed: GA4 counted 34.7K ad impressions in the latest 7 complete days, down 8.0% from the previous 7 days; ad requests were up 8.7%; completed ad events were down 20.3%. This tells us ad inventory delivery inside the tracked app experience, but actual ad revenue still needs to be reconciled with the ad server because GA4 ad events are not the same thing as booked or collected ad sales.",
-    "Top watched programs in GA4 this week include ElectricNOW, The Ark, Leverage, The Librarians, and Leverage: Redemption.",
-    "The most watched Live channels generated 3.9K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, spot on news, Cartoon Classics, and ToonOvation.",
-    "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions; the new GA4 in-app purchase signal section above is the first directional read of Android/Google Play activity and is not yet a financial sales source."
+    "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 3 purchases and $59.97 in the latest 7 complete days, plus 2 purchases and $44.98 so far this week; this still excludes Google Play purchases. The Apple App Store contribution is currently a manual snapshot of $144.93 gross, or about $101.45 after Apple\u2019s 30% platform fee.",
+    "Ad-sales readiness is mixed: GA4 counted 34.7K ad impressions in the latest 7 complete days, down 3.6% from the previous 7 days; ad requests were up 4.3%; completed ad events were down 8.7%. This tells us ad inventory delivery inside the tracked app experience, but actual ad revenue still needs to be reconciled with the ad server because GA4 ad events are not the same thing as booked or collected ad sales.",
+    "Top watched programs in GA4 this week include ElectricNOW, The Ark, Leverage, The Librarians, and Almost Paradise.",
+    "The most watched Live channels generated 4.1K Live play events, led by ElectricNOW, ElectricNOW en Espa\u00f1ol, spot on news, Kung Fu Movies, and Cartoon Classics.",
+    "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
     "No separate GA4 event found for video_purchase yet.",
     "No separate GA4 event found for collection_purchase yet.",
     "Stripe is now one visible sales source in the dashboard; total sales still require Apple App Store and Google Play reporting, and GA4 purchase events still need to be split into go-ad-free, individual video, and collection purchase actions.",
-    "GA4 in_app_purchase events on Android are now surfaced in a dedicated GA4 In-App Purchase Signals section as directional Google Play / Android billing signals. They are kept out of visible platform sales until they can be reconciled against Google Play Console reporting.",
     "Live TV should be reconciled with Amagi and ad-server reporting."
   ],
   "salesSummary": {
@@ -1924,25 +1966,6 @@
     "stripe": {
       "sourceLabel": "Stripe-visible payments",
       "sourceDetail": "Stripe-visible sales are shown from the latest live Stripe pull (connector re-established May 22, 2026). Source account: electricnow.tv (acct_1HZdStLG0Cw1zW4e). 13 succeeded payment intents and $189.87 returned from list_payment_intents; list_invoices and list_subscriptions both returned empty. One $1,800.00 payment intent (pi_3Qk3NgLG0Cw1zW4e0hgSXvz0) was canceled and is excluded from sales.",
-      "connectorStatus": {
-        "sourceId": "stripe",
-        "status": "CONNECTED",
-        "accountId": "acct_1HZdStLG0Cw1zW4e",
-        "displayName": "electricnow.tv",
-        "lastSuccessfulPull": "2026-05-22 16:52 PDT",
-        "invoicesReturned": 0,
-        "subscriptionsReturned": 0,
-        "paymentIntentsReturned": 14,
-        "succeededPaymentIntents": 13,
-        "canceledPaymentIntents": 1,
-        "canceledPaymentIntent": {
-          "id": "pi_3Qk3NgLG0Cw1zW4e0hgSXvz0",
-          "amount": 1800.00,
-          "status": "canceled",
-          "customer": null,
-          "note": "Excluded from Stripe-visible sales."
-        }
-      },
       "baselineWindow": {
         "label": "Stripe launch baseline",
         "range": "Apr 13-Apr 19, 2026",
@@ -1955,7 +1978,7 @@
       },
       "yearToDate": {
         "label": "Sales this year",
-        "range": "Jan 1-May 22, 2026",
+        "range": "Jan 1-May 24, 2026",
         "purchases": 13,
         "purchaseRevenue": 189.87,
         "revenuePerPurchase": 14.61,
@@ -2009,24 +2032,12 @@
             "createdAt": "2026-04-20 18:31 PDT",
             "amount": 14.99,
             "description": "Anonymous Customer - Purchase this title: Signup payment"
-          },
-          {
-            "date": "Apr 18",
-            "createdAt": "2026-04-18 17:51 PDT",
-            "amount": 14.99,
-            "description": "Customer User - Purchase this title: Signup payment"
-          },
-          {
-            "date": "Apr 16",
-            "createdAt": "2026-04-16 18:58 PDT",
-            "amount": 9.99,
-            "description": "Customer User - Purchase Bundle 10: Signup payment"
           }
         ]
       },
       "monthToDate": {
         "label": "Sales this month",
-        "range": "May 1-May 22, 2026",
+        "range": "May 1-May 24, 2026",
         "purchases": 3,
         "purchaseRevenue": 44.97,
         "revenuePerPurchase": 14.99,
@@ -2055,12 +2066,12 @@
       },
       "lastWeek": {
         "label": "Sales last week",
-        "range": "May 15-May 21, 2026",
+        "range": "May 17-May 23, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": 0.0,
-        "deltaRevenuePct": 0.0,
+        "deltaPurchasesPct": -75.0,
+        "deltaRevenuePct": -72.72561863173217,
         "payments": [
           {
             "date": "May 17",
@@ -2072,7 +2083,7 @@
       },
       "thisWeek": {
         "label": "Sales this week",
-        "range": "May 18-May 22, 2026",
+        "range": "May 18-May 24, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -2082,12 +2093,12 @@
       },
       "currentCompleteWeek": {
         "label": "Sales last week",
-        "range": "May 15-May 21, 2026",
+        "range": "May 17-May 23, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": 0.0,
-        "deltaRevenuePct": 0.0,
+        "deltaPurchasesPct": -75.0,
+        "deltaRevenuePct": -72.72561863173217,
         "payments": [
           {
             "date": "May 17",
@@ -2099,7 +2110,7 @@
       },
       "weekToDate": {
         "label": "Sales this week",
-        "range": "May 18-May 22, 2026",
+        "range": "May 18-May 24, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -2109,7 +2120,7 @@
       },
       "recent12Days": {
         "label": "Stripe last 12 days",
-        "range": "May 11-May 22, 2026",
+        "range": "May 13-May 24, 2026",
         "purchases": 2,
         "purchaseRevenue": 29.98,
         "revenuePerPurchase": 14.99,
@@ -2131,7 +2142,7 @@
         ]
       },
       "lifetimeObserved": {
-        "range": "Through May 22, 2026 pull",
+        "range": "Through May 24, 2026 pull",
         "purchases": 13,
         "purchaseRevenue": 189.87,
         "revenuePerPurchase": 14.61
@@ -2237,13 +2248,6 @@
           "createdAt": "2026-04-16 14:35 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment"
-        },
-        {
-          "id": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
-          "date": "Apr 10",
-          "createdAt": "2026-04-10 21:55 PDT",
-          "amount": 14.99,
-          "description": "pi_3TKta2LG0Cw1zW4e26XmyZs9"
         }
       ],
       "dailyTrend": [
@@ -2486,9 +2490,40 @@
           "rawDate": "20260522",
           "purchases": 0,
           "purchaseRevenue": 0
+        },
+        {
+          "date": "May 23",
+          "rawDate": "20260523",
+          "purchases": 0,
+          "purchaseRevenue": 0
+        },
+        {
+          "date": "May 24",
+          "rawDate": "20260524",
+          "purchases": 0,
+          "purchaseRevenue": 0
         }
       ],
-      "note": "Stripe-visible sales show 13 payments and $189.87 year to date, 3 payments and $44.97 this month, 1 payment and $14.99 last week (May 17), and 0 payments and $0.00 this week. The latest succeeded Stripe payment is $14.99 on May 17, 2026 9:26 PM PDT. Add Apple App Store and Google Play reports before treating this as total sales."
+      "note": "Stripe-visible sales show 13 payments and $189.87 year to date, 3 payments and $44.97 this month, 1 payment and $14.99 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales.",
+      "connectorStatus": {
+        "sourceId": "stripe",
+        "status": "CONNECTED",
+        "accountId": "acct_1HZdStLG0Cw1zW4e",
+        "displayName": "electricnow.tv",
+        "lastSuccessfulPull": "2026-05-22 16:52 PDT",
+        "invoicesReturned": 0,
+        "subscriptionsReturned": 0,
+        "paymentIntentsReturned": 14,
+        "succeededPaymentIntents": 13,
+        "canceledPaymentIntents": 1,
+        "canceledPaymentIntent": {
+          "id": "pi_3Qk3NgLG0Cw1zW4e0hgSXvz0",
+          "amount": 1800.0,
+          "status": "canceled",
+          "customer": null,
+          "note": "Excluded from Stripe-visible sales."
+        }
+      }
     },
     "roku": {
       "sourceLabel": "Roku-visible sales",
@@ -2507,7 +2542,7 @@
       },
       "yearToDate": {
         "label": "Roku sales this year",
-        "range": "Jan 1-May 22, 2026",
+        "range": "Jan 1-May 24, 2026",
         "purchases": 12,
         "purchaseRevenue": 176.88,
         "developerRevShare": 141.48,
@@ -2583,7 +2618,7 @@
       },
       "monthToDate": {
         "label": "Roku sales this month",
-        "range": "May 1-May 22, 2026",
+        "range": "May 1-May 24, 2026",
         "purchases": 6,
         "purchaseRevenue": 46.94,
         "developerRevShare": 37.54,
@@ -2635,27 +2670,18 @@
       },
       "lastWeek": {
         "label": "Roku sales last week",
-        "range": "May 15-May 21, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 19.99,
-        "developerRevShare": 15.99,
-        "revenuePerPurchase": 19.99,
-        "deltaPurchasesPct": -80.0,
-        "deltaRevenuePct": -73.3288859239493,
-        "payments": [
-          {
-            "date": "May 16",
-            "createdAt": "2026-05-16",
-            "amount": 19.99,
-            "developerRevShare": 15.99,
-            "description": "Roku - Purchase Bundle 20",
-            "source": "Roku"
-          }
-        ]
+        "range": "May 17-May 23, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "developerRevShare": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": -100.0,
+        "deltaRevenuePct": -100.0,
+        "payments": []
       },
       "thisWeek": {
         "label": "Roku sales this week",
-        "range": "May 18-May 22, 2026",
+        "range": "May 18-May 24, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "developerRevShare": 0,
@@ -2666,27 +2692,18 @@
       },
       "currentCompleteWeek": {
         "label": "Roku sales last week",
-        "range": "May 15-May 21, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 19.99,
-        "developerRevShare": 15.99,
-        "revenuePerPurchase": 19.99,
-        "deltaPurchasesPct": -80.0,
-        "deltaRevenuePct": -73.3288859239493,
-        "payments": [
-          {
-            "date": "May 16",
-            "createdAt": "2026-05-16",
-            "amount": 19.99,
-            "developerRevShare": 15.99,
-            "description": "Roku - Purchase Bundle 20",
-            "source": "Roku"
-          }
-        ]
+        "range": "May 17-May 23, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "developerRevShare": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": -100.0,
+        "deltaRevenuePct": -100.0,
+        "payments": []
       },
       "weekToDate": {
         "label": "Roku sales this week",
-        "range": "May 18-May 22, 2026",
+        "range": "May 18-May 24, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "developerRevShare": 0,
@@ -2696,7 +2713,7 @@
         "payments": []
       },
       "lifetimeObserved": {
-        "range": "Through May 22, 2026 pull",
+        "range": "Through May 24, 2026 pull",
         "purchases": 12,
         "purchaseRevenue": 176.88,
         "developerRevShare": 141.48
@@ -3083,6 +3100,20 @@
           "purchases": 0,
           "purchaseRevenue": 0,
           "developerRevShare": 0
+        },
+        {
+          "date": "May 23",
+          "rawDate": "20260523",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
+        },
+        {
+          "date": "May 24",
+          "rawDate": "20260524",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
         }
       ],
       "note": "Roku report shows 12 purchases and $176.88 gross sales year to date, with $141.48 developer rev share."
@@ -3112,7 +3143,7 @@
       },
       "lastWeek": {
         "label": "Apple sales last week",
-        "range": "May 15-May 21, 2026",
+        "range": "May 17-May 23, 2026",
         "purchases": 2,
         "purchaseRevenue": 44.98,
         "developerRevShare": 31.49,
@@ -3134,7 +3165,7 @@
       },
       "thisWeek": {
         "label": "Apple sales this week",
-        "range": "May 18-May 22, 2026",
+        "range": "May 18-May 24, 2026",
         "purchases": 2,
         "purchaseRevenue": 44.98,
         "developerRevShare": 31.49,
@@ -3156,7 +3187,7 @@
       },
       "monthToDate": {
         "label": "Apple sales this month",
-        "range": "May 1-May 22, 2026",
+        "range": "May 1-May 24, 2026",
         "purchases": 3,
         "purchaseRevenue": 74.97,
         "developerRevShare": 52.48,
@@ -3184,7 +3215,7 @@
       },
       "recent12Days": {
         "label": "Apple sales last 12 days",
-        "range": "May 11-May 22, 2026",
+        "range": "May 13-May 24, 2026",
         "purchases": 3,
         "purchaseRevenue": 74.97,
         "developerRevShare": 52.48,
@@ -3212,7 +3243,7 @@
       },
       "yearToDate": {
         "label": "Apple App Store snapshot",
-        "range": "Jan 1-May 22, 2026",
+        "range": "Jan 1-May 24, 2026",
         "purchases": 7,
         "purchaseRevenue": 144.93,
         "developerRevShare": 101.45,
@@ -3329,7 +3360,7 @@
         "purchases": 13,
         "purchaseRevenue": 189.87,
         "developerRevShare": 0.0,
-        "detail": "Stripe-visible sales come from the latest live Stripe pull (connector re-established May 22, 2026 on account electricnow.tv, acct_1HZdStLG0Cw1zW4e). 13 succeeded payment intents and $189.87 gross; no invoices or subscriptions returned. The canceled $1,800.00 payment intent (pi_3Qk3NgLG0Cw1zW4e0hgSXvz0) is excluded from sales."
+        "detail": "Stripe-visible sales are shown from the latest live Stripe pull (connector re-established May 22, 2026). Source account: electricnow.tv (acct_1HZdStLG0Cw1zW4e). 13 succeeded payment intents and $189.87 returned from list_payment_intents; list_invoices and list_subscriptions both returned empty. One $1,800.00 payment intent (pi_3Qk3NgLG0Cw1zW4e0hgSXvz0) was canceled and is excluded from sales."
       },
       {
         "source": "Roku",
@@ -3364,7 +3395,7 @@
     },
     "yearToDate": {
       "label": "Sales this year",
-      "range": "Jan 1-May 22, 2026",
+      "range": "Jan 1-May 24, 2026",
       "purchases": 32,
       "purchaseRevenue": 511.68,
       "developerRevShare": 242.93,
@@ -3425,30 +3456,16 @@
           "amount": 14.99,
           "description": "Anonymous Customer - Purchase this title: Signup payment",
           "source": "Stripe"
-        },
-        {
-          "date": "Apr 18",
-          "createdAt": "2026-04-18 17:51 PDT",
-          "amount": 14.99,
-          "description": "Customer User - Purchase this title: Signup payment",
-          "source": "Stripe"
-        },
-        {
-          "date": "Apr 16",
-          "createdAt": "2026-04-16 18:58 PDT",
-          "amount": 9.99,
-          "description": "Customer User - Purchase Bundle 10: Signup payment",
-          "source": "Stripe"
         }
       ]
     },
     "monthToDate": {
       "label": "Sales this month",
-      "range": "May 1-May 22, 2026",
-      "purchases": 11,
-      "purchaseRevenue": 151.89,
+      "range": "May 1-May 24, 2026",
+      "purchases": 12,
+      "purchaseRevenue": 166.88,
       "developerRevShare": 90.02,
-      "revenuePerPurchase": 13.81,
+      "revenuePerPurchase": 13.91,
       "payments": [
         {
           "date": "May 17",
@@ -3460,6 +3477,13 @@
         {
           "date": "May 14",
           "createdAt": "2026-05-14 20:09 PDT",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "May 6",
+          "createdAt": "2026-05-06 01:02 PDT",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment",
           "source": "Stripe"
@@ -3503,33 +3527,15 @@
           "developerRevShare": 11.99,
           "description": "Roku - Purchase HD 15",
           "source": "Roku"
-        },
-        {
-          "date": "May 13",
-          "amount": 29.99,
-          "description": "Apple App Store - Purchase Bundle 30",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "May 18",
-          "amount": 29.99,
-          "description": "Apple App Store - Purchase Bundle 30",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "May 18",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
         }
       ]
     },
     "lastWeek": {
       "label": "Sales last week",
-      "range": "May 15-May 21, 2026",
-      "purchases": 4,
-      "purchaseRevenue": 79.96,
-      "developerRevShare": 47.48,
+      "range": "May 17-May 23, 2026",
+      "purchases": 3,
+      "purchaseRevenue": 59.97,
+      "developerRevShare": 31.49,
       "revenuePerPurchase": 19.99,
       "payments": [
         {
@@ -3538,14 +3544,6 @@
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment",
           "source": "Stripe"
-        },
-        {
-          "date": "May 16",
-          "createdAt": "2026-05-16",
-          "amount": 19.99,
-          "developerRevShare": 15.99,
-          "description": "Roku - Purchase Bundle 20",
-          "source": "Roku"
         },
         {
           "date": "May 18",
@@ -3560,12 +3558,12 @@
           "source": "Apple App Store"
         }
       ],
-      "deltaPurchasesPct": -63.63636363636363,
-      "deltaRevenuePct": -49.99687304655565
+      "deltaPurchasesPct": -72.72727272727273,
+      "deltaRevenuePct": -62.49296391268997
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "May 18-May 22, 2026",
+      "range": "May 18-May 24, 2026",
       "purchases": 2,
       "purchaseRevenue": 44.98,
       "developerRevShare": 31.49,
@@ -3587,10 +3585,10 @@
     },
     "currentCompleteWeek": {
       "label": "Sales last week",
-      "range": "May 15-May 21, 2026",
-      "purchases": 4,
-      "purchaseRevenue": 79.96,
-      "developerRevShare": 47.48,
+      "range": "May 17-May 23, 2026",
+      "purchases": 3,
+      "purchaseRevenue": 59.97,
+      "developerRevShare": 31.49,
       "revenuePerPurchase": 19.99,
       "payments": [
         {
@@ -3599,14 +3597,6 @@
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment",
           "source": "Stripe"
-        },
-        {
-          "date": "May 16",
-          "createdAt": "2026-05-16",
-          "amount": 19.99,
-          "developerRevShare": 15.99,
-          "description": "Roku - Purchase Bundle 20",
-          "source": "Roku"
         },
         {
           "date": "May 18",
@@ -3621,12 +3611,12 @@
           "source": "Apple App Store"
         }
       ],
-      "deltaPurchasesPct": -63.63636363636363,
-      "deltaRevenuePct": -49.99687304655565
+      "deltaPurchasesPct": -72.72727272727273,
+      "deltaRevenuePct": -62.49296391268997
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "May 18-May 22, 2026",
+      "range": "May 18-May 24, 2026",
       "purchases": 2,
       "purchaseRevenue": 44.98,
       "developerRevShare": 31.49,
@@ -3648,7 +3638,7 @@
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
-      "range": "May 11-May 22, 2026",
+      "range": "May 13-May 24, 2026",
       "purchases": 5,
       "purchaseRevenue": 104.95,
       "developerRevShare": 52.48,
@@ -3690,7 +3680,7 @@
     },
     "lifetimeObserved": {
       "label": "Sales this year",
-      "range": "Jan 1-May 22, 2026",
+      "range": "Jan 1-May 24, 2026",
       "purchases": 32,
       "purchaseRevenue": 511.68,
       "developerRevShare": 242.93,
@@ -3750,20 +3740,6 @@
           "createdAt": "2026-04-20 18:31 PDT",
           "amount": 14.99,
           "description": "Anonymous Customer - Purchase this title: Signup payment",
-          "source": "Stripe"
-        },
-        {
-          "date": "Apr 18",
-          "createdAt": "2026-04-18 17:51 PDT",
-          "amount": 14.99,
-          "description": "Customer User - Purchase this title: Signup payment",
-          "source": "Stripe"
-        },
-        {
-          "date": "Apr 16",
-          "createdAt": "2026-04-16 18:58 PDT",
-          "amount": 9.99,
-          "description": "Customer User - Purchase Bundle 10: Signup payment",
           "source": "Stripe"
         }
       ]
@@ -3909,22 +3885,6 @@
         "amount": 14.99,
         "description": "Customer User - Purchase this title: Signup payment",
         "source": "Stripe"
-      },
-      {
-        "id": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
-        "date": "Apr 10",
-        "createdAt": "2026-04-10 21:55 PDT",
-        "amount": 14.99,
-        "description": "pi_3TKta2LG0Cw1zW4e26XmyZs9",
-        "source": "Stripe"
-      },
-      {
-        "date": "May 16",
-        "createdAt": "2026-05-16",
-        "amount": 19.99,
-        "developerRevShare": 15.99,
-        "description": "Roku - Purchase Bundle 20",
-        "source": "Roku"
       }
     ],
     "dailyTrend": [
@@ -4207,221 +4167,136 @@
         "purchases": 0,
         "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
-      }
-    ],
-    "note": "Visible platform sales show 32 purchases and $511.68 year to date, including the manual Apple App Store snapshot. Stripe contributes 13 succeeded payments and $189.87 (connector re-established May 22, 2026; latest succeeded payment $14.99 on May 17). Apple gross sales in the snapshot are $144.93, with estimated net-to-Electric of $101.45 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
-  },
-  "ga4PurchaseSignals": {
-    "sourceLabel": "GA4 In-App Purchase Signals",
-    "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
-    "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
-    "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
-    "isFinancialRevenue": false,
-    "excludedFromVisiblePlatformSales": true,
-    "latestDay": {
-      "label": "GA4 in-app purchase signals on May 21, 2026",
-      "date": "2026-05-21",
-      "range": "May 21, 2026 (America/Los_Angeles)",
-      "purchaseRevenue": 29.98,
-      "eventCount": 2,
-      "events": [
-        {
-          "dateHour": "2026052106",
-          "eventName": "in_app_purchase",
-          "platform": "Android",
-          "deviceCategory": "mobile",
-          "operatingSystem": "Android",
-          "appVersion": "16.019",
-          "country": "United States",
-          "region": "Pennsylvania",
-          "city": "Philadelphia",
-          "sourceMedium": "(direct) / (none)",
-          "transactionId": "(not set)",
-          "purchaseRevenue": 14.99
-        },
-        {
-          "dateHour": "2026052121",
-          "eventName": "in_app_purchase",
-          "platform": "Android",
-          "deviceCategory": "smart tv",
-          "operatingSystem": "Android",
-          "appVersion": "16.026",
-          "country": "United States",
-          "region": "Washington",
-          "city": "Vancouver",
-          "sourceMedium": "(direct) / (none)",
-          "transactionId": "(not set)",
-          "purchaseRevenue": 14.99
-        }
-      ]
-    },
-    "platformSplit": [
-      {
-        "label": "Android \u00b7 mobile",
-        "platform": "Android",
-        "deviceCategory": "mobile",
-        "eventCount": 1,
-        "purchaseRevenue": 14.99
       },
       {
-        "label": "Android \u00b7 smart tv",
-        "platform": "Android",
-        "deviceCategory": "smart tv",
-        "eventCount": 1,
-        "purchaseRevenue": 14.99
-      }
-    ],
-    "appVersionSplit": [
-      {
-        "appVersion": "16.019",
-        "platform": "Android",
-        "deviceCategory": "mobile",
-        "eventCount": 1,
-        "purchaseRevenue": 14.99
+        "date": "May 23",
+        "rawDate": "20260523",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       },
       {
-        "appVersion": "16.026",
-        "platform": "Android",
-        "deviceCategory": "smart tv",
-        "eventCount": 1,
-        "purchaseRevenue": 14.99
+        "date": "May 24",
+        "rawDate": "20260524",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       }
     ],
-    "geoSplit": [
-      {
-        "country": "United States",
-        "region": "Pennsylvania",
-        "city": "Philadelphia",
-        "eventCount": 1,
-        "purchaseRevenue": 14.99
-      },
-      {
-        "country": "United States",
-        "region": "Washington",
-        "city": "Vancouver",
-        "eventCount": 1,
-        "purchaseRevenue": 14.99
-      }
-    ],
-    "comparisonProperty": {
-      "property": "213042706",
-      "result": "No in_app_purchase rows returned for 2026-05-21 from the older GA4 property; signal is only present in property 497892271."
-    },
-    "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
+    "note": "Visible platform sales show 32 purchases and $511.68 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $144.93, with estimated net-to-Electric of $101.45 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
   },
   "contentUsage": {
-    "period": "May 15-May 21, 2026",
+    "period": "May 17-May 23, 2026",
     "live": {
       "total": {
-        "screenPageViews": 1981,
-        "activeUsers": 135,
-        "eventCount": 20479
+        "screenPageViews": 1900,
+        "activeUsers": 152,
+        "eventCount": 21758
       },
       "platforms": [
         {
           "platform": "web",
           "screen": "Live",
-          "screenPageViews": 1645,
-          "activeUsers": 6,
-          "eventCount": 1645
+          "screenPageViews": 1539,
+          "activeUsers": 9,
+          "eventCount": 1539
         },
         {
           "platform": "Android",
           "screen": "Live",
-          "screenPageViews": 253,
-          "activeUsers": 94,
-          "eventCount": 10482
+          "screenPageViews": 269,
+          "activeUsers": 108,
+          "eventCount": 11333
         },
         {
           "platform": "iOS",
           "screen": "Live",
-          "screenPageViews": 83,
+          "screenPageViews": 92,
           "activeUsers": 35,
-          "eventCount": 8352
+          "eventCount": 8886
         }
       ],
       "playback": {
-        "play": 3897,
-        "video_start": 1980,
-        "end_playback": 138
+        "play": 4143,
+        "video_start": 2196,
+        "end_playback": 141
       },
       "playbackRows": [
         {
           "event": "play",
           "label": "Play events",
-          "eventCount": 3897
+          "eventCount": 4143
         },
         {
           "event": "video_start",
           "label": "Video starts",
-          "eventCount": 1980
+          "eventCount": 2196
         },
         {
           "event": "end_playback",
           "label": "Ended playbacks",
-          "eventCount": 138
+          "eventCount": 141
         }
       ],
       "topChannels": [
         {
           "title": "ElectricNOW",
-          "plays": 2915,
-          "activeUsers": 130,
+          "plays": 3079,
+          "activeUsers": 143,
           "rank": 1
         },
         {
           "title": "ElectricNOW en Espa\u00f1ol",
-          "plays": 501,
+          "plays": 391,
           "activeUsers": 13,
           "rank": 2
         },
         {
           "title": "spot on news",
-          "plays": 98,
-          "activeUsers": 5,
+          "plays": 187,
+          "activeUsers": 6,
           "rank": 3
         },
         {
-          "title": "Cartoon Classics",
+          "title": "Kung Fu Movies",
           "plays": 61,
-          "activeUsers": 7,
+          "activeUsers": 10,
           "rank": 4
         },
         {
-          "title": "ToonOvation",
-          "plays": 52,
-          "activeUsers": 8,
+          "title": "Cartoon Classics",
+          "plays": 56,
+          "activeUsers": 7,
           "rank": 5
         },
         {
-          "title": "Travel & Food TV",
-          "plays": 42,
-          "activeUsers": 1,
+          "title": "ToonOvation",
+          "plays": 45,
+          "activeUsers": 9,
           "rank": 6
         },
         {
-          "title": "Kung Fu Movies",
-          "plays": 32,
-          "activeUsers": 8,
+          "title": "Travel & Food TV",
+          "plays": 45,
+          "activeUsers": 3,
           "rank": 7
         },
         {
-          "title": "Daily Flash",
-          "plays": 20,
-          "activeUsers": 9,
+          "title": "Horror Asylum",
+          "plays": 27,
+          "activeUsers": 7,
           "rank": 8
         },
         {
-          "title": "AMPD TV",
-          "plays": 11,
-          "activeUsers": 6,
+          "title": "Daily Flash",
+          "plays": 19,
+          "activeUsers": 9,
           "rank": 9
         },
         {
           "title": "Grindhouse Gold",
-          "plays": 10,
-          "activeUsers": 6,
+          "plays": 15,
+          "activeUsers": 8,
           "rank": 10
         }
       ],
@@ -4429,45 +4304,45 @@
     },
     "onDemand": {
       "total": {
-        "screenPageViews": 3461,
-        "activeUsers": 889,
-        "eventCount": 3919
+        "screenPageViews": 3404,
+        "activeUsers": 923,
+        "eventCount": 3863
       },
       "platforms": [
         {
           "platform": "web",
           "screen": "On Demand",
-          "screenPageViews": 2889,
-          "activeUsers": 695,
-          "eventCount": 2889
+          "screenPageViews": 2792,
+          "activeUsers": 725,
+          "eventCount": 2792
         },
         {
           "platform": "Android",
           "screen": "On Demand",
-          "screenPageViews": 425,
-          "activeUsers": 140,
-          "eventCount": 632
+          "screenPageViews": 463,
+          "activeUsers": 141,
+          "eventCount": 688
         },
         {
           "platform": "iOS",
           "screen": "On Demand",
-          "screenPageViews": 147,
-          "activeUsers": 54,
-          "eventCount": 398
+          "screenPageViews": 149,
+          "activeUsers": 57,
+          "eventCount": 383
         }
       ],
       "note": "On Demand usage is based on GA4 screen name 'On Demand'. Title-level viewing is shown below from GA4 video_title play events."
     }
   },
   "titleViewership": {
-    "period": "May 15-May 21, 2026",
+    "period": "May 17-May 23, 2026",
     "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topPrograms": [
       {
         "rank": 1,
         "program": "ElectricNOW",
-        "plays": 10024,
-        "activeUsers": 2104,
+        "plays": 10419,
+        "activeUsers": 2069,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": [
@@ -4479,8 +4354,8 @@
       {
         "rank": 2,
         "program": "The Ark",
-        "plays": 7721,
-        "activeUsers": 175,
+        "plays": 9327,
+        "activeUsers": 170,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 27,
         "examples": [
@@ -4492,49 +4367,36 @@
       {
         "rank": 3,
         "program": "Leverage",
-        "plays": 5593,
-        "activeUsers": 82,
+        "plays": 5911,
+        "activeUsers": 71,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 45,
+        "rawLabelCount": 48,
         "examples": [
           "The Nigerian Job (Pilot) - 43 Min Cut",
-          "The Jailhouse Job",
-          "The Homecoming Job"
+          "The Miracle Job",
+          "The Bank Shot Job"
         ]
       },
       {
         "rank": 4,
         "program": "The Librarians",
-        "plays": 3040,
-        "activeUsers": 41,
+        "plays": 3586,
+        "activeUsers": 37,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 10,
+        "rawLabelCount": 13,
         "examples": [
           "And the Crown of King Arthur",
-          "And the Horns of a Dilemma",
-          "And the Sword in the Stone"
+          "And the Sword in the Stone",
+          "And the Horns of a Dilemma"
         ]
       },
       {
         "rank": 5,
-        "program": "Leverage: Redemption",
-        "plays": 2612,
-        "activeUsers": 29,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 29,
-        "examples": [
-          "The Too Many Rembrandts Job",
-          "The Panamanian Job",
-          "The Rollin' on the River Job"
-        ]
-      },
-      {
-        "rank": 6,
         "program": "Almost Paradise",
-        "plays": 2590,
-        "activeUsers": 47,
+        "plays": 2243,
+        "activeUsers": 45,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 12,
+        "rawLabelCount": 17,
         "examples": [
           "Finding Mabuhay",
           "It's Personal",
@@ -4542,25 +4404,38 @@
         ]
       },
       {
+        "rank": 6,
+        "program": "Leverage: Redemption",
+        "plays": 2183,
+        "activeUsers": 31,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 27,
+        "examples": [
+          "The Too Many Rembrandts Job",
+          "The Panamanian Job",
+          "The Tower Job"
+        ]
+      },
+      {
         "rank": 7,
         "program": "The Librarians: The Next Chapter",
-        "plays": 1361,
-        "activeUsers": 9,
+        "plays": 1056,
+        "activeUsers": 7,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 13,
         "examples": [
           "And the Ghost Train",
           "And the Dance of Doom!",
-          "And the Deadly Drekavac"
+          "And the Thief of Love"
         ]
       },
       {
         "rank": 8,
         "program": "The Poly Couple",
-        "plays": 909,
-        "activeUsers": 85,
+        "plays": 905,
+        "activeUsers": 80,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 9,
+        "rawLabelCount": 7,
         "examples": [
           "So This Is How Polyamory Happens",
           "Morning Breath",
@@ -4570,8 +4445,8 @@
       {
         "rank": 9,
         "program": "The Messenger",
-        "plays": 888,
-        "activeUsers": 75,
+        "plays": 862,
+        "activeUsers": 76,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 6,
         "examples": [
@@ -4583,28 +4458,57 @@
       {
         "rank": 10,
         "program": "ElectricNOW en Espa\u00f1ol",
-        "plays": 800,
-        "activeUsers": 120,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 11,
-        "program": "Kung Fu Movies",
-        "plays": 570,
-        "activeUsers": 213,
+        "plays": 671,
+        "activeUsers": 123,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": [
-          "Grindhouse Gold"
+          "Mythica: The Darkspore",
+          "Daily Flash"
+        ]
+      },
+      {
+        "rank": 11,
+        "program": "Horror Asylum",
+        "plays": 611,
+        "activeUsers": 210,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": [
+          "Loaded Dice",
+          "Celebrity Scene"
         ]
       },
       {
         "rank": 12,
+        "program": "The Outpost",
+        "plays": 596,
+        "activeUsers": 15,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 4,
+        "examples": [
+          "One Is the Loneliest Number",
+          "Two Heads are Better than None",
+          "Bones to Pick"
+        ]
+      },
+      {
+        "rank": 13,
+        "program": "Kung Fu Movies",
+        "plays": 589,
+        "activeUsers": 193,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": [
+          "DARK MATTER TV",
+          "Grindhouse Gold"
+        ]
+      },
+      {
+        "rank": 14,
         "program": "ToonOvation",
-        "plays": 518,
-        "activeUsers": 228,
+        "plays": 498,
+        "activeUsers": 214,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": [
@@ -4612,163 +4516,80 @@
         ]
       },
       {
-        "rank": 13,
-        "program": "Horror Asylum",
-        "plays": 430,
-        "activeUsers": 202,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Celebrity Scene"
-        ]
-      },
-      {
-        "rank": 14,
-        "program": "The Outpost",
-        "plays": 398,
-        "activeUsers": 15,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 5,
-        "examples": [
-          "One Is the Loneliest Number",
-          "The Blade of the Three",
-          "Two Heads are Better than None"
-        ]
-      },
-      {
         "rank": 15,
-        "program": "Cartoon Classics",
-        "plays": 388,
-        "activeUsers": 139,
+        "program": "spot on news",
+        "plays": 408,
+        "activeUsers": 132,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
-        "examples": []
+        "examples": [
+          "El Bumbun",
+          "Finding Mabuhay"
+        ]
       },
       {
         "rank": 16,
-        "program": "IndieBox",
-        "plays": 369,
-        "activeUsers": 74,
+        "program": "Cartoon Classics",
+        "plays": 406,
+        "activeUsers": 136,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": []
       },
       {
         "rank": 17,
-        "program": "spot on news",
-        "plays": 310,
-        "activeUsers": 134,
+        "program": "IndieBox",
+        "plays": 387,
+        "activeUsers": 77,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
-        "examples": [
-          "Electric Now",
-          "Finding Mabuhay"
-        ]
+        "examples": []
       },
       {
         "rank": 18,
-        "program": "Wizards vs. Aliens",
-        "plays": 294,
-        "activeUsers": 8,
+        "program": "Box Cinema",
+        "plays": 355,
+        "activeUsers": 52,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
-        "examples": [
-          "Wizards vs. Aliens - Rebel Magic: Part 2",
-          "Wizards vs. Aliens - Grazlax Attacks: Part 1",
-          "Wizards vs. Aliens - Dawn of the Nekross: Part 1"
-        ]
+        "examples": []
       },
       {
         "rank": 19,
-        "program": "Stoner TV Network",
-        "plays": 284,
-        "activeUsers": 103,
+        "program": "DARK MATTER TV",
+        "plays": 345,
+        "activeUsers": 113,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
-        "examples": [
-          "Beyond Lochness",
-          "Kung Fu Movies"
-        ]
+        "examples": []
       },
       {
         "rank": 20,
-        "program": "Daily Flash",
-        "plays": 279,
-        "activeUsers": 137,
+        "program": "a-z Classic Flix",
+        "plays": 334,
+        "activeUsers": 117,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "rawLabelCount": 1,
+        "examples": [
+          "Hollywood Classic Movies"
+        ]
+      },
+      {
+        "rank": 21,
+        "program": "Daily Flash",
+        "plays": 327,
+        "activeUsers": 147,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 1,
         "examples": [
           "spot on news"
         ]
       },
       {
-        "rank": 21,
-        "program": "The Librarians: The Next Chapter Season 2 Teaser",
-        "plays": 277,
-        "activeUsers": 30,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
         "rank": 22,
-        "program": "a-z Classic Flix",
-        "plays": 268,
-        "activeUsers": 110,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": [
-          "Finding Mabuhay",
-          "Hollywood Classic Movies"
-        ]
-      },
-      {
-        "rank": 23,
-        "program": "DARK MATTER TV",
-        "plays": 268,
-        "activeUsers": 118,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 24,
-        "program": "Mythica: A Quest for Heroes",
-        "plays": 255,
-        "activeUsers": 22,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 25,
-        "program": "Checking Out: The Librarians Next Chapter",
-        "plays": 247,
-        "activeUsers": 22,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "TNC Series Preview",
-          "And the Deadly Drekavac",
-          "And the Dance of Doom"
-        ]
-      },
-      {
-        "rank": 26,
-        "program": "Grindhouse Gold",
-        "plays": 238,
-        "activeUsers": 117,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Lionheart"
-        ]
-      },
-      {
-        "rank": 27,
         "program": "Ghost Dimension",
-        "plays": 235,
-        "activeUsers": 132,
+        "plays": 297,
+        "activeUsers": 124,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": [
@@ -4776,22 +4597,28 @@
         ]
       },
       {
-        "rank": 28,
-        "program": "Hollywood Classic Movies",
-        "plays": 231,
-        "activeUsers": 86,
+        "rank": 23,
+        "program": "SportsTVPlus",
+        "plays": 285,
+        "activeUsers": 56,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
-        "examples": [
-          "Beyond Lochness",
-          "AMPD TV"
-        ]
+        "examples": []
       },
       {
-        "rank": 29,
+        "rank": 24,
+        "program": "Grindhouse Gold",
+        "plays": 282,
+        "activeUsers": 116,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": []
+      },
+      {
+        "rank": 25,
         "program": "Celebrity Scene",
-        "plays": 229,
-        "activeUsers": 133,
+        "plays": 282,
+        "activeUsers": 137,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": [
@@ -4800,86 +4627,108 @@
         ]
       },
       {
-        "rank": 30,
-        "program": "4ACETV CLASSIC HITS",
-        "plays": 213,
-        "activeUsers": 77,
+        "rank": 26,
+        "program": "The Librarians: The Next Chapter Season 2 Teaser",
+        "plays": 280,
+        "activeUsers": 30,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
-        "examples": [
-          "El Bumbun"
-        ]
+        "examples": []
       },
       {
-        "rank": 31,
-        "program": "Urban Action Channel",
-        "plays": 210,
-        "activeUsers": 86,
+        "rank": 27,
+        "program": "Fancy A Movie",
+        "plays": 279,
+        "activeUsers": 63,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
-        "examples": [
-          "AMPD TV",
-          "Solar Impact"
-        ]
+        "examples": []
       },
       {
-        "rank": 32,
-        "program": "Comedy Classics",
-        "plays": 210,
+        "rank": 28,
+        "program": "Play Ibiza",
+        "plays": 263,
+        "activeUsers": 43,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 1,
+        "examples": []
+      },
+      {
+        "rank": 29,
+        "program": "Comercio TV",
+        "plays": 263,
+        "activeUsers": 33,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": []
+      },
+      {
+        "rank": 30,
+        "program": "Urban Action Channel",
+        "plays": 256,
         "activeUsers": 83,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": []
       },
       {
-        "rank": 33,
-        "program": "Flyboys",
-        "plays": 209,
-        "activeUsers": 27,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Flyboys Trailer"
-        ]
-      },
-      {
-        "rank": 34,
-        "program": "Adventures of Sonic the Hedgehog",
-        "plays": 207,
-        "activeUsers": 26,
+        "rank": 31,
+        "program": "a-z Western Grit",
+        "plays": 252,
+        "activeUsers": 90,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": [
-          "Super Special Sonic Search and Smash Squad",
-          "Slow Going",
-          "Sonic Breakout"
+          "Somewhere in Montana - Trailer"
         ]
       },
       {
-        "rank": 35,
-        "program": "AMPD TV",
-        "plays": 200,
-        "activeUsers": 95,
+        "rank": 32,
+        "program": "Hollywood Classic Movies",
+        "plays": 243,
+        "activeUsers": 88,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "rawLabelCount": 1,
         "examples": [
-          "Cartoon Classics"
+          "AMPD TV"
         ]
       },
       {
-        "rank": 36,
-        "program": "The Librarian: Quest for the Spear",
-        "plays": 197,
-        "activeUsers": 10,
+        "rank": 33,
+        "program": "CinePast",
+        "plays": 242,
+        "activeUsers": 61,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": []
       },
       {
-        "rank": 37,
+        "rank": 34,
+        "program": "Colorized.TV",
+        "plays": 232,
+        "activeUsers": 59,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 1,
+        "examples": [
+          "The Librarians: The Next Chapter Season 2 Teaser"
+        ]
+      },
+      {
+        "rank": 35,
+        "program": "Stoner TV Network",
+        "plays": 229,
+        "activeUsers": 94,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": [
+          "ToonOvation"
+        ]
+      },
+      {
+        "rank": 36,
         "program": "The Librarian: Curse of the Judas Chalice",
-        "plays": 195,
-        "activeUsers": 9,
+        "plays": 228,
+        "activeUsers": 11,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": [
@@ -4887,10 +4736,19 @@
         ]
       },
       {
+        "rank": 37,
+        "program": "Wrestling Spotlight",
+        "plays": 226,
+        "activeUsers": 64,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": []
+      },
+      {
         "rank": 38,
-        "program": "Daughter of the Wolf",
-        "plays": 193,
-        "activeUsers": 13,
+        "program": "The Health Channel",
+        "plays": 211,
+        "activeUsers": 64,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": []
@@ -4898,7 +4756,7 @@
       {
         "rank": 39,
         "program": "Generation Z",
-        "plays": 192,
+        "plays": 209,
         "activeUsers": 19,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
@@ -4910,83 +4768,96 @@
       },
       {
         "rank": 40,
-        "program": "CinePast",
-        "plays": 170,
-        "activeUsers": 62,
+        "program": "Adventures of Sonic the Hedgehog",
+        "plays": 209,
+        "activeUsers": 25,
         "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "rawLabelCount": 1,
+        "examples": [
+          "Super Special Sonic Search and Smash Squad",
+          "Slow Going",
+          "Sonic Breakout"
+        ]
       },
       {
         "rank": 41,
-        "program": "Exile",
-        "plays": 168,
-        "activeUsers": 28,
+        "program": "Rock Solid Wrestling TV",
+        "plays": 204,
+        "activeUsers": 51,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": []
       },
       {
         "rank": 42,
-        "program": "Fancy A Movie",
-        "plays": 161,
-        "activeUsers": 63,
+        "program": "Fitness Rewind by Collage Video",
+        "plays": 198,
+        "activeUsers": 53,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": []
       },
       {
         "rank": 43,
-        "program": "Colorized.TV",
-        "plays": 149,
-        "activeUsers": 52,
+        "program": "Cowboy Classics",
+        "plays": 192,
+        "activeUsers": 60,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "AMusic Channel"
+        ]
       },
       {
         "rank": 44,
-        "program": "Like A Country Song",
-        "plays": 148,
-        "activeUsers": 2,
+        "program": "AMPD TV",
+        "plays": 189,
+        "activeUsers": 76,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": []
       },
       {
         "rank": 45,
-        "program": "The Family TV Channel",
-        "plays": 148,
-        "activeUsers": 80,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "TIDPIX-AUTHENTICALLY AFRICAN"
-        ]
-      },
-      {
-        "rank": 46,
-        "program": "Spoils of War",
-        "plays": 146,
-        "activeUsers": 13,
+        "program": "Mythica: A Quest for Heroes",
+        "plays": 188,
+        "activeUsers": 18,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": []
       },
       {
-        "rank": 47,
-        "program": "Don't Let It Out",
-        "plays": 144,
-        "activeUsers": 41,
+        "rank": 46,
+        "program": "Exile",
+        "plays": 186,
+        "activeUsers": 27,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
         "examples": []
       },
       {
+        "rank": 47,
+        "program": "Comedy Classics",
+        "plays": 184,
+        "activeUsers": 74,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 2,
+        "examples": []
+      },
+      {
         "rank": 48,
+        "program": "MomCave",
+        "plays": 180,
+        "activeUsers": 52,
+        "viewerMethod": "deduped_ga4_filter",
+        "rawLabelCount": 1,
+        "examples": []
+      },
+      {
+        "rank": 49,
         "program": "DJ Central TV",
-        "plays": 142,
-        "activeUsers": 76,
+        "plays": 180,
+        "activeUsers": 78,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
         "examples": [
@@ -4994,23 +4865,12 @@
         ]
       },
       {
-        "rank": 49,
-        "program": "a-z Western Grit",
-        "plays": 140,
-        "activeUsers": 91,
+        "rank": 50,
+        "program": "POWERtube TV",
+        "plays": 175,
+        "activeUsers": 34,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 1,
-        "examples": [
-          "Old West TV"
-        ]
-      },
-      {
-        "rank": 50,
-        "program": "Wrestling Spotlight",
-        "plays": 140,
-        "activeUsers": 64,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
         "examples": []
       }
     ],
@@ -5018,504 +4878,504 @@
       {
         "rank": 1,
         "title": "Electric Now",
-        "plays": 9986,
-        "activeUsers": 2104,
+        "plays": 10376,
+        "activeUsers": 2069,
         "group": "ElectricNOW"
       },
       {
         "rank": 2,
         "title": "Everyone Wanted to Be On This Ship",
-        "plays": 1096,
+        "plays": 1060,
         "activeUsers": 121,
         "group": "The Ark"
       },
       {
         "rank": 3,
         "title": "ElectricNOW en Espa\u00f1ol",
-        "plays": 800,
-        "activeUsers": 120,
+        "plays": 668,
+        "activeUsers": 123,
         "group": ""
       },
       {
         "rank": 4,
         "title": "Like It Touched the Sun",
-        "plays": 621,
-        "activeUsers": 31,
+        "plays": 636,
+        "activeUsers": 28,
         "group": "The Ark"
       },
       {
         "rank": 5,
-        "title": "Kung Fu Movies",
-        "plays": 568,
-        "activeUsers": 213,
-        "group": "Stoner TV Network"
+        "title": "Horror Asylum",
+        "plays": 608,
+        "activeUsers": 210,
+        "group": "Ghost Dimension"
       },
       {
         "rank": 6,
-        "title": "ToonOvation",
-        "plays": 517,
-        "activeUsers": 228,
+        "title": "Kung Fu Movies",
+        "plays": 585,
+        "activeUsers": 193,
         "group": ""
       },
       {
         "rank": 7,
-        "title": "Episode 1",
-        "plays": 507,
-        "activeUsers": 59,
-        "group": "The Messenger"
+        "title": "ToonOvation",
+        "plays": 497,
+        "activeUsers": 214,
+        "group": "Stoner TV Network"
       },
       {
         "rank": 8,
-        "title": "Finding Mabuhay",
-        "plays": 469,
-        "activeUsers": 30,
-        "group": "Almost Paradise"
+        "title": "Episode 1",
+        "plays": 492,
+        "activeUsers": 57,
+        "group": "The Messenger"
       },
       {
         "rank": 9,
-        "title": "We Weren't Supposed to Be Awake",
-        "plays": 440,
-        "activeUsers": 18,
-        "group": "The Ark"
+        "title": "Finding Mabuhay",
+        "plays": 470,
+        "activeUsers": 33,
+        "group": "Almost Paradise"
       },
       {
         "rank": 10,
-        "title": "Horror Asylum",
-        "plays": 429,
-        "activeUsers": 202,
-        "group": "Ghost Dimension"
+        "title": "We Weren't Supposed to Be Awake",
+        "plays": 420,
+        "activeUsers": 14,
+        "group": "The Ark"
       },
       {
         "rank": 11,
-        "title": "Cartoon Classics",
-        "plays": 388,
-        "activeUsers": 139,
-        "group": "AMPD TV"
-      },
-      {
-        "rank": 12,
-        "title": "IndieBox",
-        "plays": 369,
-        "activeUsers": 74,
-        "group": ""
-      },
-      {
-        "rank": 13,
-        "title": "Get Out and Push",
-        "plays": 357,
+        "title": "Kill or Be Killed",
+        "plays": 417,
         "activeUsers": 18,
         "group": "The Ark"
       },
       {
+        "rank": 12,
+        "title": "Get Out and Push",
+        "plays": 411,
+        "activeUsers": 19,
+        "group": "The Ark"
+      },
+      {
+        "rank": 13,
+        "title": "Cartoon Classics",
+        "plays": 406,
+        "activeUsers": 136,
+        "group": ""
+      },
+      {
         "rank": 14,
-        "title": "And the Crown of King Arthur",
-        "plays": 347,
-        "activeUsers": 25,
-        "group": "The Librarians"
+        "title": "spot on news",
+        "plays": 406,
+        "activeUsers": 132,
+        "group": "Daily Flash"
       },
       {
         "rank": 15,
-        "title": "The Too Many Rembrandts Job",
-        "plays": 341,
-        "activeUsers": 19,
-        "group": "Leverage: Redemption"
+        "title": "Failed Experiment",
+        "plays": 400,
+        "activeUsers": 18,
+        "group": "The Ark"
       },
       {
         "rank": 16,
-        "title": "One Step Forward, Two Steps Back",
-        "plays": 326,
-        "activeUsers": 17,
-        "group": "The Ark"
+        "title": "And the Crown of King Arthur",
+        "plays": 396,
+        "activeUsers": 24,
+        "group": "The Librarians"
       },
       {
         "rank": 17,
-        "title": "Every Single Person Matters",
-        "plays": 318,
-        "activeUsers": 16,
-        "group": "The Ark"
+        "title": "IndieBox",
+        "plays": 387,
+        "activeUsers": 77,
+        "group": ""
       },
       {
         "rank": 18,
-        "title": "Two by Two",
-        "plays": 315,
-        "activeUsers": 16,
+        "title": "One Step Forward, Two Steps Back",
+        "plays": 386,
+        "activeUsers": 14,
         "group": "The Ark"
       },
       {
         "rank": 19,
-        "title": "A Slow Death Is Worse",
-        "plays": 310,
-        "activeUsers": 12,
+        "title": "Anomaly",
+        "plays": 373,
+        "activeUsers": 17,
         "group": "The Ark"
       },
       {
         "rank": 20,
-        "title": "spot on news",
-        "plays": 307,
-        "activeUsers": 134,
-        "group": "Daily Flash"
+        "title": "Box Cinema",
+        "plays": 355,
+        "activeUsers": 52,
+        "group": ""
       },
       {
         "rank": 21,
-        "title": "Kill or Be Killed",
-        "plays": 305,
-        "activeUsers": 12,
-        "group": "The Ark"
+        "title": "DARK MATTER TV",
+        "plays": 344,
+        "activeUsers": 113,
+        "group": "Kung Fu Movies"
       },
       {
         "rank": 22,
-        "title": "Failed Experiment",
-        "plays": 301,
-        "activeUsers": 15,
+        "title": "A Slow Death Is Worse",
+        "plays": 339,
+        "activeUsers": 14,
         "group": "The Ark"
       },
       {
         "rank": 23,
-        "title": "So This Is How Polyamory Happens",
-        "plays": 286,
-        "activeUsers": 63,
-        "group": "The Poly Couple"
+        "title": "The Last Thing You Ever Do",
+        "plays": 339,
+        "activeUsers": 16,
+        "group": "The Ark"
       },
       {
         "rank": 24,
-        "title": "Daily Flash",
-        "plays": 278,
-        "activeUsers": 137,
-        "group": "Celebrity Scene"
+        "title": "Two by Two",
+        "plays": 338,
+        "activeUsers": 16,
+        "group": "The Ark"
       },
       {
         "rank": 25,
-        "title": "The Librarians: The Next Chapter Season 2 Teaser",
-        "plays": 277,
-        "activeUsers": 30,
+        "title": "a-z Classic Flix",
+        "plays": 333,
+        "activeUsers": 117,
         "group": ""
       },
       {
         "rank": 26,
-        "title": "DARK MATTER TV",
-        "plays": 267,
-        "activeUsers": 118,
-        "group": ""
+        "title": "Daily Flash",
+        "plays": 329,
+        "activeUsers": 148,
+        "group": "Celebrity Scene"
       },
       {
         "rank": 27,
-        "title": "a-z Classic Flix",
-        "plays": 266,
-        "activeUsers": 110,
-        "group": ""
+        "title": "Every Single Person Matters",
+        "plays": 320,
+        "activeUsers": 15,
+        "group": "The Ark"
       },
       {
         "rank": 28,
-        "title": "Stoner TV Network",
-        "plays": 265,
-        "activeUsers": 103,
-        "group": ""
-      },
-      {
-        "rank": 29,
-        "title": "The Panamanian Job",
-        "plays": 256,
-        "activeUsers": 9,
-        "group": "Leverage: Redemption"
-      },
-      {
-        "rank": 30,
-        "title": "Mythica: A Quest for Heroes",
-        "plays": 255,
-        "activeUsers": 22,
-        "group": ""
-      },
-      {
-        "rank": 31,
-        "title": "It's Personal",
-        "plays": 252,
-        "activeUsers": 9,
-        "group": "Almost Paradise"
-      },
-      {
-        "rank": 32,
-        "title": "And the Horns of a Dilemma",
-        "plays": 240,
-        "activeUsers": 5,
-        "group": "The Librarians"
-      },
-      {
-        "rank": 33,
-        "title": "Grindhouse Gold",
-        "plays": 236,
-        "activeUsers": 117,
-        "group": "Kung Fu Movies"
-      },
-      {
-        "rank": 34,
-        "title": "Ghost Dimension",
-        "plays": 234,
-        "activeUsers": 132,
-        "group": ""
-      },
-      {
-        "rank": 35,
-        "title": "Anomaly",
-        "plays": 229,
-        "activeUsers": 11,
-        "group": "The Ark"
-      },
-      {
-        "rank": 36,
-        "title": "Hollywood Classic Movies",
-        "plays": 228,
-        "activeUsers": 86,
-        "group": "a-z Classic Flix"
-      },
-      {
-        "rank": 37,
-        "title": "Celebrity Scene",
-        "plays": 223,
-        "activeUsers": 133,
-        "group": "Horror Asylum"
-      },
-      {
-        "rank": 38,
-        "title": "And the Sword in the Stone",
-        "plays": 219,
-        "activeUsers": 8,
-        "group": "The Librarians"
-      },
-      {
-        "rank": 39,
-        "title": "Pretty Big Deal",
-        "plays": 219,
-        "activeUsers": 9,
-        "group": "The Ark"
-      },
-      {
-        "rank": 40,
-        "title": "The Nigerian Job (Pilot) - 43 Min Cut",
-        "plays": 219,
-        "activeUsers": 36,
-        "group": "Leverage"
-      },
-      {
-        "rank": 41,
-        "title": "Everybody Wins",
-        "plays": 213,
-        "activeUsers": 12,
-        "group": "The Ark"
-      },
-      {
-        "rank": 42,
-        "title": "4ACETV CLASSIC HITS",
-        "plays": 212,
-        "activeUsers": 77,
-        "group": "DJ Central TV"
-      },
-      {
-        "rank": 43,
-        "title": "Comedy Classics",
-        "plays": 210,
-        "activeUsers": 83,
-        "group": ""
-      },
-      {
-        "rank": 44,
-        "title": "And the Ghost Train",
-        "plays": 208,
-        "activeUsers": 3,
-        "group": "The Librarians: The Next Chapter"
-      },
-      {
-        "rank": 45,
-        "title": "Urban Action Channel",
-        "plays": 208,
-        "activeUsers": 86,
-        "group": ""
-      },
-      {
-        "rank": 46,
-        "title": "The Last Thing You Ever Do",
-        "plays": 207,
-        "activeUsers": 12,
-        "group": "The Ark"
-      },
-      {
-        "rank": 47,
-        "title": "The Painful Way",
-        "plays": 206,
+        "title": "The Other You",
+        "plays": 299,
         "activeUsers": 13,
         "group": "The Ark"
       },
       {
-        "rank": 48,
-        "title": "Flyboys",
-        "plays": 203,
-        "activeUsers": 26,
+        "rank": 29,
+        "title": "It's Personal",
+        "plays": 297,
+        "activeUsers": 8,
+        "group": "Almost Paradise"
+      },
+      {
+        "rank": 30,
+        "title": "Ghost Dimension",
+        "plays": 296,
+        "activeUsers": 124,
         "group": ""
       },
       {
-        "rank": 49,
-        "title": "The Other You",
-        "plays": 202,
-        "activeUsers": 9,
+        "rank": 31,
+        "title": "SportsTVPlus",
+        "plays": 285,
+        "activeUsers": 56,
+        "group": ""
+      },
+      {
+        "rank": 32,
+        "title": "Grindhouse Gold",
+        "plays": 282,
+        "activeUsers": 116,
+        "group": "Kung Fu Movies"
+      },
+      {
+        "rank": 33,
+        "title": "The Librarians: The Next Chapter Season 2 Teaser",
+        "plays": 280,
+        "activeUsers": 30,
+        "group": "Colorized.TV"
+      },
+      {
+        "rank": 34,
+        "title": "The Too Many Rembrandts Job",
+        "plays": 280,
+        "activeUsers": 19,
+        "group": "Leverage: Redemption"
+      },
+      {
+        "rank": 35,
+        "title": "Fancy A Movie",
+        "plays": 279,
+        "activeUsers": 63,
+        "group": ""
+      },
+      {
+        "rank": 36,
+        "title": "Celebrity Scene",
+        "plays": 275,
+        "activeUsers": 137,
+        "group": "Horror Asylum"
+      },
+      {
+        "rank": 37,
+        "title": "Everybody Wins",
+        "plays": 270,
+        "activeUsers": 16,
         "group": "The Ark"
       },
       {
+        "rank": 38,
+        "title": "Comercio TV",
+        "plays": 263,
+        "activeUsers": 33,
+        "group": ""
+      },
+      {
+        "rank": 39,
+        "title": "Play Ibiza",
+        "plays": 263,
+        "activeUsers": 43,
+        "group": ""
+      },
+      {
+        "rank": 40,
+        "title": "Urban Action Channel",
+        "plays": 256,
+        "activeUsers": 83,
+        "group": ""
+      },
+      {
+        "rank": 41,
+        "title": "Hoping for Forever",
+        "plays": 255,
+        "activeUsers": 16,
+        "group": "The Ark"
+      },
+      {
+        "rank": 42,
+        "title": "The Painful Way",
+        "plays": 254,
+        "activeUsers": 15,
+        "group": "The Ark"
+      },
+      {
+        "rank": 43,
+        "title": "So This Is How Polyamory Happens",
+        "plays": 250,
+        "activeUsers": 59,
+        "group": "The Poly Couple"
+      },
+      {
+        "rank": 44,
+        "title": "a-z Western Grit",
+        "plays": 250,
+        "activeUsers": 90,
+        "group": ""
+      },
+      {
+        "rank": 45,
+        "title": "Pretty Big Deal",
+        "plays": 245,
+        "activeUsers": 10,
+        "group": "The Ark"
+      },
+      {
+        "rank": 46,
+        "title": "Hollywood Classic Movies",
+        "plays": 243,
+        "activeUsers": 88,
+        "group": "a-z Classic Flix"
+      },
+      {
+        "rank": 47,
+        "title": "CinePast",
+        "plays": 242,
+        "activeUsers": 61,
+        "group": ""
+      },
+      {
+        "rank": 48,
+        "title": "And the Sword in the Stone",
+        "plays": 234,
+        "activeUsers": 9,
+        "group": "The Librarians"
+      },
+      {
+        "rank": 49,
+        "title": "Colorized.TV",
+        "plays": 231,
+        "activeUsers": 59,
+        "group": ""
+      },
+      {
         "rank": 50,
-        "title": "AMPD TV",
-        "plays": 199,
-        "activeUsers": 95,
-        "group": "Hollywood Classic Movies"
+        "title": "Stoner TV Network",
+        "plays": 228,
+        "activeUsers": 94,
+        "group": ""
       }
     ],
     "topChannelTitles": [
       {
         "rank": 1,
         "title": "ElectricNOW",
-        "plays": 9281,
-        "activeUsers": 1928
+        "plays": 9567,
+        "activeUsers": 1874
       },
       {
         "rank": 2,
         "title": "The Ark",
-        "plays": 3300,
-        "activeUsers": 141
+        "plays": 4692,
+        "activeUsers": 138
       },
       {
         "rank": 3,
         "title": "Leverage",
-        "plays": 2798,
-        "activeUsers": 57
+        "plays": 2854,
+        "activeUsers": 54
       },
       {
         "rank": 4,
         "title": "The Ark - Season 1",
-        "plays": 2425,
+        "plays": 2630,
         "activeUsers": 1
       },
       {
         "rank": 5,
         "title": "The Librarians (Full Series)",
-        "plays": 1676,
-        "activeUsers": 32
+        "plays": 1852,
+        "activeUsers": 28
       },
       {
         "rank": 6,
         "title": "The Ark - Season 2",
-        "plays": 1378,
+        "plays": 1413,
         "activeUsers": 1
       },
       {
         "rank": 7,
-        "title": "The Librarians: The Next Chapter",
-        "plays": 1171,
+        "title": "The Librarians - Season 1",
+        "plays": 1094,
         "activeUsers": 1
       },
       {
         "rank": 8,
-        "title": "Almost Paradise (Season 1 & 2)",
-        "plays": 1108,
-        "activeUsers": 40
+        "title": "Leverage - Season 1",
+        "plays": 1043,
+        "activeUsers": 1
       },
       {
         "rank": 9,
         "title": "Almost Paradise - Season 1",
-        "plays": 1009,
+        "plays": 1006,
         "activeUsers": 1
       },
       {
         "rank": 10,
-        "title": "Leverage: Redemption -  Season 1",
-        "plays": 897,
+        "title": "The Librarians: The Next Chapter",
+        "plays": 954,
         "activeUsers": 1
       },
       {
         "rank": 11,
-        "title": "Leverage - Season 1",
-        "plays": 800,
-        "activeUsers": 1
+        "title": "Leverage: Redemption (Seasons 1 & 2)",
+        "plays": 920,
+        "activeUsers": 25
       },
       {
         "rank": 12,
-        "title": "Leverage: Redemption (Seasons 1 & 2)",
-        "plays": 799,
-        "activeUsers": 22
+        "title": "Almost Paradise (Season 1 & 2)",
+        "plays": 733,
+        "activeUsers": 35
       },
       {
         "rank": 13,
         "title": "ElectricNOW en Espa\u00f1ol",
-        "plays": 788,
-        "activeUsers": 111
+        "plays": 660,
+        "activeUsers": 115
       },
       {
         "rank": 14,
-        "title": "The Librarians - Season 1",
-        "plays": 715,
+        "title": "Leverage: Redemption -  Season 1",
+        "plays": 638,
         "activeUsers": 1
       },
       {
         "rank": 15,
         "title": "The Poly Couple (Season 1)",
-        "plays": 583,
-        "activeUsers": 69
+        "plays": 634,
+        "activeUsers": 68
       },
       {
         "rank": 16,
-        "title": "Kung Fu Movies",
-        "plays": 564,
-        "activeUsers": 210
+        "title": "Horror Asylum",
+        "plays": 608,
+        "activeUsers": 207
       },
       {
         "rank": 17,
-        "title": "ToonOvation",
-        "plays": 510,
-        "activeUsers": 222
+        "title": "Kung Fu Movies",
+        "plays": 586,
+        "activeUsers": 191
       },
       {
         "rank": 18,
-        "title": "Leverage: Redemption - Season 3",
-        "plays": 456,
+        "title": "Leverage - Season 2",
+        "plays": 543,
         "activeUsers": 1
       },
       {
         "rank": 19,
-        "title": "Leverage - Season 2",
-        "plays": 431,
-        "activeUsers": 1
+        "title": "ToonOvation",
+        "plays": 493,
+        "activeUsers": 210
       },
       {
         "rank": 20,
-        "title": "Horror Asylum",
-        "plays": 428,
-        "activeUsers": 200
+        "title": "The Outpost",
+        "plays": 458,
+        "activeUsers": 13
       },
       {
         "rank": 21,
-        "title": "Almost Paradise - Season 2",
-        "plays": 424,
-        "activeUsers": 1
+        "title": "The Messenger",
+        "plays": 451,
+        "activeUsers": 57
       },
       {
         "rank": 22,
         "title": "Cartoon Classics",
-        "plays": 383,
-        "activeUsers": 137
+        "plays": 405,
+        "activeUsers": 135
       },
       {
         "rank": 23,
-        "title": "Leverage - Season 5",
-        "plays": 377,
-        "activeUsers": 1
+        "title": "spot on news",
+        "plays": 403,
+        "activeUsers": 129
       },
       {
         "rank": 24,
-        "title": "The Messenger",
-        "plays": 374,
-        "activeUsers": 53
+        "title": "IndieBox",
+        "plays": 385,
+        "activeUsers": 75
       },
       {
         "rank": 25,
-        "title": "IndieBox",
-        "plays": 368,
-        "activeUsers": 73
+        "title": "Almost Paradise - Season 2",
+        "plays": 369,
+        "activeUsers": 1
       }
     ]
   },
@@ -5566,30 +5426,30 @@
       "livePlayEvents": 1673
     },
     "previousWeek": {
-      "range": "May 8-May 14, 2026",
-      "appActiveUsers": 3678,
-      "appSessions": 5824,
-      "appEngagedSessions": 4844,
-      "appEngagementRate": 83.17307692307693,
-      "viewingUsers": 1613,
-      "viewingShare": 43.85535617183252,
-      "onDemandStartUsers": 1578,
-      "onDemandStartEvents": 6168,
-      "liveChannelViewers": 44,
-      "livePlayEvents": 1597
+      "range": "May 10-May 16, 2026",
+      "appActiveUsers": 4484,
+      "appSessions": 6977,
+      "appEngagedSessions": 5800,
+      "appEngagementRate": 83.13028522287517,
+      "viewingUsers": 1941,
+      "viewingShare": 43.28724353256022,
+      "onDemandStartUsers": 1907,
+      "onDemandStartEvents": 7055,
+      "liveChannelViewers": 39,
+      "livePlayEvents": 1585
     },
     "currentWeek": {
-      "range": "May 15-May 21, 2026",
-      "appActiveUsers": 5501,
-      "appSessions": 8768,
-      "appEngagedSessions": 7231,
-      "appEngagementRate": 82.47034671532847,
-      "viewingUsers": 2068,
-      "viewingShare": 37.59316487911289,
-      "onDemandStartUsers": 2329,
-      "onDemandStartEvents": 8332,
-      "liveChannelViewers": 31,
-      "livePlayEvents": 1309
+      "range": "May 17-May 23, 2026",
+      "appActiveUsers": 5383,
+      "appSessions": 8668,
+      "appEngagedSessions": 7087,
+      "appEngagementRate": 81.76049838486387,
+      "viewingUsers": 2259,
+      "viewingShare": 41.96544677689021,
+      "onDemandStartUsers": 2229,
+      "onDemandStartEvents": 8343,
+      "liveChannelViewers": 35,
+      "livePlayEvents": 1554
     }
   },
   "platformTime": {
@@ -5603,7 +5463,7 @@
       "totalEngagementHours": 3652.995,
       "avgEngagedMinutesPerUser": 25.072031571722718,
       "avgEngagedMinutesPerSession": 16.417955056179775,
-      "ga4AverageSessionMinutes": 22.76917910185143,
+      "ga4AverageSessionMinutes": 22.769179101851428,
       "platformBreakout": [
         {
           "platform": "web",
@@ -5612,7 +5472,7 @@
           "engagedSessions": 5221,
           "avgEngagedMinutesPerUser": 16.21484193563676,
           "avgEngagedMinutesPerSession": 11.368655501279367,
-          "ga4AverageSessionMinutes": 13.258718967379455
+          "ga4AverageSessionMinutes": 13.25871896737945
         },
         {
           "platform": "iOS",
@@ -5636,85 +5496,85 @@
       "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     },
     "previousWeek": {
-      "range": "May 8-May 14, 2026",
-      "activeUsers": 6268,
-      "sessions": 11764,
-      "engagedSessions": 9431,
-      "engagementRate": 80.16831009860593,
-      "totalEngagementSeconds": 17475276,
-      "totalEngagementHours": 4854.243333333333,
-      "avgEngagedMinutesPerUser": 46.466911295469046,
-      "avgEngagedMinutesPerSession": 24.758126487589255,
-      "ga4AverageSessionMinutes": 43.91385042252635,
+      "range": "May 10-May 16, 2026",
+      "activeUsers": 7298,
+      "sessions": 13132,
+      "engagedSessions": 10546,
+      "engagementRate": 80.3076454462382,
+      "totalEngagementSeconds": 18117071,
+      "totalEngagementHours": 5032.519722222222,
+      "avgEngagedMinutesPerUser": 41.37451128162967,
+      "avgEngagedMinutesPerSession": 22.993541222459136,
+      "ga4AverageSessionMinutes": 45.23061961903747,
       "platformBreakout": [
         {
-          "platform": "web",
-          "activeUsers": 2431,
-          "sessions": 5474,
-          "engagedSessions": 4151,
-          "avgEngagedMinutesPerUser": 61.453825586178525,
-          "avgEngagedMinutesPerSession": 27.29160577274388,
-          "ga4AverageSessionMinutes": 31.91478788872548
+          "platform": "Android",
+          "activeUsers": 2724,
+          "sessions": 4331,
+          "engagedSessions": 3473,
+          "avgEngagedMinutesPerUser": 22.578946402349484,
+          "avgEngagedMinutesPerSession": 14.201119833756639,
+          "ga4AverageSessionMinutes": 72.98533105565303
         },
         {
-          "platform": "Android",
-          "activeUsers": 2161,
-          "sessions": 3506,
-          "engagedSessions": 2845,
-          "avgEngagedMinutesPerUser": 28.53229986117538,
-          "avgEngagedMinutesPerSession": 17.586508841985168,
-          "ga4AverageSessionMinutes": 71.31166284298821
+          "platform": "web",
+          "activeUsers": 2635,
+          "sessions": 5678,
+          "engagedSessions": 4267,
+          "avgEngagedMinutesPerUser": 57.82251106894371,
+          "avgEngagedMinutesPerSession": 26.833800046964893,
+          "ga4AverageSessionMinutes": 31.588738872185036
         },
         {
           "platform": "iOS",
-          "activeUsers": 1676,
-          "sessions": 2784,
-          "engagedSessions": 2435,
-          "avgEngagedMinutesPerUser": 47.853251789976134,
-          "avgEngagedMinutesPerSession": 28.80820761494253,
-          "ga4AverageSessionMinutes": 33.00369882909482
+          "activeUsers": 1939,
+          "sessions": 3123,
+          "engagedSessions": 2806,
+          "avgEngagedMinutesPerUser": 45.427445418600655,
+          "avgEngagedMinutesPerSession": 28.204872451702425,
+          "ga4AverageSessionMinutes": 31.542801382933078
         }
       ],
       "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     },
     "currentWeek": {
-      "range": "May 15-May 21, 2026",
-      "activeUsers": 7951,
-      "sessions": 14404,
-      "engagedSessions": 11844,
-      "engagementRate": 82.22715912246599,
-      "totalEngagementSeconds": 18483701,
-      "totalEngagementHours": 5134.3613888888885,
-      "avgEngagedMinutesPerUser": 38.745023686748,
-      "avgEngagedMinutesPerSession": 21.387231556049244,
-      "ga4AverageSessionMinutes": 58.92890345740882,
+      "range": "May 17-May 23, 2026",
+      "activeUsers": 7707,
+      "sessions": 14263,
+      "engagedSessions": 11795,
+      "engagementRate": 82.69648741498983,
+      "totalEngagementSeconds": 18745399,
+      "totalEngagementHours": 5207.0552777777775,
+      "avgEngagedMinutesPerUser": 40.53760434237274,
+      "avgEngagedMinutesPerSession": 21.904460258477645,
+      "ga4AverageSessionMinutes": 60.555891702504155,
       "platformBreakout": [
         {
           "platform": "Android",
-          "activeUsers": 3374,
-          "sessions": 5300,
-          "engagedSessions": 4338,
-          "avgEngagedMinutesPerUser": 16.792422446156888,
-          "avgEngagedMinutesPerSession": 10.690119496855345,
-          "ga4AverageSessionMinutes": 104.20813534987421
+          "activeUsers": 3275,
+          "sessions": 5307,
+          "engagedSessions": 4367,
+          "avgEngagedMinutesPerUser": 19.042753180661578,
+          "avgEngagedMinutesPerSession": 11.751463475912317,
+          "ga4AverageSessionMinutes": 107.14481916587212
         },
         {
           "platform": "iOS",
-          "activeUsers": 2336,
-          "sessions": 3867,
-          "engagedSessions": 3300,
-          "avgEngagedMinutesPerUser": 41.018885559360726,
-          "avgEngagedMinutesPerSession": 24.778928540643047,
-          "ga4AverageSessionMinutes": 28.727753972773897
+          "activeUsers": 2320,
+          "sessions": 3811,
+          "engagedSessions": 3212,
+          "avgEngagedMinutesPerUser": 40.80441091954023,
+          "avgEngagedMinutesPerSession": 24.840260648998516,
+          "ga4AverageSessionMinutes": 28.716787591305874
         },
         {
           "platform": "web",
-          "activeUsers": 2241,
-          "sessions": 5237,
-          "engagedSessions": 4206,
-          "avgEngagedMinutesPerUser": 69.42611929198274,
-          "avgEngagedMinutesPerSession": 29.708599070714786,
-          "ga4AverageSessionMinutes": 35.40549616831519
+          "activeUsers": 2112,
+          "sessions": 5145,
+          "engagedSessions": 4216,
+          "avgEngagedMinutesPerUser": 73.57578914141413,
+          "avgEngagedMinutesPerSession": 30.202539682539683,
+          "ga4AverageSessionMinutes": 36.08385821750567
         }
       ],
       "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
@@ -5734,28 +5594,28 @@
       "paidSocialSessions": 4547
     },
     "previousWeek": {
-      "range": "May 8-May 14, 2026",
-      "totalGa4ActiveUsers": 6337.0,
-      "totalGa4Sessions": 11873.0,
-      "totalGa4EngagementRate": 80.06401078076307,
-      "landingPageUsers": 715,
-      "landingPageSessions": 1011,
-      "devicesPageUsers": 564,
-      "devicesPageSessions": 580,
-      "paidSocialUsers": 1961,
-      "paidSocialSessions": 2455
+      "range": "May 10-May 16, 2026",
+      "totalGa4ActiveUsers": 7341.0,
+      "totalGa4Sessions": 13428.0,
+      "totalGa4EngagementRate": 78.93208221626452,
+      "landingPageUsers": 769,
+      "landingPageSessions": 1073,
+      "devicesPageUsers": 734,
+      "devicesPageSessions": 754,
+      "paidSocialUsers": 2556,
+      "paidSocialSessions": 3286
     },
     "currentWeek": {
-      "range": "May 15-May 21, 2026",
-      "totalGa4ActiveUsers": 8045.0,
-      "totalGa4Sessions": 14567.0,
-      "totalGa4EngagementRate": 81.97981739548294,
-      "landingPageUsers": 657,
-      "landingPageSessions": 1003,
-      "devicesPageUsers": 349,
-      "devicesPageSessions": 364,
-      "paidSocialUsers": 2715,
-      "paidSocialSessions": 3590
+      "range": "May 17-May 23, 2026",
+      "totalGa4ActiveUsers": 7821.0,
+      "totalGa4Sessions": 14564.0,
+      "totalGa4EngagementRate": 81.34441087613294,
+      "landingPageUsers": 694,
+      "landingPageSessions": 1054,
+      "devicesPageUsers": 201,
+      "devicesPageSessions": 212,
+      "paidSocialUsers": 2531,
+      "paidSocialSessions": 3499
     }
   },
   "viewingBehavior": {
@@ -5776,36 +5636,36 @@
       "adErrorEvents": 158
     },
     "previousWeek": {
-      "range": "May 8-May 14, 2026",
-      "viewingEventUsers": 1997,
-      "videoStartUsers": 1992,
-      "videoStartEvents": 19749,
-      "videoPlayUsers": 281,
-      "videoPlayEvents": 7619,
-      "videoCompleteUsers": 204,
-      "videoCompleteEvents": 3298,
-      "onDemandStartUsers": 1905,
-      "onDemandStartEvents": 17427,
-      "liveChannelViewers": 112,
-      "livePlayEvents": 4433,
-      "adRequestEvents": 23800,
-      "adErrorEvents": 48
+      "range": "May 10-May 16, 2026",
+      "viewingEventUsers": 2326,
+      "videoStartUsers": 2322,
+      "videoStartEvents": 20934,
+      "videoPlayUsers": 272,
+      "videoPlayEvents": 7180,
+      "videoCompleteUsers": 242,
+      "videoCompleteEvents": 3345,
+      "onDemandStartUsers": 2226,
+      "onDemandStartEvents": 18729,
+      "liveChannelViewers": 115,
+      "livePlayEvents": 4273,
+      "adRequestEvents": 24493,
+      "adErrorEvents": 50
     },
     "currentWeek": {
-      "range": "May 15-May 21, 2026",
-      "viewingEventUsers": 2749,
-      "videoStartUsers": 2746,
-      "videoStartEvents": 22280,
-      "videoPlayUsers": 249,
-      "videoPlayEvents": 7642,
-      "videoCompleteUsers": 298,
-      "videoCompleteEvents": 3381,
-      "onDemandStartUsers": 2634,
-      "onDemandStartEvents": 20300,
-      "liveChannelViewers": 128,
-      "livePlayEvents": 3897,
-      "adRequestEvents": 25861,
-      "adErrorEvents": 6
+      "range": "May 17-May 23, 2026",
+      "viewingEventUsers": 2675,
+      "videoStartUsers": 2672,
+      "videoStartEvents": 22020,
+      "videoPlayUsers": 267,
+      "videoPlayEvents": 7894,
+      "videoCompleteUsers": 282,
+      "videoCompleteEvents": 3730,
+      "onDemandStartUsers": 2551,
+      "onDemandStartEvents": 19824,
+      "liveChannelViewers": 141,
+      "livePlayEvents": 4143,
+      "adRequestEvents": 25547,
+      "adErrorEvents": 7
     }
   },
   "scorecardGroups": [
@@ -5819,11 +5679,11 @@
           "label": "Platform active users",
           "baseline": 8709,
           "launchBaseline": 8709,
-          "previousWeek": 6250,
-          "current": 7965,
-          "deltaPct": 27.439999999999998,
-          "deltaVsLaunchPct": -8.542886668963142,
-          "deltaVsPreviousPct": 27.439999999999998,
+          "previousWeek": 7234,
+          "current": 7739,
+          "deltaPct": 6.980923417196571,
+          "deltaVsLaunchPct": -11.137903318406247,
+          "deltaVsPreviousPct": 6.980923417196571,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 active users excluding landing-page acquisition paths."
@@ -5833,11 +5693,11 @@
           "label": "Platform sessions",
           "baseline": 13316,
           "launchBaseline": 13316,
-          "previousWeek": 11732,
-          "current": 14405,
-          "deltaPct": 22.783839072621888,
-          "deltaVsLaunchPct": 8.178131571042355,
-          "deltaVsPreviousPct": 22.783839072621888,
+          "previousWeek": 13246,
+          "current": 14378,
+          "deltaPct": 8.545976143741507,
+          "deltaVsLaunchPct": 7.975367978371883,
+          "deltaVsPreviousPct": 8.545976143741507,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -5847,11 +5707,11 @@
           "label": "Viewing event users",
           "baseline": 1155,
           "launchBaseline": 1155,
-          "previousWeek": 1997,
-          "current": 2749,
-          "deltaPct": 37.656484727090636,
-          "deltaVsLaunchPct": 138.00865800865802,
-          "deltaVsPreviousPct": 37.656484727090636,
+          "previousWeek": 2326,
+          "current": 2675,
+          "deltaPct": 15.004299226139295,
+          "deltaVsLaunchPct": 131.60173160173161,
+          "deltaVsPreviousPct": 15.004299226139295,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered on-demand video_start or Live play events."
@@ -5861,11 +5721,11 @@
           "label": "Total engaged hours",
           "baseline": 3652.995,
           "launchBaseline": 3652.995,
-          "previousWeek": 4854.243333333333,
-          "current": 5134.3613888888885,
-          "deltaPct": 5.77058124861662,
-          "deltaVsLaunchPct": 40.552105570604084,
-          "deltaVsPreviousPct": 5.77058124861662,
+          "previousWeek": 5032.519722222222,
+          "current": 5207.0552777777775,
+          "deltaPct": 3.4681544273906018,
+          "deltaVsLaunchPct": 42.54208609039371,
+          "deltaVsPreviousPct": 3.4681544273906018,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -5875,11 +5735,11 @@
           "label": "Avg time per user",
           "baseline": 25.072031571722718,
           "launchBaseline": 25.072031571722718,
-          "previousWeek": 46.466911295469046,
-          "current": 38.745023686748,
-          "deltaPct": -7.7218876087210475,
-          "deltaVsLaunchPct": 13.67299211502528,
-          "deltaVsPreviousPct": -7.7218876087210475,
+          "previousWeek": 41.37451128162967,
+          "current": 40.53760434237274,
+          "deltaPct": -0.8369069392569344,
+          "deltaVsLaunchPct": 15.46557277065002,
+          "deltaVsPreviousPct": -0.8369069392569344,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
@@ -5896,11 +5756,11 @@
           "label": "Landing-page users",
           "baseline": 1045,
           "launchBaseline": 1045,
-          "previousWeek": 715,
-          "current": 657,
-          "deltaPct": -8.111888111888112,
-          "deltaVsLaunchPct": -37.12918660287081,
-          "deltaVsPreviousPct": -8.111888111888112,
+          "previousWeek": 769,
+          "current": 694,
+          "deltaPct": -9.752925877763328,
+          "deltaVsLaunchPct": -33.588516746411486,
+          "deltaVsPreviousPct": -9.752925877763328,
           "deltaType": "percent",
           "format": "number",
           "context": "Users reaching pages with \u201clanding\u201d in the path."
@@ -5910,11 +5770,11 @@
           "label": "Devices-page users",
           "baseline": 2028,
           "launchBaseline": 2028,
-          "previousWeek": 564,
-          "current": 349,
-          "deltaPct": -38.12056737588653,
-          "deltaVsLaunchPct": -82.79092702169625,
-          "deltaVsPreviousPct": -38.12056737588653,
+          "previousWeek": 734,
+          "current": 201,
+          "deltaPct": -72.6158038147139,
+          "deltaVsLaunchPct": -90.08875739644971,
+          "deltaVsPreviousPct": -72.6158038147139,
           "deltaType": "percent",
           "format": "number",
           "context": "Users reaching pages with \u201cdevices\u201d in the path."
@@ -5924,11 +5784,11 @@
           "label": "Paid social users",
           "baseline": 4441,
           "launchBaseline": 4441,
-          "previousWeek": 1961,
-          "current": 2715,
-          "deltaPct": 38.44977052524222,
-          "deltaVsLaunchPct": -38.86512046836298,
-          "deltaVsPreviousPct": 38.44977052524222,
+          "previousWeek": 2556,
+          "current": 2531,
+          "deltaPct": -0.9780907668231612,
+          "deltaVsLaunchPct": -43.00833145687908,
+          "deltaVsPreviousPct": -0.9780907668231612,
           "deltaType": "percent",
           "format": "number",
           "context": "Users from GA4 source/medium values containing Facebook, Instagram, or Meta."
@@ -5945,11 +5805,11 @@
           "label": "App stream active users",
           "baseline": 1547,
           "launchBaseline": 1547,
-          "previousWeek": 3678,
-          "current": 5501,
-          "deltaPct": 49.56498096791734,
-          "deltaVsLaunchPct": 255.5914673561732,
-          "deltaVsPreviousPct": 49.56498096791734,
+          "previousWeek": 4484,
+          "current": 5383,
+          "deltaPct": 20.04906333630687,
+          "deltaVsLaunchPct": 247.96380090497738,
+          "deltaVsPreviousPct": 20.04906333630687,
           "deltaType": "percent",
           "format": "number",
           "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream."
@@ -5959,11 +5819,11 @@
           "label": "App stream sessions",
           "baseline": 2889,
           "launchBaseline": 2889,
-          "previousWeek": 5824,
-          "current": 8768,
-          "deltaPct": 50.54945054945055,
-          "deltaVsLaunchPct": 203.49601938386982,
-          "deltaVsPreviousPct": 50.54945054945055,
+          "previousWeek": 6977,
+          "current": 8668,
+          "deltaPct": 24.236777984807222,
+          "deltaVsLaunchPct": 200.03461405330563,
+          "deltaVsPreviousPct": 24.236777984807222,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions on the Apple/iOS and Android app streams."
@@ -5973,11 +5833,11 @@
           "label": "App stream engagement rate",
           "baseline": 80.96227068189685,
           "launchBaseline": 80.96227068189685,
-          "previousWeek": 83.17307692307693,
-          "current": 82.47034671532847,
-          "deltaPct": -0.7027302077484592,
-          "deltaVsLaunchPct": 1.508076033431621,
-          "deltaVsPreviousPct": -0.7027302077484592,
+          "previousWeek": 83.13028522287517,
+          "current": 81.76049838486387,
+          "deltaPct": -1.3697868380113079,
+          "deltaVsLaunchPct": 0.7982277029670115,
+          "deltaVsPreviousPct": -1.3697868380113079,
           "deltaType": "points",
           "format": "percent",
           "context": "Engaged app-stream sessions divided by app-stream sessions."
@@ -5994,11 +5854,11 @@
           "label": "Viewing event users",
           "baseline": 1155,
           "launchBaseline": 1155,
-          "previousWeek": 1997,
-          "current": 2749,
-          "deltaPct": 37.656484727090636,
-          "deltaVsLaunchPct": 138.00865800865802,
-          "deltaVsPreviousPct": 37.656484727090636,
+          "previousWeek": 2326,
+          "current": 2675,
+          "deltaPct": 15.004299226139295,
+          "deltaVsLaunchPct": 131.60173160173161,
+          "deltaVsPreviousPct": 15.004299226139295,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered on-demand video_start or Live play events."
@@ -6008,11 +5868,11 @@
           "label": "On-demand start users",
           "baseline": 1069,
           "launchBaseline": 1069,
-          "previousWeek": 1905,
-          "current": 2634,
-          "deltaPct": 38.267716535433074,
-          "deltaVsLaunchPct": 146.39850327408794,
-          "deltaVsPreviousPct": 38.267716535433074,
+          "previousWeek": 2226,
+          "current": 2551,
+          "deltaPct": 14.600179694519316,
+          "deltaVsLaunchPct": 138.63423760523855,
+          "deltaVsPreviousPct": 14.600179694519316,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered video_start outside the Live screen."
@@ -6022,11 +5882,11 @@
           "label": "Live channel viewers",
           "baseline": 121,
           "launchBaseline": 121,
-          "previousWeek": 112,
-          "current": 128,
-          "deltaPct": 14.285714285714285,
-          "deltaVsLaunchPct": 5.785123966942149,
-          "deltaVsPreviousPct": 14.285714285714285,
+          "previousWeek": 115,
+          "current": 141,
+          "deltaPct": 22.608695652173914,
+          "deltaVsLaunchPct": 16.528925619834713,
+          "deltaVsPreviousPct": 22.608695652173914,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered a Live play event."
@@ -6036,11 +5896,11 @@
           "label": "Video complete users",
           "baseline": 219,
           "launchBaseline": 219,
-          "previousWeek": 204,
-          "current": 298,
-          "deltaPct": 46.07843137254902,
-          "deltaVsLaunchPct": 36.07305936073059,
-          "deltaVsPreviousPct": 46.07843137254902,
+          "previousWeek": 242,
+          "current": 282,
+          "deltaPct": 16.528925619834713,
+          "deltaVsLaunchPct": 28.767123287671232,
+          "deltaVsPreviousPct": 16.528925619834713,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered video_complete."
@@ -6050,11 +5910,11 @@
           "label": "Live play events",
           "baseline": 3952,
           "launchBaseline": 3952,
-          "previousWeek": 4433,
-          "current": 3897,
-          "deltaPct": -12.091134671779834,
-          "deltaVsLaunchPct": -1.3917004048582995,
-          "deltaVsPreviousPct": -12.091134671779834,
+          "previousWeek": 4273,
+          "current": 4143,
+          "deltaPct": -3.0423589983618067,
+          "deltaVsLaunchPct": 4.832995951417004,
+          "deltaVsPreviousPct": -3.0423589983618067,
           "deltaType": "percent",
           "format": "number",
           "context": "Total Live play events, not unique users."
@@ -6064,11 +5924,11 @@
           "label": "Ad request events",
           "baseline": 10589,
           "launchBaseline": 10589,
-          "previousWeek": 23800,
-          "current": 25861,
-          "deltaPct": 8.659663865546218,
-          "deltaVsLaunchPct": 144.22513929549532,
-          "deltaVsPreviousPct": 8.659663865546218,
+          "previousWeek": 24493,
+          "current": 25547,
+          "deltaPct": 4.303270322132854,
+          "deltaVsLaunchPct": 141.25979790348475,
+          "deltaVsPreviousPct": 4.303270322132854,
           "deltaType": "percent",
           "format": "number",
           "context": "Total ad request events generated by viewing activity."
@@ -6085,11 +5945,11 @@
           "label": "Avg time per user",
           "baseline": 25.072031571722718,
           "launchBaseline": 25.072031571722718,
-          "previousWeek": 46.466911295469046,
-          "current": 38.745023686748,
-          "deltaPct": -7.7218876087210475,
-          "deltaVsLaunchPct": 13.67299211502528,
-          "deltaVsPreviousPct": -7.7218876087210475,
+          "previousWeek": 41.37451128162967,
+          "current": 40.53760434237274,
+          "deltaPct": -0.8369069392569344,
+          "deltaVsLaunchPct": 15.46557277065002,
+          "deltaVsPreviousPct": -0.8369069392569344,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by active users."
@@ -6099,11 +5959,11 @@
           "label": "Avg time per session",
           "baseline": 16.417955056179775,
           "launchBaseline": 16.417955056179775,
-          "previousWeek": 24.758126487589255,
-          "current": 21.387231556049244,
-          "deltaPct": -3.370894931540011,
-          "deltaVsLaunchPct": 4.969276499869469,
-          "deltaVsPreviousPct": -3.370894931540011,
+          "previousWeek": 22.993541222459136,
+          "current": 21.904460258477645,
+          "deltaPct": -1.0890809639814911,
+          "deltaVsLaunchPct": 5.48650520229787,
+          "deltaVsPreviousPct": -1.0890809639814911,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total engaged time divided by sessions."
@@ -6113,11 +5973,11 @@
           "label": "Total engaged hours",
           "baseline": 3652.995,
           "launchBaseline": 3652.995,
-          "previousWeek": 4854.243333333333,
-          "current": 5134.3613888888885,
-          "deltaPct": 5.77058124861662,
-          "deltaVsLaunchPct": 40.552105570604084,
-          "deltaVsPreviousPct": 5.77058124861662,
+          "previousWeek": 5032.519722222222,
+          "current": 5207.0552777777775,
+          "deltaPct": 3.4681544273906018,
+          "deltaVsLaunchPct": 42.54208609039371,
+          "deltaVsPreviousPct": 3.4681544273906018,
           "deltaType": "percent",
           "format": "number",
           "context": "Total GA4 engaged time converted to hours."
@@ -6211,72 +6071,72 @@
       "note": "Surface rows come from GA4 streamName/streamId. The headline total measured audience is deduped at the property level; surface rows may not dedupe the same person across multiple surfaces."
     },
     "previousWeek": {
-      "range": "May 8-May 14, 2026",
+      "range": "May 10-May 16, 2026",
       "rows": [
         {
           "surface": "Android mobile app",
           "streamName": "ElectricNOW",
           "streamId": "12950551103",
           "platform": "Android",
-          "activeUsers": 2002,
-          "sessions": 3115,
-          "engagedSessions": 2487,
-          "eventCount": 65517,
-          "engagementRate": 79.83948635634029,
-          "avgEngagedMinutesPerUser": 9.02980352980353,
-          "avgEngagedMinutesPerSession": 5.803424291064741
+          "activeUsers": 2545,
+          "sessions": 3905,
+          "engagedSessions": 3080,
+          "eventCount": 76346,
+          "engagementRate": 78.87323943661971,
+          "avgEngagedMinutesPerUser": 8.145081859855926,
+          "avgEngagedMinutesPerSession": 5.30838241570636
         },
         {
           "surface": "iOS / Apple app stream",
           "streamName": "ElectricNow",
           "streamId": "12982344897",
           "platform": "iOS",
-          "activeUsers": 1676,
-          "sessions": 2784,
-          "engagedSessions": 2435,
-          "eventCount": 80470,
-          "engagementRate": 87.46408045977012,
-          "avgEngagedMinutesPerUser": 47.853251789976134,
-          "avgEngagedMinutesPerSession": 28.80820761494253
+          "activeUsers": 1939,
+          "sessions": 3123,
+          "engagedSessions": 2806,
+          "eventCount": 87392,
+          "engagementRate": 89.84950368235671,
+          "avgEngagedMinutesPerUser": 45.427445418600655,
+          "avgEngagedMinutesPerSession": 28.204872451702425
         },
         {
           "surface": "Web",
           "streamName": "electricnow-web",
           "streamId": "13090831762",
           "platform": "web",
-          "activeUsers": 1455,
-          "sessions": 2238,
-          "engagedSessions": 1505,
-          "eventCount": 56730,
-          "engagementRate": 67.24754244861484,
-          "avgEngagedMinutesPerUser": 11.437560137457044,
-          "avgEngagedMinutesPerSession": 7.435947274352101
+          "activeUsers": 1661,
+          "sessions": 2405,
+          "engagedSessions": 1522,
+          "eventCount": 54989,
+          "engagementRate": 63.28482328482329,
+          "avgEngagedMinutesPerUser": 9.093397551675698,
+          "avgEngagedMinutesPerSession": 6.2803049203049195
         },
         {
           "surface": "Roku",
           "streamName": "electricnow-roku",
           "streamId": "13096428368",
           "platform": "web",
-          "activeUsers": 1062,
-          "sessions": 3304,
-          "engagedSessions": 2674,
-          "eventCount": 710586,
-          "engagementRate": 80.9322033898305,
-          "avgEngagedMinutesPerUser": 125.1379472693032,
-          "avgEngagedMinutesPerSession": 40.22291162227603
+          "activeUsers": 1082,
+          "sessions": 3396,
+          "engagedSessions": 2754,
+          "eventCount": 722025,
+          "engagementRate": 81.09540636042402,
+          "avgEngagedMinutesPerUser": 126.97781885397413,
+          "avgEngagedMinutesPerSession": 40.456419316843345
         },
         {
           "surface": "Android TV / CTV",
           "streamName": "ElectricNOW tv",
           "streamId": "13118400722",
           "platform": "Android",
-          "activeUsers": 159,
-          "sessions": 386,
-          "engagedSessions": 356,
-          "eventCount": 28089,
-          "engagementRate": 92.2279792746114,
-          "avgEngagedMinutesPerUser": 274.092033542977,
-          "avgEngagedMinutesPerSession": 112.90319516407598
+          "activeUsers": 179,
+          "sessions": 412,
+          "engagedSessions": 384,
+          "eventCount": 27811,
+          "engagementRate": 93.20388349514563,
+          "avgEngagedMinutesPerUser": 227.79785847299814,
+          "avgEngagedMinutesPerSession": 98.970428802589
         },
         {
           "surface": "LG / webOS",
@@ -6295,72 +6155,72 @@
       "note": "Surface rows come from GA4 streamName/streamId. The headline total measured audience is deduped at the property level; surface rows may not dedupe the same person across multiple surfaces."
     },
     "currentWeek": {
-      "range": "May 15-May 21, 2026",
+      "range": "May 17-May 23, 2026",
       "rows": [
         {
           "surface": "Android mobile app",
           "streamName": "ElectricNOW",
           "streamId": "12950551103",
           "platform": "Android",
-          "activeUsers": 3165,
-          "sessions": 4832,
-          "engagedSessions": 3894,
-          "eventCount": 107240,
-          "engagementRate": 80.58774834437085,
-          "avgEngagedMinutesPerUser": 7.916987888362296,
-          "avgEngagedMinutesPerSession": 5.185692604856512
+          "activeUsers": 3063,
+          "sessions": 4870,
+          "engagedSessions": 3919,
+          "eventCount": 109878,
+          "engagementRate": 80.47227926078028,
+          "avgEngagedMinutesPerUser": 8.255724235498967,
+          "avgEngagedMinutesPerSession": 5.192460643394935
         },
         {
           "surface": "iOS / Apple app stream",
           "streamName": "ElectricNow",
           "streamId": "12982344897",
           "platform": "iOS",
-          "activeUsers": 2336,
-          "sessions": 3890,
-          "engagedSessions": 3311,
-          "eventCount": 93730,
-          "engagementRate": 85.11568123393316,
-          "avgEngagedMinutesPerUser": 41.018885559360726,
-          "avgEngagedMinutesPerSession": 24.632420736932307
+          "activeUsers": 2320,
+          "sessions": 3839,
+          "engagedSessions": 3225,
+          "eventCount": 87685,
+          "engagementRate": 84.00625162802812,
+          "avgEngagedMinutesPerUser": 40.80441091954023,
+          "avgEngagedMinutesPerSession": 24.659086567682557
         },
         {
           "surface": "Roku",
           "streamName": "electricnow-roku",
           "streamId": "13096428368",
           "platform": "web",
-          "activeUsers": 1172,
-          "sessions": 3448,
-          "engagedSessions": 2825,
-          "eventCount": 723485,
-          "engagementRate": 81.93155452436194,
-          "avgEngagedMinutesPerUser": 119.46672354948805,
-          "avgEngagedMinutesPerSession": 40.607598607888626
+          "activeUsers": 1169,
+          "sessions": 3421,
+          "engagedSessions": 2781,
+          "eventCount": 724062,
+          "engagementRate": 81.29201987722888,
+          "avgEngagedMinutesPerUser": 119.14328485885373,
+          "avgEngagedMinutesPerSession": 40.71280327389652
         },
         {
           "surface": "Web",
           "streamName": "electricnow-web",
           "streamId": "13090831762",
           "platform": "web",
-          "activeUsers": 1150,
-          "sessions": 1929,
-          "engagedSessions": 1371,
-          "eventCount": 53551,
-          "engagementRate": 71.07309486780716,
-          "avgEngagedMinutesPerUser": 13.63931884057971,
-          "avgEngagedMinutesPerSession": 8.131268360117504
+          "activeUsers": 1031,
+          "sessions": 1858,
+          "engagedSessions": 1432,
+          "eventCount": 53894,
+          "engagementRate": 77.07212055974165,
+          "avgEngagedMinutesPerUser": 15.759440672486258,
+          "avgEngagedMinutesPerSession": 8.744878005023322
         },
         {
           "surface": "Android TV / CTV",
           "streamName": "ElectricNOW tv",
           "streamId": "13118400722",
           "platform": "Android",
-          "activeUsers": 209,
-          "sessions": 482,
-          "engagedSessions": 453,
-          "eventCount": 30021,
-          "engagementRate": 93.98340248962656,
-          "avgEngagedMinutesPerUser": 151.19792663476875,
-          "avgEngagedMinutesPerSession": 65.56092669432918
+          "activeUsers": 212,
+          "sessions": 487,
+          "engagedSessions": 457,
+          "eventCount": 39822,
+          "engagementRate": 93.83983572895276,
+          "avgEngagedMinutesPerUser": 174.8949685534591,
+          "avgEngagedMinutesPerSession": 76.13497604380561
         },
         {
           "surface": "LG / webOS",
@@ -6390,47 +6250,25 @@
       "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     },
     "previousWeek": {
-      "range": "May 8-May 14, 2026",
-      "platformActiveUsers": 6250,
-      "platformSessions": 11732,
-      "platformEngagedSessions": 9466,
-      "platformEventCount": 939149,
-      "platformEngagementRate": 80.68530514831231,
+      "range": "May 10-May 16, 2026",
+      "platformActiveUsers": 7234,
+      "platformSessions": 13246,
+      "platformEngagedSessions": 10565,
+      "platformEventCount": 966091,
+      "platformEngagementRate": 79.75992752529065,
       "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     },
     "currentWeek": {
-      "range": "May 15-May 21, 2026",
-      "platformActiveUsers": 7965,
-      "platformSessions": 14405,
-      "platformEngagedSessions": 11907,
-      "platformEventCount": 1008360,
-      "platformEngagementRate": 82.65879902811524,
+      "range": "May 17-May 23, 2026",
+      "platformActiveUsers": 7739,
+      "platformSessions": 14378,
+      "platformEngagedSessions": 11826,
+      "platformEventCount": 1012978,
+      "platformEngagementRate": 82.25066073167339,
       "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     }
   },
   "weeklyTrend": [
-    {
-      "date": "May 15",
-      "rawDate": "20260515",
-      "activeUsers": 971,
-      "newUsers": 632,
-      "sessions": 1237,
-      "engagedSessions": 1018,
-      "screenPageViews": 58,
-      "eventCount": 27804,
-      "engagementRate": 82.29587712206953
-    },
-    {
-      "date": "May 16",
-      "rawDate": "20260516",
-      "activeUsers": 978,
-      "newUsers": 1285,
-      "sessions": 1268,
-      "engagedSessions": 1062,
-      "screenPageViews": 93,
-      "eventCount": 26149,
-      "engagementRate": 83.75394321766562
-    },
     {
       "date": "May 17",
       "rawDate": "20260517",
@@ -6461,55 +6299,55 @@
       "sessions": 1245,
       "engagedSessions": 999,
       "screenPageViews": 111,
-      "eventCount": 30255,
+      "eventCount": 30256,
       "engagementRate": 80.24096385542168
     },
     {
       "date": "May 20",
       "rawDate": "20260520",
-      "activeUsers": 987,
-      "newUsers": 580,
-      "sessions": 1273,
+      "activeUsers": 988,
+      "newUsers": 581,
+      "sessions": 1274,
       "engagedSessions": 1043,
       "screenPageViews": 96,
-      "eventCount": 33076,
-      "engagementRate": 81.9324430479183
+      "eventCount": 33086,
+      "engagementRate": 81.86813186813187
     },
     {
       "date": "May 21",
       "rawDate": "20260521",
-      "activeUsers": 1025,
-      "newUsers": 619,
-      "sessions": 1358,
-      "engagedSessions": 1093,
-      "screenPageViews": 69,
-      "eventCount": 29411,
-      "engagementRate": 80.4860088365243
+      "activeUsers": 1030,
+      "newUsers": 620,
+      "sessions": 1339,
+      "engagedSessions": 1090,
+      "screenPageViews": 71,
+      "eventCount": 29661,
+      "engagementRate": 81.40403286034355
+    },
+    {
+      "date": "May 22",
+      "rawDate": "20260522",
+      "activeUsers": 899,
+      "newUsers": 507,
+      "sessions": 1168,
+      "engagedSessions": 937,
+      "screenPageViews": 65,
+      "eventCount": 22584,
+      "engagementRate": 80.22260273972603
+    },
+    {
+      "date": "May 23",
+      "rawDate": "20260523",
+      "activeUsers": 951,
+      "newUsers": 535,
+      "sessions": 1303,
+      "engagedSessions": 1022,
+      "screenPageViews": 111,
+      "eventCount": 25864,
+      "engagementRate": 78.43438219493477
     }
   ],
   "monthlyTrend": [
-    {
-      "date": "Apr 22",
-      "rawDate": "20260422",
-      "activeUsers": 484,
-      "newUsers": 280,
-      "sessions": 668,
-      "engagedSessions": 569,
-      "screenPageViews": 239,
-      "eventCount": 22015,
-      "engagementRate": 85.17964071856288
-    },
-    {
-      "date": "Apr 23",
-      "rawDate": "20260423",
-      "activeUsers": 424,
-      "newUsers": 212,
-      "sessions": 611,
-      "engagedSessions": 527,
-      "screenPageViews": 101,
-      "eventCount": 20023,
-      "engagementRate": 86.2520458265139
-    },
     {
       "date": "Apr 24",
       "rawDate": "20260424",
@@ -6738,7 +6576,7 @@
       "sessions": 1265,
       "engagedSessions": 1073,
       "screenPageViews": 109,
-      "eventCount": 26505,
+      "eventCount": 26504,
       "engagementRate": 84.82213438735178
     },
     {
@@ -6749,18 +6587,18 @@
       "sessions": 1237,
       "engagedSessions": 1018,
       "screenPageViews": 58,
-      "eventCount": 27804,
+      "eventCount": 27801,
       "engagementRate": 82.29587712206953
     },
     {
       "date": "May 16",
       "rawDate": "20260516",
       "activeUsers": 978,
-      "newUsers": 1285,
+      "newUsers": 643,
       "sessions": 1268,
       "engagedSessions": 1062,
       "screenPageViews": 93,
-      "eventCount": 26149,
+      "eventCount": 24315,
       "engagementRate": 83.75394321766562
     },
     {
@@ -6793,110 +6631,132 @@
       "sessions": 1245,
       "engagedSessions": 999,
       "screenPageViews": 111,
-      "eventCount": 30255,
+      "eventCount": 30256,
       "engagementRate": 80.24096385542168
     },
     {
       "date": "May 20",
       "rawDate": "20260520",
-      "activeUsers": 987,
-      "newUsers": 580,
-      "sessions": 1273,
+      "activeUsers": 988,
+      "newUsers": 581,
+      "sessions": 1274,
       "engagedSessions": 1043,
       "screenPageViews": 96,
-      "eventCount": 33076,
-      "engagementRate": 81.9324430479183
+      "eventCount": 33086,
+      "engagementRate": 81.86813186813187
     },
     {
       "date": "May 21",
       "rawDate": "20260521",
-      "activeUsers": 1025,
-      "newUsers": 619,
-      "sessions": 1358,
-      "engagedSessions": 1093,
-      "screenPageViews": 69,
-      "eventCount": 29411,
-      "engagementRate": 80.4860088365243
+      "activeUsers": 1030,
+      "newUsers": 620,
+      "sessions": 1339,
+      "engagedSessions": 1090,
+      "screenPageViews": 71,
+      "eventCount": 29661,
+      "engagementRate": 81.40403286034355
+    },
+    {
+      "date": "May 22",
+      "rawDate": "20260522",
+      "activeUsers": 899,
+      "newUsers": 507,
+      "sessions": 1168,
+      "engagedSessions": 937,
+      "screenPageViews": 65,
+      "eventCount": 22584,
+      "engagementRate": 80.22260273972603
+    },
+    {
+      "date": "May 23",
+      "rawDate": "20260523",
+      "activeUsers": 951,
+      "newUsers": 535,
+      "sessions": 1303,
+      "engagedSessions": 1022,
+      "screenPageViews": 111,
+      "eventCount": 25864,
+      "engagementRate": 78.43438219493477
     }
   ],
   "appSectionUsage": {
-    "period": "May 15-May 21, 2026",
+    "period": "May 17-May 23, 2026",
     "metric": "GA4 active users and engaged time",
     "rows": [
       {
         "section": "Home",
         "definition": "Home/content browsing activity inferred from GA4 screen and path labels such as Home, On Demand, PDP, Player, Category, and Search.",
-        "activeUsers": 967,
-        "sessions": 3147,
-        "engagedSessions": 2944,
-        "screenPageViews": 11363,
-        "eventCount": 34009,
-        "engagementRate": 93.54941213854464,
-        "totalEngagementSeconds": 700998,
-        "totalEngagementHours": 194.72166666666666,
-        "avgEngagedMinutesPerUser": 12.082006204756981,
-        "avgEngagedMinutesPerSession": 3.7125198601843024,
-        "sharePct": 62.7
+        "activeUsers": 995,
+        "sessions": 3133,
+        "engagedSessions": 2951,
+        "screenPageViews": 10830,
+        "eventCount": 42065,
+        "engagementRate": 94.1908713692946,
+        "totalEngagementSeconds": 739986,
+        "totalEngagementHours": 205.55166666666668,
+        "avgEngagedMinutesPerUser": 12.395075376884423,
+        "avgEngagedMinutesPerSession": 3.9365145228215765,
+        "sharePct": 61.9
       },
       {
         "section": "En Espanol",
         "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Espa\u00f1ol, Espanol, Spanish, or matching paths.",
-        "activeUsers": 15,
-        "sessions": 15,
-        "engagedSessions": 15,
-        "screenPageViews": 29,
-        "eventCount": 139,
+        "activeUsers": 13,
+        "sessions": 13,
+        "engagedSessions": 13,
+        "screenPageViews": 17,
+        "eventCount": 93,
         "engagementRate": 100.0,
-        "totalEngagementSeconds": 1134,
-        "totalEngagementHours": 0.315,
-        "avgEngagedMinutesPerUser": 1.26,
-        "avgEngagedMinutesPerSession": 1.26,
-        "sharePct": 1.0
+        "totalEngagementSeconds": 1104,
+        "totalEngagementHours": 0.30666666666666664,
+        "avgEngagedMinutesPerUser": 1.4153846153846152,
+        "avgEngagedMinutesPerSession": 1.4153846153846152,
+        "sharePct": 0.8
       },
       {
         "section": "Live TV",
         "definition": "Live TV activity inferred from GA4 Live screen/path labels.",
-        "activeUsers": 396,
-        "sessions": 1795,
-        "engagedSessions": 1730,
-        "screenPageViews": 3407,
-        "eventCount": 46981,
-        "engagementRate": 96.37883008356546,
-        "totalEngagementSeconds": 4059266,
-        "totalEngagementHours": 1127.5738888888889,
-        "avgEngagedMinutesPerUser": 170.84452861952863,
-        "avgEngagedMinutesPerSession": 37.690492107706596,
-        "sharePct": 25.7
+        "activeUsers": 433,
+        "sessions": 1853,
+        "engagedSessions": 1785,
+        "screenPageViews": 3521,
+        "eventCount": 48954,
+        "engagementRate": 96.3302752293578,
+        "totalEngagementSeconds": 4446009,
+        "totalEngagementHours": 1235.0025,
+        "avgEngagedMinutesPerUser": 171.13198614318708,
+        "avgEngagedMinutesPerSession": 39.989287641662166,
+        "sharePct": 26.9
       },
       {
         "section": "My Stuff",
         "definition": "Saved or personal-list activity inferred from My Stuff, My List, Mylist, Watchlist, and Favorites labels.",
-        "activeUsers": 43,
-        "sessions": 152,
-        "engagedSessions": 150,
-        "screenPageViews": 372,
-        "eventCount": 390,
-        "engagementRate": 98.68421052631578,
-        "totalEngagementSeconds": 533,
-        "totalEngagementHours": 0.14805555555555555,
-        "avgEngagedMinutesPerUser": 0.2065891472868217,
-        "avgEngagedMinutesPerSession": 0.05844298245614035,
-        "sharePct": 2.8
+        "activeUsers": 50,
+        "sessions": 161,
+        "engagedSessions": 160,
+        "screenPageViews": 386,
+        "eventCount": 403,
+        "engagementRate": 99.37888198757764,
+        "totalEngagementSeconds": 573,
+        "totalEngagementHours": 0.15916666666666668,
+        "avgEngagedMinutesPerUser": 0.191,
+        "avgEngagedMinutesPerSession": 0.0593167701863354,
+        "sharePct": 3.1
       },
       {
         "section": "Settings",
         "definition": "Settings/account activity inferred from Settings, Account, Profile, and Preferences labels.",
-        "activeUsers": 122,
-        "sessions": 216,
-        "engagedSessions": 209,
-        "screenPageViews": 378,
-        "eventCount": 459,
-        "engagementRate": 96.75925925925925,
-        "totalEngagementSeconds": 2461,
-        "totalEngagementHours": 0.6836111111111111,
-        "avgEngagedMinutesPerUser": 0.33620218579234973,
-        "avgEngagedMinutesPerSession": 0.189891975308642,
-        "sharePct": 7.9
+        "activeUsers": 117,
+        "sessions": 204,
+        "engagedSessions": 200,
+        "screenPageViews": 333,
+        "eventCount": 398,
+        "engagementRate": 98.0392156862745,
+        "totalEngagementSeconds": 1489,
+        "totalEngagementHours": 0.4136111111111111,
+        "avgEngagedMinutesPerUser": 0.21210826210826209,
+        "avgEngagedMinutesPerSession": 0.12165032679738562,
+        "sharePct": 7.3
       }
     ],
     "note": "This section uses the current GA4 screen/path labels to infer the five app navigation areas in the order Home, En Espanol, Live TV, My Stuff, and Settings. A user can appear in more than one section. For cleaner reporting, the app should send a stable app_section value with exactly these five section names."
@@ -6906,49 +6766,49 @@
     "sourceDetail": "Roku app engagement is parsed from the latest Roku App Engagement PDF emailed from bdp_noreply@data.roku.com. It measures Roku app/channel-store usage and is shown separately from GA4 app/web metrics.",
     "reportPeriod": "8 days ago for 7 days Time Grain is day",
     "channelStoreCode": "us",
-    "reportGenerated": "May 22, 2026 at 7:19 AM PDT",
+    "reportGenerated": "May 24, 2026 at 7:16 AM PDT",
     "dateLabels": [
-      "Thu May 14",
-      "Fri May 15",
       "Sat May 16",
       "Sun May 17",
       "Mon May 18",
       "Tue May 19",
-      "Wed May 20"
+      "Wed May 20",
+      "Thu May 21",
+      "Fri May 22"
     ],
     "metrics": {
-      "newInstalls": 279,
-      "uninstalls": 178,
-      "netInstalls": 101,
-      "cumulativeInstalls": 287744,
-      "avgDailyViewers": 271,
-      "avgMinPerViewer": 76.82,
-      "totalHoursStreamed": 2425
+      "newInstalls": 272,
+      "uninstalls": 181,
+      "netInstalls": 91,
+      "cumulativeInstalls": 287823,
+      "avgDailyViewers": 270,
+      "avgMinPerViewer": 78.69,
+      "totalHoursStreamed": 2479
     },
-    "reportEmailDate": "2026-05-22T14:19:58+00:00",
-    "attachmentFilename": "App_Engagement_2026-05-22T0719.pdf"
+    "reportEmailDate": "2026-05-24T14:16:52+00:00",
+    "attachmentFilename": "App_Engagement_2026-05-24T0716.pdf"
   },
   "visitSummary": {
     "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
     "weekly": {
       "label": "Weekly visits",
-      "range": "May 15-May 21, 2026",
-      "sessions": 14405,
-      "activeUsers": 7965,
-      "engagedSessions": 11907,
-      "previousRange": "May 8-May 14, 2026",
-      "previousSessions": 11732,
-      "deltaVsPreviousPct": 22.783839072621888,
+      "range": "May 17-May 23, 2026",
+      "sessions": 14378,
+      "activeUsers": 7739,
+      "engagedSessions": 11826,
+      "previousRange": "May 10-May 16, 2026",
+      "previousSessions": 13246,
+      "deltaVsPreviousPct": 8.545976143741507,
       "comparisonLabel": "vs previous 7 days"
     },
     "monthly": {
       "label": "Monthly visits",
-      "range": "Apr 24-May 21, 2026",
-      "sessions": 53035,
-      "activeUsers": 25238,
-      "engagedSessions": 42674,
-      "previousRange": "Mar 27-Apr 23, 2026",
-      "previousSessions": 26541,
+      "range": "Apr 26-May 23, 2026",
+      "sessions": 52460,
+      "activeUsers": 24365,
+      "engagedSessions": 42146,
+      "previousRange": "Mar 29-Apr 25, 2026",
+      "previousSessions": 30312,
       "deltaVsPreviousPct": null,
       "comparisonLabel": "latest 28 days"
     },
@@ -6964,20 +6824,20 @@
     "accountId": "4342267711",
     "customerClientId": "4342267711",
     "accountName": "Electric Entertainment",
-    "period": "May 11-May 21, 2026",
+    "period": "May 12-May 23, 2026",
     "campaignName": "PCSM - ElectricNow App Promotion - Android",
     "campaignId": "23836266606",
     "campaignType": "Android App Campaign",
     "status": "Enabled / Eligible",
-    "impressions": 36923,
-    "clicks": 1175,
-    "ctrPct": 3.18,
-    "cost": 176.44,
+    "impressions": 40010,
+    "clicks": 1258,
+    "ctrPct": 3.14,
+    "cost": 192.24,
     "avgCpc": 0.15,
-    "conversions": 349.0,
-    "allConversions": 753.0,
-    "conversionRatePct": 29.7,
-    "costPerConversion": 0.51,
+    "conversions": 372.0,
+    "allConversions": 812.0,
+    "conversionRatePct": 29.57,
+    "costPerConversion": 0.52,
     "daily": [
       {
         "date": "2026-05-12",
@@ -6989,7 +6849,7 @@
         "avgCpc": 0.11,
         "conversions": 27.0,
         "allConversions": 61.0,
-        "conversionRatePct": 9.47,
+        "conversionRatePct": 38.57,
         "costPerConversion": 0.29,
         "conversionValue": 27.0
       },
@@ -7003,7 +6863,7 @@
         "avgCpc": 0.13,
         "conversions": 32.0,
         "allConversions": 83.0,
-        "conversionRatePct": 5.72,
+        "conversionRatePct": 23.36,
         "costPerConversion": 0.56,
         "conversionValue": 32.0
       },
@@ -7017,7 +6877,7 @@
         "avgCpc": 0.11,
         "conversions": 41.0,
         "allConversions": 87.0,
-        "conversionRatePct": 21.35,
+        "conversionRatePct": 34.17,
         "costPerConversion": 0.31,
         "conversionValue": 41.0
       },
@@ -7031,93 +6891,121 @@
         "avgCpc": 0.12,
         "conversions": 40.0,
         "allConversions": 94.0,
-        "conversionRatePct": 16.88,
+        "conversionRatePct": 26.49,
         "costPerConversion": 0.46,
         "conversionValue": 40.0
       },
       {
         "date": "2026-05-16",
         "campaignName": "PCSM - ElectricNow App Promotion - Android",
-        "impressions": 6188,
+        "impressions": 6173,
         "clicks": 201,
-        "ctrPct": 3.25,
-        "cost": 29.14,
+        "ctrPct": 3.26,
+        "cost": 28.98,
         "avgCpc": 0.14,
         "conversions": 46.0,
-        "allConversions": 101.0,
-        "conversionRatePct": 9.94,
+        "allConversions": 100.0,
+        "conversionRatePct": 22.89,
         "costPerConversion": 0.63,
         "conversionValue": 46.0
       },
       {
         "date": "2026-05-17",
         "campaignName": "PCSM - ElectricNow App Promotion - Android",
-        "impressions": 4517,
-        "clicks": 142,
-        "ctrPct": 3.14,
-        "cost": 19.35,
+        "impressions": 4500,
+        "clicks": 139,
+        "ctrPct": 3.09,
+        "cost": 19.02,
         "avgCpc": 0.14,
-        "conversions": 35.0,
-        "allConversions": 72.0,
-        "conversionRatePct": 8.08,
-        "costPerConversion": 0.55,
-        "conversionValue": 35.0
+        "conversions": 34.0,
+        "allConversions": 69.0,
+        "conversionRatePct": 24.46,
+        "costPerConversion": 0.56,
+        "conversionValue": 34.0
       },
       {
         "date": "2026-05-18",
         "campaignName": "PCSM - ElectricNow App Promotion - Android",
-        "impressions": 4126,
-        "clicks": 127,
-        "ctrPct": 3.08,
-        "cost": 22.38,
-        "avgCpc": 0.18,
+        "impressions": 4108,
+        "clicks": 126,
+        "ctrPct": 3.07,
+        "cost": 21.77,
+        "avgCpc": 0.17,
         "conversions": 40.0,
-        "allConversions": 79.0,
-        "conversionRatePct": 6.62,
-        "costPerConversion": 0.56,
+        "allConversions": 78.0,
+        "conversionRatePct": 31.75,
+        "costPerConversion": 0.54,
         "conversionValue": 40.0
       },
       {
         "date": "2026-05-19",
         "campaignName": "PCSM - ElectricNow App Promotion - Android",
-        "impressions": 2716,
-        "clicks": 71,
+        "impressions": 2683,
+        "clicks": 70,
         "ctrPct": 2.61,
-        "cost": 16.68,
+        "cost": 16.08,
         "avgCpc": 0.23,
         "conversions": 34.0,
         "allConversions": 71.0,
-        "conversionRatePct": 7.17,
-        "costPerConversion": 0.49,
+        "conversionRatePct": 48.57,
+        "costPerConversion": 0.47,
         "conversionValue": 34.0
       },
       {
         "date": "2026-05-20",
         "campaignName": "PCSM - ElectricNow App Promotion - Android",
-        "impressions": 2337,
-        "clicks": 87,
-        "ctrPct": 3.72,
-        "cost": 14.85,
+        "impressions": 2317,
+        "clicks": 86,
+        "ctrPct": 3.71,
+        "cost": 14.52,
         "avgCpc": 0.17,
         "conversions": 24.0,
         "allConversions": 54.0,
-        "conversionRatePct": 4.34,
-        "costPerConversion": 0.62,
+        "conversionRatePct": 27.91,
+        "costPerConversion": 0.6,
         "conversionValue": 24.0
       },
       {
         "date": "2026-05-21",
         "campaignName": "PCSM - ElectricNow App Promotion - Android",
-        "impressions": 2303,
+        "impressions": 2285,
         "clicks": 69,
-        "ctrPct": 3.0,
-        "cost": 17.07,
-        "avgCpc": 0.25,
-        "conversions": 30.0,
-        "allConversions": 51.0,
-        "conversionRatePct": 6.76,
-        "costPerConversion": 0.57,
-        "conversionValue": 30.0
+        "ctrPct": 3.02,
+        "cost": 16.86,
+        "avgCpc": 0.24,
+        "conversions": 31.0,
+        "allConversions": 52.0,
+        "conversionRatePct": 44.93,
+        "costPerConversion": 0.54,
+        "conversionValue": 31.0
+      },
+      {
+        "date": "2026-05-22",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 1713,
+        "clicks": 50,
+        "ctrPct": 2.92,
+        "cost": 10.8,
+        "avgCpc": 0.22,
+        "conversions": 16.0,
+        "allConversions": 38.0,
+        "conversionRatePct": 32.0,
+        "costPerConversion": 0.68,
+        "conversionValue": 16.0
+      },
+      {
+        "date": "2026-05-23",
+        "campaignName": "PCSM - ElectricNow App Promotion - Android",
+        "impressions": 1495,
+        "clicks": 39,
+        "ctrPct": 2.61,
+        "cost": 7.24,
+        "avgCpc": 0.19,
+        "conversions": 7.0,
+        "allConversions": 25.0,
+        "conversionRatePct": 17.95,
+        "costPerConversion": 1.03,
+        "conversionValue": 7.0
       }
     ],
     "deviceBreakout": [
@@ -7166,23 +7054,123 @@
         "conversionValue": 0.0
       }
     ],
-    "plainEnglish": "Google Ads is now useful for judging paid Android app-campaign efficiency directly: it shows spend, clicks, installs/first-opens, conversion rate, and cost per conversion. This should sit beside GA4 viewing quality so we can see not only whether ads are buying installs, but whether those installs become viewers."
+    "plainEnglish": "Google Ads is useful for judging paid Android app-campaign efficiency directly: it shows spend, clicks, installs/first-opens, conversion rate, and cost per conversion. This should sit beside GA4 viewing quality so we can see not only whether ads are buying installs, but whether those installs become viewers.",
+    "dataFreshnessNote": "Main Google Ads campaign totals were manually refreshed through May 23, 2026 after the dashboard refresh path stopped at May 21. Device and conversion-action breakouts are retained from the last successful detailed pull until their connector segment queries are fixed."
   },
   "adSuccessSummary": {
     "googleAds": {
-      "period": "May 11-May 21, 2026",
+      "period": "May 12-May 23, 2026",
       "campaignName": "PCSM - ElectricNow App Promotion - Android",
-      "spend": 176.44,
-      "impressions": 36923,
-      "clicks": 1175,
-      "ctrPct": 3.18,
+      "spend": 192.24,
+      "impressions": 40010,
+      "clicks": 1258,
+      "ctrPct": 3.14,
       "avgCpc": 0.15,
-      "firstOpenConversions": 349.0,
-      "allConversions": 753.0,
-      "conversionRatePct": 29.7,
-      "costPerConversion": 0.51,
+      "firstOpenConversions": 372.0,
+      "allConversions": 812.0,
+      "conversionRatePct": 29.57,
+      "costPerConversion": 0.52,
       "source": "Google Ads connector",
-      "note": "Paid advertising is now being measured more directly through the connected Google Ads account: the Android App Campaign spent $176.44 from May 11-May 21, 2026, generated 36,923 impressions, 1,175 clicks, and 349 Android first-open conversions at about $0.51 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself."
+      "note": "Paid advertising is now being measured more directly through the connected Google Ads account: the Android App Campaign spent $192.24 from May 12-May 23, 2026, generated 40,010 impressions, 1,258 clicks, and 372 Android first-open conversions at about $0.52 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself."
     }
+  },
+  "ga4PurchaseSignals": {
+    "sourceLabel": "GA4 In-App Purchase Signals",
+    "sourceShortLabel": "Google Play / Android purchase signals",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
+    "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
+    "isFinancialRevenue": false,
+    "excludedFromVisiblePlatformSales": true,
+    "latestDay": {
+      "label": "GA4 in-app purchase signals on May 21, 2026",
+      "date": "2026-05-21",
+      "range": "May 21, 2026 (America/Los_Angeles)",
+      "purchaseRevenue": 29.98,
+      "eventCount": 2,
+      "events": [
+        {
+          "dateHour": "2026052106",
+          "eventName": "in_app_purchase",
+          "platform": "Android",
+          "deviceCategory": "mobile",
+          "operatingSystem": "Android",
+          "appVersion": "16.019",
+          "country": "United States",
+          "region": "Pennsylvania",
+          "city": "Philadelphia",
+          "sourceMedium": "(direct) / (none)",
+          "transactionId": "(not set)",
+          "purchaseRevenue": 14.99
+        },
+        {
+          "dateHour": "2026052121",
+          "eventName": "in_app_purchase",
+          "platform": "Android",
+          "deviceCategory": "smart tv",
+          "operatingSystem": "Android",
+          "appVersion": "16.026",
+          "country": "United States",
+          "region": "Washington",
+          "city": "Vancouver",
+          "sourceMedium": "(direct) / (none)",
+          "transactionId": "(not set)",
+          "purchaseRevenue": 14.99
+        }
+      ]
+    },
+    "platformSplit": [
+      {
+        "label": "Android \u00b7 mobile",
+        "platform": "Android",
+        "deviceCategory": "mobile",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "label": "Android \u00b7 smart tv",
+        "platform": "Android",
+        "deviceCategory": "smart tv",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      }
+    ],
+    "appVersionSplit": [
+      {
+        "appVersion": "16.019",
+        "platform": "Android",
+        "deviceCategory": "mobile",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "appVersion": "16.026",
+        "platform": "Android",
+        "deviceCategory": "smart tv",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      }
+    ],
+    "geoSplit": [
+      {
+        "country": "United States",
+        "region": "Pennsylvania",
+        "city": "Philadelphia",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      },
+      {
+        "country": "United States",
+        "region": "Washington",
+        "city": "Vancouver",
+        "eventCount": 1,
+        "purchaseRevenue": 14.99
+      }
+    ],
+    "comparisonProperty": {
+      "property": "213042706",
+      "result": "No in_app_purchase rows returned for 2026-05-21 from the older GA4 property; signal is only present in property 497892271."
+    },
+    "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
   }
 }
