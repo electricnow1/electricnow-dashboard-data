@@ -1928,6 +1928,7 @@
       "Measured ElectricNOW platform audience was 8.0K GA4 active users excluding landing-page acquisition paths, up 28.6% from the previous week.",
       "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 8.1K, up 28.1% from the previous week; landing-page users were down 9.0%.",
       "Paid advertising is now being measured more directly through the connected Google Ads account: PCSM - ElectricNow App Promotion - Android spent $176.44 from May 11-May 21, 2026, generated 36.9K impressions, 1.2K clicks, and 349 Android first-open conversions at about $0.51 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself.",
+      "Paid acquisition is also running on Meta (Facebook/Instagram) through Forge One: from May 17-May 23, 2026 Meta spent $3,148.58, generated 259,503 platform impressions and 9,022 link clicks, and drove 1,166 iOS and 2,169 Android downloads (3,335 total) at about $1.35 per iOS download and $0.73 per Android download. Meta is shown alongside Google Ads, not added to it, and Meta\u2019s campaign impressions are separate from ElectricNOW in-app ad impressions.",
       "Measured Apple/Android app-stream usage improved: 5.5K active users this week, up 253.5% from launch baseline and up 48.7% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
       "Viewing also improved: 2.3K app users watched on-demand or Live content, up 215.2% from launch baseline and up 42.7% from the previous week.",
       "Roughly 42.1% of app users watched something, compared with 47.2% during launch week and 43.9% the prior week, so the viewing conversion rate is steady while the audience is growing.",
@@ -7041,6 +7042,59 @@
         "source": "Google Ads connector",
         "note": "Paid advertising is now being measured more directly through the connected Google Ads account: the Android App Campaign spent $176.44 from May 11-May 21, 2026, generated 36,923 impressions, 1,175 clicks, and 349 Android first-open conversions at about $0.51 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself."
       }
+    },
+    "metaAdsSummary": {
+      "source": "Meta Ads (Forge One / nathan@pcsocialmedia.com twice-weekly email report)",
+      "reportType": "Meta Ads Performance Dashboard Summary (Meta-only, used to avoid double-counting Google Ads which is pulled via connector)",
+      "emailFrom": "nathan@pcsocialmedia.com",
+      "emailSubject": "ElectricNow | Meta Ads Performance Dashboard Summary (2026-05-17 to 2026-05-23)",
+      "emailDate": "2026-05-25T01:59:46+00:00",
+      "reportCadence": "Twice weekly (Sundays and Thursdays at 6am PST/PDT), each report covers Last 7 days",
+      "period": "May 17-May 23, 2026",
+      "comparison": "vs previous 7-day period",
+      "spend": 3148.58,
+      "impressions": 259503,
+      "linkClicks": 9022,
+      "costPerClick": 0.35,
+      "iosDownloads": 1166,
+      "androidDownloads": 2169,
+      "totalDownloads": 3335,
+      "costPerIosDownload": 1.35,
+      "costPerAndroidDownload": 0.73,
+      "costPerDownload": 0.9441,
+      "deltas": {
+        "spendPct": 60.4,
+        "impressionsPct": 43.6,
+        "costPerClickPct": 13.3,
+        "linkClicksPct": 40.4,
+        "iosDownloadsPct": 26.3,
+        "costPerIosDownloadPct": 27.1,
+        "androidDownloadsPct": 37.0,
+        "costPerAndroidDownloadPct": 17.0
+      },
+      "campaigns": [
+        { "name": "PCSM - ElectricNow App - Google Play",         "platform": "Android", "spend": 787.21, "appInstalls": 1007, "costPerAppInstall": 0.78 },
+        { "name": "PCSM - ElectricNow App - iOS",                 "platform": "iOS",     "spend": 787.18, "appInstalls": 583,  "costPerAppInstall": 1.35 },
+        { "name": "PCSM - ElectricNow App - Google Play - Women", "platform": "Android", "spend": 787.11, "appInstalls": 1162, "costPerAppInstall": 0.68 },
+        { "name": "PCSM - ElectricNow App - iOS - Women",         "platform": "iOS",     "spend": 787.08, "appInstalls": 583,  "costPerAppInstall": 1.35 }
+      ],
+      "genderBreakdown": [
+        { "gender": "male",    "spend": 2246.81, "costPerAppInstall": 0.91, "appInstalls": 2459 },
+        { "gender": "female",  "spend": 882.83,  "costPerAppInstall": 1.02, "appInstalls": 868 },
+        { "gender": "unknown", "spend": 18.94,   "costPerAppInstall": 2.37, "appInstalls": 8 }
+      ],
+      "ageBreakdown": [
+        { "ageRange": "55-64",   "spend": 1066.19, "costPerAppInstall": 0.90, "appInstalls": 1191 },
+        { "ageRange": "65+",     "spend": 929.17,  "costPerAppInstall": 1.01, "appInstalls": 921 },
+        { "ageRange": "45-54",   "spend": 654.42,  "costPerAppInstall": 0.89, "appInstalls": 733 },
+        { "ageRange": "35-44",   "spend": 327.78,  "costPerAppInstall": 1.01, "appInstalls": 323 },
+        { "ageRange": "25-34",   "spend": 146.63,  "costPerAppInstall": 1.01, "appInstalls": 145 },
+        { "ageRange": "18-24",   "spend": 24.39,   "costPerAppInstall": 1.16, "appInstalls": 21 },
+        { "ageRange": "Unknown", "spend": 0.00,    "costPerAppInstall": 0.00, "appInstalls": 1 }
+      ],
+      "plainEnglish": "This is Meta paid acquisition data from Nathan / Forge One (pcsocialmedia.com). It covers Meta ad campaigns running on Facebook and Instagram that drive iOS and Android app installs for ElectricNOW. It is a separate paid channel from Google Ads (which is pulled via connector and shown above) and should be read alongside it, not added on top in a way that double-counts. These are Meta-platform ad impressions and clicks, NOT in-app ad impressions served inside the ElectricNOW app \u2014 those live in the Ad event signals panel.",
+      "doubleCountingNote": "Use only Meta rows from Nathan's reports. Nathan also sends a blended Meta + Google Ads report; the Google Ads rows in that blended report are NOT used here because Google Ads is already pulled directly from the Google Ads connector. The Meta numbers shown here are independent of the Google Ads connector totals.",
+      "inAppAdsDistinction": "Meta campaign impressions (259,503 this period) are paid ad placements on Meta\u2019s own platforms (Facebook/Instagram feeds, stories, etc.) and are NOT the same as ElectricNOW in-app ad impressions counted in the Ad event signals panel."
     }
   };
   
@@ -8007,6 +8061,152 @@
     }
   }
 
+
+  function ensureMetaAdsSection() {
+    let section = document.getElementById('meta-ads');
+    if (section) return section;
+    const googleAds = document.getElementById('google-ads');
+    if (!googleAds) return null;
+    const sideNav = document.querySelector('#electricnow-dashboard-embed .side-nav');
+    if (sideNav && !sideNav.querySelector('a[href="#meta-ads"]')) {
+      const gaLink = sideNav.querySelector('a[href="#google-ads"]');
+      const link = document.createElement('a');
+      link.href = '#meta-ads';
+      link.setAttribute('data-testid', 'nav-meta-ads');
+      link.textContent = 'Meta Ads';
+      if (gaLink && gaLink.nextSibling) {
+        sideNav.insertBefore(link, gaLink.nextSibling);
+      } else if (sideNav) {
+        sideNav.appendChild(link);
+      }
+    }
+    section = document.createElement('section');
+    section.className = 'panel google-ads-panel';
+    section.id = 'meta-ads';
+    section.setAttribute('aria-labelledby', 'meta-ads-title');
+    section.setAttribute('data-testid', 'section-meta-ads');
+    section.innerHTML = '' +
+      '<div class="panel-header">' +
+        '<div>' +
+          '<p class="eyebrow">Paid acquisition efficiency \u2014 Meta</p>' +
+          '<h2 id="meta-ads-title">Meta Ads \u2014 Paid App Campaigns</h2>' +
+        '</div>' +
+        '<span class="period-chip" id="meta-ads-period">Latest</span>' +
+      '</div>' +
+      '<p id="meta-ads-note" class="panel-note"></p>' +
+      '<div class="usage-card-grid google-ads-kpis" id="meta-ads-kpis" data-testid="meta-ads-kpis"></div>' +
+      '<div class="google-ads-split">' +
+        '<div><h3>By campaign</h3><div id="meta-ads-campaigns" class="google-ads-action-list" data-testid="meta-ads-campaigns"></div></div>' +
+        '<div><h3>By gender</h3><div id="meta-ads-gender" class="google-ads-action-list" data-testid="meta-ads-gender"></div></div>' +
+      '</div>' +
+      '<h3>By age</h3>' +
+      '<div id="meta-ads-age" class="google-ads-device-list" data-testid="meta-ads-age"></div>' +
+      '<p class="panel-note google-ads-context" id="meta-ads-plain"></p>' +
+      '<p class="panel-note" id="meta-ads-distinction"></p>';
+    if (googleAds.parentNode) {
+      googleAds.parentNode.insertBefore(section, googleAds.nextSibling);
+    }
+    return section;
+  }
+
+  function renderMetaAds() {
+    const summary = data.metaAdsSummary;
+    const section = ensureMetaAdsSection();
+    if (!section) return;
+    if (!summary || typeof summary !== 'object') {
+      section.hidden = true;
+      return;
+    }
+    section.hidden = false;
+
+    const periodChip = $('#meta-ads-period');
+    if (periodChip) periodChip.textContent = summary.period || 'Latest Meta report';
+
+    const noteEl = $('#meta-ads-note');
+    if (noteEl) {
+      noteEl.textContent =
+        (summary.source || 'Meta Ads via Forge One email report') +
+        '. Period ' + (summary.period || '') +
+        ' (' + (summary.comparison || 'vs previous period') + '). ' +
+        'These numbers count Meta-platform impressions and clicks on Facebook/Instagram, NOT ElectricNOW in-app ad impressions, and they are independent of the Google Ads connector totals above.';
+    }
+
+    function deltaLabel(value) {
+      if (value === null || value === undefined || Number.isNaN(value)) return '';
+      const sign = value > 0 ? '\u25B2 +' : (value < 0 ? '\u25BC ' : '');
+      return sign + Number(value).toFixed(1) + '% vs previous period';
+    }
+    const deltas = summary.deltas || {};
+
+    const kpiCards = [
+      usageStat('Meta spend', fmt.currency(summary.spend), deltaLabel(deltas.spendPct) || 'Total Meta paid spend for the period'),
+      usageStat('Impressions', fmt.number(summary.impressions), deltaLabel(deltas.impressionsPct) || 'Meta platform impressions (NOT in-app ad impressions)'),
+      usageStat('Link clicks', fmt.number(summary.linkClicks), deltaLabel(deltas.linkClicksPct) || 'Clicks to the App Store / Play Store from Meta ads'),
+      usageStat('Cost / click', fmt.currency(summary.costPerClick), deltaLabel(deltas.costPerClickPct) || 'Average Meta cost per link click'),
+      usageStat('iOS downloads', fmt.number(summary.iosDownloads), deltaLabel(deltas.iosDownloadsPct) || 'App Store installs attributed to Meta'),
+      usageStat('Cost / iOS download', fmt.currency(summary.costPerIosDownload), deltaLabel(deltas.costPerIosDownloadPct) || 'Meta spend divided by iOS downloads'),
+      usageStat('Android downloads', fmt.number(summary.androidDownloads), deltaLabel(deltas.androidDownloadsPct) || 'Play Store installs attributed to Meta'),
+      usageStat('Cost / Android download', fmt.currency(summary.costPerAndroidDownload), deltaLabel(deltas.costPerAndroidDownloadPct) || 'Meta spend divided by Android downloads'),
+      usageStat('Total downloads', fmt.number(summary.totalDownloads), 'iOS + Android downloads attributed to Meta'),
+    ];
+    const kpisEl = $('#meta-ads-kpis');
+    if (kpisEl) kpisEl.innerHTML = kpiCards.join('');
+
+    const campaigns = Array.isArray(summary.campaigns) ? summary.campaigns : [];
+    const campaignsEl = $('#meta-ads-campaigns');
+    if (campaignsEl) {
+      campaignsEl.innerHTML = campaigns.map(function (row) {
+        return '<div class="google-ads-action-row">' +
+          '<header><span>' + escapeHtml((row.name || '') + ' (' + (row.platform || '') + ')') + '</span>' +
+          '<strong>' + fmt.currency(row.spend) + '</strong></header>' +
+          '<em>' + fmt.number(row.appInstalls) + ' app installs \u00b7 ' + fmt.currency(row.costPerAppInstall) + ' / install</em>' +
+        '</div>';
+      }).join('');
+    }
+
+    const genders = Array.isArray(summary.genderBreakdown) ? summary.genderBreakdown : [];
+    const genderEl = $('#meta-ads-gender');
+    if (genderEl) {
+      genderEl.innerHTML = genders.map(function (row) {
+        const label = String(row.gender || 'unknown');
+        const niceLabel = label.charAt(0).toUpperCase() + label.slice(1);
+        return '<div class="google-ads-action-row">' +
+          '<header><span>' + escapeHtml(niceLabel) + '</span>' +
+          '<strong>' + fmt.currency(row.spend) + '</strong></header>' +
+          '<em>' + fmt.number(row.appInstalls) + ' installs \u00b7 ' + fmt.currency(row.costPerAppInstall) + ' / install</em>' +
+        '</div>';
+      }).join('');
+    }
+
+    const ages = Array.isArray(summary.ageBreakdown) ? summary.ageBreakdown : [];
+    const totalAgeSpend = ages.reduce(function (sum, row) { return sum + (toFiniteNumber(row.spend) || 0); }, 0) || 1;
+    const ageEl = $('#meta-ads-age');
+    if (ageEl) {
+      ageEl.innerHTML = ages.map(function (row) {
+        const spend = toFiniteNumber(row.spend) || 0;
+        const share = (spend / totalAgeSpend) * 100;
+        const width = Math.max(3, share);
+        return '<div class="google-ads-device-row">' +
+          '<header><span>' + escapeHtml(String(row.ageRange || 'Unknown')) + '</span>' +
+          '<strong>' + fmt.currency(row.spend) + '</strong></header>' +
+          '<div class="share-track" aria-hidden="true"><div class="share-fill" style="width:' + width.toFixed(1) + '%"></div></div>' +
+          '<div class="google-ads-device-metrics">' +
+            '<em>' + fmt.number(row.appInstalls) + ' installs</em>' +
+            '<em>' + fmt.currency(row.costPerAppInstall) + ' / install</em>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+
+    const plainEl = $('#meta-ads-plain');
+    if (plainEl) plainEl.textContent = summary.plainEnglish || '';
+    const distEl = $('#meta-ads-distinction');
+    if (distEl) {
+      distEl.textContent =
+        (summary.inAppAdsDistinction || '') + ' ' + (summary.doubleCountingNote || '');
+    }
+  }
+
   function renderAll() {
     $('#trend-period').textContent =
       selectedPeriod === 'weekToDate' ? data.periods.weekToDate.range : data.periods.currentWeek.range;
@@ -8027,6 +8227,7 @@
     renderTitleTables();
     renderGaps();
     renderGoogleAds();
+    renderMetaAds();
   }
 
   function setPeriodOptions() {

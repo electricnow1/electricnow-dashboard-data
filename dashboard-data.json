@@ -1940,6 +1940,7 @@
     "Measured ElectricNOW platform audience was 7.7K GA4 active users excluding landing-page acquisition paths, up 7.0% from the previous week.",
     "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 7.8K, up 6.5% from the previous week; landing-page users were down 9.8%.",
     "Paid advertising is now being measured more directly through the connected Google Ads account: the Android App Campaign spent $192.24 from May 12-May 23, 2026, generated 40,010 impressions, 1,258 clicks, and 372 Android first-open conversions at about $0.52 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself.",
+    "Paid acquisition is also running on Meta (Facebook/Instagram) through Forge One: from May 17-May 23, 2026 Meta spent $3,148.58, generated 259,503 platform impressions and 9,022 link clicks, and drove 1,166 iOS and 2,169 Android downloads (3,335 total) at about $1.35 per iOS download and $0.73 per Android download. Meta is shown alongside Google Ads, not added to it, and Meta\u2019s campaign impressions are separate from ElectricNOW in-app ad impressions.",
     "Measured Apple/Android app-stream usage improved: 5.4K active users this week, up 248.0% from launch baseline and up 20.0% from the previous week; Apple TV is not yet split out from the Apple/iOS stream.",
     "Viewing also improved: 2.3K app users watched on-demand or Live content, up 209.5% from launch baseline and up 16.4% from the previous week.",
     "Roughly 42.0% of app users watched something, compared with 47.2% during launch week and 43.3% the prior week, so the viewing conversion rate is steady while the audience is growing.",
@@ -7073,6 +7074,59 @@
       "source": "Google Ads connector",
       "note": "Paid advertising is now being measured more directly through the connected Google Ads account: the Android App Campaign spent $192.24 from May 12-May 23, 2026, generated 40,010 impressions, 1,258 clicks, and 372 Android first-open conversions at about $0.52 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself."
     }
+  },
+  "metaAdsSummary": {
+    "source": "Meta Ads (Forge One / nathan@pcsocialmedia.com twice-weekly email report)",
+    "reportType": "Meta Ads Performance Dashboard Summary (Meta-only, used to avoid double-counting Google Ads which is pulled via connector)",
+    "emailFrom": "nathan@pcsocialmedia.com",
+    "emailSubject": "ElectricNow | Meta Ads Performance Dashboard Summary (2026-05-17 to 2026-05-23)",
+    "emailDate": "2026-05-25T01:59:46+00:00",
+    "reportCadence": "Twice weekly (Sundays and Thursdays at 6am PST/PDT), each report covers Last 7 days",
+    "period": "May 17-May 23, 2026",
+    "comparison": "vs previous 7-day period",
+    "spend": 3148.58,
+    "impressions": 259503,
+    "linkClicks": 9022,
+    "costPerClick": 0.35,
+    "iosDownloads": 1166,
+    "androidDownloads": 2169,
+    "totalDownloads": 3335,
+    "costPerIosDownload": 1.35,
+    "costPerAndroidDownload": 0.73,
+    "costPerDownload": 0.9441,
+    "deltas": {
+      "spendPct": 60.4,
+      "impressionsPct": 43.6,
+      "costPerClickPct": 13.3,
+      "linkClicksPct": 40.4,
+      "iosDownloadsPct": 26.3,
+      "costPerIosDownloadPct": 27.1,
+      "androidDownloadsPct": 37.0,
+      "costPerAndroidDownloadPct": 17.0
+    },
+    "campaigns": [
+      { "name": "PCSM - ElectricNow App - Google Play",         "platform": "Android", "spend": 787.21, "appInstalls": 1007, "costPerAppInstall": 0.78 },
+      { "name": "PCSM - ElectricNow App - iOS",                 "platform": "iOS",     "spend": 787.18, "appInstalls": 583,  "costPerAppInstall": 1.35 },
+      { "name": "PCSM - ElectricNow App - Google Play - Women", "platform": "Android", "spend": 787.11, "appInstalls": 1162, "costPerAppInstall": 0.68 },
+      { "name": "PCSM - ElectricNow App - iOS - Women",         "platform": "iOS",     "spend": 787.08, "appInstalls": 583,  "costPerAppInstall": 1.35 }
+    ],
+    "genderBreakdown": [
+      { "gender": "male",    "spend": 2246.81, "costPerAppInstall": 0.91, "appInstalls": 2459 },
+      { "gender": "female",  "spend": 882.83,  "costPerAppInstall": 1.02, "appInstalls": 868 },
+      { "gender": "unknown", "spend": 18.94,   "costPerAppInstall": 2.37, "appInstalls": 8 }
+    ],
+    "ageBreakdown": [
+      { "ageRange": "55-64",   "spend": 1066.19, "costPerAppInstall": 0.90, "appInstalls": 1191 },
+      { "ageRange": "65+",     "spend": 929.17,  "costPerAppInstall": 1.01, "appInstalls": 921 },
+      { "ageRange": "45-54",   "spend": 654.42,  "costPerAppInstall": 0.89, "appInstalls": 733 },
+      { "ageRange": "35-44",   "spend": 327.78,  "costPerAppInstall": 1.01, "appInstalls": 323 },
+      { "ageRange": "25-34",   "spend": 146.63,  "costPerAppInstall": 1.01, "appInstalls": 145 },
+      { "ageRange": "18-24",   "spend": 24.39,   "costPerAppInstall": 1.16, "appInstalls": 21 },
+      { "ageRange": "Unknown", "spend": 0.00,    "costPerAppInstall": 0.00, "appInstalls": 1 }
+    ],
+    "plainEnglish": "This is Meta paid acquisition data from Nathan / Forge One (pcsocialmedia.com). It covers Meta ad campaigns running on Facebook and Instagram that drive iOS and Android app installs for ElectricNOW. It is a separate paid channel from Google Ads (which is pulled via connector and shown above) and should be read alongside it, not added on top in a way that double-counts. These are Meta-platform ad impressions and clicks, NOT in-app ad impressions served inside the ElectricNOW app \u2014 those live in the Ad event signals panel.",
+    "doubleCountingNote": "Use only Meta rows from Nathan's reports. Nathan also sends a blended Meta + Google Ads report; the Google Ads rows in that blended report are NOT used here because Google Ads is already pulled directly from the Google Ads connector. The Meta numbers shown here are independent of the Google Ads connector totals.",
+    "inAppAdsDistinction": "Meta campaign impressions (259,503 this period) are paid ad placements on Meta\u2019s own platforms (Facebook/Instagram feeds, stories, etc.) and are NOT the same as ElectricNOW in-app ad impressions counted in the Ad event signals panel."
   },
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
