@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28 07:45 PDT",
+  "generatedAt": "2026-05-28 08:38 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -4451,7 +4451,7 @@
   },
   "titleViewership": {
     "period": "May 21-May 27, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
+    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topPrograms": [
       {
         "rank": 1,
@@ -4533,15 +4533,6 @@
       },
       {
         "rank": 7,
-        "program": "DARK MATTER TV",
-        "plays": 1172,
-        "activeUsers": 94,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 8,
         "program": "The Poly Couple",
         "plays": 878,
         "activeUsers": 64,
@@ -4554,7 +4545,7 @@
         ]
       },
       {
-        "rank": 9,
+        "rank": 8,
         "program": "The Librarians: The Next Chapter",
         "plays": 827,
         "activeUsers": 9,
@@ -4567,7 +4558,7 @@
         ]
       },
       {
-        "rank": 10,
+        "rank": 9,
         "program": "The Outpost",
         "plays": 712,
         "activeUsers": 18,
@@ -4580,7 +4571,7 @@
         ]
       },
       {
-        "rank": 11,
+        "rank": 10,
         "program": "The Messenger",
         "plays": 622,
         "activeUsers": 63,
@@ -4593,90 +4584,7 @@
         ]
       },
       {
-        "rank": 12,
-        "program": "Kung Fu Movies",
-        "plays": 611,
-        "activeUsers": 169,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "DARK MATTER TV",
-          "Horror Asylum"
-        ]
-      },
-      {
-        "rank": 13,
-        "program": "ToonOvation",
-        "plays": 584,
-        "activeUsers": 210,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 14,
-        "program": "spot on news",
-        "plays": 560,
-        "activeUsers": 118,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "El Bumbun",
-          "Grindhouse Gold"
-        ]
-      },
-      {
-        "rank": 15,
-        "program": "Horror Asylum",
-        "plays": 552,
-        "activeUsers": 186,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Loaded Dice"
-        ]
-      },
-      {
-        "rank": 16,
-        "program": "a-z Classic Flix",
-        "plays": 459,
-        "activeUsers": 97,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 17,
-        "program": "ElectricNOW en Español",
-        "plays": 387,
-        "activeUsers": 102,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Mythica: The Darkspore",
-          "Daily Flash"
-        ]
-      },
-      {
-        "rank": 18,
-        "program": "Box Cinema",
-        "plays": 384,
-        "activeUsers": 49,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 19,
-        "program": "Cartoon Classics",
-        "plays": 378,
-        "activeUsers": 127,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 20,
+        "rank": 11,
         "program": "Adventures of Sonic the Hedgehog",
         "plays": 354,
         "activeUsers": 22,
@@ -4689,295 +4597,12 @@
         ]
       },
       {
-        "rank": 21,
-        "program": "Grindhouse Gold",
-        "plays": 345,
-        "activeUsers": 105,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 22,
-        "program": "Ghost Dimension",
-        "plays": 328,
-        "activeUsers": 108,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 23,
-        "program": "Daily Flash",
-        "plays": 326,
-        "activeUsers": 131,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Electric Now"
-        ]
-      },
-      {
-        "rank": 24,
-        "program": "Fancy A Movie",
-        "plays": 308,
-        "activeUsers": 64,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": [
-          "BayView Documentaries",
-          "Beyond Lochness"
-        ]
-      },
-      {
-        "rank": 25,
-        "program": "Comercio TV",
-        "plays": 293,
-        "activeUsers": 27,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 26,
-        "program": "Play Ibiza",
-        "plays": 291,
-        "activeUsers": 43,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 27,
-        "program": "a-z Western Grit",
-        "plays": 288,
-        "activeUsers": 79,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": [
-          "Somewhere in Montana - Trailer"
-        ]
-      },
-      {
-        "rank": 28,
-        "program": "SportsTVPlus",
-        "plays": 277,
-        "activeUsers": 39,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 29,
-        "program": "Urban Action Channel",
-        "plays": 277,
-        "activeUsers": 82,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 30,
-        "program": "Hollywood Classic Movies",
-        "plays": 272,
-        "activeUsers": 78,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "AMPD TV",
-          "Urban Action Channel"
-        ]
-      },
-      {
-        "rank": 31,
-        "program": "Cowboy Classics",
-        "plays": 258,
-        "activeUsers": 54,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": [
-          "AMusic Channel",
-          "Rockola Television"
-        ]
-      },
-      {
-        "rank": 32,
-        "program": "Celebrity Scene",
-        "plays": 256,
-        "activeUsers": 117,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "Daily Flash",
-          "Electric Now"
-        ]
-      },
-      {
-        "rank": 33,
-        "program": "Colorized.TV",
-        "plays": 252,
-        "activeUsers": 53,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": [
-          "The Librarians: The Next Chapter Season 2 Teaser"
-        ]
-      },
-      {
-        "rank": 34,
-        "program": "Mor2CTV",
-        "plays": 242,
-        "activeUsers": 62,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 35,
-        "program": "4ACETV CLASSIC HITS",
-        "plays": 241,
-        "activeUsers": 79,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 36,
-        "program": "CinePast",
-        "plays": 240,
-        "activeUsers": 65,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 37,
-        "program": "The Health Channel",
-        "plays": 234,
-        "activeUsers": 58,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 38,
-        "program": "a-z Best Classic TV",
-        "plays": 234,
-        "activeUsers": 65,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 39,
-        "program": "The Family TV Channel",
-        "plays": 224,
-        "activeUsers": 84,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 40,
+        "rank": 12,
         "program": "The Librarians: The Next Chapter Season 2 Teaser",
         "plays": 219,
         "activeUsers": 20,
         "viewerMethod": "deduped_ga4_filter",
         "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 41,
-        "program": "IndieBox",
-        "plays": 213,
-        "activeUsers": 71,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 42,
-        "program": "Stoner TV Network",
-        "plays": 211,
-        "activeUsers": 81,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "ToonOvation"
-        ]
-      },
-      {
-        "rank": 43,
-        "program": "Rock Solid Wrestling TV",
-        "plays": 210,
-        "activeUsers": 48,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 44,
-        "program": "Wrestling Spotlight",
-        "plays": 208,
-        "activeUsers": 50,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 45,
-        "program": "DJ Central TV",
-        "plays": 208,
-        "activeUsers": 74,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": [
-          "4ACETV"
-        ]
-      },
-      {
-        "rank": 46,
-        "program": "POWERtube TV",
-        "plays": 205,
-        "activeUsers": 29,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 47,
-        "program": "MomCave",
-        "plays": 201,
-        "activeUsers": 55,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 48,
-        "program": "Fitness Rewind by Collage Video",
-        "plays": 197,
-        "activeUsers": 41,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
-      },
-      {
-        "rank": 49,
-        "program": "MMA Futures",
-        "plays": 183,
-        "activeUsers": 64,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 50,
-        "program": "Beyond The Score",
-        "plays": 180,
-        "activeUsers": 34,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
         "examples": []
       }
     ],
@@ -5068,192 +4693,80 @@
       },
       {
         "rank": 13,
-        "title": "Ghost Dimension",
-        "plays": 328,
-        "activeUsers": 108,
-        "group": ""
-      },
-      {
-        "rank": 14,
         "title": "Anomaly",
         "plays": 326,
         "activeUsers": 14,
         "group": "The Ark"
       },
       {
-        "rank": 15,
+        "rank": 14,
         "title": "The Nigerian Job (Pilot) - 43 Min Cut",
         "plays": 320,
         "activeUsers": 29,
         "group": "Leverage"
       },
       {
-        "rank": 16,
-        "title": "Fancy A Movie",
-        "plays": 305,
-        "activeUsers": 64,
-        "group": ""
-      },
-      {
-        "rank": 17,
+        "rank": 15,
         "title": "We Don't Kill Our Own",
         "plays": 299,
         "activeUsers": 10,
         "group": "The Ark"
       },
       {
-        "rank": 18,
+        "rank": 16,
         "title": "Pretty Big Deal",
         "plays": 295,
         "activeUsers": 16,
         "group": "The Ark"
       },
       {
-        "rank": 19,
-        "title": "Comercio TV",
-        "plays": 293,
-        "activeUsers": 27,
-        "group": ""
-      },
-      {
-        "rank": 20,
-        "title": "Play Ibiza",
-        "plays": 291,
-        "activeUsers": 43,
-        "group": ""
-      },
-      {
-        "rank": 21,
+        "rank": 17,
         "title": "And the Crown of King Arthur",
         "plays": 289,
         "activeUsers": 25,
         "group": "The Librarians"
       },
       {
-        "rank": 22,
+        "rank": 18,
         "title": "One Step Forward, Two Steps Back",
         "plays": 288,
         "activeUsers": 13,
         "group": "The Ark"
       },
       {
-        "rank": 23,
-        "title": "a-z Western Grit",
-        "plays": 287,
-        "activeUsers": 79,
-        "group": "4ACETV"
-      },
-      {
-        "rank": 24,
-        "title": "SportsTVPlus",
-        "plays": 278,
-        "activeUsers": 39,
-        "group": "Viajar TV"
-      },
-      {
-        "rank": 25,
-        "title": "Urban Action Channel",
-        "plays": 277,
-        "activeUsers": 82,
-        "group": "Hollywood Classic Movies"
-      },
-      {
-        "rank": 26,
-        "title": "Hollywood Classic Movies",
-        "plays": 270,
-        "activeUsers": 78,
-        "group": ""
-      },
-      {
-        "rank": 27,
+        "rank": 19,
         "title": "Hoping for Forever",
         "plays": 264,
         "activeUsers": 10,
         "group": "The Ark"
       },
       {
-        "rank": 28,
-        "title": "Cowboy Classics",
-        "plays": 256,
-        "activeUsers": 54,
-        "group": ""
-      },
-      {
-        "rank": 29,
-        "title": "Celebrity Scene",
-        "plays": 252,
-        "activeUsers": 117,
-        "group": ""
-      },
-      {
-        "rank": 30,
-        "title": "Colorized.TV",
-        "plays": 251,
-        "activeUsers": 53,
-        "group": ""
-      },
-      {
-        "rank": 31,
+        "rank": 20,
         "title": "It's Personal",
         "plays": 246,
         "activeUsers": 12,
         "group": "Almost Paradise"
       },
       {
-        "rank": 32,
+        "rank": 21,
         "title": "The Last Thing You Ever Do",
         "plays": 245,
         "activeUsers": 10,
         "group": "The Ark"
       },
       {
-        "rank": 33,
+        "rank": 22,
         "title": "The Painful Way",
         "plays": 245,
         "activeUsers": 10,
         "group": "The Ark"
       },
       {
-        "rank": 34,
-        "title": "Mor2CTV",
-        "plays": 242,
-        "activeUsers": 62,
-        "group": ""
-      },
-      {
-        "rank": 35,
-        "title": "4ACETV CLASSIC HITS",
-        "plays": 241,
-        "activeUsers": 79,
-        "group": ""
-      },
-      {
-        "rank": 36,
+        "rank": 23,
         "title": "It Can't Be True",
         "plays": 241,
         "activeUsers": 12,
         "group": "The Ark"
-      },
-      {
-        "rank": 37,
-        "title": "CinePast",
-        "plays": 240,
-        "activeUsers": 65,
-        "group": ""
-      },
-      {
-        "rank": 38,
-        "title": "The Health Channel",
-        "plays": 234,
-        "activeUsers": 58,
-        "group": ""
-      },
-      {
-        "rank": 39,
-        "title": "a-z Best Classic TV",
-        "plays": 234,
-        "activeUsers": 65,
-        "group": ""
       }
     ],
     "topChannelTitles": [
@@ -5289,126 +4802,72 @@
       },
       {
         "rank": 6,
-        "title": "DARK MATTER TV",
-        "plays": 1172,
-        "activeUsers": 94
-      },
-      {
-        "rank": 7,
         "title": "Leverage - Season 1",
         "plays": 1140,
         "activeUsers": 1
       },
       {
-        "rank": 8,
+        "rank": 7,
         "title": "The Librarians (Full Series)",
         "plays": 1115,
         "activeUsers": 29
       },
       {
-        "rank": 9,
+        "rank": 8,
         "title": "Leverage: Redemption (Seasons 1 & 2)",
         "plays": 1099,
         "activeUsers": 32
       },
       {
-        "rank": 10,
+        "rank": 9,
         "title": "Almost Paradise - Season 1",
         "plays": 839,
         "activeUsers": 1
       },
       {
-        "rank": 11,
+        "rank": 10,
         "title": "The Librarians - Season 1",
         "plays": 829,
         "activeUsers": 1
       },
       {
-        "rank": 12,
+        "rank": 11,
         "title": "The Librarians: The Next Chapter",
         "plays": 773,
         "activeUsers": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "title": "Leverage - Season 2",
         "plays": 702,
         "activeUsers": 1
       },
       {
-        "rank": 14,
-        "title": "Kung Fu Movies",
-        "plays": 609,
-        "activeUsers": 168
-      },
-      {
-        "rank": 15,
-        "title": "ToonOvation",
-        "plays": 579,
-        "activeUsers": 206
-      },
-      {
-        "rank": 16,
+        "rank": 13,
         "title": "Almost Paradise (Season 1 & 2)",
         "plays": 575,
         "activeUsers": 41
       },
       {
-        "rank": 17,
-        "title": "spot on news",
-        "plays": 557,
-        "activeUsers": 116
-      },
-      {
-        "rank": 18,
-        "title": "Horror Asylum",
-        "plays": 550,
-        "activeUsers": 184
-      },
-      {
-        "rank": 19,
+        "rank": 14,
         "title": "The Outpost",
         "plays": 507,
         "activeUsers": 14
       },
       {
-        "rank": 20,
+        "rank": 15,
         "title": "Leverage: Redemption -  Season 1",
         "plays": 466,
         "activeUsers": 1
       },
       {
-        "rank": 21,
-        "title": "a-z Classic Flix",
-        "plays": 455,
-        "activeUsers": 96
-      },
-      {
-        "rank": 22,
+        "rank": 16,
         "title": "The Messenger",
         "plays": 405,
         "activeUsers": 51
-      },
-      {
-        "rank": 23,
-        "title": "ElectricNOW en Español",
-        "plays": 384,
-        "activeUsers": 100
-      },
-      {
-        "rank": 24,
-        "title": "Box Cinema",
-        "plays": 383,
-        "activeUsers": 48
-      },
-      {
-        "rank": 25,
-        "title": "Cartoon Classics",
-        "plays": 377,
-        "activeUsers": 126
       }
     ],
-    "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live-channel viewing (FAST/linear) is excluded here and reported in 'Live channel usage' and 'Live Channel on Roku' sections."
+    "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage' and 'Live Channel on Roku'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate."
   },
   "metaCampaignContext": {
     "source": "ENow-TV-April-1st-May-3rd-Meta-Ads.xlsx, Raw Data Report!A1:W361",
@@ -6833,9 +6292,10 @@
     "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Landing-page traffic remains acquisition-only and is not included here."
   },
   "manualAppleSalesUpdate": {
-    "updatedAt": "2026-05-22T16:29:05.285024+00:00",
+    "updatedAt": "2026-05-28T15:40:00+00:00",
     "source": "manual_apple_sales.json preserved after refresh",
-    "totalManualAppleEntries": 3
+    "totalManualAppleEntries": 4,
+    "note": "Preserved May 25 Apple sale (Purchase HD 15, $14.99 gross). 4 manual entries: May 13, May 18 (2), May 25."
   },
   "googleAdsSummary": {
     "source": "Google Ads connector",
