@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28 08:38 PDT",
+  "generatedAt": "2026-05-28 08:38 PDT (live-channel section removed 2026-05-28 12:55 PDT, no new connector pull)",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -169,7 +169,7 @@
       "deltaVsPreviousPct": -14.041994750656167,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “landing” in the path."
+      "context": "Users reaching pages with \u201clanding\u201d in the path."
     },
     {
       "key": "devicesPageUsers",
@@ -183,7 +183,7 @@
       "deltaVsPreviousPct": -72.72727272727273,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “devices” in the path."
+      "context": "Users reaching pages with \u201cdevices\u201d in the path."
     },
     {
       "key": "paidSocialUsers",
@@ -2024,7 +2024,7 @@
     "engagementRateWeekToDate": 83.78915962207857
   },
   "plainEnglishInsights": [
-    "Overall, ElectricNOW’s latest measured week shows that measured platform audience was down 3.2%, viewing was down 6.4%, and time spent improved by 6.5 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
+    "Overall, ElectricNOW\u2019s latest measured week shows that measured platform audience was down 3.2%, viewing was down 6.4%, and time spent improved by 6.5 minutes per active user. The short version is that we are separating real platform use from landing-page acquisition, so this read focuses first on whether people are using and watching ElectricNOW, then explains traffic sources, sales, and tracking caveats below.",
     "Measured ElectricNOW platform audience was 7.9K GA4 active users excluding landing-page acquisition paths, down 3.2% from the previous week.",
     "Acquisition traffic is tracked separately: property-wide GA4 active users including landing-page traffic were 7.9K, down 3.7% from the previous week; landing-page users were down 14.0%.",
     "Paid advertising is now being measured more directly through the connected Google Ads account: PCSM - ElectricNow App Promotion - Android spent $241.08 from May 12-May 26, 2026, generated 47.0K impressions, 1.5K clicks, and 443 Android first-open conversions at about $0.54 per first open. That is a promising cost-per-install/open signal, but the real success test is whether those paid users become viewers, so this should be read alongside GA4 viewing, time-spent, and ad-impression/ad-server reporting rather than as revenue by itself.",
@@ -2035,10 +2035,10 @@
     "Actual viewing behavior is measured separately: 2.6K users triggered a viewing event, down 5.6% from the previous week; video-complete users were up 4.2%.",
     "Average time on platform is 44.4 engaged minutes per active user across all GA4-tracked platforms, up 19.3 minutes from launch week and up 6.5 minutes from the previous week.",
     "Read this as two different measures: average time per user shows total weekly attention per person, while average time per session shows how long each individual visit or viewing session lasted.",
-    "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 1 purchases and $14.99 in the latest 7 complete days, plus 1 purchases and $14.99 so far this week; this still excludes Google Play purchases. The Apple App Store contribution is currently a manual snapshot of $159.92 gross, or about $111.94 after Apple’s 30% platform fee.",
+    "Visible platform sales now combine Stripe, Roku, and the manual Apple App Store snapshot: 1 purchases and $14.99 in the latest 7 complete days, plus 1 purchases and $14.99 so far this week; this still excludes Google Play purchases. The Apple App Store contribution is currently a manual snapshot of $159.92 gross, or about $111.94 after Apple\u2019s 30% platform fee.",
     "Ad-sales readiness is mixed: GA4 counted 33.3K ad impressions in the latest 7 complete days, down 4.1% from the previous 7 days; ad requests were down 2.9%; completed ad events were down 7.5%. This tells us ad inventory delivery inside the tracked app experience, but actual ad revenue still needs to be reconciled with the ad server because GA4 ad events are not the same thing as booked or collected ad sales.",
     "Top watched programs in GA4 this week include ElectricNOW, The Ark, Leverage, The Librarians, and Leverage: Redemption.",
-    "The most watched Live channels generated 4.3K Live play events, led by ElectricNOW, spot on news, ElectricNOW en Español, Kung Fu Movies, and Cartoon Classics.",
+    "The most watched Live channels generated 4.3K Live play events, led by ElectricNOW, spot on news, ElectricNOW en Espa\u00f1ol, Kung Fu Movies, and Cartoon Classics.",
     "GA4, Stripe, Roku, and the manual Apple App Store snapshot should still be reconciled with Google Play, Amagi, ad-server, YouTube, Meta, and final app-store reporting before making final business decisions."
   ],
   "instrumentationGaps": [
@@ -3484,7 +3484,7 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $159.92 gross in-app purchase sales manually entered so far, or approximately $111.94 after Apple’s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
+      "note": "Apple App Store screenshots show $159.92 gross in-app purchase sales manually entered so far, or approximately $111.94 after Apple\u2019s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
     },
     "sourceBreakout": [
       {
@@ -4298,7 +4298,7 @@
         "developerRevShare": 0.0
       }
     ],
-    "note": "Visible platform sales show 35 purchases and $556.65 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $159.92, with estimated net-to-Electric of $111.94 after Apple’s 30% platform fee. Add Google Play reports before treating this as total sales."
+    "note": "Visible platform sales show 35 purchases and $556.65 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $159.92, with estimated net-to-Electric of $111.94 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
   },
   "contentUsage": {
     "period": "May 21-May 27, 2026",
@@ -4367,7 +4367,7 @@
           "rank": 2
         },
         {
-          "title": "ElectricNOW en Español",
+          "title": "ElectricNOW en Espa\u00f1ol",
           "plays": 114,
           "activeUsers": 13,
           "rank": 3
@@ -4451,7 +4451,7 @@
   },
   "titleViewership": {
     "period": "May 21-May 27, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
+    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only \u2014 live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topPrograms": [
       {
         "rank": 1,
@@ -4867,7 +4867,7 @@
         "activeUsers": 51
       }
     ],
-    "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage' and 'Live Channel on Roku'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate."
+    "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate."
   },
   "metaCampaignContext": {
     "source": "ENow-TV-April-1st-May-3rd-Meta-Ads.xlsx, Raw Data Report!A1:W361",
@@ -5253,7 +5253,7 @@
           "deltaVsPreviousPct": -14.041994750656167,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users reaching pages with “landing” in the path."
+          "context": "Users reaching pages with \u201clanding\u201d in the path."
         },
         {
           "key": "devicesPageUsers",
@@ -5267,7 +5267,7 @@
           "deltaVsPreviousPct": -72.72727272727273,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users reaching pages with “devices” in the path."
+          "context": "Users reaching pages with \u201cdevices\u201d in the path."
         },
         {
           "key": "paidSocialUsers",
@@ -6177,7 +6177,7 @@
       },
       {
         "section": "En Espanol",
-        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Español, Espanol, Spanish, or matching paths.",
+        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Espa\u00f1ol, Espanol, Spanish, or matching paths.",
         "activeUsers": 8,
         "sessions": 11,
         "engagedSessions": 10,
@@ -6717,14 +6717,14 @@
         "appInstalls": 1
       }
     ],
-    "plainEnglish": "This is Meta paid acquisition data from Nathan / Forge One (pcsocialmedia.com). It covers Meta ad campaigns running on Facebook and Instagram that drive iOS and Android app installs for ElectricNOW. It is a separate paid channel from Google Ads (which is pulled via connector and shown above) and should be read alongside it, not added on top in a way that double-counts. These are Meta-platform ad impressions and clicks, NOT in-app ad impressions served inside the ElectricNOW app — those live in the Ad event signals panel.",
+    "plainEnglish": "This is Meta paid acquisition data from Nathan / Forge One (pcsocialmedia.com). It covers Meta ad campaigns running on Facebook and Instagram that drive iOS and Android app installs for ElectricNOW. It is a separate paid channel from Google Ads (which is pulled via connector and shown above) and should be read alongside it, not added on top in a way that double-counts. These are Meta-platform ad impressions and clicks, NOT in-app ad impressions served inside the ElectricNOW app \u2014 those live in the Ad event signals panel.",
     "doubleCountingNote": "Use only Meta rows from Nathan's reports. Nathan also sends a blended Meta + Google Ads report; the Google Ads rows in that blended report are NOT used here because Google Ads is already pulled directly from the Google Ads connector. The Meta numbers shown here are independent of the Google Ads connector totals.",
-    "inAppAdsDistinction": "Meta campaign impressions (259,503 this period) are paid ad placements on Meta’s own platforms (Facebook/Instagram feeds, stories, etc.) and are NOT the same as ElectricNOW in-app ad impressions counted in the Ad event signals panel."
+    "inAppAdsDistinction": "Meta campaign impressions (259,503 this period) are paid ad placements on Meta\u2019s own platforms (Facebook/Instagram feeds, stories, etc.) and are NOT the same as ElectricNOW in-app ad impressions counted in the Ad event signals panel."
   },
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -6768,14 +6768,14 @@
     },
     "platformSplit": [
       {
-        "label": "Android · mobile",
+        "label": "Android \u00b7 mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android · smart tv",
+        "label": "Android \u00b7 smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -6819,392 +6819,5 @@
       "result": "No in_app_purchase rows returned for 2026-05-21 from the older GA4 property; signal is only present in property 497892271."
     },
     "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
-  },
-  "rokuLiveChannelPerformance": {
-    "sourceLabel": "Roku TRC Live Channel email report",
-    "sourceDetail": "TRC live-channel viewing on the Roku platform, parsed from the latest 'TRC Live Percent of Unique Viewers and Average Session' PDF emailed by bdp_noreply@data.roku.com. This is the Roku live channel that plays outside the ElectricNOW app. It is reported separately from in-app (GA4) usage and Roku App Engagement, and overlaps mean weekly rows do not sum to 100%.",
-    "scopeNote": "Roku Live Channel only. Not ElectricNOW app/platform usage. Excluded from platform audience totals and GA4 figures.",
-    "reportGenerated": "May 25, 2026 at 6:52 AM PDT",
-    "reportEmailDate": "2026-05-25T13:53:13+00:00",
-    "attachmentFilename": "TRC_Live_Percent_of_Unique_Viewers_and_Average_Session_2026-05-25T0652.pdf",
-    "freshnessNote": "Section uses the latest attached TRC live-channel PDF (generated May 25, 2026 at 6:52 AM PDT). Newer daily TRC Live Dashboard emails (May 26-28) ship image-only attachments and require separate OCR/parsing before they can refresh this section.",
-    "metricDefinitions": {
-      "percentOfViewers": "Title unique viewers divided by total Roku live-channel unique viewers. Rows do not sum to 100% — a viewer can watch multiple titles.",
-      "avgSessionHours": "Streaming hours divided by streaming starts, in hours. Measures Roku live-channel session depth, not ElectricNOW in-app session time."
-    },
-    "viewershipSummary": {
-      "sourceLabel": "Roku Viewership Summary email report",
-      "sourceDetail": "Roku live-channel viewership totals parsed from the latest 'Viewership Summary' PDF emailed by bdp_noreply@data.roku.com. Generated by Looker. Reports Roku Channel Store visits, streams, total hours streamed, and rebuffers for the prior 7 days at day grain, US channel store.",
-      "scopeNote": "Roku Live Channel only (outside the ElectricNOW app). Excluded from app/platform audience totals and GA4 figures.",
-      "reportGenerated": "May 28, 2026 at 7:08 AM PDT",
-      "reportEmailDate": "2026-05-28T14:08:43+00:00",
-      "attachmentFilename": "Viewership_Summary_2026-05-28T0708.pdf",
-      "reportPeriod": "May 20 - May 26, 2026 (7 days)",
-      "channelStore": "us",
-      "timeGrain": "day",
-      "extractionNote": "Totals computed from the 21 device rows visible in the Viewership Details table extracted from the PDF text layer. Chart visuals in the PDF (daily visits, streams, streaming ratios, rebuffers) were not exposed in the text layer, so exact daily values are not included.",
-      "metricDefinitions": {
-        "visits": "Roku Channel Store visits to the live channel during the report window.",
-        "streams": "Number of stream starts on the Roku live channel during the report window.",
-        "totalHoursStreamed": "Total hours streamed on the Roku live channel during the report window.",
-        "streamsPerVisit": "streams divided by visits.",
-        "avgMinutesPerStream": "totalHoursStreamed * 60 divided by streams.",
-        "rebuffersPerStreamingHour": "Average rebuffers per streaming hour for the device row."
-      },
-      "totals": {
-        "visits": 297,
-        "streams": 1772,
-        "totalHoursStreamed": 242,
-        "streamsPerVisit": 5.97,
-        "avgMinutesPerStream": 8.19,
-        "deviceRowsCounted": 21
-      },
-      "topByStreams": [
-        { "deviceGroup": "Amarillo_4K", "model": "3810R", "visits": 85, "streams": 600, "totalHoursStreamed": 66, "rebuffersPerStreamingHour": 2.70 },
-        { "deviceGroup": "Amarillo_4K", "model": "3810X", "visits": 18, "streams": 414, "totalHoursStreamed": 62, "rebuffersPerStreamingHour": 0.02 },
-        { "deviceGroup": "Amarillo_1080", "model": "3800X", "visits": 33, "streams": 294, "totalHoursStreamed": 21, "rebuffersPerStreamingHour": 0.38 },
-        { "deviceGroup": "Amarillo_4K", "model": "3810RW2", "visits": 42, "streams": 105, "totalHoursStreamed": 14, "rebuffersPerStreamingHour": 0.22 },
-        { "deviceGroup": "Amarillo_1080", "model": "3800RW", "visits": 13, "streams": 104, "totalHoursStreamed": 32, "rebuffersPerStreamingHour": 0.59 }
-      ],
-      "topByHours": [
-        { "deviceGroup": "Amarillo_4K", "model": "3810R", "visits": 85, "streams": 600, "totalHoursStreamed": 66, "rebuffersPerStreamingHour": 2.70 },
-        { "deviceGroup": "Amarillo_4K", "model": "3810X", "visits": 18, "streams": 414, "totalHoursStreamed": 62, "rebuffersPerStreamingHour": 0.02 },
-        { "deviceGroup": "Amarillo_1080", "model": "3800RW", "visits": 13, "streams": 104, "totalHoursStreamed": 32, "rebuffersPerStreamingHour": 0.59 },
-        { "deviceGroup": "Amarillo_1080", "model": "3800X", "visits": 33, "streams": 294, "totalHoursStreamed": 21, "rebuffersPerStreamingHour": 0.38 },
-        { "deviceGroup": "Amarillo_4K", "model": "3810RW", "visits": 33, "streams": 77, "totalHoursStreamed": 14, "rebuffersPerStreamingHour": 0.14 }
-      ],
-      "caveats": [
-        "Totals are sums of the 21 device rows visible in the PDF's Viewership Details table; if the underlying report has additional pages or hidden rows, those are not included.",
-        "Chart-level daily values (visits, streams, streaming ratios, rebuffers) were not text-extractable from the PDF and are not shown here.",
-        "rebuffers_per_streaming_hour for Athens model G135X was blank/null in the report and is omitted from rebuffer averages.",
-        "This is Roku live-channel viewership outside the ElectricNOW app and is intentionally NOT folded into platform/app audience totals."
-      ]
-    },
-    "latestWeek": {
-      "weekStart": "2026-05-18",
-      "label": "Week of May 18, 2026",
-      "rows": [
-        {
-          "title": "Leverage: Redemption",
-          "percentOfViewers": 53.35,
-          "avgSessionHours": 0.58
-        },
-        {
-          "title": "Leverage",
-          "percentOfViewers": 41.68,
-          "avgSessionHours": 0.53
-        },
-        {
-          "title": "The Librarians",
-          "percentOfViewers": 32.57,
-          "avgSessionHours": 0.46
-        },
-        {
-          "title": "The Paradise",
-          "percentOfViewers": 19.66,
-          "avgSessionHours": 0.58
-        },
-        {
-          "title": "Lionheart",
-          "percentOfViewers": 12.32,
-          "avgSessionHours": 0.47
-        },
-        {
-          "title": "The Ark",
-          "percentOfViewers": 10.4,
-          "avgSessionHours": 0.43
-        },
-        {
-          "title": "The Outpost",
-          "percentOfViewers": 5.98,
-          "avgSessionHours": 0.53
-        },
-        {
-          "title": "Wizards vs Aliens",
-          "percentOfViewers": 5.06,
-          "avgSessionHours": 0.36
-        },
-        {
-          "title": "The Poly Couple",
-          "percentOfViewers": 4.89,
-          "avgSessionHours": 0.34
-        }
-      ]
-    },
-    "priorWeeks": [
-      {
-        "weekStart": "2026-05-11",
-        "label": "Week of May 11, 2026",
-        "rows": [
-          {
-            "title": "Leverage",
-            "percentOfViewers": 51.94,
-            "avgSessionHours": 0.58
-          },
-          {
-            "title": "The Librarians",
-            "percentOfViewers": 43.71,
-            "avgSessionHours": 0.5
-          },
-          {
-            "title": "Leverage: Redemption",
-            "percentOfViewers": 31.59,
-            "avgSessionHours": 0.53
-          },
-          {
-            "title": "The Paradise",
-            "percentOfViewers": 18.46,
-            "avgSessionHours": 0.58
-          },
-          {
-            "title": "White Sky",
-            "percentOfViewers": 10.6,
-            "avgSessionHours": 0.42
-          },
-          {
-            "title": "The Ark",
-            "percentOfViewers": 10.06,
-            "avgSessionHours": 0.45
-          },
-          {
-            "title": "The Librarian: Return to King Solomon's Mines",
-            "percentOfViewers": 6.79,
-            "avgSessionHours": 0.56
-          },
-          {
-            "title": "The Outpost",
-            "percentOfViewers": 6.26,
-            "avgSessionHours": 0.55
-          },
-          {
-            "title": "The Poly Couple",
-            "percentOfViewers": 4.75,
-            "avgSessionHours": 0.38
-          }
-        ]
-      },
-      {
-        "weekStart": "2026-05-04",
-        "label": "Week of May 4, 2026",
-        "rows": [
-          {
-            "title": "Leverage",
-            "percentOfViewers": 51.35,
-            "avgSessionHours": 0.57
-          },
-          {
-            "title": "The Librarians",
-            "percentOfViewers": 43.99,
-            "avgSessionHours": 0.48
-          },
-          {
-            "title": "Leverage: Redemption",
-            "percentOfViewers": 31.26,
-            "avgSessionHours": 0.53
-          },
-          {
-            "title": "The Paradise",
-            "percentOfViewers": 17.93,
-            "avgSessionHours": 0.58
-          },
-          {
-            "title": "Jules Verne's Mysterious Island",
-            "percentOfViewers": 11.51,
-            "avgSessionHours": 0.46
-          },
-          {
-            "title": "The Ark",
-            "percentOfViewers": 10.53,
-            "avgSessionHours": 0.45
-          },
-          {
-            "title": "The Librarian: Return to King Solomon's Mines",
-            "percentOfViewers": 6.72,
-            "avgSessionHours": 0.55
-          },
-          {
-            "title": "The Outpost",
-            "percentOfViewers": 5.98,
-            "avgSessionHours": 0.53
-          },
-          {
-            "title": "Wizards vs Aliens",
-            "percentOfViewers": 5.24,
-            "avgSessionHours": 0.36
-          },
-          {
-            "title": "The Poly Couple",
-            "percentOfViewers": 4.7,
-            "avgSessionHours": 0.37
-          }
-        ]
-      },
-      {
-        "weekStart": "2026-04-27",
-        "label": "Week of Apr 27, 2026",
-        "rows": [
-          {
-            "title": "Leverage",
-            "percentOfViewers": 52.46,
-            "avgSessionHours": 0.58
-          },
-          {
-            "title": "The Librarians",
-            "percentOfViewers": 44.81,
-            "avgSessionHours": 0.48
-          },
-          {
-            "title": "Leverage: Redemption",
-            "percentOfViewers": 31.71,
-            "avgSessionHours": 0.52
-          },
-          {
-            "title": "The Paradise",
-            "percentOfViewers": 14.99,
-            "avgSessionHours": 0.51
-          },
-          {
-            "title": "The Ark",
-            "percentOfViewers": 10.45,
-            "avgSessionHours": 0.43
-          },
-          {
-            "title": "A Remarkable Life",
-            "percentOfViewers": 8.31,
-            "avgSessionHours": 0.49
-          },
-          {
-            "title": "The Librarian: Return to King Solomon's Mines",
-            "percentOfViewers": 7.08,
-            "avgSessionHours": 0.53
-          },
-          {
-            "title": "The Outpost",
-            "percentOfViewers": 6.04,
-            "avgSessionHours": 0.52
-          },
-          {
-            "title": "Jules Verne's Mysterious Island",
-            "percentOfViewers": 5.81,
-            "avgSessionHours": 0.76
-          },
-          {
-            "title": "The Poly Couple",
-            "percentOfViewers": 4.57,
-            "avgSessionHours": 0.36
-          }
-        ]
-      }
-    ],
-    "monthApril2026": {
-      "label": "April 2026 (last complete month)",
-      "rows": [
-        {
-          "title": "The Librarians",
-          "percentOfViewers": 59.74,
-          "avgSessionHours": 0.51
-        },
-        {
-          "title": "Leverage",
-          "percentOfViewers": 49.72,
-          "avgSessionHours": 0.59
-        },
-        {
-          "title": "Leverage: Redemption",
-          "percentOfViewers": 29.87,
-          "avgSessionHours": 0.52
-        },
-        {
-          "title": "The Paradise",
-          "percentOfViewers": 17.82,
-          "avgSessionHours": 0.56
-        },
-        {
-          "title": "The Outpost",
-          "percentOfViewers": 8.76,
-          "avgSessionHours": 0.52
-        },
-        {
-          "title": "The Ark",
-          "percentOfViewers": 7.53,
-          "avgSessionHours": 0.42
-        },
-        {
-          "title": "Jules Verne's Mysterious Island",
-          "percentOfViewers": 4.74,
-          "avgSessionHours": 0.5
-        },
-        {
-          "title": "The Poly Couple",
-          "percentOfViewers": 4.41,
-          "avgSessionHours": 0.41
-        },
-        {
-          "title": "Undercover Grandpa",
-          "percentOfViewers": 4.14,
-          "avgSessionHours": 0.56
-        },
-        {
-          "title": "Flyboys",
-          "percentOfViewers": 4.08,
-          "avgSessionHours": 0.49
-        }
-      ]
-    },
-    "quarterQ12026": {
-      "label": "Q1 2026 (last complete quarter)",
-      "rows": [
-        {
-          "title": "Leverage",
-          "percentOfViewers": 57.22,
-          "avgSessionHours": 0.55
-        },
-        {
-          "title": "The Librarians",
-          "percentOfViewers": 55.79,
-          "avgSessionHours": 0.46
-        },
-        {
-          "title": "Leverage: Redemption",
-          "percentOfViewers": 31.93,
-          "avgSessionHours": 0.51
-        },
-        {
-          "title": "The Paradise",
-          "percentOfViewers": 20.79,
-          "avgSessionHours": 0.54
-        },
-        {
-          "title": "The Outpost",
-          "percentOfViewers": 11.23,
-          "avgSessionHours": 0.46
-        },
-        {
-          "title": "Sir Arthur Conan Doyle's The Lost World",
-          "percentOfViewers": 5.46,
-          "avgSessionHours": 0.44
-        },
-        {
-          "title": "The Tribe",
-          "percentOfViewers": 4.72,
-          "avgSessionHours": 0.45
-        },
-        {
-          "title": "The Librarian: Return to King Solomon's Mines",
-          "percentOfViewers": 4.61,
-          "avgSessionHours": 0.5
-        },
-        {
-          "title": "The Librarian: Curse of the Judas Chalice",
-          "percentOfViewers": 4.56,
-          "avgSessionHours": 0.51
-        },
-        {
-          "title": "The Librarian: Quest for the Spear",
-          "percentOfViewers": 4.33,
-          "avgSessionHours": 0.56
-        }
-      ]
-    }
   }
 }
