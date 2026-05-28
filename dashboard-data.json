@@ -2044,7 +2044,7 @@
       },
       "yearToDate": {
         "label": "Sales this year",
-        "range": "Jan 1-May 27, 2026",
+        "range": "Jan 1-May 28, 2026",
         "purchases": 13,
         "purchaseRevenue": 189.87,
         "revenuePerPurchase": 14.61,
@@ -2103,7 +2103,7 @@
       },
       "monthToDate": {
         "label": "Sales this month",
-        "range": "May 1-May 27, 2026",
+        "range": "May 1-May 28, 2026",
         "purchases": 3,
         "purchaseRevenue": 44.97,
         "revenuePerPurchase": 14.99,
@@ -2132,7 +2132,7 @@
       },
       "lastWeek": {
         "label": "Sales last week",
-        "range": "May 20-May 26, 2026",
+        "range": "May 21-May 27, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -2142,7 +2142,7 @@
       },
       "thisWeek": {
         "label": "Sales this week",
-        "range": "May 25-May 27, 2026",
+        "range": "May 25-May 28, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -2152,7 +2152,7 @@
       },
       "currentCompleteWeek": {
         "label": "Sales last week",
-        "range": "May 20-May 26, 2026",
+        "range": "May 21-May 27, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -2162,7 +2162,7 @@
       },
       "weekToDate": {
         "label": "Sales this week",
-        "range": "May 25-May 27, 2026",
+        "range": "May 25-May 28, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "revenuePerPurchase": 0,
@@ -2172,7 +2172,7 @@
       },
       "recent12Days": {
         "label": "Stripe last 12 days",
-        "range": "May 16-May 27, 2026",
+        "range": "May 17-May 28, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "revenuePerPurchase": 14.99,
@@ -2188,7 +2188,7 @@
         ]
       },
       "lifetimeObserved": {
-        "range": "Through May 27, 2026 pull",
+        "range": "Through May 28, 2026 pull",
         "purchases": 13,
         "purchaseRevenue": 189.87,
         "revenuePerPurchase": 14.61
@@ -2566,6 +2566,12 @@
           "rawDate": "20260527",
           "purchases": 0,
           "purchaseRevenue": 0
+        },
+        {
+          "date": "May 28",
+          "rawDate": "20260528",
+          "purchases": 0,
+          "purchaseRevenue": 0
         }
       ],
       "note": "Stripe-visible sales show 13 payments and $189.87 year to date, 3 payments and $44.97 this month, 0 payments and $0.00 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
@@ -2587,7 +2593,7 @@
       },
       "yearToDate": {
         "label": "Roku sales this year",
-        "range": "Jan 1-May 27, 2026",
+        "range": "Jan 1-May 28, 2026",
         "purchases": 14,
         "purchaseRevenue": 206.86,
         "developerRevShare": 165.46,
@@ -2663,7 +2669,7 @@
       },
       "monthToDate": {
         "label": "Roku sales this month",
-        "range": "May 1-May 27, 2026",
+        "range": "May 1-May 28, 2026",
         "purchases": 8,
         "purchaseRevenue": 76.92,
         "developerRevShare": 61.52,
@@ -2731,27 +2737,18 @@
       },
       "lastWeek": {
         "label": "Roku sales last week",
-        "range": "May 20-May 26, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
-        "developerRevShare": 11.99,
-        "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": -80.0,
-        "deltaRevenuePct": -80.0,
-        "payments": [
-          {
-            "date": "May 20",
-            "createdAt": "2026-05-20",
-            "amount": 14.99,
-            "developerRevShare": 11.99,
-            "description": "Roku - Purchase HD 15",
-            "source": "Roku"
-          }
-        ]
+        "range": "May 21-May 27, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "developerRevShare": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": -100.0,
+        "deltaRevenuePct": -100.0,
+        "payments": []
       },
       "thisWeek": {
         "label": "Roku sales this week",
-        "range": "May 25-May 27, 2026",
+        "range": "May 25-May 28, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "developerRevShare": 0,
@@ -2762,27 +2759,18 @@
       },
       "currentCompleteWeek": {
         "label": "Roku sales last week",
-        "range": "May 20-May 26, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
-        "developerRevShare": 11.99,
-        "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": -80.0,
-        "deltaRevenuePct": -80.0,
-        "payments": [
-          {
-            "date": "May 20",
-            "createdAt": "2026-05-20",
-            "amount": 14.99,
-            "developerRevShare": 11.99,
-            "description": "Roku - Purchase HD 15",
-            "source": "Roku"
-          }
-        ]
+        "range": "May 21-May 27, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0,
+        "developerRevShare": 0,
+        "revenuePerPurchase": 0,
+        "deltaPurchasesPct": -100.0,
+        "deltaRevenuePct": -100.0,
+        "payments": []
       },
       "weekToDate": {
         "label": "Roku sales this week",
-        "range": "May 25-May 27, 2026",
+        "range": "May 25-May 28, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
         "developerRevShare": 0,
@@ -2792,7 +2780,7 @@
         "payments": []
       },
       "lifetimeObserved": {
-        "range": "Through May 27, 2026 pull",
+        "range": "Through May 28, 2026 pull",
         "purchases": 14,
         "purchaseRevenue": 206.86,
         "developerRevShare": 165.46
@@ -3222,6 +3210,13 @@
           "purchases": 0,
           "purchaseRevenue": 0,
           "developerRevShare": 0
+        },
+        {
+          "date": "May 28",
+          "rawDate": "20260528",
+          "purchases": 0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0
         }
       ],
       "note": "Roku report shows 14 purchases and $206.86 gross sales year to date, with $165.46 developer rev share."
@@ -3251,29 +3246,43 @@
       },
       "lastWeek": {
         "label": "Apple sales last week",
-        "range": "May 20-May 26, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "range": "May 21-May 27, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49,
+        "revenuePerPurchase": 14.99,
+        "payments": [
+          {
+            "date": "May 25",
+            "amount": 14.99,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
+          }
+        ]
       },
       "thisWeek": {
         "label": "Apple sales this week",
-        "range": "May 25-May 27, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
-        "revenuePerPurchase": 0,
-        "payments": []
+        "range": "May 25-May 28, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49,
+        "revenuePerPurchase": 14.99,
+        "payments": [
+          {
+            "date": "May 25",
+            "amount": 14.99,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
+          }
+        ]
       },
       "monthToDate": {
         "label": "Apple sales this month",
-        "range": "May 1-May 27, 2026",
-        "purchases": 3,
-        "purchaseRevenue": 74.97,
-        "developerRevShare": 52.48,
-        "revenuePerPurchase": 24.99,
+        "range": "May 1-May 28, 2026",
+        "purchases": 4,
+        "purchaseRevenue": 89.96,
+        "developerRevShare": 62.97,
+        "revenuePerPurchase": 22.49,
         "payments": [
           {
             "date": "May 13",
@@ -3292,16 +3301,22 @@
             "amount": 14.99,
             "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
+          },
+          {
+            "date": "May 25",
+            "amount": 14.99,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
           }
         ]
       },
       "recent12Days": {
         "label": "Apple sales last 12 days",
-        "range": "May 16-May 27, 2026",
-        "purchases": 2,
-        "purchaseRevenue": 44.98,
-        "developerRevShare": 31.49,
-        "revenuePerPurchase": 22.49,
+        "range": "May 17-May 28, 2026",
+        "purchases": 3,
+        "purchaseRevenue": 59.97,
+        "developerRevShare": 41.98,
+        "revenuePerPurchase": 19.99,
         "payments": [
           {
             "date": "May 18",
@@ -3314,16 +3329,22 @@
             "amount": 14.99,
             "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
+          },
+          {
+            "date": "May 25",
+            "amount": 14.99,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
           }
         ]
       },
       "yearToDate": {
         "label": "Apple App Store snapshot",
-        "range": "Jan 1-May 27, 2026",
-        "purchases": 7,
-        "purchaseRevenue": 144.93,
-        "developerRevShare": 101.45,
-        "revenuePerPurchase": 20.7,
+        "range": "Jan 1-May 28, 2026",
+        "purchases": 8,
+        "purchaseRevenue": 159.92,
+        "developerRevShare": 111.94,
+        "revenuePerPurchase": 19.99,
         "payments": [
           {
             "date": "Apr 16",
@@ -3351,6 +3372,12 @@
           },
           {
             "date": "May 18",
+            "amount": 14.99,
+            "description": "Apple App Store - Purchase HD 15",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "May 25",
             "amount": 14.99,
             "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
@@ -3398,6 +3425,13 @@
           "purchases": 1,
           "purchaseRevenue": 14.99,
           "developerRevShare": 10.49
+        },
+        {
+          "date": "May 25",
+          "rawDate": "20260525",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 10.49
         }
       ],
       "undatedSales": [
@@ -3428,7 +3462,7 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $144.93 gross in-app purchase sales manually entered so far, or approximately $101.45 after Apple\u2019s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
+      "note": "Apple App Store screenshots show $159.92 gross in-app purchase sales manually entered so far, or approximately $111.94 after Apple\u2019s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
     },
     "sourceBreakout": [
       {
@@ -3447,9 +3481,9 @@
       },
       {
         "source": "Apple App Store",
-        "purchases": 7,
-        "purchaseRevenue": 144.93,
-        "developerRevShare": 101.45,
+        "purchases": 8,
+        "purchaseRevenue": 159.92,
+        "developerRevShare": 111.94,
         "detail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. This remains a manual source until Apple App Store Connect API reporting is connected."
       }
     ],
@@ -3471,11 +3505,11 @@
     },
     "yearToDate": {
       "label": "Sales this year",
-      "range": "Jan 1-May 27, 2026",
-      "purchases": 34,
-      "purchaseRevenue": 541.66,
-      "developerRevShare": 266.91,
-      "revenuePerPurchase": 15.93,
+      "range": "Jan 1-May 28, 2026",
+      "purchases": 35,
+      "purchaseRevenue": 556.65,
+      "developerRevShare": 277.4,
+      "revenuePerPurchase": 15.9,
       "payments": [
         {
           "date": "May 17",
@@ -3537,11 +3571,11 @@
     },
     "monthToDate": {
       "label": "Sales this month",
-      "range": "May 1-May 27, 2026",
-      "purchases": 14,
-      "purchaseRevenue": 196.86,
-      "developerRevShare": 114.0,
-      "revenuePerPurchase": 14.06,
+      "range": "May 1-May 28, 2026",
+      "purchases": 15,
+      "purchaseRevenue": 211.85,
+      "developerRevShare": 124.49,
+      "revenuePerPurchase": 14.12,
       "payments": [
         {
           "date": "May 17",
@@ -3608,19 +3642,17 @@
     },
     "lastWeek": {
       "label": "Sales last week",
-      "range": "May 20-May 26, 2026",
+      "range": "May 21-May 27, 2026",
       "purchases": 1,
       "purchaseRevenue": 14.99,
-      "developerRevShare": 11.99,
+      "developerRevShare": 10.49,
       "revenuePerPurchase": 14.99,
       "payments": [
         {
-          "date": "May 20",
-          "createdAt": "2026-05-20",
+          "date": "May 25",
           "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
-          "source": "Roku"
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
         }
       ],
       "deltaPurchasesPct": -90.9090909090909,
@@ -3628,28 +3660,33 @@
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "May 25-May 27, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "developerRevShare": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": []
-    },
-    "currentCompleteWeek": {
-      "label": "Sales last week",
-      "range": "May 20-May 26, 2026",
+      "range": "May 25-May 28, 2026",
       "purchases": 1,
       "purchaseRevenue": 14.99,
-      "developerRevShare": 11.99,
+      "developerRevShare": 10.49,
       "revenuePerPurchase": 14.99,
       "payments": [
         {
-          "date": "May 20",
-          "createdAt": "2026-05-20",
+          "date": "May 25",
           "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
-          "source": "Roku"
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
+    },
+    "currentCompleteWeek": {
+      "label": "Sales last week",
+      "range": "May 21-May 27, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "developerRevShare": 10.49,
+      "revenuePerPurchase": 14.99,
+      "payments": [
+        {
+          "date": "May 25",
+          "amount": 14.99,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
         }
       ],
       "deltaPurchasesPct": -90.9090909090909,
@@ -3657,20 +3694,27 @@
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "May 25-May 27, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "developerRevShare": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": []
+      "range": "May 25-May 28, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "developerRevShare": 10.49,
+      "revenuePerPurchase": 14.99,
+      "payments": [
+        {
+          "date": "May 25",
+          "amount": 14.99,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
-      "range": "May 16-May 27, 2026",
-      "purchases": 3,
-      "purchaseRevenue": 59.97,
-      "developerRevShare": 31.49,
-      "revenuePerPurchase": 19.99,
+      "range": "May 17-May 28, 2026",
+      "purchases": 4,
+      "purchaseRevenue": 74.96,
+      "developerRevShare": 41.98,
+      "revenuePerPurchase": 18.74,
       "payments": [
         {
           "date": "May 17",
@@ -3690,16 +3734,22 @@
           "amount": 14.99,
           "description": "Apple App Store - Purchase HD 15",
           "source": "Apple App Store"
+        },
+        {
+          "date": "May 25",
+          "amount": 14.99,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
         }
       ]
     },
     "lifetimeObserved": {
       "label": "Sales this year",
-      "range": "Jan 1-May 27, 2026",
-      "purchases": 34,
-      "purchaseRevenue": 541.66,
-      "developerRevShare": 266.91,
-      "revenuePerPurchase": 15.93,
+      "range": "Jan 1-May 28, 2026",
+      "purchases": 35,
+      "purchaseRevenue": 556.65,
+      "developerRevShare": 277.4,
+      "revenuePerPurchase": 15.9,
       "payments": [
         {
           "date": "May 17",
@@ -4200,9 +4250,9 @@
       {
         "date": "May 25",
         "rawDate": "20260525",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
       },
       {
         "date": "May 26",
@@ -4217,9 +4267,16 @@
         "purchases": 0,
         "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
+      },
+      {
+        "date": "May 28",
+        "rawDate": "20260528",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "developerRevShare": 0.0
       }
     ],
-    "note": "Visible platform sales show 34 purchases and $541.66 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $144.93, with estimated net-to-Electric of $101.45 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
+    "note": "Visible platform sales show 35 purchases and $556.65 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $159.92, with estimated net-to-Electric of $111.94 after Apple\u2019s 30% platform fee. Add Google Play reports before treating this as total sales."
   },
   "contentUsage": {
     "period": "May 20-May 26, 2026",
@@ -7355,5 +7412,344 @@
       "result": "No in_app_purchase rows returned for 2026-05-21 from the older GA4 property; signal is only present in property 497892271."
     },
     "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
+  },
+  "rokuLiveChannelPerformance": {
+    "sourceLabel": "Roku TRC Live Channel email report",
+    "sourceDetail": "TRC live-channel viewing on the Roku platform, parsed from the latest 'TRC Live Percent of Unique Viewers and Average Session' PDF emailed by bdp_noreply@data.roku.com. This is the Roku live channel that plays outside the ElectricNOW app. It is reported separately from in-app (GA4) usage and Roku App Engagement, and overlaps mean weekly rows do not sum to 100%.",
+    "scopeNote": "Roku Live Channel only. Not ElectricNOW app/platform usage. Excluded from platform audience totals and GA4 figures.",
+    "reportGenerated": "May 25, 2026 at 6:52 AM PDT",
+    "reportEmailDate": "2026-05-25T13:53:13+00:00",
+    "attachmentFilename": "TRC_Live_Percent_of_Unique_Viewers_and_Average_Session_2026-05-25T0652.pdf",
+    "freshnessNote": "Section uses the latest attached TRC live-channel PDF (generated May 25, 2026 at 6:52 AM PDT). Newer daily TRC Live Dashboard emails (May 26-28) ship image-only attachments and require separate OCR/parsing before they can refresh this section.",
+    "metricDefinitions": {
+      "percentOfViewers": "Title unique viewers divided by total Roku live-channel unique viewers. Rows do not sum to 100% \u2014 a viewer can watch multiple titles.",
+      "avgSessionHours": "Streaming hours divided by streaming starts, in hours. Measures Roku live-channel session depth, not ElectricNOW in-app session time."
+    },
+    "latestWeek": {
+      "weekStart": "2026-05-18",
+      "label": "Week of May 18, 2026",
+      "rows": [
+        {
+          "title": "Leverage: Redemption",
+          "percentOfViewers": 53.35,
+          "avgSessionHours": 0.58
+        },
+        {
+          "title": "Leverage",
+          "percentOfViewers": 41.68,
+          "avgSessionHours": 0.53
+        },
+        {
+          "title": "The Librarians",
+          "percentOfViewers": 32.57,
+          "avgSessionHours": 0.46
+        },
+        {
+          "title": "The Paradise",
+          "percentOfViewers": 19.66,
+          "avgSessionHours": 0.58
+        },
+        {
+          "title": "Lionheart",
+          "percentOfViewers": 12.32,
+          "avgSessionHours": 0.47
+        },
+        {
+          "title": "The Ark",
+          "percentOfViewers": 10.4,
+          "avgSessionHours": 0.43
+        },
+        {
+          "title": "The Outpost",
+          "percentOfViewers": 5.98,
+          "avgSessionHours": 0.53
+        },
+        {
+          "title": "Wizards vs Aliens",
+          "percentOfViewers": 5.06,
+          "avgSessionHours": 0.36
+        },
+        {
+          "title": "The Poly Couple",
+          "percentOfViewers": 4.89,
+          "avgSessionHours": 0.34
+        }
+      ]
+    },
+    "priorWeeks": [
+      {
+        "weekStart": "2026-05-11",
+        "label": "Week of May 11, 2026",
+        "rows": [
+          {
+            "title": "Leverage",
+            "percentOfViewers": 51.94,
+            "avgSessionHours": 0.58
+          },
+          {
+            "title": "The Librarians",
+            "percentOfViewers": 43.71,
+            "avgSessionHours": 0.5
+          },
+          {
+            "title": "Leverage: Redemption",
+            "percentOfViewers": 31.59,
+            "avgSessionHours": 0.53
+          },
+          {
+            "title": "The Paradise",
+            "percentOfViewers": 18.46,
+            "avgSessionHours": 0.58
+          },
+          {
+            "title": "White Sky",
+            "percentOfViewers": 10.6,
+            "avgSessionHours": 0.42
+          },
+          {
+            "title": "The Ark",
+            "percentOfViewers": 10.06,
+            "avgSessionHours": 0.45
+          },
+          {
+            "title": "The Librarian: Return to King Solomon's Mines",
+            "percentOfViewers": 6.79,
+            "avgSessionHours": 0.56
+          },
+          {
+            "title": "The Outpost",
+            "percentOfViewers": 6.26,
+            "avgSessionHours": 0.55
+          },
+          {
+            "title": "The Poly Couple",
+            "percentOfViewers": 4.75,
+            "avgSessionHours": 0.38
+          }
+        ]
+      },
+      {
+        "weekStart": "2026-05-04",
+        "label": "Week of May 4, 2026",
+        "rows": [
+          {
+            "title": "Leverage",
+            "percentOfViewers": 51.35,
+            "avgSessionHours": 0.57
+          },
+          {
+            "title": "The Librarians",
+            "percentOfViewers": 43.99,
+            "avgSessionHours": 0.48
+          },
+          {
+            "title": "Leverage: Redemption",
+            "percentOfViewers": 31.26,
+            "avgSessionHours": 0.53
+          },
+          {
+            "title": "The Paradise",
+            "percentOfViewers": 17.93,
+            "avgSessionHours": 0.58
+          },
+          {
+            "title": "Jules Verne's Mysterious Island",
+            "percentOfViewers": 11.51,
+            "avgSessionHours": 0.46
+          },
+          {
+            "title": "The Ark",
+            "percentOfViewers": 10.53,
+            "avgSessionHours": 0.45
+          },
+          {
+            "title": "The Librarian: Return to King Solomon's Mines",
+            "percentOfViewers": 6.72,
+            "avgSessionHours": 0.55
+          },
+          {
+            "title": "The Outpost",
+            "percentOfViewers": 5.98,
+            "avgSessionHours": 0.53
+          },
+          {
+            "title": "Wizards vs Aliens",
+            "percentOfViewers": 5.24,
+            "avgSessionHours": 0.36
+          },
+          {
+            "title": "The Poly Couple",
+            "percentOfViewers": 4.7,
+            "avgSessionHours": 0.37
+          }
+        ]
+      },
+      {
+        "weekStart": "2026-04-27",
+        "label": "Week of Apr 27, 2026",
+        "rows": [
+          {
+            "title": "Leverage",
+            "percentOfViewers": 52.46,
+            "avgSessionHours": 0.58
+          },
+          {
+            "title": "The Librarians",
+            "percentOfViewers": 44.81,
+            "avgSessionHours": 0.48
+          },
+          {
+            "title": "Leverage: Redemption",
+            "percentOfViewers": 31.71,
+            "avgSessionHours": 0.52
+          },
+          {
+            "title": "The Paradise",
+            "percentOfViewers": 14.99,
+            "avgSessionHours": 0.51
+          },
+          {
+            "title": "The Ark",
+            "percentOfViewers": 10.45,
+            "avgSessionHours": 0.43
+          },
+          {
+            "title": "A Remarkable Life",
+            "percentOfViewers": 8.31,
+            "avgSessionHours": 0.49
+          },
+          {
+            "title": "The Librarian: Return to King Solomon's Mines",
+            "percentOfViewers": 7.08,
+            "avgSessionHours": 0.53
+          },
+          {
+            "title": "The Outpost",
+            "percentOfViewers": 6.04,
+            "avgSessionHours": 0.52
+          },
+          {
+            "title": "Jules Verne's Mysterious Island",
+            "percentOfViewers": 5.81,
+            "avgSessionHours": 0.76
+          },
+          {
+            "title": "The Poly Couple",
+            "percentOfViewers": 4.57,
+            "avgSessionHours": 0.36
+          }
+        ]
+      }
+    ],
+    "monthApril2026": {
+      "label": "April 2026 (last complete month)",
+      "rows": [
+        {
+          "title": "The Librarians",
+          "percentOfViewers": 59.74,
+          "avgSessionHours": 0.51
+        },
+        {
+          "title": "Leverage",
+          "percentOfViewers": 49.72,
+          "avgSessionHours": 0.59
+        },
+        {
+          "title": "Leverage: Redemption",
+          "percentOfViewers": 29.87,
+          "avgSessionHours": 0.52
+        },
+        {
+          "title": "The Paradise",
+          "percentOfViewers": 17.82,
+          "avgSessionHours": 0.56
+        },
+        {
+          "title": "The Outpost",
+          "percentOfViewers": 8.76,
+          "avgSessionHours": 0.52
+        },
+        {
+          "title": "The Ark",
+          "percentOfViewers": 7.53,
+          "avgSessionHours": 0.42
+        },
+        {
+          "title": "Jules Verne's Mysterious Island",
+          "percentOfViewers": 4.74,
+          "avgSessionHours": 0.5
+        },
+        {
+          "title": "The Poly Couple",
+          "percentOfViewers": 4.41,
+          "avgSessionHours": 0.41
+        },
+        {
+          "title": "Undercover Grandpa",
+          "percentOfViewers": 4.14,
+          "avgSessionHours": 0.56
+        },
+        {
+          "title": "Flyboys",
+          "percentOfViewers": 4.08,
+          "avgSessionHours": 0.49
+        }
+      ]
+    },
+    "quarterQ12026": {
+      "label": "Q1 2026 (last complete quarter)",
+      "rows": [
+        {
+          "title": "Leverage",
+          "percentOfViewers": 57.22,
+          "avgSessionHours": 0.55
+        },
+        {
+          "title": "The Librarians",
+          "percentOfViewers": 55.79,
+          "avgSessionHours": 0.46
+        },
+        {
+          "title": "Leverage: Redemption",
+          "percentOfViewers": 31.93,
+          "avgSessionHours": 0.51
+        },
+        {
+          "title": "The Paradise",
+          "percentOfViewers": 20.79,
+          "avgSessionHours": 0.54
+        },
+        {
+          "title": "The Outpost",
+          "percentOfViewers": 11.23,
+          "avgSessionHours": 0.46
+        },
+        {
+          "title": "Sir Arthur Conan Doyle's The Lost World",
+          "percentOfViewers": 5.46,
+          "avgSessionHours": 0.44
+        },
+        {
+          "title": "The Tribe",
+          "percentOfViewers": 4.72,
+          "avgSessionHours": 0.45
+        },
+        {
+          "title": "The Librarian: Return to King Solomon's Mines",
+          "percentOfViewers": 4.61,
+          "avgSessionHours": 0.5
+        },
+        {
+          "title": "The Librarian: Curse of the Judas Chalice",
+          "percentOfViewers": 4.56,
+          "avgSessionHours": 0.51
+        },
+        {
+          "title": "The Librarian: Quest for the Spear",
+          "percentOfViewers": 4.33,
+          "avgSessionHours": 0.56
+        }
+      ]
+    }
   }
 }
