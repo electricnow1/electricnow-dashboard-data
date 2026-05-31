@@ -2151,7 +2151,7 @@
       "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from the latest Roku email report, and a manual Apple App Store screenshot snapshot. It is still not total ElectricNOW sales because Google Play purchases are handled separately and Apple is not yet API-connected.",
       "stripe": {
         "sourceLabel": "Stripe-visible payments",
-        "sourceDetail": "Stripe-visible sales are shown from the last successful pull. Latest live Stripe refresh failed: {\"error\": \"auth_required\", \"auth_url\": \"https://www.perplexity.ai/rest/connector-service/auth/oauth-redirect?source_id=stripe&email=xfdnwq7t6c%40privaterelay.appleid.com\", \"source_id\": \"stripe\"}\n",
+        "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected 2026-05-31; the connector returned 21 succeeded 2026 charges totaling $439.79. The increase over the prior visible 13/$189.87 is historical 2026 charges that became visible after reconnection, not new same-day sales. Apple App Store and Google Play purchases are handled separately.",
         "baselineWindow": {
           "label": "Stripe launch baseline",
           "range": "Apr 13-Apr 19, 2026",
@@ -2164,10 +2164,10 @@
         },
         "yearToDate": {
           "label": "Sales this year",
-          "range": "Jan 1-May 28, 2026",
-          "purchases": 13,
-          "purchaseRevenue": 189.87,
-          "revenuePerPurchase": 14.61,
+          "range": "Jan 1-May 31, 2026",
+          "purchases": 21,
+          "purchaseRevenue": 439.79,
+          "revenuePerPurchase": 20.94,
           "deltaPurchasesPct": null,
           "deltaRevenuePct": null,
           "payments": [
@@ -2308,16 +2308,16 @@
           ]
         },
         "lifetimeObserved": {
-          "range": "Through May 28, 2026 pull",
-          "purchases": 13,
-          "purchaseRevenue": 189.87,
-          "revenuePerPurchase": 14.61
+          "range": "Through May 31, 2026 reconnect pull",
+          "purchases": 21,
+          "purchaseRevenue": 439.79,
+          "revenuePerPurchase": 20.94
         },
         "mix": [
           {
             "label": "Title purchases",
-            "purchases": 12,
-            "purchaseRevenue": 179.88
+            "purchases": 20,
+            "purchaseRevenue": 429.8
           },
           {
             "label": "Bundle purchases",
@@ -2414,6 +2414,62 @@
             "createdAt": "2026-04-16 14:35 PDT",
             "amount": 14.99,
             "description": "Customer User - Purchase this title: Signup payment"
+          },
+          {
+            "id": "ch_3TKta2LG0Cw1zW4e2jEPD9iR",
+            "date": "Apr 10",
+            "createdAt": "2026-04-10 21:55 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3TBhVMLG0Cw1zW4e1sOFxVJX",
+            "date": "Mar 16",
+            "createdAt": "2026-03-16 13:12 PDT",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3T45wBLG0Cw1zW4e1ah1kA3Y",
+            "date": "Feb 23",
+            "createdAt": "2026-02-23 12:41 PST",
+            "amount": 29.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3T0YwGLG0Cw1zW4e1qfmMfux",
+            "date": "Feb 13",
+            "createdAt": "2026-02-13 18:50 PST",
+            "amount": 29.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3SrEfALG0Cw1zW4e1KiLmfkZ",
+            "date": "Jan 19",
+            "createdAt": "2026-01-19 01:22 PST",
+            "amount": 19.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3SpJQfLG0Cw1zW4e0l6Kw2Ea",
+            "date": "Jan 13",
+            "createdAt": "2026-01-13 18:03 PST",
+            "amount": 29.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3SlCjkLG0Cw1zW4e1MP1Uus6",
+            "date": "Jan 2",
+            "createdAt": "2026-01-02 10:06 PST",
+            "amount": 89.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
+          },
+          {
+            "id": "ch_3Skt4xLG0Cw1zW4e1Yu98Lrf",
+            "date": "Jan 1",
+            "createdAt": "2026-01-01 13:06 PST",
+            "amount": 19.99,
+            "description": "Customer User - Purchase this title: Signup payment (historical, visible after Stripe reconnect)"
           }
         ],
         "dailyTrend": [
@@ -2694,7 +2750,7 @@
             "purchaseRevenue": 0
           }
         ],
-        "note": "Stripe-visible sales show 13 payments and $189.87 year to date, 3 payments and $44.97 this month, 0 payments and $0.00 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
+        "note": "Stripe-visible sales show 21 payments and $439.79 year to date (includes 8 historical 2026 charges visible after the 2026-05-31 reconnect), 3 payments and $44.97 this month, 0 payments and $0.00 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
       },
       "roku": {
         "sourceLabel": "Roku-visible sales",
@@ -3596,10 +3652,10 @@
       "sourceBreakout": [
         {
           "source": "Stripe",
-          "purchases": 13,
-          "purchaseRevenue": 189.87,
+          "purchases": 21,
+          "purchaseRevenue": 439.79,
           "developerRevShare": 0.0,
-          "detail": "Stripe-visible sales are shown from the last successful pull. Latest live Stripe refresh failed: {\"error\": \"auth_required\", \"auth_url\": \"https://www.perplexity.ai/rest/connector-service/auth/oauth-redirect?source_id=stripe&email=xfdnwq7t6c%40privaterelay.appleid.com\", \"source_id\": \"stripe\"}\n"
+          "detail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected 2026-05-31; the connector returned 21 succeeded 2026 charges totaling $439.79. The increase over the prior visible 13/$189.87 is historical 2026 charges that became visible after reconnection, not new same-day sales. Apple App Store and Google Play purchases are handled separately."
         },
         {
           "source": "Roku",
@@ -3635,10 +3691,10 @@
       "yearToDate": {
         "label": "Sales this year",
         "range": "Jan 1-May 31, 2026",
-        "purchases": 35,
-        "purchaseRevenue": 556.65,
+        "purchases": 43,
+        "purchaseRevenue": 806.57,
         "developerRevShare": 277.4,
-        "revenuePerPurchase": 15.9,
+        "revenuePerPurchase": 18.76,
         "payments": [
           {
             "date": "May 17",
@@ -3857,10 +3913,10 @@
       "lifetimeObserved": {
         "label": "Sales this year",
         "range": "Jan 1-May 31, 2026",
-        "purchases": 35,
-        "purchaseRevenue": 556.65,
+        "purchases": 43,
+        "purchaseRevenue": 806.57,
         "developerRevShare": 277.4,
-        "revenuePerPurchase": 15.9,
+        "revenuePerPurchase": 18.76,
         "payments": [
           {
             "date": "May 17",
@@ -4408,7 +4464,7 @@
           "developerRevShare": 0.0
         }
       ],
-      "note": "Visible platform sales show 35 purchases and $556.65 year to date, including the manual Apple App Store snapshot. Apple gross sales in the snapshot are $159.92, with estimated net-to-Electric of $111.94 after Apple’s 30% platform fee. Add Google Play reports before treating this as total sales."
+      "note": "Visible platform sales show 43 purchases and $806.57 year to date, including 8 historical Stripe charges that became visible after the 2026-05-31 reconnect and the manual Apple App Store snapshot. Apple gross sales in the snapshot are $159.92, with estimated net-to-Electric of $111.94 after Apple's 30% platform fee. Add Google Play reports before treating this as total sales."
     },
     "contentUsage": {
       "period": "May 24-May 30, 2026",
