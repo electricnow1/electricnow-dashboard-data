@@ -7972,15 +7972,16 @@
       .join('');
   }
 
-  function usageStat(label, value, detail = '') {
+  function usageStat(label, value, detail = '', exactTitle = '') {
     // If callers already formatted the value (e.g. a minutes/percent string),
     // render it as-is. Only run fmt.number on raw numeric inputs so we never
     // double-format and accidentally produce "NaN".
     const display = typeof value === 'string' ? (value || NOT_AVAILABLE) : fmt.number(value);
+    const titleAttr = exactTitle ? ` title="${escapeHtml(String(exactTitle))}"` : '';
     return `
       <article class="usage-stat">
         <span>${label}</span>
-        <strong>${display}</strong>
+        <strong${titleAttr}>${display}</strong>
         ${detail ? `<em>${detail}</em>` : ''}
       </article>
     `;
@@ -8653,16 +8654,36 @@
     }
     const deltas = summary.deltas || {};
 
+    // fmt.number abbreviates large counts (e.g. 250,366 -> "250K"), so surface the
+    // exact email value in a sublabel and a hover tooltip to keep it visible.
+    function exactInt(value) {
+      const n = toFiniteNumber(value);
+      return n === null ? null : Math.round(n).toLocaleString();
+    }
+    function countDetail(deltaPct, exact, fallback) {
+      const d = deltaLabel(deltaPct);
+      const exactPart = exact ? 'Exact: ' + exact : '';
+      if (d && exactPart) return d + ' · ' + exactPart;
+      return d || exactPart || fallback;
+    }
+
+    const blendedCost = toFiniteNumber(summary.costPerDownload);
+    const ctr = toFiniteNumber(summary.ctrPct);
+    const ctrDisplay = ctr === null ? NOT_AVAILABLE : ctr.toFixed(2) + '%';
+    const blendedDisplay = blendedCost === null ? NOT_AVAILABLE : '$' + blendedCost.toFixed(2);
+
     const kpiCards = [
       usageStat('Meta spend', fmt.currency(summary.spend), deltaLabel(deltas.spendPct) || 'Total Meta paid spend for the period'),
-      usageStat('Impressions', fmt.number(summary.impressions), deltaLabel(deltas.impressionsPct) || 'Meta platform impressions (NOT in-app ad impressions)'),
-      usageStat('Link clicks', fmt.number(summary.linkClicks), deltaLabel(deltas.linkClicksPct) || 'Clicks to the App Store / Play Store from Meta ads'),
+      usageStat('Impressions', fmt.number(summary.impressions), countDetail(deltas.impressionsPct, exactInt(summary.impressions), 'Meta platform impressions (NOT in-app ad impressions)'), exactInt(summary.impressions) ? 'Exact impressions: ' + exactInt(summary.impressions) : ''),
+      usageStat('Link clicks', fmt.number(summary.linkClicks), countDetail(deltas.linkClicksPct, exactInt(summary.linkClicks), 'Clicks to the App Store / Play Store from Meta ads'), exactInt(summary.linkClicks) ? 'Exact link clicks: ' + exactInt(summary.linkClicks) : ''),
       usageStat('Cost / click', fmt.currency(summary.costPerClick), deltaLabel(deltas.costPerClickPct) || 'Average Meta cost per link click'),
-      usageStat('iOS downloads', fmt.number(summary.iosDownloads), deltaLabel(deltas.iosDownloadsPct) || 'App Store installs attributed to Meta'),
+      usageStat('CTR', ctrDisplay, 'Click-through rate (link clicks ÷ impressions), per Meta report', ctr === null ? '' : 'CTR ' + ctr.toFixed(2) + '%'),
+      usageStat('iOS downloads', fmt.number(summary.iosDownloads), countDetail(deltas.iosDownloadsPct, exactInt(summary.iosDownloads), 'App Store installs attributed to Meta'), exactInt(summary.iosDownloads) ? 'Exact iOS downloads: ' + exactInt(summary.iosDownloads) : ''),
       usageStat('Cost / iOS download', fmt.currency(summary.costPerIosDownload), deltaLabel(deltas.costPerIosDownloadPct) || 'Meta spend divided by iOS downloads'),
-      usageStat('Android downloads', fmt.number(summary.androidDownloads), deltaLabel(deltas.androidDownloadsPct) || 'Play Store installs attributed to Meta'),
+      usageStat('Android downloads', fmt.number(summary.androidDownloads), countDetail(deltas.androidDownloadsPct, exactInt(summary.androidDownloads), 'Play Store installs attributed to Meta'), exactInt(summary.androidDownloads) ? 'Exact Android downloads: ' + exactInt(summary.androidDownloads) : ''),
       usageStat('Cost / Android download', fmt.currency(summary.costPerAndroidDownload), deltaLabel(deltas.costPerAndroidDownloadPct) || 'Meta spend divided by Android downloads'),
-      usageStat('Total downloads', fmt.number(summary.totalDownloads), 'iOS + Android downloads attributed to Meta'),
+      usageStat('Total downloads', fmt.number(summary.totalDownloads), exactInt(summary.totalDownloads) ? 'iOS + Android attributed to Meta · Exact: ' + exactInt(summary.totalDownloads) : 'iOS + Android downloads attributed to Meta', exactInt(summary.totalDownloads) ? 'Exact total downloads: ' + exactInt(summary.totalDownloads) : ''),
+      usageStat('Cost / download', blendedDisplay, 'Blended Meta cost per download (spend ÷ total downloads)', blendedCost === null ? '' : 'Blended cost per download $' + blendedCost.toFixed(4)),
     ];
     const kpisEl = $('#meta-ads-kpis');
     if (kpisEl) kpisEl.innerHTML = kpiCards.join('');
