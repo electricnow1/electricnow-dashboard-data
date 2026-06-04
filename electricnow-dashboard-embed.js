@@ -4778,17 +4778,6 @@
         },
         {
           "rank": 12,
-          "program": "BEST (Black Enterprise Streaming Television)",
-          "plays": 191,
-          "activeUsers": 30,
-          "viewerMethod": "deduped_ga4_filter",
-          "rawLabelCount": 1,
-          "examples": [
-            "HITS MEXICANOS"
-          ]
-        },
-        {
-          "rank": 13,
           "program": "The Librarians: The Next Chapter Season 2 Teaser",
           "plays": 154,
           "activeUsers": 17,
@@ -4797,7 +4786,7 @@
           "examples": []
         },
         {
-          "rank": 14,
+          "rank": 13,
           "program": "Exile",
           "plays": 149,
           "activeUsers": 20,
@@ -4806,7 +4795,7 @@
           "examples": []
         },
         {
-          "rank": 15,
+          "rank": 14,
           "program": "Alone",
           "plays": 136,
           "activeUsers": 4,
@@ -4815,36 +4804,7 @@
           "examples": []
         },
         {
-          "rank": 16,
-          "program": "Box Gamers",
-          "plays": 123,
-          "activeUsers": 32,
-          "viewerMethod": "deduped_ga4_filter",
-          "rawLabelCount": 1,
-          "examples": []
-        },
-        {
-          "rank": 17,
-          "program": "FightTVPlus",
-          "plays": 119,
-          "activeUsers": 47,
-          "viewerMethod": "deduped_ga4_filter",
-          "rawLabelCount": 1,
-          "examples": [
-            "The Future of Law Enforcement"
-          ]
-        },
-        {
-          "rank": 18,
-          "program": "HIP HOP TV",
-          "plays": 115,
-          "activeUsers": 48,
-          "viewerMethod": "deduped_ga4_filter",
-          "rawLabelCount": 1,
-          "examples": []
-        },
-        {
-          "rank": 19,
+          "rank": 15,
           "program": "Checking Out: The Librarians Next Chapter",
           "plays": 115,
           "activeUsers": 19,
@@ -4857,25 +4817,7 @@
           ]
         },
         {
-          "rank": 20,
-          "program": "Nigbati TV",
-          "plays": 113,
-          "activeUsers": 30,
-          "viewerMethod": "deduped_ga4_filter",
-          "rawLabelCount": 1,
-          "examples": []
-        },
-        {
-          "rank": 21,
-          "program": "Blackway",
-          "plays": 108,
-          "activeUsers": 8,
-          "viewerMethod": "deduped_ga4_filter",
-          "rawLabelCount": 1,
-          "examples": []
-        },
-        {
-          "rank": 22,
+          "rank": 16,
           "program": "Daughter of the Wolf",
           "plays": 107,
           "activeUsers": 14,
@@ -4884,7 +4826,7 @@
           "examples": []
         },
         {
-          "rank": 23,
+          "rank": 17,
           "program": "Flyboys",
           "plays": 107,
           "activeUsers": 14,
@@ -4895,7 +4837,7 @@
           ]
         },
         {
-          "rank": 24,
+          "rank": 18,
           "program": "24 Seven",
           "plays": 105,
           "activeUsers": 19,
@@ -4906,7 +4848,7 @@
           ]
         },
         {
-          "rank": 25,
+          "rank": 19,
           "program": "Box Playlist",
           "plays": 102,
           "activeUsers": 29,
@@ -4915,7 +4857,7 @@
           "examples": []
         },
         {
-          "rank": 26,
+          "rank": 20,
           "program": "The Librarians Cinemascope Movie",
           "plays": 102,
           "activeUsers": 7,
@@ -4924,7 +4866,7 @@
           "examples": []
         },
         {
-          "rank": 27,
+          "rank": 21,
           "program": "A Living Dog",
           "plays": 101,
           "activeUsers": 4,
@@ -4933,7 +4875,7 @@
           "examples": []
         },
         {
-          "rank": 28,
+          "rank": 22,
           "program": "Like A Country Song",
           "plays": 100,
           "activeUsers": 5,
@@ -4942,7 +4884,7 @@
           "examples": []
         },
         {
-          "rank": 29,
+          "rank": 23,
           "program": "The Triangle Night 1",
           "plays": 99,
           "activeUsers": 6,
@@ -4951,7 +4893,7 @@
           "examples": []
         },
         {
-          "rank": 30,
+          "rank": 24,
           "program": "Black Fly",
           "plays": 98,
           "activeUsers": 4,
@@ -4960,7 +4902,7 @@
           "examples": []
         },
         {
-          "rank": 31,
+          "rank": 25,
           "program": "Generation Z",
           "plays": 93,
           "activeUsers": 9,
@@ -4973,7 +4915,7 @@
           ]
         },
         {
-          "rank": 32,
+          "rank": 26,
           "program": "The Humanity Bureau",
           "plays": 91,
           "activeUsers": 6,
@@ -4982,7 +4924,7 @@
           "examples": []
         },
         {
-          "rank": 33,
+          "rank": 27,
           "program": "The Librarian: Curse of the Judas Chalice",
           "plays": 89,
           "activeUsers": 5,
@@ -4991,7 +4933,7 @@
           "examples": []
         },
         {
-          "rank": 34,
+          "rank": 28,
           "program": "Betty Boop",
           "plays": 88,
           "activeUsers": 6,
@@ -5004,7 +4946,7 @@
           ]
         },
         {
-          "rank": 35,
+          "rank": 29,
           "program": "A Christmas Carol",
           "plays": 86,
           "activeUsers": 9,
@@ -5013,7 +4955,7 @@
           "examples": []
         },
         {
-          "rank": 36,
+          "rank": 30,
           "program": "2nd Serve",
           "plays": 85,
           "activeUsers": 6,
@@ -5022,7 +4964,7 @@
           "examples": []
         },
         {
-          "rank": 37,
+          "rank": 31,
           "program": "OmegaBall",
           "plays": 83,
           "activeUsers": 28,
@@ -5031,7 +4973,7 @@
           "examples": []
         },
         {
-          "rank": 38,
+          "rank": 32,
           "program": "The Triangle Mini-Series",
           "plays": 83,
           "activeUsers": 5,
@@ -5044,7 +4986,7 @@
           ]
         },
         {
-          "rank": 39,
+          "rank": 33,
           "program": "Black Wake",
           "plays": 80,
           "activeUsers": 9,
@@ -5055,7 +4997,7 @@
           ]
         },
         {
-          "rank": 40,
+          "rank": 34,
           "program": "Bad Samaritan",
           "plays": 79,
           "activeUsers": 10,
@@ -5066,7 +5008,7 @@
           ]
         },
         {
-          "rank": 41,
+          "rank": 35,
           "program": "The Librarian: Quest for the Spear",
           "plays": 77,
           "activeUsers": 3,
@@ -5075,7 +5017,7 @@
           "examples": []
         },
         {
-          "rank": 42,
+          "rank": 36,
           "program": "Americana Television",
           "plays": 76,
           "activeUsers": 29,
@@ -5084,7 +5026,7 @@
           "examples": []
         },
         {
-          "rank": 43,
+          "rank": 37,
           "program": "LBJ",
           "plays": 71,
           "activeUsers": 2,
@@ -5093,7 +5035,7 @@
           "examples": []
         },
         {
-          "rank": 44,
+          "rank": 38,
           "program": "RoboCop (The Series)",
           "plays": 70,
           "activeUsers": 22,
@@ -5106,7 +5048,7 @@
           ]
         },
         {
-          "rank": 45,
+          "rank": 39,
           "program": "Mythica: A Quest for Heroes",
           "plays": 69,
           "activeUsers": 7,
@@ -5115,7 +5057,7 @@
           "examples": []
         },
         {
-          "rank": 46,
+          "rank": 40,
           "program": "Bonded In Blood",
           "plays": 68,
           "activeUsers": 2,
@@ -5124,7 +5066,7 @@
           "examples": []
         },
         {
-          "rank": 47,
+          "rank": 41,
           "program": "Wizards vs. Aliens",
           "plays": 67,
           "activeUsers": 9,
@@ -5137,7 +5079,7 @@
           ]
         },
         {
-          "rank": 48,
+          "rank": 42,
           "program": "The Librarian: Return to King Solomon's Mines",
           "plays": 66,
           "activeUsers": 3,
@@ -5146,7 +5088,7 @@
           "examples": []
         },
         {
-          "rank": 49,
+          "rank": 43,
           "program": "Murder on the Cape",
           "plays": 60,
           "activeUsers": 3,
@@ -5370,139 +5312,132 @@
         },
         {
           "rank": 31,
-          "title": "BEST (Black Enterprise Streaming Television)",
-          "plays": 191,
-          "activeUsers": 30,
-          "group": "HITS MEXICANOS"
-        },
-        {
-          "rank": 32,
           "title": "Kill or Be Killed",
           "plays": 191,
           "activeUsers": 6,
           "group": "The Ark"
         },
         {
-          "rank": 33,
+          "rank": 32,
           "title": "The Painful Way",
           "plays": 191,
           "activeUsers": 8,
           "group": "The Ark"
         },
         {
-          "rank": 34,
+          "rank": 33,
           "title": "The Pyramid Job",
           "plays": 187,
           "activeUsers": 3,
           "group": "Leverage: Redemption"
         },
         {
-          "rank": 35,
+          "rank": 34,
           "title": "Reef Eel Soup for the Soul",
           "plays": 182,
           "activeUsers": 13,
           "group": "Almost Paradise"
         },
         {
-          "rank": 36,
+          "rank": 35,
           "title": "The Miracle Job",
           "plays": 182,
           "activeUsers": 12,
           "group": "Leverage"
         },
         {
-          "rank": 37,
+          "rank": 36,
           "title": "The Bank Shot Job",
           "plays": 175,
           "activeUsers": 9,
           "group": "Leverage"
         },
         {
-          "rank": 38,
+          "rank": 37,
           "title": "It's Personal",
           "plays": 169,
           "activeUsers": 14,
           "group": "Almost Paradise"
         },
         {
-          "rank": 39,
+          "rank": 38,
           "title": "The Last Thing You Ever Do",
           "plays": 160,
           "activeUsers": 8,
           "group": "The Ark"
         },
         {
-          "rank": 40,
+          "rank": 39,
           "title": "And the Sword in the Stone",
           "plays": 159,
           "activeUsers": 7,
           "group": "The Librarians"
         },
         {
-          "rank": 41,
+          "rank": 40,
           "title": "So This Is How Polyamory Happens",
           "plays": 157,
           "activeUsers": 47,
           "group": "The Poly Couple"
         },
         {
-          "rank": 42,
+          "rank": 41,
           "title": "Pistol Whip",
           "plays": 156,
           "activeUsers": 12,
           "group": "Almost Paradise"
         },
         {
-          "rank": 43,
+          "rank": 42,
           "title": "Unbecalming",
           "plays": 156,
           "activeUsers": 14,
           "group": "Almost Paradise"
         },
         {
-          "rank": 44,
+          "rank": 43,
           "title": "Everybody Wins",
           "plays": 155,
           "activeUsers": 11,
           "group": "The Ark"
         },
         {
-          "rank": 45,
+          "rank": 44,
           "title": "The Librarians: The Next Chapter Season 2 Teaser",
           "plays": 154,
           "activeUsers": 17,
           "group": "The Librarians: The Next Chapter"
         },
         {
-          "rank": 46,
+          "rank": 45,
           "title": "Every Single Person Matters",
           "plays": 153,
           "activeUsers": 7,
           "group": "The Ark"
         },
         {
-          "rank": 47,
+          "rank": 46,
           "title": "Exile",
           "plays": 149,
           "activeUsers": 20,
           "group": ""
         },
         {
-          "rank": 48,
+          "rank": 47,
           "title": "A Slow Death Is Worse",
           "plays": 143,
           "activeUsers": 7,
           "group": "The Ark"
         },
         {
-          "rank": 49,
+          "rank": 48,
           "title": "The Mile High Job",
           "plays": 140,
           "activeUsers": 6,
           "group": "Leverage"
         },
         {
-          "rank": 50,
+          "rank": 49,
           "title": "Alone",
           "plays": 136,
           "activeUsers": 4,
@@ -5632,30 +5567,24 @@
         },
         {
           "rank": 21,
-          "title": "BEST (Black Enterprise Streaming Television)",
-          "plays": 191,
-          "activeUsers": 30
-        },
-        {
-          "rank": 22,
           "title": "Leverage - Season 5",
           "plays": 181,
           "activeUsers": 1
         },
         {
-          "rank": 23,
+          "rank": 22,
           "title": "The Poly Couple (Season 1)",
           "plays": 156,
           "activeUsers": 54
         },
         {
-          "rank": 24,
+          "rank": 23,
           "title": "Leverage - Season 3",
           "plays": 153,
           "activeUsers": 1
         },
         {
-          "rank": 25,
+          "rank": 24,
           "title": "Exile",
           "plays": 149,
           "activeUsers": 20
