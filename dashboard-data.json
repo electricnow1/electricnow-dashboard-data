@@ -169,7 +169,7 @@
       "deltaVsPreviousPct": -6.88622754491018,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “landing” in the path."
+      "context": "Users reaching pages with \u201clanding\u201d in the path."
     },
     {
       "key": "devicesPageUsers",
@@ -183,7 +183,7 @@
       "deltaVsPreviousPct": -27.218934911242602,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “devices” in the path."
+      "context": "Users reaching pages with \u201cdevices\u201d in the path."
     },
     {
       "key": "paidSocialUsers",
@@ -2112,15 +2112,15 @@
     "engagementRateWeekToDate": 93.5336048879837
   },
   "plainEnglishInsights": [
-    "Overall, ElectricNOW’s latest complete week (May 25-May 31, 2026) shows a measured platform audience of 7,757 GA4 active users excluding landing-page acquisition, up +1.1% from the prior week. Viewing-event users and engaged hours also moved up slightly, so the late-night GA4 refresh still points to modest growth rather than a drop, but engagement rate remains a little softer than the prior week.",
+    "Overall, ElectricNOW\u2019s latest complete week (May 25-May 31, 2026) shows a measured platform audience of 7,757 GA4 active users excluding landing-page acquisition, up +1.1% from the prior week. Viewing-event users and engaged hours also moved up slightly, so the late-night GA4 refresh still points to modest growth rather than a drop, but engagement rate remains a little softer than the prior week.",
     "Late GA4 fill-in was small but real: property-wide sessions are now 14,484, engaged sessions 11,527, page/screen views 29,296, and events 1,003,933. Compared with the 12:47 PM pull, that added 6 sessions, 3 engaged sessions, 7 views, and 87 events.",
     "Landing-page traffic remains acquisition-only. The platform-audience number above excludes the landing page; property-wide GA4 active users including acquisition context were 7,824 this week versus 7,742 the prior week.",
     "Viewing behavior improved slightly: viewing-event users were 2,734, up +2.2% week over week; on-demand start users were 2,598, and live-channel viewers were 156. Total engaged hours were 5,407, up +2.9%.",
-    "Paid acquisition - simple read: the ads remain promising and cost per install is acceptable, but we still need proof that paid installs become durable viewers. Meta spent $3,146.72 from May 24-May 30 and drove 3,259 reported downloads at about $0.97 blended CPI. Android remains cheaper than iOS in the Meta report.",
+    "Paid acquisition - simple read: Meta remains promising but got a little less efficient in the May 31-Jun 6 report. Nathan/Forge One reported $3,128.73 of Meta spend, 248,978 paid-campaign impressions, 7,970 link clicks, and 2,997 downloads at about $1.04 blended cost per download. Android remains cheaper ($0.89/download) than iOS ($1.34/download), but both platform CPIs worsened versus the prior report, so the next priority is proving these installs become actual viewers before scaling spend.",
     "Google Ads remains marked stale for this refresh because the connector was rate-limited earlier today; the dashboard preserves the last successful pull through 2026-05-26 rather than zeroing it out. Treat Google Ads as directional until the next successful connector pull.",
-    "Apple App Store Connect now adds manual download context: Free iOS/watchOS/tvOS downloads were 3,102 for May 18-May 31, 2026, up 51.1%, with a daily average of 222. This is downloads only; it is not Apple sales and it is not counted as GA4 active users.",
+    "Apple App Store Connect manual download context was updated from the user screenshots: Free iOS/watchOS/tvOS downloads were 1,343 in the U.S. for May 31-Jun 6, 2026, with a daily average of 192. The separate five-week Apple snapshot shows 6,183 total downloads for Apr 27-May 31, up 353%. These are downloads only; they are not Apple sales and are not counted as GA4 active users.",
     "Visible platform sales remain preserved and audited at 43 purchases / $806.57 year to date across Stripe, Roku, and manual Apple sales snapshots. This is still not total ElectricNOW sales because Google Play sales are not connected and Apple sales are manual.",
-    "Bottom line: the later GA4 refresh does not change the story dramatically, but it slightly improves the week’s usage picture. ElectricNOW appears to be growing modestly, paid acquisition is efficient enough to keep testing, and the biggest priority remains proving that acquired users return, watch longer, and eventually monetize."
+    "Bottom line: the app/platform story is still cautiously positive, but paid acquisition is no longer improving cleanly. ElectricNOW is holding roughly steady on measured usage, Roku app engagement remains meaningful at 261 average daily viewers and 2,285 hours streamed for May 30-Jun 5, and Apple/Meta downloads show real acquisition volume; the key question remains how many of those paid downloads turn into repeat viewing."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
@@ -3630,7 +3630,7 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $159.92 gross in-app purchase sales manually entered so far, or approximately $111.94 after Apple’s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
+      "note": "Apple App Store screenshots show $159.92 gross in-app purchase sales manually entered so far, or approximately $111.94 after Apple\u2019s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
     },
     "sourceBreakout": [
       {
@@ -4516,7 +4516,7 @@
           "rank": 2
         },
         {
-          "title": "ElectricNOW en Español",
+          "title": "ElectricNOW en Espa\u00f1ol",
           "plays": 101,
           "activeUsers": 12,
           "rank": 3
@@ -4600,7 +4600,7 @@
   },
   "titleViewership": {
     "period": "May 24-May 30, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
+    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only \u2014 live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
       {
@@ -5925,7 +5925,7 @@
           "deltaVsPreviousPct": -6.88622754491018,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users reaching pages with “landing” in the path."
+          "context": "Users reaching pages with \u201clanding\u201d in the path."
         },
         {
           "key": "devicesPageUsers",
@@ -5939,7 +5939,7 @@
           "deltaVsPreviousPct": -27.218934911242602,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users reaching pages with “devices” in the path."
+          "context": "Users reaching pages with \u201cdevices\u201d in the path."
         },
         {
           "key": "paidSocialUsers",
@@ -6849,7 +6849,7 @@
       },
       {
         "section": "En Espanol",
-        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Español, Espanol, Spanish, or matching paths.",
+        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Espa\u00f1ol, Espanol, Spanish, or matching paths.",
         "activeUsers": 9,
         "sessions": 12,
         "engagedSessions": 11,
@@ -6913,29 +6913,32 @@
   "rokuAppEngagement": {
     "sourceLabel": "Roku App Engagement email report",
     "sourceDetail": "Roku app engagement is parsed from the latest Roku App Engagement PDF emailed from bdp_noreply@data.roku.com. It measures Roku app/channel-store usage and is shown separately from GA4 app/web metrics.",
-    "reportPeriod": "8 days ago for 7 days Time Grain is day",
+    "reportPeriod": "May 30-Jun 5, 2026",
+    "rawReportPeriod": "8 days ago for 7 days Time Grain is day",
     "channelStoreCode": "us",
-    "reportGenerated": "June 1, 2026 at 9:17 AM PDT",
+    "reportGenerated": "June 7, 2026 at 7:10 AM PDT",
     "dateLabels": [
-      "Sat May 24",
-      "Sun May 25",
-      "Mon May 26",
-      "Tue May 27",
-      "Wed May 28",
-      "Thu May 29",
-      "Fri May 30"
+      "Sat May 30",
+      "Sun May 31",
+      "Mon Jun 1",
+      "Tue Jun 2",
+      "Wed Jun 3",
+      "Thu Jun 4",
+      "Fri Jun 5"
     ],
     "metrics": {
-      "newInstalls": 267,
-      "uninstalls": 130,
-      "netInstalls": 137,
-      "cumulativeInstalls": 288133,
-      "avgDailyViewers": 269,
-      "avgMinPerViewer": 88.13,
-      "totalHoursStreamed": 2769
+      "newInstalls": 239,
+      "uninstalls": 138,
+      "netInstalls": 101,
+      "cumulativeInstalls": 288329,
+      "avgDailyViewers": 261,
+      "avgMinPerViewer": 74.91,
+      "totalHoursStreamed": 2285
     },
-    "reportEmailDate": "2026-06-01T16:18:14+00:00",
-    "attachmentFilename": "App_Engagement_2026-06-01T0917.pdf"
+    "reportEmailDate": "2026-06-07T14:11:13+00:00",
+    "emailId": "AAMkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOABGAAAAAABShmO_Im-FSr39rhn8M5bDBwC_fCtlQrq5QYDU71YzKgxQAD-2Prc8AADvKLV_nde7SYUl0H8b5z1dAAO1_RKfAAA=",
+    "attachmentFilename": "App_Engagement_2026-06-07T0711.pdf",
+    "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement."
   },
   "visitSummary": {
     "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
@@ -7268,6 +7271,19 @@
       "note": "Paid acquisition looks efficient on cost, but the growth signal is mixed: Google Ads spent $241.08 from May 12-May 26, 2026, generated 46,962 paid-campaign impressions, 1,458 clicks, and 443 Android first-open conversions at about $0.54 per first open. That cost per first open is strong for app acquisition, but platform audience was down 8.0% and viewing was down 2.7% in the latest GA4 week, so the ads appear good at buying installs/opens but we still need to watch whether those paid users convert into sustained viewers and time spent. Meta remains the bigger spend driver in the latest Nathan report (May 24-May 30) at $3,146.72 for 3,259 downloads (about $0.97 blended cost per download), with Android still cheaper than iOS; iOS cost per download improved to $1.23 while Android rose to $0.80, and impressions/link clicks softened (down 4.8% and 13.1%). The next question for Patrick/Nathan is whether the lower-cost Android volume produces real viewing quality.",
       "status": "STALE_RATE_LIMITED",
       "staleNote": "Google Ads connector rate-limited on 2026-06-01; last successful pull May 12-May 26, 2026. Values preserved (not zeroed) and marked stale."
+    },
+    "metaAds": {
+      "period": "May 31-Jun 6, 2026",
+      "spend": 3128.73,
+      "impressions": 248978,
+      "clicks": 7970,
+      "ctrPct": 3.2,
+      "downloads": 2997,
+      "costPerDownload": 1.044,
+      "iosDownloads": 1036,
+      "androidDownloads": 1961,
+      "source": "Nathan / Forge One Meta email report",
+      "note": "Meta paid acquisition for May 31-Jun 6 remains acceptable but less efficient than the prior week. Spend was essentially flat at $3,128.73 and the campaigns produced 2,997 reported downloads at about $1.04 blended cost per download. Android is still the stronger efficiency story: 1,961 Android downloads at $0.89 each, while iOS delivered 1,036 downloads at $1.34 each. The concern is that both iOS volume and cost moved the wrong way: iOS downloads fell 17.9% and cost per iOS download rose 7.4%; Android volume was basically flat but cost per Android download rose 11.3%. The good news is CTR remains healthy at about 3.20%, so the creative/audience is still generating interest. Verdict: promising but needs proof of downstream viewing. Next tests should keep Android scaled, tighten or refresh iOS creative, and compare these paid downloads against GA4 viewing and Roku/Apple app engagement before increasing budget materially."
     }
   },
   "metaAdsSummary": {
@@ -7275,121 +7291,122 @@
     "reportType": "Meta Ads Performance Dashboard Summary (Meta-only, used to avoid double-counting Google Ads which is pulled via connector)",
     "emailFrom": "nathan@pcsocialmedia.com",
     "emailTo": "DeanD@electricentertainment.com",
-    "emailSubject": "ElectricNow | Meta Ads Performance Dashboard Summary (2026-05-24 to 2026-05-30)",
-    "emailDate": "2026-05-31T13:31:02+00:00",
-    "reportLink": "https://app.forgeonemarketing.com/r/65a0d289-d0fc-4000-a9ed-19984b796930",
+    "emailSubject": "ElectricNow | Meta Ads Performance Dashboard Summary (2026-05-31 to 2026-06-06)",
+    "emailDate": "2026-06-07T13:30:56+00:00",
+    "emailId": "AAMkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOABGAAAAAABShmO_Im-FSr39rhn8M5bDBwC_fCtlQrq5QYDU71YzKgxQAD-2Prc8AADvKLV_nde7SYUl0H8b5z1dAAO1_RKcAAA=",
+    "reportLink": "https://app.forgeonemarketing.com/r/4542d711-77d2-4e33-a6dd-66aa3a8032fd",
     "reportCadence": "Twice weekly (Sundays and Thursdays at 6am PST/PDT), each report covers Last 7 days",
-    "period": "May 24-May 30, 2026",
-    "periodStart": "2026-05-24",
-    "periodEnd": "2026-05-30",
-    "comparison": "vs previous 7-day period (May 17-May 23)",
-    "spend": 3146.72,
-    "impressions": 250366,
-    "linkClicks": 8057,
-    "costPerClick": 0.38,
-    "iosDownloads": 1280,
-    "androidDownloads": 1979,
-    "totalDownloads": 3259,
-    "costPerIosDownload": 1.23,
-    "costPerAndroidDownload": 0.8,
-    "costPerDownload": 0.9655,
-    "ctrPct": 3.22,
+    "period": "May 31-Jun 6, 2026",
+    "periodStart": "2026-05-31",
+    "periodEnd": "2026-06-06",
+    "comparison": "vs previous 7-day period (May 24-May 30)",
+    "spend": 3128.73,
+    "impressions": 248978,
+    "linkClicks": 7970,
+    "costPerClick": 0.39,
+    "iosDownloads": 1036,
+    "androidDownloads": 1961,
+    "totalDownloads": 2997,
+    "costPerIosDownload": 1.34,
+    "costPerAndroidDownload": 0.89,
+    "costPerDownload": 1.044,
+    "ctrPct": 3.2,
     "deltas": {
-      "spendPct": 0.0,
-      "impressionsPct": -4.8,
-      "costPerClickPct": 11.7,
-      "linkClicksPct": -13.1,
-      "iosDownloadsPct": 8.8,
-      "costPerIosDownloadPct": -7.9,
-      "androidDownloadsPct": -12.6,
-      "costPerAndroidDownloadPct": 14.2
+      "spendPct": -0.4,
+      "impressionsPct": -1.4,
+      "costPerClickPct": 3.3,
+      "linkClicksPct": -1.1,
+      "iosDownloadsPct": -17.9,
+      "costPerIosDownloadPct": 7.4,
+      "androidDownloadsPct": -0.1,
+      "costPerAndroidDownloadPct": 11.3
     },
     "campaigns": [
       {
         "name": "PCSM - ElectricNow App - Google Play - Women",
         "platform": "Android",
-        "spend": 786.98,
-        "appInstalls": 983,
-        "costPerAppInstall": 0.8
-      },
-      {
-        "name": "PCSM - ElectricNow App - iOS - Women",
-        "platform": "iOS",
-        "spend": 786.97,
-        "appInstalls": 640,
-        "costPerAppInstall": 1.23
+        "spend": 872.51,
+        "appInstalls": 999,
+        "costPerAppInstall": 0.87
       },
       {
         "name": "PCSM - ElectricNow App - Google Play",
         "platform": "Android",
-        "spend": 786.74,
-        "appInstalls": 996,
-        "costPerAppInstall": 0.79
+        "spend": 868.9,
+        "appInstalls": 962,
+        "costPerAppInstall": 0.9
+      },
+      {
+        "name": "PCSM - ElectricNow App - iOS - Women",
+        "platform": "iOS",
+        "spend": 695.2,
+        "appInstalls": 511,
+        "costPerAppInstall": 1.36
       },
       {
         "name": "PCSM - ElectricNow App - iOS",
         "platform": "iOS",
-        "spend": 786.03,
-        "appInstalls": 640,
-        "costPerAppInstall": 1.23
+        "spend": 692.12,
+        "appInstalls": 525,
+        "costPerAppInstall": 1.32
       }
     ],
     "genderBreakdown": [
       {
         "gender": "male",
-        "spend": 2235.8,
-        "costPerAppInstall": 0.94,
-        "appInstalls": 2374
+        "spend": 2154.1,
+        "costPerAppInstall": 1.02,
+        "appInstalls": 2106
       },
       {
         "gender": "female",
-        "spend": 891.65,
-        "costPerAppInstall": 1.02,
-        "appInstalls": 877
+        "spend": 954.56,
+        "costPerAppInstall": 1.08,
+        "appInstalls": 882
       },
       {
         "gender": "unknown",
-        "spend": 19.27,
-        "costPerAppInstall": 2.41,
-        "appInstalls": 8
+        "spend": 20.06,
+        "costPerAppInstall": 2.23,
+        "appInstalls": 9
       }
     ],
     "ageBreakdown": [
       {
         "ageRange": "55-64",
-        "spend": 1111.24,
-        "costPerAppInstall": 0.94,
-        "appInstalls": 1181
+        "spend": 1067.49,
+        "costPerAppInstall": 0.98,
+        "appInstalls": 1086
       },
       {
         "ageRange": "65+",
-        "spend": 956.99,
-        "costPerAppInstall": 1.0,
-        "appInstalls": 959
+        "spend": 939.6,
+        "costPerAppInstall": 1.09,
+        "appInstalls": 864
       },
       {
         "ageRange": "45-54",
-        "spend": 664.84,
-        "costPerAppInstall": 0.88,
-        "appInstalls": 753
+        "spend": 651.7,
+        "costPerAppInstall": 1.04,
+        "appInstalls": 629
       },
       {
         "ageRange": "35-44",
-        "spend": 286.13,
-        "costPerAppInstall": 1.12,
-        "appInstalls": 256
+        "spend": 326.44,
+        "costPerAppInstall": 1.02,
+        "appInstalls": 319
       },
       {
         "ageRange": "25-34",
-        "spend": 108.13,
-        "costPerAppInstall": 1.18,
-        "appInstalls": 92
+        "spend": 123.05,
+        "costPerAppInstall": 1.46,
+        "appInstalls": 84
       },
       {
         "ageRange": "18-24",
-        "spend": 19.38,
-        "costPerAppInstall": 1.14,
-        "appInstalls": 17
+        "spend": 20.45,
+        "costPerAppInstall": 1.46,
+        "appInstalls": 14
       },
       {
         "ageRange": "Unknown",
@@ -7398,28 +7415,13 @@
         "appInstalls": 1
       }
     ],
-    "plainEnglish": "This is Meta paid acquisition data from Nathan / Forge One (pcsocialmedia.com). It covers Meta ad campaigns running on Facebook and Instagram that drive iOS and Android app installs for ElectricNOW. It is a separate paid channel from Google Ads (which is pulled via connector and shown above) and should be read alongside it, not added on top in a way that double-counts. These are Meta-platform ad impressions and clicks, NOT in-app ad impressions served inside the ElectricNOW app — those live in the Ad event signals panel.",
-    "paidAcquisitionInterpretation": "Meta paid acquisition this week (May 24-May 30) looks solid but mixed. On roughly flat spend of $3,146.72, Meta delivered 3,259 app downloads at about $0.97 blended cost per download — efficient for app acquisition and steady week-over-week. iOS efficiency improved: 1,280 iOS downloads at $1.23 each (cost down 7.9%), while Android worsened a bit: 1,979 downloads at $0.80 each (cost up 14.2%, volume down 12.6%); Android still buys cheaper installs than iOS overall. Upper-funnel signals softened — impressions fell 4.8% to 250,366 and link clicks fell 13.1% to 8,057, pushing cost/click up 11.7% to $0.38 — yet installs/downloads stayed substantial, so the campaigns are still converting clicks to installs effectively. Net read: paid ads remain effective on a cost-per-install basis and are not concerning, but the falling impressions/clicks are worth watching. Important caveat: this report only proves installs, not viewing quality — we still need GA4 (property 497892271) downstream data to judge whether these Meta-driven installs become real viewers and time spent.",
-    "doubleCountingNote": "Use only Meta rows from Nathan's reports. Nathan also sends a blended Meta + Google Ads report; the Google Ads rows in that blended report are NOT used here because Google Ads is already pulled directly from the Google Ads connector. The Meta numbers shown here are independent of the Google Ads connector totals.",
-    "inAppAdsDistinction": "Meta campaign impressions (250,366 this period) are paid ad placements on Meta’s own platforms (Facebook/Instagram feeds, stories, etc.) and are NOT the same as ElectricNOW in-app ad impressions counted in the Ad event signals panel.",
-    "priorPeriod": {
-      "period": "May 17-May 23, 2026",
-      "emailSubject": "ElectricNow | Meta Ads Performance Dashboard Summary (2026-05-17 to 2026-05-23)",
-      "emailDate": "2026-05-25T01:59:46+00:00",
-      "spend": 3148.58,
-      "impressions": 259503,
-      "linkClicks": 9022,
-      "iosDownloads": 1166,
-      "androidDownloads": 2169,
-      "totalDownloads": 3335,
-      "costPerDownload": 0.9441
-    },
-    "dedupeNote": "May 24-May 30 report integrated from authoritative nathan@pcsocialmedia.com email (2026-05-31T13:31:02Z). Forwarded/duplicate copies from nathan@forgeonemarketing.com for the same period (and a May 21-May 27 forward) were intentionally NOT counted."
+    "plainEnglish": "This is Meta paid acquisition data from Nathan / Forge One (pcsocialmedia.com). It covers Facebook and Instagram app-install campaigns for ElectricNOW and is separate from Google Ads connector data. These are paid-campaign impressions and clicks, not in-app ad impressions served inside ElectricNOW.",
+    "paidAcquisitionInterpretation": "Meta paid acquisition for May 31-Jun 6 remains acceptable but less efficient than the prior week. Spend was essentially flat at $3,128.73 and the campaigns produced 2,997 reported downloads at about $1.04 blended cost per download. Android is still the stronger efficiency story: 1,961 Android downloads at $0.89 each, while iOS delivered 1,036 downloads at $1.34 each. The concern is that both iOS volume and cost moved the wrong way: iOS downloads fell 17.9% and cost per iOS download rose 7.4%; Android volume was basically flat but cost per Android download rose 11.3%. The good news is CTR remains healthy at about 3.20%, so the creative/audience is still generating interest. Verdict: promising but needs proof of downstream viewing. Next tests should keep Android scaled, tighten or refresh iOS creative, and compare these paid downloads against GA4 viewing and Roku/Apple app engagement before increasing budget materially."
   },
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -7463,14 +7465,14 @@
     },
     "platformSplit": [
       {
-        "label": "Android · mobile",
+        "label": "Android \u00b7 mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android · smart tv",
+        "label": "Android \u00b7 smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -7517,31 +7519,97 @@
   },
   "manualAppleDownloads": {
     "sourceLabel": "Manual Apple App Store Connect snapshot",
-    "sourceDetail": "User-provided App Store Connect screenshot for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-    "capturedAt": "2026-06-01 22:32 PDT",
-    "enteredAt": "2026-06-01 22:43 PDT",
-    "uploadedAttachment": "uploaded_attachments/3010c4699dcb404a8bdf5c5a899f2b29/image.jpeg",
+    "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
+    "capturedAt": "2026-06-07 07:31 PDT",
+    "enteredAt": "2026-06-07 07:55 PDT",
+    "uploadedAttachments": [
+      "uploaded_attachments/d6553cdb322544eda7c29709f1b35019/image.jpeg",
+      "uploaded_attachments/d6553cdb322544eda7c29709f1b35019/image-1.jpeg"
+    ],
     "product": "ElectricNOW",
     "platform": "Free iOS/watchOS/tvOS",
-    "period": "May 18-May 31, 2026",
-    "start": "2026-05-18",
-    "end": "2026-05-31",
-    "downloads": 3102,
-    "displayDownloads": "3.10K",
-    "dailyAverage": 222,
-    "deltaPct": 51.1,
+    "period": "May 31-Jun 6, 2026",
+    "start": "2026-05-31",
+    "end": "2026-06-06",
+    "downloads": 1343,
+    "displayDownloads": "1,343",
+    "dailyAverage": 192,
+    "daily": [
+      {
+        "date": "2026-05-31",
+        "label": "May 31, 2026",
+        "downloads": 257
+      },
+      {
+        "date": "2026-06-01",
+        "label": "June 1, 2026",
+        "downloads": 206
+      },
+      {
+        "date": "2026-06-02",
+        "label": "June 2, 2026",
+        "downloads": 214
+      },
+      {
+        "date": "2026-06-03",
+        "label": "June 3, 2026",
+        "downloads": 206
+      },
+      {
+        "date": "2026-06-04",
+        "label": "June 4, 2026",
+        "downloads": 196
+      },
+      {
+        "date": "2026-06-05",
+        "label": "June 5, 2026",
+        "downloads": 126
+      },
+      {
+        "date": "2026-06-06",
+        "label": "June 6, 2026",
+        "downloads": 138
+      }
+    ],
+    "fiveWeekSnapshot": {
+      "period": "Apr 27-May 31, 2026",
+      "start": "2026-04-27",
+      "end": "2026-05-31",
+      "downloads": 6183,
+      "displayDownloads": "6.18K",
+      "weeklyAverage": 1240,
+      "deltaPct": 353.0,
+      "territories": [
+        {
+          "territory": "United States",
+          "downloads": 6174,
+          "deltaPct": 357.0
+        },
+        {
+          "territory": "Australia",
+          "downloads": 9,
+          "deltaPct": -35.7
+        }
+      ]
+    },
+    "deltaPct": null,
     "territories": [
       {
         "territory": "United States",
-        "downloads": 3100,
-        "deltaPct": 51.4
-      },
-      {
-        "territory": "Australia",
-        "downloads": 2,
-        "deltaPct": -66.7
+        "downloads": 1343,
+        "deltaPct": null
       }
     ],
-    "note": "Because this is a manual Apple Connect screenshot, it should be preserved until replaced by a newer screenshot or an Apple App Store Connect API integration."
+    "note": "Because this is a manual Apple Connect screenshot, it should be preserved until replaced by a newer screenshot or an Apple App Store Connect API integration. Daily U.S. values total 1,343 for May 31-Jun 6; the separate 5-week screen shows 6,183 total free iOS/watchOS/tvOS downloads for Apr 27-May 31."
+  },
+  "manualDataPatch": {
+    "updatedAt": "2026-06-07 07:55 PDT",
+    "updatedAtIso": "2026-06-07T07:55:00-07:00",
+    "items": [
+      "manualAppleDownloads",
+      "rokuAppEngagement",
+      "metaAdsSummary"
+    ],
+    "note": "Manual/email data patch applied without changing GA4, Stripe, Roku sales, or Apple sales totals."
   }
 }
