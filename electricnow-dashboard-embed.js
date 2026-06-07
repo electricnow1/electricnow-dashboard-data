@@ -4787,24 +4787,6 @@
       },
       {
         "rank": 13,
-        "program": "Exile",
-        "plays": 149,
-        "activeUsers": 20,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 14,
-        "program": "Alone",
-        "plays": 136,
-        "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 1,
-        "examples": []
-      },
-      {
-        "rank": 15,
         "program": "Checking Out: The Librarians Next Chapter",
         "plays": 115,
         "activeUsers": 19,
@@ -4817,7 +4799,7 @@
         ]
       },
       {
-        "rank": 16,
+        "rank": 14,
         "program": "Daughter of the Wolf",
         "plays": 107,
         "activeUsers": 14,
@@ -4826,7 +4808,7 @@
         "examples": []
       },
       {
-        "rank": 17,
+        "rank": 15,
         "program": "Flyboys",
         "plays": 107,
         "activeUsers": 14,
@@ -4837,7 +4819,7 @@
         ]
       },
       {
-        "rank": 18,
+        "rank": 16,
         "program": "24 Seven",
         "plays": 105,
         "activeUsers": 19,
@@ -4848,7 +4830,7 @@
         ]
       },
       {
-        "rank": 19,
+        "rank": 17,
         "program": "The Librarians Cinemascope Movie",
         "plays": 102,
         "activeUsers": 7,
@@ -4857,7 +4839,7 @@
         "examples": []
       },
       {
-        "rank": 20,
+        "rank": 18,
         "program": "A Living Dog",
         "plays": 101,
         "activeUsers": 4,
@@ -4866,7 +4848,7 @@
         "examples": []
       },
       {
-        "rank": 21,
+        "rank": 19,
         "program": "Like A Country Song",
         "plays": 100,
         "activeUsers": 5,
@@ -4875,7 +4857,7 @@
         "examples": []
       },
       {
-        "rank": 22,
+        "rank": 20,
         "program": "The Triangle Night 1",
         "plays": 99,
         "activeUsers": 6,
@@ -4884,7 +4866,7 @@
         "examples": []
       },
       {
-        "rank": 23,
+        "rank": 21,
         "program": "Black Fly",
         "plays": 98,
         "activeUsers": 4,
@@ -4893,7 +4875,7 @@
         "examples": []
       },
       {
-        "rank": 24,
+        "rank": 22,
         "program": "Generation Z",
         "plays": 93,
         "activeUsers": 9,
@@ -4906,7 +4888,7 @@
         ]
       },
       {
-        "rank": 25,
+        "rank": 23,
         "program": "The Humanity Bureau",
         "plays": 91,
         "activeUsers": 6,
@@ -4915,7 +4897,7 @@
         "examples": []
       },
       {
-        "rank": 26,
+        "rank": 24,
         "program": "The Librarian: Curse of the Judas Chalice",
         "plays": 89,
         "activeUsers": 5,
@@ -4924,7 +4906,7 @@
         "examples": []
       },
       {
-        "rank": 27,
+        "rank": 25,
         "program": "Betty Boop",
         "plays": 88,
         "activeUsers": 6,
@@ -4937,7 +4919,7 @@
         ]
       },
       {
-        "rank": 28,
+        "rank": 26,
         "program": "A Christmas Carol",
         "plays": 86,
         "activeUsers": 9,
@@ -4946,7 +4928,7 @@
         "examples": []
       },
       {
-        "rank": 29,
+        "rank": 27,
         "program": "2nd Serve",
         "plays": 85,
         "activeUsers": 6,
@@ -4955,7 +4937,7 @@
         "examples": []
       },
       {
-        "rank": 30,
+        "rank": 28,
         "program": "The Triangle Mini-Series",
         "plays": 83,
         "activeUsers": 5,
@@ -4968,7 +4950,7 @@
         ]
       },
       {
-        "rank": 31,
+        "rank": 29,
         "program": "Black Wake",
         "plays": 80,
         "activeUsers": 9,
@@ -4979,7 +4961,7 @@
         ]
       },
       {
-        "rank": 32,
+        "rank": 30,
         "program": "Bad Samaritan",
         "plays": 79,
         "activeUsers": 10,
@@ -4990,7 +4972,7 @@
         ]
       },
       {
-        "rank": 33,
+        "rank": 31,
         "program": "The Librarian: Quest for the Spear",
         "plays": 77,
         "activeUsers": 3,
@@ -4999,7 +4981,7 @@
         "examples": []
       },
       {
-        "rank": 34,
+        "rank": 32,
         "program": "Americana Television",
         "plays": 76,
         "activeUsers": 29,
@@ -5008,7 +4990,7 @@
         "examples": []
       },
       {
-        "rank": 35,
+        "rank": 33,
         "program": "LBJ",
         "plays": 71,
         "activeUsers": 2,
@@ -5017,7 +4999,7 @@
         "examples": []
       },
       {
-        "rank": 36,
+        "rank": 34,
         "program": "RoboCop (The Series)",
         "plays": 70,
         "activeUsers": 22,
@@ -5030,7 +5012,7 @@
         ]
       },
       {
-        "rank": 37,
+        "rank": 35,
         "program": "Mythica: A Quest for Heroes",
         "plays": 69,
         "activeUsers": 7,
@@ -5039,7 +5021,7 @@
         "examples": []
       },
       {
-        "rank": 38,
+        "rank": 36,
         "program": "Bonded In Blood",
         "plays": 68,
         "activeUsers": 2,
@@ -5048,7 +5030,7 @@
         "examples": []
       },
       {
-        "rank": 39,
+        "rank": 37,
         "program": "Wizards vs. Aliens",
         "plays": 67,
         "activeUsers": 9,
@@ -5061,7 +5043,7 @@
         ]
       },
       {
-        "rank": 40,
+        "rank": 38,
         "program": "The Librarian: Return to King Solomon's Mines",
         "plays": 66,
         "activeUsers": 3,
@@ -5070,7 +5052,7 @@
         "examples": []
       },
       {
-        "rank": 41,
+        "rank": 39,
         "program": "Murder on the Cape",
         "plays": 60,
         "activeUsers": 3,
@@ -5175,17 +5157,17 @@
       },
       {
         "rank": 14,
-        "title": "Cycle of Violence",
-        "plays": 256,
-        "activeUsers": 11,
-        "group": "The Ark"
-      },
-      {
-        "rank": 15,
         "title": "The Panamanian Job",
         "plays": 256,
         "activeUsers": 17,
         "group": "Leverage: Redemption"
+      },
+      {
+        "rank": 15,
+        "title": "Cycle of Violence",
+        "plays": 256,
+        "activeUsers": 11,
+        "group": "The Ark"
       },
       {
         "rank": 16,
@@ -5294,16 +5276,16 @@
       },
       {
         "rank": 31,
-        "title": "Kill or Be Killed",
+        "title": "The Painful Way",
         "plays": 191,
-        "activeUsers": 6,
+        "activeUsers": 8,
         "group": "The Ark"
       },
       {
         "rank": 32,
-        "title": "The Painful Way",
+        "title": "Kill or Be Killed",
         "plays": 191,
-        "activeUsers": 8,
+        "activeUsers": 6,
         "group": "The Ark"
       },
       {
@@ -5364,16 +5346,16 @@
       },
       {
         "rank": 41,
-        "title": "Pistol Whip",
+        "title": "Unbecalming",
         "plays": 156,
-        "activeUsers": 12,
+        "activeUsers": 14,
         "group": "Almost Paradise"
       },
       {
         "rank": 42,
-        "title": "Unbecalming",
+        "title": "Pistol Whip",
         "plays": 156,
-        "activeUsers": 14,
+        "activeUsers": 12,
         "group": "Almost Paradise"
       },
       {
@@ -7643,6 +7625,20 @@
       "metaAdsSummary"
     ],
     "note": "Manual/email data patch applied without changing GA4, Stripe, Roku sales, or Apple sales totals."
+  },
+  "titleAggregationPatch": {
+    "updatedAt": "2026-06-07 07:59 PDT",
+    "summary": {
+      "topPrograms": [],
+      "topVideoTitles": [],
+      "topChannelTitles": [],
+      "collapsedDuplicateVideoTitles": [],
+      "removedVideoRowsFromPrograms": [
+        "Exile",
+        "Alone"
+      ]
+    },
+    "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
   }
 };
   
@@ -8310,7 +8306,7 @@
       viewership.topVideoTitles || [],
       (row) => [
         `<strong>${row.rank}</strong>`,
-        row.group ? `<strong>${escapeHtml(row.group)}</strong>` : '<span>Not set in GA4</span>',
+      row.group ? `<strong>${escapeHtml(row.group)}</strong>` : '<span>Collection not tracked</span>',
         `<strong>${escapeHtml(row.title)}</strong>`,
         fmt.number(row.plays),
         fmt.number(row.activeUsers),
