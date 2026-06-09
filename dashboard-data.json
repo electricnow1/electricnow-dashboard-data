@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08 12:55 PDT",
+  "generatedAt": "2026-06-09 07:10 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -2386,10 +2386,10 @@
   ],
   "salesSummary": {
     "sourceLabel": "Visible platform sales",
-    "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from the latest Roku email report, and a manual Apple App Store screenshot snapshot. It is still not total ElectricNOW sales because Google Play purchases are handled separately and Apple is not yet API-connected.",
+    "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe was reconnected and checked on Jun 9, 2026; no new Stripe purchases were found beyond the existing 21/$439.79, but the hidden May 28 Stripe payment was restored to the payment detail list. Google Play and other sources may still be missing.",
     "stripe": {
       "sourceLabel": "Stripe-visible payments",
-      "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected 2026-05-31; the connector returned 21 succeeded 2026 charges totaling $439.79. The increase over the prior visible 13/$189.87 is historical 2026 charges that became visible after reconnection, not new same-day sales. Apple App Store and Google Play purchases are handled separately.",
+      "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Rechecked 2026-06-09 after reconnection: the connector returned the same 21 succeeded 2026 charges totaling $439.79. No new Stripe payments were visible after the May 28 payment; the dashboard detail windows were repaired so that the May 28 payment is visible instead of hidden.",
       "baselineWindow": {
         "label": "Stripe launch baseline",
         "range": "Apr 13-Apr 19, 2026",
@@ -2402,13 +2402,23 @@
       },
       "yearToDate": {
         "label": "Sales this year",
-        "range": "Jan 1-May 31, 2026",
+        "range": "Jan 1-Jun 9, 2026",
         "purchases": 21,
         "purchaseRevenue": 439.79,
         "revenuePerPurchase": 20.94,
         "deltaPurchasesPct": null,
         "deltaRevenuePct": null,
         "payments": [
+          {
+            "date": "May 28",
+            "createdAt": "2026-05-28 18:08 PDT",
+            "sortDate": "2026-05-28T18:08:30-07:00",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "source": "Stripe",
+            "stripePaymentIntentId": "pi_3Tc8fSLG0Cw1zW4e0aRnmEQw",
+            "stripeChargeId": "ch_3Tc8fSLG0Cw1zW4e0JGS5fDH"
+          },
           {
             "date": "May 17",
             "createdAt": "2026-05-17 21:26 PDT",
@@ -2460,90 +2470,52 @@
         ]
       },
       "monthToDate": {
-        "label": "Sales this month",
-        "range": "May 1-May 28, 2026",
-        "purchases": 3,
-        "purchaseRevenue": 44.97,
-        "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": null,
-        "deltaRevenuePct": null,
-        "payments": [
-          {
-            "date": "May 17",
-            "createdAt": "2026-05-17 21:26 PDT",
-            "amount": 14.99,
-            "description": "Customer User - Purchase this title: Signup payment"
-          },
-          {
-            "date": "May 14",
-            "createdAt": "2026-05-14 20:09 PDT",
-            "amount": 14.99,
-            "description": "Customer User - Purchase this title: Signup payment"
-          },
-          {
-            "date": "May 6",
-            "createdAt": "2026-05-06 01:02 PDT",
-            "amount": 14.99,
-            "description": "Customer User - Purchase this title: Signup payment"
-          }
-        ]
+        "label": "Stripe sales this month",
+        "range": "Jun 1-Jun 9, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "revenuePerPurchase": 0,
+        "payments": []
       },
       "lastWeek": {
-        "label": "Sales last week",
-        "range": "May 21-May 27, 2026",
+        "label": "Stripe sales last week",
+        "range": "Jun 1-Jun 7, 2026",
         "purchases": 0,
-        "purchaseRevenue": 0,
+        "purchaseRevenue": 0.0,
         "revenuePerPurchase": 0,
-        "deltaPurchasesPct": -100.0,
-        "deltaRevenuePct": -100.0,
         "payments": []
       },
       "thisWeek": {
-        "label": "Sales this week",
-        "range": "May 25-May 28, 2026",
+        "label": "Stripe sales this week",
+        "range": "Jun 8-Jun 9, 2026",
         "purchases": 0,
-        "purchaseRevenue": 0,
+        "purchaseRevenue": 0.0,
         "revenuePerPurchase": 0,
-        "deltaPurchasesPct": null,
-        "deltaRevenuePct": null,
         "payments": []
       },
       "currentCompleteWeek": {
-        "label": "Sales last week",
-        "range": "May 21-May 27, 2026",
+        "label": "Stripe sales last week",
+        "range": "Jun 1-Jun 7, 2026",
         "purchases": 0,
-        "purchaseRevenue": 0,
+        "purchaseRevenue": 0.0,
         "revenuePerPurchase": 0,
-        "deltaPurchasesPct": -100.0,
-        "deltaRevenuePct": -100.0,
         "payments": []
       },
       "weekToDate": {
-        "label": "Sales this week",
-        "range": "May 25-May 28, 2026",
+        "label": "Stripe sales this week",
+        "range": "Jun 8-Jun 9, 2026",
         "purchases": 0,
-        "purchaseRevenue": 0,
+        "purchaseRevenue": 0.0,
         "revenuePerPurchase": 0,
-        "deltaPurchasesPct": null,
-        "deltaRevenuePct": null,
         "payments": []
       },
       "recent12Days": {
         "label": "Stripe last 12 days",
-        "range": "May 17-May 28, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
-        "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": null,
-        "deltaRevenuePct": null,
-        "payments": [
-          {
-            "date": "May 17",
-            "createdAt": "2026-05-17 21:26 PDT",
-            "amount": 14.99,
-            "description": "Customer User - Purchase this title: Signup payment"
-          }
-        ]
+        "range": "May 29-Jun 9, 2026",
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
+        "revenuePerPurchase": 0,
+        "payments": []
       },
       "lifetimeObserved": {
         "range": "Through May 31, 2026 reconnect pull",
@@ -2988,7 +2960,35 @@
           "purchaseRevenue": 0
         }
       ],
-      "note": "Stripe-visible sales show 21 payments and $439.79 year to date (includes 8 historical 2026 charges visible after the 2026-05-31 reconnect), 3 payments and $44.97 this month, 0 payments and $0.00 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales."
+      "note": "Stripe-visible sales show 21 payments and $439.79 year to date (includes 8 historical 2026 charges visible after the 2026-05-31 reconnect), 3 payments and $44.97 this month, 0 payments and $0.00 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales.",
+      "connectorStatus": "connected; checked Jun 9, 2026; no new Stripe payments after May 28",
+      "lastStripeVisiblePayment": {
+        "date": "May 28",
+        "createdAt": "2026-05-28 18:08 PDT",
+        "sortDate": "2026-05-28T18:08:30-07:00",
+        "amount": 14.99,
+        "description": "Customer User - Purchase this title: Signup payment",
+        "source": "Stripe",
+        "stripePaymentIntentId": "pi_3Tc8fSLG0Cw1zW4e0aRnmEQw",
+        "stripeChargeId": "ch_3Tc8fSLG0Cw1zW4e0JGS5fDH"
+      },
+      "latestConnectorAudit": {
+        "checkedAt": "2026-06-09 06:58 PDT",
+        "succeeded2026Charges": 21,
+        "purchaseRevenue": 439.79,
+        "newPaymentsFound": 0,
+        "newRevenueFound": 0,
+        "latestVisiblePayment": {
+          "date": "May 28",
+          "createdAt": "2026-05-28 18:08 PDT",
+          "sortDate": "2026-05-28T18:08:30-07:00",
+          "amount": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe",
+          "stripePaymentIntentId": "pi_3Tc8fSLG0Cw1zW4e0aRnmEQw",
+          "stripeChargeId": "ch_3Tc8fSLG0Cw1zW4e0JGS5fDH"
+        }
+      }
     },
     "roku": {
       "sourceLabel": "Roku-visible sales",
@@ -3990,167 +3990,133 @@
     },
     "yearToDate": {
       "label": "Visible sales this year",
-      "range": "Jan 1-Jun 8, 2026",
+      "range": "Jan 1-Jun 9, 2026",
       "purchases": 45,
       "purchaseRevenue": 841.55,
       "developerRevShare": 305.38,
-      "revenuePerPurchase": 18.70111111111111
+      "revenuePerPurchase": 18.7
     },
     "monthToDate": {
       "label": "Sales this month",
-      "range": "May 1-May 31, 2026",
-      "purchases": 12,
-      "purchaseRevenue": 166.88,
-      "developerRevShare": 124.49,
-      "revenuePerPurchase": 13.91,
+      "range": "Jun 1-Jun 9, 2026",
+      "purchases": 2,
+      "purchaseRevenue": 34.98,
+      "revenuePerPurchase": 17.49,
       "payments": [
         {
-          "date": "May 20",
-          "createdAt": "2026-05-20",
-          "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
-          "source": "Roku"
-        },
-        {
-          "date": "May 18",
-          "createdAt": "2026-05-18",
-          "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
-          "source": "Roku"
-        },
-        {
-          "date": "May 16",
-          "createdAt": "2026-05-16",
+          "date": "Jun 7",
+          "createdAt": "2026-06-07",
           "amount": 19.99,
           "developerRevShare": 15.99,
           "description": "Roku - Purchase Bundle 20",
           "source": "Roku"
         },
         {
-          "date": "May 14",
-          "createdAt": "2026-05-14",
-          "amount": 2.99,
-          "developerRevShare": 2.39,
-          "description": "Roku - Purchase HD 3",
-          "source": "Roku"
-        },
-        {
-          "date": "May 13",
-          "createdAt": "2026-05-13",
-          "amount": 2.99,
-          "developerRevShare": 2.39,
-          "description": "Roku - Purchase HD 3",
-          "source": "Roku"
-        },
-        {
-          "date": "May 12",
-          "createdAt": "2026-05-12",
-          "amount": 5.98,
-          "developerRevShare": 4.78,
-          "description": "Roku - Purchase HD 3",
-          "source": "Roku"
-        },
-        {
-          "date": "May 4",
-          "createdAt": "2026-05-04",
+          "date": "Jun 4",
+          "createdAt": "2026-06-04",
           "amount": 14.99,
           "developerRevShare": 11.99,
           "description": "Roku - Purchase HD 15",
           "source": "Roku"
-        },
-        {
-          "date": "May 13",
-          "amount": 29.99,
-          "description": "Apple App Store - Purchase Bundle 30",
-          "source": "Apple App Store"
         }
-      ]
+      ],
+      "developerRevShare": 27.98
     },
     "lastWeek": {
       "label": "Sales last week",
-      "range": "May 24-May 30, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
-      "developerRevShare": 10.49,
-      "revenuePerPurchase": 14.99,
+      "range": "Jun 1-Jun 7, 2026",
+      "purchases": 2,
+      "purchaseRevenue": 34.98,
+      "revenuePerPurchase": 17.49,
       "payments": [
         {
-          "date": "May 25",
+          "date": "Jun 7",
+          "createdAt": "2026-06-07",
+          "amount": 19.99,
+          "developerRevShare": 15.99,
+          "description": "Roku - Purchase Bundle 20",
+          "source": "Roku"
+        },
+        {
+          "date": "Jun 4",
+          "createdAt": "2026-06-04",
           "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
         }
       ],
-      "deltaPurchasesPct": -90.9090909090909,
-      "deltaRevenuePct": -90.62480455313026
+      "developerRevShare": 27.98
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "May 25-May 31, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
-      "developerRevShare": 10.49,
-      "revenuePerPurchase": 14.99,
-      "payments": [
-        {
-          "date": "May 25",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        }
-      ]
+      "range": "Jun 8-Jun 9, 2026",
+      "purchases": 0,
+      "purchaseRevenue": 0.0,
+      "revenuePerPurchase": 0,
+      "payments": [],
+      "developerRevShare": 0.0
     },
     "currentCompleteWeek": {
       "label": "Sales last week",
-      "range": "May 24-May 30, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
-      "developerRevShare": 10.49,
-      "revenuePerPurchase": 14.99,
+      "range": "Jun 1-Jun 7, 2026",
+      "purchases": 2,
+      "purchaseRevenue": 34.98,
+      "revenuePerPurchase": 17.49,
       "payments": [
         {
-          "date": "May 25",
+          "date": "Jun 7",
+          "createdAt": "2026-06-07",
+          "amount": 19.99,
+          "developerRevShare": 15.99,
+          "description": "Roku - Purchase Bundle 20",
+          "source": "Roku"
+        },
+        {
+          "date": "Jun 4",
+          "createdAt": "2026-06-04",
           "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
         }
       ],
-      "deltaPurchasesPct": -90.9090909090909,
-      "deltaRevenuePct": -90.62480455313026
+      "developerRevShare": 27.98
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "May 25-May 31, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
-      "developerRevShare": 10.49,
-      "revenuePerPurchase": 14.99,
-      "payments": [
-        {
-          "date": "May 25",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        }
-      ]
+      "range": "Jun 8-Jun 9, 2026",
+      "purchases": 0,
+      "purchaseRevenue": 0.0,
+      "revenuePerPurchase": 0,
+      "payments": [],
+      "developerRevShare": 0.0
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
-      "range": "May 20-May 31, 2026",
-      "purchases": 1,
-      "purchaseRevenue": 14.99,
-      "developerRevShare": 10.49,
-      "revenuePerPurchase": 14.99,
+      "range": "May 29-Jun 9, 2026",
+      "purchases": 2,
+      "purchaseRevenue": 34.98,
+      "revenuePerPurchase": 17.49,
       "payments": [
         {
-          "date": "May 25",
+          "date": "Jun 7",
+          "createdAt": "2026-06-07",
+          "amount": 19.99,
+          "developerRevShare": 15.99,
+          "description": "Roku - Purchase Bundle 20",
+          "source": "Roku"
+        },
+        {
+          "date": "Jun 4",
+          "createdAt": "2026-06-04",
           "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
+          "developerRevShare": 11.99,
+          "description": "Roku - Purchase HD 15",
+          "source": "Roku"
         }
-      ]
+      ],
+      "developerRevShare": 27.98
     },
     "lifetimeObserved": {
       "range": "Through Jun 8, 2026 refresh",
