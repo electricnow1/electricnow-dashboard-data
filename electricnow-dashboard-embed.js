@@ -8239,13 +8239,76 @@
 
   function renderPlatformMix() {
     const mix = data.platformMix;
+    const periodEl = $('#platform-mix-period');
+    const noteEl = $('#platform-note');
+    const target = $('#platform-mix');
+    if (!target) return;
+
+    if (Array.isArray(mix)) {
+      const rows = mix
+        .filter((row) => row && row.activeUsers)
+        .map((row) => {
+          const platform = row.platform || 'Unknown';
+          const device = row.deviceCategory || 'device not set';
+          const os = row.operatingSystem || 'OS not set';
+          return {
+            platform: `${platform} / ${device}`,
+            category: os,
+            activeUsers: row.activeUsers || 0,
+            sessions: row.sessions || 0,
+            engagementRate: row.engagementRate || 0,
+            detail: `${fmt.number(row.sessions || 0)} sessions · ${fmt.percent(row.engagementRate || 0)} engagement rate`,
+          };
+        });
+      const totalUsers = rows.reduce((sum, row) => sum + (row.activeUsers || 0), 0);
+      const maxUsers = Math.max(...rows.map((row) => row.activeUsers || 0), 1);
+      if (periodEl) periodEl.textContent = data.periods?.currentWeek?.range || 'Latest';
+      if (noteEl) noteEl.textContent = 'GA4 platform/device rows. Rows are not deduped across platform/device combinations, so use this as a directional surface mix rather than a total audience count.';
+      target.innerHTML = `
+        <div class="platform-total">
+          <span>GA4 active users grouped by platform/device</span>
+          <strong>${fmt.number(totalUsers)}</strong>
+          <em>platform-device records</em>
+        </div>
+        <div class="platform-share-list">
+          ${rows
+            .map(
+              (row) => `
+                <article class="platform-share-card">
+                  <header>
+                    <div>
+                      <strong>${escapeHtml(row.platform)}</strong>
+                      <span>${escapeHtml(row.category)} · ${fmt.number(row.activeUsers)} active users</span>
+                    </div>
+                    <b>${fmt.number(row.activeUsers)}</b>
+                  </header>
+                  <div class="share-track" aria-hidden="true">
+                    <div class="share-fill" style="width:${Math.max(5, ((row.activeUsers || 0) / maxUsers) * 100)}%"></div>
+                  </div>
+                  <p>${escapeHtml(row.detail)}</p>
+                </article>
+              `,
+            )
+            .join('')}
+        </div>
+      `;
+      return;
+    }
+
+    if (!mix || !Array.isArray(mix.groups)) {
+      if (periodEl) periodEl.textContent = 'Latest';
+      if (noteEl) noteEl.textContent = 'Platform mix data is unavailable for this refresh.';
+      target.innerHTML = '<p class="empty-state">Platform mix data is unavailable for this refresh.</p>';
+      return;
+    }
+
     const max = Math.max(...mix.groups.filter((row) => row.tracked !== false).map((row) => row.sharePct || 0), 1);
-    $('#platform-mix-period').textContent = mix.period;
-    $('#platform-note').textContent = mix.note;
-    $('#platform-mix').innerHTML = `
+    if (periodEl) periodEl.textContent = mix.period || 'Latest';
+    if (noteEl) noteEl.textContent = mix.note || '';
+    target.innerHTML = `
       <div class="platform-total">
-        <span>${mix.metric} grouped by stream/platform</span>
-        <strong>${fmt.number(mix.totalViewers)}</strong>
+        <span>${mix.metric || 'Audience'} grouped by stream/platform</span>
+        <strong>${fmt.number(mix.totalViewers || 0)}</strong>
         <em>viewer-platform records</em>
       </div>
       <div class="platform-share-list">
@@ -8255,10 +8318,10 @@
               <article class="platform-share-card ${row.tracked === false ? 'is-untracked' : ''}">
                 <header>
                   <div>
-                    <strong>${row.platform}</strong>
-                    <span>${row.category ? `${escapeHtml(row.category)} · ` : ''}${row.tracked === false ? 'not separately tracked yet' : `${fmt.number(row.activeUsers)} active users`}</span>
+                    <strong>${escapeHtml(row.platform || 'Unknown')}</strong>
+                    <span>${row.category ? `${escapeHtml(row.category)} · ` : ''}${row.tracked === false ? 'not separately tracked yet' : `${fmt.number(row.activeUsers || 0)} active users`}</span>
                   </div>
-                  <b>${row.tracked === false ? 'TBD' : fmt.percent(row.sharePct)}</b>
+                  <b>${row.tracked === false ? 'TBD' : fmt.percent(row.sharePct || 0)}</b>
                 </header>
                 ${
                   row.tracked === false
@@ -8267,7 +8330,7 @@
                         <div class="share-fill" style="width:${Math.max(5, ((row.sharePct || 0) / max) * 100)}%"></div>
                       </div>`
                 }
-                <p>${row.detail}</p>
+                <p>${escapeHtml(row.detail || '')}</p>
               </article>
             `,
           )
@@ -8275,7 +8338,7 @@
       </div>
       <div class="coming-platforms">
         <span>Coming soon</span>
-        ${mix.comingSoon.map((item) => `<em>${item}</em>`).join('')}
+        ${(mix.comingSoon || []).map((item) => `<em>${escapeHtml(item)}</em>`).join('')}
       </div>
     `;
   }
@@ -8361,8 +8424,13 @@
     renderTable(
       '#acquisition-table',
       ['Source / medium', 'Users', 'Sessions', 'Eng. rate'],
-      data.acquisition,
-      (r) => [`<strong>${r.sourceMedium}</strong>`, fmt.number(r.activeUsers), fmt.number(r.sessions), fmt.percent(r.engagementRate)],
+      data.acquisition || [],
+      (r) => [
+        `<strong>${escapeHtml(r.sourceMedium || r.sessionSourceMedium || r.source || 'Unknown source')}</strong>`,
+        fmt.number(r.activeUsers),
+        fmt.number(r.sessions),
+        fmt.percent(r.engagementRate),
+      ],
     );
     renderTable(
       '#content-table',
