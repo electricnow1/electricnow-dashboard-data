@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09 07:10 PDT",
+  "generatedAt": "2026-06-11 14:40 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -2373,7 +2373,7 @@
     "Paid acquisition verdict: acceptable but needs proof of viewing. Meta reported 2,997 downloads at about $1.04 per download, while Google Ads reported 124 Android first-open conversions at about $0.54 per conversion. Those costs look directionally workable, but the key next step is proving that paid installs become viewing users, not just downloads or first opens.",
     "Targeting signal: Meta’s Android campaigns are still materially cheaper than iOS, and the strongest age bands remain older audience groups. The practical recommendation is to keep separating iOS and Android budgets, shift test dollars toward lower-cost audiences that also show viewing depth, and use show-specific creative for The Ark, Leverage, Almost Paradise, The Librarians, and The Poly Couple.",
     "Roku app engagement is now updated from the Jun 8 Roku email: 228 new installs, 255 average daily viewers, 74.4 average minutes per viewer, and 2,218 total hours streamed for May 31-Jun 6.",
-    "Visible platform sales increased to $841.55 across 45 visible purchases after adding two new Roku purchases from Jun 4 and Jun 7. Stripe was disconnected during this refresh, so the dashboard preserved the last successful Stripe total instead of zeroing it.",
+    "Visible platform sales (combined Stripe, Roku, and the manual Apple App Store snapshot): 46 purchases and $856.54 year to date - Stripe 21/$439.79, Roku 16/$241.84 ($193.44 developer revenue share), and Apple 9/$174.91 ($122.43 est. net), now including the Jun 10 Apple Purchase HD 15 ($14.99). This is still not total ElectricNOW sales: Google Play is handled separately and Apple is a manual snapshot.",
     "Tracking caveat: GA4 still does not cleanly identify every smart-TV surface, and Stripe, Roku, Apple, Google Play, ad-server revenue, and Amagi reporting should continue to be reconciled separately before treating dashboard totals as complete company-wide totals.",
     "Bottom line: ElectricNOW remains in a healthy engagement range, but the latest complete week is not a growth week by platform users. The best path is not simply spending more; it is spending more efficiently, tightening attribution from ad click/download to actual viewing, and pushing the strongest content hooks into paid creative and in-app promotion."
   ],
@@ -3722,7 +3722,7 @@
       "sourceLabel": "Apple App Store manual snapshot",
       "sourceDetail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. This remains a manual source until Apple App Store Connect API reporting is connected.",
       "isManualSnapshot": true,
-      "snapshotRange": "Manual Apple App Store screenshots through May 18, 2026",
+      "snapshotRange": "Manual Apple App Store screenshots through Jun 10, 2026",
       "platformFeePct": 30,
       "estimatedNetPct": 70,
       "baselineWindow": {
@@ -3759,14 +3759,14 @@
       },
       "thisWeek": {
         "label": "Apple sales this week",
-        "range": "May 25-May 31, 2026",
+        "range": "Jun 8-Jun 11, 2026",
         "purchases": 1,
         "purchaseRevenue": 14.99,
         "developerRevShare": 10.49,
         "revenuePerPurchase": 14.99,
         "payments": [
           {
-            "date": "May 25",
+            "date": "Jun 10",
             "amount": 14.99,
             "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
@@ -3775,32 +3775,14 @@
       },
       "monthToDate": {
         "label": "Apple sales this month",
-        "range": "May 1-May 31, 2026",
-        "purchases": 4,
-        "purchaseRevenue": 89.96,
-        "developerRevShare": 62.97,
-        "revenuePerPurchase": 22.49,
+        "range": "Jun 1-Jun 11, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49,
+        "revenuePerPurchase": 14.99,
         "payments": [
           {
-            "date": "May 13",
-            "amount": 29.99,
-            "description": "Apple App Store - Purchase Bundle 30",
-            "source": "Apple App Store"
-          },
-          {
-            "date": "May 18",
-            "amount": 29.99,
-            "description": "Apple App Store - Purchase Bundle 30",
-            "source": "Apple App Store"
-          },
-          {
-            "date": "May 18",
-            "amount": 14.99,
-            "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
-          },
-          {
-            "date": "May 25",
+            "date": "Jun 10",
             "amount": 14.99,
             "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
@@ -3825,11 +3807,11 @@
       },
       "yearToDate": {
         "label": "Apple App Store snapshot",
-        "range": "Jan 1-May 31, 2026",
-        "purchases": 8,
-        "purchaseRevenue": 159.92,
-        "developerRevShare": 111.94,
-        "revenuePerPurchase": 19.99,
+        "range": "Jan 1-Jun 11, 2026",
+        "purchases": 9,
+        "purchaseRevenue": 174.91,
+        "developerRevShare": 122.43,
+        "revenuePerPurchase": 19.43,
         "payments": [
           {
             "date": "Apr 16",
@@ -3871,6 +3853,12 @@
             "date": "Apr 6-May 10",
             "amount": 29.99,
             "description": "Apple App Store - Purchase Bundle 30, date pending",
+            "source": "Apple App Store"
+          },
+          {
+            "date": "Jun 10",
+            "amount": 14.99,
+            "description": "Apple App Store - Purchase HD 15",
             "source": "Apple App Store"
           }
         ]
@@ -3917,6 +3905,13 @@
           "purchases": 1,
           "purchaseRevenue": 14.99,
           "developerRevShare": 10.49
+        },
+        {
+          "date": "Jun 10",
+          "rawDate": "20260610",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "developerRevShare": 10.49
         }
       ],
       "undatedSales": [
@@ -3936,9 +3931,9 @@
         },
         {
           "label": "Apple Purchase HD 15",
-          "purchases": 2,
-          "purchaseRevenue": 29.98,
-          "developerRevShare": 20.99
+          "purchases": 3,
+          "purchaseRevenue": 44.97,
+          "developerRevShare": 31.48
         },
         {
           "label": "Apple Purchase Bundle 10",
@@ -3947,7 +3942,7 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $159.92 gross in-app purchase sales manually entered so far, or approximately $111.94 after Apple’s 30% platform fee. These figures remain manual until Apple App Store Connect API reporting is connected."
+      "note": "Apple App Store screenshots show $174.91 gross in-app purchase sales manually entered so far, or approximately $122.43 after Apple’s 30% platform fee. Includes the Jun 10, 2026 Purchase HD 15 ($14.99) from the latest App Store Connect screenshot. These figures remain manual until Apple App Store Connect API reporting is connected."
     },
     "sourceBreakout": [
       {
@@ -3955,21 +3950,21 @@
         "purchases": 21,
         "purchaseRevenue": 439.79,
         "developerRevShare": 0.0,
-        "detail": "Stripe connector is currently disconnected in this run, so the dashboard preserved the last successful Stripe value rather than zeroing it."
+        "detail": "Stripe-visible succeeded payments. Connector verified live on 2026-06-11; no new payments after 2026-05-28, so the total is current (not stale)."
       },
       {
         "source": "Roku",
         "purchases": 16,
         "purchaseRevenue": 241.84,
         "developerRevShare": 193.44,
-        "detail": "Roku-visible sales from emailed Sales Activity Reports, including two new June purchases from the Jun 8 report."
+        "detail": "Roku-visible sales from the latest emailed Sales Activity Report (Jun 8, 2026); no newer Roku sales report this run."
       },
       {
         "source": "Apple App Store",
-        "purchases": 8,
-        "purchaseRevenue": 159.92,
-        "developerRevShare": 111.94,
-        "detail": "Manual Apple App Store snapshot preserved until a newer screenshot/API integration replaces it."
+        "purchases": 9,
+        "purchaseRevenue": 174.91,
+        "developerRevShare": 122.43,
+        "detail": "Manual Apple App Store snapshot; includes the Jun 10, 2026 Purchase HD 15 ($14.99) from the latest App Store Connect screenshot."
       }
     ],
     "baselineWindow": {
@@ -3990,19 +3985,26 @@
     },
     "yearToDate": {
       "label": "Visible sales this year",
-      "range": "Jan 1-Jun 9, 2026",
-      "purchases": 45,
-      "purchaseRevenue": 841.55,
-      "developerRevShare": 305.38,
-      "revenuePerPurchase": 18.7
+      "range": "Jan 1-Jun 11, 2026",
+      "purchases": 46,
+      "purchaseRevenue": 856.54,
+      "developerRevShare": 315.87,
+      "revenuePerPurchase": 18.62
     },
     "monthToDate": {
       "label": "Sales this month",
-      "range": "Jun 1-Jun 9, 2026",
-      "purchases": 2,
-      "purchaseRevenue": 34.98,
-      "revenuePerPurchase": 17.49,
+      "range": "Jun 1-Jun 11, 2026",
+      "purchases": 3,
+      "purchaseRevenue": 49.97,
+      "developerRevShare": 38.47,
+      "revenuePerPurchase": 16.66,
       "payments": [
+        {
+          "date": "Jun 10",
+          "amount": 14.99,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        },
         {
           "date": "Jun 7",
           "createdAt": "2026-06-07",
@@ -4019,8 +4021,7 @@
           "description": "Roku - Purchase HD 15",
           "source": "Roku"
         }
-      ],
-      "developerRevShare": 27.98
+      ]
     },
     "lastWeek": {
       "label": "Sales last week",
@@ -4050,12 +4051,19 @@
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "Jun 8-Jun 9, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": [],
-      "developerRevShare": 0.0
+      "range": "Jun 8-Jun 11, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "developerRevShare": 10.49,
+      "revenuePerPurchase": 14.99,
+      "payments": [
+        {
+          "date": "Jun 10",
+          "amount": 14.99,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
     },
     "currentCompleteWeek": {
       "label": "Sales last week",
@@ -4085,12 +4093,19 @@
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "Jun 8-Jun 9, 2026",
-      "purchases": 0,
-      "purchaseRevenue": 0.0,
-      "revenuePerPurchase": 0,
-      "payments": [],
-      "developerRevShare": 0.0
+      "range": "Jun 8-Jun 11, 2026",
+      "purchases": 1,
+      "purchaseRevenue": 14.99,
+      "developerRevShare": 10.49,
+      "revenuePerPurchase": 14.99,
+      "payments": [
+        {
+          "date": "Jun 10",
+          "amount": 14.99,
+          "description": "Apple App Store - Purchase HD 15",
+          "source": "Apple App Store"
+        }
+      ]
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
@@ -4612,7 +4627,7 @@
         "developerRevShare": 0.0
       }
     ],
-    "note": "Visible platform sales combine Stripe, Roku, and preserved manual Apple snapshots. Stripe was disconnected during the Jun 8 refresh, so last-good Stripe values were preserved. Google Play and other channels may still be missing."
+    "note": "Visible platform sales show 46 purchases and $856.54 year to date, combining Stripe-visible payments, Roku-visible sales, and the manual Apple App Store snapshot. Apple gross in the snapshot is $174.91 (est. net $122.43 after Apple’s 30% fee). Still not total ElectricNOW sales: Google Play is separate and Apple is a manual snapshot."
   },
   "contentUsage": {
     "period": "May 25-May 31, 2026",
@@ -7299,7 +7314,15 @@
     },
     "reportEmailDate": "2026-06-08T16:39:11+00:00",
     "attachmentFilename": "App_Engagement_2026-06-08T0938.pdf",
-    "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement."
+    "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement.",
+    "status": "STALE_ATTACHMENT_UNAVAILABLE",
+    "staleNote": "A newer Roku App Engagement email arrived 2026-06-11 (App_Engagement_2026-06-11T0720.pdf), but its PDF attachment could not be retrieved/parsed in this run. Preserving the last successful values from the May 31-Jun 6, 2026 report (generated Jun 8) rather than zeroing. Refresh once the attachment is available.",
+    "lastSuccessfulReportPeriod": "May 31-Jun 6, 2026",
+    "newerReportPending": {
+      "emailDate": "2026-06-11T14:21:08+00:00",
+      "attachmentFilename": "App_Engagement_2026-06-11T0720.pdf",
+      "from": "bdp_noreply@data.roku.com"
+    }
   },
   "visitSummary": {
     "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
@@ -7328,10 +7351,10 @@
     "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Landing-page traffic remains acquisition-only and is not included here."
   },
   "manualAppleSalesUpdate": {
-    "updatedAt": "2026-05-28T15:40:00+00:00",
-    "source": "manual_apple_sales.json preserved after refresh",
-    "totalManualAppleEntries": 4,
-    "note": "Preserved May 25 Apple sale (Purchase HD 15, $14.99 gross). 4 manual entries: May 13, May 18 (2), May 25."
+    "updatedAt": "2026-06-11T21:33:00+00:00",
+    "source": "manual_apple_sales.json updated with Jun 10 sale; preserved across refresh",
+    "totalManualAppleEntries": 5,
+    "note": "5 manual entries: May 13, May 18 (2), May 25, Jun 10 (Purchase HD 15, $14.99 gross)."
   },
   "googleAdsSummary": {
     "source": "Google Ads connector",
@@ -7467,9 +7490,9 @@
       }
     ],
     "plainEnglish": "Google Ads produced 124 counted Android first-open conversions on $66.47 of spend, about $0.54 per conversion.",
-    "dataFreshnessNote": "Fresh Google Ads connector pull for Jun 1-Jun 7, 2026.",
-    "statusDetail": "Fresh as of the June 8 dashboard refresh.",
-    "lastSuccessfulPull": "2026-06-08 12:55 PDT"
+    "dataFreshnessNote": "Fresh: Google Ads connector verified live on 2026-06-11. Jun 1-7 app-promotion campaign data unchanged from the prior pull.",
+    "statusDetail": "Verified live on 2026-06-11; current complete-week window (Jun 1-7) unchanged, so figures remain current.",
+    "lastSuccessfulPull": "2026-06-11 14:40 PDT"
   },
   "adSuccessSummary": {
     "googleAds": {
@@ -7486,8 +7509,7 @@
       "costPerConversion": 0.54,
       "source": "Google Ads connector",
       "note": "Paid acquisition looks efficient on cost, but the growth signal is mixed: Google Ads spent $241.08 from May 12-May 26, 2026, generated 46,962 paid-campaign impressions, 1,458 clicks, and 443 Android first-open conversions at about $0.54 per first open. That cost per first open is strong for app acquisition, but platform audience was down 8.0% and viewing was down 2.7% in the latest GA4 week, so the ads appear good at buying installs/opens but we still need to watch whether those paid users convert into sustained viewers and time spent. Meta remains the bigger spend driver in the latest Nathan report (May 24-May 30) at $3,146.72 for 3,259 downloads (about $0.97 blended cost per download), with Android still cheaper than iOS; iOS cost per download improved to $1.23 while Android rose to $0.80, and impressions/link clicks softened (down 4.8% and 13.1%). The next question for Patrick/Nathan is whether the lower-cost Android volume produces real viewing quality.",
-      "status": "STALE_RATE_LIMITED",
-      "staleNote": "Google Ads connector rate-limited on 2026-06-01; last successful pull May 12-May 26, 2026. Values preserved (not zeroed) and marked stale."
+      "status": "fresh"
     },
     "metaAds": {
       "period": "May 31-Jun 6, 2026",
@@ -7737,41 +7759,20 @@
   "manualAppleDownloads": {
     "sourceLabel": "Manual Apple App Store Connect snapshot",
     "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-    "capturedAt": "2026-06-07 07:31 PDT",
-    "enteredAt": "2026-06-07 07:55 PDT",
+    "capturedAt": "2026-06-11 14:33 PDT",
+    "enteredAt": "2026-06-11 14:40 PDT",
     "uploadedAttachments": [
-      "uploaded_attachments/d6553cdb322544eda7c29709f1b35019/image.jpeg",
-      "uploaded_attachments/d6553cdb322544eda7c29709f1b35019/image-1.jpeg"
+      "uploaded_attachments/938fa56def2e4d469759f715c8770513/image-1.jpeg"
     ],
     "product": "ElectricNOW",
     "platform": "Free iOS/watchOS/tvOS",
-    "period": "May 31-Jun 6, 2026",
-    "start": "2026-05-31",
-    "end": "2026-06-06",
-    "downloads": 1343,
-    "displayDownloads": "1,343",
-    "dailyAverage": 192,
+    "period": "Jun 4-Jun 10, 2026",
+    "start": "2026-06-04",
+    "end": "2026-06-10",
+    "downloads": 1053,
+    "displayDownloads": "1,053",
+    "dailyAverage": 150,
     "daily": [
-      {
-        "date": "2026-05-31",
-        "label": "May 31, 2026",
-        "downloads": 257
-      },
-      {
-        "date": "2026-06-01",
-        "label": "June 1, 2026",
-        "downloads": 206
-      },
-      {
-        "date": "2026-06-02",
-        "label": "June 2, 2026",
-        "downloads": 214
-      },
-      {
-        "date": "2026-06-03",
-        "label": "June 3, 2026",
-        "downloads": 206
-      },
       {
         "date": "2026-06-04",
         "label": "June 4, 2026",
@@ -7786,6 +7787,26 @@
         "date": "2026-06-06",
         "label": "June 6, 2026",
         "downloads": 138
+      },
+      {
+        "date": "2026-06-07",
+        "label": "June 7, 2026",
+        "downloads": 150
+      },
+      {
+        "date": "2026-06-08",
+        "label": "June 8, 2026",
+        "downloads": 148
+      },
+      {
+        "date": "2026-06-09",
+        "label": "June 9, 2026",
+        "downloads": 162
+      },
+      {
+        "date": "2026-06-10",
+        "label": "June 10, 2026",
+        "downloads": 133
       }
     ],
     "fiveWeekSnapshot": {
@@ -7813,11 +7834,11 @@
     "territories": [
       {
         "territory": "United States",
-        "downloads": 1343,
+        "downloads": 1053,
         "deltaPct": null
       }
     ],
-    "note": "Because this is a manual Apple Connect screenshot, it should be preserved until replaced by a newer screenshot or an Apple App Store Connect API integration. Daily U.S. values total 1,343 for May 31-Jun 6; the separate 5-week screen shows 6,183 total free iOS/watchOS/tvOS downloads for Apr 27-May 31."
+    "note": "Manual Apple Connect screenshot. Daily U.S. downloads total 1,053 for Jun 4-Jun 10, 2026 (June 10 = 133). Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration."
   },
   "manualDataPatch": {
     "updatedAt": "2026-06-07 07:55 PDT",
