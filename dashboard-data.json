@@ -2367,12 +2367,12 @@
     "engagementRateWeekToDate": 93.5336048879837
   },
   "plainEnglishInsights": [
-    "Overall, ElectricNOW is slightly softer this week on measured platform audience: 7,552 GA4 platform active users for Jun 1-Jun 7, excluding landing-page acquisition traffic, -2.7% versus the previous complete week and -13.3% versus launch week. Viewing-event users were 2,570, -7.9% week over week, so the story is not a collapse, but it is a modest weekly decline that needs continued acquisition and conversion attention.",
+    "Overall (June 11, 2026 refresh): GA4 complete-week usage remains Jun 1-Jun 7, 2026 because Jun 11 is mid-week and the next Mon-Sun week (Jun 8-14) is not complete yet, so platform-usage windows are intentionally held at the last complete week. Measured platform audience was 7,552 GA4 active users for Jun 1-Jun 7 (excluding landing-page acquisition), -2.7% vs the previous complete week. New this run: Apple downloads and sales were updated through Jun 10 (a Jun 10 Purchase HD 15 sale, plus a Jun 4-10 downloads snapshot of 1,053). Roku App Engagement is stale this run - a newer Jun 11 report arrived but its PDF attachment could not be retrieved, so the last good May 31-Jun 6 values are preserved (not zeroed). Paid acquisition is current to each source: Meta May 31-Jun 6 and Google Ads Jun 1-Jun 7.",
     "Engagement quality weakened slightly: platform engagement rate was 78.5% versus 80.4% last week, and average engaged time was 39.3 minutes per platform user. The audience is still spending meaningful time, but the trend is down from last week.",
     "Landing-page users were 606; these are acquisition-only and are not included in platform audience totals. This keeps the dashboard from confusing paid landing-page traffic with actual app/platform usage.",
     "Paid acquisition verdict: acceptable but needs proof of viewing. Meta reported 2,997 downloads at about $1.04 per download, while Google Ads reported 124 Android first-open conversions at about $0.54 per conversion. Those costs look directionally workable, but the key next step is proving that paid installs become viewing users, not just downloads or first opens.",
     "Targeting signal: Meta’s Android campaigns are still materially cheaper than iOS, and the strongest age bands remain older audience groups. The practical recommendation is to keep separating iOS and Android budgets, shift test dollars toward lower-cost audiences that also show viewing depth, and use show-specific creative for The Ark, Leverage, Almost Paradise, The Librarians, and The Poly Couple.",
-    "Roku app engagement is now updated from the Jun 8 Roku email: 228 new installs, 255 average daily viewers, 74.4 average minutes per viewer, and 2,218 total hours streamed for May 31-Jun 6.",
+    "Roku app engagement is STALE this run: a newer Roku App Engagement email arrived Jun 11 but its PDF attachment bytes were unavailable, so we preserve the last good May 31-Jun 6 report (228 new installs, 255 average daily viewers, 74.4 average minutes per viewer, 2,218 total hours streamed). It will refresh once the attachment is retrievable; values are preserved, not zeroed.",
     "Visible platform sales (combined Stripe, Roku, and the manual Apple App Store snapshot): 46 purchases and $856.54 year to date - Stripe 21/$439.79, Roku 16/$241.84 ($193.44 developer revenue share), and Apple 9/$174.91 ($122.43 est. net), now including the Jun 10 Apple Purchase HD 15 ($14.99). This is still not total ElectricNOW sales: Google Play is handled separately and Apple is a manual snapshot.",
     "Tracking caveat: GA4 still does not cleanly identify every smart-TV surface, and Stripe, Roku, Apple, Google Play, ad-server revenue, and Amagi reporting should continue to be reconciled separately before treating dashboard totals as complete company-wide totals.",
     "Bottom line: ElectricNOW remains in a healthy engagement range, but the latest complete week is not a growth week by platform users. The best path is not simply spending more; it is spending more efficiently, tightening attribution from ad click/download to actual viewing, and pushing the strongest content hooks into paid creative and in-app promotion."
@@ -7328,27 +7328,27 @@
     "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
     "weekly": {
       "label": "Weekly visits",
-      "range": "May 25-May 31, 2026",
-      "sessions": 14362,
-      "activeUsers": 7757,
-      "engagedSessions": 11514,
-      "previousRange": "May 18-May 24, 2026",
-      "previousSessions": 14345,
-      "deltaVsPreviousPct": 0.11850819100731962,
+      "range": "Jun 1-Jun 7, 2026",
+      "sessions": 13821,
+      "activeUsers": 7552,
+      "engagedSessions": 10854,
+      "previousRange": "May 25-May 31, 2026",
+      "previousSessions": 14349,
+      "deltaVsPreviousPct": -3.679698933723605,
       "comparisonLabel": "vs previous 7 days"
     },
     "monthly": {
       "label": "Monthly visits",
-      "range": "May 4-May 31, 2026",
-      "sessions": 53156,
-      "activeUsers": 23520,
-      "engagedSessions": 43481,
-      "previousRange": "Apr 6-May 3, 2026",
-      "previousSessions": 45811,
-      "deltaVsPreviousPct": null,
+      "range": "May 11-Jun 7, 2026",
+      "sessions": 56406,
+      "activeUsers": 25787,
+      "engagedSessions": 46440,
+      "previousRange": "Apr 13-May 10, 2026",
+      "previousSessions": 53047,
+      "deltaVsPreviousPct": 6.332120572322657,
       "comparisonLabel": "latest 28 days"
     },
-    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Landing-page traffic remains acquisition-only and is not included here."
+    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the current complete reporting week (Jun 1-Jun 7, 2026) and compare against the previous 7 complete days; monthly visits use the latest complete 28 days. Landing-page traffic remains acquisition-only and is not included here."
   },
   "manualAppleSalesUpdate": {
     "updatedAt": "2026-06-11T21:33:00+00:00",
@@ -7863,5 +7863,18 @@
       ]
     },
     "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
+  },
+  "plainEnglishSummary": {
+    "generatedAt": "2026-06-11 14:40 PDT",
+    "overview": "As of the June 11, 2026 refresh, ElectricNOW's GA4 complete-week usage still reflects June 1-June 7, 2026: because June 11 falls mid-week, the next Monday-Sunday week (June 8-14) is not yet complete, so the platform-usage windows are intentionally held at the last complete week rather than showing a partial one. What did change this run is on the Apple side: manual App Store Connect downloads and sales were updated through June 10 (a new June 10 Purchase HD 15 sale of $14.99, plus a June 4-10 downloads snapshot). Roku App Engagement is shown as stale this run because a newer June 11 report arrived but its PDF attachment bytes could not be retrieved, so the last good May 31-June 6 values are preserved (not zeroed). Paid-acquisition data is current to each source's latest complete window: Meta May 31-June 6, 2026 and Google Ads June 1-June 7, 2026.",
+    "bullets": [
+      "Traffic: platform visits (GA4 sessions, excluding landing-page acquisition) were 13,821 in the current complete week (Jun 1-Jun 7), -3.7% vs the previous 7 days. Over the latest complete 28 days (May 11-Jun 7) visits were 56,406, +6.3% vs the prior 28 days.",
+      "Engagement: weekly engaged sessions were 10,854 on 7,552 active users; engagement softened slightly week over week, so the question remains whether new users convert into deep, repeat viewing.",
+      "Paid acquisition: Meta spent $3,128.73 (May 31-Jun 6) driving 2,997 app downloads; Google Ads is fresh for Jun 1-Jun 7 (app-promotion cost $66.47, 124 conversions). Cost per install stays acceptable, with Android cheaper than iOS.",
+      "App downloads (Apple manual snapshot): 1,053 downloads for Jun 4-Jun 10, 2026 (June 10 = 133). This is App Store download activity, not paid sales and not GA4 active users.",
+      "Sales (visible platform sales = Stripe + Roku + manual Apple): 46 purchases and $856.54 year to date - Stripe 21/$439.79, Roku 16/$241.84, and Apple 9/$174.91 gross (est. net $122.43 after Apple's 30% fee), now including the June 10 Apple Purchase HD 15 ($14.99).",
+      "Caveats: Apple figures are a manual App Store Connect snapshot (gross shown; estimated net assumes Apple keeps 30%); Google Play sales are handled separately and are not in this total; Roku App Engagement is stale this run pending a retrievable June 11 report; GA4 in-app-purchase signals are usage signals, not booked revenue, and are excluded from visible platform sales.",
+      "Bottom line: usage is steady on the last complete week with no regression, paid spend keeps buying installs at reasonable cost, and visible sales rose to 46/$856.54 with the new Apple sale. The open item is still proving downstream viewing depth from paid installs, plus refreshing Roku App Engagement once its attachment is available."
+    ]
   }
 }
