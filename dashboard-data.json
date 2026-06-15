@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14 10:05 PDT",
+  "generatedAt": "2026-06-15 09:40 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -2375,6 +2375,7 @@
     "Roku app engagement is STALE this run: a newer Roku App Engagement email arrived Jun 11 but its PDF attachment bytes were unavailable, so we preserve the last good May 31-Jun 6 report (228 new installs, 255 average daily viewers, 74.4 average minutes per viewer, 2,218 total hours streamed). It will refresh once the attachment is retrievable; values are preserved, not zeroed.",
     "Visible platform sales (combined Stripe, Roku, and the manual Apple App Store snapshot): 47 purchases and $871.53 year to date - Stripe 21/$439.79, Roku 16/$241.84 ($193.44 developer revenue share), and Apple 10/$189.90 ($132.92 est. net), now including the June 11 Apple Purchase HD 15 ($14.99). This is visible platform sales, not total company-wide sales: Google Play is separate and Apple is a manual snapshot.",
     "Tracking caveat: GA4 still does not cleanly identify every smart-TV surface, and Stripe, Roku, Apple, Google Play, ad-server revenue, and Amagi reporting should continue to be reconciled separately before treating dashboard totals as complete company-wide totals.",
+    "YouTube (separate channel; latest available Jun 8-Jun 12, 2026, partial through Jun 12 - not a full week): the ElectricNOW YouTube channel had 135,173 views, about 60,561 hours watched, and roughly $2,614 in estimated YouTube ad revenue (down vs the prior full week, but average viewing depth improved to about 26m 54s / 44.9% average view). TV is the dominant device and related-video recommendations are the largest traffic driver; Flyboys was the strongest single video. This is estimated YouTube ad revenue only - not a sale, not an in-app purchase, and not part of Visible Platform Sales; YouTube ad impressions are also separate from ElectricNOW in-app ads and from Google/Meta paid-acquisition impressions.",
     "Bottom line: ElectricNOW remains in a healthy engagement range, but the latest complete week is not a growth week by platform users. The best path is not simply spending more; it is spending more efficiently, tightening attribution from ad click/download to actual viewing, and pushing the strongest content hooks into paid creative and in-app promotion."
   ],
   "instrumentationGaps": [
@@ -7908,7 +7909,7 @@
     "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
   },
   "plainEnglishSummary": {
-    "generatedAt": "2026-06-14 10:05 PDT",
+    "generatedAt": "2026-06-15 09:40 PDT",
     "overview": "As of the June 14, 2026 refresh, ElectricNOW's GA4 complete-week usage still reflects Jun 1-Jun 7, 2026: because June 14 falls mid-week, the next Monday-Sunday week (June 8-14) is not yet complete, so the platform-usage windows are intentionally held at the last complete week rather than showing a partial one. What changed this run is on the Apple side: manual App Store Connect downloads and sales were updated through June 12 - a new June 11 Purchase HD 15 sale of $14.99 and a June 6-12 downloads snapshot of 1,008 (the June 10 sale was already recorded and is not double-counted). Roku App Engagement is still shown as stale because its latest report attachment could not be retrieved, so the last good May 31-June 6 values are preserved (not zeroed). Paid-acquisition data is current to each source's latest complete window: Meta May 31-June 6, 2026 and Google Ads June 1-June 7, 2026.",
     "bullets": [
       "Traffic: platform visits (GA4 sessions, excluding landing-page acquisition) were 13,821 in the current complete week (Jun 1-Jun 7, 2026), -3.7% vs the previous 7 days. Over the latest complete 28 days (May 11-Jun 7, 2026) visits were 56,406, +6.3% vs the prior 28 days.",
@@ -7917,7 +7918,377 @@
       "App downloads (Apple manual snapshot): 1,008 downloads for Jun 6-Jun 12, 2026 (June 12 = 140). This is App Store download activity, not paid sales and not GA4 active users.",
       "Sales (visible platform sales = Stripe + Roku + manual Apple): 47 purchases and $871.53 year to date - Stripe 21/$439.79, Roku 16/$241.84, and Apple 10/$189.90 gross (est. net $132.92 after Apple's 30% fee), now including the June 11 Apple Purchase HD 15 ($14.99).",
       "Caveats: Apple figures are a manual App Store Connect snapshot (gross shown; estimated net assumes Apple keeps 30%); Google Play sales are handled separately and are not in this total; Roku App Engagement is stale this run pending a retrievable report; GA4 in-app-purchase signals are usage signals, not booked revenue, and are excluded from visible platform sales.",
+      "YouTube: the ElectricNOW YouTube channel (latest available Jun 8-Jun 12, 2026, partial through Jun 12) had 135,173 views, ~60,561 hours watched, and ~$2,614 estimated YouTube ad revenue, with average view duration improving to 26m 54s. TV dominates devices and related videos drive the most traffic. This is estimated YouTube ad revenue only (no purchases) and is separate from Visible Platform Sales and from paid-acquisition impressions.",
       "Bottom line: usage is steady on the last complete week with no regression, paid spend keeps buying installs at reasonable cost, and visible sales rose to 47/$871.53 with the new Apple sale. The open item is still proving downstream viewing depth from paid installs, plus refreshing Roku App Engagement once its attachment is available."
     ]
+  },
+  "youtubeSummary": {
+    "source": "YouTube Analytics connector, ElectricNOW channel",
+    "connectorStatus": "CONNECTED",
+    "period": "Jun 8-Jun 12, 2026",
+    "periodNote": "Latest available YouTube Analytics data. The connector returned complete rows only through Jun 12 when queried for Jun 8-Jun 14, 2026, so this is the latest available window, NOT a complete Monday-Sunday week.",
+    "comparisonPeriod": "Jun 1-Jun 7, 2026",
+    "comparisonNote": "Compared to the prior full week (Jun 1-Jun 7, 2026).",
+    "isPlatformSales": false,
+    "revenueType": "estimated YouTube ad revenue",
+    "kpis": [
+      {
+        "key": "views",
+        "label": "Views",
+        "value": 135173,
+        "deltaPct": -33.85,
+        "detail": "YouTube channel views in the latest available period"
+      },
+      {
+        "key": "hoursWatched",
+        "label": "Est. hours watched",
+        "value": 60560.82,
+        "deltaPct": -32.9,
+        "detail": "Estimated hours watched on YouTube"
+      },
+      {
+        "key": "avgViewDuration",
+        "label": "Avg view duration",
+        "value": "26m 54s",
+        "deltaSeconds": 23,
+        "detail": "Average watch time per YouTube view"
+      },
+      {
+        "key": "avgViewPct",
+        "label": "Avg view %",
+        "value": 44.87,
+        "deltaPoints": 3.21,
+        "detail": "Average percentage of each video watched"
+      },
+      {
+        "key": "estimatedAdRevenue",
+        "label": "Est. YouTube ad revenue",
+        "value": 2613.909,
+        "deltaPct": -30.9,
+        "detail": "Estimated YouTube ad revenue (NOT sales, NOT in-app purchases)"
+      },
+      {
+        "key": "adImpressions",
+        "label": "YouTube ad impressions",
+        "value": 710426,
+        "deltaPct": -31.83,
+        "detail": "YouTube ad impressions (NOT ElectricNOW in-app ads, NOT paid-acquisition impressions)"
+      },
+      {
+        "key": "monetizedPlaybacks",
+        "label": "Monetized playbacks",
+        "value": 112971,
+        "deltaPct": -30.5,
+        "detail": "YouTube playbacks that served a monetized ad"
+      },
+      {
+        "key": "netSubscribers",
+        "label": "Net subscribers",
+        "value": 152,
+        "deltaDelta": -16,
+        "detail": "+206 gained / -54 lost"
+      }
+    ],
+    "totals": {
+      "views": 135173,
+      "estimatedHoursWatched": 60560.82,
+      "estimatedMinutesWatched": 3633649,
+      "averageViewDuration": "26m 54s",
+      "averageViewPercentage": 44.87,
+      "estimatedAdRevenue": 2613.91,
+      "adImpressions": 710426,
+      "monetizedPlaybacks": 112971,
+      "subscribersGained": 206,
+      "subscribersLost": 54,
+      "netSubscribers": 152,
+      "likes": 1341,
+      "comments": 77,
+      "shares": 182
+    },
+    "previousTotals": {
+      "views": 204341,
+      "estimatedHoursWatched": 90264.85,
+      "estimatedAdRevenue": 3783.08,
+      "adImpressions": 1042122,
+      "monetizedPlaybacks": 162540,
+      "netSubscribers": 168
+    },
+    "dailyTrend": [
+      {
+        "date": "2026-06-08",
+        "views": 28514,
+        "estimatedMinutesWatched": 747306,
+        "estimatedHoursWatched": 12455.1,
+        "estimatedAdRevenue": 506.87,
+        "adImpressions": 143842,
+        "monetizedPlaybacks": 23703
+      },
+      {
+        "date": "2026-06-09",
+        "views": 27503,
+        "estimatedMinutesWatched": 754938,
+        "estimatedHoursWatched": 12582.3,
+        "estimatedAdRevenue": 517.8,
+        "adImpressions": 147997,
+        "monetizedPlaybacks": 22920
+      },
+      {
+        "date": "2026-06-10",
+        "views": 28064,
+        "estimatedMinutesWatched": 745986,
+        "estimatedHoursWatched": 12433.1,
+        "estimatedAdRevenue": 534.13,
+        "adImpressions": 147389,
+        "monetizedPlaybacks": 23776
+      },
+      {
+        "date": "2026-06-11",
+        "views": 25680,
+        "estimatedMinutesWatched": 691172,
+        "estimatedHoursWatched": 11519.53,
+        "estimatedAdRevenue": 520.75,
+        "adImpressions": 135924,
+        "monetizedPlaybacks": 21896
+      },
+      {
+        "date": "2026-06-12",
+        "views": 25412,
+        "estimatedMinutesWatched": 694246,
+        "estimatedHoursWatched": 11570.77,
+        "estimatedAdRevenue": 534.35,
+        "adImpressions": 135274,
+        "monetizedPlaybacks": 20676
+      }
+    ],
+    "topVideos": [
+      {
+        "videoId": "b6kMpenpQGM",
+        "title": "Flyboys | FULL MOVIE | James Franco | Jean Reno | Jennifer Decker | David Ellison",
+        "views": 15195,
+        "estimatedHoursWatched": 12925.98,
+        "averageViewDuration": "51m 04s",
+        "averageViewPercentage": 36.79,
+        "estimatedAdRevenue": 476.77,
+        "adImpressions": 147592,
+        "monetizedPlaybacks": 11476
+      },
+      {
+        "videoId": "tKAdjrXYj8g",
+        "title": "Blackway | FULL MOVIE | Anthony Hopkins | Ray Liotta | Julia Stiles | Alexander Ludwig",
+        "views": 4042,
+        "estimatedHoursWatched": 1373.38,
+        "averageViewDuration": "20m 23s",
+        "averageViewPercentage": 22.58,
+        "estimatedAdRevenue": 63.92,
+        "adImpressions": 16286,
+        "monetizedPlaybacks": 2177
+      },
+      {
+        "videoId": "YM6-fBB7yQY",
+        "title": "Leverage | The Nigerian Job | Season 1 Episode 1 | Official Episode",
+        "views": 3624,
+        "estimatedHoursWatched": 1709.7,
+        "averageViewDuration": "28m 21s",
+        "averageViewPercentage": 49.34,
+        "estimatedAdRevenue": 62.02,
+        "adImpressions": 20982,
+        "monetizedPlaybacks": 3105
+      },
+      {
+        "videoId": "0T-yveMJPko",
+        "title": "The Librarian: Quest for the Spear | FULL MOVIE | Noah Wyle, Kyle MacLachlan, Bob Newhart",
+        "views": 2706,
+        "estimatedHoursWatched": 1593.73,
+        "averageViewDuration": "35m 20s",
+        "averageViewPercentage": 33.36,
+        "estimatedAdRevenue": 98.62,
+        "adImpressions": 21222,
+        "monetizedPlaybacks": 2306
+      },
+      {
+        "videoId": "hDt1a2yjYBE",
+        "title": "The Boost Job | Electric Entertainment 25th Anniversary Celebration! | Leverage S03E08",
+        "views": 2118,
+        "estimatedHoursWatched": 546.68,
+        "averageViewDuration": "15m 27s",
+        "averageViewPercentage": 36.12,
+        "estimatedAdRevenue": 32.22,
+        "adImpressions": 7648,
+        "monetizedPlaybacks": 1918
+      },
+      {
+        "videoId": "LMX2-vsoGSo",
+        "title": "Leverage | The Homecoming Job | Season 1 Episode 2 | Official Episode",
+        "views": 1969,
+        "estimatedHoursWatched": 972.12,
+        "averageViewDuration": "29m 36s",
+        "averageViewPercentage": 69.06,
+        "estimatedAdRevenue": 32.81,
+        "adImpressions": 10010,
+        "monetizedPlaybacks": 1495
+      },
+      {
+        "videoId": "89J-9vWWPuk",
+        "title": "The Triangle: Night 1 | Full Movie | Eric Stoltz, Catherine Bell, Lou Diamond Phillips, Sam Neill",
+        "views": 1803,
+        "estimatedHoursWatched": 603.55,
+        "averageViewDuration": "20m 04s",
+        "averageViewPercentage": 22.64,
+        "estimatedAdRevenue": 24.69,
+        "adImpressions": 6237,
+        "monetizedPlaybacks": 1080
+      },
+      {
+        "videoId": "sjsGMHmm9Yk",
+        "title": "The Librarian: Curse of the Judas Chalice | FULL MOVIE | Noah Wyle, Bruce Davison, Bob Newhart",
+        "views": 1628,
+        "estimatedHoursWatched": 735.48,
+        "averageViewDuration": "27m 05s",
+        "averageViewPercentage": 30.07,
+        "estimatedAdRevenue": 34.69,
+        "adImpressions": 9102,
+        "monetizedPlaybacks": 1195
+      },
+      {
+        "videoId": "-mqcn5M0ktA",
+        "title": "LBJ | FULL MOVIE | Woody Harrelson | Jennifer Jason Leigh | Richard Jenkins | Bill Pullman",
+        "views": 1530,
+        "estimatedHoursWatched": 616.78,
+        "averageViewDuration": "24m 08s",
+        "averageViewPercentage": 24.84,
+        "estimatedAdRevenue": 22.43,
+        "adImpressions": 5752,
+        "monetizedPlaybacks": 1216
+      },
+      {
+        "videoId": "JeeMINxXYwQ",
+        "title": "Leverage | The Jailhouse Job | Season 3 Episode 1 | Official Episode",
+        "views": 1456,
+        "estimatedHoursWatched": 560.27,
+        "averageViewDuration": "23m 05s",
+        "averageViewPercentage": 53.84,
+        "estimatedAdRevenue": 26.51,
+        "adImpressions": 6521,
+        "monetizedPlaybacks": 1182
+      }
+    ],
+    "trafficSources": [
+      {
+        "source": "RELATED_VIDEO",
+        "label": "Related videos",
+        "views": 64768,
+        "viewSharePct": 48.0,
+        "estimatedHoursWatched": 35617.57,
+        "averageViewDuration": "32m 59s"
+      },
+      {
+        "source": "SUBSCRIBER",
+        "label": "Subscriber feed",
+        "views": 32269,
+        "viewSharePct": 23.9,
+        "estimatedHoursWatched": 9232.07,
+        "averageViewDuration": "17m 11s"
+      },
+      {
+        "source": "PLAYLIST",
+        "label": "Playlists",
+        "views": 16912,
+        "viewSharePct": 12.5,
+        "estimatedHoursWatched": 7277.72,
+        "averageViewDuration": "25m 49s"
+      },
+      {
+        "source": "NO_LINK_OTHER",
+        "label": "Direct / unknown",
+        "views": 8275,
+        "viewSharePct": 6.1,
+        "estimatedHoursWatched": 4185.85,
+        "averageViewDuration": "30m 21s"
+      },
+      {
+        "source": "YT_SEARCH",
+        "label": "YouTube search",
+        "views": 6263,
+        "viewSharePct": 4.6,
+        "estimatedHoursWatched": 2114.37,
+        "averageViewDuration": "20m 18s"
+      },
+      {
+        "source": "YT_OTHER_PAGE",
+        "label": "Other YouTube pages",
+        "views": 3539,
+        "viewSharePct": 2.6,
+        "estimatedHoursWatched": 1273.38,
+        "averageViewDuration": "21m 35s"
+      },
+      {
+        "source": "EXT_URL",
+        "label": "External URLs",
+        "views": 1265,
+        "viewSharePct": 0.9,
+        "estimatedHoursWatched": 297.37,
+        "averageViewDuration": "14m 06s"
+      },
+      {
+        "source": "YT_CHANNEL",
+        "label": "Channel pages",
+        "views": 1140,
+        "viewSharePct": 0.8,
+        "estimatedHoursWatched": 258.37,
+        "averageViewDuration": "13m 40s"
+      },
+      {
+        "source": "END_SCREEN",
+        "label": "End screens",
+        "views": 284,
+        "viewSharePct": 0.2,
+        "estimatedHoursWatched": 112.67,
+        "averageViewDuration": "23m 48s"
+      },
+      {
+        "source": "NOTIFICATION",
+        "label": "Notifications",
+        "views": 79,
+        "viewSharePct": 0.1,
+        "estimatedHoursWatched": 4.37,
+        "averageViewDuration": "3m 19s"
+      }
+    ],
+    "deviceSplit": [
+      {
+        "device": "TV",
+        "label": "TV",
+        "views": 73954,
+        "viewSharePct": 54.9,
+        "estimatedHoursWatched": 38854.07,
+        "averageViewDuration": "31m 32s"
+      },
+      {
+        "device": "MOBILE",
+        "label": "Mobile",
+        "views": 30888,
+        "viewSharePct": 22.9,
+        "estimatedHoursWatched": 10274.63,
+        "averageViewDuration": "19m 59s"
+      },
+      {
+        "device": "DESKTOP",
+        "label": "Desktop",
+        "views": 22645,
+        "viewSharePct": 16.8,
+        "estimatedHoursWatched": 8545.1,
+        "averageViewDuration": "22m 39s"
+      },
+      {
+        "device": "TABLET",
+        "label": "Tablet",
+        "views": 7316,
+        "viewSharePct": 5.4,
+        "estimatedHoursWatched": 2692.2,
+        "averageViewDuration": "22m 06s"
+      }
+    ],
+    "distinctionNote": "This is YouTube-only performance. YouTube ad impressions and estimated YouTube ad revenue are distinct from ElectricNOW in-app ad impressions and from Google/Meta paid-acquisition impressions. YouTube has no purchases and is NOT included in Visible Platform Sales.",
+    "plainEnglish": "YouTube is a meaningful separate audience and revenue channel, but the latest available YouTube Analytics data is partial through Jun 12. In that latest available period, the channel produced 135K views, about 60.6K hours watched, and roughly $2.6K in estimated revenue; that is down from the prior full week, but average viewing depth improved, with average view duration rising to about 26 minutes 54 seconds and average view percentage improving to 44.9%. TV viewing is the dominant device behavior, related-video recommendations are the largest traffic driver, and Flyboys was the strongest individual video by views, watch time, ad impressions, and revenue. This section should be treated as YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions."
   }
 }
