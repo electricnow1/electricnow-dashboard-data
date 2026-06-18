@@ -2160,16 +2160,16 @@
       "engagementRateWeekToDate": 93.5336048879837
     },
     "plainEnglishInsights": [
-      "Overall (June 18, 2026 update): GA4 complete-week usage holds at Jun 8-Jun 14, 2026; the prior complete week (Jun 1-Jun 7, 2026) is the comparison baseline. Measured platform audience was 7,282 GA4 active users for Jun 8-Jun 14, 2026 (excluding landing-page acquisition), with 13,850 sessions and a 78% engagement rate. New this run: the latest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31), Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%), and one new Apple Purchase HD 15 sale (Jun 16, $14.99) lifts combined visible platform sales to 53/$961.47. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit); its last-good Jun 1-Jun 7, 2026 values are preserved, not zeroed.",
+      "Overall (June 18, 2026 update): GA4 complete-week usage holds at Jun 8-Jun 14, 2026; the prior complete week (Jun 1-Jun 7, 2026) is the comparison baseline. Measured platform audience was 7,282 GA4 active users for Jun 8-Jun 14, 2026 (excluding landing-page acquisition), with 13,850 sessions and a 78% engagement rate. New this run: the latest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31), Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%), and one new Apple Purchase HD 15 sale (Jun 16, $14.99) lifts combined visible platform sales to 53/$961.47. Stripe was then reconnected (Jun 18) and 2 previously-missed succeeded charges (Jun 12 + Jun 15, $14.99 each) were added, bringing the combined total to 55/$991.45. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit); its last-good Jun 1-Jun 7, 2026 values are preserved, not zeroed.",
       "Engagement: weekly platform visits (landing-excluded sessions) were 15,081, +9.1% vs the previous 7 days, on 8,109 active users with 12,009 engaged sessions; engagement rate 78%. The new complete week held up versus the prior week.",
       "Landing-page traffic is acquisition-only and is NOT included in platform audience totals; this keeps measured platform audience clean of marketing-page hits.",
       "Paid acquisition (Meta, Jun 11-Jun 17, 2026): Meta spent $1,968.57 (-37.1% vs the prior period) driving 987 reported platform downloads (iOS 277 + Android 710); the breakdown tables show 1641 Meta app installs (a different attribution grain - the two are kept separate, not blended). Spend and volume were down but CPC improved to $0.31, and Google Play / Android stays cheaper than iOS ($0.98 vs $1.24 per download); 55-64 and 65+ are the most efficient larger age bands, 18-24 is inefficient. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit on the Jun 8-14 pull); its last successful pull (2026-06-11 14:40 PDT) covering Jun 1-Jun 7, 2026 reported $66.47 app-promotion cost and 124 conversions, held as last-good (not zeroed). IMPORTANT - time-period mismatch: GA4 current data is Jun 8-Jun 14 while this Meta report is Jun 11-Jun 17, so the windows do not line up; read this as an acquisition-efficiency signal only. We do NOT claim a true ROAS (ad-server revenue attribution unavailable; visible platform sales are not ad-attributed booked revenue).",
       "Targeting signal: Meta's Google Play / Android downloads remain materially cheaper than iOS ($0.98 vs $1.24 per download) in the Jun 11-17 report; among larger age bands 55-64 and 65+ are the most efficient (cost/install ~$1.12 and ~$1.16) while 18-24 is inefficient (~$2.99). Spend continues to skew toward the more efficient platforms/segments.",
       "Roku App Engagement (separate from GA4) is preserved from its last good window where no fresher engagement source is available this run; the only new Roku data is the two sales rows from the Jun 15 Sales Activity Report (not engagement). It is not zeroed and is kept distinct from GA4 platform audience.",
-      "Visible platform sales (Stripe + Roku + manual Apple): 53 purchases and $961.47 year to date - Stripe 21/$439.79, Roku 18/$271.82, Apple 14/$249.86 gross. Adds one new Apple Jun 16 sale ($14.99); Jun 11, Jun 13 (x2) and Jun 14 Apple sales already counted, no double-counting. YouTube is NOT a platform sales source.",
+      "Visible platform sales (Stripe + Roku + manual Apple): 55 purchases and $991.45 year to date - Stripe 23/$469.77, Roku 18/$271.82, Apple 14/$249.86 gross. Adds one new Apple Jun 16 sale ($14.99); Jun 11, Jun 13 (x2) and Jun 14 Apple sales already counted, no double-counting. YouTube is NOT a platform sales source.",
       "Tracking caveat: GA4 does not cleanly identify every smart-TV surface; Stripe, Roku, Apple, Google Play, and ad-server revenue are separate systems, so visible platform sales are a floor, not total ElectricNOW sales, and no true ROAS is claimed (ad-server revenue attribution unavailable).",
       "YouTube (separate channel, estimated ad revenue only): the ElectricNOW YouTube channel now has a complete week for Jun 8-Jun 14, 2026 - 164,595 views, ~74,521 hours watched, average view duration 27m 11s, and ~$3,243.85 estimated YouTube ad revenue on 877,734 ad impressions (136,472 monetized playbacks). Net subscribers +179. This is estimated YouTube ad revenue on a separate YouTube channel - it is NOT a platform sales source and is NOT included in Visible Platform Sales; ad impressions are a distinct YouTube metric, not GA4 ad events.",
-      "Bottom line: the GA4 complete-week window holds at Jun 8-Jun 14, 2026 with usage steady; the newest Meta report (Jun 11-17) has spend and volume down but a better CPC ($0.31) and Android still cheaper than iOS; Apple downloads advance to Jun 11-17 = 1,127 (+21.7%); visible sales rise to 53/$961.47 (one new Apple Jun 16 sale). Open items: offset GA4/Meta windows (no downstream viewing proof claimed), a successful Google Ads pull (currently rate-limited), and ad-attributed revenue to prove ROAS."
+      "Bottom line: the GA4 complete-week window holds at Jun 8-Jun 14, 2026 with usage steady; the newest Meta report (Jun 11-17) has spend and volume down but a better CPC ($0.31) and Android still cheaper than iOS; Apple downloads advance to Jun 11-17 = 1,127 (+21.7%); visible sales rise to 55/$991.45 (one new Apple Jun 16 sale plus 2 reconnected Stripe charges from Jun 12 + Jun 15). Open items: offset GA4/Meta windows (no downstream viewing proof claimed), a successful Google Ads pull (currently rate-limited), and ad-attributed revenue to prove ROAS."
     ],
     "instrumentationGaps": [
       "No separate GA4 event found for go_ad_free_click yet.",
@@ -2180,10 +2180,10 @@
     ],
     "salesSummary": {
       "sourceLabel": "Visible platform sales",
-      "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe was reconnected and checked on Jun 9, 2026; no new Stripe purchases were found beyond the existing 21/$439.79, but the hidden May 28 Stripe payment was restored to the payment detail list. Google Play and other sources may still be missing.",
+      "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe was reconnected and re-pulled on Jun 18, 2026, adding 2 previously-missed succeeded charges (Jun 12 and Jun 15, $14.99 each); Stripe now totals 23/$469.77. Google Play and other sources may still be missing.",
       "stripe": {
         "sourceLabel": "Stripe-visible payments",
-        "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Rechecked 2026-06-09 after reconnection: the connector returned the same 21 succeeded 2026 charges totaling $439.79. No new Stripe payments were visible after the May 28 payment; the dashboard detail windows were repaired so that the May 28 payment is visible instead of hidden.",
+        "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected and re-pulled 2026-06-18: the connector returned 2 new succeeded charges (Jun 12 and Jun 15, $14.99 each) that had been missed while Stripe was preserved through May 28. Stripe now totals 23 succeeded 2026 charges / $469.77.",
         "baselineWindow": {
           "label": "Stripe launch baseline",
           "range": "Apr 13-Apr 19, 2026",
@@ -2196,13 +2196,35 @@
         },
         "yearToDate": {
           "label": "Sales this year",
-          "range": "Jan 1-Jun 9, 2026",
-          "purchases": 21,
-          "purchaseRevenue": 439.79,
-          "revenuePerPurchase": 20.94,
+          "range": "Jan 1-Jun 17, 2026",
+          "purchases": 23,
+          "purchaseRevenue": 469.77,
+          "revenuePerPurchase": 20.42,
           "deltaPurchasesPct": null,
           "deltaRevenuePct": null,
           "payments": [
+            {
+              "date": "Jun 15",
+              "createdAt": "2026-06-15T13:18:05+00:00",
+              "sortDate": "2026-06-15T13:18:05+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TiaOvLG0Cw1zW4e1J9vWz96",
+              "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
+              "orderId": "moj-2026061513180484"
+            },
+            {
+              "date": "Jun 12",
+              "createdAt": "2026-06-12T23:06:49+00:00",
+              "sortDate": "2026-06-12T23:06:49+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TheA0LG0Cw1zW4e2ajY663E",
+              "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+              "orderId": "tub-2026061223064851"
+            },
             {
               "date": "May 28",
               "createdAt": "2026-05-28 18:08 PDT",
@@ -2265,11 +2287,34 @@
         },
         "monthToDate": {
           "label": "Stripe sales this month",
-          "range": "Jun 1-Jun 9, 2026",
-          "purchases": 0,
-          "purchaseRevenue": 0.0,
-          "revenuePerPurchase": 0,
-          "payments": []
+          "range": "Jun 1-Jun 17, 2026",
+          "purchases": 2,
+          "purchaseRevenue": 29.98,
+          "revenuePerPurchase": 14.99,
+          "payments": [
+            {
+              "date": "Jun 15",
+              "createdAt": "2026-06-15T13:18:05+00:00",
+              "sortDate": "2026-06-15T13:18:05+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TiaOvLG0Cw1zW4e1J9vWz96",
+              "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
+              "orderId": "moj-2026061513180484"
+            },
+            {
+              "date": "Jun 12",
+              "createdAt": "2026-06-12T23:06:49+00:00",
+              "sortDate": "2026-06-12T23:06:49+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TheA0LG0Cw1zW4e2ajY663E",
+              "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+              "orderId": "tub-2026061223064851"
+            }
+          ]
         },
         "lastWeek": {
           "label": "Stripe sales last week",
@@ -2281,11 +2326,23 @@
         },
         "thisWeek": {
           "label": "Stripe sales this week",
-          "range": "Jun 8-Jun 9, 2026",
-          "purchases": 0,
-          "purchaseRevenue": 0.0,
-          "revenuePerPurchase": 0,
-          "payments": []
+          "range": "Jun 8-Jun 14, 2026",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "revenuePerPurchase": 14.99,
+          "payments": [
+            {
+              "date": "Jun 12",
+              "createdAt": "2026-06-12T23:06:49+00:00",
+              "sortDate": "2026-06-12T23:06:49+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TheA0LG0Cw1zW4e2ajY663E",
+              "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+              "orderId": "tub-2026061223064851"
+            }
+          ]
         },
         "currentCompleteWeek": {
           "label": "Stripe sales last week",
@@ -2297,31 +2354,66 @@
         },
         "weekToDate": {
           "label": "Stripe sales this week",
-          "range": "Jun 8-Jun 9, 2026",
-          "purchases": 0,
-          "purchaseRevenue": 0.0,
-          "revenuePerPurchase": 0,
-          "payments": []
+          "range": "Jun 8-Jun 14, 2026",
+          "purchases": 1,
+          "purchaseRevenue": 14.99,
+          "revenuePerPurchase": 14.99,
+          "payments": [
+            {
+              "date": "Jun 12",
+              "createdAt": "2026-06-12T23:06:49+00:00",
+              "sortDate": "2026-06-12T23:06:49+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TheA0LG0Cw1zW4e2ajY663E",
+              "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+              "orderId": "tub-2026061223064851"
+            }
+          ]
         },
         "recent12Days": {
           "label": "Stripe last 12 days",
-          "range": "May 29-Jun 9, 2026",
-          "purchases": 0,
-          "purchaseRevenue": 0.0,
-          "revenuePerPurchase": 0,
-          "payments": []
+          "range": "Jun 6-Jun 17, 2026",
+          "purchases": 2,
+          "purchaseRevenue": 29.98,
+          "revenuePerPurchase": 14.99,
+          "payments": [
+            {
+              "date": "Jun 15",
+              "createdAt": "2026-06-15T13:18:05+00:00",
+              "sortDate": "2026-06-15T13:18:05+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TiaOvLG0Cw1zW4e1J9vWz96",
+              "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
+              "orderId": "moj-2026061513180484"
+            },
+            {
+              "date": "Jun 12",
+              "createdAt": "2026-06-12T23:06:49+00:00",
+              "sortDate": "2026-06-12T23:06:49+00:00",
+              "amount": 14.99,
+              "description": "Customer User - Purchase this title: Signup payment",
+              "source": "Stripe",
+              "stripePaymentIntentId": "pi_3TheA0LG0Cw1zW4e2ajY663E",
+              "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+              "orderId": "tub-2026061223064851"
+            }
+          ]
         },
         "lifetimeObserved": {
-          "range": "Through May 31, 2026 reconnect pull",
-          "purchases": 21,
-          "purchaseRevenue": 439.79,
-          "revenuePerPurchase": 20.94
+          "range": "Through Jun 17, 2026 reconnect pull",
+          "purchases": 23,
+          "purchaseRevenue": 469.77,
+          "revenuePerPurchase": 20.42
         },
         "mix": [
           {
             "label": "Title purchases",
-            "purchases": 20,
-            "purchaseRevenue": 429.8
+            "purchases": 22,
+            "purchaseRevenue": 459.78
           },
           {
             "label": "Bundle purchases",
@@ -2335,6 +2427,24 @@
           }
         ],
         "recentPayments": [
+          {
+            "id": "pi_3TiaOvLG0Cw1zW4e1J9vWz96",
+            "date": "Jun 15",
+            "createdAt": "2026-06-15T13:18:05+00:00",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
+            "orderId": "moj-2026061513180484"
+          },
+          {
+            "id": "pi_3TheA0LG0Cw1zW4e2ajY663E",
+            "date": "Jun 12",
+            "createdAt": "2026-06-12T23:06:49+00:00",
+            "amount": 14.99,
+            "description": "Customer User - Purchase this title: Signup payment",
+            "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+            "orderId": "tub-2026061223064851"
+          },
           {
             "id": "pi_3TYIl0LG0Cw1zW4e29yDkQvy",
             "date": "May 17",
@@ -2752,35 +2862,53 @@
             "rawDate": "20260528",
             "purchases": 0,
             "purchaseRevenue": 0
+          },
+          {
+            "date": "Jun 12",
+            "rawDate": "20260612",
+            "purchases": 1,
+            "purchaseRevenue": 14.99
+          },
+          {
+            "date": "Jun 15",
+            "rawDate": "20260615",
+            "purchases": 1,
+            "purchaseRevenue": 14.99
           }
         ],
-        "note": "Stripe-visible sales show 21 payments and $439.79 year to date (includes 8 historical 2026 charges visible after the 2026-05-31 reconnect), 3 payments and $44.97 this month, 0 payments and $0.00 last week, and 0 payments and $0.00 this week. Add Apple App Store and Google Play reports before treating this as total sales.",
-        "connectorStatus": "connected; checked Jun 9, 2026; no new Stripe payments after May 28",
+        "note": "Stripe-visible sales show 23 payments and $469.77 year to date (Stripe reconnected Jun 18, 2026 and 2 previously-missed succeeded charges from Jun 12 and Jun 15 were added). Add Apple App Store and Google Play reports before treating this as total sales.",
+        "connectorStatus": "connected; reconnected and pulled Jun 18, 2026; 2 new succeeded charges added (Jun 12 + Jun 15)",
         "lastStripeVisiblePayment": {
-          "date": "May 28",
-          "createdAt": "2026-05-28 18:08 PDT",
-          "sortDate": "2026-05-28T18:08:30-07:00",
+          "date": "Jun 15",
+          "createdAt": "2026-06-15T13:18:05+00:00",
+          "sortDate": "2026-06-15T13:18:05+00:00",
           "amount": 14.99,
           "description": "Customer User - Purchase this title: Signup payment",
           "source": "Stripe",
-          "stripePaymentIntentId": "pi_3Tc8fSLG0Cw1zW4e0aRnmEQw",
-          "stripeChargeId": "ch_3Tc8fSLG0Cw1zW4e0JGS5fDH"
+          "stripePaymentIntentId": "pi_3TiaOvLG0Cw1zW4e1J9vWz96",
+          "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
+          "orderId": "moj-2026061513180484"
         },
         "latestConnectorAudit": {
-          "checkedAt": "2026-06-09 06:58 PDT",
-          "succeeded2026Charges": 21,
-          "purchaseRevenue": 439.79,
-          "newPaymentsFound": 0,
-          "newRevenueFound": 0,
+          "checkedAt": "2026-06-18 07:05 PDT",
+          "succeeded2026Charges": 23,
+          "purchaseRevenue": 469.77,
+          "newPaymentsFound": 2,
+          "newRevenueFound": 29.98,
+          "newChargeIds": [
+            "ch_3TheA0LG0Cw1zW4e2Fj5pdSi",
+            "ch_3TiaOvLG0Cw1zW4e1gfG0nL7"
+          ],
           "latestVisiblePayment": {
-            "date": "May 28",
-            "createdAt": "2026-05-28 18:08 PDT",
-            "sortDate": "2026-05-28T18:08:30-07:00",
+            "date": "Jun 15",
+            "createdAt": "2026-06-15T13:18:05+00:00",
+            "sortDate": "2026-06-15T13:18:05+00:00",
             "amount": 14.99,
             "description": "Customer User - Purchase this title: Signup payment",
             "source": "Stripe",
-            "stripePaymentIntentId": "pi_3Tc8fSLG0Cw1zW4e0aRnmEQw",
-            "stripeChargeId": "ch_3Tc8fSLG0Cw1zW4e0JGS5fDH"
+            "stripePaymentIntentId": "pi_3TiaOvLG0Cw1zW4e1J9vWz96",
+            "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
+            "orderId": "moj-2026061513180484"
           }
         }
       },
@@ -3887,10 +4015,10 @@
       "sourceBreakout": [
         {
           "source": "Stripe",
-          "purchases": 21,
-          "purchaseRevenue": 439.79,
-          "developerRevShare": 439.79,
-          "detail": "Stripe-visible succeeded payments. No new payments after 2026-05-28; total current (not stale)."
+          "purchases": 23,
+          "purchaseRevenue": 469.77,
+          "developerRevShare": 469.77,
+          "detail": "Stripe-visible succeeded payments. Reconnected Jun 18, 2026; added 2 previously-missed charges (Jun 12 + Jun 15). Total current (not stale)."
         },
         {
           "source": "Roku",
@@ -3926,19 +4054,37 @@
       "yearToDate": {
         "label": "Visible sales this year",
         "range": "Jan 1-Jun 17, 2026",
-        "purchases": 53,
-        "purchaseRevenue": 961.47,
-        "developerRevShare": 832.09,
-        "revenuePerPurchase": 18.14
+        "purchases": 55,
+        "purchaseRevenue": 991.45,
+        "developerRevShare": 862.07,
+        "revenuePerPurchase": 18.03
       },
       "monthToDate": {
         "label": "Sales this month",
         "range": "Jun 1-Jun 17, 2026",
-        "purchases": 10,
-        "purchaseRevenue": 154.9,
-        "developerRevShare": 114.9,
-        "revenuePerPurchase": 15.49,
+        "purchases": 12,
+        "purchaseRevenue": 184.88,
+        "developerRevShare": 144.88,
+        "revenuePerPurchase": 15.41,
         "payments": [
+          {
+            "date": "Jun 15",
+            "createdAt": "2026-06-15T13:18:05+00:00",
+            "amount": 14.99,
+            "developerRevShare": 14.99,
+            "description": "Stripe - Purchase this title",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7"
+          },
+          {
+            "date": "Jun 12",
+            "createdAt": "2026-06-12T23:06:49+00:00",
+            "amount": 14.99,
+            "developerRevShare": 14.99,
+            "description": "Stripe - Purchase this title",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi"
+          },
           {
             "date": "Jun 10",
             "amount": 14.99,
@@ -4038,11 +4184,20 @@
       "thisWeek": {
         "label": "Sales this week",
         "range": "Jun 8-Jun 14, 2026",
-        "purchases": 7,
-        "purchaseRevenue": 104.93,
-        "developerRevShare": 76.43,
+        "purchases": 8,
+        "purchaseRevenue": 119.92,
+        "developerRevShare": 91.42,
         "revenuePerPurchase": 14.99,
         "payments": [
+          {
+            "date": "Jun 12",
+            "createdAt": "2026-06-12T23:06:49+00:00",
+            "amount": 14.99,
+            "developerRevShare": 14.99,
+            "description": "Stripe - Purchase this title",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi"
+          },
           {
             "date": "Jun 10",
             "amount": 14.99,
@@ -4120,11 +4275,20 @@
       "weekToDate": {
         "label": "Sales this week",
         "range": "Jun 8-Jun 14, 2026",
-        "purchases": 7,
-        "purchaseRevenue": 104.93,
-        "developerRevShare": 76.43,
+        "purchases": 8,
+        "purchaseRevenue": 119.92,
+        "developerRevShare": 91.42,
         "revenuePerPurchase": 14.99,
         "payments": [
+          {
+            "date": "Jun 12",
+            "createdAt": "2026-06-12T23:06:49+00:00",
+            "amount": 14.99,
+            "developerRevShare": 14.99,
+            "description": "Stripe - Purchase this title",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi"
+          },
           {
             "date": "Jun 10",
             "amount": 14.99,
@@ -4693,7 +4857,7 @@
           "developerRevShare": 0.0
         }
       ],
-      "note": "Visible platform sales show 53 purchases and $961.47 year to date, combining Stripe-visible payments, Roku-visible sales, and the manual Apple App Store snapshot. This run adds one new Apple Purchase HD 15 sale (Jun 16, $14.99); the Jun 11, Jun 13 (x2) and Jun 14 Apple sales were already counted and are not double-counted. Still not total ElectricNOW sales: Google Play is separate and Apple is a manual snapshot. YouTube is a separate channel (estimated YouTube ad revenue only) and is NOT included here."
+      "note": "Visible platform sales show 55 purchases and $991.45 year to date, combining Stripe-visible payments, Roku-visible sales, and the manual Apple App Store snapshot. This run reconnected Stripe and added 2 previously-missed succeeded charges (Jun 12 and Jun 15, $14.99 each). Still not total ElectricNOW sales: Google Play is separate and Apple is a manual snapshot. YouTube is a separate channel (estimated YouTube ad revenue only) and is NOT included here."
     },
     "contentUsage": {
       "period": "May 25-May 31, 2026",
@@ -8313,16 +8477,16 @@
     },
     "plainEnglishSummary": {
       "generatedAt": "2026-06-18 07:00 PDT",
-      "overview": "As of the June 15, 2026 refresh, ElectricNOW's GA4 complete-week usage now advances to June 8-June 14, 2026 (the previous complete week, June 1-June 7, is the comparison baseline). In the new current week the platform drew 7,282 active users across 13,850 sessions, with 10,734 engaged sessions and a 78% engagement rate. Weekly platform visits (sessions, excluding landing-page acquisition) rose to 15,081, +9.1% vs the prior 7 days. What changed on the sales side this run is Roku: the June 15 Sales Activity Report added two new Purchase HD 15 sales (June 11 and June 13, $14.99 each), lifting Roku to 18/$271.82. This run adds one new Apple Purchase HD 15 sale (Jun 16, $14.99), bringing Apple to 14/$249.86 gross and combined visible platform sales to 53/$961.47 year to date; Stripe (21/$439.79) is preserved. Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%). On paid acquisition, the newest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31, Android cheaper than iOS) but Google Ads is STALE this run: the API returned RESOURCE_EXHAUSTED (rate limit) for the June 8-14 pull, so its last-good Jun 1-Jun 7, 2026 values are preserved rather than zeroed.",
+      "overview": "As of the June 15, 2026 refresh, ElectricNOW's GA4 complete-week usage now advances to June 8-June 14, 2026 (the previous complete week, June 1-June 7, is the comparison baseline). In the new current week the platform drew 7,282 active users across 13,850 sessions, with 10,734 engaged sessions and a 78% engagement rate. Weekly platform visits (sessions, excluding landing-page acquisition) rose to 15,081, +9.1% vs the prior 7 days. What changed on the sales side this run is Roku: the June 15 Sales Activity Report added two new Purchase HD 15 sales (June 11 and June 13, $14.99 each), lifting Roku to 18/$271.82. This run adds one new Apple Purchase HD 15 sale (Jun 16, $14.99), bringing Apple to 14/$249.86 gross and combined visible platform sales to 53/$961.47 year to date. Stripe was then reconnected (Jun 18) and 2 previously-missed succeeded charges (Jun 12 + Jun 15, $14.99 each) were added, lifting Stripe to 23/$469.77 and the combined total to 55/$991.45. Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%). On paid acquisition, the newest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31, Android cheaper than iOS) but Google Ads is STALE this run: the API returned RESOURCE_EXHAUSTED (rate limit) for the June 8-14 pull, so its last-good Jun 1-Jun 7, 2026 values are preserved rather than zeroed.",
       "bullets": [
         "Traffic: platform visits (GA4 sessions, excluding landing-page acquisition) were 15,081 in the current complete week (Jun 8-Jun 14, 2026), +9.1% vs the previous 7 days. Over the latest complete 28 days (May 18-Jun 14, 2026) visits were 57,678, +2.3% vs the prior 28 days.",
         "Engagement: weekly engaged sessions were 12,009 on 8,109 active users (landing-excluded); the new complete week held up vs the prior week, with engagement rate at 78%.",
         "Paid acquisition (Meta, Jun 11-Jun 17, 2026): Meta spent $1,968.57 (-37.1% vs the prior period) driving 987 reported platform downloads (iOS 277 + Android 710); the breakdown tables show 1641 Meta app installs (a different attribution grain - the two are kept separate, not blended). Spend and volume were down but CPC improved to $0.31, and Google Play / Android stays cheaper than iOS ($0.98 vs $1.24 per download); 55-64 and 65+ are the most efficient larger age bands, 18-24 is inefficient. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit on the Jun 8-14 pull); its last successful pull (2026-06-11 14:40 PDT) covering Jun 1-Jun 7, 2026 reported $66.47 app-promotion cost and 124 conversions, held as last-good (not zeroed). IMPORTANT - time-period mismatch: GA4 current data is Jun 8-Jun 14 while this Meta report is Jun 11-Jun 17, so the windows do not line up; read this as an acquisition-efficiency signal only. We do NOT claim a true ROAS (ad-server revenue attribution unavailable; visible platform sales are not ad-attributed booked revenue).",
         "App downloads (Apple manual snapshot): 1,127 downloads for Jun 11-Jun 17, 2026 (+21.7% vs the prior Jun 8-Jun 14 = 926 window). This is App Store download activity, not paid sales and not GA4 active users.",
-        "Sales (visible platform sales = Stripe + Roku + manual Apple): 53 purchases and $961.47 year to date - Stripe 21/$439.79, Roku 18/$271.82, and Apple 14/$249.86 gross. This run added one new Apple Purchase HD 15 sale (Jun 16, $14.99); the Jun 11, Jun 13 (x2) and Jun 14 Apple sales were already counted and are not double-counted. YouTube is separate (estimated YouTube ad revenue only) and not in this total.",
+        "Sales (visible platform sales = Stripe + Roku + manual Apple): 55 purchases and $991.45 year to date - Stripe 23/$469.77, Roku 18/$271.82, and Apple 14/$249.86 gross. This run added one new Apple Purchase HD 15 sale (Jun 16, $14.99); the Jun 11, Jun 13 (x2) and Jun 14 Apple sales were already counted and are not double-counted. YouTube is separate (estimated YouTube ad revenue only) and not in this total.",
         "Caveats: Apple figures are a manual App Store Connect snapshot (gross shown; estimated net assumes Apple keeps 30%); Google Play sales are handled separately and are not in this total; Roku App Engagement (separate from GA4) is preserved from its last good window where no fresher source exists; GA4 in-app-purchase signals are usage signals, not booked revenue, and are excluded from visible platform sales; Google Ads is stale this run (RESOURCE_EXHAUSTED) and shown as last-good, not zeroed.",
         "YouTube (separate channel, estimated ad revenue only): the ElectricNOW YouTube channel now has a complete week for Jun 8-Jun 14, 2026 - 164,595 views, ~74,521 hours watched, average view duration 27m 11s, and ~$3,243.85 estimated YouTube ad revenue on 877,734 ad impressions (136,472 monetized playbacks). Net subscribers +179. This is estimated YouTube ad revenue on a separate YouTube channel - it is NOT a platform sales source and is NOT included in Visible Platform Sales; ad impressions are a distinct YouTube metric, not GA4 ad events.",
-        "Bottom line: GA4 complete-week usage holds at Jun 8-14 with no regression; the newest Meta report (Jun 11-17) shows spend and volume down but a cheaper CPC ($0.31), with Android still cheaper than iOS; Apple downloads advance to Jun 11-17 = 1,127 (+21.7%); visible sales rise to 53/$961.47 (one new Apple Jun 16 sale). Open items: GA4 and Meta windows are offset (Jun 8-14 vs Jun 11-17) so downstream viewing proof is not claimed, Google Ads still needs a successful (non-rate-limited) pull, and true ROAS remains unprovable until ad-attributed revenue is available."
+        "Bottom line: GA4 complete-week usage holds at Jun 8-14 with no regression; the newest Meta report (Jun 11-17) shows spend and volume down but a cheaper CPC ($0.31), with Android still cheaper than iOS; Apple downloads advance to Jun 11-17 = 1,127 (+21.7%); visible sales rise to 55/$991.45 (one new Apple Jun 16 sale plus 2 reconnected Stripe charges from Jun 12 + Jun 15). Open items: GA4 and Meta windows are offset (Jun 8-14 vs Jun 11-17) so downstream viewing proof is not claimed, Google Ads still needs a successful (non-rate-limited) pull, and true ROAS remains unprovable until ad-attributed revenue is available."
       ]
     },
     "youtubeSummary": {
