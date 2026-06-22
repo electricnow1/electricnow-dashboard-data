@@ -2128,7 +2128,7 @@
     "engagementRateWeekToDate": 93.5336048879837
   },
   "plainEnglishInsights": [
-    "Overall (June 18, 2026 update): GA4 complete-week usage holds at Jun 8-Jun 14, 2026; the prior complete week (Jun 1-Jun 7, 2026) is the comparison baseline. Measured platform audience was 7,282 GA4 active users for Jun 8-Jun 14, 2026 (excluding landing-page acquisition), with 13,850 sessions and a 78% engagement rate. New this run: the latest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31), Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%), and one new Apple Purchase HD 15 sale (Jun 16, $14.99) lifts combined visible platform sales to 53/$961.47. Stripe was then reconnected (Jun 18) and 2 previously-missed succeeded charges (Jun 12 + Jun 15, $14.99 each) were added, bringing the combined total to 55/$991.45. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit); its last-good Jun 1-Jun 7, 2026 values are preserved, not zeroed.",
+    "This week, traffic improved (platform visits up about 9% week over week), attention held steady (engagement rate ~78%, engaged sessions roughly flat), use/viewing improved sharply (Apple iOS downloads jumped to 1,598 for Jun 15-Jun 21, +41.8% vs the prior screenshot, and YouTube viewing stayed strong), and visible platform sales were flat at 55 purchases / $991.45. The biggest positive is the sharp rise in Apple iOS downloads; note that Apple sales added no new cumulative revenue this update because the only sale in the new screenshot (Jun 16, $14.99) was already counted. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales - and YouTube estimated ad revenue is a separate channel. Overall (June 18, 2026 update): GA4 complete-week usage holds at Jun 8-Jun 14, 2026; the prior complete week (Jun 1-Jun 7, 2026) is the comparison baseline. Measured platform audience was 7,282 GA4 active users for Jun 8-Jun 14, 2026 (excluding landing-page acquisition), with 13,850 sessions and a 78% engagement rate. New this run: the latest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31), Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%), and one new Apple Purchase HD 15 sale (Jun 16, $14.99) lifts combined visible platform sales to 53/$961.47. Stripe was then reconnected (Jun 18) and 2 previously-missed succeeded charges (Jun 12 + Jun 15, $14.99 each) were added, bringing the combined total to 55/$991.45. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit); its last-good Jun 1-Jun 7, 2026 values are preserved, not zeroed.",
     "Engagement: weekly platform visits (landing-excluded sessions) were 15,081, +9.1% vs the previous 7 days, on 8,109 active users with 12,009 engaged sessions; engagement rate 78%. The new complete week held up versus the prior week.",
     "Landing-page traffic is acquisition-only and is NOT included in platform audience totals; this keeps measured platform audience clean of marketing-page hits.",
     "Paid acquisition (Meta, Jun 11-Jun 17, 2026): Meta spent $1,968.57 (-37.1% vs the prior period) driving 987 reported platform downloads (iOS 277 + Android 710); the breakdown tables show 1641 Meta app installs (a different attribution grain - the two are kept separate, not blended). Spend and volume were down but CPC improved to $0.31, and Google Play / Android stays cheaper than iOS ($0.98 vs $1.24 per download); 55-64 and 65+ are the most efficient larger age bands, 18-24 is inefficient. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit on the Jun 8-14 pull); its last successful pull (2026-06-11 14:40 PDT) covering Jun 1-Jun 7, 2026 reported $66.47 app-promotion cost and 124 conversions, held as last-good (not zeroed). IMPORTANT - time-period mismatch: GA4 current data is Jun 8-Jun 14 while this Meta report is Jun 11-Jun 17, so the windows do not line up; read this as an acquisition-efficiency signal only. We do NOT claim a true ROAS (ad-server revenue attribution unavailable; visible platform sales are not ad-attributed booked revenue).",
@@ -3652,7 +3652,7 @@
       "sourceLabel": "Apple App Store manual snapshot",
       "sourceDetail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. This remains a manual source until Apple App Store Connect API reporting is connected.",
       "isManualSnapshot": true,
-      "snapshotRange": "Manual Apple App Store screenshots through Jun 16, 2026",
+      "snapshotRange": "Manual Apple App Store screenshots through Jun 21, 2026",
       "platformFeePct": 30,
       "estimatedNetPct": 70,
       "baselineWindow": {
@@ -3978,7 +3978,16 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $249.86 gross in-app purchase sales manually entered so far, or approximately $174.88 after Apple's 30% platform fee. The Jun 11-Jun 17 screenshot adds one new sale on Jun 16, 2026 (Purchase HD 15, $14.99); the Jun 11, Jun 13 (x2), and Jun 14 sales were already recorded and are not double-counted. These figures remain manual until Apple App Store Connect API reporting is connected."
+      "note": "Apple App Store screenshots show $249.86 gross in-app purchase sales manually entered so far, or approximately $174.88 after Apple's 30% platform fee. The latest sales screenshot (Jun 15-Jun 21, 2026) shows one $14.99 sale on Jun 16, which was already recorded in the 2026-06-18 update, so cumulative Apple sales are unchanged at 14/$249.86 (no double-count). These figures remain manual until Apple App Store Connect API reporting is connected.",
+      "latestSalesSnapshot": {
+        "period": "Jun 15-Jun 21, 2026",
+        "start": "2026-06-15",
+        "end": "2026-06-21",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "alreadyIncludedInCumulative": true,
+        "note": "Latest Apple sales screenshot covers Jun 15-Jun 21, 2026 and shows a single $14.99 sale dated Jun 16. That Jun 16 sale was already added in the 2026-06-18 update, so cumulative Apple (14/$249.86) and Visible Platform Sales (55/$991.45) are unchanged this run. Jun 15 and Jun 17-21 were $0."
+      }
     },
     "sourceBreakout": [
       {
@@ -8338,40 +8347,20 @@
   "manualAppleDownloads": {
     "sourceLabel": "Manual Apple App Store Connect snapshot",
     "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-    "capturedAt": "2026-06-18 07:00 PDT",
-    "enteredAt": "2026-06-18 07:00 PDT",
+    "capturedAt": "2026-06-22 07:00 PDT",
+    "enteredAt": "2026-06-22 07:00 PDT",
     "uploadedAttachments": [
-      "uploaded_attachments/apple_downloads_20260618/image.jpeg"
+      "uploaded_attachments/apple_downloads_20260622/image.jpeg"
     ],
     "product": "ElectricNOW",
     "platform": "Free iOS/watchOS/tvOS",
-    "period": "Jun 11-Jun 17, 2026",
-    "start": "2026-06-11",
-    "end": "2026-06-17",
-    "downloads": 1127,
-    "displayDownloads": "1,127",
-    "dailyAverage": 161,
+    "period": "Jun 15-Jun 21, 2026",
+    "start": "2026-06-15",
+    "end": "2026-06-21",
+    "downloads": 1598,
+    "displayDownloads": "1,598",
+    "dailyAverage": 228,
     "daily": [
-      {
-        "date": "2026-06-11",
-        "label": "June 11, 2026",
-        "downloads": 137
-      },
-      {
-        "date": "2026-06-12",
-        "label": "June 12, 2026",
-        "downloads": 140
-      },
-      {
-        "date": "2026-06-13",
-        "label": "June 13, 2026",
-        "downloads": 120
-      },
-      {
-        "date": "2026-06-14",
-        "label": "June 14, 2026",
-        "downloads": 86
-      },
       {
         "date": "2026-06-15",
         "label": "June 15, 2026",
@@ -8386,17 +8375,37 @@
         "date": "2026-06-17",
         "label": "June 17, 2026",
         "downloads": 189
+      },
+      {
+        "date": "2026-06-18",
+        "label": "June 18, 2026",
+        "downloads": 251
+      },
+      {
+        "date": "2026-06-19",
+        "label": "June 19, 2026",
+        "downloads": 251
+      },
+      {
+        "date": "2026-06-20",
+        "label": "June 20, 2026",
+        "downloads": 213
+      },
+      {
+        "date": "2026-06-21",
+        "label": "June 21, 2026",
+        "downloads": 239
       }
     ],
-    "deltaPct": 21.7,
+    "deltaPct": 41.8,
     "territories": [
       {
         "territory": "United States",
-        "downloads": 1127,
-        "deltaPct": null
+        "downloads": 1598,
+        "deltaPct": 41.8
       }
     ],
-    "note": "Manual Apple Connect screenshot. Daily U.S. downloads total 1,127 for Jun 11-Jun 17, 2026 (June 17 = 189). Replaces the prior Jun 8-Jun 14, 2026 = 926 snapshot. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
+    "note": "Manual Apple Connect screenshot. Daily U.S. downloads total 1,598 for Jun 15-Jun 21, 2026 (Jun 21 = 239). Replaces the prior Jun 11-Jun 17, 2026 = 1,127 snapshot (+471 / +41.8%). fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
     "fiveWeekSnapshot": {
       "period": "Apr 27-May 31, 2026",
       "start": "2026-04-27",
@@ -8417,6 +8426,12 @@
           "deltaPct": -35.7
         }
       ]
+    },
+    "priorSnapshot": {
+      "period": "Jun 11-Jun 17, 2026",
+      "start": "2026-06-11",
+      "end": "2026-06-17",
+      "downloads": 1127
     }
   },
   "manualDataPatch": {
@@ -8444,13 +8459,13 @@
     "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
   },
   "plainEnglishSummary": {
-    "generatedAt": "2026-06-18 07:00 PDT",
-    "overview": "As of the June 15, 2026 refresh, ElectricNOW's GA4 complete-week usage now advances to June 8-June 14, 2026 (the previous complete week, June 1-June 7, is the comparison baseline). In the new current week the platform drew 7,282 active users across 13,850 sessions, with 10,734 engaged sessions and a 78% engagement rate. Weekly platform visits (sessions, excluding landing-page acquisition) rose to 15,081, +9.1% vs the prior 7 days. What changed on the sales side this run is Roku: the June 15 Sales Activity Report added two new Purchase HD 15 sales (June 11 and June 13, $14.99 each), lifting Roku to 18/$271.82. This run adds one new Apple Purchase HD 15 sale (Jun 16, $14.99), bringing Apple to 14/$249.86 gross and combined visible platform sales to 53/$961.47 year to date. Stripe was then reconnected (Jun 18) and 2 previously-missed succeeded charges (Jun 12 + Jun 15, $14.99 each) were added, lifting Stripe to 23/$469.77 and the combined total to 55/$991.45. Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%). On paid acquisition, the newest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31, Android cheaper than iOS) but Google Ads is STALE this run: the API returned RESOURCE_EXHAUSTED (rate limit) for the June 8-14 pull, so its last-good Jun 1-Jun 7, 2026 values are preserved rather than zeroed.",
+    "generatedAt": "2026-06-22 07:00 PDT",
+    "overview": "This week, traffic improved (platform visits up about 9% week over week), attention held steady (engagement rate ~78%, engaged sessions roughly flat), use/viewing improved sharply (Apple iOS downloads jumped to 1,598 for Jun 15-Jun 21, +41.8% vs the prior screenshot, and YouTube viewing stayed strong), and visible platform sales were flat at 55 purchases / $991.45. The biggest positive is the sharp rise in Apple iOS downloads; note that Apple sales added no new cumulative revenue this update because the only sale in the new screenshot (Jun 16, $14.99) was already counted. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales - and YouTube estimated ad revenue is a separate channel. As of the June 15, 2026 refresh, ElectricNOW's GA4 complete-week usage now advances to June 8-June 14, 2026 (the previous complete week, June 1-June 7, is the comparison baseline). In the new current week the platform drew 7,282 active users across 13,850 sessions, with 10,734 engaged sessions and a 78% engagement rate. Weekly platform visits (sessions, excluding landing-page acquisition) rose to 15,081, +9.1% vs the prior 7 days. What changed on the sales side this run is Roku: the June 15 Sales Activity Report added two new Purchase HD 15 sales (June 11 and June 13, $14.99 each), lifting Roku to 18/$271.82. This run adds one new Apple Purchase HD 15 sale (Jun 16, $14.99), bringing Apple to 14/$249.86 gross and combined visible platform sales to 53/$961.47 year to date. Stripe was then reconnected (Jun 18) and 2 previously-missed succeeded charges (Jun 12 + Jun 15, $14.99 each) were added, lifting Stripe to 23/$469.77 and the combined total to 55/$991.45. Apple downloads advance to Jun 11-Jun 17 = 1,127 (+21.7%). On paid acquisition, the newest Meta report covers Jun 11-Jun 17, 2026 (spend down, CPC improved to $0.31, Android cheaper than iOS) but Google Ads is STALE this run: the API returned RESOURCE_EXHAUSTED (rate limit) for the June 8-14 pull, so its last-good Jun 1-Jun 7, 2026 values are preserved rather than zeroed.",
     "bullets": [
       "Traffic: platform visits (GA4 sessions, excluding landing-page acquisition) were 15,081 in the current complete week (Jun 8-Jun 14, 2026), +9.1% vs the previous 7 days. Over the latest complete 28 days (May 18-Jun 14, 2026) visits were 57,678, +2.3% vs the prior 28 days.",
       "Engagement: weekly engaged sessions were 12,009 on 8,109 active users (landing-excluded); the new complete week held up vs the prior week, with engagement rate at 78%.",
       "Paid acquisition (Meta, Jun 11-Jun 17, 2026): Meta spent $1,968.57 (-37.1% vs the prior period) driving 987 reported platform downloads (iOS 277 + Android 710); the breakdown tables show 1641 Meta app installs (a different attribution grain - the two are kept separate, not blended). Spend and volume were down but CPC improved to $0.31, and Google Play / Android stays cheaper than iOS ($0.98 vs $1.24 per download); 55-64 and 65+ are the most efficient larger age bands, 18-24 is inefficient. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit on the Jun 8-14 pull); its last successful pull (2026-06-11 14:40 PDT) covering Jun 1-Jun 7, 2026 reported $66.47 app-promotion cost and 124 conversions, held as last-good (not zeroed). IMPORTANT - time-period mismatch: GA4 current data is Jun 8-Jun 14 while this Meta report is Jun 11-Jun 17, so the windows do not line up; read this as an acquisition-efficiency signal only. We do NOT claim a true ROAS (ad-server revenue attribution unavailable; visible platform sales are not ad-attributed booked revenue).",
-      "App downloads (Apple manual snapshot): 1,127 downloads for Jun 11-Jun 17, 2026 (+21.7% vs the prior Jun 8-Jun 14 = 926 window). This is App Store download activity, not paid sales and not GA4 active users.",
+      "App downloads (Apple manual snapshot): 1,598 downloads for Jun 15-Jun 21, 2026 (+41.8% vs the prior Jun 11-Jun 17 = 1,127 screenshot). Apple iOS downloads improved sharply. This is App Store download activity, not paid sales and not GA4 active users.",
       "Sales (visible platform sales = Stripe + Roku + manual Apple): 55 purchases and $991.45 year to date - Stripe 23/$469.77, Roku 18/$271.82, and Apple 14/$249.86 gross. This run added one new Apple Purchase HD 15 sale (Jun 16, $14.99); the Jun 11, Jun 13 (x2) and Jun 14 Apple sales were already counted and are not double-counted. YouTube is separate (estimated YouTube ad revenue only) and not in this total.",
       "Caveats: Apple figures are a manual App Store Connect snapshot (gross shown; estimated net assumes Apple keeps 30%); Google Play sales are handled separately and are not in this total; Roku App Engagement (separate from GA4) is preserved from its last good window where no fresher source exists; GA4 in-app-purchase signals are usage signals, not booked revenue, and are excluded from visible platform sales; Google Ads is stale this run (RESOURCE_EXHAUSTED) and shown as last-good, not zeroed.",
       "YouTube (separate channel, estimated ad revenue only): the ElectricNOW YouTube channel now has a complete week for Jun 8-Jun 14, 2026 - 164,595 views, ~74,521 hours watched, average view duration 27m 11s, and ~$3,243.85 estimated YouTube ad revenue on 877,734 ad impressions (136,472 monetized playbacks). Net subscribers +179. This is estimated YouTube ad revenue on a separate YouTube channel - it is NOT a platform sales source and is NOT included in Visible Platform Sales; ad impressions are a distinct YouTube metric, not GA4 ad events.",
