@@ -31,7 +31,7 @@
 
   // Embedded data snapshot (overridden at runtime by hosted JSON fetch when available).
   window.ELECTRICNOW_DASHBOARD_DATA = {
-    "generatedAt": "2026-06-15 12:30 PDT",
+    "generatedAt": "2026-06-29 12:31 PDT",
     "property": "GA4 property 497892271",
     "sourceLabel": "Internal GA4 pull, property 497892271",
     "periods": {
