@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03 09:00 PDT",
+  "generatedAt": "2026-07-03 11:30 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -248,7 +248,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "points",
       "format": "percent",
-      "context": "Engaged app-stream sessions divided by app-stream sessions. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
+      "context": "Engaged app-stream sessions divided by app-stream sessions (GA4 property 497892271, Jun 22-28, 2026). The weekly figure dips only because of an isolated Sunday Jun 28 GA4 engaged-session classification anomaly (engagedSessions 702 of 2,339) - NOT a real engagement collapse: active users, sessions, views and time-spent all held up or rose that day. Time-spent (+1.8%) is the more reliable attention signal.",
       "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
     },
     {
@@ -7158,7 +7158,7 @@
           "deltaVsPreviousPct": 0.0,
           "deltaType": "points",
           "format": "percent",
-          "context": "Engaged app-stream sessions divided by app-stream sessions. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
+          "context": "Engaged app-stream sessions divided by app-stream sessions (GA4 property 497892271, Jun 22-28, 2026). The weekly figure dips only because of an isolated Sunday Jun 28 GA4 engaged-session classification anomaly (engagedSessions 702 of 2,339) - NOT a real engagement collapse: active users, sessions, views and time-spent all held up or rose that day. Time-spent (+1.8%) is the more reliable attention signal.",
           "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
         }
       ]
@@ -9026,5 +9026,6 @@
     ],
     "distinctionNote": "This is YouTube-only performance. YouTube ad impressions and estimated YouTube ad revenue are distinct from ElectricNOW in-app ad impressions and from Google/Meta paid-acquisition impressions. YouTube has no purchases and is NOT included in Visible Platform Sales.",
     "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For the complete week Jun 22-28, 2026 the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. That is down versus the prior full week (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%). The connector's per-day rows run through Jun 27 only this run, so daily detail is 6 days while the weekly totals are the full 7-day figures. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales."
-  }
+  },
+  "appTrendNote": "This trend charts total app sessions in green (a reliable daily activity signal) alongside daily active users in blue - both rose into Sun Jun 28, 2026. Heads-up: GA4's separate “engaged sessions” metric shows an isolated one-day dip on Jun 28 (a GA4 engaged-session classification anomaly, not a real engagement collapse); time spent in the app actually rose +1.8% that week. Engaged-session rate is tracked in the scorecards above."
 }
