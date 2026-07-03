@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03 11:55 PDT",
+  "generatedAt": "2026-07-03 12:20 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -8131,9 +8131,10 @@
       "previousRange": "Apr 20-May 17, 2026",
       "previousSessions": 56406,
       "deltaVsPreviousPct": 2.255079246888629,
-      "comparisonLabel": "latest 28 days"
+      "comparisonLabel": "vs prior 28 days",
+      "asOfNote": "Most recent fully reconciled 28-day window (through Jun 14, 2026). visitSummary figures are landing-excluded; the 28-day landing-excluded aggregation was not re-pulled in the latest weekly refreshes, so this window lags the weekly window (Jun 22-28) and is preserved as last-good rather than recomputed. The +2.3% delta compares it against the preceding 28 days (Apr 20-May 17, 2026)."
     },
-    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the current complete reporting week (Jun 22-Jun 28, 2026) and compare against the previous 7 complete days (Jun 15-21); monthly visits use the latest complete 28 days. Landing-page traffic remains acquisition-only and is not included here."
+    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the current complete reporting week (Jun 22-Jun 28, 2026) and compare against the previous 7 complete days (Jun 15-21). Monthly visits show the most recent fully reconciled 28-day window (May 18-Jun 14, 2026) compared against the preceding 28 days; this window lags the weekly window because the 28-day landing-excluded figure was not re-pulled this run. Landing-page traffic remains acquisition-only and is not included here."
   },
   "manualAppleSalesUpdate": {
     "updatedAt": "2026-07-02T12:00:00+00:00",
