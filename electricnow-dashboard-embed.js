@@ -31,7 +31,7 @@
 
   // Embedded data snapshot (overridden at runtime by hosted JSON fetch when available).
   window.ELECTRICNOW_DASHBOARD_DATA = {
-    "generatedAt": "2026-07-02 12:00 PDT",
+    "generatedAt": "2026-07-03 09:00 PDT",
     "property": "GA4 property 497892271",
     "sourceLabel": "Internal GA4 pull, property 497892271",
     "periods": {
@@ -180,7 +180,7 @@
         "deltaVsPreviousPct": 1.811039,
         "deltaType": "percent",
         "format": "number",
-        "context": "Total GA4 engaged time converted to hours. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
+        "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
       },
       {
         "key": "avgEngagedMinutesPerUser",
@@ -194,7 +194,7 @@
         "deltaVsPreviousPct": 1.037269,
         "deltaType": "minutes",
         "format": "minutes",
-        "context": "Total engaged time divided by active users, excluding landing-page acquisition paths. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
+        "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
       },
       {
         "key": "landingPageUsers",
@@ -379,7 +379,7 @@
         "deltaVsPreviousPct": 1.037269,
         "deltaType": "minutes",
         "format": "minutes",
-        "context": "Total engaged time divided by active users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
+        "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
       },
       {
         "key": "avgEngagedMinutesPerSession",
@@ -393,7 +393,7 @@
         "deltaVsPreviousPct": -2.802903,
         "deltaType": "minutes",
         "format": "minutes",
-        "context": "Total engaged time divided by sessions. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
+        "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026) divided by sessions - refreshed this run. Down slightly (~-2.8%) only because sessions grew faster (+4.7%) than total engaged time (+1.8%); total time and time-per-user still improved. The GA4 engaged-session rate is separately affected by the Jun 28 classification anomaly, not a real retention drop."
       },
       {
         "key": "totalEngagementHours",
@@ -407,7 +407,7 @@
         "deltaVsPreviousPct": 1.811039,
         "deltaType": "percent",
         "format": "number",
-        "context": "Total GA4 engaged time converted to hours. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
+        "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
       }
     ],
     "trend": [
@@ -7025,13 +7025,13 @@
           {
             "key": "platformActiveUsers",
             "label": "Platform active users",
-            "baseline": 7552,
+            "baseline": 5282,
             "launchBaseline": 8710,
-            "previousWeek": 7552,
-            "current": 8109,
-            "deltaPct": 7.37552966101695,
-            "deltaVsLaunchPct": -6.900114810562571,
-            "deltaVsPreviousPct": 7.37552966101695,
+            "previousWeek": 5282,
+            "current": 5327,
+            "deltaPct": 0.85195,
+            "deltaVsLaunchPct": -38.840413,
+            "deltaVsPreviousPct": 0.85195,
             "deltaType": "percent",
             "format": "number",
             "context": "GA4 active users excluding landing-page acquisition paths."
@@ -7039,13 +7039,13 @@
           {
             "key": "platformSessions",
             "label": "Platform sessions",
-            "baseline": 13821,
+            "baseline": 10925,
             "launchBaseline": 13323,
-            "previousWeek": 13821,
-            "current": 15081,
-            "deltaPct": 9.116561753852832,
-            "deltaVsLaunchPct": 13.195226300382798,
-            "deltaVsPreviousPct": 9.116561753852832,
+            "previousWeek": 10925,
+            "current": 11486,
+            "deltaPct": 5.135011,
+            "deltaVsLaunchPct": -13.788186,
+            "deltaVsPreviousPct": 5.135011,
             "deltaType": "percent",
             "format": "number",
             "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -7053,13 +7053,13 @@
           {
             "key": "viewingEventUsers",
             "label": "Viewing event users",
-            "baseline": 2570,
+            "baseline": 2410,
             "launchBaseline": 1152,
-            "previousWeek": 2570,
-            "current": 2410,
-            "deltaPct": -6.22568093385214,
-            "deltaVsLaunchPct": 109.20138888888889,
-            "deltaVsPreviousPct": -6.22568093385214,
+            "previousWeek": 2410,
+            "current": 1726,
+            "deltaPct": -28.381743,
+            "deltaVsLaunchPct": 49.826389,
+            "deltaVsPreviousPct": -28.381743,
             "deltaType": "percent",
             "format": "number",
             "context": "Users who triggered on-demand video_start or Live play events."
@@ -7067,30 +7067,30 @@
           {
             "key": "totalEngagementHours",
             "label": "Total engaged hours",
-            "baseline": 4940.515555555556,
+            "baseline": 4792.675,
             "launchBaseline": 3652.9975,
-            "previousWeek": 4940.515555555556,
-            "current": 5113.968333333333,
-            "deltaPct": 3.510823431832571,
-            "deltaVsLaunchPct": 39.99375398787799,
-            "deltaVsPreviousPct": 3.510823431832571,
+            "previousWeek": 4792.675,
+            "current": 4879.472222,
+            "deltaPct": 1.811039,
+            "deltaVsLaunchPct": 33.574475,
+            "deltaVsPreviousPct": 1.811039,
             "deltaType": "percent",
             "format": "number",
-            "context": "Total GA4 engaged time converted to hours."
+            "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
           },
           {
             "key": "avgEngagedMinutesPerUser",
             "label": "Avg time per user",
-            "baseline": 39.25197740112995,
+            "baseline": 48.938138,
             "launchBaseline": 25.164161882893225,
-            "previousWeek": 39.25197740112995,
-            "current": 42.13651469376545,
-            "deltaPct": 7.34876937066733,
-            "deltaVsLaunchPct": 67.44652529997491,
-            "deltaVsPreviousPct": 7.34876937066733,
+            "previousWeek": 48.938138,
+            "current": 49.445758,
+            "deltaPct": 1.037269,
+            "deltaVsLaunchPct": 96.492767,
+            "deltaVsPreviousPct": 1.037269,
             "deltaType": "minutes",
             "format": "minutes",
-            "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
+            "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
           }
         ]
       },
@@ -7102,13 +7102,13 @@
           {
             "key": "landingPageUsers",
             "label": "Landing-page users",
-            "baseline": 606,
+            "baseline": 744,
             "launchBaseline": 1045,
-            "previousWeek": 606,
-            "current": 744,
-            "deltaPct": 22.772277227722775,
-            "deltaVsLaunchPct": -28.80382775119617,
-            "deltaVsPreviousPct": 22.772277227722775,
+            "previousWeek": 744,
+            "current": 594,
+            "deltaPct": -20.16129,
+            "deltaVsLaunchPct": -43.157895,
+            "deltaVsPreviousPct": -20.16129,
             "deltaType": "percent",
             "format": "number",
             "context": "Users reaching pages with “landing” in the path."
@@ -7116,13 +7116,13 @@
           {
             "key": "devicesPageUsers",
             "label": "Devices-page users",
-            "baseline": 123,
+            "baseline": 131,
             "launchBaseline": 2028,
-            "previousWeek": 123,
-            "current": 131,
-            "deltaPct": 6.504065040650407,
-            "deltaVsLaunchPct": -93.5404339250493,
-            "deltaVsPreviousPct": 6.504065040650407,
+            "previousWeek": 131,
+            "current": 60,
+            "deltaPct": -54.198473,
+            "deltaVsLaunchPct": -97.04142,
+            "deltaVsPreviousPct": -54.198473,
             "deltaType": "percent",
             "format": "number",
             "context": "Users reaching pages with “devices” in the path."
@@ -7130,16 +7130,16 @@
           {
             "key": "paidSocialUsers",
             "label": "Paid social users",
-            "baseline": 2436,
+            "baseline": 2421,
             "launchBaseline": 4441,
-            "previousWeek": 2436,
+            "previousWeek": 2421,
             "current": 2421,
-            "deltaPct": -0.6157635467980296,
-            "deltaVsLaunchPct": -45.48525106957892,
-            "deltaVsPreviousPct": -0.6157635467980296,
+            "deltaPct": 0.0,
+            "deltaVsLaunchPct": -45.485251,
+            "deltaVsPreviousPct": 0.0,
             "deltaType": "percent",
             "format": "number",
-            "context": "Users from GA4 source/medium values containing Facebook, Instagram, or Meta."
+            "context": "Users from GA4 source/medium values containing Facebook, Instagram, or Meta. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
           }
         ]
       },
@@ -7155,12 +7155,12 @@
             "launchBaseline": 1547,
             "previousWeek": 5635,
             "current": 5635,
-            "deltaPct": 5.4650945161894064,
-            "deltaVsLaunchPct": 264.25339366515834,
-            "deltaVsPreviousPct": 5.4650945161894064,
+            "deltaPct": 0.0,
+            "deltaVsLaunchPct": 264.253394,
+            "deltaVsPreviousPct": 0.0,
             "deltaType": "percent",
             "format": "number",
-            "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream.",
+            "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
             "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
           },
           {
@@ -7170,12 +7170,12 @@
             "launchBaseline": 2889,
             "previousWeek": 8832,
             "current": 8832,
-            "deltaPct": 2.7096173973717876,
-            "deltaVsLaunchPct": 205.71131879543097,
-            "deltaVsPreviousPct": 2.7096173973717876,
+            "deltaPct": 0.0,
+            "deltaVsLaunchPct": 205.711319,
+            "deltaVsPreviousPct": 0.0,
             "deltaType": "percent",
             "format": "number",
-            "context": "GA4 sessions on the Apple/iOS and Android app streams.",
+            "context": "GA4 sessions on the Apple/iOS and Android app streams. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
             "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
           },
           {
@@ -7185,12 +7185,12 @@
             "launchBaseline": 59.70126848307439,
             "previousWeek": 78.53266767961797,
             "current": 78.53266767961797,
-            "deltaPct": -2.2666740212629377,
-            "deltaVsLaunchPct": 31.542712031122726,
-            "deltaVsPreviousPct": -2.2666740212629377,
+            "deltaPct": 0.0,
+            "deltaVsLaunchPct": 31.542712,
+            "deltaVsPreviousPct": 0.0,
             "deltaType": "points",
             "format": "percent",
-            "context": "Engaged app-stream sessions divided by app-stream sessions.",
+            "context": "Engaged app-stream sessions divided by app-stream sessions. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
             "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
           }
         ]
@@ -7203,13 +7203,13 @@
           {
             "key": "viewingEventUsers",
             "label": "Viewing event users",
-            "baseline": 2570,
+            "baseline": 2410,
             "launchBaseline": 1152,
-            "previousWeek": 2570,
-            "current": 2410,
-            "deltaPct": -6.22568093385214,
-            "deltaVsLaunchPct": 109.20138888888889,
-            "deltaVsPreviousPct": -6.22568093385214,
+            "previousWeek": 2410,
+            "current": 1726,
+            "deltaPct": -28.381743,
+            "deltaVsLaunchPct": 49.826389,
+            "deltaVsPreviousPct": -28.381743,
             "deltaType": "percent",
             "format": "number",
             "context": "Users who triggered on-demand video_start or Live play events."
@@ -7222,11 +7222,11 @@
             "previousWeek": 2354,
             "current": 2354,
             "deltaPct": 0.0,
-            "deltaVsLaunchPct": 130.7843137254902,
+            "deltaVsLaunchPct": 130.784314,
             "deltaVsPreviousPct": 0.0,
             "deltaType": "percent",
             "format": "number",
-            "context": "Users who triggered video_start outside the Live screen."
+            "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
           },
           {
             "key": "liveChannelViewers",
@@ -7236,22 +7236,22 @@
             "previousWeek": 132,
             "current": 132,
             "deltaPct": 0.0,
-            "deltaVsLaunchPct": 9.090909090909092,
+            "deltaVsLaunchPct": 9.090909,
             "deltaVsPreviousPct": 0.0,
             "deltaType": "percent",
             "format": "number",
-            "context": "Users who triggered a Live play event."
+            "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
           },
           {
             "key": "videoCompleteUsers",
             "label": "Video complete users",
-            "baseline": 255,
+            "baseline": 209,
             "launchBaseline": 219,
-            "previousWeek": 255,
-            "current": 209,
-            "deltaPct": -18.03921568627451,
-            "deltaVsLaunchPct": -4.5662100456621,
-            "deltaVsPreviousPct": -18.03921568627451,
+            "previousWeek": 209,
+            "current": 222,
+            "deltaPct": 6.220096,
+            "deltaVsLaunchPct": 1.369863,
+            "deltaVsPreviousPct": 6.220096,
             "deltaType": "percent",
             "format": "number",
             "context": "Users who triggered video_complete."
@@ -7264,22 +7264,22 @@
             "previousWeek": 3898,
             "current": 3898,
             "deltaPct": 0.0,
-            "deltaVsLaunchPct": -1.3663967611336032,
+            "deltaVsLaunchPct": -1.366397,
             "deltaVsPreviousPct": 0.0,
             "deltaType": "percent",
             "format": "number",
-            "context": "Total Live play events, not unique users."
+            "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)"
           },
           {
             "key": "adRequestEvents",
             "label": "Ad request events",
-            "baseline": 23365,
+            "baseline": 25669,
             "launchBaseline": 10589,
-            "previousWeek": 23365,
-            "current": 25669,
-            "deltaPct": 9.860903060132676,
-            "deltaVsLaunchPct": 142.4119369156672,
-            "deltaVsPreviousPct": 9.860903060132676,
+            "previousWeek": 25669,
+            "current": 26144,
+            "deltaPct": 1.850481,
+            "deltaVsLaunchPct": 146.897724,
+            "deltaVsPreviousPct": 1.850481,
             "deltaType": "percent",
             "format": "number",
             "context": "Total ad request events generated by viewing activity."
@@ -7294,44 +7294,44 @@
           {
             "key": "avgEngagedMinutesPerUser",
             "label": "Avg time per user",
-            "baseline": 39.25197740112995,
+            "baseline": 48.938138,
             "launchBaseline": 25.164161882893225,
-            "previousWeek": 39.25197740112995,
-            "current": 42.13651469376545,
-            "deltaPct": 7.34876937066733,
-            "deltaVsLaunchPct": 67.44652529997491,
-            "deltaVsPreviousPct": 7.34876937066733,
+            "previousWeek": 48.938138,
+            "current": 49.445758,
+            "deltaPct": 1.037269,
+            "deltaVsLaunchPct": 96.492767,
+            "deltaVsPreviousPct": 1.037269,
             "deltaType": "minutes",
             "format": "minutes",
-            "context": "Total engaged time divided by active users."
+            "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
           },
           {
             "key": "avgEngagedMinutesPerSession",
             "label": "Avg time per session",
-            "baseline": 21.44786436099655,
+            "baseline": 24.332417,
             "launchBaseline": 16.45123845980635,
-            "previousWeek": 21.44786436099655,
-            "current": 22.154375451263537,
-            "deltaPct": 3.294085967607073,
-            "deltaVsLaunchPct": 34.66691583974716,
-            "deltaVsPreviousPct": 3.294085967607073,
+            "previousWeek": 24.332417,
+            "current": 23.650403,
+            "deltaPct": -2.802903,
+            "deltaVsLaunchPct": 43.760624,
+            "deltaVsPreviousPct": -2.802903,
             "deltaType": "minutes",
             "format": "minutes",
-            "context": "Total engaged time divided by sessions."
+            "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026) divided by sessions - refreshed this run. Down slightly (~-2.8%) only because sessions grew faster (+4.7%) than total engaged time (+1.8%); total time and time-per-user still improved. The GA4 engaged-session rate is separately affected by the Jun 28 classification anomaly, not a real retention drop."
           },
           {
             "key": "totalEngagementHours",
             "label": "Total engaged hours",
-            "baseline": 4940.515555555556,
+            "baseline": 4792.675,
             "launchBaseline": 3652.9975,
-            "previousWeek": 4940.515555555556,
-            "current": 5113.968333333333,
-            "deltaPct": 3.510823431832571,
-            "deltaVsLaunchPct": 39.99375398787799,
-            "deltaVsPreviousPct": 3.510823431832571,
+            "previousWeek": 4792.675,
+            "current": 4879.472222,
+            "deltaPct": 1.811039,
+            "deltaVsLaunchPct": 33.574475,
+            "deltaVsPreviousPct": 1.811039,
             "deltaType": "percent",
             "format": "number",
-            "context": "Total GA4 engaged time converted to hours."
+            "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
           }
         ]
       }
