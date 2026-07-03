@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03 11:30 PDT",
+  "generatedAt": "2026-07-03 11:55 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -213,13 +213,14 @@
       "launchBaseline": 1547,
       "previousWeek": 5635,
       "current": 5635,
-      "deltaPct": 0.0,
+      "deltaPct": null,
       "deltaVsLaunchPct": 264.253394,
-      "deltaVsPreviousPct": 0.0,
+      "deltaVsPreviousPct": null,
       "deltaType": "percent",
       "format": "number",
-      "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
-      "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
+      "context": "People using the Apple/iOS or Android app streams (GA4 property 497892271, streams 12950551103 + 12982344897); Apple TV is not yet split from the Apple/iOS stream. Value shown is the last good stream-level reading (week of Jun 8-14). The stream-level app-usage source was not refreshed in this run, so the vs-previous-7-days comparison is unavailable (not 0%).",
+      "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run.",
+      "comparisonUnavailable": true
     },
     {
       "key": "appSessions",
@@ -228,13 +229,14 @@
       "launchBaseline": 2889,
       "previousWeek": 8832,
       "current": 8832,
-      "deltaPct": 0.0,
+      "deltaPct": null,
       "deltaVsLaunchPct": 205.711319,
-      "deltaVsPreviousPct": 0.0,
+      "deltaVsPreviousPct": null,
       "deltaType": "percent",
       "format": "number",
-      "context": "GA4 sessions on the Apple/iOS and Android app streams. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
-      "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
+      "context": "GA4 sessions on the Apple/iOS and Android app streams (property 497892271, streams 12950551103 + 12982344897). Value shown is the last good stream-level reading (week of Jun 8-14). The stream-level app-usage source was not refreshed in this run, so the vs-previous-7-days comparison is unavailable (not 0%).",
+      "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run.",
+      "comparisonUnavailable": true
     },
     {
       "key": "appEngagementRate",
@@ -243,13 +245,14 @@
       "launchBaseline": 59.70126848307439,
       "previousWeek": 78.53266767961797,
       "current": 78.53266767961797,
-      "deltaPct": 0.0,
+      "deltaPct": null,
       "deltaVsLaunchPct": 31.542712,
-      "deltaVsPreviousPct": 0.0,
+      "deltaVsPreviousPct": null,
       "deltaType": "points",
       "format": "percent",
-      "context": "Engaged app-stream sessions divided by app-stream sessions (GA4 property 497892271, Jun 22-28, 2026). The weekly figure dips only because of an isolated Sunday Jun 28 GA4 engaged-session classification anomaly (engagedSessions 702 of 2,339) - NOT a real engagement collapse: active users, sessions, views and time-spent all held up or rose that day. Time-spent (+1.8%) is the more reliable attention signal.",
-      "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
+      "context": "Engaged app-stream sessions divided by app-stream sessions (GA4 property 497892271, streams 12950551103 + 12982344897). Value shown is the last good stream-level reading (week of Jun 8-14); the stream-level source was not refreshed in this run, so the vs-previous-7-days comparison is unavailable (not 0%). The property-level engaged-session rate for the current week (Jun 22-28) is reported in the weekly engagement scorecards, where an isolated Sunday Jun 28 GA4 engaged-session classification anomaly (engagedSessions 702 of 2,339) briefly depressed the rate - not a real engagement collapse: active users, sessions, views and time-spent (+1.8%) all held up or rose that day.",
+      "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run.",
+      "comparisonUnavailable": true
     },
     {
       "key": "viewingEventUsers",
@@ -7123,13 +7126,14 @@
           "launchBaseline": 1547,
           "previousWeek": 5635,
           "current": 5635,
-          "deltaPct": 0.0,
+          "deltaPct": null,
           "deltaVsLaunchPct": 264.253394,
-          "deltaVsPreviousPct": 0.0,
+          "deltaVsPreviousPct": null,
           "deltaType": "percent",
           "format": "number",
-          "context": "People using the Apple/iOS or Android app streams; Apple TV is not yet split from the Apple/iOS stream. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
-          "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
+          "context": "People using the Apple/iOS or Android app streams (GA4 property 497892271, streams 12950551103 + 12982344897); Apple TV is not yet split from the Apple/iOS stream. Value shown is the last good stream-level reading (week of Jun 8-14). The stream-level app-usage source was not refreshed in this run, so the vs-previous-7-days comparison is unavailable (not 0%).",
+          "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run.",
+          "comparisonUnavailable": true
         },
         {
           "key": "appSessions",
@@ -7138,13 +7142,14 @@
           "launchBaseline": 2889,
           "previousWeek": 8832,
           "current": 8832,
-          "deltaPct": 0.0,
+          "deltaPct": null,
           "deltaVsLaunchPct": 205.711319,
-          "deltaVsPreviousPct": 0.0,
+          "deltaVsPreviousPct": null,
           "deltaType": "percent",
           "format": "number",
-          "context": "GA4 sessions on the Apple/iOS and Android app streams. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.)",
-          "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
+          "context": "GA4 sessions on the Apple/iOS and Android app streams (property 497892271, streams 12950551103 + 12982344897). Value shown is the last good stream-level reading (week of Jun 8-14). The stream-level app-usage source was not refreshed in this run, so the vs-previous-7-days comparison is unavailable (not 0%).",
+          "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run.",
+          "comparisonUnavailable": true
         },
         {
           "key": "appEngagementRate",
@@ -7153,13 +7158,14 @@
           "launchBaseline": 59.70126848307439,
           "previousWeek": 78.53266767961797,
           "current": 78.53266767961797,
-          "deltaPct": 0.0,
+          "deltaPct": null,
           "deltaVsLaunchPct": 31.542712,
-          "deltaVsPreviousPct": 0.0,
+          "deltaVsPreviousPct": null,
           "deltaType": "points",
           "format": "percent",
-          "context": "Engaged app-stream sessions divided by app-stream sessions (GA4 property 497892271, Jun 22-28, 2026). The weekly figure dips only because of an isolated Sunday Jun 28 GA4 engaged-session classification anomaly (engagedSessions 702 of 2,339) - NOT a real engagement collapse: active users, sessions, views and time-spent all held up or rose that day. Time-spent (+1.8%) is the more reliable attention signal.",
-          "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run."
+          "context": "Engaged app-stream sessions divided by app-stream sessions (GA4 property 497892271, streams 12950551103 + 12982344897). Value shown is the last good stream-level reading (week of Jun 8-14); the stream-level source was not refreshed in this run, so the vs-previous-7-days comparison is unavailable (not 0%). The property-level engaged-session rate for the current week (Jun 22-28) is reported in the weekly engagement scorecards, where an isolated Sunday Jun 28 GA4 engaged-session classification anomaly (engagedSessions 702 of 2,339) briefly depressed the rate - not a real engagement collapse: active users, sessions, views and time-spent (+1.8%) all held up or rose that day.",
+          "currentSourceNote": "Preserved: no fresh GA4 source for this metric in the Jun 8-14 run.",
+          "comparisonUnavailable": true
         }
       ]
     },
@@ -8650,8 +8656,8 @@
   "youtubeSummary": {
     "source": "YouTube Analytics connector, ElectricNOW channel",
     "connectorStatus": "CONNECTED",
-    "period": "Jun 22-Jun 28, 2026",
-    "periodNote": "Monday-Sunday week Jun 22-28. Weekly totals cover the full week; the per-day trend rows returned by the connector run through Jun 27 only, so daily rows are 6 days while weekly totals are the full 7-day figures.",
+    "period": "Jun 22-27, 2026",
+    "periodNote": "Monday-Sunday week of Jun 22-28; the YouTube Analytics connector's daily rows and the weekly totals both cover Jun 22-27 (6 days). Jun 28 is not yet finalized by the connector (typical multi-day reporting lag), so this is the latest available data. The vs-prior-full-week deltas compare these 6 days against the prior full week (Jun 15-21) and are therefore preliminary.",
     "comparisonPeriod": "Jun 15-Jun 21, 2026",
     "comparisonNote": "Compared to the prior full week (Jun 15-Jun 21, 2026).",
     "isPlatformSales": false,
@@ -9025,7 +9031,8 @@
       }
     ],
     "distinctionNote": "This is YouTube-only performance. YouTube ad impressions and estimated YouTube ad revenue are distinct from ElectricNOW in-app ad impressions and from Google/Meta paid-acquisition impressions. YouTube has no purchases and is NOT included in Visible Platform Sales.",
-    "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For the complete week Jun 22-28, 2026 the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. That is down versus the prior full week (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%). The connector's per-day rows run through Jun 27 only this run, so daily detail is 6 days while the weekly totals are the full 7-day figures. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales."
+    "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For Jun 22-27, 2026 (the latest available data; Jun 28 is not yet finalized by the connector) the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. Versus the prior full week that is down (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%), though those deltas compare 6 days to a 7-day prior week and are preliminary. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales.",
+    "dataFreshnessNote": "Latest available: Jun 22-27, 2026 (6 days). Jun 28 pending YouTube Analytics finalization; not fabricated."
   },
   "appTrendNote": "This trend charts total app sessions in green (a reliable daily activity signal) alongside daily active users in blue - both rose into Sun Jun 28, 2026. Heads-up: GA4's separate “engaged sessions” metric shows an isolated one-day dip on Jun 28 (a GA4 engaged-session classification anomaly, not a real engagement collapse); time spent in the app actually rose +1.8% that week. Engaged-session rate is tracked in the scorecards above."
 }
