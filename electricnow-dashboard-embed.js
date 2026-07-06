@@ -31,7 +31,7 @@
 
   // Embedded data snapshot (overridden at runtime by hosted JSON fetch when available).
   window.ELECTRICNOW_DASHBOARD_DATA = {
-    "generatedAt": "2026-07-03 12:20 PDT",
+    "generatedAt": "2026-07-06 07:31 PDT",
     "property": "GA4 property 497892271",
     "sourceLabel": "Internal GA4 pull, property 497892271",
     "periods": {
@@ -3791,7 +3791,7 @@
         "sourceLabel": "Apple App Store manual snapshot",
         "sourceDetail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. This remains a manual source until Apple App Store Connect API reporting is connected.",
         "isManualSnapshot": true,
-        "snapshotRange": "Jun 25-Jul 1, 2026",
+        "snapshotRange": "Jun 29-Jul 5, 2026",
         "platformFeePct": 30,
         "estimatedNetPct": 70,
         "baselineWindow": {
@@ -3924,11 +3924,11 @@
         },
         "yearToDate": {
           "label": "Apple App Store snapshot",
-          "range": "Jan 1-Jul 1, 2026",
-          "purchases": 20,
-          "purchaseRevenue": 332.8,
-          "developerRevShare": 232.92,
-          "revenuePerPurchase": 16.64,
+          "range": "Jan 1-Jul 5, 2026",
+          "purchases": 22,
+          "purchaseRevenue": 362.78,
+          "developerRevShare": 253.9,
+          "revenuePerPurchase": 16.49,
           "payments": [
             {
               "date": "Apr 16",
@@ -4042,6 +4042,18 @@
               "date": "Jun 30",
               "amount": 2.99,
               "description": "Apple App Store - Purchase HD 3",
+              "source": "Apple App Store"
+            },
+            {
+              "date": "Jul 2",
+              "amount": 14.99,
+              "description": "Apple App Store - Purchase HD 15",
+              "source": "Apple App Store"
+            },
+            {
+              "date": "Jul 5",
+              "amount": 14.99,
+              "description": "Apple App Store - Purchase HD 15",
               "source": "Apple App Store"
             }
           ]
@@ -4165,6 +4177,20 @@
             "purchases": 1,
             "purchaseRevenue": 2.99,
             "developerRevShare": 2.09
+          },
+          {
+            "date": "Jul 2",
+            "rawDate": "20260702",
+            "purchases": 1,
+            "purchaseRevenue": 14.99,
+            "developerRevShare": 10.49
+          },
+          {
+            "date": "Jul 5",
+            "rawDate": "20260705",
+            "purchases": 1,
+            "purchaseRevenue": 14.99,
+            "developerRevShare": 10.49
           }
         ],
         "undatedSales": [
@@ -4184,9 +4210,9 @@
           },
           {
             "label": "Apple Purchase HD 15",
-            "purchases": 12,
-            "purchaseRevenue": 179.88,
-            "developerRevShare": 125.89
+            "purchases": 14,
+            "purchaseRevenue": 209.86,
+            "developerRevShare": 146.87
           },
           {
             "label": "Apple Purchase Bundle 10",
@@ -4207,15 +4233,15 @@
             "developerRevShare": 2.09
           }
         ],
-        "note": "Apple App Store screenshots show $249.86 gross in-app purchase sales manually entered so far, or approximately $174.88 after Apple's 30% platform fee. The latest sales screenshot (Jun 15-Jun 21, 2026) shows one $14.99 sale on Jun 16, which was already recorded in the 2026-06-18 update, so cumulative Apple sales are unchanged at 14/$249.86 (no double-count). These figures remain manual until Apple App Store Connect API reporting is connected.",
+        "note": "Apple App Store screenshots are manually entered from App Store Connect; estimated net assumes Apple's 30% platform fee. Jul 6, 2026 adds two Purchase HD 15 sales (Jul 2 and Jul 5, $14.99 each) from the Jun 29-Jul 5, 2026 screenshots; the Jun 30 Purchase HD 3 ($2.99) shown in the same screenshot was already recorded Jul 2 and is not double-counted. Cumulative Apple sales are now 22 purchases / $362.78 gross (est net $253.90). These figures remain manual until Apple App Store Connect API reporting is connected.",
         "latestSalesSnapshot": {
-          "period": "Jun 25-Jul 1, 2026",
-          "start": "2026-06-25",
-          "end": "2026-07-01",
-          "purchases": 4,
-          "purchaseRevenue": 47.96,
+          "period": "Jun 29-Jul 5, 2026",
+          "start": "2026-06-29",
+          "end": "2026-07-05",
+          "purchases": 2,
+          "purchaseRevenue": 29.98,
           "alreadyIncludedInCumulative": true,
-          "note": "Latest Apple App Store Connect screenshots (Jun 25-Jul 1, 2026) show four new sales: Purchase HD 15 on Jun 26, Jun 27, Jun 28 ($14.99 each, est net $10.49) and Purchase HD 3 on Jun 30 ($2.99, est net $2.09) - total $47.96 gross (est net $33.56). Newly added July 2, 2026, lifting cumulative Apple to 20/$332.80 gross (est net $232.92)."
+          "note": "Latest Apple App Store Connect screenshots (Jun 29-Jul 5, 2026) show two new Purchase HD 15 sales on Jul 2 and Jul 5 ($14.99 each, est net $10.49) = $29.98 gross (est net $20.98). The Jun 30 Purchase HD 3 ($2.99) in the same screenshot was already recorded Jul 2, 2026 and is not double-counted. Added Jul 6, 2026, lifting cumulative Apple to 22/$362.80 gross (est net $253.90)."
         }
       },
       "sourceBreakout": [
@@ -4235,10 +4261,10 @@
         },
         {
           "source": "Apple App Store",
-          "purchases": 20,
-          "purchaseRevenue": 332.8,
-          "developerRevShare": 232.92,
-          "detail": "Manual Apple App Store snapshot. Jul 2, 2026 screenshots add three Jun 26/27/28 Purchase HD 15 ($14.99 each) and one Jun 30 Purchase HD 3 ($2.99) = $47.96 gross; earlier sales preserved, not double-counted."
+          "purchases": 22,
+          "purchaseRevenue": 362.78,
+          "developerRevShare": 253.9,
+          "detail": "Manual Apple App Store snapshot. Jul 6, 2026 screenshots add two Jul 2 and Jul 5 Purchase HD 15 ($14.99 each) = $29.98 gross; the Jun 30 Purchase HD 3 ($2.99) was already recorded Jul 2 and is not double-counted. Earlier sales preserved."
         }
       ],
       "baselineWindow": {
@@ -4259,11 +4285,11 @@
       },
       "yearToDate": {
         "label": "Visible sales this year",
-        "range": "Jan 1-Jul 1, 2026",
-        "purchases": 64,
-        "purchaseRevenue": 1159.36,
-        "developerRevShare": 991.08,
-        "revenuePerPurchase": 18.11
+        "range": "Jan 1-Jul 5, 2026",
+        "purchases": 66,
+        "purchaseRevenue": 1189.34,
+        "developerRevShare": 1012.06,
+        "revenuePerPurchase": 18.02
       },
       "monthToDate": {
         "label": "Sales this month",
@@ -8169,10 +8195,10 @@
       "note": "Visits are GA4 sessions, not unique people. Weekly visits use the current complete reporting week (Jun 22-Jun 28, 2026) and compare against the previous 7 complete days (Jun 15-21). Monthly visits show the most recent fully reconciled 28-day window (May 18-Jun 14, 2026) compared against the preceding 28 days; this window lags the weekly window because the 28-day landing-excluded figure was not re-pulled this run. Landing-page traffic remains acquisition-only and is not included here."
     },
     "manualAppleSalesUpdate": {
-      "updatedAt": "2026-07-02T12:00:00+00:00",
-      "source": "manual_apple_sales.json updated Jul 2, 2026 with Jun 26/27/28 Purchase HD 15 ($14.99 each) and Jun 30 Purchase HD 3 ($2.99); preserved across refresh",
-      "totalManualAppleEntries": 15,
-      "note": "15 manual entries; Jul 2, 2026 adds Jun 26, Jun 27, Jun 28 (Purchase HD 15 $14.99 each) and Jun 30 (Purchase HD 3 $2.99), from the Jun 25-Jul 1, 2026 Apple Connect screenshots (total $47.96 gross / $33.56 est net)."
+      "updatedAt": "2026-07-06T14:31:00+00:00",
+      "source": "manual_apple_sales.json updated Jul 6, 2026 with Jul 2 and Jul 5 Purchase HD 15 ($14.99 each); Jun 30 Purchase HD 3 ($2.99) already recorded Jul 2, not re-added; preserved across refresh",
+      "totalManualAppleEntries": 16,
+      "note": "16 manual entries; Jul 6, 2026 adds Jul 2 and Jul 5 (Purchase HD 15 $14.99 each) from the Jun 29-Jul 5, 2026 Apple Connect screenshots (net-new $29.98 gross / $20.98 est net). The Jun 30 Purchase HD 3 ($2.99) in the same screenshot was already recorded Jul 2 and is deduped by stable id (0 net-new)."
     },
     "googleAdsSummary": {
       "source": "Google Ads connector",
@@ -8563,38 +8589,18 @@
     "manualAppleDownloads": {
       "sourceLabel": "Manual Apple App Store Connect snapshot",
       "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-      "capturedAt": "2026-07-02 09:00 PDT",
-      "enteredAt": "2026-07-02 09:00 PDT",
+      "capturedAt": "2026-07-06 07:31 PDT",
+      "enteredAt": "2026-07-06 07:31 PDT",
       "uploadedAttachments": [],
       "product": "ElectricNOW",
       "platform": "Free iOS/watchOS/tvOS",
-      "period": "Jun 25-Jul 1, 2026",
-      "start": "2026-06-25",
-      "end": "2026-07-01",
-      "downloads": 1063,
-      "displayDownloads": "1,063",
-      "dailyAverage": 152,
+      "period": "Jun 29-Jul 5, 2026",
+      "start": "2026-06-29",
+      "end": "2026-07-05",
+      "downloads": 424,
+      "displayDownloads": "424",
+      "dailyAverage": 61,
       "daily": [
-        {
-          "date": "2026-06-25",
-          "label": "June 25, 2026",
-          "downloads": 182
-        },
-        {
-          "date": "2026-06-26",
-          "label": "June 26, 2026",
-          "downloads": 171
-        },
-        {
-          "date": "2026-06-27",
-          "label": "June 27, 2026",
-          "downloads": 207
-        },
-        {
-          "date": "2026-06-28",
-          "label": "June 28, 2026",
-          "downloads": 211
-        },
         {
           "date": "2026-06-29",
           "label": "June 29, 2026",
@@ -8603,23 +8609,43 @@
         {
           "date": "2026-06-30",
           "label": "June 30, 2026",
-          "downloads": 74
+          "downloads": 75
         },
         {
           "date": "2026-07-01",
           "label": "July 1, 2026",
           "downloads": 38
+        },
+        {
+          "date": "2026-07-02",
+          "label": "July 2, 2026",
+          "downloads": 46
+        },
+        {
+          "date": "2026-07-03",
+          "label": "July 3, 2026",
+          "downloads": 28
+        },
+        {
+          "date": "2026-07-04",
+          "label": "July 4, 2026",
+          "downloads": 38
+        },
+        {
+          "date": "2026-07-05",
+          "label": "July 5, 2026",
+          "downloads": 19
         }
       ],
-      "deltaPct": -29.3,
+      "deltaPct": -60.1,
       "territories": [
         {
           "territory": "United States",
-          "downloads": 1063,
-          "deltaPct": -29.3
+          "downloads": 424,
+          "deltaPct": -60.1
         }
       ],
-      "note": "Manual Apple Connect screenshot entered Jul 2, 2026. Daily U.S. downloads total 1,063 for Jun 25-Jul 1, 2026. Replaces the prior Jun 19-Jun 25, 2026 = 1,503 snapshot (-29.3%). No file attachment path was supplied with this screenshot; values entered from the provided daily figures. fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
+      "note": "Manual Apple Connect screenshot entered Jul 6, 2026. Daily U.S. downloads total 424 for Jun 29-Jul 5, 2026 (the latest complete week). Deduped against the prior Jun 25-Jul 1 snapshot by date: Jun 29 (180) confirmed, Jun 30 updated 74->75, Jul 1 (38) confirmed, and Jul 2-5 (46/28/38/19) added; the prior Jun 25-Jul 1 = 1,063 window is preserved below as priorSnapshot and is not double-counted. fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
       "fiveWeekSnapshot": {
         "period": "Apr 27-May 31, 2026",
         "start": "2026-04-27",
@@ -8642,10 +8668,10 @@
         ]
       },
       "priorSnapshot": {
-        "period": "Jun 19-Jun 25, 2026",
-        "start": "2026-06-19",
-        "end": "2026-06-25",
-        "downloads": 1503
+        "period": "Jun 25-Jul 1, 2026",
+        "start": "2026-06-25",
+        "end": "2026-07-01",
+        "downloads": 1063
       }
     },
     "manualDataPatch": {
