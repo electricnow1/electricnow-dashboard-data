@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06 07:31 PDT",
+  "generatedAt": "2026-07-06 19:45 PDT",
   "property": "GA4 property 497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -11,27 +11,27 @@
     },
     "previousWeek": {
       "label": "Previous 7 days",
-      "range": "Jun 15-Jun 21, 2026",
-      "start": "2026-06-15",
-      "end": "2026-06-21"
+      "range": "Jun 22-Jun 28, 2026",
+      "start": "2026-06-22",
+      "end": "2026-06-28"
     },
     "baseline": {
       "label": "Previous 7 days",
-      "range": "Jun 15-Jun 21, 2026",
-      "start": "2026-06-15",
-      "end": "2026-06-21"
+      "range": "Jun 22-Jun 28, 2026",
+      "start": "2026-06-22",
+      "end": "2026-06-28"
     },
     "currentWeek": {
       "label": "Latest 7 complete days",
-      "range": "Jun 22-Jun 28, 2026",
-      "start": "2026-06-22",
-      "end": "2026-06-28"
+      "range": "Jun 29-Jul 5, 2026",
+      "start": "2026-06-29",
+      "end": "2026-07-05"
     },
     "weekToDate": {
       "label": "Latest 7 complete days",
-      "range": "Jun 22-Jun 28, 2026",
-      "start": "2026-06-22",
-      "end": "2026-06-28"
+      "range": "Jun 29-Jul 5, 2026",
+      "start": "2026-06-29",
+      "end": "2026-07-05"
     }
   },
   "periodTotals": {
@@ -47,50 +47,48 @@
       "userEngagementDuration": 13165345
     },
     "previousWeek": {
-      "activeUsers": 5876,
-      "newUsers": 3290,
-      "sessions": 11818,
-      "engagedSessions": 9331,
-      "engagementRate": 78.95583008969369,
-      "screenPageViews": 29850,
-      "eventCount": 969672,
-      "userEngagementDuration": 17253630,
+      "activeUsers": 5797,
+      "newUsers": 3082,
+      "sessions": 11883,
+      "engagedSessions": 9270,
+      "engagementRate": 78.01060338298409,
+      "screenPageViews": 32205,
+      "eventCount": 998629,
+      "userEngagementDuration": 17857621,
       "purchaseRevenue": 37.57
     },
     "baseline": {
-      "activeUsers": 5876,
-      "newUsers": 3290,
-      "sessions": 11818,
-      "engagedSessions": 9331,
-      "engagementRate": 78.95583008969369,
-      "screenPageViews": 29850,
-      "eventCount": 969672,
-      "userEngagementDuration": 17253630,
+      "activeUsers": 5797,
+      "newUsers": 3082,
+      "sessions": 11883,
+      "engagedSessions": 9270,
+      "engagementRate": 78.01060338298409,
+      "screenPageViews": 32205,
+      "eventCount": 998629,
+      "userEngagementDuration": 17857621,
       "purchaseRevenue": 37.57
     },
     "currentWeek": {
-      "activeUsers": 5921,
-      "newUsers": 3032,
-      "sessions": 12379,
-      "engagedSessions": 8511,
-      "engagementRate": 68.75353421116407,
-      "screenPageViews": 33975,
-      "eventCount": 995251,
-      "userEngagementDuration": 17566100,
-      "purchaseRevenue": 37.57,
-      "engagementRateCaveat": "Sunday Jun 28 shows a low engagementRate/engagedSessions classification despite high users/sessions/views/time. Use engagement duration, app_time, user_engagement and play/video events as the primary attention signals; engagedSessions/engagementRate this week are potentially inconsistent and should NOT be read as a real retention collapse."
+      "activeUsers": 4158,
+      "newUsers": 1519,
+      "sessions": 10320,
+      "engagedSessions": 8047,
+      "engagementRate": 77.97480620155038,
+      "screenPageViews": 29764,
+      "eventCount": 976703,
+      "userEngagementDuration": 21216690,
+      "purchaseRevenue": 37.57
     },
     "weekToDate": {
-      "activeUsers": 5921,
-      "newUsers": 3032,
-      "sessions": 12379,
-      "engagedSessions": 8511,
-      "engagementRate": 68.75353421116407,
-      "screenPageViews": 33975,
-      "eventCount": 995251,
-      "userEngagementDuration": 17566100,
-      "purchaseRevenue": 37.57,
-      "engagementRateCaveat": "Sunday Jun 28 shows a low engagementRate/engagedSessions classification despite high users/sessions/views/time. Use engagement duration, app_time, user_engagement and play/video events as the primary attention signals; engagedSessions/engagementRate this week are potentially inconsistent and should NOT be read as a real retention collapse."
+      "activeUsers": 4158,
+      "newUsers": 1519,
+      "sessions": 10320,
+      "engagedSessions": 8047,
+      "engagementRate": 77.97480620155038,
+      "screenPageViews": 29764,
+      "eventCount": 976703,
+      "userEngagementDuration": 21216690,
+      "purchaseRevenue": 37.57
     }
   },
   "scorecards": [
@@ -99,11 +97,11 @@
       "label": "Platform active users",
       "baseline": 5282,
       "launchBaseline": 8710,
-      "previousWeek": 5282,
-      "current": 5327,
-      "deltaPct": 0.85195,
-      "deltaVsLaunchPct": -38.840413,
-      "deltaVsPreviousPct": 0.85195,
+      "previousWeek": 5203,
+      "current": 3564,
+      "deltaPct": -31.501057,
+      "deltaVsLaunchPct": -59.081515,
+      "deltaVsPreviousPct": -31.501057,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 active users excluding landing-page acquisition paths."
@@ -113,11 +111,11 @@
       "label": "Platform sessions",
       "baseline": 10925,
       "launchBaseline": 13323,
-      "previousWeek": 10925,
-      "current": 11486,
-      "deltaPct": 5.135011,
-      "deltaVsLaunchPct": -13.788186,
-      "deltaVsPreviousPct": 5.135011,
+      "previousWeek": 10990,
+      "current": 9427,
+      "deltaPct": -14.22202,
+      "deltaVsLaunchPct": -29.242663,
+      "deltaVsPreviousPct": -14.22202,
       "deltaType": "percent",
       "format": "number",
       "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -127,11 +125,11 @@
       "label": "Viewing event users",
       "baseline": 2410,
       "launchBaseline": 1152,
-      "previousWeek": 2410,
-      "current": 1726,
-      "deltaPct": -28.381743,
-      "deltaVsLaunchPct": 49.826389,
-      "deltaVsPreviousPct": -28.381743,
+      "previousWeek": 1726,
+      "current": 1349,
+      "deltaPct": -21.84241,
+      "deltaVsLaunchPct": 17.100694,
+      "deltaVsPreviousPct": -21.84241,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered on-demand video_start or Live play events."
@@ -141,39 +139,39 @@
       "label": "Total engaged hours",
       "baseline": 4792.675,
       "launchBaseline": 3652.9975,
-      "previousWeek": 4792.675,
-      "current": 4879.472222,
-      "deltaPct": 1.811039,
-      "deltaVsLaunchPct": 33.574475,
-      "deltaVsPreviousPct": 1.811039,
+      "previousWeek": 4960.450278,
+      "current": 5893.525,
+      "deltaPct": 18.810283,
+      "deltaVsLaunchPct": 61.333946,
+      "deltaVsPreviousPct": 18.810283,
       "deltaType": "percent",
       "format": "number",
-      "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
+      "context": "Total GA4 engaged time (property 497892271) for Jun 29-Jul 5, 2026, converted to hours - refreshed this run and UP +18.8% vs Jun 22-28. Fewer users and sessions this week, but the audience that stayed spent more time, so total attention rose; engagement rate held steady (~78%) with no classification anomaly."
     },
     {
       "key": "avgEngagedMinutesPerUser",
       "label": "Avg time per user",
       "baseline": 48.938138,
       "launchBaseline": 25.164161882893225,
-      "previousWeek": 48.938138,
-      "current": 49.445758,
-      "deltaPct": 1.037269,
-      "deltaVsLaunchPct": 96.492767,
-      "deltaVsPreviousPct": 1.037269,
+      "previousWeek": 51.341559,
+      "current": 85.043651,
+      "deltaPct": 65.642907,
+      "deltaVsLaunchPct": 237.955428,
+      "deltaVsPreviousPct": 65.642907,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
+      "context": "Total GA4 engaged time (Jun 29-Jul 5, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP vs Jun 22-28. Time-per-user rose sharply because engaged time grew while active users fell; engagement rate stayed healthy near 78%."
     },
     {
       "key": "landingPageUsers",
       "label": "Landing-page users",
       "baseline": 744,
       "launchBaseline": 1045,
-      "previousWeek": 744,
+      "previousWeek": 594,
       "current": 594,
-      "deltaPct": -20.16129,
+      "deltaPct": 0.0,
       "deltaVsLaunchPct": -43.157895,
-      "deltaVsPreviousPct": -20.16129,
+      "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
       "context": "Users reaching pages with “landing” in the path."
@@ -183,11 +181,11 @@
       "label": "Devices-page users",
       "baseline": 131,
       "launchBaseline": 2028,
-      "previousWeek": 131,
+      "previousWeek": 60,
       "current": 60,
-      "deltaPct": -54.198473,
+      "deltaPct": 0.0,
       "deltaVsLaunchPct": -97.04142,
-      "deltaVsPreviousPct": -54.198473,
+      "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
       "context": "Users reaching pages with “devices” in the path."
@@ -259,11 +257,11 @@
       "label": "Viewing event users",
       "baseline": 2410,
       "launchBaseline": 1152,
-      "previousWeek": 2410,
-      "current": 1726,
-      "deltaPct": -28.381743,
-      "deltaVsLaunchPct": 49.826389,
-      "deltaVsPreviousPct": -28.381743,
+      "previousWeek": 1726,
+      "current": 1349,
+      "deltaPct": -21.84241,
+      "deltaVsLaunchPct": 17.100694,
+      "deltaVsPreviousPct": -21.84241,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered on-demand video_start or Live play events."
@@ -301,11 +299,11 @@
       "label": "Video complete users",
       "baseline": 209,
       "launchBaseline": 219,
-      "previousWeek": 209,
-      "current": 222,
-      "deltaPct": 6.220096,
-      "deltaVsLaunchPct": 1.369863,
-      "deltaVsPreviousPct": 6.220096,
+      "previousWeek": 222,
+      "current": 344,
+      "deltaPct": 54.954955,
+      "deltaVsLaunchPct": 57.077626,
+      "deltaVsPreviousPct": 54.954955,
       "deltaType": "percent",
       "format": "number",
       "context": "Users who triggered video_complete."
@@ -329,11 +327,11 @@
       "label": "Ad request events",
       "baseline": 25669,
       "launchBaseline": 10589,
-      "previousWeek": 25669,
-      "current": 26144,
-      "deltaPct": 1.850481,
-      "deltaVsLaunchPct": 146.897724,
-      "deltaVsPreviousPct": 1.850481,
+      "previousWeek": 26144,
+      "current": 23803,
+      "deltaPct": -8.954253,
+      "deltaVsLaunchPct": 124.789876,
+      "deltaVsPreviousPct": -8.954253,
       "deltaType": "percent",
       "format": "number",
       "context": "Total ad request events generated by viewing activity."
@@ -343,25 +341,25 @@
       "label": "Avg time per user",
       "baseline": 48.938138,
       "launchBaseline": 25.164161882893225,
-      "previousWeek": 48.938138,
-      "current": 49.445758,
-      "deltaPct": 1.037269,
-      "deltaVsLaunchPct": 96.492767,
-      "deltaVsPreviousPct": 1.037269,
+      "previousWeek": 51.341559,
+      "current": 85.043651,
+      "deltaPct": 65.642907,
+      "deltaVsLaunchPct": 237.955428,
+      "deltaVsPreviousPct": 65.642907,
       "deltaType": "minutes",
       "format": "minutes",
-      "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
+      "context": "Total GA4 engaged time (Jun 29-Jul 5, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP vs Jun 22-28. Time-per-user rose sharply because engaged time grew while active users fell; engagement rate stayed healthy near 78%."
     },
     {
       "key": "avgEngagedMinutesPerSession",
       "label": "Avg time per session",
       "baseline": 24.332417,
       "launchBaseline": 16.45123845980635,
-      "previousWeek": 24.332417,
-      "current": 23.650403,
-      "deltaPct": -2.802903,
-      "deltaVsLaunchPct": 43.760624,
-      "deltaVsPreviousPct": -2.802903,
+      "previousWeek": 25.046454,
+      "current": 34.26468,
+      "deltaPct": 36.804515,
+      "deltaVsLaunchPct": 108.280246,
+      "deltaVsPreviousPct": 36.804515,
       "deltaType": "minutes",
       "format": "minutes",
       "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026) divided by sessions - refreshed this run. Down slightly (~-2.8%) only because sessions grew faster (+4.7%) than total engaged time (+1.8%); total time and time-per-user still improved. The GA4 engaged-session rate is separately affected by the Jun 28 classification anomaly, not a real retention drop."
@@ -371,346 +369,93 @@
       "label": "Total engaged hours",
       "baseline": 4792.675,
       "launchBaseline": 3652.9975,
-      "previousWeek": 4792.675,
-      "current": 4879.472222,
-      "deltaPct": 1.811039,
-      "deltaVsLaunchPct": 33.574475,
-      "deltaVsPreviousPct": 1.811039,
+      "previousWeek": 4960.450278,
+      "current": 5893.525,
+      "deltaPct": 18.810283,
+      "deltaVsLaunchPct": 61.333946,
+      "deltaVsPreviousPct": 18.810283,
       "deltaType": "percent",
       "format": "number",
-      "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
+      "context": "Total GA4 engaged time (property 497892271) for Jun 29-Jul 5, 2026, converted to hours - refreshed this run and UP +18.8% vs Jun 22-28. Fewer users and sessions this week, but the audience that stayed spent more time, so total attention rose; engagement rate held steady (~78%) with no classification anomaly."
     }
   ],
   "trend": [
     {
-      "date": "May 30",
-      "rawDate": "20260530",
-      "activeUsers": 1415,
+      "date": "Jun 29",
+      "rawDate": "20260629",
+      "activeUsers": 961,
       "newUsers": null,
-      "sessions": 2060,
-      "engagedSessions": 1656,
-      "screenPageViews": 4310,
-      "eventCount": 140484,
-      "engagementRate": 80.3883495145631
+      "sessions": 1619,
+      "engagedSessions": 1266,
+      "screenPageViews": 4073,
+      "eventCount": 144209,
+      "engagementRate": 78.1964175416924
     },
     {
-      "date": "May 31",
-      "rawDate": "20260531",
-      "activeUsers": 1481,
+      "date": "Jun 30",
+      "rawDate": "20260630",
+      "activeUsers": 776,
       "newUsers": null,
-      "sessions": 2150,
-      "engagedSessions": 1744,
-      "screenPageViews": 4223,
-      "eventCount": 149858,
-      "engagementRate": 81.11627906976744
+      "sessions": 1408,
+      "engagedSessions": 1069,
+      "screenPageViews": 3733,
+      "eventCount": 138438,
+      "engagementRate": 75.92329545454545
     },
     {
-      "date": "Jun 1",
-      "rawDate": "20260601",
-      "activeUsers": 1420,
+      "date": "Jul 1",
+      "rawDate": "20260701",
+      "activeUsers": 714,
       "newUsers": null,
-      "sessions": 2092,
-      "engagedSessions": 1667,
-      "screenPageViews": 3939,
-      "eventCount": 146212,
-      "engagementRate": 79.68451242829828
+      "sessions": 1341,
+      "engagedSessions": 1046,
+      "screenPageViews": 3704,
+      "eventCount": 131297,
+      "engagementRate": 78.00149142431022
     },
     {
-      "date": "Jun 2",
-      "rawDate": "20260602",
-      "activeUsers": 1334,
+      "date": "Jul 2",
+      "rawDate": "20260702",
+      "activeUsers": 768,
       "newUsers": null,
-      "sessions": 1980,
-      "engagedSessions": 1567,
-      "screenPageViews": 3656,
-      "eventCount": 130647,
-      "engagementRate": 79.14141414141415
+      "sessions": 1424,
+      "engagedSessions": 1083,
+      "screenPageViews": 3929,
+      "eventCount": 135267,
+      "engagementRate": 76.05337078651685
     },
     {
-      "date": "Jun 3",
-      "rawDate": "20260603",
-      "activeUsers": 1307,
+      "date": "Jul 3",
+      "rawDate": "20260703",
+      "activeUsers": 790,
       "newUsers": null,
-      "sessions": 1985,
-      "engagedSessions": 1591,
-      "screenPageViews": 3991,
-      "eventCount": 130258,
-      "engagementRate": 80.15113350125944
+      "sessions": 1404,
+      "engagedSessions": 1079,
+      "screenPageViews": 3882,
+      "eventCount": 133289,
+      "engagementRate": 76.85185185185185
     },
     {
-      "date": "Jun 4",
-      "rawDate": "20260604",
-      "activeUsers": 1312,
+      "date": "Jul 4",
+      "rawDate": "20260704",
+      "activeUsers": 922,
       "newUsers": null,
-      "sessions": 2024,
-      "engagedSessions": 1592,
-      "screenPageViews": 4261,
-      "eventCount": 129207,
-      "engagementRate": 78.65612648221344
+      "sessions": 1792,
+      "engagedSessions": 1429,
+      "screenPageViews": 5647,
+      "eventCount": 152908,
+      "engagementRate": 79.74330357142857
     },
     {
-      "date": "Jun 5",
-      "rawDate": "20260605",
-      "activeUsers": 1278,
+      "date": "Jul 5",
+      "rawDate": "20260705",
+      "activeUsers": 770,
       "newUsers": null,
-      "sessions": 1981,
-      "engagedSessions": 1565,
-      "screenPageViews": 4326,
-      "eventCount": 128435,
-      "engagementRate": 79.0005047955578
-    },
-    {
-      "date": "Jun 6",
-      "rawDate": "20260606",
-      "activeUsers": 1209,
-      "newUsers": null,
-      "sessions": 1860,
-      "engagedSessions": 1493,
-      "screenPageViews": 4301,
-      "eventCount": 146249,
-      "engagementRate": 80.26881720430109
-    },
-    {
-      "date": "Jun 7",
-      "rawDate": "20260607",
-      "activeUsers": 1508,
-      "newUsers": null,
-      "sessions": 2272,
-      "engagedSessions": 1718,
-      "screenPageViews": 4212,
-      "eventCount": 154841,
-      "engagementRate": 75.61619718309859
-    },
-    {
-      "date": "Jun 8",
-      "rawDate": "20260608",
-      "activeUsers": 1361,
-      "newUsers": null,
-      "sessions": 2103,
-      "engagedSessions": 1672,
-      "screenPageViews": 3996,
-      "eventCount": 143022,
-      "engagementRate": 79.50546837850689
-    },
-    {
-      "date": "Jun 9",
-      "rawDate": "20260609",
-      "activeUsers": 1408,
-      "newUsers": null,
-      "sessions": 2136,
-      "engagedSessions": 1712,
-      "screenPageViews": 4732,
-      "eventCount": 142331,
-      "engagementRate": 80.14981273408239
-    },
-    {
-      "date": "Jun 10",
-      "rawDate": "20260610",
-      "activeUsers": 1418,
-      "newUsers": null,
-      "sessions": 2176,
-      "engagedSessions": 1704,
-      "screenPageViews": 4951,
-      "eventCount": 142511,
-      "engagementRate": 78.30882352941177
-    },
-    {
-      "date": "Jun 11",
-      "rawDate": "20260611",
-      "activeUsers": 1366,
-      "newUsers": null,
-      "sessions": 2109,
-      "engagedSessions": 1658,
-      "screenPageViews": 4584,
-      "eventCount": 144061,
-      "engagementRate": 78.61545756282598
-    },
-    {
-      "date": "Jun 12",
-      "rawDate": "20260612",
-      "activeUsers": 1278,
-      "newUsers": null,
-      "sessions": 1964,
-      "engagedSessions": 1522,
-      "screenPageViews": 4186,
-      "eventCount": 143065,
-      "engagementRate": 77.49490835030551
-    },
-    {
-      "date": "Jun 13",
-      "rawDate": "20260613",
-      "activeUsers": 1102,
-      "newUsers": null,
-      "sessions": 1794,
-      "engagedSessions": 1356,
-      "screenPageViews": 4338,
-      "eventCount": 143051,
-      "engagementRate": 75.58528428093646
-    },
-    {
-      "date": "Jun 14",
-      "rawDate": "20260614",
-      "activeUsers": 1117,
-      "newUsers": null,
-      "sessions": 1788,
-      "engagedSessions": 1414,
-      "screenPageViews": 4532,
-      "eventCount": 143718,
-      "engagementRate": 79.082774049217
-    },
-    {
-      "date": "Jun 15",
-      "rawDate": "20260615",
-      "activeUsers": 1090,
-      "newUsers": null,
-      "sessions": 1753,
-      "engagedSessions": 1344,
-      "screenPageViews": 4224,
-      "eventCount": 140277,
-      "engagementRate": 76.6685681688534
-    },
-    {
-      "date": "Jun 16",
-      "rawDate": "20260616",
-      "activeUsers": 1037,
-      "newUsers": null,
-      "sessions": 1707,
-      "engagedSessions": 1306,
-      "screenPageViews": 4185,
-      "eventCount": 138022,
-      "engagementRate": 76.50849443468073
-    },
-    {
-      "date": "Jun 17",
-      "rawDate": "20260617",
-      "activeUsers": 994,
-      "newUsers": null,
-      "sessions": 1609,
-      "engagedSessions": 1262,
-      "screenPageViews": 4225,
-      "eventCount": 140425,
-      "engagementRate": 78.43380981976384
-    },
-    {
-      "date": "Jun 18",
-      "rawDate": "20260618",
-      "activeUsers": 1082,
-      "newUsers": null,
-      "sessions": 1721,
-      "engagedSessions": 1364,
-      "screenPageViews": 4359,
-      "eventCount": 132981,
-      "engagementRate": 79.25624636839046
-    },
-    {
-      "date": "Jun 19",
-      "rawDate": "20260619",
-      "activeUsers": 1076,
-      "newUsers": null,
-      "sessions": 1737,
-      "engagedSessions": 1368,
-      "screenPageViews": 4222,
-      "eventCount": 136312,
-      "engagementRate": 78.75647668393782
-    },
-    {
-      "date": "Jun 20",
-      "rawDate": "20260620",
-      "activeUsers": 1014,
-      "newUsers": null,
-      "sessions": 1640,
-      "engagedSessions": 1299,
-      "screenPageViews": 4350,
-      "eventCount": 136527,
-      "engagementRate": 79.20731707317074
-    },
-    {
-      "date": "Jun 21",
-      "rawDate": "20260621",
-      "activeUsers": 1094,
-      "newUsers": null,
-      "sessions": 1753,
-      "engagedSessions": 1403,
-      "screenPageViews": 4285,
-      "eventCount": 145128,
-      "engagementRate": 80.0342270393611
-    },
-    {
-      "date": "Jun 22",
-      "rawDate": "20260622",
-      "activeUsers": 1103,
-      "newUsers": null,
-      "sessions": 1787,
-      "engagedSessions": 1409,
-      "screenPageViews": 4613,
-      "eventCount": 146808,
-      "engagementRate": 78.84722999440403
-    },
-    {
-      "date": "Jun 23",
-      "rawDate": "20260623",
-      "activeUsers": 1011,
-      "newUsers": null,
-      "sessions": 1674,
-      "engagedSessions": 1276,
-      "screenPageViews": 4254,
-      "eventCount": 136468,
-      "engagementRate": 76.22461170848268
-    },
-    {
-      "date": "Jun 24",
-      "rawDate": "20260624",
-      "activeUsers": 1016,
-      "newUsers": null,
-      "sessions": 1657,
-      "engagedSessions": 1322,
-      "screenPageViews": 4207,
-      "eventCount": 126928,
-      "engagementRate": 79.78273989136994
-    },
-    {
-      "date": "Jun 25",
-      "rawDate": "20260625",
-      "activeUsers": 966,
-      "newUsers": null,
-      "sessions": 1555,
-      "engagedSessions": 1217,
-      "screenPageViews": 4347,
-      "eventCount": 138913,
-      "engagementRate": 78.2636655948553
-    },
-    {
-      "date": "Jun 26",
-      "rawDate": "20260626",
-      "activeUsers": 940,
-      "newUsers": null,
-      "sessions": 1604,
-      "engagedSessions": 1263,
-      "screenPageViews": 4516,
-      "eventCount": 144240,
-      "engagementRate": 78.74064837905237
-    },
-    {
-      "date": "Jun 27",
-      "rawDate": "20260627",
-      "activeUsers": 1163,
-      "newUsers": null,
-      "sessions": 1882,
-      "engagedSessions": 1433,
-      "screenPageViews": 4652,
-      "eventCount": 154508,
-      "engagementRate": 76.1424017003188
-    },
-    {
-      "date": "Jun 28",
-      "rawDate": "20260628",
-      "activeUsers": 1337,
-      "newUsers": null,
-      "sessions": 2339,
-      "engagedSessions": 702,
-      "screenPageViews": 7386,
-      "eventCount": 147386,
-      "engagementRate": 30.012825994014534
+      "sessions": 1554,
+      "engagedSessions": 1223,
+      "screenPageViews": 4796,
+      "eventCount": 141295,
+      "engagementRate": 78.7001287001287
     }
   ],
   "eventCards": [
@@ -718,28 +463,28 @@
       "event": "in_app_purchase",
       "label": "In-app purchases",
       "baseline": 0,
-      "current": 6,
-      "weekToDate": 6,
+      "current": 2,
+      "weekToDate": 2,
       "deltaPct": null,
-      "activeUsersCurrent": 6
+      "activeUsersCurrent": 2
     },
     {
       "event": "application_install",
       "label": "Application installs",
       "baseline": 4452,
-      "current": 3774,
-      "weekToDate": 3774,
-      "deltaPct": -15.229111,
-      "activeUsersCurrent": 3513
+      "current": 1531,
+      "weekToDate": 1531,
+      "deltaPct": -65.610961,
+      "activeUsersCurrent": 1324
     },
     {
       "event": "first_open",
       "label": "First opens",
       "baseline": 3699,
-      "current": 3033,
-      "weekToDate": 3033,
-      "deltaPct": -18.004866,
-      "activeUsersCurrent": 3029
+      "current": 830,
+      "weekToDate": 830,
+      "deltaPct": -77.561503,
+      "activeUsersCurrent": 827
     },
     {
       "event": "app_open",
@@ -754,28 +499,28 @@
       "event": "app_time",
       "label": "App time events",
       "baseline": 261902,
-      "current": 270473,
-      "weekToDate": 270473,
-      "deltaPct": 3.272598,
-      "activeUsersCurrent": 746
+      "current": 283279,
+      "weekToDate": 283279,
+      "deltaPct": 8.162213,
+      "activeUsersCurrent": 763
     },
     {
       "event": "play",
       "label": "Play events",
       "baseline": 57320,
-      "current": 54060,
-      "weekToDate": 54060,
-      "deltaPct": -5.687369,
-      "activeUsersCurrent": 2410
+      "current": 47143,
+      "weekToDate": 47143,
+      "deltaPct": -17.75471,
+      "activeUsersCurrent": 1363
     },
     {
       "event": "video_start",
       "label": "Video starts",
       "baseline": 20510,
-      "current": 20195,
-      "weekToDate": 20195,
-      "deltaPct": -1.535836,
-      "activeUsersCurrent": 2319
+      "current": 19437,
+      "weekToDate": 19437,
+      "deltaPct": -5.231594,
+      "activeUsersCurrent": 1349
     },
     {
       "event": "video_play",
@@ -790,28 +535,28 @@
       "event": "video_complete",
       "label": "Video completes",
       "baseline": 3391,
-      "current": 3855,
-      "weekToDate": 3855,
-      "deltaPct": 13.683279,
-      "activeUsersCurrent": 209
+      "current": 5038,
+      "weekToDate": 5038,
+      "deltaPct": 48.569743,
+      "activeUsersCurrent": 344
     },
     {
       "event": "ads_request",
       "label": "Ad requests",
       "baseline": 23365,
-      "current": 25669,
-      "weekToDate": 25669,
-      "deltaPct": 9.860903,
-      "activeUsersCurrent": 731
+      "current": 23803,
+      "weekToDate": 23803,
+      "deltaPct": 1.874599,
+      "activeUsersCurrent": 250
     },
     {
       "event": "ads_impression",
       "label": "In-app ad impressions",
       "baseline": 31800,
-      "current": 38370,
-      "weekToDate": 38370,
-      "deltaPct": 20.660377,
-      "activeUsersCurrent": 706
+      "current": 34940,
+      "weekToDate": 34940,
+      "deltaPct": 9.874214,
+      "activeUsersCurrent": 248
     },
     {
       "event": "ads_loaded",
@@ -1458,16 +1203,16 @@
       },
       "current": {
         "platform": "web",
-        "activeUsers": 2224,
+        "activeUsers": 1434,
         "newUsers": null,
-        "sessions": 5414,
-        "engagedSessions": 4269,
-        "screenPageViews": 28099,
-        "eventCount": 790185,
-        "engagementRate": 78.85112670853344
+        "sessions": 4756,
+        "engagedSessions": 3630,
+        "screenPageViews": 25712,
+        "eventCount": 771746,
+        "engagementRate": 76.324643
       },
-      "activeUsersDeltaPct": 6.9745069745069745,
-      "engagementRateCurrent": 78.85112670853344
+      "activeUsersDeltaPct": -31.024531,
+      "engagementRateCurrent": 76.324643
     },
     {
       "platform": "iOS",
@@ -1483,16 +1228,16 @@
       },
       "current": {
         "platform": "iOS",
-        "activeUsers": 2050,
+        "activeUsers": 1670,
         "newUsers": null,
-        "sessions": 3265,
-        "engagedSessions": 2706,
-        "screenPageViews": 903,
-        "eventCount": 78231,
-        "engagementRate": 82.87901990811639
+        "sessions": 3001,
+        "engagedSessions": 2415,
+        "screenPageViews": 986,
+        "eventCount": 99690,
+        "engagementRate": 80.473176
       },
-      "activeUsersDeltaPct": -20.04680187207488,
-      "engagementRateCurrent": 82.87901990811639
+      "activeUsersDeltaPct": -34.867395,
+      "engagementRateCurrent": 80.473176
     },
     {
       "platform": "Android",
@@ -1508,205 +1253,128 @@
       },
       "current": {
         "platform": "Android",
-        "activeUsers": 2982,
+        "activeUsers": 1055,
         "newUsers": null,
-        "sessions": 5229,
-        "engagedSessions": 3919,
-        "screenPageViews": 2313,
-        "eventCount": 133276,
-        "engagementRate": 74.94740868234844
+        "sessions": 2556,
+        "engagedSessions": 1985,
+        "screenPageViews": 3066,
+        "eventCount": 105267,
+        "engagementRate": 77.660407
       },
-      "activeUsersDeltaPct": -9.002136100091548,
-      "engagementRateCurrent": 74.94740868234844
+      "activeUsersDeltaPct": -67.80592,
+      "engagementRateCurrent": 77.660407
     }
   ],
   "platformMix": [
     {
-      "platform": "Android",
-      "deviceCategory": "mobile",
-      "operatingSystem": "Android",
-      "activeUsers": 2547,
-      "sessions": 4416,
-      "engagedSessions": 3231,
-      "engagementRate": 73.16576086956522,
-      "eventCount": 87394,
-      "totalEngagementSeconds": 1309442
-    },
-    {
       "platform": "iOS",
       "deviceCategory": "mobile",
       "operatingSystem": "iOS",
-      "activeUsers": 1725,
-      "sessions": 2678,
-      "engagedSessions": 2201,
-      "engagementRate": 82.1882001493652,
-      "eventCount": 51010,
-      "totalEngagementSeconds": 1723813
+      "activeUsers": 1312,
+      "sessions": 2219,
+      "engagedSessions": 1735,
+      "engagementRate": 78.188373,
+      "eventCount": 51563,
+      "totalEngagementSeconds": 2213272
     },
     {
       "platform": "web",
       "deviceCategory": "smart tv",
       "operatingSystem": "(not set)",
-      "activeUsers": 1145,
-      "sessions": 3348,
-      "engagedSessions": 2751,
-      "engagementRate": 82.168458781362,
-      "eventCount": 716889,
-      "totalEngagementSeconds": 8114010
+      "activeUsers": 1133,
+      "sessions": 3684,
+      "engagedSessions": 2953,
+      "engagementRate": 80.157438,
+      "eventCount": 724768,
+      "totalEngagementSeconds": 8504893
     },
     {
-      "platform": "web",
-      "deviceCategory": "desktop",
-      "operatingSystem": "Windows",
-      "activeUsers": 346,
-      "sessions": 814,
-      "engagedSessions": 695,
-      "engagementRate": 85.38083538083538,
-      "eventCount": 53458,
-      "totalEngagementSeconds": 701446
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "mobile",
-      "operatingSystem": "iOS",
-      "activeUsers": 273,
-      "sessions": 298,
-      "engagedSessions": 193,
-      "engagementRate": 64.76510067114094,
-      "eventCount": 1723,
-      "totalEngagementSeconds": 4954
-    },
-    {
-      "platform": "web",
+      "platform": "Android",
       "deviceCategory": "mobile",
       "operatingSystem": "Android",
-      "activeUsers": 237,
-      "sessions": 245,
-      "engagedSessions": 195,
-      "engagementRate": 79.59183673469387,
-      "eventCount": 1851,
-      "totalEngagementSeconds": 1767
+      "activeUsers": 789,
+      "sessions": 1851,
+      "engagedSessions": 1349,
+      "engagementRate": 72.879525,
+      "eventCount": 53054,
+      "totalEngagementSeconds": 1180777
     },
     {
       "platform": "iOS",
       "deviceCategory": "tablet",
       "operatingSystem": "iOS",
-      "activeUsers": 234,
-      "sessions": 374,
-      "engagedSessions": 325,
-      "engagementRate": 86.89839572192514,
-      "eventCount": 8528,
-      "totalEngagementSeconds": 474894
-    },
-    {
-      "platform": "Android",
-      "deviceCategory": "smart tv",
-      "operatingSystem": "Android",
-      "activeUsers": 219,
-      "sessions": 466,
-      "engagedSessions": 409,
-      "engagementRate": 87.76824034334764,
-      "eventCount": 28843,
-      "totalEngagementSeconds": 2439330
-    },
-    {
-      "platform": "Android",
-      "deviceCategory": "tablet",
-      "operatingSystem": "Android",
-      "activeUsers": 216,
-      "sessions": 347,
-      "engagedSessions": 279,
-      "engagementRate": 80.40345821325649,
-      "eventCount": 17039,
-      "totalEngagementSeconds": 201933
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "desktop",
-      "operatingSystem": "Macintosh",
-      "activeUsers": 108,
-      "sessions": 273,
-      "engagedSessions": 207,
-      "engagementRate": 75.82417582417582,
-      "eventCount": 6057,
-      "totalEngagementSeconds": 149112
-    },
-    {
-      "platform": "iOS",
-      "deviceCategory": "smart tv",
-      "operatingSystem": "iOS",
-      "activeUsers": 91,
-      "sessions": 213,
-      "engagedSessions": 180,
-      "engagementRate": 84.50704225352112,
-      "eventCount": 18693,
-      "totalEngagementSeconds": 3153584
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "desktop",
-      "operatingSystem": "Linux",
-      "activeUsers": 51,
-      "sessions": 120,
-      "engagedSessions": 98,
-      "engagementRate": 81.66666666666667,
-      "eventCount": 3367,
-      "totalEngagementSeconds": 73945
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "tablet",
-      "operatingSystem": "Android",
-      "activeUsers": 33,
-      "sessions": 110,
-      "engagedSessions": 86,
-      "engagementRate": 78.18181818181819,
-      "eventCount": 2518,
-      "totalEngagementSeconds": 46638
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "tablet",
-      "operatingSystem": "iOS",
-      "activeUsers": 16,
-      "sessions": 30,
-      "engagedSessions": 23,
-      "engagementRate": 76.66666666666667,
-      "eventCount": 372,
-      "totalEngagementSeconds": 1194
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "desktop",
-      "operatingSystem": "Chrome OS",
-      "activeUsers": 10,
-      "sessions": 17,
-      "engagedSessions": 16,
-      "engagementRate": 94.11764705882352,
-      "eventCount": 810,
-      "totalEngagementSeconds": 13976
-    },
-    {
-      "platform": "web",
-      "deviceCategory": "smart tv",
-      "operatingSystem": "Android",
-      "activeUsers": 4,
-      "sessions": 4,
-      "engagedSessions": 4,
-      "engagementRate": 100.0,
-      "eventCount": 53,
-      "totalEngagementSeconds": 248
+      "activeUsers": 251,
+      "sessions": 524,
+      "engagedSessions": 453,
+      "engagementRate": 86.450382,
+      "eventCount": 21161,
+      "totalEngagementSeconds": 1424826
     },
     {
       "platform": "web",
       "deviceCategory": "desktop",
       "operatingSystem": "(not set)",
-      "activeUsers": 1,
-      "sessions": 155,
-      "engagedSessions": 1,
-      "engagementRate": 0.6451612903225806,
-      "eventCount": 3087,
-      "totalEngagementSeconds": 0
+      "activeUsers": 208,
+      "sessions": 910,
+      "engagedSessions": 568,
+      "engagementRate": 62.417582,
+      "eventCount": 41931,
+      "totalEngagementSeconds": 821574
+    },
+    {
+      "platform": "Android",
+      "deviceCategory": "smart tv",
+      "operatingSystem": "Android",
+      "activeUsers": 196,
+      "sessions": 533,
+      "engagedSessions": 501,
+      "engagementRate": 93.996248,
+      "eventCount": 43994,
+      "totalEngagementSeconds": 3490003
+    },
+    {
+      "platform": "iOS",
+      "deviceCategory": "smart tv",
+      "operatingSystem": "iOS",
+      "activeUsers": 107,
+      "sessions": 258,
+      "engagedSessions": 227,
+      "engagementRate": 87.984496,
+      "eventCount": 26966,
+      "totalEngagementSeconds": 3444531
+    },
+    {
+      "platform": "web",
+      "deviceCategory": "mobile",
+      "operatingSystem": "(not set)",
+      "activeUsers": 75,
+      "sessions": 101,
+      "engagedSessions": 63,
+      "engagementRate": 62.376238,
+      "eventCount": 1694,
+      "totalEngagementSeconds": 12720
+    },
+    {
+      "platform": "Android",
+      "deviceCategory": "tablet",
+      "operatingSystem": "Android",
+      "activeUsers": 70,
+      "sessions": 172,
+      "engagedSessions": 135,
+      "engagementRate": 78.488372,
+      "eventCount": 8219,
+      "totalEngagementSeconds": 106733
+    },
+    {
+      "platform": "web",
+      "deviceCategory": "tablet",
+      "operatingSystem": "(not set)",
+      "activeUsers": 18,
+      "sessions": 61,
+      "engagedSessions": 46,
+      "engagementRate": 75.409836,
+      "eventCount": 3353,
+      "totalEngagementSeconds": 17361
     }
   ],
   "acquisition": [
@@ -2155,16 +1823,17 @@
     "engagementRateWeekToDate": 93.5336048879837
   },
   "plainEnglishInsights": [
-    "This week, traffic and use improved modestly while engagement-quality scoring was distorted by a Jun 28 anomaly. Property-wide GA4 active users rose +0.8% (5,921), sessions +4.7% (12,379), screen/page views +13.8% (33,975), and total engagement time +1.8% (about 4,879 hours); new users fell -7.8% (3,032). Reported engaged sessions (8,511) and engagement rate (68.75%, down from 78.96%) look weak, but that is driven by Sunday Jun 28 showing a low engagement classification despite high users, sessions, views and time - so engagedSessions/engagementRate are potentially inconsistent this week and should NOT be read as a real retention collapse; engagement duration, app_time and play/video events are the better attention signals and they held up. Visible platform sales GREW to 64 purchases / $1,159.36 gross ($991.08 developer rev share) after one new Stripe charge ($14.99), one new Roku sale (Jun 27 Purchase HD 15, $14.99), and four new manual Apple sales from the Jul 2 Jun 25-Jul 1 screenshots ($47.96 gross). Apple rises to 20/$332.80 gross (est net $232.92) after the Jul 2 screenshots add three Jun 26/27/28 Purchase HD 15 ($14.99 each) and one Jun 30 Purchase HD 3 ($2.99). YouTube (a separate channel) softened: 157,201 views (-10.1%) and ~$2,751 estimated ad revenue (-15.3%). Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales - and YouTube estimated ad revenue is a separate channel. As of the June 29, 2026 refresh, the GA4 complete-week window advances to the current week June 22-June 28, 2026 (previous complete week June 15-June 21 is the comparison baseline). Measured platform audience (landing-excluded) was 5,327 active users on 11,486 sessions, up about 0.9% and 5.1% respectively vs Jun 15-21. On paid acquisition, the newest numeric Meta report (Jun 21-Jun 27, 2026) shows $1,749.69 spent on an iOS-only campaign driving 1,157 iOS installs at $1.51 each (CPC $0.44); link clicks fell ~22%, CPC rose ~59.5%, and cost per install rose ~11.1% - acquisition got more expensive while volume held, with 55+ the most efficient bands. The prior top-card ~0 download anomaly has resolved (top-card now matches the 1,157 breakdown installs). Google Ads is STALE this run (connector RATE_LIMITED, 429) so its last-good values are preserved, not zeroed. VERDICT on paid: promising but still needs proof of viewing - spend reliably buys free iOS installs but there is no proof those installs become viewers or buyers; we do NOT claim true ROAS. Distinguish paid-campaign impressions (113,119 Meta) from in-app ad impressions (GA4 ads_impression, 42,200).",
-    "Engagement: weekly platform visits (landing-excluded sessions) were 15,081, +9.1% vs the previous 7 days, on 8,109 active users with 12,009 engaged sessions; engagement rate 78%. The new complete week held up versus the prior week.",
+    "This week traffic and acquisition fell sharply, but the audience that remained spent more time and total engagement time rose. Property-wide GA4 active users dropped -28.3% (4,158), new users -50.7% (1,519), sessions -13.2% (10,320) and screen/page views -7.6% (29,764) versus the prior week, while total engagement time climbed +18.8% (about 5,894 hours; userEngagementDuration 21,216,690s). Engagement rate was essentially flat and healthy at 77.97% (vs 78.01%) with no Jun 28-style anomaly, so this is fewer people watching more each, not a retention collapse. Measured platform audience (landing-excluded) was 3,564 active users on 9,427 sessions, down about 31% and 14% vs Jun 22-28. Visible platform sales GREW to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99); Apple stays at 22/$362.78 gross (est net $253.90) and Stripe is preserved at 24/$484.76 (connector disconnected this run, not zeroed). On paid acquisition, the newest Meta report (Jun 28-Jul 4, 2026) shows spend cut to $618.34 (-64.3%) buying 354 iOS installs (-68.7%) at $1.75 each; CPC improved to $0.21 (-51.7%) but cost per install rose +14.1%, with 55-64 and 65+ the best bands. Google Ads is STALE this run (current week empty / retry permission-denied) so last-good values are preserved, not zeroed. YouTube (a separate channel) views rose +11.9% (175,840) while estimated ad revenue eased -6.1% (~$2,582); its Jul 2-4 daily rows lag. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales (Google Play may be missing) - and YouTube revenue is a separate channel. VERDICT on paid: acceptable but unproven for viewing - spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS. Distinguish paid-campaign impressions (41,285 Meta) from in-app ad impressions (GA4 ads_impression, 34,940). The GA4 complete-week window advances to Jun 29-Jul 5, 2026 (previous complete week Jun 22-28 is the comparison baseline).",
+    "Traffic: measured platform visits (GA4 sessions, landing-excluded) were 9,427 in the current complete week (Jun 29-Jul 5, 2026), down about 14.2% vs the previous 7 days (10,990 for Jun 22-28); platform active users were 3,564, down about 31.5%. Property-wide GA4 sessions were 10,320 (-13.2%) and active users 4,158 (-28.3%). Acquisition pulled back sharply this week.",
+    "Engagement: GA4 engagement rate held steady and healthy at 77.97% (vs 78.01%) with no Jun 28-style classification anomaly. Even though user and session counts fell, total engagement time ROSE +18.8% to about 5,894 hours (userEngagementDuration 21,216,690s) - the smaller audience watched more per person. Time per active user rose to ~85 min and time per session to ~34 min.",
+    "Sales: visible platform sales grew to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99 / $43.99 dev share). Apple is preserved at 22 / $362.78 gross (est net $253.90) and Stripe at 24 / $484.76 (connector disconnected this run, last-good preserved, not zeroed). Visible sales are Stripe + Roku + manual Apple only, not total ElectricNOW sales.",
+    "Paid acquisition (Meta, Jun 28-Jul 4, 2026): spend cut to $618.34 (-64.3%) drove 354 iOS installs (-68.7%) at $1.75 each on 41,285 impressions and 2,868 link clicks (CPC $0.21, -51.7%). Cost per iOS install rose +14.1%. Older bands are most efficient/highest-volume (55-64 $1.44, 65+ $1.69); 18-24 produced 0 installs. These are free installs, not paid sales, and cannot be tied to viewing or purchases - we do NOT claim true ROAS.",
+    "Google Ads is STALE this run (current complete week returned no rows / manager retry permission-denied); last-good values are preserved, not zeroed, so no fresh Meta-vs-Google cost-per-install comparison is possible.",
+    "YouTube (a separate channel, NOT platform sales): 175,840 views (+11.9%) and ~$2,582 estimated ad revenue (-6.1%) for Jun 29-Jul 5; daily rows for Jul 2-4 show 0 views while revenue accrues (a multi-day reporting lag), so weekly totals are authoritative and back-half daily shape is preliminary.",
+    "Roku app engagement (Jul 6 report, Jun 27-Jul 3): 197 new installs, 137 uninstalls (net +60), 289,138 cumulative installs, 286 avg daily viewers, 89.73 avg min/viewer, 2,993 total hours streamed - tracked separately from GA4 and from Roku live TRC reports.",
+    "Ad-impression grain: distinguish paid-campaign impressions (41,285 Meta ad impressions) from in-app ad impressions (GA4 ads_impression, 34,940 this week) and from YouTube ad impressions (782,494) - three different things.",
     "Landing-page traffic is acquisition-only and is NOT included in platform audience totals; this keeps measured platform audience clean of marketing-page hits.",
-    "Paid acquisition (Meta, Jun 11-Jun 17, 2026): Meta spent $1,968.57 (-37.1% vs the prior period) driving 987 reported platform downloads (iOS 277 + Android 710); the breakdown tables show 1641 Meta app installs (a different attribution grain - the two are kept separate, not blended). Spend and volume were down but CPC improved to $0.31, and Google Play / Android stays cheaper than iOS ($0.98 vs $1.24 per download); 55-64 and 65+ are the most efficient larger age bands, 18-24 is inefficient. Google Ads is STALE this run (RESOURCE_EXHAUSTED rate limit on the Jun 8-14 pull); its last successful pull (2026-06-11 14:40 PDT) covering Jun 1-Jun 7, 2026 reported $66.47 app-promotion cost and 124 conversions, held as last-good (not zeroed). IMPORTANT - time-period mismatch: GA4 current data is Jun 8-Jun 14 while this Meta report is Jun 11-Jun 17, so the windows do not line up; read this as an acquisition-efficiency signal only. We do NOT claim a true ROAS (ad-server revenue attribution unavailable; visible platform sales are not ad-attributed booked revenue).",
-    "Targeting signal: Meta's Google Play / Android downloads remain materially cheaper than iOS ($0.98 vs $1.24 per download) in the Jun 11-17 report; among larger age bands 55-64 and 65+ are the most efficient (cost/install ~$1.12 and ~$1.16) while 18-24 is inefficient (~$2.99). Spend continues to skew toward the more efficient platforms/segments.",
-    "Roku App Engagement (separate from GA4) is preserved from its last good window where no fresher engagement source is available this run; the only new Roku data is the two sales rows from the Jun 15 Sales Activity Report (not engagement). It is not zeroed and is kept distinct from GA4 platform audience.",
-    "Visible platform sales (Stripe + Roku + manual Apple): 55 purchases and $991.45 year to date - Stripe 23/$469.77, Roku 18/$271.82, Apple 14/$249.86 gross - UNCHANGED this run. No new deduped Stripe charges after Jun 15; the Jun 22 Roku Sales Activity Report PDF was not machine-readable so no new Roku sales were confirmed; the only Apple sale in the latest screenshot (Jun 16, $14.99) was already counted. YouTube estimated ad revenue is a separate channel and is NOT included.",
-    "Tracking caveat: GA4 does not cleanly identify every smart-TV surface; Stripe, Roku, Apple, Google Play, and ad-server revenue are separate systems, so visible platform sales are a floor, not total ElectricNOW sales, and no true ROAS is claimed (ad-server revenue attribution unavailable).",
-    "YouTube (separate channel, estimated ad revenue only): the ElectricNOW YouTube channel now has a complete week for Jun 8-Jun 14, 2026 - 164,595 views, ~74,521 hours watched, average view duration 27m 11s, and ~$3,243.85 estimated YouTube ad revenue on 877,734 ad impressions (136,472 monetized playbacks). Net subscribers +179. This is estimated YouTube ad revenue on a separate YouTube channel - it is NOT a platform sales source and is NOT included in Visible Platform Sales; ad impressions are a distinct YouTube metric, not GA4 ad events.",
-    "Bottom line: the GA4 complete-week window advances to Jun 15-Jun 21, 2026 with traffic down week over week (users -19.4%, sessions -14.6%) but engagement rate up slightly to 78.98%; visible sales flat at 55/$991.45 and Apple downloads steady at 1,598. The newest Meta report (Jun 14-20) shows spend down to $1,642.88 with a better CPC ($0.28) but broken platform-download top-cards (breakdown still ~1,174 installs at ~$1.40); Google Ads returned no current rows (last-good preserved). Paid installs are not yet visibly converting into more measured viewing or sales, and true ROAS remains unprovable until ad-attributed revenue is available."
+    "Tracking caveat: GA4 does not cleanly identify every smart-TV surface, and Stripe, Roku, Apple, Google Play and ad-server revenue are separate systems, so visible platform sales are a floor, not total ElectricNOW sales, and no true ROAS is claimed (ad-server revenue attribution unavailable)."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
@@ -2175,7 +1844,7 @@
   ],
   "salesSummary": {
     "sourceLabel": "Visible platform sales",
-    "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe was reconnected and re-pulled on Jun 18, 2026, adding 2 previously-missed succeeded charges (Jun 12 and Jun 15, $14.99 each); Stripe now totals 23/$469.77. Google Play and other sources may still be missing.",
+    "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe totals 24/$484.76 (connector DISCONNECTED this run; last-good preserved, not zeroed), Roku 21/$396.79, Apple 22/$362.78. Google Play and other sources may still be missing, so this is a floor, not total sales.",
     "stripe": {
       "sourceLabel": "Stripe-visible payments",
       "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected and re-pulled 2026-06-18: the connector returned 2 new succeeded charges (Jun 12 and Jun 15, $14.99 each) that had been missed while Stripe was preserved through May 28. Stripe now totals 23 succeeded 2026 charges / $469.77.",
@@ -2916,8 +2585,8 @@
           "purchaseRevenue": 14.99
         }
       ],
-      "note": "Stripe-visible sales show 23 payments and $469.77 year to date (Stripe reconnected Jun 18, 2026 and 2 previously-missed succeeded charges from Jun 12 and Jun 15 were added). Add Apple App Store and Google Play reports before treating this as total sales. | Jun 29, 2026 refresh adds Stripe charge ch_3Tn4AWLG0Cw1zW4e2emVa5xV ($14.99); charge timestamp absent from export so assigned to the current complete week (Jun 22-28).",
-      "connectorStatus": "connected; reconnected and pulled Jun 18, 2026; 2 new succeeded charges added (Jun 12 + Jun 15)",
+      "note": "Stripe is DISCONNECTED this run; last-good total (24 succeeded 2026 charges / $484.76) is preserved, not zeroed. Add Apple App Store and Google Play reports before treating this as total sales. Needs reconnect to resume fresh pulls.",
+      "connectorStatus": "DISCONNECTED_PRESERVED",
       "lastStripeVisiblePayment": {
         "date": "Jun 28",
         "createdAt": "2026-06-28",
@@ -2945,13 +2614,14 @@
           "stripeChargeId": "ch_3TiaOvLG0Cw1zW4e1gfG0nL7",
           "orderId": "moj-2026061513180484"
         }
-      }
+      },
+      "staleNote": "Stripe connector was DISCONNECTED for the Jun 29-Jul 5, 2026 run. Last-good totals (24 succeeded 2026 charges / $484.76) are preserved, not zeroed. Needs reconnect to resume."
     },
     "roku": {
       "sourceLabel": "Roku-visible sales",
       "sourceDetail": "Roku-visible sales come from emailed Roku Sales Activity Reports. The Jun 8 report added Jun 4 and Jun 7 purchases. These are not total ElectricNOW sales.",
-      "reportEmailDate": "2026-06-15T14:17:35+00:00",
-      "reportGenerated": "June 29, 2026 7:13 AM PDT",
+      "reportEmailDate": "2026-07-06T14:04:00+00:00",
+      "reportGenerated": "July 6, 2026 7:04 AM PDT",
       "baselineWindow": {
         "label": "Roku launch baseline",
         "range": "Apr 13-Apr 19, 2026",
@@ -2964,12 +2634,20 @@
       },
       "yearToDate": {
         "label": "Roku sales this year",
-        "range": "Jan 1-Jun 27, 2026",
-        "purchases": 20,
-        "purchaseRevenue": 341.8,
-        "developerRevShare": 273.4,
-        "revenuePerPurchase": 17.09,
+        "range": "Jan 1-Jun 30, 2026",
+        "purchases": 21,
+        "purchaseRevenue": 396.79,
+        "developerRevShare": 317.39,
+        "revenuePerPurchase": 18.89,
         "payments": [
+          {
+            "date": "Jun 30",
+            "createdAt": "2026-06-30",
+            "amount": 54.99,
+            "developerRevShare": 43.99,
+            "description": "Roku - Purchase Bundle 55",
+            "source": "Roku"
+          },
           {
             "date": "Jun 27",
             "createdAt": "2026-06-27",
@@ -3162,17 +2840,37 @@
       },
       "lastWeek": {
         "label": "Roku sales last week",
-        "range": "Jun 15-Jun 21, 2026",
+        "range": "Jun 22-Jun 28, 2026",
         "purchases": 1,
-        "purchaseRevenue": 54.99,
-        "developerRevShare": 43.99,
-        "revenuePerPurchase": 54.99,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 11.99,
+        "revenuePerPurchase": 14.99,
         "deltaPurchasesPct": null,
         "deltaRevenuePct": null,
         "payments": [
           {
-            "date": "Jun 19",
-            "createdAt": "2026-06-19",
+            "date": "Jun 27",
+            "createdAt": "2026-06-27",
+            "amount": 14.99,
+            "developerRevShare": 11.99,
+            "description": "Roku - Purchase HD 15",
+            "source": "Roku"
+          }
+        ]
+      },
+      "thisWeek": {
+        "label": "Roku sales this week",
+        "range": "Jun 29-Jul 5, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 54.99,
+        "developerRevShare": 43.99,
+        "revenuePerPurchase": 54.99,
+        "deltaPurchasesPct": 0.0,
+        "deltaRevenuePct": 266.844563,
+        "payments": [
+          {
+            "date": "Jun 30",
+            "createdAt": "2026-06-30",
             "amount": 54.99,
             "developerRevShare": 43.99,
             "description": "Roku - Purchase Bundle 55",
@@ -3180,70 +2878,42 @@
           }
         ]
       },
-      "thisWeek": {
-        "label": "Roku sales this week",
-        "range": "Jun 22-Jun 28, 2026",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
-        "developerRevShare": 11.99,
-        "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": 0.0,
-        "deltaRevenuePct": -72.7405,
-        "payments": [
-          {
-            "date": "Jun 27",
-            "createdAt": "2026-06-27",
-            "amount": 14.99,
-            "developerRevShare": 11.99,
-            "description": "Roku - Purchase HD 15",
-            "source": "Roku"
-          }
-        ]
-      },
       "currentCompleteWeek": {
         "label": "Roku sales this week",
-        "range": "Jun 22-Jun 28, 2026",
+        "range": "Jun 29-Jul 5, 2026",
         "purchases": 1,
-        "purchaseRevenue": 14.99,
-        "developerRevShare": 11.99,
-        "revenuePerPurchase": 14.99,
+        "purchaseRevenue": 54.99,
+        "developerRevShare": 43.99,
+        "revenuePerPurchase": 54.99,
         "deltaPurchasesPct": 0.0,
-        "deltaRevenuePct": -72.7405,
+        "deltaRevenuePct": 266.844563,
         "payments": [
           {
-            "date": "Jun 27",
-            "createdAt": "2026-06-27",
-            "amount": 14.99,
-            "developerRevShare": 11.99,
-            "description": "Roku - Purchase HD 15",
+            "date": "Jun 30",
+            "createdAt": "2026-06-30",
+            "amount": 54.99,
+            "developerRevShare": 43.99,
+            "description": "Roku - Purchase Bundle 55",
             "source": "Roku"
           }
         ]
       },
       "weekToDate": {
         "label": "Roku sales this week",
-        "range": "Jun 8-Jun 14, 2026",
-        "purchases": 2,
-        "purchaseRevenue": 29.98,
-        "developerRevShare": 23.98,
-        "revenuePerPurchase": 14.99,
-        "deltaPurchasesPct": null,
-        "deltaRevenuePct": null,
+        "range": "Jun 29-Jul 5, 2026",
+        "purchases": 1,
+        "purchaseRevenue": 54.99,
+        "developerRevShare": 43.99,
+        "revenuePerPurchase": 54.99,
+        "deltaPurchasesPct": 0.0,
+        "deltaRevenuePct": 266.844563,
         "payments": [
           {
-            "date": "Jun 11",
-            "createdAt": "2026-06-11",
-            "amount": 14.99,
-            "developerRevShare": 11.99,
-            "description": "Roku - Purchase HD 15",
-            "source": "Roku"
-          },
-          {
-            "date": "Jun 13",
-            "createdAt": "2026-06-13",
-            "amount": 14.99,
-            "developerRevShare": 11.99,
-            "description": "Roku - Purchase HD 15",
+            "date": "Jun 30",
+            "createdAt": "2026-06-30",
+            "amount": 54.99,
+            "developerRevShare": 43.99,
+            "description": "Roku - Purchase Bundle 55",
             "source": "Roku"
           }
         ]
@@ -3262,11 +2932,19 @@
         },
         {
           "label": "Roku bundle purchases",
-          "purchases": 3,
-          "purchaseRevenue": 129.97
+          "purchases": 4,
+          "purchaseRevenue": 184.96
         }
       ],
       "recentPayments": [
+        {
+          "date": "Jun 30",
+          "createdAt": "2026-06-30",
+          "amount": 54.99,
+          "developerRevShare": 43.99,
+          "description": "Roku - Purchase Bundle 55",
+          "source": "Roku"
+        },
         {
           "date": "Jun 4",
           "createdAt": "2026-06-04",
@@ -3751,9 +3429,16 @@
           "purchases": 1,
           "purchaseRevenue": 14.99,
           "developerRevShare": 11.99
+        },
+        {
+          "date": "Jun 30",
+          "rawDate": "20260630",
+          "purchases": 1,
+          "purchaseRevenue": 54.99,
+          "developerRevShare": 43.99
         }
       ],
-      "note": "Roku-visible sales from the latest emailed Sales Activity Report (generated Jun 15, 2026). Year to date: 18 purchases / $271.82 gross (dev rev share $217.42). Adds the new Jun 11 and Jun 13 Purchase HD 15 ($14.99 each) sales; earlier rows (through Jun 7) were already recorded and are not double-counted. | Jun 22, 2026 Sales Activity Report added one new sale: Jun 19 Purchase Bundle 55 ($54.99 gross, $43.99 developer rev share). | Jun 29, 2026 Sales Activity Report adds Jun 27 Purchase HD 15 ($14.99 gross / $11.99 developer rev share)."
+      "note": "Roku-visible sales from the latest emailed Sales Activity Report (generated Jul 6, 2026). Year to date: 21 purchases / $396.79 gross (dev rev share $317.39). | Jul 6, 2026 report adds Jun 30 Purchase Bundle 55 ($54.99 gross / $43.99 developer rev share); rows through Jun 27 were already recorded and are not double-counted."
     },
     "apple": {
       "sourceLabel": "Apple App Store manual snapshot",
@@ -3796,41 +3481,27 @@
       },
       "thisWeek": {
         "label": "Apple sales this week",
-        "range": "Jun 8-Jun 14, 2026",
-        "purchases": 5,
-        "purchaseRevenue": 74.95,
-        "developerRevShare": 52.46,
+        "range": "Jun 29-Jul 5, 2026",
+        "purchases": 2,
+        "purchaseRevenue": 29.98,
+        "developerRevShare": 20.98,
         "revenuePerPurchase": 14.99,
         "payments": [
           {
-            "date": "Jun 10",
+            "date": "Jul 2",
+            "createdAt": "2026-07-02",
             "amount": 14.99,
-            "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
+            "developerRevShare": 10.49,
+            "description": "Apple - Purchase HD 15",
+            "source": "Apple"
           },
           {
-            "date": "Jun 11",
+            "date": "Jul 5",
+            "createdAt": "2026-07-05",
             "amount": 14.99,
-            "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
-          },
-          {
-            "date": "Jun 13",
-            "amount": 14.99,
-            "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
-          },
-          {
-            "date": "Jun 13",
-            "amount": 14.99,
-            "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
-          },
-          {
-            "date": "Jun 14",
-            "amount": 14.99,
-            "description": "Apple App Store - Purchase HD 15",
-            "source": "Apple App Store"
+            "developerRevShare": 10.49,
+            "description": "Apple - Purchase HD 15",
+            "source": "Apple"
           }
         ]
       },
@@ -4218,14 +3889,14 @@
         "purchases": 24,
         "purchaseRevenue": 484.76,
         "developerRevShare": 484.76,
-        "detail": "Stripe-visible title/bundle sales; Jun 29 refresh adds charge ch_3Tn4AW ($14.99). Stripe full take shown as developer rev share."
+        "detail": "Stripe-visible title/bundle sales (24/$484.76). Connector DISCONNECTED this run; last-good preserved, not zeroed. Stripe full take shown as developer rev share."
       },
       {
         "source": "Roku",
-        "purchases": 20,
-        "purchaseRevenue": 341.8,
-        "developerRevShare": 273.4,
-        "detail": "Roku-visible sales; Jun 29, 2026 Sales Activity Report adds Jun 27 Purchase HD 15 ($14.99 gross / $11.99 dev rev share)."
+        "purchases": 21,
+        "purchaseRevenue": 396.79,
+        "developerRevShare": 317.39,
+        "detail": "Roku-visible sales; Jul 6, 2026 Sales Activity Report adds Jun 30 Purchase Bundle 55 ($54.99 gross / $43.99 dev rev share). Earlier sales preserved."
       },
       {
         "source": "Apple App Store",
@@ -4254,10 +3925,10 @@
     "yearToDate": {
       "label": "Visible sales this year",
       "range": "Jan 1-Jul 5, 2026",
-      "purchases": 66,
-      "purchaseRevenue": 1189.34,
-      "developerRevShare": 1012.06,
-      "revenuePerPurchase": 18.02
+      "purchases": 67,
+      "purchaseRevenue": 1244.33,
+      "developerRevShare": 1056.05,
+      "revenuePerPurchase": 18.57
     },
     "monthToDate": {
       "label": "Sales this month",
@@ -4383,66 +4054,35 @@
     },
     "thisWeek": {
       "label": "Sales this week",
-      "range": "Jun 8-Jun 14, 2026",
-      "purchases": 8,
-      "purchaseRevenue": 119.92,
-      "developerRevShare": 91.42,
-      "revenuePerPurchase": 14.99,
+      "range": "Jun 29-Jul 5, 2026",
+      "purchases": 3,
+      "purchaseRevenue": 84.97,
+      "developerRevShare": 64.97,
+      "revenuePerPurchase": 28.32,
       "payments": [
         {
-          "date": "Jun 12",
-          "createdAt": "2026-06-12T23:06:49+00:00",
-          "amount": 14.99,
-          "developerRevShare": 14.99,
-          "description": "Stripe - Purchase this title",
-          "source": "Stripe",
-          "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi"
-        },
-        {
-          "date": "Jun 10",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 11",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 13",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 13",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 14",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 11",
-          "createdAt": "2026-06-11",
-          "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
+          "date": "Jun 30",
+          "createdAt": "2026-06-30",
+          "amount": 54.99,
+          "developerRevShare": 43.99,
+          "description": "Roku - Purchase Bundle 55",
           "source": "Roku"
         },
         {
-          "date": "Jun 13",
-          "createdAt": "2026-06-13",
+          "date": "Jul 2",
+          "createdAt": "2026-07-02",
           "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
-          "source": "Roku"
+          "developerRevShare": 10.49,
+          "description": "Apple - Purchase HD 15",
+          "source": "Apple"
+        },
+        {
+          "date": "Jul 5",
+          "createdAt": "2026-07-05",
+          "amount": 14.99,
+          "developerRevShare": 10.49,
+          "description": "Apple - Purchase HD 15",
+          "source": "Apple"
         }
       ]
     },
@@ -4474,66 +4114,35 @@
     },
     "weekToDate": {
       "label": "Sales this week",
-      "range": "Jun 8-Jun 14, 2026",
-      "purchases": 8,
-      "purchaseRevenue": 119.92,
-      "developerRevShare": 91.42,
-      "revenuePerPurchase": 14.99,
+      "range": "Jun 29-Jul 5, 2026",
+      "purchases": 3,
+      "purchaseRevenue": 84.97,
+      "developerRevShare": 64.97,
+      "revenuePerPurchase": 28.32,
       "payments": [
         {
-          "date": "Jun 12",
-          "createdAt": "2026-06-12T23:06:49+00:00",
-          "amount": 14.99,
-          "developerRevShare": 14.99,
-          "description": "Stripe - Purchase this title",
-          "source": "Stripe",
-          "stripeChargeId": "ch_3TheA0LG0Cw1zW4e2Fj5pdSi"
-        },
-        {
-          "date": "Jun 10",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 11",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 13",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 13",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 14",
-          "amount": 14.99,
-          "description": "Apple App Store - Purchase HD 15",
-          "source": "Apple App Store"
-        },
-        {
-          "date": "Jun 11",
-          "createdAt": "2026-06-11",
-          "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
+          "date": "Jun 30",
+          "createdAt": "2026-06-30",
+          "amount": 54.99,
+          "developerRevShare": 43.99,
+          "description": "Roku - Purchase Bundle 55",
           "source": "Roku"
         },
         {
-          "date": "Jun 13",
-          "createdAt": "2026-06-13",
+          "date": "Jul 2",
+          "createdAt": "2026-07-02",
           "amount": 14.99,
-          "developerRevShare": 11.99,
-          "description": "Roku - Purchase HD 15",
-          "source": "Roku"
+          "developerRevShare": 10.49,
+          "description": "Apple - Purchase HD 15",
+          "source": "Apple"
+        },
+        {
+          "date": "Jul 5",
+          "createdAt": "2026-07-05",
+          "amount": 14.99,
+          "developerRevShare": 10.49,
+          "description": "Apple - Purchase HD 15",
+          "source": "Apple"
         }
       ]
     },
@@ -5057,7 +4666,7 @@
         "developerRevShare": 0.0
       }
     ],
-    "note": "Visible platform sales show 55 purchases and $991.45 year to date, combining Stripe-visible payments, Roku-visible sales, and the manual Apple App Store snapshot. This run reconnected Stripe and added 2 previously-missed succeeded charges (Jun 12 and Jun 15, $14.99 each). Still not total ElectricNOW sales: Google Play is separate and Apple is a manual snapshot. YouTube is a separate channel (estimated YouTube ad revenue only) and is NOT included here."
+    "note": "Visible platform sales show 67 purchases and $1,244.33 year to date ($1,056.05 developer rev share), combining Stripe-visible payments, Roku-visible sales, and the manual Apple App Store snapshot. This run added one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99). Stripe is DISCONNECTED this run - its last-good total (24 charges / $484.76) is preserved, not zeroed. Still not total ElectricNOW sales: Google Play is separate and Apple is a manual snapshot. YouTube is a separate channel (estimated YouTube ad revenue only) and is NOT included here."
   },
   "contentUsage": {
     "period": "May 25-May 31, 2026",
@@ -5207,10 +4816,10 @@
       ],
       "note": "On Demand usage is based on GA4 screen name 'On Demand'. Title-level viewing is shown below from GA4 video_title play events."
     },
-    "freshnessNote": "No fresh GA4 app-screen source in the Jun 15 run; values preserved from the last complete pull (May 25-31) and not advanced or zeroed."
+    "freshnessNote": "No fresh GA4 app-screen source in the Jun 29-Jul 5, 2026 run; values preserved from the last complete window where a clean app-screen export was available."
   },
   "titleViewership": {
-    "period": "Jun 8-Jun 14, 2026",
+    "period": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
     "note": "Top programs roll up GA4 play-event labels into parent shows/collections where possible and rank by play events because ads monetize playback. Live/FAST/linear channels are excluded from Top Shows and Top Videos and reported separately under Live channel usage. Title mapping remains dependent on app metadata quality.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
@@ -6210,7 +5819,7 @@
       "liveChannelViewers": 51,
       "livePlayEvents": 1631
     },
-    "freshnessNote": "No fresh GA4 app-screen source in the Jun 15 run; values preserved from the last complete pull (May 25-31) and not advanced or zeroed."
+    "freshnessNote": "No fresh GA4 app-screen source in the Jun 29-Jul 5, 2026 run; values preserved from the last complete window where a clean app-screen export was available."
   },
   "platformTime": {
     "launchBaseline": {
@@ -6339,7 +5948,7 @@
       ],
       "note": "Platform time is based on GA4 userEngagementDuration across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Use this as the cleaner attention metric; GA4 average session duration is retained for context but may overstate streaming attention when sessions remain open."
     },
-    "freshnessNote": "No fresh GA4 app-screen source in the Jun 15 run; values preserved from the last complete pull (May 25-31) and not advanced or zeroed."
+    "freshnessNote": "No fresh GA4 app-screen source in the Jun 29-Jul 5, 2026 run; values preserved from the last complete window where a clean app-screen export was available."
   },
   "acquisitionSummary": {
     "launchBaseline": {
@@ -6355,7 +5964,7 @@
       "paidSocialSessions": 4547
     },
     "previousWeek": {
-      "range": "Jun 1-Jun 7, 2026",
+      "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
       "totalGa4ActiveUsers": 7608,
       "totalGa4Sessions": 13911,
       "totalGa4EngagementRate": 78.16835597728416,
@@ -6365,7 +5974,7 @@
       "paidSocialSessions": 3360
     },
     "currentWeek": {
-      "range": "Jun 8-Jun 14, 2026",
+      "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
       "totalGa4ActiveUsers": 7282,
       "totalGa4Sessions": 13850,
       "totalGa4EngagementRate": 77.50180505415163,
@@ -6377,7 +5986,7 @@
     "landingPage": {
       "sourceLabel": "Landing page acquisition only",
       "currentWeek": {
-        "range": "Jun 8-Jun 14, 2026",
+        "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
         "activeUsers": 744,
         "newUsers": null,
         "sessions": 1080,
@@ -6387,7 +5996,7 @@
         "eventCount": 2457
       },
       "previousWeek": {
-        "range": "Jun 1-Jun 7, 2026",
+        "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
         "activeUsers": 606,
         "newUsers": 497,
         "sessions": 909,
@@ -6980,7 +6589,7 @@
       "adErrorEvents": 158
     },
     "previousWeek": {
-      "range": "Jun 1-Jun 7, 2026",
+      "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
       "viewingEventUsers": 2570,
       "videoStartUsers": 2486,
       "videoStartEvents": 20510,
@@ -6996,7 +6605,7 @@
       "adErrorEvents": 112
     },
     "currentWeek": {
-      "range": "Jun 8-Jun 14, 2026",
+      "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
       "videoStartUsers": 2319,
       "videoStartEvents": 20195,
       "videoPlayUsers": 295,
@@ -7024,11 +6633,11 @@
           "label": "Platform active users",
           "baseline": 5282,
           "launchBaseline": 8710,
-          "previousWeek": 5282,
-          "current": 5327,
-          "deltaPct": 0.85195,
-          "deltaVsLaunchPct": -38.840413,
-          "deltaVsPreviousPct": 0.85195,
+          "previousWeek": 5203,
+          "current": 3564,
+          "deltaPct": -31.501057,
+          "deltaVsLaunchPct": -59.081515,
+          "deltaVsPreviousPct": -31.501057,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 active users excluding landing-page acquisition paths."
@@ -7038,11 +6647,11 @@
           "label": "Platform sessions",
           "baseline": 10925,
           "launchBaseline": 13323,
-          "previousWeek": 10925,
-          "current": 11486,
-          "deltaPct": 5.135011,
-          "deltaVsLaunchPct": -13.788186,
-          "deltaVsPreviousPct": 5.135011,
+          "previousWeek": 10990,
+          "current": 9427,
+          "deltaPct": -14.22202,
+          "deltaVsLaunchPct": -29.242663,
+          "deltaVsPreviousPct": -14.22202,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions excluding landing-page acquisition paths."
@@ -7052,11 +6661,11 @@
           "label": "Viewing event users",
           "baseline": 2410,
           "launchBaseline": 1152,
-          "previousWeek": 2410,
-          "current": 1726,
-          "deltaPct": -28.381743,
-          "deltaVsLaunchPct": 49.826389,
-          "deltaVsPreviousPct": -28.381743,
+          "previousWeek": 1726,
+          "current": 1349,
+          "deltaPct": -21.84241,
+          "deltaVsLaunchPct": 17.100694,
+          "deltaVsPreviousPct": -21.84241,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered on-demand video_start or Live play events."
@@ -7066,28 +6675,28 @@
           "label": "Total engaged hours",
           "baseline": 4792.675,
           "launchBaseline": 3652.9975,
-          "previousWeek": 4792.675,
-          "current": 4879.472222,
-          "deltaPct": 1.811039,
-          "deltaVsLaunchPct": 33.574475,
-          "deltaVsPreviousPct": 1.811039,
+          "previousWeek": 4960.450278,
+          "current": 5893.525,
+          "deltaPct": 18.810283,
+          "deltaVsLaunchPct": 61.333946,
+          "deltaVsPreviousPct": 18.810283,
           "deltaType": "percent",
           "format": "number",
-          "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
+          "context": "Total GA4 engaged time (property 497892271) for Jun 29-Jul 5, 2026, converted to hours - refreshed this run and UP +18.8% vs Jun 22-28. Fewer users and sessions this week, but the audience that stayed spent more time, so total attention rose; engagement rate held steady (~78%) with no classification anomaly."
         },
         {
           "key": "avgEngagedMinutesPerUser",
           "label": "Avg time per user",
           "baseline": 48.938138,
           "launchBaseline": 25.164161882893225,
-          "previousWeek": 48.938138,
-          "current": 49.445758,
-          "deltaPct": 1.037269,
-          "deltaVsLaunchPct": 96.492767,
-          "deltaVsPreviousPct": 1.037269,
+          "previousWeek": 51.341559,
+          "current": 85.043651,
+          "deltaPct": 65.642907,
+          "deltaVsLaunchPct": 237.955428,
+          "deltaVsPreviousPct": 65.642907,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
+          "context": "Total GA4 engaged time (Jun 29-Jul 5, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP vs Jun 22-28. Time-per-user rose sharply because engaged time grew while active users fell; engagement rate stayed healthy near 78%."
         }
       ]
     },
@@ -7101,11 +6710,11 @@
           "label": "Landing-page users",
           "baseline": 744,
           "launchBaseline": 1045,
-          "previousWeek": 744,
+          "previousWeek": 594,
           "current": 594,
-          "deltaPct": -20.16129,
+          "deltaPct": 0.0,
           "deltaVsLaunchPct": -43.157895,
-          "deltaVsPreviousPct": -20.16129,
+          "deltaVsPreviousPct": 0.0,
           "deltaType": "percent",
           "format": "number",
           "context": "Users reaching pages with “landing” in the path."
@@ -7115,11 +6724,11 @@
           "label": "Devices-page users",
           "baseline": 131,
           "launchBaseline": 2028,
-          "previousWeek": 131,
+          "previousWeek": 60,
           "current": 60,
-          "deltaPct": -54.198473,
+          "deltaPct": 0.0,
           "deltaVsLaunchPct": -97.04142,
-          "deltaVsPreviousPct": -54.198473,
+          "deltaVsPreviousPct": 0.0,
           "deltaType": "percent",
           "format": "number",
           "context": "Users reaching pages with “devices” in the path."
@@ -7205,11 +6814,11 @@
           "label": "Viewing event users",
           "baseline": 2410,
           "launchBaseline": 1152,
-          "previousWeek": 2410,
-          "current": 1726,
-          "deltaPct": -28.381743,
-          "deltaVsLaunchPct": 49.826389,
-          "deltaVsPreviousPct": -28.381743,
+          "previousWeek": 1726,
+          "current": 1349,
+          "deltaPct": -21.84241,
+          "deltaVsLaunchPct": 17.100694,
+          "deltaVsPreviousPct": -21.84241,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered on-demand video_start or Live play events."
@@ -7247,11 +6856,11 @@
           "label": "Video complete users",
           "baseline": 209,
           "launchBaseline": 219,
-          "previousWeek": 209,
-          "current": 222,
-          "deltaPct": 6.220096,
-          "deltaVsLaunchPct": 1.369863,
-          "deltaVsPreviousPct": 6.220096,
+          "previousWeek": 222,
+          "current": 344,
+          "deltaPct": 54.954955,
+          "deltaVsLaunchPct": 57.077626,
+          "deltaVsPreviousPct": 54.954955,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered video_complete."
@@ -7275,11 +6884,11 @@
           "label": "Ad request events",
           "baseline": 25669,
           "launchBaseline": 10589,
-          "previousWeek": 25669,
-          "current": 26144,
-          "deltaPct": 1.850481,
-          "deltaVsLaunchPct": 146.897724,
-          "deltaVsPreviousPct": 1.850481,
+          "previousWeek": 26144,
+          "current": 23803,
+          "deltaPct": -8.954253,
+          "deltaVsLaunchPct": 124.789876,
+          "deltaVsPreviousPct": -8.954253,
           "deltaType": "percent",
           "format": "number",
           "context": "Total ad request events generated by viewing activity."
@@ -7296,25 +6905,25 @@
           "label": "Avg time per user",
           "baseline": 48.938138,
           "launchBaseline": 25.164161882893225,
-          "previousWeek": 48.938138,
-          "current": 49.445758,
-          "deltaPct": 1.037269,
-          "deltaVsLaunchPct": 96.492767,
-          "deltaVsPreviousPct": 1.037269,
+          "previousWeek": 51.341559,
+          "current": 85.043651,
+          "deltaPct": 65.642907,
+          "deltaVsLaunchPct": 237.955428,
+          "deltaVsPreviousPct": 65.642907,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP +1.0% vs Jun 15-21. Time-per-user rose even as the GA4 engaged-session rate dipped on the Jun 28 anomaly."
+          "context": "Total GA4 engaged time (Jun 29-Jul 5, 2026, property 497892271) divided by active users, excluding landing-page paths - refreshed this run and UP vs Jun 22-28. Time-per-user rose sharply because engaged time grew while active users fell; engagement rate stayed healthy near 78%."
         },
         {
           "key": "avgEngagedMinutesPerSession",
           "label": "Avg time per session",
           "baseline": 24.332417,
           "launchBaseline": 16.45123845980635,
-          "previousWeek": 24.332417,
-          "current": 23.650403,
-          "deltaPct": -2.802903,
-          "deltaVsLaunchPct": 43.760624,
-          "deltaVsPreviousPct": -2.802903,
+          "previousWeek": 25.046454,
+          "current": 34.26468,
+          "deltaPct": 36.804515,
+          "deltaVsLaunchPct": 108.280246,
+          "deltaVsPreviousPct": 36.804515,
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Total GA4 engaged time (Jun 22-Jun 28, 2026) divided by sessions - refreshed this run. Down slightly (~-2.8%) only because sessions grew faster (+4.7%) than total engaged time (+1.8%); total time and time-per-user still improved. The GA4 engaged-session rate is separately affected by the Jun 28 classification anomaly, not a real retention drop."
@@ -7324,14 +6933,14 @@
           "label": "Total engaged hours",
           "baseline": 4792.675,
           "launchBaseline": 3652.9975,
-          "previousWeek": 4792.675,
-          "current": 4879.472222,
-          "deltaPct": 1.811039,
-          "deltaVsLaunchPct": 33.574475,
-          "deltaVsPreviousPct": 1.811039,
+          "previousWeek": 4960.450278,
+          "current": 5893.525,
+          "deltaPct": 18.810283,
+          "deltaVsLaunchPct": 61.333946,
+          "deltaVsPreviousPct": 18.810283,
           "deltaType": "percent",
           "format": "number",
-          "context": "Total GA4 engaged time (property 497892271) for Jun 22-Jun 28, 2026, converted to hours - refreshed this run and UP +1.8% vs Jun 15-21. Engagement DEPTH / time-spent improved; GA4's engaged-session RATE looks down only because of an isolated Sunday Jun 28 classification anomaly, so time spent is the more reliable attention signal."
+          "context": "Total GA4 engaged time (property 497892271) for Jun 29-Jul 5, 2026, converted to hours - refreshed this run and UP +18.8% vs Jun 22-28. Fewer users and sessions this week, but the audience that stayed spent more time, so total attention rose; engagement rate held steady (~78%) with no classification anomaly."
         }
       ]
     }
@@ -7590,187 +7199,110 @@
       "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
     },
     "previousWeek": {
-      "range": "Jun 15-Jun 21, 2026",
-      "platformActiveUsers": 5282,
-      "platformSessions": 10925,
-      "platformEngagedSessions": 8516,
-      "platformEventCount": 967663,
-      "platformEngagementRate": 77.949657,
-      "platformEngagementSeconds": 17253630,
-      "platformEngagementHours": 4792.675,
-      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition. Platform audience = property-wide GA4 (property 497892271) minus /landing acquisition paths. NOTE: landing offset is last-good/estimated (landing breakdown not re-pulled this run; top_pages export was a truncated preview). Engaged-time uses property-wide userEngagementDuration (fresh this run); landing-page engaged time is not separable, so platform engaged seconds/hours are not landing-adjusted."
+      "range": "Jun 22-Jun 28, 2026",
+      "platformActiveUsers": 5203,
+      "platformSessions": 10990,
+      "platformEngagedSessions": 8455,
+      "platformEventCount": 996620,
+      "platformEngagementRate": 76.933576,
+      "platformEngagementSeconds": 17857621,
+      "platformEngagementHours": 4960.450278,
+      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition. Platform audience = property-wide GA4 (property 497892271) minus /landing acquisition paths. NOTE: landing offset is last-good/estimated (landing breakdown not re-pulled this run; top_pages export remains a truncated preview). Engaged-time uses property-wide userEngagementDuration (fresh this run); landing-page engaged time is not separable, so platform engaged seconds/hours are not landing-adjusted."
     },
     "currentWeek": {
-      "range": "Jun 22-Jun 28, 2026",
-      "platformActiveUsers": 5327,
-      "platformSessions": 11486,
-      "platformEngagedSessions": 7696,
-      "platformEventCount": 993242,
-      "platformEngagementRate": 67.003308,
-      "platformEngagementSeconds": 17566100,
-      "platformEngagementHours": 4879.472222,
-      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition. Platform audience = property-wide GA4 (property 497892271) minus /landing acquisition paths. NOTE: landing offset is last-good/estimated (landing breakdown not re-pulled this run; top_pages export was a truncated preview). Engaged-time uses property-wide userEngagementDuration (fresh this run); landing-page engaged time is not separable, so platform engaged seconds/hours are not landing-adjusted.",
+      "range": "Jun 29-Jul 5, 2026",
+      "platformActiveUsers": 3564,
+      "platformSessions": 9427,
+      "platformEngagedSessions": 7232,
+      "platformEventCount": 974694,
+      "platformEngagementRate": 76.715816,
+      "platformEngagementSeconds": 21216690,
+      "platformEngagementHours": 5893.525,
+      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition. Platform audience = property-wide GA4 (property 497892271) minus /landing acquisition paths. NOTE: landing offset is last-good/estimated (landing breakdown not re-pulled this run; top_pages export remains a truncated preview). Engaged-time uses property-wide userEngagementDuration (fresh this run); landing-page engaged time is not separable, so platform engaged seconds/hours are not landing-adjusted.",
       "methodologyNote": "Excludes landing-page acquisition paths. Platform audience = property-wide GA4 (property 497892271) minus /landing acquisition paths.",
       "engagementRateCaveat": "Sunday Jun 28 shows a low engagementRate/engagedSessions classification despite high users/sessions/views/time. Use engagement duration, app_time, user_engagement and play/video events as the primary attention signals; engagedSessions/engagementRate this week are potentially inconsistent and should NOT be read as a real retention collapse."
     }
   },
   "weeklyTrend": [
     {
-      "date": "Jun 22",
-      "rawDate": "20260622",
-      "activeUsers": 1103,
+      "date": "Jun 29",
+      "rawDate": "20260629",
+      "activeUsers": 961,
       "newUsers": null,
-      "sessions": 1787,
-      "engagedSessions": 1409,
-      "screenPageViews": 4613,
-      "eventCount": 146808,
-      "engagementRate": 78.84722999440403
+      "sessions": 1619,
+      "engagedSessions": 1266,
+      "screenPageViews": 4073,
+      "eventCount": 144209,
+      "engagementRate": 78.1964175416924
     },
     {
-      "date": "Jun 23",
-      "rawDate": "20260623",
-      "activeUsers": 1011,
+      "date": "Jun 30",
+      "rawDate": "20260630",
+      "activeUsers": 776,
       "newUsers": null,
-      "sessions": 1674,
-      "engagedSessions": 1276,
-      "screenPageViews": 4254,
-      "eventCount": 136468,
-      "engagementRate": 76.22461170848268
+      "sessions": 1408,
+      "engagedSessions": 1069,
+      "screenPageViews": 3733,
+      "eventCount": 138438,
+      "engagementRate": 75.92329545454545
     },
     {
-      "date": "Jun 24",
-      "rawDate": "20260624",
-      "activeUsers": 1016,
+      "date": "Jul 1",
+      "rawDate": "20260701",
+      "activeUsers": 714,
       "newUsers": null,
-      "sessions": 1657,
-      "engagedSessions": 1322,
-      "screenPageViews": 4207,
-      "eventCount": 126928,
-      "engagementRate": 79.78273989136994
+      "sessions": 1341,
+      "engagedSessions": 1046,
+      "screenPageViews": 3704,
+      "eventCount": 131297,
+      "engagementRate": 78.00149142431022
     },
     {
-      "date": "Jun 25",
-      "rawDate": "20260625",
-      "activeUsers": 966,
+      "date": "Jul 2",
+      "rawDate": "20260702",
+      "activeUsers": 768,
       "newUsers": null,
-      "sessions": 1555,
-      "engagedSessions": 1217,
-      "screenPageViews": 4347,
-      "eventCount": 138913,
-      "engagementRate": 78.2636655948553
+      "sessions": 1424,
+      "engagedSessions": 1083,
+      "screenPageViews": 3929,
+      "eventCount": 135267,
+      "engagementRate": 76.05337078651685
     },
     {
-      "date": "Jun 26",
-      "rawDate": "20260626",
-      "activeUsers": 940,
+      "date": "Jul 3",
+      "rawDate": "20260703",
+      "activeUsers": 790,
       "newUsers": null,
-      "sessions": 1604,
-      "engagedSessions": 1263,
-      "screenPageViews": 4516,
-      "eventCount": 144240,
-      "engagementRate": 78.74064837905237
+      "sessions": 1404,
+      "engagedSessions": 1079,
+      "screenPageViews": 3882,
+      "eventCount": 133289,
+      "engagementRate": 76.85185185185185
     },
     {
-      "date": "Jun 27",
-      "rawDate": "20260627",
-      "activeUsers": 1163,
+      "date": "Jul 4",
+      "rawDate": "20260704",
+      "activeUsers": 922,
       "newUsers": null,
-      "sessions": 1882,
-      "engagedSessions": 1433,
-      "screenPageViews": 4652,
-      "eventCount": 154508,
-      "engagementRate": 76.1424017003188
+      "sessions": 1792,
+      "engagedSessions": 1429,
+      "screenPageViews": 5647,
+      "eventCount": 152908,
+      "engagementRate": 79.74330357142857
     },
     {
-      "date": "Jun 28",
-      "rawDate": "20260628",
-      "activeUsers": 1337,
+      "date": "Jul 5",
+      "rawDate": "20260705",
+      "activeUsers": 770,
       "newUsers": null,
-      "sessions": 2339,
-      "engagedSessions": 702,
-      "screenPageViews": 7386,
-      "eventCount": 147386,
-      "engagementRate": 30.012825994014534
+      "sessions": 1554,
+      "engagedSessions": 1223,
+      "screenPageViews": 4796,
+      "eventCount": 141295,
+      "engagementRate": 78.7001287001287
     }
   ],
   "monthlyTrend": [
-    {
-      "date": "May 30",
-      "rawDate": "20260530",
-      "activeUsers": 1415,
-      "newUsers": null,
-      "sessions": 2060,
-      "engagedSessions": 1656,
-      "screenPageViews": 4310,
-      "eventCount": 140484,
-      "engagementRate": 80.3883495145631
-    },
-    {
-      "date": "May 31",
-      "rawDate": "20260531",
-      "activeUsers": 1481,
-      "newUsers": null,
-      "sessions": 2150,
-      "engagedSessions": 1744,
-      "screenPageViews": 4223,
-      "eventCount": 149858,
-      "engagementRate": 81.11627906976744
-    },
-    {
-      "date": "Jun 1",
-      "rawDate": "20260601",
-      "activeUsers": 1420,
-      "newUsers": null,
-      "sessions": 2092,
-      "engagedSessions": 1667,
-      "screenPageViews": 3939,
-      "eventCount": 146212,
-      "engagementRate": 79.68451242829828
-    },
-    {
-      "date": "Jun 2",
-      "rawDate": "20260602",
-      "activeUsers": 1334,
-      "newUsers": null,
-      "sessions": 1980,
-      "engagedSessions": 1567,
-      "screenPageViews": 3656,
-      "eventCount": 130647,
-      "engagementRate": 79.14141414141415
-    },
-    {
-      "date": "Jun 3",
-      "rawDate": "20260603",
-      "activeUsers": 1307,
-      "newUsers": null,
-      "sessions": 1985,
-      "engagedSessions": 1591,
-      "screenPageViews": 3991,
-      "eventCount": 130258,
-      "engagementRate": 80.15113350125944
-    },
-    {
-      "date": "Jun 4",
-      "rawDate": "20260604",
-      "activeUsers": 1312,
-      "newUsers": null,
-      "sessions": 2024,
-      "engagedSessions": 1592,
-      "screenPageViews": 4261,
-      "eventCount": 129207,
-      "engagementRate": 78.65612648221344
-    },
-    {
-      "date": "Jun 5",
-      "rawDate": "20260605",
-      "activeUsers": 1278,
-      "newUsers": null,
-      "sessions": 1981,
-      "engagedSessions": 1565,
-      "screenPageViews": 4326,
-      "eventCount": 128435,
-      "engagementRate": 79.0005047955578
-    },
     {
       "date": "Jun 6",
       "rawDate": "20260606",
@@ -8023,10 +7555,87 @@
       "screenPageViews": 7386,
       "eventCount": 147386,
       "engagementRate": 30.012825994014534
+    },
+    {
+      "date": "Jun 29",
+      "rawDate": "20260629",
+      "activeUsers": 961,
+      "newUsers": null,
+      "sessions": 1619,
+      "engagedSessions": 1266,
+      "screenPageViews": 4073,
+      "eventCount": 144209,
+      "engagementRate": 78.1964175416924
+    },
+    {
+      "date": "Jun 30",
+      "rawDate": "20260630",
+      "activeUsers": 776,
+      "newUsers": null,
+      "sessions": 1408,
+      "engagedSessions": 1069,
+      "screenPageViews": 3733,
+      "eventCount": 138438,
+      "engagementRate": 75.92329545454545
+    },
+    {
+      "date": "Jul 1",
+      "rawDate": "20260701",
+      "activeUsers": 714,
+      "newUsers": null,
+      "sessions": 1341,
+      "engagedSessions": 1046,
+      "screenPageViews": 3704,
+      "eventCount": 131297,
+      "engagementRate": 78.00149142431022
+    },
+    {
+      "date": "Jul 2",
+      "rawDate": "20260702",
+      "activeUsers": 768,
+      "newUsers": null,
+      "sessions": 1424,
+      "engagedSessions": 1083,
+      "screenPageViews": 3929,
+      "eventCount": 135267,
+      "engagementRate": 76.05337078651685
+    },
+    {
+      "date": "Jul 3",
+      "rawDate": "20260703",
+      "activeUsers": 790,
+      "newUsers": null,
+      "sessions": 1404,
+      "engagedSessions": 1079,
+      "screenPageViews": 3882,
+      "eventCount": 133289,
+      "engagementRate": 76.85185185185185
+    },
+    {
+      "date": "Jul 4",
+      "rawDate": "20260704",
+      "activeUsers": 922,
+      "newUsers": null,
+      "sessions": 1792,
+      "engagedSessions": 1429,
+      "screenPageViews": 5647,
+      "eventCount": 152908,
+      "engagementRate": 79.74330357142857
+    },
+    {
+      "date": "Jul 5",
+      "rawDate": "20260705",
+      "activeUsers": 770,
+      "newUsers": null,
+      "sessions": 1554,
+      "engagedSessions": 1223,
+      "screenPageViews": 4796,
+      "eventCount": 141295,
+      "engagementRate": 78.7001287001287
     }
   ],
   "appSectionUsage": {
-    "period": "Jun 8-Jun 14, 2026",
+    "period": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
     "metric": "GA4 active users and engaged time by inferred app section",
     "rows": [
       {
@@ -8106,46 +7715,46 @@
   "rokuAppEngagement": {
     "sourceLabel": "Roku App Engagement email report",
     "sourceDetail": "Roku app engagement is parsed from the latest Roku App Engagement PDF emailed from bdp_noreply@data.roku.com. It measures Roku app/channel-store usage and is shown separately from GA4 app/web metrics.",
-    "reportPeriod": "Jun 21-Jun 27, 2026",
-    "rawReportPeriod": "Jun 21-Jun 27, 2026 (generated Jun 29)",
+    "reportPeriod": "Jun 27-Jul 3, 2026",
+    "rawReportPeriod": "Jun 27-Jul 3, 2026 (generated Jul 6)",
     "channelStoreCode": "us",
-    "reportGenerated": "June 29, 2026 at 7:13 AM PDT",
+    "reportGenerated": "July 6, 2026 at 7:03 AM PDT",
     "dateLabels": [
-      "Sun Jun 21",
-      "Mon Jun 22",
-      "Tue Jun 23",
-      "Wed Jun 24",
-      "Thu Jun 25",
-      "Fri Jun 26",
-      "Sat Jun 27"
+      "Sat Jun 27",
+      "Sun Jun 28",
+      "Mon Jun 29",
+      "Tue Jun 30",
+      "Wed Jul 1",
+      "Thu Jul 2",
+      "Fri Jul 3"
     ],
     "metrics": {
-      "newInstalls": 225,
-      "uninstalls": 159,
-      "netInstalls": 66,
-      "cumulativeInstalls": 288977,
-      "avgDailyViewers": 265,
-      "avgMinPerViewer": 78.45,
-      "totalHoursStreamed": 2426
+      "newInstalls": 197,
+      "uninstalls": 137,
+      "netInstalls": 60,
+      "cumulativeInstalls": 289138,
+      "avgDailyViewers": 286,
+      "avgMinPerViewer": 89.73,
+      "totalHoursStreamed": 2993
     },
-    "reportEmailDate": "2026-06-29T14:13:00+00:00",
-    "attachmentFilename": "roku_App_Engagement_2026-06-29T0713.pdf",
+    "reportEmailDate": "2026-07-06T14:03:00+00:00",
+    "attachmentFilename": "App_Engagement_2026-07-06T0703.pdf",
     "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement.",
     "status": "CURRENT_PARSED",
-    "staleNote": "Jun 29, 2026 Roku App Engagement report (covers Jun 21-Jun 27, 2026) parsed from the refresh manifest. TRC / Viewership Summary (live) reports remain excluded from app/platform usage.",
-    "lastSuccessfulReportPeriod": "Jun 21-Jun 27, 2026"
+    "staleNote": "Jul 6, 2026 Roku App Engagement report (covers Jun 27-Jul 3, 2026) parsed from the refresh manifest. TRC / Viewership Summary (live) reports remain excluded from app/platform usage.",
+    "lastSuccessfulReportPeriod": "Jun 27-Jul 3, 2026"
   },
   "visitSummary": {
     "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
     "weekly": {
       "label": "Weekly visits",
-      "range": "Jun 22-Jun 28, 2026",
-      "sessions": 11486,
-      "activeUsers": 5327,
-      "engagedSessions": 7696,
-      "previousRange": "Jun 15-Jun 21, 2026",
-      "previousSessions": 10925,
-      "deltaVsPreviousPct": 5.135011,
+      "range": "Jun 29-Jul 5, 2026",
+      "sessions": 9427,
+      "activeUsers": 3564,
+      "engagedSessions": 7232,
+      "previousRange": "Jun 22-Jun 28, 2026",
+      "previousSessions": 10990,
+      "deltaVsPreviousPct": -14.22202,
       "comparisonLabel": "vs previous 7 days"
     },
     "monthly": {
@@ -8160,7 +7769,7 @@
       "comparisonLabel": "vs prior 28 days",
       "asOfNote": "Most recent fully reconciled 28-day window (through Jun 14, 2026). visitSummary figures are landing-excluded; the 28-day landing-excluded aggregation was not re-pulled in the latest weekly refreshes, so this window lags the weekly window (Jun 22-28) and is preserved as last-good rather than recomputed. The +2.3% delta compares it against the preceding 28 days (Apr 20-May 17, 2026)."
     },
-    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the current complete reporting week (Jun 22-Jun 28, 2026) and compare against the previous 7 complete days (Jun 15-21). Monthly visits show the most recent fully reconciled 28-day window (May 18-Jun 14, 2026) compared against the preceding 28 days; this window lags the weekly window because the 28-day landing-excluded figure was not re-pulled this run. Landing-page traffic remains acquisition-only and is not included here."
+    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the current complete reporting week (Jun 29-Jul 5, 2026) and compare against the previous 7 complete days (Jun 22-28). Monthly visits show the most recent fully reconciled 28-day window (May 18-Jun 14, 2026) compared against the preceding 28 days; this window lags the weekly window because the 28-day landing-excluded figure was not re-pulled this run. Landing-page traffic remains acquisition-only and is not included here."
   },
   "manualAppleSalesUpdate": {
     "updatedAt": "2026-07-06T14:31:00+00:00",
@@ -8302,10 +7911,10 @@
       }
     ],
     "plainEnglish": "Google Ads produced 124 counted Android first-open conversions on $66.47 of spend, about $0.54 per conversion.",
-    "dataFreshnessNote": "Google Ads connector was RATE_LIMITED (429 RESOURCE_EXHAUSTED, retry in ~737s) for the current complete week (Jun 22-Jun 28, 2026). Last-good figures are preserved, not zeroed.",
-    "statusDetail": "429 RESOURCE_EXHAUSTED on the Jun 22-Jun 28 pull; no current-week rows retrieved. Source: google_ads_account_options_20260629.json.",
+    "dataFreshnessNote": "Google Ads connector returned NO rows for the current complete week (Jun 29-Jul 5, 2026); the manager/client retry was permission-denied. Last-good figures are preserved, not zeroed.",
+    "statusDetail": "No current-week rows for Jun 29-Jul 5, 2026 (customer 4342267711 empty; manager retry permission denied).",
     "lastSuccessfulPull": "2026-06-11 14:40 PDT",
-    "staleNote": "Jun 22-28 pull was rate-limited (429). Preserving last-good Google Ads values rather than zeroing. Needs a successful pull next run to restore current spend/conversions and a Meta-vs-Google comparison."
+    "staleNote": "Jun 29-Jul 5 pull returned no rows / retry permission-denied. Preserving last-good Google Ads values rather than zeroing. Needs a successful pull next run to restore current spend/conversions and a Meta-vs-Google comparison."
   },
   "adSuccessSummary": {
     "googleAds": {
@@ -8321,7 +7930,7 @@
       "conversionRatePct": 30.38,
       "costPerConversion": 0.54,
       "source": "Google Ads connector",
-      "note": "Google Ads returned NO rows for the current complete week (Jun 15-21, 2026): the direct-customer report was connected but empty, and the manager/client retry was permission-denied. Last-good app-promotion figures are preserved (not zeroed). No fresh Google-vs-Meta cost-per-install comparison is possible this run.",
+      "note": "Google Ads is STALE this run: the current complete week (Jun 29-Jul 5, 2026) returned no rows and the manager-account retry was permission-denied. Last-good values are preserved, not zeroed.",
       "status": "stale"
     },
     "metaAds": {
@@ -8335,13 +7944,13 @@
       "iosDownloads": 0,
       "androidDownloads": 1,
       "source": "Nathan / Forge One Meta email report",
-      "note": "Meta spent $1,642.88 for Jun 14-Jun 20, 2026 (down ~47% vs the prior period) on a single now-iOS-only campaign (\"PCSM - ElectricNow App - iOS - June 2026\"). The report's platform download top-cards read ~0 (iOS 0 + Android 1), but the breakdown tables still attribute 1,174 app installs at about $1.40 each - so volume did NOT actually collapse; the top-card counters appear to have stopped populating. CPC improved to $0.28 (-33.1%) and link clicks were 5,050. Among larger age bands, 55-64 ($1.28/install) and 45-54 ($1.34) are most efficient; 25-34 ($2.03) and 18-24 ($5.60) are weakest. Time-period note: GA4 current is Jun 15-21 and this Meta report is Jun 14-20 - close but not identical, so treat this as an acquisition-efficiency read, not downstream viewing proof or true ROAS.",
+      "note": "Meta spent $618.34 for Jun 28-Jul 4, 2026 (-64.3% vs the prior period) on a single iOS-only campaign driving 354 iOS installs at $1.75 each (CPC $0.21). GA4 current complete week is Jun 29-Jul 5; the Meta window is Jun 28-Jul 4, so treat as an acquisition-efficiency signal only. Paid-campaign impressions (41,285) are distinct from in-app GA4 ad impressions.",
       "reportedPlatformDownloads": 1,
       "metaAppInstallsFromBreakdown": 1174
     },
-    "period": "Jun 11-Jun 17, 2026 for Meta email report; Google Ads STALE (last-good Jun 1-Jun 7, 2026, RESOURCE_EXHAUSTED rate limit)",
+    "period": "Jun 28-Jul 4, 2026 for Meta email report; Google Ads STALE this run (current complete week Jun 29-Jul 5 returned no rows, manager retry permission-denied; last-good preserved)",
     "verdict": "acceptable but needs proof of viewing",
-    "plainEnglish": "Paid acquisition verdict: efficiency signal only, not a viewing/ROAS proof this run. Meta (Jun 11-17) reported 987 platform downloads (iOS 277 + Android 710) on $1,968.57; spend and volume were down vs the prior period but CPC improved to $0.31, and Android stays cheaper than iOS ($0.98 vs $1.24). The breakdown tables show 1641 Meta app installs (separate attribution grain, not blended). Google Ads is stale (RESOURCE_EXHAUSTED); last-good Jun 1-7 = 124 Android first-open conversions at ~$0.54, preserved not zeroed. NOTE the GA4 (Jun 8-14) vs Meta (Jun 11-17) window mismatch: do NOT over-claim that paid installs became viewing users this run.",
+    "plainEnglish": "Paid acquisition verdict: efficiency signal only, not a viewing/ROAS proof this run. Meta (Jun 28-Jul 4, 2026) spent $618.34 (-64.3%) driving 354 iOS installs (-68.7%) at $1.75 each; CPC improved to $0.21 (-51.7%) but cost per install rose +14.1%, with 55-64 and 65+ the most efficient/highest-volume bands and 18-24 producing 0 installs. Google Ads is STALE (current week empty, retry permission-denied); last-good values preserved, not zeroed. Distinguish paid-campaign impressions (41,285 Meta) from in-app GA4 ad impressions (34,940). Spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS.",
     "recommendations": [
       "Separate iOS and Android budgets so cheaper Android volume does not hide more expensive iOS acquisition.",
       "Shift budget toward lower-cost audiences only when GA4 shows those cohorts also become viewing users.",
@@ -8355,105 +7964,108 @@
     "reportType": "Meta Ads Performance Report (Meta-only, used to avoid double-counting Google Ads which is pulled via connector)",
     "emailFrom": "nathan@pcsocialmedia.com",
     "emailTo": "DeanD@electricentertainment.com",
-    "emailSubject": "ElectricNow | Meta Ads Performance Report (2026-06-21 to 2026-06-27)",
-    "emailDate": "2026-06-28T15:43:36+00:00",
+    "emailSubject": "ElectricNow | Meta Ads Performance Report (2026-06-28 to 2026-07-04)",
+    "emailDate": "2026-07-05T13:43:00+00:00",
     "emailId": "AAMkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOABGAAAAAABShmO_Im-FSr39rhn8M5bDBwC_fCtlQrq5QYDU71YzKgxQAD-2Prc8AADvKLV_nde7SYUl0H8b5z1dAAPDwhikAAA=",
     "reportLink": "https://app.forgeonemarketing.com/r/68d531a3-f3bc-46a3-af89-86682198fb1b",
     "reportCadence": "Twice weekly (Sundays and Thursdays at 6am PST/PDT), each report covers Last 7 days",
-    "period": "Jun 21-Jun 27, 2026",
-    "periodStart": "2026-06-21",
-    "periodEnd": "2026-06-27",
-    "comparison": "vs prior Meta report period (Jun 14-Jun 20, 2026)",
-    "spend": 1749.69,
-    "impressions": 113119,
-    "linkClicks": 3907,
-    "costPerClick": 0.44,
-    "iosDownloads": 1157,
+    "period": "Jun 28-Jul 4, 2026",
+    "periodStart": "2026-06-28",
+    "periodEnd": "2026-07-04",
+    "comparison": "vs prior Meta report period (Jun 21-Jun 27, 2026)",
+    "spend": 618.34,
+    "impressions": 41285,
+    "linkClicks": 2868,
+    "costPerClick": 0.21,
+    "iosDownloads": 354,
     "androidDownloads": 0,
-    "totalDownloads": 1157,
-    "costPerIosDownload": 1.51,
+    "totalDownloads": 354,
+    "costPerIosDownload": 1.75,
     "costPerAndroidDownload": null,
-    "costPerDownload": 1.51,
-    "ctrPct": 3.4539,
+    "costPerDownload": 1.75,
+    "ctrPct": 6.9468,
     "deltas": {
-      "linkClicksPct": -22.0,
-      "costPerClickPct": 59.5,
-      "costPerIosDownloadPct": 11.1,
-      "comparisonNote": "Deltas vs prior Meta report period (Jun 14-Jun 20, 2026)."
+      "spendPct": -64.3,
+      "impressionsPct": -63.4,
+      "linkClicksPct": -26.9,
+      "costPerClickPct": -51.7,
+      "iosDownloadsPct": -68.7,
+      "costPerIosDownloadPct": 14.1,
+      "comparisonNote": "Deltas vs prior Meta report period (Jun 21-Jun 27, 2026)."
     },
     "campaigns": [
       {
         "campaign": "PCSM - ElectricNow App - iOS - June 2026",
-        "spend": 1749.69,
-        "appInstalls": 1157,
-        "costPerAppInstall": 1.51
+        "spend": 618.34,
+        "appInstalls": 354,
+        "costPerAppInstall": 1.75
       }
     ],
     "genderBreakdown": [
       {
         "gender": "male",
-        "spend": 1202.33,
-        "costPerAppInstall": 1.52,
-        "appInstalls": 789
+        "spend": 443.43,
+        "costPerAppInstall": 1.76,
+        "appInstalls": 252
       },
       {
         "gender": "female",
-        "spend": 537.07,
-        "costPerAppInstall": 1.47,
-        "appInstalls": 365
+        "spend": 171.1,
+        "costPerAppInstall": 1.68,
+        "appInstalls": 102
       },
       {
         "gender": "unknown",
-        "spend": 10.29,
-        "costPerAppInstall": 3.43,
-        "appInstalls": 3
+        "spend": 3.81,
+        "costPerAppInstall": null,
+        "appInstalls": 0
       }
     ],
     "ageBreakdown": [
       {
         "ageGroup": "55-64",
-        "spend": 587.21,
-        "costPerAppInstall": 1.41,
-        "appInstalls": 415
+        "spend": 203.87,
+        "costPerAppInstall": 1.44,
+        "appInstalls": 142
       },
       {
         "ageGroup": "65+",
-        "spend": 580.44,
-        "costPerAppInstall": 1.41,
-        "appInstalls": 413
+        "spend": 202.25,
+        "costPerAppInstall": 1.69,
+        "appInstalls": 120
       },
       {
         "ageGroup": "45-54",
-        "spend": 335.21,
-        "costPerAppInstall": 1.64,
-        "appInstalls": 204
+        "spend": 119.16,
+        "costPerAppInstall": 1.95,
+        "appInstalls": 61
       },
       {
         "ageGroup": "35-44",
-        "spend": 160.9,
-        "costPerAppInstall": 1.55,
-        "appInstalls": 104
+        "spend": 60.18,
+        "costPerAppInstall": 3.01,
+        "appInstalls": 20
       },
       {
         "ageGroup": "25-34",
-        "spend": 69.5,
-        "costPerAppInstall": 3.86,
-        "appInstalls": 18
+        "spend": 26.5,
+        "costPerAppInstall": 2.41,
+        "appInstalls": 11
       },
       {
         "ageGroup": "18-24",
-        "spend": 16.43,
-        "costPerAppInstall": 5.48,
-        "appInstalls": 3
+        "spend": 6.37,
+        "costPerAppInstall": null,
+        "appInstalls": 0
       }
     ],
-    "plainEnglish": "Meta's latest numeric report covers Jun 21-Jun 27, 2026: $1,749.69 spent on a single iOS-only campaign (PCSM - ElectricNow App - iOS - June 2026) drove 1,157 iOS app installs at $1.51 each on 113,119 impressions and 3,907 link clicks (CPC $0.44). Versus the prior report period link clicks fell ~22%, CPC rose ~59.5%, and cost per iOS download rose ~11.1% - acquisition got more expensive even as install volume held. Targeting skews older and efficient: 55-64 ($1.41/install) and 65+ ($1.41) are the most efficient and largest bands, while 18-24 ($5.48) and 25-34 ($3.86) are weakest. Female cost per install ($1.47) is slightly lower than male ($1.52), but male volume is larger (789 vs 365 installs). These are free installs, not paid sales.",
-    "paidAcquisitionInterpretation": "PAID ACQUISITION ASSESSMENT (Meta, Jun 21-Jun 27, 2026). Is the platform growing? Modestly - GA4 traffic was roughly flat to slightly up (active users +0.8%, sessions +4.7%, screen/page views +13.8%, total engagement time +1.8%) while Meta kept buying ~1,157 iOS installs/week. Are costs acceptable? Mixed and slightly WORSENING: spend $1,749.69, CPC $0.44 (up ~59.5%), cost per iOS install $1.51 (up ~11.1%), link clicks down ~22%. Is targeting narrowing? Yes - toward older users (55-64 and 65+ are the most efficient and highest-volume bands at $1.41/install), away from 18-34 which is expensive ($3.86-$5.48). Which channel is stronger? Cannot compare to Google Ads this run (Google Ads RATE_LIMITED / stale, not zeroed). Do paid users convert to viewing/time/purchases? UNPROVEN: installs are free and we have no install->activation->sale join; visible sales did tick up to 60/$1,111.40 but cannot be attributed to Meta. VERDICT: promising but still needs proof of viewing - paid spend is reliably buying iOS installs at a rising but still-reasonable cost, yet there is no evidence those installs become viewers or buyers. NEXT TESTS: (1) add an install->first-play activation event so installs can be tied to viewing; (2) hold/scale the 55+ bands and cut 18-24; (3) test female-skewed creative given slightly lower female CPI; (4) compare Meta vs Google once the Google Ads pull succeeds; (5) track 7-day post-install retention and first purchase. We do NOT claim true ROAS (ad-server revenue is not attributed). Distinguish paid-campaign impressions (113,119 Meta ad impressions) from in-app ad impressions (GA4 ads_impression, 42,200 this week) - they are different things.",
+    "plainEnglish": "Meta's latest numeric report covers Jun 28-Jul 4, 2026: $618.34 spent on a single iOS-only campaign (PCSM - ElectricNow App - iOS - June 2026) drove 354 iOS app installs at $1.75 each on 41,285 impressions and 2,868 link clicks (CPC $0.21). Both spend (-64.3%) and iOS installs (-68.7%) fell sharply versus the prior report period, and impressions dropped -63.4% - the campaign was scaled way down. CPC improved to $0.21 (-51.7%) but blended cost per iOS install rose to $1.75 (+14.1%), so each install got more expensive even as clicks got cheaper. Targeting stays older and efficient: 55-64 ($1.44/install, 142 installs) and 65+ ($1.69, 120) are the largest bands, while 35-44 ($3.01) and 25-34 ($2.41) are weakest. Male volume leads (252 installs at $1.76) over female (102 at $1.68). These are free installs, not paid sales.",
+    "paidAcquisitionInterpretation": "PAID ACQUISITION ASSESSMENT (Meta, Jun 28-Jul 4, 2026). Is the platform growing? No - acquisition fell sharply this week. GA4 property-wide active users dropped -28.3% and new users -50.7%, sessions -13.2% and screen/page views -7.6%, while Meta cut spend to $618.34 (-64.3%) and bought only 354 iOS installs (-68.7%). Are costs acceptable? Mixed: CPC improved to $0.21 (-51.7%) but cost per iOS install worsened to $1.75 (+14.1%). Is targeting narrowing? Still older-skewed - 55-64 ($1.44) and 65+ ($1.69) are the highest-volume bands; 18-24 spent almost nothing and produced 0 installs. Which channel is stronger? Cannot compare to Google Ads this run (Google Ads STALE_RATE_LIMITED, current week empty, not zeroed). Do paid users convert to viewing/time/purchases? UNPROVEN: installs are free and there is no install->activation->sale join; total engagement TIME actually rose (+18.8% userEngagementDuration) even as user counts fell, so the remaining audience watched more, but that cannot be attributed to Meta. VERDICT: paid acquisition is acceptable but unproven for viewing - spend reliably buys iOS installs at a reasonable (if rising) cost, yet there is no evidence those installs become viewers or buyers. NEXT TESTS: (1) add an install->first-play activation event; (2) hold the 55+ bands and keep cutting 18-34; (3) compare Meta vs Google once the Google Ads pull succeeds; (4) track 7-day post-install retention and first purchase. We do NOT claim true ROAS (ad-server revenue is not attributed). Distinguish paid-campaign impressions (41,285 Meta ad impressions) from in-app ad impressions (GA4 ads_impression, 34,940 this week) - different things.",
     "threadId": "AAQkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOAAQAIBt6Dqvj9JKvIVO2AKlKos=",
-    "reportedPlatformDownloads": 1157,
-    "blendedCostPerReportedDownload": 1.51,
-    "metaAppInstallsFromBreakdown": 1157,
-    "downloadGrainNote": "This period the report top-card platform-download counter is populated again: iOS installs 1,157 (Android 0), matching the breakdown tables (gender installs 789+365+3 = 1,157; age installs 415+413+204+104+18+3 = 1,157). The prior-period top-card ~0 anomaly has resolved. Paid acquisition buys FREE app installs, not paid downloads; these installs are a distinct grain from visible platform sales and from in-app ad impressions."
+    "reportedPlatformDownloads": 354,
+    "blendedCostPerReportedDownload": 1.75,
+    "metaAppInstallsFromBreakdown": 354,
+    "downloadGrainNote": "iOS installs 354 (Android 0) match the breakdown tables (gender 252+102+0 = 354; age 142+120+61+20+11+0 = 354). Paid acquisition buys FREE app installs, not paid downloads; these installs are a distinct grain from visible platform sales and from in-app ad impressions."
   },
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
@@ -8667,79 +8279,94 @@
     "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
   },
   "plainEnglishSummary": {
-    "generatedAt": "2026-06-29T12:31:00-07:00",
-    "overview": "This week, traffic and use improved modestly while engagement-quality scoring was distorted by a Jun 28 anomaly. Property-wide GA4 active users rose +0.8% (5,921), sessions +4.7% (12,379), screen/page views +13.8% (33,975), and total engagement time +1.8% (about 4,879 hours); new users fell -7.8% (3,032). Reported engaged sessions (8,511) and engagement rate (68.75%, down from 78.96%) look weak, but that is driven by Sunday Jun 28 showing a low engagement classification despite high users, sessions, views and time - so engagedSessions/engagementRate are potentially inconsistent this week and should NOT be read as a real retention collapse; engagement duration, app_time and play/video events are the better attention signals and they held up. Visible platform sales GREW to 64 purchases / $1,159.36 gross ($991.08 developer rev share) after one new Stripe charge ($14.99), one new Roku sale (Jun 27 Purchase HD 15, $14.99), and four new manual Apple sales from the Jul 2 Jun 25-Jul 1 screenshots ($47.96 gross). Apple rises to 20/$332.80 gross (est net $232.92) after the Jul 2 screenshots add three Jun 26/27/28 Purchase HD 15 ($14.99 each) and one Jun 30 Purchase HD 3 ($2.99). YouTube (a separate channel) softened: 157,201 views (-10.1%) and ~$2,751 estimated ad revenue (-15.3%). Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales - and YouTube estimated ad revenue is a separate channel. As of the June 29, 2026 refresh, the GA4 complete-week window advances to the current week June 22-June 28, 2026 (previous complete week June 15-June 21 is the comparison baseline). Measured platform audience (landing-excluded) was 5,327 active users on 11,486 sessions, up about 0.9% and 5.1% respectively vs Jun 15-21. On paid acquisition, the newest numeric Meta report (Jun 21-Jun 27, 2026) shows $1,749.69 spent on an iOS-only campaign driving 1,157 iOS installs at $1.51 each (CPC $0.44); link clicks fell ~22%, CPC rose ~59.5%, and cost per install rose ~11.1% - acquisition got more expensive while volume held, with 55+ the most efficient bands. The prior top-card ~0 download anomaly has resolved (top-card now matches the 1,157 breakdown installs). Google Ads is STALE this run (connector RATE_LIMITED, 429) so its last-good values are preserved, not zeroed. VERDICT on paid: promising but still needs proof of viewing - spend reliably buys free iOS installs but there is no proof those installs become viewers or buyers; we do NOT claim true ROAS. Distinguish paid-campaign impressions (113,119 Meta) from in-app ad impressions (GA4 ads_impression, 42,200).",
+    "generatedAt": "2026-07-06T19:45:00-07:00",
+    "overview": "This week traffic and acquisition fell sharply, but the audience that remained spent more time and total engagement time rose. Property-wide GA4 active users dropped -28.3% (4,158), new users -50.7% (1,519), sessions -13.2% (10,320) and screen/page views -7.6% (29,764) versus the prior week, while total engagement time climbed +18.8% (about 5,894 hours; userEngagementDuration 21,216,690s). Engagement rate was essentially flat and healthy at 77.97% (vs 78.01%) with no Jun 28-style anomaly, so this is fewer people watching more each, not a retention collapse. Measured platform audience (landing-excluded) was 3,564 active users on 9,427 sessions, down about 31% and 14% vs Jun 22-28. Visible platform sales GREW to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99); Apple stays at 22/$362.78 gross (est net $253.90) and Stripe is preserved at 24/$484.76 (connector disconnected this run, not zeroed). On paid acquisition, the newest Meta report (Jun 28-Jul 4, 2026) shows spend cut to $618.34 (-64.3%) buying 354 iOS installs (-68.7%) at $1.75 each; CPC improved to $0.21 (-51.7%) but cost per install rose +14.1%, with 55-64 and 65+ the best bands. Google Ads is STALE this run (current week empty / retry permission-denied) so last-good values are preserved, not zeroed. YouTube (a separate channel) views rose +11.9% (175,840) while estimated ad revenue eased -6.1% (~$2,582); its Jul 2-4 daily rows lag. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales (Google Play may be missing) - and YouTube revenue is a separate channel. VERDICT on paid: acceptable but unproven for viewing - spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS. Distinguish paid-campaign impressions (41,285 Meta) from in-app ad impressions (GA4 ads_impression, 34,940). The GA4 complete-week window advances to Jun 29-Jul 5, 2026 (previous complete week Jun 22-28 is the comparison baseline).",
     "bullets": [
-      "Traffic: measured platform visits (GA4 sessions, landing-excluded) were 11,486 in the current complete week (Jun 22-Jun 28, 2026), up about 5.1% vs the previous 7 days (10,925 for Jun 15-21); platform active users were 5,327, up about 0.9%. Property-wide GA4 sessions were 12,379 (+4.7%) and active users 5,921 (+0.8%). Traffic improved modestly week over week.",
-      "Engagement: the reported GA4 engagement rate slipped to 68.75% (from 78.96%) and engaged sessions to 8,511 (-8.8%), BUT this is distorted by Sunday Jun 28, which shows a low engagement classification despite high users, sessions, views and time. Total engagement time actually rose +1.8% to about 4,879 hours (userEngagementDuration 17,566,100s, fresh this run). Treat engagedSessions/engagementRate as potentially inconsistent this week - NOT a real retention collapse - and lean on engagement duration, app_time, user_engagement and play/video events as the primary attention signals.",
-      "Paid acquisition (Meta, latest numeric report Jun 21-Jun 27, 2026): Meta spent $1,749.69 on a single iOS-only campaign and drove 1,157 iOS app installs at $1.51 each on 113,119 impressions and 3,907 link clicks (CPC $0.44). Versus the prior report period link clicks fell ~22%, CPC rose ~59.5%, and cost per iOS install rose ~11.1% - acquisition got more expensive while install volume held. The prior-period top-card ~0 download anomaly has RESOLVED: the top-card iOS installs (1,157) now match the breakdown tables (gender 789+365+3 and age 415+413+204+104+18+3 both = 1,157). Targeting skews older and efficient (55-64 and 65+ at $1.41/install are most efficient and highest-volume; 18-24 $5.48 and 25-34 $3.86 weakest); female CPI ($1.47) is slightly lower than male ($1.52) but male volume is larger. Google Ads is STALE this run (connector RATE_LIMITED, 429 RESOURCE_EXHAUSTED), so its last-good values are preserved, not zeroed, and no Meta-vs-Google comparison is possible. VERDICT: promising but still needs proof of viewing - spend reliably buys free iOS installs, but install->viewer->sale conversion is unproven. We do NOT claim true ROAS (ad-server revenue is not attributed). Distinguish paid-campaign impressions (113,119 Meta) from in-app ad impressions (GA4 ads_impression, 42,200 this week).",
-      "App downloads (Apple manual snapshot): preserved at 1,503 for Jun 19-Jun 25, 2026 - no new Apple App Store screenshot was provided in this scheduled run. App Store downloads are free install activity, not paid sales and not GA4 active users.",
-      "Sales (visible platform sales = Stripe + Roku + manual Apple): 64 purchases and $1,159.36 gross ($991.08 developer rev share) - Stripe 24/$484.76, Roku 20/$341.80 ($273.40 dev share), and Apple 20/$332.80 gross ($232.92 net) - UP this run. Stripe adds one charge ($14.99, ch_3Tn4AW; timestamp absent from the export so assigned to the current week). Roku's Jun 29 Sales Activity Report adds a Jun 27 Purchase HD 15 ($14.99 gross / $11.99 dev rev share). Apple adds four sales from the Jul 2 Jun 25-Jul 1 Apple Connect screenshots: Jun 26/27/28 Purchase HD 15 ($14.99 each) and Jun 30 Purchase HD 3 ($2.99), $47.96 gross total. YouTube is separate (estimated YouTube ad revenue only) and not in this total.",
-      "Caveats: visible platform sales are a floor, not total ElectricNOW sales (Google Play handled separately; ad-server revenue not attributed, so no true ROAS). Apple figures are a preserved manual App Store Connect snapshot (gross shown; estimated net assumes Apple keeps 30%). Roku App Engagement (Jun 21-27) was parsed this run; Roku TRC / Viewership (live) reports remain excluded from app/platform usage. Google Ads was rate-limited (429) and is shown last-good, not zeroed. The landing offset used for platform audience is last-good/estimated (top_pages export was a truncated preview). GA4 in-app-purchase signals are usage signals, not booked revenue, and are excluded from visible platform sales.",
-      "YouTube (separate channel, estimated ad revenue only): the ElectricNOW YouTube channel had a complete week for Jun 22-Jun 28, 2026 - 157,201 views, ~69,686 hours watched, average view duration 26m 36s, ~$2,751.03 estimated ad revenue ($3,025.76 estimated total revenue) on 747,898 ad impressions (126,155 monetized playbacks), and 210 new subscribers. That is down vs the prior full week (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%). Per-day rows run through Jun 27 only this run. This is estimated YouTube ad revenue on a separate channel - NOT a platform sales source and NOT included in Visible Platform Sales; YouTube ad impressions are a distinct metric, not GA4 ad events.",
-      "Bottom line: the GA4 complete-week window advances to Jun 22-28, 2026 with traffic and use up modestly (active users +0.8%, sessions +4.7%, views +13.8%, engagement time +1.8%) and new users down -7.8%; reported engagement rate looks low (68.75%) only because of a Jun 28 classification anomaly, not a real retention drop. Visible sales GREW to 64/$1,159.36 (Stripe +$14.99, Roku +$14.99, Apple +$47.96). Meta's newest numeric report (Jun 21-27) shows spend $1,749.69 and 1,157 iOS installs at $1.51 (CPC up, clicks down); the top-card download anomaly has resolved. Open items: restore the Google Ads pull (rate-limited this run), add an install->activation event so paid installs can be tied to actual viewing, and obtain a fresh Apple downloads screenshot; true ROAS remains unprovable until ad-attributed revenue is available."
+      "Traffic: measured platform visits (GA4 sessions, landing-excluded) were 9,427 in the current complete week (Jun 29-Jul 5, 2026), down about 14.2% vs the previous 7 days (10,990 for Jun 22-28); platform active users were 3,564, down about 31.5%. Property-wide GA4 sessions were 10,320 (-13.2%) and active users 4,158 (-28.3%). Acquisition pulled back sharply this week.",
+      "Engagement: GA4 engagement rate held steady and healthy at 77.97% (vs 78.01%) with no Jun 28-style classification anomaly. Even though user and session counts fell, total engagement time ROSE +18.8% to about 5,894 hours (userEngagementDuration 21,216,690s) - the smaller audience watched more per person. Time per active user rose to ~85 min and time per session to ~34 min.",
+      "Sales: visible platform sales grew to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99 / $43.99 dev share). Apple is preserved at 22 / $362.78 gross (est net $253.90) and Stripe at 24 / $484.76 (connector disconnected this run, last-good preserved, not zeroed). Visible sales are Stripe + Roku + manual Apple only, not total ElectricNOW sales.",
+      "Paid acquisition (Meta, Jun 28-Jul 4, 2026): spend cut to $618.34 (-64.3%) drove 354 iOS installs (-68.7%) at $1.75 each on 41,285 impressions and 2,868 link clicks (CPC $0.21, -51.7%). Cost per iOS install rose +14.1%. Older bands are most efficient/highest-volume (55-64 $1.44, 65+ $1.69); 18-24 produced 0 installs. These are free installs, not paid sales, and cannot be tied to viewing or purchases - we do NOT claim true ROAS.",
+      "Google Ads is STALE this run (current complete week returned no rows / manager retry permission-denied); last-good values are preserved, not zeroed, so no fresh Meta-vs-Google cost-per-install comparison is possible.",
+      "YouTube (a separate channel, NOT platform sales): 175,840 views (+11.9%) and ~$2,582 estimated ad revenue (-6.1%) for Jun 29-Jul 5; daily rows for Jul 2-4 show 0 views while revenue accrues (a multi-day reporting lag), so weekly totals are authoritative and back-half daily shape is preliminary.",
+      "Roku app engagement (Jul 6 report, Jun 27-Jul 3): 197 new installs, 137 uninstalls (net +60), 289,138 cumulative installs, 286 avg daily viewers, 89.73 avg min/viewer, 2,993 total hours streamed - tracked separately from GA4 and from Roku live TRC reports.",
+      "Ad-impression grain: distinguish paid-campaign impressions (41,285 Meta ad impressions) from in-app ad impressions (GA4 ads_impression, 34,940 this week) and from YouTube ad impressions (782,494) - three different things."
     ]
   },
   "youtubeSummary": {
     "source": "YouTube Analytics connector, ElectricNOW channel",
     "connectorStatus": "CONNECTED",
-    "period": "Jun 22-27, 2026",
-    "periodNote": "Monday-Sunday week of Jun 22-28; the YouTube Analytics connector's daily rows and the weekly totals both cover Jun 22-27 (6 days). Jun 28 is not yet finalized by the connector (typical multi-day reporting lag), so this is the latest available data. The vs-prior-full-week deltas compare these 6 days against the prior full week (Jun 15-21) and are therefore preliminary.",
-    "comparisonPeriod": "Jun 15-Jun 21, 2026",
-    "comparisonNote": "Compared to the prior full week (Jun 15-Jun 21, 2026).",
+    "period": "Jun 29-Jul 5, 2026",
+    "periodNote": "Monday-Sunday week of Jun 29-Jul 5, 2026. Weekly totals cover the full 7 days, but the connector's DAILY rows for Jul 2-4 report 0 views/minutes while revenue continues to accrue (a multi-day YouTube reporting lag), so daily view/watch-time shape for the back half of the week is preliminary and will settle upward.",
+    "comparisonPeriod": "Jun 22-Jun 28, 2026",
+    "comparisonNote": "Compared to the prior full week (Jun 22-Jun 28, 2026).",
     "isPlatformSales": false,
     "revenueType": "estimated YouTube ad revenue",
     "kpis": [
       {
         "key": "views",
         "label": "Views",
-        "value": 157201,
-        "deltaPct": -10.12,
+        "value": 175840,
+        "deltaPct": 11.856795,
         "detail": "YouTube channel views in the complete week"
       },
       {
         "key": "hoursWatched",
         "label": "Est. hours watched",
-        "value": 69686.28,
-        "deltaPct": -11.39,
+        "value": 76849.82,
+        "deltaPct": 10.279699,
         "detail": "Estimated hours watched on YouTube"
       },
       {
         "key": "avgViewDuration",
         "label": "Avg view duration",
-        "value": "26m 36s",
+        "value": "26m 14s",
         "detail": "Average watch time per YouTube view"
       },
       {
         "key": "estimatedAdRevenue",
         "label": "Est. YouTube ad revenue",
-        "value": 2751.033,
-        "deltaPct": -15.3,
+        "value": 2581.949,
+        "deltaPct": -6.1462,
         "detail": "Estimated YouTube ad revenue (NOT sales, NOT in-app purchases)"
       },
       {
         "key": "estimatedRevenue",
         "label": "Est. total YouTube revenue",
-        "value": 3025.761,
-        "detail": "Estimated total YouTube revenue (ads + other), separate channel - NOT platform sales",
-        "deltaPct": -15.24
+        "value": 2885.068,
+        "deltaPct": -4.649839,
+        "detail": "Estimated total YouTube revenue (ads + other), separate channel - NOT platform sales"
       },
       {
         "key": "adImpressions",
         "label": "YouTube ad impressions",
-        "value": 747898,
-        "deltaPct": -17.95,
+        "value": 782494,
+        "deltaPct": 4.625764,
         "detail": "YouTube ad impressions (NOT ElectricNOW in-app ads, NOT paid-acquisition impressions)"
       },
       {
         "key": "monetizedPlaybacks",
         "label": "Monetized playbacks",
-        "value": 126155,
-        "deltaPct": -12.69,
+        "value": 134911,
+        "deltaPct": 6.940668,
         "detail": "YouTube playbacks that served a monetized ad"
       }
     ],
     "totals": {
+      "views": 175840,
+      "estimatedMinutesWatched": 4610989,
+      "estimatedHoursWatched": 76849.82,
+      "averageViewDuration": "26m 14s",
+      "estimatedRevenue": 2885.068,
+      "estimatedAdRevenue": 2581.949,
+      "adImpressions": 782494,
+      "monetizedPlaybacks": 134911,
+      "subscribersGained": 238,
+      "subscribersLost": 87,
+      "likes": 1617,
+      "comments": 44,
+      "shares": 174
+    },
+    "previousTotals": {
       "views": 157201,
       "estimatedMinutesWatched": 4181177,
       "estimatedHoursWatched": 69686.28,
@@ -8753,192 +8380,216 @@
       "comments": 44,
       "shares": 174
     },
-    "previousTotals": {
-      "views": 174898,
-      "estimatedMinutesWatched": 4718726,
-      "estimatedHoursWatched": 78645.43,
-      "averageViewDuration": "26m 59s",
-      "estimatedRevenue": 3569.663,
-      "estimatedAdRevenue": 3247.966,
-      "adImpressions": 911554,
-      "monetizedPlaybacks": 144494,
-      "subscribersGained": 218,
-      "likes": 1687,
-      "comments": 72,
-      "shares": 174
-    },
     "dailyTrend": [
       {
-        "date": "2026-06-22",
-        "views": 27226,
-        "estimatedMinutesWatched": 684627,
-        "estimatedHoursWatched": 11410.45,
-        "estimatedRevenue": 473.435,
-        "estimatedAdRevenue": 429.843,
-        "adImpressions": 120180,
-        "monetizedPlaybacks": 21885
+        "date": "2026-06-29",
+        "views": 26333,
+        "estimatedMinutesWatched": 700199,
+        "estimatedHoursWatched": 11669.98,
+        "estimatedRevenue": 518.436,
+        "estimatedAdRevenue": 475.119
       },
       {
-        "date": "2026-06-23",
-        "views": 24563,
-        "estimatedMinutesWatched": 661614,
-        "estimatedHoursWatched": 11026.9,
-        "estimatedRevenue": 490.34,
-        "estimatedAdRevenue": 444.406,
-        "adImpressions": 115955,
-        "monetizedPlaybacks": 20025
+        "date": "2026-06-30",
+        "views": 28767,
+        "estimatedMinutesWatched": 761495,
+        "estimatedHoursWatched": 12691.58,
+        "estimatedRevenue": 466.58,
+        "estimatedAdRevenue": 418.859
       },
       {
-        "date": "2026-06-24",
-        "views": 24689,
-        "estimatedMinutesWatched": 648206,
-        "estimatedHoursWatched": 10803.43,
-        "estimatedRevenue": 468.441,
-        "estimatedAdRevenue": 426.315,
-        "adImpressions": 117105,
-        "monetizedPlaybacks": 20583
+        "date": "2026-07-01",
+        "views": 30113,
+        "estimatedMinutesWatched": 782183,
+        "estimatedHoursWatched": 13036.38,
+        "estimatedRevenue": 448.776,
+        "estimatedAdRevenue": 399.023
       },
       {
-        "date": "2026-06-25",
-        "views": 25551,
-        "estimatedMinutesWatched": 669214,
-        "estimatedHoursWatched": 11153.57,
-        "estimatedRevenue": 537.584,
-        "estimatedAdRevenue": 496.657,
-        "adImpressions": 123097,
-        "monetizedPlaybacks": 20875
+        "date": "2026-07-02",
+        "views": 0,
+        "estimatedMinutesWatched": 0,
+        "estimatedHoursWatched": 0.0,
+        "estimatedRevenue": 479.521,
+        "estimatedAdRevenue": 428.497
       },
       {
-        "date": "2026-06-26",
-        "views": 25485,
-        "estimatedMinutesWatched": 692956,
-        "estimatedHoursWatched": 11549.27,
-        "estimatedRevenue": 490.981,
-        "estimatedAdRevenue": 446.706,
-        "adImpressions": 124006,
-        "monetizedPlaybacks": 19911
+        "date": "2026-07-03",
+        "views": 0,
+        "estimatedMinutesWatched": 0,
+        "estimatedHoursWatched": 0.0,
+        "estimatedRevenue": 497.585,
+        "estimatedAdRevenue": 444.51
       },
       {
-        "date": "2026-06-27",
-        "views": 29687,
-        "estimatedMinutesWatched": 824558,
-        "estimatedHoursWatched": 13742.63,
-        "estimatedRevenue": 564.98,
-        "estimatedAdRevenue": 507.106,
-        "adImpressions": 147555,
-        "monetizedPlaybacks": 22876
+        "date": "2026-07-04",
+        "views": 0,
+        "estimatedMinutesWatched": 0,
+        "estimatedHoursWatched": 0.0,
+        "estimatedRevenue": 474.17,
+        "estimatedAdRevenue": 415.941
       }
     ],
     "topVideos": [
       {
         "videoId": "b6kMpenpQGM",
         "title": "Flyboys | FULL MOVIE | James Franco | Jean Reno | Jennifer Decker | David Ellison",
-        "views": 15195,
-        "estimatedHoursWatched": 12925.98,
-        "averageViewDuration": "51m 04s",
-        "averageViewPercentage": 36.79,
-        "estimatedAdRevenue": 476.77,
-        "adImpressions": 147592,
-        "monetizedPlaybacks": 11476
+        "views": 22026,
+        "estimatedHoursWatched": 16898.32,
+        "averageViewDuration": "46m 01s",
+        "estimatedAdRevenue": 508.41
+      },
+      {
+        "videoId": "q5gQB_AGxlo",
+        "title": "q5gQB_AGxlo",
+        "views": 12254,
+        "estimatedHoursWatched": 5223.12,
+        "averageViewDuration": "25m 34s",
+        "estimatedAdRevenue": 67.015
+      },
+      {
+        "videoId": "Ilpx6mH1nMk",
+        "title": "Ilpx6mH1nMk",
+        "views": 11115,
+        "estimatedHoursWatched": 4083.57,
+        "averageViewDuration": "22m 02s",
+        "estimatedAdRevenue": 114.57
       },
       {
         "videoId": "tKAdjrXYj8g",
         "title": "Blackway | FULL MOVIE | Anthony Hopkins | Ray Liotta | Julia Stiles | Alexander Ludwig",
-        "views": 4042,
-        "estimatedHoursWatched": 1373.38,
-        "averageViewDuration": "20m 23s",
-        "averageViewPercentage": 22.58,
-        "estimatedAdRevenue": 63.92,
-        "adImpressions": 16286,
-        "monetizedPlaybacks": 2177
+        "views": 4632,
+        "estimatedHoursWatched": 1489.72,
+        "averageViewDuration": "19m 17s",
+        "estimatedAdRevenue": 53.035
       },
       {
         "videoId": "YM6-fBB7yQY",
         "title": "Leverage | The Nigerian Job | Season 1 Episode 1 | Official Episode",
-        "views": 3624,
-        "estimatedHoursWatched": 1709.7,
-        "averageViewDuration": "28m 21s",
-        "averageViewPercentage": 49.34,
-        "estimatedAdRevenue": 62.02,
-        "adImpressions": 20982,
-        "monetizedPlaybacks": 3105
-      },
-      {
-        "videoId": "0T-yveMJPko",
-        "title": "The Librarian: Quest for the Spear | FULL MOVIE | Noah Wyle, Kyle MacLachlan, Bob Newhart",
-        "views": 2706,
-        "estimatedHoursWatched": 1593.73,
-        "averageViewDuration": "35m 20s",
-        "averageViewPercentage": 33.36,
-        "estimatedAdRevenue": 98.62,
-        "adImpressions": 21222,
-        "monetizedPlaybacks": 2306
-      },
-      {
-        "videoId": "hDt1a2yjYBE",
-        "title": "The Boost Job | Electric Entertainment 25th Anniversary Celebration! | Leverage S03E08",
-        "views": 2118,
-        "estimatedHoursWatched": 546.68,
-        "averageViewDuration": "15m 27s",
-        "averageViewPercentage": 36.12,
-        "estimatedAdRevenue": 32.22,
-        "adImpressions": 7648,
-        "monetizedPlaybacks": 1918
-      },
-      {
-        "videoId": "LMX2-vsoGSo",
-        "title": "Leverage | The Homecoming Job | Season 1 Episode 2 | Official Episode",
-        "views": 1969,
-        "estimatedHoursWatched": 972.12,
-        "averageViewDuration": "29m 36s",
-        "averageViewPercentage": 69.06,
-        "estimatedAdRevenue": 32.81,
-        "adImpressions": 10010,
-        "monetizedPlaybacks": 1495
-      },
-      {
-        "videoId": "89J-9vWWPuk",
-        "title": "The Triangle: Night 1 | Full Movie | Eric Stoltz, Catherine Bell, Lou Diamond Phillips, Sam Neill",
-        "views": 1803,
-        "estimatedHoursWatched": 603.55,
-        "averageViewDuration": "20m 04s",
-        "averageViewPercentage": 22.64,
-        "estimatedAdRevenue": 24.69,
-        "adImpressions": 6237,
-        "monetizedPlaybacks": 1080
-      },
-      {
-        "videoId": "sjsGMHmm9Yk",
-        "title": "The Librarian: Curse of the Judas Chalice | FULL MOVIE | Noah Wyle, Bruce Davison, Bob Newhart",
-        "views": 1628,
-        "estimatedHoursWatched": 735.48,
-        "averageViewDuration": "27m 05s",
-        "averageViewPercentage": 30.07,
-        "estimatedAdRevenue": 34.69,
-        "adImpressions": 9102,
-        "monetizedPlaybacks": 1195
+        "views": 3942,
+        "estimatedHoursWatched": 2315.9,
+        "averageViewDuration": "35m 15s",
+        "estimatedAdRevenue": 67.691
       },
       {
         "videoId": "-mqcn5M0ktA",
         "title": "LBJ | FULL MOVIE | Woody Harrelson | Jennifer Jason Leigh | Richard Jenkins | Bill Pullman",
-        "views": 1530,
-        "estimatedHoursWatched": 616.78,
-        "averageViewDuration": "24m 08s",
-        "averageViewPercentage": 24.84,
-        "estimatedAdRevenue": 22.43,
-        "adImpressions": 5752,
-        "monetizedPlaybacks": 1216
+        "views": 3312,
+        "estimatedHoursWatched": 1364.08,
+        "averageViewDuration": "24m 42s",
+        "estimatedAdRevenue": 40.949
+      },
+      {
+        "videoId": "aHfMGLnoaaE",
+        "title": "aHfMGLnoaaE",
+        "views": 2498,
+        "estimatedHoursWatched": 673.92,
+        "averageViewDuration": "16m 11s",
+        "estimatedAdRevenue": 34.236
+      },
+      {
+        "videoId": "89J-9vWWPuk",
+        "title": "The Triangle: Night 1 | Full Movie | Eric Stoltz, Catherine Bell, Lou Diamond Phillips, Sam Neill",
+        "views": 2410,
+        "estimatedHoursWatched": 754.7,
+        "averageViewDuration": "18m 47s",
+        "estimatedAdRevenue": 24.69
+      },
+      {
+        "videoId": "LMX2-vsoGSo",
+        "title": "Leverage | The Homecoming Job | Season 1 Episode 2 | Official Episode",
+        "views": 2326,
+        "estimatedHoursWatched": 1252.12,
+        "averageViewDuration": "32m 17s",
+        "estimatedAdRevenue": 29.098
+      },
+      {
+        "videoId": "0T-yveMJPko",
+        "title": "The Librarian: Quest for the Spear | FULL MOVIE | Noah Wyle, Kyle MacLachlan, Bob Newhart",
+        "views": 2117,
+        "estimatedHoursWatched": 1219.53,
+        "averageViewDuration": "34m 33s",
+        "estimatedAdRevenue": 59.153
       },
       {
         "videoId": "JeeMINxXYwQ",
         "title": "Leverage | The Jailhouse Job | Season 3 Episode 1 | Official Episode",
-        "views": 1456,
-        "estimatedHoursWatched": 560.27,
-        "averageViewDuration": "23m 05s",
-        "averageViewPercentage": 53.84,
-        "estimatedAdRevenue": 26.51,
-        "adImpressions": 6521,
-        "monetizedPlaybacks": 1182
+        "views": 1837,
+        "estimatedHoursWatched": 627.8,
+        "averageViewDuration": "20m 30s",
+        "estimatedAdRevenue": 24.451
+      },
+      {
+        "videoId": "He3ScSePRYM",
+        "title": "He3ScSePRYM",
+        "views": 1548,
+        "estimatedHoursWatched": 642.75,
+        "averageViewDuration": "24m 54s",
+        "estimatedAdRevenue": 20.357
+      },
+      {
+        "videoId": "6etBO8Z9IBA",
+        "title": "6etBO8Z9IBA",
+        "views": 1515,
+        "estimatedHoursWatched": 543.8,
+        "averageViewDuration": "21m 32s",
+        "estimatedAdRevenue": 26.605
+      },
+      {
+        "videoId": "sjsGMHmm9Yk",
+        "title": "The Librarian: Curse of the Judas Chalice | FULL MOVIE | Noah Wyle, Bruce Davison, Bob Newhart",
+        "views": 1425,
+        "estimatedHoursWatched": 679.98,
+        "averageViewDuration": "28m 37s",
+        "estimatedAdRevenue": 22.89
+      },
+      {
+        "videoId": "n_edsw_uKQE",
+        "title": "n_edsw_uKQE",
+        "views": 1363,
+        "estimatedHoursWatched": 572.17,
+        "averageViewDuration": "25m 11s",
+        "estimatedAdRevenue": 17.474
+      },
+      {
+        "videoId": "V2sH3XGiUns",
+        "title": "V2sH3XGiUns",
+        "views": 1359,
+        "estimatedHoursWatched": 643.22,
+        "averageViewDuration": "28m 23s",
+        "estimatedAdRevenue": 17.968
+      },
+      {
+        "videoId": "RRb6SMYb72Y",
+        "title": "RRb6SMYb72Y",
+        "views": 1331,
+        "estimatedHoursWatched": 336.22,
+        "averageViewDuration": "15m 09s",
+        "estimatedAdRevenue": 18.348
+      },
+      {
+        "videoId": "Hu7thpEf-js",
+        "title": "Hu7thpEf-js",
+        "views": 1294,
+        "estimatedHoursWatched": 441.28,
+        "averageViewDuration": "20m 27s",
+        "estimatedAdRevenue": 28.287
+      },
+      {
+        "videoId": "V21Q6QjV0Hc",
+        "title": "V21Q6QjV0Hc",
+        "views": 1239,
+        "estimatedHoursWatched": 497.1,
+        "averageViewDuration": "24m 04s",
+        "estimatedAdRevenue": 18.003
+      },
+      {
+        "videoId": "7Ubadx5paaI",
+        "title": "7Ubadx5paaI",
+        "views": 1173,
+        "estimatedHoursWatched": 529.05,
+        "averageViewDuration": "27m 03s",
+        "estimatedAdRevenue": 12.59
       }
     ],
     "trafficSources": [
@@ -9059,7 +8710,8 @@
     ],
     "distinctionNote": "This is YouTube-only performance. YouTube ad impressions and estimated YouTube ad revenue are distinct from ElectricNOW in-app ad impressions and from Google/Meta paid-acquisition impressions. YouTube has no purchases and is NOT included in Visible Platform Sales.",
     "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For Jun 22-27, 2026 (the latest available data; Jun 28 is not yet finalized by the connector) the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. Versus the prior full week that is down (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%), though those deltas compare 6 days to a 7-day prior week and are preliminary. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales.",
-    "dataFreshnessNote": "Latest available: Jun 22-27, 2026 (6 days). Jun 28 pending YouTube Analytics finalization; not fabricated."
+    "dataFreshnessNote": "YouTube Analytics pull for Jun 29-Jul 5, 2026. Daily view/watch-time rows for Jul 2-4 lag (0 views while revenue accrues); weekly totals are complete.",
+    "dataLagNote": "YouTube daily rows for Jul 2-4, 2026 show 0 views/watch-time while estimated revenue keeps accruing - a known multi-day reporting lag. Weekly totals are authoritative; back-half daily view/watch-time will settle upward on later pulls."
   },
-  "appTrendNote": "This trend charts total app sessions in green (a reliable daily activity signal) alongside daily active users in blue - both rose into Sun Jun 28, 2026. Heads-up: GA4's separate “engaged sessions” metric shows an isolated one-day dip on Jun 28 (a GA4 engaged-session classification anomaly, not a real engagement collapse); time spent in the app actually rose +1.8% that week. Engaged-session rate is tracked in the scorecards above."
+  "appTrendNote": "This trend charts total app sessions in green (a reliable daily activity signal) alongside daily active users in blue for the week ending Sun Jul 5, 2026. Traffic pulled back this week - active users and sessions fell versus Jun 22-28 - but total time spent in the app ROSE (+18.8% userEngagementDuration), so the smaller audience watched more per person. Engaged-session rate held steady (77.97% vs 78.01%), with no Jun 28-style classification anomaly this week."
 }
