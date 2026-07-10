@@ -31,7 +31,7 @@
 
   // Embedded data snapshot (overridden at runtime by hosted JSON fetch when available).
   window.ELECTRICNOW_DASHBOARD_DATA = {
-    "generatedAt": "2026-07-06 19:45 PDT",
+    "generatedAt": "2026-07-10 15:20 PDT",
     "property": "GA4 property 497892271",
     "sourceLabel": "Internal GA4 pull, property 497892271",
     "periods": {
@@ -60,10 +60,13 @@
         "end": "2026-07-05"
       },
       "weekToDate": {
-        "label": "Latest 7 complete days",
-        "range": "Jun 29-Jul 5, 2026",
-        "start": "2026-06-29",
-        "end": "2026-07-05"
+        "label": "Current week to date (partial)",
+        "range": "Jul 6-Jul 9, 2026",
+        "start": "2026-07-06",
+        "end": "2026-07-09",
+        "partial": true,
+        "completeDays": 4,
+        "note": "Partial current week (Mon Jul 6 - Thu Jul 9, 2026); NOT a full Mon-Sun week. Jul 9 GA4 rows are still settling (its engagement rate reads low pending late-event attribution)."
       }
     },
     "periodTotals": {
@@ -112,15 +115,16 @@
         "purchaseRevenue": 37.57
       },
       "weekToDate": {
-        "activeUsers": 4158,
-        "newUsers": 1519,
-        "sessions": 10320,
-        "engagedSessions": 8047,
-        "engagementRate": 77.97480620155038,
-        "screenPageViews": 29764,
-        "eventCount": 976703,
-        "userEngagementDuration": 21216690,
-        "purchaseRevenue": 37.57
+        "activeUsers": 2482,
+        "newUsers": 722,
+        "sessions": 6308,
+        "engagedSessions": 3706,
+        "engagementRate": 58.75079264426125,
+        "screenPageViews": 19042,
+        "eventCount": 595894,
+        "partial": true,
+        "days": 4,
+        "note": "Jul 6-9, 2026 partial (4 days), GA4 property 497892271. Engagement rate is depressed by Jul 9's still-settling rows (Jul 6-8 held 76.4%/78.3%/79.7%); it will rise as Jul 9 attribution completes. Complete-week comparisons remain on Jun 29-Jul 5 vs Jun 22-28."
       }
     },
     "scorecards": [
@@ -1855,14 +1859,14 @@
       "engagementRateWeekToDate": 93.5336048879837
     },
     "plainEnglishInsights": [
-      "This week traffic and acquisition fell sharply, but the audience that remained spent more time and total engagement time rose. Property-wide GA4 active users dropped -28.3% (4,158), new users -50.7% (1,519), sessions -13.2% (10,320) and screen/page views -7.6% (29,764) versus the prior week, while total engagement time climbed +18.8% (about 5,894 hours; userEngagementDuration 21,216,690s). Engagement rate was essentially flat and healthy at 77.97% (vs 78.01%) with no Jun 28-style anomaly, so this is fewer people watching more each, not a retention collapse. Measured platform audience (landing-excluded) was 3,564 active users on 9,427 sessions, down about 31% and 14% vs Jun 22-28. Visible platform sales GREW to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99); Apple stays at 22/$362.78 gross (est net $253.90) and Stripe is preserved at 24/$484.76 (connector disconnected this run, not zeroed). On paid acquisition, the newest Meta report (Jun 28-Jul 4, 2026) shows spend cut to $618.34 (-64.3%) buying 354 iOS installs (-68.7%) at $1.75 each; CPC improved to $0.21 (-51.7%) but cost per install rose +14.1%, with 55-64 and 65+ the best bands. Google Ads is STALE this run (current week empty / retry permission-denied) so last-good values are preserved, not zeroed. YouTube (a separate channel) views rose +11.9% (175,840) while estimated ad revenue eased -6.1% (~$2,582); its Jul 2-4 daily rows lag. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales (Google Play may be missing) - and YouTube revenue is a separate channel. VERDICT on paid: acceptable but unproven for viewing - spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS. Distinguish paid-campaign impressions (41,285 Meta) from in-app ad impressions (GA4 ads_impression, 34,940). The GA4 complete-week window advances to Jun 29-Jul 5, 2026 (previous complete week Jun 22-28 is the comparison baseline).",
+      "Partial current week (Jul 6-9, 2026, first 4 days): early traffic is running at a healthy daily pace while attention and Roku usage are climbing; visible sales are flat. Over Jul 6-9 GA4 (property 497892271) shows 2,482 active users, 722 new users, 6,308 sessions and 19,042 screen/page views across 4 days - a per-day pace slightly above the last complete week. Engagement rate reads 58.75% for the partial, but that is dragged down by Jul 9's still-settling rows (Jul 6-8 held 76-80%); it will rise as Jul 9 attribution completes. The latest complete-week comparison stays Jun 29-Jul 5 (4,158 active users, 77.97% engagement) vs Jun 22-28. Attention/use is UP: the newest Roku App Engagement report (Jul 2-Jul 8) shows 239 new installs (was 197), 340 avg daily viewers (was 286) and 3,777 total hours streamed (was 2,993). Sales are flat - no net-new visible purchases this run (Stripe had no new charges since Jun 27, Roku no new sales beyond the Jun 30 bundle, Apple unchanged), so visible platform sales hold at 67 purchases / $1,244.33 gross ($1,056.05 developer rev share). Paid acquisition: Meta was scaled to almost nothing (Jul 2-8: $40.80 spend, 23 iOS installs at $1.77; -97% spend), an efficiency signal only - not proof of viewing or ROAS; Google Ads returned zero rows for Jul 6-9 (no active spend), preserved as last-good. YouTube (a separate channel, NOT platform sales): the Jul 6-9 partial shows 59,961 views and ~$764 estimated ad revenue over 4 days, with the complete-week Jun 29-Jul 5 total (175,840 views) held above; YouTube daily rows lag and will settle upward.",
       "Traffic: measured platform visits (GA4 sessions, landing-excluded) were 9,427 in the current complete week (Jun 29-Jul 5, 2026), down about 14.2% vs the previous 7 days (10,990 for Jun 22-28); platform active users were 3,564, down about 31.5%. Property-wide GA4 sessions were 10,320 (-13.2%) and active users 4,158 (-28.3%). Acquisition pulled back sharply this week.",
       "Engagement: GA4 engagement rate held steady and healthy at 77.97% (vs 78.01%) with no Jun 28-style classification anomaly. Even though user and session counts fell, total engagement time ROSE +18.8% to about 5,894 hours (userEngagementDuration 21,216,690s) - the smaller audience watched more per person. Time per active user rose to ~85 min and time per session to ~34 min.",
       "Sales: visible platform sales grew to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99 / $43.99 dev share). Apple is preserved at 22 / $362.78 gross (est net $253.90) and Stripe at 24 / $484.76 (connector disconnected this run, last-good preserved, not zeroed). Visible sales are Stripe + Roku + manual Apple only, not total ElectricNOW sales.",
-      "Paid acquisition (Meta, Jun 28-Jul 4, 2026): spend cut to $618.34 (-64.3%) drove 354 iOS installs (-68.7%) at $1.75 each on 41,285 impressions and 2,868 link clicks (CPC $0.21, -51.7%). Cost per iOS install rose +14.1%. Older bands are most efficient/highest-volume (55-64 $1.44, 65+ $1.69); 18-24 produced 0 installs. These are free installs, not paid sales, and cannot be tied to viewing or purchases - we do NOT claim true ROAS.",
-      "Google Ads is STALE this run (current complete week returned no rows / manager retry permission-denied); last-good values are preserved, not zeroed, so no fresh Meta-vs-Google cost-per-install comparison is possible.",
-      "YouTube (a separate channel, NOT platform sales): 175,840 views (+11.9%) and ~$2,582 estimated ad revenue (-6.1%) for Jun 29-Jul 5; daily rows for Jul 2-4 show 0 views while revenue accrues (a multi-day reporting lag), so weekly totals are authoritative and back-half daily shape is preliminary.",
-      "Roku app engagement (Jul 6 report, Jun 27-Jul 3): 197 new installs, 137 uninstalls (net +60), 289,138 cumulative installs, 286 avg daily viewers, 89.73 avg min/viewer, 2,993 total hours streamed - tracked separately from GA4 and from Roku live TRC reports.",
+      "Paid acquisition (Meta, Jul 2-Jul 8, 2026): spend collapsed to $40.80 (-97.3%) buying just 23 iOS installs (-97.5%) at $1.77 each on 2,539 impressions and 251 link clicks (CPC $0.15, -55.8%). The campaign was almost fully paused; 55-64 ($1.39) and 65+ ($1.65) were the most efficient bands, 18-24 produced 0 installs.",
+      "Google Ads connector responded for Jul 6-9, 2026 with zero campaign rows (no active paid spend in the window) - recorded as connected/no-current-rows, not a failure; last-good values are preserved, not zeroed.",
+      "YouTube (a separate channel, NOT platform sales): the Jul 6-9, 2026 partial shows 59,961 views and ~$764 estimated ad revenue over 4 days; the complete week Jun 29-Jul 5 remains 175,840 views (+11.9%) and ~$2,582 est ad revenue. YouTube daily rows lag a few days, so partial totals will settle upward.",
+      "Roku app engagement (Jul 10 report, covers Jul 2-Jul 8): 239 new installs, 133 uninstalls (net +106), 289,318 cumulative installs, 340 avg daily viewers, 95.30 avg min/viewer, 3,777 total hours streamed - up across the board vs the prior report (Jun 27-Jul 3) and tracked separately from GA4.",
       "Ad-impression grain: distinguish paid-campaign impressions (41,285 Meta ad impressions) from in-app ad impressions (GA4 ads_impression, 34,940 this week) and from YouTube ad impressions (782,494) - three different things.",
       "Landing-page traffic is acquisition-only and is NOT included in platform audience totals; this keeps measured platform audience clean of marketing-page hits.",
       "Tracking caveat: GA4 does not cleanly identify every smart-TV surface, and Stripe, Roku, Apple, Google Play and ad-server revenue are separate systems, so visible platform sales are a floor, not total ElectricNOW sales, and no true ROAS is claimed (ad-server revenue attribution unavailable)."
@@ -1876,10 +1880,10 @@
     ],
     "salesSummary": {
       "sourceLabel": "Visible platform sales",
-      "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe totals 24/$484.76 (connector DISCONNECTED this run; last-good preserved, not zeroed), Roku 21/$396.79, Apple 22/$362.78. Google Play and other sources may still be missing, so this is a floor, not total sales.",
+      "sourceDetail": "This combines Stripe-visible payments, Roku-visible sales from Roku email reports, and manual Apple App Store screenshot snapshots. Stripe totals 24/$484.76 (connector responded Jul 10, 2026 with no new in-window charges; preserved), Roku 21/$396.79, Apple 22/$362.78. Google Play and other sources may still be missing, so this is a floor, not total sales.",
       "stripe": {
         "sourceLabel": "Stripe-visible payments",
-        "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected and re-pulled 2026-06-18: the connector returned 2 new succeeded charges (Jun 12 and Jun 15, $14.99 each) that had been missed while Stripe was preserved through May 28. Stripe now totals 23 succeeded 2026 charges / $469.77.",
+        "sourceDetail": "This shows Stripe-visible sales from the connected electricnow.tv account (acct_1HZdStLG0Cw1zW4e). Reconnected 2026-06-18. Re-queried 2026-07-10: the connector responded, but there are no new succeeded charges since the last recorded one (latest succeeded charge is Jun 27, 2026), so the Stripe total is unchanged at 24 succeeded 2026 charges / $484.76.",
         "baselineWindow": {
           "label": "Stripe launch baseline",
           "range": "Apr 13-Apr 19, 2026",
@@ -7747,20 +7751,36 @@
     "rokuAppEngagement": {
       "sourceLabel": "Roku App Engagement email report",
       "sourceDetail": "Roku app engagement is parsed from the latest Roku App Engagement PDF emailed from bdp_noreply@data.roku.com. It measures Roku app/channel-store usage and is shown separately from GA4 app/web metrics.",
-      "reportPeriod": "Jun 27-Jul 3, 2026",
-      "rawReportPeriod": "Jun 27-Jul 3, 2026 (generated Jul 6)",
+      "reportPeriod": "Jul 2-Jul 8, 2026",
+      "rawReportPeriod": "Jul 2-Jul 8, 2026 (generated Jul 10)",
       "channelStoreCode": "us",
-      "reportGenerated": "July 6, 2026 at 7:03 AM PDT",
+      "reportGenerated": "July 10, 2026 at 6:50 AM PDT",
       "dateLabels": [
-        "Sat Jun 27",
-        "Sun Jun 28",
-        "Mon Jun 29",
-        "Tue Jun 30",
-        "Wed Jul 1",
         "Thu Jul 2",
-        "Fri Jul 3"
+        "Fri Jul 3",
+        "Sat Jul 4",
+        "Sun Jul 5",
+        "Mon Jul 6",
+        "Tue Jul 7",
+        "Wed Jul 8"
       ],
       "metrics": {
+        "newInstalls": 239,
+        "uninstalls": 133,
+        "netInstalls": 106,
+        "cumulativeInstalls": 289318,
+        "avgDailyViewers": 340,
+        "avgMinPerViewer": 95.3,
+        "totalHoursStreamed": 3777
+      },
+      "reportEmailDate": "2026-07-10T13:50:18+00:00",
+      "attachmentFilename": "App_Engagement_2026-07-10T0650.pdf",
+      "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement.",
+      "status": "CURRENT_PARSED",
+      "staleNote": "Jul 10, 2026 Roku App Engagement report (covers Jul 2-Jul 8, 2026) parsed from the ROKU Outlook folder. Engagement rose vs the prior report: installs 239 (was 197), avg daily viewers 340 (was 286), total hours 3,777 (was 2,993). TRC / Viewership Summary (live) reports remain excluded from app/platform usage.",
+      "lastSuccessfulReportPeriod": "Jul 2-Jul 8, 2026",
+      "previousReportPeriod": "Jun 27-Jul 3, 2026",
+      "previousMetrics": {
         "newInstalls": 197,
         "uninstalls": 137,
         "netInstalls": 60,
@@ -7768,13 +7788,7 @@
         "avgDailyViewers": 286,
         "avgMinPerViewer": 89.73,
         "totalHoursStreamed": 2993
-      },
-      "reportEmailDate": "2026-07-06T14:03:00+00:00",
-      "attachmentFilename": "App_Engagement_2026-07-06T0703.pdf",
-      "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement.",
-      "status": "CURRENT_PARSED",
-      "staleNote": "Jul 6, 2026 Roku App Engagement report (covers Jun 27-Jul 3, 2026) parsed from the refresh manifest. TRC / Viewership Summary (live) reports remain excluded from app/platform usage.",
-      "lastSuccessfulReportPeriod": "Jun 27-Jul 3, 2026"
+      }
     },
     "visitSummary": {
       "source": "GA4 sessions on tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths.",
@@ -7946,7 +7960,10 @@
       "dataFreshnessNote": "Google Ads connector returned NO rows for the current complete week (Jun 29-Jul 5, 2026); the manager/client retry was permission-denied. Last-good figures are preserved, not zeroed.",
       "statusDetail": "No current-week rows for Jun 29-Jul 5, 2026 (customer 4342267711 empty; manager retry permission denied).",
       "lastSuccessfulPull": "2026-06-11 14:40 PDT",
-      "staleNote": "Jun 29-Jul 5 pull returned no rows / retry permission-denied. Preserving last-good Google Ads values rather than zeroing. Needs a successful pull next run to restore current spend/conversions and a Meta-vs-Google comparison."
+      "staleNote": "Jun 29-Jul 5 pull returned no rows / retry permission-denied. Preserving last-good Google Ads values rather than zeroing. Needs a successful pull next run to restore current spend/conversions and a Meta-vs-Google comparison.",
+      "latestQueryPeriod": "Jul 6-Jul 9, 2026",
+      "latestQueryStatus": "CONNECTED_NO_ROWS",
+      "latestQueryNote": "Google Ads connector responded for Jul 6-9, 2026 (customer 4342267711) with zero campaign rows - no active paid spend in the window. Recorded as connected/no-current-rows, not a failure or rate-limit. The campaign summary shown is preserved last-good (Jun 1-7, 2026), not zeroed."
     },
     "adSuccessSummary": {
       "googleAds": {
@@ -7962,8 +7979,8 @@
         "conversionRatePct": 30.38,
         "costPerConversion": 0.54,
         "source": "Google Ads connector",
-        "note": "Google Ads is STALE this run: the current complete week (Jun 29-Jul 5, 2026) returned no rows and the manager-account retry was permission-denied. Last-good values are preserved, not zeroed.",
-        "status": "stale"
+        "note": "Google Ads connector responded for Jul 6-9, 2026 with zero campaign rows (no active spend in the window) - recorded as connected/no-current-rows, not a failure. Last-good values (May 12-26, 2026 campaign) are preserved, not zeroed.",
+        "status": "connected_no_current_rows"
       },
       "metaAds": {
         "period": "Jun 14-Jun 20, 2026",
@@ -7976,13 +7993,13 @@
         "iosDownloads": 0,
         "androidDownloads": 1,
         "source": "Nathan / Forge One Meta email report",
-        "note": "Meta spent $618.34 for Jun 28-Jul 4, 2026 (-64.3% vs the prior period) on a single iOS-only campaign driving 354 iOS installs at $1.75 each (CPC $0.21). GA4 current complete week is Jun 29-Jul 5; the Meta window is Jun 28-Jul 4, so treat as an acquisition-efficiency signal only. Paid-campaign impressions (41,285) are distinct from in-app GA4 ad impressions.",
+        "note": "Meta spent only $40.80 for Jul 2-Jul 8, 2026 (-97.3% vs the prior period) on a single iOS-only campaign driving 23 iOS installs at $1.77 each (CPC $0.15). The campaign was almost fully paused this week. Treat as an acquisition-efficiency signal only. Paid-campaign impressions (2,539) are distinct from in-app GA4 ad impressions.",
         "reportedPlatformDownloads": 1,
         "metaAppInstallsFromBreakdown": 1174
       },
-      "period": "Jun 28-Jul 4, 2026 for Meta email report; Google Ads STALE this run (current complete week Jun 29-Jul 5 returned no rows, manager retry permission-denied; last-good preserved)",
+      "period": "Jul 2-Jul 8, 2026 for Meta email report; Google Ads connector responded for Jul 6-9, 2026 with zero campaign rows (no active spend in-window); last-good preserved",
       "verdict": "acceptable but needs proof of viewing",
-      "plainEnglish": "Paid acquisition verdict: efficiency signal only, not a viewing/ROAS proof this run. Meta (Jun 28-Jul 4, 2026) spent $618.34 (-64.3%) driving 354 iOS installs (-68.7%) at $1.75 each; CPC improved to $0.21 (-51.7%) but cost per install rose +14.1%, with 55-64 and 65+ the most efficient/highest-volume bands and 18-24 producing 0 installs. Google Ads is STALE (current week empty, retry permission-denied); last-good values preserved, not zeroed. Distinguish paid-campaign impressions (41,285 Meta) from in-app GA4 ad impressions (34,940). Spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS.",
+      "plainEnglish": "Paid acquisition verdict: efficiency signal only, not a viewing/ROAS proof this run. Meta (Jul 2-Jul 8, 2026) was scaled to almost nothing - $40.80 spend (-97.3%) driving 23 iOS installs (-97.5%) at $1.77 each; CPC improved to $0.15 (-55.8%) but cost per install rose +9.6%, with 55-64 ($1.39) and 65+ ($1.65) the most efficient bands and 18-24 producing 0 installs. Google Ads returned zero rows for Jul 6-9 (no active spend); connected/no-current-rows, last-good preserved, not zeroed. Distinguish paid-campaign impressions (2,539 Meta) from in-app GA4 ad impressions. Spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS.",
       "recommendations": [
         "Separate iOS and Android budgets so cheaper Android volume does not hide more expensive iOS acquisition.",
         "Shift budget toward lower-cost audiences only when GA4 shows those cohorts also become viewing users.",
@@ -7996,108 +8013,108 @@
       "reportType": "Meta Ads Performance Report (Meta-only, used to avoid double-counting Google Ads which is pulled via connector)",
       "emailFrom": "nathan@pcsocialmedia.com",
       "emailTo": "DeanD@electricentertainment.com",
-      "emailSubject": "ElectricNow | Meta Ads Performance Report (2026-06-28 to 2026-07-04)",
-      "emailDate": "2026-07-05T13:43:00+00:00",
-      "emailId": "AAMkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOABGAAAAAABShmO_Im-FSr39rhn8M5bDBwC_fCtlQrq5QYDU71YzKgxQAD-2Prc8AADvKLV_nde7SYUl0H8b5z1dAAPDwhikAAA=",
-      "reportLink": "https://app.forgeonemarketing.com/r/68d531a3-f3bc-46a3-af89-86682198fb1b",
+      "emailSubject": "ElectricNow | Meta Ads Performance Report (2026-07-02 to 2026-07-08)",
+      "emailDate": "2026-07-09T13:31:07+00:00",
+      "emailId": "AAMkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOABGAAAAAABShmO_Im-FSr39rhn8M5bDBwC_fCtlQrq5QYDU71YzKgxQAD-2Prc8AADvKLV_nde7SYUl0H8b5z1dAAPLZ0ZHAAA=",
+      "reportLink": "https://app.forgeonemarketing.com/r/28800a13-6c1d-4562-8614-872d80ec8c80",
       "reportCadence": "Twice weekly (Sundays and Thursdays at 6am PST/PDT), each report covers Last 7 days",
-      "period": "Jun 28-Jul 4, 2026",
-      "periodStart": "2026-06-28",
-      "periodEnd": "2026-07-04",
-      "comparison": "vs prior Meta report period (Jun 21-Jun 27, 2026)",
-      "spend": 618.34,
-      "impressions": 41285,
-      "linkClicks": 2868,
-      "costPerClick": 0.21,
-      "iosDownloads": 354,
+      "period": "Jul 2-Jul 8, 2026",
+      "periodStart": "2026-07-02",
+      "periodEnd": "2026-07-08",
+      "comparison": "vs prior Meta report period (Jun 28-Jul 4, 2026)",
+      "spend": 40.8,
+      "impressions": 2539,
+      "linkClicks": 251,
+      "costPerClick": 0.15,
+      "iosDownloads": 23,
       "androidDownloads": 0,
-      "totalDownloads": 354,
-      "costPerIosDownload": 1.75,
+      "totalDownloads": 23,
+      "costPerIosDownload": 1.77,
       "costPerAndroidDownload": null,
-      "costPerDownload": 1.75,
-      "ctrPct": 6.9468,
+      "costPerDownload": 1.77,
+      "ctrPct": 9.8858,
       "deltas": {
-        "spendPct": -64.3,
-        "impressionsPct": -63.4,
-        "linkClicksPct": -26.9,
-        "costPerClickPct": -51.7,
-        "iosDownloadsPct": -68.7,
-        "costPerIosDownloadPct": 14.1,
-        "comparisonNote": "Deltas vs prior Meta report period (Jun 21-Jun 27, 2026)."
+        "spendPct": -97.3,
+        "impressionsPct": -97.3,
+        "linkClicksPct": -94.3,
+        "costPerClickPct": -55.8,
+        "iosDownloadsPct": -97.5,
+        "costPerIosDownloadPct": 9.6,
+        "comparisonNote": "Deltas vs prior Meta report period (Jun 28-Jul 4, 2026)."
       },
       "campaigns": [
         {
           "campaign": "PCSM - ElectricNow App - iOS - June 2026",
-          "spend": 618.34,
-          "appInstalls": 354,
-          "costPerAppInstall": 1.75
+          "spend": 40.8,
+          "appInstalls": 23,
+          "costPerAppInstall": 1.77
         }
       ],
       "genderBreakdown": [
         {
           "gender": "male",
-          "spend": 443.43,
-          "costPerAppInstall": 1.76,
-          "appInstalls": 252
+          "spend": 30.47,
+          "costPerAppInstall": 1.6,
+          "appInstalls": 19
         },
         {
           "gender": "female",
-          "spend": 171.1,
-          "costPerAppInstall": 1.68,
-          "appInstalls": 102
+          "spend": 10.07,
+          "costPerAppInstall": 2.52,
+          "appInstalls": 4
         },
         {
           "gender": "unknown",
-          "spend": 3.81,
+          "spend": 0.26,
           "costPerAppInstall": null,
           "appInstalls": 0
         }
       ],
       "ageBreakdown": [
         {
-          "ageGroup": "55-64",
-          "spend": 203.87,
-          "costPerAppInstall": 1.44,
-          "appInstalls": 142
+          "ageGroup": "65+",
+          "spend": 14.85,
+          "costPerAppInstall": 1.65,
+          "appInstalls": 9
         },
         {
-          "ageGroup": "65+",
-          "spend": 202.25,
-          "costPerAppInstall": 1.69,
-          "appInstalls": 120
+          "ageGroup": "55-64",
+          "spend": 12.48,
+          "costPerAppInstall": 1.39,
+          "appInstalls": 9
         },
         {
           "ageGroup": "45-54",
-          "spend": 119.16,
-          "costPerAppInstall": 1.95,
-          "appInstalls": 61
+          "spend": 6.98,
+          "costPerAppInstall": 3.49,
+          "appInstalls": 2
         },
         {
           "ageGroup": "35-44",
-          "spend": 60.18,
-          "costPerAppInstall": 3.01,
-          "appInstalls": 20
+          "spend": 3.56,
+          "costPerAppInstall": 1.78,
+          "appInstalls": 2
         },
         {
           "ageGroup": "25-34",
-          "spend": 26.5,
-          "costPerAppInstall": 2.41,
-          "appInstalls": 11
+          "spend": 2.42,
+          "costPerAppInstall": 2.42,
+          "appInstalls": 1
         },
         {
           "ageGroup": "18-24",
-          "spend": 6.37,
+          "spend": 0.51,
           "costPerAppInstall": null,
           "appInstalls": 0
         }
       ],
-      "plainEnglish": "Meta's latest numeric report covers Jun 28-Jul 4, 2026: $618.34 spent on a single iOS-only campaign (PCSM - ElectricNow App - iOS - June 2026) drove 354 iOS app installs at $1.75 each on 41,285 impressions and 2,868 link clicks (CPC $0.21). Both spend (-64.3%) and iOS installs (-68.7%) fell sharply versus the prior report period, and impressions dropped -63.4% - the campaign was scaled way down. CPC improved to $0.21 (-51.7%) but blended cost per iOS install rose to $1.75 (+14.1%), so each install got more expensive even as clicks got cheaper. Targeting stays older and efficient: 55-64 ($1.44/install, 142 installs) and 65+ ($1.69, 120) are the largest bands, while 35-44 ($3.01) and 25-34 ($2.41) are weakest. Male volume leads (252 installs at $1.76) over female (102 at $1.68). These are free installs, not paid sales.",
-      "paidAcquisitionInterpretation": "PAID ACQUISITION ASSESSMENT (Meta, Jun 28-Jul 4, 2026). Is the platform growing? No - acquisition fell sharply this week. GA4 property-wide active users dropped -28.3% and new users -50.7%, sessions -13.2% and screen/page views -7.6%, while Meta cut spend to $618.34 (-64.3%) and bought only 354 iOS installs (-68.7%). Are costs acceptable? Mixed: CPC improved to $0.21 (-51.7%) but cost per iOS install worsened to $1.75 (+14.1%). Is targeting narrowing? Still older-skewed - 55-64 ($1.44) and 65+ ($1.69) are the highest-volume bands; 18-24 spent almost nothing and produced 0 installs. Which channel is stronger? Cannot compare to Google Ads this run (Google Ads STALE_RATE_LIMITED, current week empty, not zeroed). Do paid users convert to viewing/time/purchases? UNPROVEN: installs are free and there is no install->activation->sale join; total engagement TIME actually rose (+18.8% userEngagementDuration) even as user counts fell, so the remaining audience watched more, but that cannot be attributed to Meta. VERDICT: paid acquisition is acceptable but unproven for viewing - spend reliably buys iOS installs at a reasonable (if rising) cost, yet there is no evidence those installs become viewers or buyers. NEXT TESTS: (1) add an install->first-play activation event; (2) hold the 55+ bands and keep cutting 18-34; (3) compare Meta vs Google once the Google Ads pull succeeds; (4) track 7-day post-install retention and first purchase. We do NOT claim true ROAS (ad-server revenue is not attributed). Distinguish paid-campaign impressions (41,285 Meta ad impressions) from in-app ad impressions (GA4 ads_impression, 34,940 this week) - different things.",
+      "plainEnglish": "Meta's newest numeric report covers Jul 2-Jul 8, 2026: just $40.80 spent on the single iOS-only campaign (PCSM - ElectricNow App - iOS - June 2026) drove 23 iOS app installs at $1.77 each on 2,539 impressions and 251 link clicks (CPC $0.15). Spend (-97.3%), impressions (-97.3%) and iOS installs (-97.5%) all collapsed versus the prior report period (Jun 28-Jul 4) - the campaign was almost fully paused this week. CPC improved to $0.15 (-55.8%) but cost per iOS install edged up to $1.77 (+9.6%). 55-64 ($1.39) and 65+ ($1.65) remained the most efficient bands; 18-24 produced 0 installs. This is an acquisition-efficiency signal only, not proof of viewing or ROAS.",
+      "paidAcquisitionInterpretation": "PAID ACQUISITION ASSESSMENT (Meta, Jul 2-Jul 8, 2026). Meta was scaled to almost nothing this week: $40.80 spend (-97.3%) bought 23 free iOS installs (-97.5%) at $1.77 each. CPC improved to $0.15 but cost per install rose slightly (+9.6%). With spend near zero, Meta is effectively paused, so it is not currently a growth driver; there is still no proof that paid installs become viewers or buyers, so we do NOT claim true ROAS. Google Ads returned zero rows for the same window (no active spend); last-good campaign values are preserved. Judge growth from GA4 usage and visible sales, not from paid-install counts.",
       "threadId": "AAQkAGZhNDFjNDNhLTYwZDktNDM4OS04OGQyLTc1N2ZlMjI0YjljOAAQAIBt6Dqvj9JKvIVO2AKlKos=",
-      "reportedPlatformDownloads": 354,
-      "blendedCostPerReportedDownload": 1.75,
-      "metaAppInstallsFromBreakdown": 354,
-      "downloadGrainNote": "iOS installs 354 (Android 0) match the breakdown tables (gender 252+102+0 = 354; age 142+120+61+20+11+0 = 354). Paid acquisition buys FREE app installs, not paid downloads; these installs are a distinct grain from visible platform sales and from in-app ad impressions."
+      "reportedPlatformDownloads": 23,
+      "blendedCostPerReportedDownload": 1.77,
+      "metaAppInstallsFromBreakdown": 23,
+      "downloadGrainNote": "iOS installs 23 (Android 0) match the breakdown tables (gender 19+4+0 = 23; age 9+9+2+2+1+0 = 23). Paid acquisition buys FREE app installs, not paid downloads; these installs are a distinct grain from visible platform sales and from in-app ad impressions."
     },
     "ga4PurchaseSignals": {
       "sourceLabel": "GA4 In-App Purchase Signals",
@@ -8311,8 +8328,8 @@
       "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
     },
     "plainEnglishSummary": {
-      "generatedAt": "2026-07-06T19:45:00-07:00",
-      "overview": "This week traffic and acquisition fell sharply, but the audience that remained spent more time and total engagement time rose. Property-wide GA4 active users dropped -28.3% (4,158), new users -50.7% (1,519), sessions -13.2% (10,320) and screen/page views -7.6% (29,764) versus the prior week, while total engagement time climbed +18.8% (about 5,894 hours; userEngagementDuration 21,216,690s). Engagement rate was essentially flat and healthy at 77.97% (vs 78.01%) with no Jun 28-style anomaly, so this is fewer people watching more each, not a retention collapse. Measured platform audience (landing-excluded) was 3,564 active users on 9,427 sessions, down about 31% and 14% vs Jun 22-28. Visible platform sales GREW to 67 purchases / $1,244.33 gross ($1,056.05 developer rev share) after one net-new Roku sale (Jun 30 Purchase Bundle 55, $54.99); Apple stays at 22/$362.78 gross (est net $253.90) and Stripe is preserved at 24/$484.76 (connector disconnected this run, not zeroed). On paid acquisition, the newest Meta report (Jun 28-Jul 4, 2026) shows spend cut to $618.34 (-64.3%) buying 354 iOS installs (-68.7%) at $1.75 each; CPC improved to $0.21 (-51.7%) but cost per install rose +14.1%, with 55-64 and 65+ the best bands. Google Ads is STALE this run (current week empty / retry permission-denied) so last-good values are preserved, not zeroed. YouTube (a separate channel) views rose +11.9% (175,840) while estimated ad revenue eased -6.1% (~$2,582); its Jul 2-4 daily rows lag. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales (Google Play may be missing) - and YouTube revenue is a separate channel. VERDICT on paid: acceptable but unproven for viewing - spend reliably buys free iOS installs but there is no proof they become viewers or buyers; we do NOT claim true ROAS. Distinguish paid-campaign impressions (41,285 Meta) from in-app ad impressions (GA4 ads_impression, 34,940). The GA4 complete-week window advances to Jun 29-Jul 5, 2026 (previous complete week Jun 22-28 is the comparison baseline).",
+      "generatedAt": "2026-07-10T15:20:00-07:00",
+      "overview": "Partial current week (Jul 6-9, 2026, first 4 days): early traffic is running at a healthy daily pace while attention and Roku usage are climbing; visible sales are flat. Over Jul 6-9 GA4 (property 497892271) shows 2,482 active users, 722 new users, 6,308 sessions and 19,042 screen/page views across 4 days - a per-day pace slightly above the last complete week. Engagement rate reads 58.75% for the partial, but that is dragged down by Jul 9's still-settling rows (Jul 6-8 held 76-80%); it will rise as Jul 9 attribution completes. The latest complete-week comparison stays Jun 29-Jul 5 (4,158 active users, 77.97% engagement) vs Jun 22-28. Attention/use is UP: the newest Roku App Engagement report (Jul 2-Jul 8) shows 239 new installs (was 197), 340 avg daily viewers (was 286) and 3,777 total hours streamed (was 2,993). Sales are flat - no net-new visible purchases this run (Stripe had no new charges since Jun 27, Roku no new sales beyond the Jun 30 bundle, Apple unchanged), so visible platform sales hold at 67 purchases / $1,244.33 gross ($1,056.05 developer rev share). Paid acquisition: Meta was scaled to almost nothing (Jul 2-8: $40.80 spend, 23 iOS installs at $1.77; -97% spend), an efficiency signal only - not proof of viewing or ROAS; Google Ads returned zero rows for Jul 6-9 (no active spend), preserved as last-good. YouTube (a separate channel, NOT platform sales): the Jul 6-9 partial shows 59,961 views and ~$764 estimated ad revenue over 4 days, with the complete-week Jun 29-Jul 5 total (175,840 views) held above; YouTube daily rows lag and will settle upward.",
       "bullets": [
         "Traffic: measured platform visits (GA4 sessions, landing-excluded) were 9,427 in the current complete week (Jun 29-Jul 5, 2026), down about 14.2% vs the previous 7 days (10,990 for Jun 22-28); platform active users were 3,564, down about 31.5%. Property-wide GA4 sessions were 10,320 (-13.2%) and active users 4,158 (-28.3%). Acquisition pulled back sharply this week.",
         "Engagement: GA4 engagement rate held steady and healthy at 77.97% (vs 78.01%) with no Jun 28-style classification anomaly. Even though user and session counts fell, total engagement time ROSE +18.8% to about 5,894 hours (userEngagementDuration 21,216,690s) - the smaller audience watched more per person. Time per active user rose to ~85 min and time per session to ~34 min.",
@@ -8743,7 +8760,20 @@
       "distinctionNote": "This is YouTube-only performance. YouTube ad impressions and estimated YouTube ad revenue are distinct from ElectricNOW in-app ad impressions and from Google/Meta paid-acquisition impressions. YouTube has no purchases and is NOT included in Visible Platform Sales.",
       "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For Jun 22-27, 2026 (the latest available data; Jun 28 is not yet finalized by the connector) the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. Versus the prior full week that is down (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%), though those deltas compare 6 days to a 7-day prior week and are preliminary. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales.",
       "dataFreshnessNote": "YouTube Analytics pull for Jun 29-Jul 5, 2026. Daily view/watch-time rows for Jul 2-4 lag (0 views while revenue accrues); weekly totals are complete.",
-      "dataLagNote": "YouTube daily rows for Jul 2-4, 2026 show 0 views/watch-time while estimated revenue keeps accruing - a known multi-day reporting lag. Weekly totals are authoritative; back-half daily view/watch-time will settle upward on later pulls."
+      "dataLagNote": "YouTube daily rows for Jul 2-4, 2026 show 0 views/watch-time while estimated revenue keeps accruing - a known multi-day reporting lag. Weekly totals are authoritative; back-half daily view/watch-time will settle upward on later pulls.",
+      "partialUpdate": {
+        "period": "Jul 6-Jul 9, 2026",
+        "days": 4,
+        "views": 59961,
+        "estimatedMinutesWatched": 1447274,
+        "estimatedHoursWatched": 24121.23,
+        "averageViewDuration": "24m 09s",
+        "estimatedRevenue": 855.873,
+        "estimatedAdRevenue": 764.481,
+        "adImpressions": 227488,
+        "monetizedPlaybacks": 44808,
+        "note": "Partial current week (Jul 6-9, 2026, 4 days) from the YouTube Analytics connector. The complete-week comparison above remains Jun 29-Jul 5 vs Jun 22-28. YouTube daily rows lag a few days, so these partial totals will settle upward. NOT platform sales - YouTube ad revenue is a separate channel."
+      }
     },
     "appTrendNote": "This trend charts total app sessions in green (a reliable daily activity signal) alongside daily active users in blue for the week ending Sun Jul 5, 2026. Traffic pulled back this week - active users and sessions fell versus Jun 22-28 - but total time spent in the app ROSE (+18.8% userEngagementDuration), so the smaller audience watched more per person. Engaged-session rate held steady (77.97% vs 78.01%), with no Jun 28-style classification anomaly this week."
   };
