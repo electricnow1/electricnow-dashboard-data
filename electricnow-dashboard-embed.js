@@ -8392,6 +8392,12 @@
           "detail": "Estimated total YouTube revenue (ads + other), separate channel - NOT platform sales"
         },
         {
+          "key": "estimatedRevenueYtd",
+          "label": "YTD YouTube revenue",
+          "value": 87968.84,
+          "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue — NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
+        },
+        {
           "key": "adImpressions",
           "label": "YouTube ad impressions",
           "value": 782494,
@@ -8764,7 +8770,7 @@
         }
       ],
       "distinctionNote": "This is YouTube-only performance. YouTube ad impressions and estimated YouTube ad revenue are distinct from ElectricNOW in-app ad impressions and from Google/Meta paid-acquisition impressions. YouTube has no purchases and is NOT included in Visible Platform Sales.",
-      "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For Jun 22-27, 2026 (the latest available data; Jun 28 is not yet finalized by the connector) the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. Versus the prior full week that is down (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%), though those deltas compare 6 days to a 7-day prior week and are preliminary. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales.",
+      "plainEnglish": "YouTube is a meaningful separate audience and revenue channel. For Jun 22-27, 2026 (the latest available data; Jun 28 is not yet finalized by the connector) the channel produced 157,201 views, about 69,686 hours watched, ~126,155 monetized playbacks, and roughly $2,751 in estimated ad revenue ($3,026 estimated total revenue), with average view duration about 26m 36s and 210 new subscribers. Versus the prior full week that is down (views -10.1%, ad revenue -15.3%, ad impressions -18.0%, monetized playbacks -12.7%), though those deltas compare 6 days to a 7-day prior week and are preliminary. This section is YouTube-only performance, separate from ElectricNOW app/GA4 usage and separate from paid-acquisition ad impressions, and is NOT included in Visible Platform Sales. Year to date (Jan 1-Jul 10, 2026), the YouTube channel has produced about $87,968.84 in estimated total revenue (est. ad revenue ~$79,108.12) — a YouTube-only estimate, separate from and not included in Visible Platform Sales.",
       "dataFreshnessNote": "YouTube Analytics pull for Jun 29-Jul 5, 2026. Daily view/watch-time rows for Jul 2-4 lag (0 views while revenue accrues); weekly totals are complete.",
       "dataLagNote": "YouTube daily rows for Jul 2-4, 2026 show 0 views/watch-time while estimated revenue keeps accruing - a known multi-day reporting lag. Weekly totals are authoritative; back-half daily view/watch-time will settle upward on later pulls.",
       "partialUpdate": {
@@ -8779,6 +8785,20 @@
         "adImpressions": 227488,
         "monetizedPlaybacks": 44808,
         "note": "Partial current week (Jul 6-9, 2026, 4 days) from the YouTube Analytics connector. The complete-week comparison above remains Jun 29-Jul 5 vs Jun 22-28. YouTube daily rows lag a few days, so these partial totals will settle upward. NOT platform sales - YouTube ad revenue is a separate channel."
+      },
+      "yearToDateRevenue": {
+        "period": "Jan 1-Jul 10, 2026",
+        "source": "YouTube Analytics connector, ElectricNOW channel",
+        "sourceFile": "cron_tracking/0b0f51ad/youtube_ytd_20260711/youtube_ytd_revenue_20260101_20260710.json",
+        "estimatedRevenue": 87968.835,
+        "estimatedAdRevenue": 79108.115,
+        "views": 5543311,
+        "estimatedMinutesWatched": 144220281,
+        "averageViewDurationSeconds": 1567,
+        "adImpressions": 24756572,
+        "monetizedPlaybacks": 4315022,
+        "isPlatformSales": false,
+        "note": "YouTube-only estimated revenue; NOT ElectricNOW in-app/platform sales; NOT in Visible Platform Sales."
       }
     },
     "appTrendNote": "This trend charts total app sessions in green (a reliable daily activity signal) alongside daily active users in blue for the week ending Sun Jul 5, 2026. Traffic pulled back this week - active users and sessions fell versus Jun 22-28 - but total time spent in the app ROSE (+18.8% userEngagementDuration), so the smaller audience watched more per person. Engaged-session rate held steady (77.97% vs 78.01%), with no Jun 28-style classification anomaly this week.",
@@ -10268,7 +10288,7 @@
     }
     function ytCardValue(card) {
       // Pre-formatted strings (duration label) render as-is; revenue uses currency.
-      if (card.key === 'estimatedAdRevenue' || card.key === 'estimatedRevenue') return fmt.currency(card.value);
+      if (card.key === 'estimatedAdRevenue' || card.key === 'estimatedRevenue' || card.key === 'estimatedRevenueYtd') return fmt.currency(card.value);
       if (card.key === 'avgViewPct') return fmt.percent(card.value);
       if (typeof card.value === 'string') return card.value;
       return fmt.number(card.value);
