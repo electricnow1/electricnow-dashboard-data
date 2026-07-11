@@ -8470,19 +8470,21 @@
       },
       {
         "videoId": "q5gQB_AGxlo",
-        "title": "q5gQB_AGxlo",
+        "title": "🔴 Leverage: Redemption | Season 1 Stream | 24/7 Entertainment 🔴",
         "views": 12254,
         "estimatedHoursWatched": 5223.12,
         "averageViewDuration": "25m 34s",
-        "estimatedAdRevenue": 67.015
+        "estimatedAdRevenue": 67.015,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "Ilpx6mH1nMk",
-        "title": "Ilpx6mH1nMk",
+        "title": "Adam the First | Full Movie | Oakes Fegley, David Duchovny, Larry Pine, T.R. Knight.",
         "views": 11115,
         "estimatedHoursWatched": 4083.57,
         "averageViewDuration": "22m 02s",
-        "estimatedAdRevenue": 114.57
+        "estimatedAdRevenue": 114.57,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "tKAdjrXYj8g",
@@ -8510,11 +8512,12 @@
       },
       {
         "videoId": "aHfMGLnoaaE",
-        "title": "aHfMGLnoaaE",
+        "title": "The Ho Ho Ho Job | Electric Entertainment 25th Anniversary Celebration! | Leverage S03E14",
         "views": 2498,
         "estimatedHoursWatched": 673.92,
         "averageViewDuration": "16m 11s",
-        "estimatedAdRevenue": 34.236
+        "estimatedAdRevenue": 34.236,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "89J-9vWWPuk",
@@ -8550,19 +8553,21 @@
       },
       {
         "videoId": "He3ScSePRYM",
-        "title": "He3ScSePRYM",
+        "title": "Leverage | The Second David Job | Season 1 Episode 13 | Official Episode",
         "views": 1548,
         "estimatedHoursWatched": 642.75,
         "averageViewDuration": "24m 54s",
-        "estimatedAdRevenue": 20.357
+        "estimatedAdRevenue": 20.357,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "6etBO8Z9IBA",
-        "title": "6etBO8Z9IBA",
+        "title": "Leverage | The Last Dam Job | Season 4 Episode 18 | Official Episode",
         "views": 1515,
         "estimatedHoursWatched": 543.8,
         "averageViewDuration": "21m 32s",
-        "estimatedAdRevenue": 26.605
+        "estimatedAdRevenue": 26.605,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "sjsGMHmm9Yk",
@@ -8574,51 +8579,57 @@
       },
       {
         "videoId": "n_edsw_uKQE",
-        "title": "n_edsw_uKQE",
+        "title": "Leverage | The San Lorenzo Job | Season 3 Episode 16 | Official Episode",
         "views": 1363,
         "estimatedHoursWatched": 572.17,
         "averageViewDuration": "25m 11s",
-        "estimatedAdRevenue": 17.474
+        "estimatedAdRevenue": 17.474,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "V2sH3XGiUns",
-        "title": "V2sH3XGiUns",
+        "title": "Leverage | The Wedding Job | Season 1 Episode 3 | Official Episode",
         "views": 1359,
         "estimatedHoursWatched": 643.22,
         "averageViewDuration": "28m 23s",
-        "estimatedAdRevenue": 17.968
+        "estimatedAdRevenue": 17.968,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "RRb6SMYb72Y",
-        "title": "RRb6SMYb72Y",
+        "title": "The Big Bang Job | Electric Entertainment 25th Anniversary Celebration! | Leverage S03E15",
         "views": 1331,
         "estimatedHoursWatched": 336.22,
         "averageViewDuration": "15m 09s",
-        "estimatedAdRevenue": 18.348
+        "estimatedAdRevenue": 18.348,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "Hu7thpEf-js",
-        "title": "Hu7thpEf-js",
+        "title": "The Librarians and the Crown of King Arthur | Season 1 Episode 1 | Official Episode",
         "views": 1294,
         "estimatedHoursWatched": 441.28,
         "averageViewDuration": "20m 27s",
-        "estimatedAdRevenue": 28.287
+        "estimatedAdRevenue": 28.287,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "V21Q6QjV0Hc",
-        "title": "V21Q6QjV0Hc",
+        "title": "Leverage | The Juror #6 Job | Season 1 Episode 10 | Official Episode",
         "views": 1239,
         "estimatedHoursWatched": 497.1,
         "averageViewDuration": "24m 04s",
-        "estimatedAdRevenue": 18.003
+        "estimatedAdRevenue": 18.003,
+        "titleSource": "youtube_oembed"
       },
       {
         "videoId": "7Ubadx5paaI",
-        "title": "7Ubadx5paaI",
+        "title": "Leverage | The Snow Job | Season 1 Episode 4 | Official Episode",
         "views": 1173,
         "estimatedHoursWatched": 529.05,
         "averageViewDuration": "27m 03s",
-        "estimatedAdRevenue": 12.59
+        "estimatedAdRevenue": 12.59,
+        "titleSource": "youtube_oembed"
       }
     ],
     "trafficSources": [
