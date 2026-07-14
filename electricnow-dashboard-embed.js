@@ -8198,63 +8198,65 @@
     "manualAppleDownloads": {
       "sourceLabel": "Manual Apple App Store Connect snapshot",
       "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-      "capturedAt": "2026-07-06 07:31 PDT",
-      "enteredAt": "2026-07-06 07:31 PDT",
-      "uploadedAttachments": [],
+      "capturedAt": "2026-07-13 21:00 PDT",
+      "enteredAt": "2026-07-13 21:00 PDT",
+      "uploadedAttachments": [
+        "uploaded_attachments/2fb150d1b4b74be3ba6d9b522105783a/image.jpeg"
+      ],
       "product": "ElectricNOW",
       "platform": "Free iOS/watchOS/tvOS",
-      "period": "Jun 29-Jul 5, 2026",
-      "start": "2026-06-29",
-      "end": "2026-07-05",
-      "downloads": 424,
-      "displayDownloads": "424",
-      "dailyAverage": 61,
+      "period": "Jul 6-Jul 12, 2026",
+      "start": "2026-07-06",
+      "end": "2026-07-12",
+      "downloads": 137,
+      "displayDownloads": "137",
+      "dailyAverage": 20,
       "daily": [
         {
-          "date": "2026-06-29",
-          "label": "June 29, 2026",
-          "downloads": 180
+          "date": "2026-07-06",
+          "label": "July 6, 2026",
+          "downloads": 20
         },
         {
-          "date": "2026-06-30",
-          "label": "June 30, 2026",
-          "downloads": 75
+          "date": "2026-07-07",
+          "label": "July 7, 2026",
+          "downloads": 26
         },
         {
-          "date": "2026-07-01",
-          "label": "July 1, 2026",
-          "downloads": 38
+          "date": "2026-07-08",
+          "label": "July 8, 2026",
+          "downloads": 24
         },
         {
-          "date": "2026-07-02",
-          "label": "July 2, 2026",
-          "downloads": 46
+          "date": "2026-07-09",
+          "label": "July 9, 2026",
+          "downloads": 25
         },
         {
-          "date": "2026-07-03",
-          "label": "July 3, 2026",
-          "downloads": 28
+          "date": "2026-07-10",
+          "label": "July 10, 2026",
+          "downloads": 17
         },
         {
-          "date": "2026-07-04",
-          "label": "July 4, 2026",
-          "downloads": 38
+          "date": "2026-07-11",
+          "label": "July 11, 2026",
+          "downloads": 12
         },
         {
-          "date": "2026-07-05",
-          "label": "July 5, 2026",
-          "downloads": 19
+          "date": "2026-07-12",
+          "label": "July 12, 2026",
+          "downloads": 13
         }
       ],
-      "deltaPct": -60.1,
+      "deltaPct": -67.7,
       "territories": [
         {
           "territory": "United States",
-          "downloads": 424,
-          "deltaPct": -60.1
+          "downloads": 137,
+          "deltaPct": -67.7
         }
       ],
-      "note": "Manual Apple Connect screenshot entered Jul 6, 2026. Daily U.S. downloads total 424 for Jun 29-Jul 5, 2026 (the latest complete week). Deduped against the prior Jun 25-Jul 1 snapshot by date: Jun 29 (180) confirmed, Jun 30 updated 74->75, Jul 1 (38) confirmed, and Jul 2-5 (46/28/38/19) added; the prior Jun 25-Jul 1 = 1,063 window is preserved below as priorSnapshot and is not double-counted. fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
+      "note": "Manual Apple Connect screenshot entered Jul 13, 2026 (screenshot uploaded ~Jul 13 21:00 PDT). Daily U.S. downloads total 137 for Jul 6-Jul 12, 2026 (the latest complete week): Jul 6 (20), Jul 7 (26), Jul 8 (24), Jul 9 (25), Jul 10 (17), Jul 11 (12), Jul 12 (13). Down 67.7% vs the prior Jun 29-Jul 5 = 424 window, which is preserved below as priorSnapshot and is not double-counted. This is downloads only; there were NO new Apple iOS sales in this window, so Apple sales and visible platform sales totals are unchanged. fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
       "fiveWeekSnapshot": {
         "period": "Apr 27-May 31, 2026",
         "start": "2026-04-27",
@@ -8277,10 +8279,10 @@
         ]
       },
       "priorSnapshot": {
-        "period": "Jun 25-Jul 1, 2026",
-        "start": "2026-06-25",
-        "end": "2026-07-01",
-        "downloads": 1063
+        "period": "Jun 29-Jul 5, 2026",
+        "start": "2026-06-29",
+        "end": "2026-07-05",
+        "downloads": 424
       }
     },
     "manualDataPatch": {
