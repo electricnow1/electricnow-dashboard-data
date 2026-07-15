@@ -1903,7 +1903,8 @@
       "Time-on-platform and event/segment scorecards are held at the last fully-instrumented week (Jun 29-Jul 5, 2026) and marked stale: the Jul 13 GA4 pull was daily top-line only, without userEngagementDuration, event breakdown or device/app/title segments.",
       "Visible platform sales are unchanged at 67 purchases / $1,244.33 gross ($1,056.05 developer rev share): no new Stripe charges (connected, preserved 24/$484.76), no new Roku purchases (latest Jul 13 Sales Activity Report purchase still Jun 30; Roku 21/$396.79), Apple preserved 22/$362.78.",
       "Paid acquisition is effectively off: Meta's Jul 5-11 report is $0.00 spend / 0 installs - an intentional pivot from Meta Ads to Roku Ads (low mobile retention; TV is the priority audience; DotStudio setting up Roku conversion tracking). Google Ads connected with no rows for Jul 6-12 (no spend). We do NOT claim true ROAS.",
-      "Roku app engagement (Jul 5-11): 191 new installs, 126 uninstalls (net +65), 289,390 cumulative, 349 avg daily viewers, 86.39 avg min/viewer, 3,513 hours streamed - eased vs the prior report."
+      "Roku app engagement (Jul 5-11): 191 new installs, 126 uninstalls (net +65), 289,390 cumulative, 349 avg daily viewers, 86.39 avg min/viewer, 3,513 hours streamed - eased vs the prior report.",
+      "US audience geography (GA4 property 497892271, Jul 6-12, 2026): app usage is concentrated in major metros such as New York, Los Angeles, Chicago, Houston and Philadelphia, with Texas, Florida and California the top states. City/state active-user counts are directional (not additive across rows) and reflect app/platform usage, not landing-page acquisition."
     ],
     "instrumentationGaps": [
       "No separate GA4 event found for go_ad_free_click yet.",
@@ -8840,7 +8841,864 @@
       }
     ],
     "ytdTrendNote": "Weekly totals for the complete weeks of GA4 history available (property 497892271), from the Apr 13-19 launch week through the last complete week (Jul 6-12, 2026). Blue = weekly app active users; green = weekly app sessions. Apr 20-May 24 predates continuous weekly capture and is not plotted. The Jul 6-12 active-users point is estimated (week-unique de-duplication is not additive); sessions are exact. This is a weekly trend (one point per week), not daily.",
-    "eventCardsNote": "In-app event and ad-impression counts are HELD at the last fully-instrumented week (Jun 29-Jul 5, 2026). The Jul 13 GA4 pull was daily top-line only and did not include the event breakdown, so these are not refreshed for Jul 6-12."
+    "eventCardsNote": "In-app event and ad-impression counts are HELD at the last fully-instrumented week (Jun 29-Jul 5, 2026). The Jul 13 GA4 pull was daily top-line only and did not include the event breakdown, so these are not refreshed for Jul 6-12.",
+    "usGeography": {
+      "title": "US audience geography",
+      "eyebrow": "Where the ElectricNOW app & platform is used across the United States",
+      "period": "Jul 6-Jul 12, 2026",
+      "source": "GA4 (property 497892271) country/region/city report",
+      "freshness": "Complete week Jul 6-Jul 12, 2026 (pulled 2026-07-15)",
+      "property": "497892271",
+      "usTotals": {
+        "activeUsers": 3669,
+        "newUsers": 1158,
+        "sessions": 9391,
+        "engagedSessions": 7560,
+        "engagementRate": 80.5,
+        "screenPageViews": 31594,
+        "eventCount": 958504
+      },
+      "states": [
+        {
+          "state": "Texas",
+          "stateCode": "TX",
+          "x": 40,
+          "y": 50,
+          "activeUsers": 366,
+          "newUsers": 94,
+          "sessions": 776,
+          "engagedSessions": 618,
+          "engagementRate": 79.6,
+          "screenPageViews": 2089,
+          "eventCount": 51948
+        },
+        {
+          "state": "Florida",
+          "stateCode": "FL",
+          "x": 68,
+          "y": 55,
+          "activeUsers": 336,
+          "newUsers": 95,
+          "sessions": 736,
+          "engagedSessions": 591,
+          "engagementRate": 80.3,
+          "screenPageViews": 2473,
+          "eventCount": 62619
+        },
+        {
+          "state": "California",
+          "stateCode": "CA",
+          "x": 6,
+          "y": 30,
+          "activeUsers": 333,
+          "newUsers": 83,
+          "sessions": 758,
+          "engagedSessions": 581,
+          "engagementRate": 76.6,
+          "screenPageViews": 2055,
+          "eventCount": 69234
+        },
+        {
+          "state": "New York",
+          "stateCode": "NY",
+          "x": 74,
+          "y": 16,
+          "activeUsers": 261,
+          "newUsers": 62,
+          "sessions": 523,
+          "engagedSessions": 420,
+          "engagementRate": 80.3,
+          "screenPageViews": 1728,
+          "eventCount": 43519
+        },
+        {
+          "state": "Pennsylvania",
+          "stateCode": "PA",
+          "x": 71,
+          "y": 23,
+          "activeUsers": 227,
+          "newUsers": 53,
+          "sessions": 506,
+          "engagedSessions": 415,
+          "engagementRate": 82.0,
+          "screenPageViews": 1437,
+          "eventCount": 53733
+        },
+        {
+          "state": "Illinois",
+          "stateCode": "IL",
+          "x": 54,
+          "y": 26,
+          "activeUsers": 194,
+          "newUsers": 54,
+          "sessions": 446,
+          "engagedSessions": 386,
+          "engagementRate": 86.5,
+          "screenPageViews": 1239,
+          "eventCount": 24993
+        },
+        {
+          "state": "North Carolina",
+          "stateCode": "NC",
+          "x": 68,
+          "y": 37,
+          "activeUsers": 192,
+          "newUsers": 55,
+          "sessions": 428,
+          "engagedSessions": 356,
+          "engagementRate": 83.2,
+          "screenPageViews": 1640,
+          "eventCount": 66350
+        },
+        {
+          "state": "Ohio",
+          "stateCode": "OH",
+          "x": 63,
+          "y": 25,
+          "activeUsers": 189,
+          "newUsers": 46,
+          "sessions": 576,
+          "engagedSessions": 481,
+          "engagementRate": 83.5,
+          "screenPageViews": 2029,
+          "eventCount": 70204
+        },
+        {
+          "state": "Georgia",
+          "stateCode": "GA",
+          "x": 64,
+          "y": 44,
+          "activeUsers": 157,
+          "newUsers": 37,
+          "sessions": 323,
+          "engagedSessions": 234,
+          "engagementRate": 72.4,
+          "screenPageViews": 661,
+          "eventCount": 15643
+        },
+        {
+          "state": "Michigan",
+          "stateCode": "MI",
+          "x": 58,
+          "y": 16,
+          "activeUsers": 154,
+          "newUsers": 35,
+          "sessions": 310,
+          "engagedSessions": 237,
+          "engagementRate": 76.5,
+          "screenPageViews": 1058,
+          "eventCount": 24221
+        },
+        {
+          "state": "Tennessee",
+          "stateCode": "TN",
+          "x": 58,
+          "y": 38,
+          "activeUsers": 142,
+          "newUsers": 30,
+          "sessions": 245,
+          "engagedSessions": 195,
+          "engagementRate": 79.6,
+          "screenPageViews": 660,
+          "eventCount": 22818
+        },
+        {
+          "state": "Virginia",
+          "stateCode": "VA",
+          "x": 69,
+          "y": 31,
+          "activeUsers": 127,
+          "newUsers": 26,
+          "sessions": 254,
+          "engagedSessions": 214,
+          "engagementRate": 84.3,
+          "screenPageViews": 1006,
+          "eventCount": 29073
+        },
+        {
+          "state": "Missouri",
+          "stateCode": "MO",
+          "x": 49,
+          "y": 31,
+          "activeUsers": 111,
+          "newUsers": 29,
+          "sessions": 265,
+          "engagedSessions": 226,
+          "engagementRate": 85.3,
+          "screenPageViews": 942,
+          "eventCount": 29143
+        },
+        {
+          "state": "Indiana",
+          "stateCode": "IN",
+          "x": 59,
+          "y": 27,
+          "activeUsers": 96,
+          "newUsers": 21,
+          "sessions": 160,
+          "engagedSessions": 131,
+          "engagementRate": 81.9,
+          "screenPageViews": 474,
+          "eventCount": 13875
+        },
+        {
+          "state": "Colorado",
+          "stateCode": "CO",
+          "x": 26,
+          "y": 29,
+          "activeUsers": 94,
+          "newUsers": 23,
+          "sessions": 168,
+          "engagedSessions": 141,
+          "engagementRate": 83.9,
+          "screenPageViews": 607,
+          "eventCount": 16644
+        },
+        {
+          "state": "Arizona",
+          "stateCode": "AZ",
+          "x": 16,
+          "y": 40,
+          "activeUsers": 93,
+          "newUsers": 23,
+          "sessions": 191,
+          "engagedSessions": 147,
+          "engagementRate": 77.0,
+          "screenPageViews": 720,
+          "eventCount": 25710
+        },
+        {
+          "state": "Washington",
+          "stateCode": "WA",
+          "x": 8,
+          "y": 6,
+          "activeUsers": 92,
+          "newUsers": 33,
+          "sessions": 176,
+          "engagedSessions": 152,
+          "engagementRate": 86.4,
+          "screenPageViews": 669,
+          "eventCount": 23509
+        },
+        {
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "x": 80,
+          "y": 17,
+          "activeUsers": 91,
+          "newUsers": 15,
+          "sessions": 134,
+          "engagedSessions": 100,
+          "engagementRate": 74.6,
+          "screenPageViews": 302,
+          "eventCount": 6770
+        },
+        {
+          "state": "Minnesota",
+          "stateCode": "MN",
+          "x": 45,
+          "y": 12,
+          "activeUsers": 86,
+          "newUsers": 24,
+          "sessions": 190,
+          "engagedSessions": 154,
+          "engagementRate": 81.1,
+          "screenPageViews": 480,
+          "eventCount": 22779
+        },
+        {
+          "state": "Alabama",
+          "stateCode": "AL",
+          "x": 58,
+          "y": 45,
+          "activeUsers": 86,
+          "newUsers": 14,
+          "sessions": 165,
+          "engagedSessions": 129,
+          "engagementRate": 78.2,
+          "screenPageViews": 558,
+          "eventCount": 16688
+        },
+        {
+          "state": "South Carolina",
+          "stateCode": "SC",
+          "x": 67,
+          "y": 41,
+          "activeUsers": 86,
+          "newUsers": 27,
+          "sessions": 231,
+          "engagedSessions": 182,
+          "engagementRate": 78.8,
+          "screenPageViews": 982,
+          "eventCount": 27516
+        },
+        {
+          "state": "New Jersey",
+          "stateCode": "NJ",
+          "x": 76,
+          "y": 24,
+          "activeUsers": 84,
+          "newUsers": 18,
+          "sessions": 161,
+          "engagedSessions": 134,
+          "engagementRate": 83.2,
+          "screenPageViews": 277,
+          "eventCount": 8430
+        },
+        {
+          "state": "Oregon",
+          "stateCode": "OR",
+          "x": 7,
+          "y": 14,
+          "activeUsers": 83,
+          "newUsers": 27,
+          "sessions": 164,
+          "engagedSessions": 129,
+          "engagementRate": 78.7,
+          "screenPageViews": 466,
+          "eventCount": 16176
+        },
+        {
+          "state": "Louisiana",
+          "stateCode": "LA",
+          "x": 50,
+          "y": 52,
+          "activeUsers": 77,
+          "newUsers": 31,
+          "sessions": 124,
+          "engagedSessions": 96,
+          "engagementRate": 77.4,
+          "screenPageViews": 517,
+          "eventCount": 16985
+        },
+        {
+          "state": "Kentucky",
+          "stateCode": "KY",
+          "x": 60,
+          "y": 33,
+          "activeUsers": 72,
+          "newUsers": 13,
+          "sessions": 112,
+          "engagedSessions": 73,
+          "engagementRate": 65.2,
+          "screenPageViews": 445,
+          "eventCount": 10424
+        },
+        {
+          "state": "Wisconsin",
+          "stateCode": "WI",
+          "x": 52,
+          "y": 15,
+          "activeUsers": 69,
+          "newUsers": 15,
+          "sessions": 145,
+          "engagedSessions": 121,
+          "engagementRate": 83.4,
+          "screenPageViews": 615,
+          "eventCount": 13486
+        },
+        {
+          "state": "Arkansas",
+          "stateCode": "AR",
+          "x": 49,
+          "y": 42,
+          "activeUsers": 69,
+          "newUsers": 17,
+          "sessions": 146,
+          "engagedSessions": 115,
+          "engagementRate": 78.8,
+          "screenPageViews": 579,
+          "eventCount": 16357
+        },
+        {
+          "state": "Maryland",
+          "stateCode": "MD",
+          "x": 72,
+          "y": 28,
+          "activeUsers": 68,
+          "newUsers": 14,
+          "sessions": 143,
+          "engagedSessions": 114,
+          "engagementRate": 79.7,
+          "screenPageViews": 698,
+          "eventCount": 22634
+        },
+        {
+          "state": "Oklahoma",
+          "stateCode": "OK",
+          "x": 42,
+          "y": 40,
+          "activeUsers": 57,
+          "newUsers": 14,
+          "sessions": 175,
+          "engagedSessions": 147,
+          "engagementRate": 84.0,
+          "screenPageViews": 575,
+          "eventCount": 15959
+        },
+        {
+          "state": "Connecticut",
+          "stateCode": "CT",
+          "x": 78,
+          "y": 20,
+          "activeUsers": 56,
+          "newUsers": 15,
+          "sessions": 126,
+          "engagedSessions": 109,
+          "engagementRate": 86.5,
+          "screenPageViews": 287,
+          "eventCount": 5087
+        },
+        {
+          "state": "Iowa",
+          "stateCode": "IA",
+          "x": 47,
+          "y": 22,
+          "activeUsers": 49,
+          "newUsers": 12,
+          "sessions": 91,
+          "engagedSessions": 73,
+          "engagementRate": 80.2,
+          "screenPageViews": 335,
+          "eventCount": 11898
+        },
+        {
+          "state": "Nevada",
+          "stateCode": "NV",
+          "x": 12,
+          "y": 26,
+          "activeUsers": 46,
+          "newUsers": 12,
+          "sessions": 90,
+          "engagedSessions": 75,
+          "engagementRate": 83.3,
+          "screenPageViews": 327,
+          "eventCount": 17720
+        },
+        {
+          "state": "Kansas",
+          "stateCode": "KS",
+          "x": 40,
+          "y": 32,
+          "activeUsers": 39,
+          "newUsers": 3,
+          "sessions": 68,
+          "engagedSessions": 59,
+          "engagementRate": 86.8,
+          "screenPageViews": 159,
+          "eventCount": 5703
+        },
+        {
+          "state": "West Virginia",
+          "stateCode": "WV",
+          "x": 66,
+          "y": 29,
+          "activeUsers": 38,
+          "newUsers": 7,
+          "sessions": 78,
+          "engagedSessions": 63,
+          "engagementRate": 80.8,
+          "screenPageViews": 194,
+          "eventCount": 9612
+        },
+        {
+          "state": "Mississippi",
+          "stateCode": "MS",
+          "x": 54,
+          "y": 46,
+          "activeUsers": 38,
+          "newUsers": 9,
+          "sessions": 81,
+          "engagedSessions": 64,
+          "engagementRate": 79.0,
+          "screenPageViews": 304,
+          "eventCount": 14071
+        },
+        {
+          "state": "Maine",
+          "stateCode": "ME",
+          "x": 82,
+          "y": 8,
+          "activeUsers": 34,
+          "newUsers": 8,
+          "sessions": 79,
+          "engagedSessions": 72,
+          "engagementRate": 91.1,
+          "screenPageViews": 394,
+          "eventCount": 15230
+        },
+        {
+          "state": "Utah",
+          "stateCode": "UT",
+          "x": 17,
+          "y": 28,
+          "activeUsers": 31,
+          "newUsers": 9,
+          "sessions": 61,
+          "engagedSessions": 45,
+          "engagementRate": 73.8,
+          "screenPageViews": 192,
+          "eventCount": 8293
+        },
+        {
+          "state": "Idaho",
+          "stateCode": "ID",
+          "x": 16,
+          "y": 13,
+          "activeUsers": 30,
+          "newUsers": 8,
+          "sessions": 68,
+          "engagedSessions": 61,
+          "engagementRate": 89.7,
+          "screenPageViews": 317,
+          "eventCount": 7586
+        },
+        {
+          "state": "New Mexico",
+          "stateCode": "NM",
+          "x": 25,
+          "y": 42,
+          "activeUsers": 23,
+          "newUsers": 6,
+          "sessions": 46,
+          "engagedSessions": 32,
+          "engagementRate": 69.6,
+          "screenPageViews": 103,
+          "eventCount": 3330
+        },
+        {
+          "state": "Nebraska",
+          "stateCode": "NE",
+          "x": 37,
+          "y": 24,
+          "activeUsers": 19,
+          "newUsers": 3,
+          "sessions": 41,
+          "engagedSessions": 34,
+          "engagementRate": 82.9,
+          "screenPageViews": 79,
+          "eventCount": 3282
+        },
+        {
+          "state": "District of Columbia",
+          "stateCode": "DC",
+          "x": 71,
+          "y": 30,
+          "activeUsers": 18,
+          "newUsers": 4,
+          "sessions": 37,
+          "engagedSessions": 31,
+          "engagementRate": 83.8,
+          "screenPageViews": 95,
+          "eventCount": 2695
+        },
+        {
+          "state": "New Hampshire",
+          "stateCode": "NH",
+          "x": 79,
+          "y": 13,
+          "activeUsers": 18,
+          "newUsers": 5,
+          "sessions": 35,
+          "engagedSessions": 33,
+          "engagementRate": 94.3,
+          "screenPageViews": 174,
+          "eventCount": 5231
+        },
+        {
+          "state": "Montana",
+          "stateCode": "MT",
+          "x": 22,
+          "y": 8,
+          "activeUsers": 16,
+          "newUsers": 6,
+          "sessions": 18,
+          "engagedSessions": 14,
+          "engagementRate": 77.8,
+          "screenPageViews": 79,
+          "eventCount": 3423
+        },
+        {
+          "state": "South Dakota",
+          "stateCode": "SD",
+          "x": 35,
+          "y": 16,
+          "activeUsers": 14,
+          "newUsers": 6,
+          "sessions": 19,
+          "engagedSessions": 16,
+          "engagementRate": 84.2,
+          "screenPageViews": 44,
+          "eventCount": 898
+        },
+        {
+          "state": "Rhode Island",
+          "stateCode": "RI",
+          "x": 80,
+          "y": 20,
+          "activeUsers": 13,
+          "newUsers": 1,
+          "sessions": 24,
+          "engagedSessions": 23,
+          "engagementRate": 95.8,
+          "screenPageViews": 68,
+          "eventCount": 432
+        },
+        {
+          "state": "Delaware",
+          "stateCode": "DE",
+          "x": 74,
+          "y": 27,
+          "activeUsers": 11,
+          "newUsers": 4,
+          "sessions": 23,
+          "engagedSessions": 19,
+          "engagementRate": 82.6,
+          "screenPageViews": 60,
+          "eventCount": 1170
+        },
+        {
+          "state": "Alaska",
+          "stateCode": "AK",
+          "x": 12,
+          "y": 56,
+          "activeUsers": 10,
+          "newUsers": 1,
+          "sessions": 12,
+          "engagedSessions": 9,
+          "engagementRate": 75.0,
+          "screenPageViews": 186,
+          "eventCount": 1753
+        },
+        {
+          "state": "Hawaii",
+          "stateCode": "HI",
+          "x": 20,
+          "y": 58,
+          "activeUsers": 9,
+          "newUsers": 5,
+          "sessions": 14,
+          "engagedSessions": 8,
+          "engagementRate": 57.1,
+          "screenPageViews": 23,
+          "eventCount": 216
+        },
+        {
+          "state": "North Dakota",
+          "stateCode": "ND",
+          "x": 35,
+          "y": 8,
+          "activeUsers": 8,
+          "newUsers": 2,
+          "sessions": 12,
+          "engagedSessions": 11,
+          "engagementRate": 91.7,
+          "screenPageViews": 63,
+          "eventCount": 791
+        },
+        {
+          "state": "Vermont",
+          "stateCode": "VT",
+          "x": 77,
+          "y": 12,
+          "activeUsers": 8,
+          "newUsers": 2,
+          "sessions": 17,
+          "engagedSessions": 15,
+          "engagementRate": 88.2,
+          "screenPageViews": 102,
+          "eventCount": 2419
+        },
+        {
+          "state": "Wyoming",
+          "stateCode": "WY",
+          "x": 24,
+          "y": 18,
+          "activeUsers": 3,
+          "newUsers": 2,
+          "sessions": 9,
+          "engagedSessions": 5,
+          "engagementRate": 55.6,
+          "screenPageViews": 18,
+          "eventCount": 154
+        }
+      ],
+      "topCities": [
+        {
+          "city": "New York",
+          "region": "New York",
+          "activeUsers": 101,
+          "newUsers": 19,
+          "sessions": 178,
+          "engagedSessions": 134,
+          "screenPageViews": 436,
+          "eventCount": 7614,
+          "engagementRate": 75.3
+        },
+        {
+          "city": "Los Angeles",
+          "region": "California",
+          "activeUsers": 78,
+          "newUsers": 12,
+          "sessions": 187,
+          "engagedSessions": 147,
+          "screenPageViews": 404,
+          "eventCount": 38505,
+          "engagementRate": 78.6
+        },
+        {
+          "city": "Chicago",
+          "region": "Illinois",
+          "activeUsers": 73,
+          "newUsers": 21,
+          "sessions": 186,
+          "engagedSessions": 156,
+          "screenPageViews": 371,
+          "eventCount": 8708,
+          "engagementRate": 83.9
+        },
+        {
+          "city": "Houston",
+          "region": "Texas",
+          "activeUsers": 58,
+          "newUsers": 18,
+          "sessions": 141,
+          "engagedSessions": 117,
+          "screenPageViews": 219,
+          "eventCount": 13913,
+          "engagementRate": 83.0
+        },
+        {
+          "city": "Philadelphia",
+          "region": "Pennsylvania",
+          "activeUsers": 54,
+          "newUsers": 9,
+          "sessions": 147,
+          "engagedSessions": 116,
+          "screenPageViews": 345,
+          "eventCount": 14961,
+          "engagementRate": 78.9
+        },
+        {
+          "city": "Atlanta",
+          "region": "Georgia",
+          "activeUsers": 43,
+          "newUsers": 11,
+          "sessions": 81,
+          "engagedSessions": 56,
+          "screenPageViews": 120,
+          "eventCount": 3080,
+          "engagementRate": 69.1
+        },
+        {
+          "city": "Las Vegas Valley",
+          "region": "Nevada",
+          "activeUsers": 36,
+          "newUsers": 9,
+          "sessions": 79,
+          "engagedSessions": 66,
+          "screenPageViews": 219,
+          "eventCount": 16585,
+          "engagementRate": 83.5
+        },
+        {
+          "city": "Phoenix",
+          "region": "Arizona",
+          "activeUsers": 35,
+          "newUsers": 8,
+          "sessions": 69,
+          "engagedSessions": 54,
+          "screenPageViews": 279,
+          "eventCount": 6083,
+          "engagementRate": 78.3
+        },
+        {
+          "city": "Dallas",
+          "region": "Texas",
+          "activeUsers": 35,
+          "newUsers": 15,
+          "sessions": 65,
+          "engagedSessions": 48,
+          "screenPageViews": 184,
+          "eventCount": 2154,
+          "engagementRate": 73.8
+        },
+        {
+          "city": "Indianapolis",
+          "region": "Indiana",
+          "activeUsers": 32,
+          "newUsers": 9,
+          "sessions": 49,
+          "engagedSessions": 38,
+          "screenPageViews": 59,
+          "eventCount": 1844,
+          "engagementRate": 77.6
+        },
+        {
+          "city": "Seattle",
+          "region": "Washington",
+          "activeUsers": 32,
+          "newUsers": 12,
+          "sessions": 74,
+          "engagedSessions": 63,
+          "screenPageViews": 206,
+          "eventCount": 10489,
+          "engagementRate": 85.1
+        },
+        {
+          "city": "Denver",
+          "region": "Colorado",
+          "activeUsers": 31,
+          "newUsers": 10,
+          "sessions": 63,
+          "engagedSessions": 48,
+          "screenPageViews": 128,
+          "eventCount": 4481,
+          "engagementRate": 76.2
+        },
+        {
+          "city": "Austin",
+          "region": "Texas",
+          "activeUsers": 31,
+          "newUsers": 7,
+          "sessions": 70,
+          "engagedSessions": 53,
+          "screenPageViews": 78,
+          "eventCount": 3062,
+          "engagementRate": 75.7
+        },
+        {
+          "city": "Detroit",
+          "region": "Michigan",
+          "activeUsers": 30,
+          "newUsers": 11,
+          "sessions": 42,
+          "engagedSessions": 31,
+          "screenPageViews": 140,
+          "eventCount": 4192,
+          "engagementRate": 73.8
+        },
+        {
+          "city": "Boston",
+          "region": "Massachusetts",
+          "activeUsers": 28,
+          "newUsers": 5,
+          "sessions": 46,
+          "engagedSessions": 38,
+          "screenPageViews": 46,
+          "eventCount": 2111,
+          "engagementRate": 82.6
+        }
+      ],
+      "notSetRegion": {
+        "activeUsers": 3,
+        "sessions": 11
+      },
+      "sumStateActiveUsers": 4623,
+      "summaryLine": "U.S. app usage is concentrated in major metros such as New York, Los Angeles, Chicago, Houston, and Philadelphia, with Texas, Florida, and California the top states.",
+      "caveat": "GA4 geography is based on available location signals for GA4 property 497892271 and is directional. City- and state-level active-user counts are NOT additive across rows: the same person can appear in more than one city/state, so the sum of state active users (4,623) is higher than the deduplicated U.S. total (3,669). Use active users for ranking, not as an exact per-area headcount. Sessions, engaged sessions, screen/page views and events are event counts and aggregate additively. This is app/platform usage, not landing-page acquisition traffic and not paid-ad geography.",
+      "methodologyNote": "Platform-audience rule preserved: landing-page traffic is acquisition-only and is reported separately in Web Acquisition, not in platform audience. This section is separate from Apple territory/download reporting, Roku app reporting, YouTube, and paid-ad geography. A small \"(not set)\" region (3 active users) and non-U.S. activity are excluded from the U.S. rankings."
+    }
   };
   
 
@@ -10363,6 +11221,161 @@
     if (distEl) distEl.textContent = summary.distinctionNote || '';
   }
 
+  function ensureUsGeographySection() {
+    let section = document.getElementById('us-geography');
+    if (section) return section;
+    // Anchor after YouTube when present, otherwise after Meta/Google Ads.
+    const anchor = document.getElementById('youtube') || document.getElementById('meta-ads') || document.getElementById('google-ads');
+    if (!anchor) return null;
+    const sideNav = $('.side-nav');
+    if (sideNav && !sideNav.querySelector('a[href="#us-geography"]')) {
+      const refLink = sideNav.querySelector('a[href="#youtube"]') || sideNav.querySelector('a[href="#meta-ads"]') || sideNav.querySelector('a[href="#google-ads"]');
+      const link = document.createElement('a');
+      link.href = '#us-geography';
+      link.setAttribute('data-testid', 'nav-us-geography');
+      link.textContent = 'US geography';
+      if (refLink && refLink.nextSibling) {
+        sideNav.insertBefore(link, refLink.nextSibling);
+      } else {
+        sideNav.appendChild(link);
+      }
+    }
+    section = document.createElement('section');
+    section.className = 'panel us-geo-panel';
+    section.id = 'us-geography';
+    section.setAttribute('aria-labelledby', 'us-geography-title');
+    section.setAttribute('data-testid', 'section-us-geography');
+    section.innerHTML = `
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow" id="us-geography-eyebrow"></p>
+          <h2 id="us-geography-title">US audience geography</h2>
+        </div>
+        <span class="period-chip" id="us-geography-period"></span>
+      </div>
+      <p id="us-geography-note" class="panel-note"></p>
+      <div class="usage-card-grid" id="us-geography-kpis" data-testid="us-geography-kpis"></div>
+      <div class="us-geo-map-wrap" style="border:1px solid rgba(255,255,255,0.11);border-radius:10px;background:rgba(15,33,56,0.5);padding:16px;margin:14px 0;">
+        <div class="us-geo-map" id="us-geography-map" data-testid="us-geography-map"></div>
+        <p class="us-geo-map-caption" id="us-geography-map-caption" style="color:#667f9d;font-size:12px;margin:10px 2px 0;"></p>
+      </div>
+      <div class="us-geo-tables" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:14px;">
+        <div><h3>Top states by active users</h3><div id="us-geography-states" class="table-wrap" data-testid="us-geography-states"></div></div>
+        <div><h3>Top cities / metros by active users</h3><div id="us-geography-cities" class="table-wrap" data-testid="us-geography-cities"></div></div>
+      </div>
+      <p class="panel-note" id="us-geography-caveat"></p>
+      <p class="sales-source" id="us-geography-methodology"></p>
+    `;
+    if (anchor.parentNode) {
+      anchor.parentNode.insertBefore(section, anchor.nextSibling);
+    }
+    return section;
+  }
+
+  function renderUsGeography() {
+    const geo = data.usGeography;
+    const section = ensureUsGeographySection();
+    if (!section) return;
+    if (!geo || typeof geo !== 'object' || !Array.isArray(geo.states) || !geo.states.length) {
+      section.hidden = true;
+      return;
+    }
+    section.hidden = false;
+
+    const eyebrow = $('#us-geography-eyebrow');
+    if (eyebrow) eyebrow.textContent = geo.eyebrow || 'Where the ElectricNOW app & platform is used across the United States';
+    const periodChip = $('#us-geography-period');
+    if (periodChip) periodChip.textContent = geo.freshness || geo.period || '';
+    const noteEl = $('#us-geography-note');
+    if (noteEl) noteEl.textContent = `Source: ${geo.source}. ${geo.summaryLine || ''}`;
+
+    const t = geo.usTotals || {};
+    const kpisEl = $('#us-geography-kpis');
+    if (kpisEl) {
+      kpisEl.innerHTML = [
+        usageStat('U.S. active users', t.activeUsers, 'Deduplicated country-level GA4 count'),
+        usageStat('Sessions', t.sessions, 'U.S. sessions this week'),
+        usageStat('Engagement rate', fmt.percent(t.engagementRate), 'U.S. engaged sessions / sessions'),
+        usageStat('Screen / page views', t.screenPageViews, 'U.S. views this week'),
+        usageStat('Events', t.eventCount, 'U.S. event count this week'),
+      ].join('');
+    }
+
+    // Bubble map: proportional circles positioned at approximate state locations.
+    const mapEl = $('#us-geography-map');
+    if (mapEl) {
+      const placed = geo.states.filter((s) => typeof s.x === 'number' && typeof s.y === 'number' && s.activeUsers > 0);
+      const maxAu = Math.max(...placed.map((s) => s.activeUsers), 1);
+      const bubbles = placed
+        .slice()
+        .sort((a, b) => b.activeUsers - a.activeUsers)
+        .map((s) => {
+          const r = 1.6 + Math.sqrt(s.activeUsers / maxAu) * 6.4;
+          const intensity = 0.35 + (s.activeUsers / maxAu) * 0.55;
+          const showLabel = s.activeUsers >= maxAu * 0.28;
+          const title = `${s.state}: ${fmt.number(s.activeUsers)} active users · ${fmt.number(s.sessions)} sessions · ${fmt.percent(s.engagementRate)} ER`;
+          return `<g class="us-geo-bubble">
+              <title>${escapeHtml(title)}</title>
+              <circle cx="${s.x}" cy="${s.y}" r="${r.toFixed(2)}" fill="rgba(56,189,248,${intensity.toFixed(2)})" stroke="rgba(14,165,233,0.9)" stroke-width="0.3"></circle>
+              ${showLabel ? `<text x="${s.x}" y="${(s.y + 0.9).toFixed(2)}" text-anchor="middle" class="us-geo-bubble-label" font-size="2" font-weight="700" fill="#f6f9ff" style="pointer-events:none;">${escapeHtml(s.stateCode || '')}</text>` : ''}
+            </g>`;
+        })
+        .join('');
+      mapEl.innerHTML = `
+        <svg viewBox="0 0 92 64" role="img" aria-label="Map of U.S. app usage by state" preserveAspectRatio="xMidYMid meet">
+          <rect x="0" y="0" width="92" height="64" rx="3" class="us-geo-map-bg" fill="rgba(10,21,36,0.6)" stroke="rgba(255,255,255,0.11)" stroke-width="0.3"></rect>
+          ${bubbles}
+        </svg>`;
+    }
+    const mapCaption = $('#us-geography-map-caption');
+    if (mapCaption) mapCaption.textContent = 'Bubble size is proportional to GA4 active users by state (directional). Hover a bubble for exact figures. Alaska and Hawaii are shown as insets at lower-left.';
+
+    const statesEl = $('#us-geography-states');
+    if (statesEl) {
+      const rows = geo.states.filter((s) => s.activeUsers > 0).slice(0, 12);
+      statesEl.innerHTML = `
+        <table>
+          <thead><tr><th>State</th><th>Active users</th><th>Sessions</th><th>Eng. rate</th><th>Views</th><th>Events</th></tr></thead>
+          <tbody>
+            ${rows.map((s) => `
+              <tr>
+                <td>${escapeHtml(s.state)}</td>
+                <td>${fmt.number(s.activeUsers)}</td>
+                <td>${fmt.number(s.sessions)}</td>
+                <td>${fmt.percent(s.engagementRate)}</td>
+                <td>${fmt.number(s.screenPageViews)}</td>
+                <td>${fmt.number(s.eventCount)}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>`;
+    }
+
+    const citiesEl = $('#us-geography-cities');
+    if (citiesEl) {
+      const rows = (geo.topCities || []).slice(0, 12);
+      citiesEl.innerHTML = `
+        <table>
+          <thead><tr><th>City / metro</th><th>State</th><th>Active users</th><th>Sessions</th><th>Eng. rate</th><th>Views</th></tr></thead>
+          <tbody>
+            ${rows.map((c) => `
+              <tr>
+                <td>${escapeHtml(c.city)}</td>
+                <td>${escapeHtml(c.region)}</td>
+                <td>${fmt.number(c.activeUsers)}</td>
+                <td>${fmt.number(c.sessions)}</td>
+                <td>${fmt.percent(c.engagementRate)}</td>
+                <td>${fmt.number(c.screenPageViews)}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>`;
+    }
+
+    const caveatEl = $('#us-geography-caveat');
+    if (caveatEl) caveatEl.textContent = geo.caveat || '';
+    const methodEl = $('#us-geography-methodology');
+    if (methodEl) methodEl.textContent = geo.methodologyNote || '';
+  }
+
   function renderAll() {
     $('#trend-period').textContent =
       selectedPeriod === 'weekToDate' ? data.periods.weekToDate.range : data.periods.currentWeek.range;
@@ -10385,6 +11398,7 @@
     renderGoogleAds();
     renderMetaAds();
     renderYouTube();
+    renderUsGeography();
   }
 
   function setPeriodOptions() {
