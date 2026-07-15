@@ -9695,6 +9695,93 @@
         "sessions": 11
       },
       "sumStateActiveUsers": 4623,
+      "timeZoneUsage": {
+        "label": "Share of U.S. sessions by time-zone grouping",
+        "metric": "sessions",
+        "groupedTotalSessions": 9780,
+        "groups": [
+          {
+            "key": "pacific",
+            "name": "Pacific time",
+            "sessions": 1214,
+            "pct": 12.4,
+            "stateCount": 6,
+            "states": [
+              "CA",
+              "OR",
+              "WA",
+              "NV",
+              "AK",
+              "HI"
+            ]
+          },
+          {
+            "key": "centralMountain",
+            "name": "Central/Mountain time",
+            "sessions": 3822,
+            "pct": 39.1,
+            "stateCount": 25,
+            "states": [
+              "AZ",
+              "CO",
+              "ID",
+              "MT",
+              "NM",
+              "UT",
+              "WY",
+              "ND",
+              "SD",
+              "NE",
+              "KS",
+              "OK",
+              "TX",
+              "MN",
+              "IA",
+              "MO",
+              "AR",
+              "LA",
+              "WI",
+              "IL",
+              "MS",
+              "AL",
+              "TN",
+              "KY",
+              "IN"
+            ]
+          },
+          {
+            "key": "eastCoast",
+            "name": "East Coast time",
+            "sessions": 4744,
+            "pct": 48.5,
+            "stateCount": 20,
+            "states": [
+              "ME",
+              "NH",
+              "VT",
+              "MA",
+              "RI",
+              "CT",
+              "NY",
+              "NJ",
+              "PA",
+              "DE",
+              "MD",
+              "DC",
+              "VA",
+              "WV",
+              "NC",
+              "SC",
+              "GA",
+              "FL",
+              "OH",
+              "MI"
+            ]
+          }
+        ],
+        "caveat": "Time-zone grouping is estimated from state-level GA4 geography and uses sessions (additive), not deduplicated users. Split-time-zone states are assigned pragmatically to a single group; Alaska and Hawaii are grouped with Pacific for simplicity.",
+        "methodologyNote": "States mapped to three groupings: Pacific = CA, OR, WA, NV, AK, HI; Central/Mountain = AZ, CO, ID, MT, NM, UT, WY, ND, SD, NE, KS, OK, TX, MN, IA, MO, AR, LA, WI, IL, MS, AL, TN, KY, IN; East Coast = ME, NH, VT, MA, RI, CT, NY, NJ, PA, DE, MD, DC, VA, WV, NC, SC, GA, FL, OH, MI. Percentages are share of grouped U.S. sessions (denominator 9780) and sum to 100%."
+      },
       "summaryLine": "U.S. app usage is concentrated in major metros such as New York, Los Angeles, Chicago, Houston, and Philadelphia, with Texas, Florida, and California the top states.",
       "caveat": "GA4 geography is based on available location signals for GA4 property 497892271 and is directional. City- and state-level active-user counts are NOT additive across rows: the same person can appear in more than one city/state, so the sum of state active users (4,623) is higher than the deduplicated U.S. total (3,669). Use active users for ranking, not as an exact per-area headcount. Sessions, engaged sessions, screen/page views and events are event counts and aggregate additively. This is app/platform usage, not landing-page acquisition traffic and not paid-ad geography.",
       "methodologyNote": "Platform-audience rule preserved: landing-page traffic is acquisition-only and is reported separately in Web Acquisition, not in platform audience. This section is separate from Apple territory/download reporting, Roku app reporting, YouTube, and paid-ad geography. A small \"(not set)\" region (3 active users) and non-U.S. activity are excluded from the U.S. rankings."
@@ -11259,6 +11346,13 @@
         <div class="us-geo-map" id="us-geography-map" data-testid="us-geography-map"></div>
         <p class="us-geo-map-caption" id="us-geography-map-caption" style="color:#667f9d;font-size:12px;margin:10px 2px 0;"></p>
       </div>
+      <div class="us-geo-timezones" id="us-geography-timezones" data-testid="us-geography-timezones" style="border:1px solid rgba(255,255,255,0.11);border-radius:10px;background:rgba(15,33,56,0.5);padding:16px;margin:14px 0;" hidden>
+        <h3 id="us-geography-timezones-title" style="margin:0 0 4px;">Usage by U.S. time-zone grouping</h3>
+        <p id="us-geography-timezones-label" style="color:#8aa3c2;font-size:13px;margin:0 0 12px;"></p>
+        <div id="us-geography-timezones-bar" style="display:flex;width:100%;height:26px;border-radius:6px;overflow:hidden;border:1px solid rgba(255,255,255,0.11);"></div>
+        <div id="us-geography-timezones-chips" class="usage-card-grid" style="margin-top:14px;"></div>
+        <p class="panel-note" id="us-geography-timezones-caveat" style="margin-top:10px;"></p>
+      </div>
       <div class="us-geo-tables" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:14px;">
         <div><h3>Top states by active users</h3><div id="us-geography-states" class="table-wrap" data-testid="us-geography-states"></div></div>
         <div><h3>Top cities / metros by active users</h3><div id="us-geography-cities" class="table-wrap" data-testid="us-geography-cities"></div></div>
@@ -11368,6 +11462,37 @@
               </tr>`).join('')}
           </tbody>
         </table>`;
+    }
+
+    const tzPanel = $('#us-geography-timezones');
+    const tz = geo.timeZoneUsage;
+    if (tzPanel) {
+      const tzGroups = tz && Array.isArray(tz.groups) ? tz.groups.filter((grp) => grp && grp.sessions > 0) : [];
+      if (tzGroups.length) {
+        tzPanel.hidden = false;
+        const labelEl = $('#us-geography-timezones-label');
+        if (labelEl) labelEl.textContent = tz.label || 'Share of U.S. sessions by time-zone grouping';
+        const palette = ['rgba(56,189,248,0.85)', 'rgba(129,140,248,0.85)', 'rgba(52,211,153,0.85)'];
+        const barEl = $('#us-geography-timezones-bar');
+        if (barEl) {
+          barEl.innerHTML = tzGroups
+            .map((grp, i) => {
+              const seg = `${grp.name}: ${fmt.percent(grp.pct)} (${fmt.number(grp.sessions)} sessions)`;
+              return `<div title="${escapeHtml(seg)}" style="width:${grp.pct}%;background:${palette[i % palette.length]};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#0a1524;min-width:0;overflow:hidden;white-space:nowrap;">${grp.pct >= 8 ? fmt.percent(grp.pct) : ''}</div>`;
+            })
+            .join('');
+        }
+        const chipsEl = $('#us-geography-timezones-chips');
+        if (chipsEl) {
+          chipsEl.innerHTML = tzGroups
+            .map((grp) => usageStat(grp.name, fmt.percent(grp.pct), `${fmt.number(grp.sessions)} sessions`))
+            .join('');
+        }
+        const tzCaveatEl = $('#us-geography-timezones-caveat');
+        if (tzCaveatEl) tzCaveatEl.textContent = tz.caveat || '';
+      } else {
+        tzPanel.hidden = true;
+      }
     }
 
     const caveatEl = $('#us-geography-caveat');

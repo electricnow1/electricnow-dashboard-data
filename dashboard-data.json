@@ -9663,6 +9663,93 @@
       "sessions": 11
     },
     "sumStateActiveUsers": 4623,
+    "timeZoneUsage": {
+      "label": "Share of U.S. sessions by time-zone grouping",
+      "metric": "sessions",
+      "groupedTotalSessions": 9780,
+      "groups": [
+        {
+          "key": "pacific",
+          "name": "Pacific time",
+          "sessions": 1214,
+          "pct": 12.4,
+          "stateCount": 6,
+          "states": [
+            "CA",
+            "OR",
+            "WA",
+            "NV",
+            "AK",
+            "HI"
+          ]
+        },
+        {
+          "key": "centralMountain",
+          "name": "Central/Mountain time",
+          "sessions": 3822,
+          "pct": 39.1,
+          "stateCount": 25,
+          "states": [
+            "AZ",
+            "CO",
+            "ID",
+            "MT",
+            "NM",
+            "UT",
+            "WY",
+            "ND",
+            "SD",
+            "NE",
+            "KS",
+            "OK",
+            "TX",
+            "MN",
+            "IA",
+            "MO",
+            "AR",
+            "LA",
+            "WI",
+            "IL",
+            "MS",
+            "AL",
+            "TN",
+            "KY",
+            "IN"
+          ]
+        },
+        {
+          "key": "eastCoast",
+          "name": "East Coast time",
+          "sessions": 4744,
+          "pct": 48.5,
+          "stateCount": 20,
+          "states": [
+            "ME",
+            "NH",
+            "VT",
+            "MA",
+            "RI",
+            "CT",
+            "NY",
+            "NJ",
+            "PA",
+            "DE",
+            "MD",
+            "DC",
+            "VA",
+            "WV",
+            "NC",
+            "SC",
+            "GA",
+            "FL",
+            "OH",
+            "MI"
+          ]
+        }
+      ],
+      "caveat": "Time-zone grouping is estimated from state-level GA4 geography and uses sessions (additive), not deduplicated users. Split-time-zone states are assigned pragmatically to a single group; Alaska and Hawaii are grouped with Pacific for simplicity.",
+      "methodologyNote": "States mapped to three groupings: Pacific = CA, OR, WA, NV, AK, HI; Central/Mountain = AZ, CO, ID, MT, NM, UT, WY, ND, SD, NE, KS, OK, TX, MN, IA, MO, AR, LA, WI, IL, MS, AL, TN, KY, IN; East Coast = ME, NH, VT, MA, RI, CT, NY, NJ, PA, DE, MD, DC, VA, WV, NC, SC, GA, FL, OH, MI. Percentages are share of grouped U.S. sessions (denominator 9780) and sum to 100%."
+    },
     "summaryLine": "U.S. app usage is concentrated in major metros such as New York, Los Angeles, Chicago, Houston, and Philadelphia, with Texas, Florida, and California the top states.",
     "caveat": "GA4 geography is based on available location signals for GA4 property 497892271 and is directional. City- and state-level active-user counts are NOT additive across rows: the same person can appear in more than one city/state, so the sum of state active users (4,623) is higher than the deduplicated U.S. total (3,669). Use active users for ranking, not as an exact per-area headcount. Sessions, engaged sessions, screen/page views and events are event counts and aggregate additively. This is app/platform usage, not landing-page acquisition traffic and not paid-ad geography.",
     "methodologyNote": "Platform-audience rule preserved: landing-page traffic is acquisition-only and is reported separately in Web Acquisition, not in platform audience. This section is separate from Apple territory/download reporting, Roku app reporting, YouTube, and paid-ad geography. A small \"(not set)\" region (3 active users) and non-U.S. activity are excluded from the U.S. rankings."
