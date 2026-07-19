@@ -31,7 +31,7 @@
 
   // Embedded data snapshot (overridden at runtime by hosted JSON fetch when available).
   window.ELECTRICNOW_DASHBOARD_DATA = {
-    "generatedAt": "2026-07-13 09:15 PDT",
+    "generatedAt": "2026-07-19 09:24 PDT",
     "property": "GA4 property 497892271",
     "sourceLabel": "Internal GA4 pull, property 497892271",
     "periods": {
@@ -1903,8 +1903,9 @@
       "Time-on-platform and event/segment scorecards are held at the last fully-instrumented week (Jun 29-Jul 5, 2026) and marked stale: the Jul 13 GA4 pull was daily top-line only, without userEngagementDuration, event breakdown or device/app/title segments.",
       "Visible platform sales are unchanged at 67 purchases / $1,244.33 gross ($1,056.05 developer rev share): no new Stripe charges (connected, preserved 24/$484.76), no new Roku purchases (latest Jul 13 Sales Activity Report purchase still Jun 30; Roku 21/$396.79), Apple preserved 22/$362.78.",
       "Paid acquisition is effectively off: Meta's Jul 5-11 report is $0.00 spend / 0 installs - an intentional pivot from Meta Ads to Roku Ads (low mobile retention; TV is the priority audience; DotStudio setting up Roku conversion tracking). Google Ads connected with no rows for Jul 6-12 (no spend). We do NOT claim true ROAS.",
-      "Roku app engagement (Jul 5-11): 191 new installs, 126 uninstalls (net +65), 289,390 cumulative, 349 avg daily viewers, 86.39 avg min/viewer, 3,513 hours streamed - eased vs the prior report.",
-      "US audience geography (GA4 property 497892271, Jul 6-12, 2026): app usage is concentrated in major metros such as New York, Los Angeles, Chicago, Houston and Philadelphia, with Texas, Florida and California the top states. City/state active-user counts are directional (not additive across rows) and reflect app/platform usage, not landing-page acquisition."
+      "Roku app engagement (Jul 11-17): 195 new installs, 125 uninstalls (net +70), 289,549 cumulative, 340 avg daily viewers, 90.99 avg min/viewer, 3,606 hours streamed - roughly steady vs the prior report.",
+      "US audience geography (GA4 property 497892271, Jul 6-12, 2026): app usage is concentrated in major metros such as New York, Los Angeles, Chicago, Houston and Philadelphia, with Texas, Florida and California the top states. City/state active-user counts are directional (not additive across rows) and reflect app/platform usage, not landing-page acquisition.",
+      "Apple downloads eased to 97 for Jul 12-18, 2026 (US, daily avg 14), down 29.2% from 137 the prior week; downloads only, no new Apple sales, so visible platform sales are unchanged."
     ],
     "instrumentationGaps": [
       "No separate GA4 event found for go_ad_free_click yet.",
@@ -7784,20 +7785,36 @@
     "rokuAppEngagement": {
       "sourceLabel": "Roku App Engagement email report",
       "sourceDetail": "Roku app engagement is parsed from the latest Roku App Engagement PDF emailed from bdp_noreply@data.roku.com. It measures Roku app/channel-store usage and is shown separately from GA4 app/web metrics.",
-      "reportPeriod": "Jul 5-Jul 11, 2026",
-      "rawReportPeriod": "Jul 5-Jul 11, 2026 (generated Jul 13)",
+      "reportPeriod": "Jul 11-Jul 17, 2026",
+      "rawReportPeriod": "Jul 11-Jul 17, 2026 (generated Jul 19)",
       "channelStoreCode": "us",
-      "reportGenerated": "July 13, 2026 at 7:06 AM PDT",
+      "reportGenerated": "July 19, 2026 at 6:54 AM PDT",
       "dateLabels": [
-        "Sun Jul 5",
-        "Mon Jul 6",
-        "Tue Jul 7",
-        "Wed Jul 8",
-        "Thu Jul 9",
-        "Fri Jul 10",
-        "Sat Jul 11"
+        "Sat Jul 11",
+        "Sun Jul 12",
+        "Mon Jul 13",
+        "Tue Jul 14",
+        "Wed Jul 15",
+        "Thu Jul 16",
+        "Fri Jul 17"
       ],
       "metrics": {
+        "newInstalls": 195,
+        "uninstalls": 125,
+        "netInstalls": 70,
+        "cumulativeInstalls": 289549,
+        "avgDailyViewers": 340,
+        "avgMinPerViewer": 90.99,
+        "totalHoursStreamed": 3606
+      },
+      "reportEmailDate": "2026-07-19T13:55:00+00:00",
+      "attachmentFilename": "App_Engagement_2026-07-19T0655.pdf",
+      "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement.",
+      "status": "CURRENT_PARSED",
+      "staleNote": "Jul 19, 2026 Roku App Engagement report (covers Jul 11-Jul 17, 2026) parsed from the ROKU Outlook folder PDF. Roughly steady vs the prior report: new installs 195 (was 191), net installs +70 (was +65), avg daily viewers 340 (was 349), avg min/viewer 90.99 (was 86.39), total hours streamed 3,606 (was 3,513); cumulative installs 289,549. The Viewership Summary PDF was reviewed (chart-only, no new scalar totals). No new Roku Sales Activity Report arrived since Jul 13 (Roku sales preserved). TRC Live Percent/Average Session and TRC Live Dashboard reports remain excluded from app/platform usage.",
+      "lastSuccessfulReportPeriod": "Jul 11-Jul 17, 2026",
+      "previousReportPeriod": "Jul 5-Jul 11, 2026",
+      "previousMetrics": {
         "newInstalls": 191,
         "uninstalls": 126,
         "netInstalls": 65,
@@ -7805,22 +7822,6 @@
         "avgDailyViewers": 349,
         "avgMinPerViewer": 86.39,
         "totalHoursStreamed": 3513
-      },
-      "reportEmailDate": "2026-07-13T14:06:00+00:00",
-      "attachmentFilename": "App_Engagement_2026-07-13T0706.pdf",
-      "note": "Roku TRC Live Dashboard reports are intentionally excluded from app/platform usage to avoid mixing Roku Channel live-stream consumption with ElectricNOW app engagement.",
-      "status": "CURRENT_PARSED",
-      "staleNote": "Jul 13, 2026 Roku App Engagement report (covers Jul 5-Jul 11, 2026) parsed from the ROKU Outlook folder PDF. Engagement eased vs the prior report: new installs 191 (was 239), net installs +65 (was +106), avg daily viewers 349 (was 340), avg min/viewer 86.39 (was 95.3), total hours streamed 3,513 (was 3,777); cumulative installs 289,390. The Viewership Summary PDF was reviewed (chart-only, no new scalar totals). TRC Live Percent/Average Session and TRC Live Dashboard reports remain excluded from app/platform usage.",
-      "lastSuccessfulReportPeriod": "Jul 5-Jul 11, 2026",
-      "previousReportPeriod": "Jul 2-Jul 8, 2026",
-      "previousMetrics": {
-        "newInstalls": 239,
-        "uninstalls": 133,
-        "netInstalls": 106,
-        "cumulativeInstalls": 289318,
-        "avgDailyViewers": 340,
-        "avgMinPerViewer": 95.3,
-        "totalHoursStreamed": 3777
       }
     },
     "visitSummary": {
@@ -8199,65 +8200,65 @@
     "manualAppleDownloads": {
       "sourceLabel": "Manual Apple App Store Connect snapshot",
       "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-      "capturedAt": "2026-07-13 21:00 PDT",
-      "enteredAt": "2026-07-13 21:00 PDT",
+      "capturedAt": "2026-07-19 09:05 PDT",
+      "enteredAt": "2026-07-19 09:05 PDT",
       "uploadedAttachments": [
-        "uploaded_attachments/2fb150d1b4b74be3ba6d9b522105783a/image.jpeg"
+        "uploaded_attachments/02fbe109d92f4d0089c1fa81242f1913/image.jpeg"
       ],
       "product": "ElectricNOW",
       "platform": "Free iOS/watchOS/tvOS",
-      "period": "Jul 6-Jul 12, 2026",
-      "start": "2026-07-06",
-      "end": "2026-07-12",
-      "downloads": 137,
-      "displayDownloads": "137",
-      "dailyAverage": 20,
+      "period": "Jul 12-Jul 18, 2026",
+      "start": "2026-07-12",
+      "end": "2026-07-18",
+      "downloads": 97,
+      "displayDownloads": "97",
+      "dailyAverage": 14,
       "daily": [
-        {
-          "date": "2026-07-06",
-          "label": "July 6, 2026",
-          "downloads": 20
-        },
-        {
-          "date": "2026-07-07",
-          "label": "July 7, 2026",
-          "downloads": 26
-        },
-        {
-          "date": "2026-07-08",
-          "label": "July 8, 2026",
-          "downloads": 24
-        },
-        {
-          "date": "2026-07-09",
-          "label": "July 9, 2026",
-          "downloads": 25
-        },
-        {
-          "date": "2026-07-10",
-          "label": "July 10, 2026",
-          "downloads": 17
-        },
-        {
-          "date": "2026-07-11",
-          "label": "July 11, 2026",
-          "downloads": 12
-        },
         {
           "date": "2026-07-12",
           "label": "July 12, 2026",
           "downloads": 13
+        },
+        {
+          "date": "2026-07-13",
+          "label": "July 13, 2026",
+          "downloads": 10
+        },
+        {
+          "date": "2026-07-14",
+          "label": "July 14, 2026",
+          "downloads": 13
+        },
+        {
+          "date": "2026-07-15",
+          "label": "July 15, 2026",
+          "downloads": 12
+        },
+        {
+          "date": "2026-07-16",
+          "label": "July 16, 2026",
+          "downloads": 10
+        },
+        {
+          "date": "2026-07-17",
+          "label": "July 17, 2026",
+          "downloads": 28
+        },
+        {
+          "date": "2026-07-18",
+          "label": "July 18, 2026",
+          "downloads": 11
         }
       ],
-      "deltaPct": -67.7,
+      "deltaPct": -29.2,
       "territories": [
         {
           "territory": "United States",
-          "downloads": 137,
-          "deltaPct": -67.7
+          "downloads": 97,
+          "deltaPct": -29.2
         }
       ],
-      "note": "Manual Apple Connect screenshot entered Jul 13, 2026 (screenshot uploaded ~Jul 13 21:00 PDT). Daily U.S. downloads total 137 for Jul 6-Jul 12, 2026 (the latest complete week): Jul 6 (20), Jul 7 (26), Jul 8 (24), Jul 9 (25), Jul 10 (17), Jul 11 (12), Jul 12 (13). Down 67.7% vs the prior Jun 29-Jul 5 = 424 window, which is preserved below as priorSnapshot and is not double-counted. This is downloads only; there were NO new Apple iOS sales in this window, so Apple sales and visible platform sales totals are unchanged. fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
+      "note": "Manual Apple Connect screenshot entered Jul 19, 2026 (~09:05 PDT). Daily U.S. downloads total 97 for Jul 12-Jul 18, 2026: Jul 12 (13), Jul 13 (10), Jul 14 (13), Jul 15 (12), Jul 16 (10), Jul 17 (28), Jul 18 (11). Down 29.2% vs the prior Jul 6-Jul 12 = 137 window, preserved below as priorSnapshot and not double-counted. Downloads only; there were NO new Apple iOS sales in this window, so Apple sales and visible platform sales totals are unchanged. fiveWeekSnapshot history preserved. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
       "fiveWeekSnapshot": {
         "period": "Apr 27-May 31, 2026",
         "start": "2026-04-27",
@@ -8280,10 +8281,10 @@
         ]
       },
       "priorSnapshot": {
-        "period": "Jun 29-Jul 5, 2026",
-        "start": "2026-06-29",
-        "end": "2026-07-05",
-        "downloads": 424
+        "period": "Jul 6-Jul 12, 2026",
+        "start": "2026-07-06",
+        "end": "2026-07-12",
+        "downloads": 137
       }
     },
     "manualDataPatch": {
@@ -8311,8 +8312,8 @@
       "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
     },
     "plainEnglishSummary": {
-      "generatedAt": "2026-07-13T09:15:00-07:00",
-      "overview": "This week (Jul 6-12, 2026) traffic eased modestly and paid acquisition was effectively switched off, while the audience stayed engaged. Property-wide GA4 (property 497892271) sessions were 9,971 (about -3.4% vs Jun 29-Jul 5's 10,320), new users 1,179 (-22.4%), screen/page views 31,770 (+6.7%) and event count 968,283; week-unique active users are ESTIMATED at ~3,800 (vs 4,158) because week-level de-duplication is not additive. Engagement rate stayed healthy at 78.24% (vs 77.97%). Time-on-platform and event/segment scorecards are HELD at the last fully-instrumented week (Jun 29-Jul 5) and marked stale, because the Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail). Visible platform sales were UNCHANGED at 67 purchases / $1,244.33 gross ($1,056.05 developer rev share): no new Stripe succeeded charges in the window (Stripe connected, preserved at 24/$484.76), no new Roku purchases (latest Jul 13 Sales Activity Report purchase is still Jun 30; Roku preserved at 21/$396.79), and Apple preserved at 22/$362.78. On paid acquisition, Meta's newest report (Jul 5-11) is $0.00 spend / 0 impressions / 0 installs - an INTENTIONAL pivot away from Meta Ads to Roku Ads (PC Social Media cites low mobile retention; TV is the priority audience; DotStudio is setting up Roku conversion tracking). Google Ads also had no spend (connector connected, zero rows for Jul 6-12). So essentially no paid acquisition ran on Meta or Google this week, consistent with the modest traffic dip. YouTube (a separate channel) was not re-pulled this run and is preserved as last-good. Roku app engagement (Jul 5-11 report) eased: 191 new installs, 126 uninstalls (net +65), 289,390 cumulative, 349 avg daily viewers, 86.39 avg min/viewer, 3,513 hours streamed. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales (Google Play may be missing) - and YouTube revenue is a separate channel. VERDICT on paid: with Meta paused and Google idle, there is no paid acquisition to judge this week; the plan is to prove Roku Ads once conversion tracking is live. We do NOT claim true ROAS. The GA4 complete-week window advances to Jul 6-12, 2026 (previous complete week Jun 29-Jul 5 is the comparison baseline).",
+      "generatedAt": "2026-07-19T09:24:00-07:00",
+      "overview": "MANUAL REFRESH (Sun Jul 19, 2026): this run ingested the two newly-available sources - the latest Apple App Store downloads snapshot (Jul 12-18, 2026 = 97 downloads, down 29.2% from 137) and the latest Roku App Engagement report (Jul 11-17, 2026). GA4 traffic/engagement, Stripe/Roku/Apple sales, Meta and Google Ads, and YouTube were NOT re-pulled this run (the sandbox connector bridge was unavailable to this refresh) and are carried forward from the Jul 13 complete-week refresh (Jul 6-12, 2026) - preserved, not zeroed. This week (Jul 6-12, 2026) traffic eased modestly and paid acquisition was effectively switched off, while the audience stayed engaged. Property-wide GA4 (property 497892271) sessions were 9,971 (about -3.4% vs Jun 29-Jul 5's 10,320), new users 1,179 (-22.4%), screen/page views 31,770 (+6.7%) and event count 968,283; week-unique active users are ESTIMATED at ~3,800 (vs 4,158) because week-level de-duplication is not additive. Engagement rate stayed healthy at 78.24% (vs 77.97%). Time-on-platform and event/segment scorecards are HELD at the last fully-instrumented week (Jun 29-Jul 5) and marked stale, because the Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail). Visible platform sales were UNCHANGED at 67 purchases / $1,244.33 gross ($1,056.05 developer rev share): no new Stripe succeeded charges in the window (Stripe connected, preserved at 24/$484.76), no new Roku purchases (latest Jul 13 Sales Activity Report purchase is still Jun 30; Roku preserved at 21/$396.79), and Apple preserved at 22/$362.78. On paid acquisition, Meta's newest report (Jul 5-11) is $0.00 spend / 0 impressions / 0 installs - an INTENTIONAL pivot away from Meta Ads to Roku Ads (PC Social Media cites low mobile retention; TV is the priority audience; DotStudio is setting up Roku conversion tracking). Google Ads also had no spend (connector connected, zero rows for Jul 6-12). So essentially no paid acquisition ran on Meta or Google this week, consistent with the modest traffic dip. YouTube (a separate channel) was not re-pulled this run and is preserved as last-good. Roku app engagement (Jul 11-17 report, generated Jul 19) held roughly steady: 195 new installs, 125 uninstalls (net +70), 289,549 cumulative, 340 avg daily viewers, 90.99 avg min/viewer, 3,606 hours streamed (vs 191 new / net +65 / 3,513 hours the prior week). Apple downloads (manual snapshot) eased to 97 for Jul 12-18 (US, daily avg 14), down 29.2% from 137; downloads only, no new Apple sales. Visible Platform Sales are Stripe + Roku + manual Apple only - not total ElectricNOW sales (Google Play may be missing) - and YouTube revenue is a separate channel. VERDICT on paid: with Meta paused and Google idle, there is no paid acquisition to judge this week; the plan is to prove Roku Ads once conversion tracking is live. We do NOT claim true ROAS. The GA4 complete-week window advances to Jul 6-12, 2026 (previous complete week Jun 29-Jul 5 is the comparison baseline).",
       "bullets": [
         "Traffic: GA4 property-wide sessions were 9,971 in the complete week Jul 6-12, 2026 (about -3.4% vs Jun 29-Jul 5's 10,320); new users 1,179 (-22.4%). Landing-excluded platform visits were about 9,078 (vs 9,427). Week-unique active users are ESTIMATED at ~3,800 (vs 4,158) because week-level de-duplication is not additive - this figure is an estimate, not a raw count.",
         "Engagement: GA4 engagement rate stayed healthy at 78.24% (vs 77.97%). Time-on-platform (userEngagementDuration) and event/segment breakdowns were NOT in this daily-only pull, so engagement-hours, minutes-per-user/session, viewing-behavior and app-store-usage scorecards are HELD at the last fully-instrumented week (Jun 29-Jul 5) and marked stale.",
@@ -8320,8 +8321,9 @@
         "Paid acquisition (Meta, Jul 5-11, 2026): $0.00 spend, 0 impressions, 0 link clicks, 0 installs - campaign PAUSED. This is an intentional pivot away from Meta Ads to Roku Ads (PC Social Media / Nathan): mobile iOS/Android retention was too low, TV is the priority audience, and DotStudio is setting up Roku conversion tracking. Prior Meta report (Jul 2-8) was $40.80 / 23 iOS installs at $1.77. These were free installs, not paid sales - we do NOT claim true ROAS.",
         "Google Ads: CONNECTED this run and returned no rows for Jul 6-12, 2026 - no active campaign spend. Combined with Meta's pause, essentially no paid acquisition ran on either channel this week; historical Google Ads figures are preserved for reference, not zeroed.",
         "YouTube (a separate channel, NOT platform sales): not re-pulled this run; last-good complete-week figures (Jun 29-Jul 5: 175,840 views) and the July 11 title fix, YTD revenue and on-demand-only Top 50 are preserved unchanged.",
-        "Roku app engagement (Jul 13 report, Jul 5-11): 191 new installs, 126 uninstalls (net +65), 289,390 cumulative installs, 349 avg daily viewers, 86.39 avg min/viewer, 3,513 total hours streamed - eased vs the prior report (239 new / net +106 / 3,777 hours). Tracked separately from GA4 and from Roku live TRC reports (TRC Live reports remain excluded from app usage).",
-        "Ad-impression grain: distinguish paid-campaign impressions (0 Meta this week, campaign paused) from in-app ad impressions (GA4 ads_impression, last instrumented at 34,940 for Jun 29-Jul 5) - different things; the in-app figure is held/stale this run."
+        "Roku app engagement (Jul 19 report, Jul 11-17): 195 new installs, 125 uninstalls (net +70), 289,549 cumulative installs, 340 avg daily viewers, 90.99 avg min/viewer, 3,606 total hours streamed - roughly steady vs the prior report (191 new / net +65 / 3,513 hours). Tracked separately from GA4 and from Roku live TRC reports (TRC Live reports remain excluded from app usage).",
+        "Ad-impression grain: distinguish paid-campaign impressions (0 Meta this week, campaign paused) from in-app ad impressions (GA4 ads_impression, last instrumented at 34,940 for Jun 29-Jul 5) - different things; the in-app figure is held/stale this run.",
+        "Apple downloads (manual App Store Connect snapshot, Jul 12-18, 2026): 97 free iOS/watchOS/tvOS downloads (US), daily average 14, down 29.2% from 137 the prior week (Jul 6-12). Downloads only - no new Apple sales in this snapshot, so Apple and visible platform sales are unchanged."
       ]
     },
     "youtubeSummary": {
