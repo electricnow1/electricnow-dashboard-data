@@ -7061,7 +7061,8 @@
             "deltaType": "percent",
             "format": "number",
             "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-            "stale": true
+            "stale": true,
+            "comparisonUnavailable": true
           },
           {
             "key": "liveChannelViewers",
@@ -7076,7 +7077,8 @@
             "deltaType": "percent",
             "format": "number",
             "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-            "stale": true
+            "stale": true,
+            "comparisonUnavailable": true
           },
           {
             "key": "videoCompleteUsers",
@@ -7106,7 +7108,8 @@
             "deltaType": "percent",
             "format": "number",
             "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-            "stale": true
+            "stale": true,
+            "comparisonUnavailable": true
           },
           {
             "key": "adRequestEvents",
@@ -10117,13 +10120,15 @@
 
   // The vs-previous-7-days comparison needs a refreshed prior-period value. When
   // the underlying source could not be refreshed this run (comparisonUnavailable)
-  // or the delta is missing, "0.0%"/"new" is misleading — render "comparison
-  // unavailable" instead.
+  // or the delta is missing, "0.0%"/"new" is misleading — a held/stale metric
+  // carries the same value in both slots, so its delta is a self-comparison, not
+  // a real week-over-week change. Render a neutral "Held" badge for held/stale
+  // cards and "comparison unavailable" otherwise.
   function previousWeekCompare(card) {
     const delta = card.deltaVsPreviousPct;
     const hasDelta = delta !== null && delta !== undefined && !Number.isNaN(delta);
     if (card.comparisonUnavailable || !hasDelta) {
-      return { cls: 'baseline-unavailable', text: 'comparison unavailable' };
+      return { cls: 'baseline-unavailable', text: (card.stale || card.held) ? 'Held' : 'comparison unavailable' };
     }
     return { cls: deltaClass(delta), text: deltaText(card, delta) };
   }

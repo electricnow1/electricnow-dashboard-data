@@ -7029,7 +7029,8 @@
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true
+          "stale": true,
+          "comparisonUnavailable": true
         },
         {
           "key": "liveChannelViewers",
@@ -7044,7 +7045,8 @@
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true
+          "stale": true,
+          "comparisonUnavailable": true
         },
         {
           "key": "videoCompleteUsers",
@@ -7074,7 +7076,8 @@
           "deltaType": "percent",
           "format": "number",
           "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true
+          "stale": true,
+          "comparisonUnavailable": true
         },
         {
           "key": "adRequestEvents",
