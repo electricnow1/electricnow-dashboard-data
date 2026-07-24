@@ -178,7 +178,7 @@
       "deltaVsPreviousPct": -76.239067,
       "deltaType": "percent",
       "format": "number",
-      "context": "Web acquisition: users whose entry/page path contains “landing” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. This is acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Web acquisition: users whose entry/page path contains \u201clanding\u201d (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. This is acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "comparisonUnavailable": false,
       "stale": true
     },
@@ -194,7 +194,7 @@
       "deltaVsPreviousPct": -82.733813,
       "deltaType": "percent",
       "format": "number",
-      "context": "Web acquisition: users whose page path contains “devices” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Web acquisition: users whose page path contains \u201cdevices\u201d (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "comparisonUnavailable": false,
       "stale": true
     },
@@ -292,7 +292,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run \u2014 no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "stale": true
     },
     {
@@ -307,7 +307,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run \u2014 no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "stale": true
     },
     {
@@ -337,7 +337,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
-      "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run \u2014 no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "stale": true
     },
     {
@@ -1894,14 +1894,14 @@
     "engagementRateWeekToDate": 93.5336048879837
   },
   "plainEnglishInsights": [
-    "For Jul 13-Jul 19, ElectricNOW was mixed but not broken: GA4 active users declined 5.7%, while sessions were slightly up 0.9%, screen views edged up 0.6%, and total engaged time improved 1.1%. Engagement rate slipped from 78.5% to 77.2%, so attention is holding better than user growth. Visible platform sales improved because we found three new valid purchases: two Roku sales and one Stripe sale, adding $42.96 gross; Apple’s latest screenshot added 137 free downloads but no new sales.",
+    "For Jul 13-Jul 19, ElectricNOW was mixed but not broken: GA4 active users declined 5.7%, while sessions were slightly up 0.9%, screen views edged up 0.6%, and total engaged time improved 1.1%. Engagement rate slipped from 78.5% to 77.2%, so attention is holding better than user growth. Visible platform sales improved because we found three new valid purchases: two Roku sales and one Stripe sale, adding $42.96 gross; Apple\u2019s latest screenshot added 137 free downloads but no new sales.",
     "Traffic/use: active users were 3,498 (-5.7% vs prior week), sessions were 9,730 (+0.9%), and screen/page views were 31,964 (+0.6%).",
     "Attention: total engaged time was 5,736 hours (+1.1%), but engagement rate eased to 77.2% from 78.5%. This means fewer people, slightly more visits, and a little more total time, but a softer engaged-session mix.",
     "Sales: visible platform sales are now 68 purchases / $1,257.31 YTD. New additions were two Roku purchases ($22.98) and one Stripe purchase ($19.98). This is visible sales only, not true total ElectricNOW sales.",
     "Apple downloads: latest manual App Store Connect snapshot shows 137 free iOS/watchOS/tvOS downloads for Jul 17-Jul 23, up +41.2% from the prior 97-download snapshot. These are free app downloads, not paid app downloads or title sales.",
     "Roku app engagement: latest Roku App Engagement report (Jul 16-Jul 22) shows 218 new installs, 109 net installs, 344 average daily viewers, 80.16 avg minutes per viewer, and 3,216 hours streamed. Roku app metrics remain separate from GA4 and Roku TRC live-channel metrics.",
     "YouTube: Jul 13-Jul 19 produced 267,023 views, 102,215 hours watched, $4,346.32 estimated revenue, and $95,206.27 YTD estimated revenue. Flyboys remained the leading video by watch time.",
-    "Paid acquisition verdict: acceptable but needs proof of viewing. Meta is currently inactive ($0 spend, no clicks/downloads in Nathan’s latest report), while Google Ads is connected but rate-limited this refresh, so last-good Google data is preserved. Do not read paid-campaign impressions as ElectricNOW in-app ad impressions, and do not infer ROAS because ad-server revenue is unavailable.",
+    "Paid acquisition verdict: acceptable but needs proof of viewing. Meta is currently inactive ($0 spend, no clicks/downloads in Nathan\u2019s latest report), while Google Ads is connected but rate-limited this refresh, so last-good Google data is preserved. Do not read paid-campaign impressions as ElectricNOW in-app ad impressions, and do not infer ROAS because ad-server revenue is unavailable.",
     "Next tests: restart paid spend only with clean measurement, split iOS and Android budgets, focus geos where app usage already exists while reserving a small test budget for underpenetrated states, use show-specific creative tied to actual viewing quality, and review install-to-viewing behavior before scaling budget."
   ],
   "instrumentationGaps": [
@@ -4915,7 +4915,7 @@
           "rank": 2
         },
         {
-          "title": "ElectricNOW en Español",
+          "title": "ElectricNOW en Espa\u00f1ol",
           "plays": 101,
           "activeUsers": 12,
           "rank": 3
@@ -4999,8 +4999,8 @@
     "freshnessNote": "No fresh GA4 app-screen source in the Jun 29-Jul 5, 2026 run; values preserved from the last complete window where a clean app-screen export was available."
   },
   "titleViewership": {
-    "period": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
-    "note": "Top programs roll up GA4 play-event labels into parent shows/collections where possible and rank by play events because ads monetize playback. Live/FAST/linear channels are excluded from Top Shows and Top Videos and reported separately under Live channel usage. Title mapping remains dependent on app metadata quality. On hours watched: GA4 tracks these titles by play events (video starts) and unique viewers, not watched hours — the app fires a “play” event per title but no per-title watch-duration, video length, or completion event, so an hours-watched column cannot be shown here without inventing numbers. True watched-hours by title exists today only for YouTube (estimatedMinutesWatched), reported separately in the YouTube section and keyed to YouTube video IDs, so it cannot be mapped onto these app show names. To rank these titles by real hours watched, add a GA4 event that reports elapsed playback time per title — e.g. a periodic video_progress / video_complete event carrying video_title plus watch seconds (or engagement_time_msec scoped to the title) — after which this column can switch from Total viewers to Hours watched.",
+    "period": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+    "note": "Top programs roll up GA4 play-event labels into parent shows/collections where possible and rank by play events because ads monetize playback. Live/FAST/linear channels are excluded from Top Shows and Top Videos and reported separately under Live channel usage. Title mapping remains dependent on app metadata quality. On hours watched: GA4 tracks these titles by play events (video starts) and unique viewers, not watched hours \u2014 the app fires a \u201cplay\u201d event per title but no per-title watch-duration, video length, or completion event, so an hours-watched column cannot be shown here without inventing numbers. True watched-hours by title exists today only for YouTube (estimatedMinutesWatched), reported separately in the YouTube section and keyed to YouTube video IDs, so it cannot be mapped onto these app show names. To rank these titles by real hours watched, add a GA4 event that reports elapsed playback time per title \u2014 e.g. a periodic video_progress / video_complete event carrying video_title plus watch seconds (or engagement_time_msec scoped to the title) \u2014 after which this column can switch from Total viewers to Hours watched.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
       {
@@ -6144,7 +6144,7 @@
       "paidSocialSessions": 4547
     },
     "previousWeek": {
-      "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
+      "range": "Preserved \u00b7 last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
       "totalGa4ActiveUsers": 7608,
       "totalGa4Sessions": 13911,
       "totalGa4EngagementRate": 78.16835597728416,
@@ -6154,7 +6154,7 @@
       "paidSocialSessions": 3360
     },
     "currentWeek": {
-      "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+      "range": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
       "totalGa4ActiveUsers": 7282,
       "totalGa4Sessions": 13850,
       "totalGa4EngagementRate": 77.50180505415163,
@@ -6166,7 +6166,7 @@
     "landingPage": {
       "sourceLabel": "Landing page acquisition only",
       "currentWeek": {
-        "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+        "range": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
         "activeUsers": 744,
         "newUsers": null,
         "sessions": 1080,
@@ -6176,7 +6176,7 @@
         "eventCount": 2457
       },
       "previousWeek": {
-        "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
+        "range": "Preserved \u00b7 last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
         "activeUsers": 606,
         "newUsers": 497,
         "sessions": 909,
@@ -6769,7 +6769,7 @@
       "adErrorEvents": 158
     },
     "previousWeek": {
-      "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
+      "range": "Preserved \u00b7 last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
       "viewingEventUsers": 2570,
       "videoStartUsers": 2486,
       "videoStartEvents": 20510,
@@ -6785,7 +6785,7 @@
       "adErrorEvents": 112
     },
     "currentWeek": {
-      "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+      "range": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
       "videoStartUsers": 2319,
       "videoStartEvents": 20195,
       "videoPlayUsers": 295,
@@ -6898,7 +6898,7 @@
           "deltaVsPreviousPct": -76.239067,
           "deltaType": "percent",
           "format": "number",
-          "context": "Web acquisition: users whose entry/page path contains “landing” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. This is acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+          "context": "Web acquisition: users whose entry/page path contains \u201clanding\u201d (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. This is acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
           "comparisonUnavailable": false,
           "stale": true
         },
@@ -6914,7 +6914,7 @@
           "deltaVsPreviousPct": -82.733813,
           "deltaType": "percent",
           "format": "number",
-          "context": "Web acquisition: users whose page path contains “devices” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+          "context": "Web acquisition: users whose page path contains \u201cdevices\u201d (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
           "comparisonUnavailable": false,
           "stale": true
         },
@@ -6995,102 +6995,84 @@
       ]
     },
     {
-      "title": "Viewing Behavior",
-      "eyebrow": "Who actually watched or started video",
-      "definition": "Event-based viewing metrics across GA4-tracked platforms. Users are deduped within each event filter; event counts are labeled separately.",
+      "title": "Fresh GA4 Viewing Event Behavior",
+      "eyebrow": "What people actually triggered this week",
+      "definition": "These cards use the fresh Jul 13-Jul 19 GA4 eventName pull. They show event counts, not unique viewers. Live-channel-specific unique viewers remain in the Live TV/Roku sections when segmented live-source data is available.",
       "cards": [
         {
-          "key": "viewingEventUsers",
-          "label": "Viewing event users",
-          "baseline": 2410,
-          "launchBaseline": 1152,
-          "previousWeek": 1726,
-          "current": 1349,
-          "deltaPct": -21.84241,
-          "deltaVsLaunchPct": 17.100694,
-          "deltaVsPreviousPct": -21.84241,
+          "key": "playEvents",
+          "label": "Play events",
+          "baseline": 57320,
+          "launchBaseline": 57320,
+          "previousWeek": 47143,
+          "current": 56186,
+          "deltaPct": 19.182063,
+          "deltaVsLaunchPct": -1.978367,
+          "deltaVsPreviousPct": 19.182063,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users who triggered on-demand video_start or Live play events. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true
+          "context": "Total GA4 play events across tracked ElectricNOW platform surfaces. This is event volume, not unique viewers.",
+          "source": "Fresh GA4 eventName pull, property 497892271, Jul 13-Jul 19, 2026."
         },
         {
-          "key": "onDemandStartUsers",
-          "label": "On-demand start users",
-          "baseline": 2354,
-          "launchBaseline": 1020,
-          "previousWeek": 2354,
-          "current": 2354,
-          "deltaPct": 0.0,
-          "deltaVsLaunchPct": 130.784314,
-          "deltaVsPreviousPct": 0.0,
+          "key": "videoStartEvents",
+          "label": "Video start events",
+          "baseline": 20510,
+          "launchBaseline": 20510,
+          "previousWeek": 19437,
+          "current": 19194,
+          "deltaPct": -1.250193,
+          "deltaVsLaunchPct": -6.416382,
+          "deltaVsPreviousPct": -1.250193,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true,
-          "comparisonUnavailable": true
+          "context": "Total GA4 video_start events across tracked ElectricNOW platform surfaces. This is event volume, not unique users.",
+          "source": "Fresh GA4 eventName pull, property 497892271, Jul 13-Jul 19, 2026."
         },
         {
-          "key": "liveChannelViewers",
-          "label": "Live channel viewers",
-          "baseline": 132,
-          "launchBaseline": 121,
-          "previousWeek": 132,
-          "current": 132,
-          "deltaPct": 0.0,
-          "deltaVsLaunchPct": 9.090909,
-          "deltaVsPreviousPct": 0.0,
+          "key": "videoPlayEvents",
+          "label": "Video play events",
+          "baseline": 15366,
+          "launchBaseline": 15366,
+          "previousWeek": 12250,
+          "current": 6202,
+          "deltaPct": -49.371429,
+          "deltaVsLaunchPct": -59.638162,
+          "deltaVsPreviousPct": -49.371429,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true,
-          "comparisonUnavailable": true
+          "context": "Total GA4 video_play events across tracked ElectricNOW platform surfaces. This is event volume, not unique users. The sharp decline should be investigated as possible instrumentation or playback-state mix, not assumed to be true audience loss by itself.",
+          "source": "Fresh GA4 eventName pull, property 497892271, Jul 13-Jul 19, 2026."
         },
         {
-          "key": "videoCompleteUsers",
-          "label": "Video complete users",
-          "baseline": 209,
-          "launchBaseline": 219,
-          "previousWeek": 222,
-          "current": 344,
-          "deltaPct": 54.954955,
-          "deltaVsLaunchPct": 57.077626,
-          "deltaVsPreviousPct": 54.954955,
+          "key": "videoCompleteEvents",
+          "label": "Video complete events",
+          "baseline": 3391,
+          "launchBaseline": 3391,
+          "previousWeek": 5038,
+          "current": 5591,
+          "deltaPct": 10.976578,
+          "deltaVsLaunchPct": 64.877617,
+          "deltaVsPreviousPct": 10.976578,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users who triggered video_complete. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true
-        },
-        {
-          "key": "livePlayEvents",
-          "label": "Live play events",
-          "baseline": 3898,
-          "launchBaseline": 3952,
-          "previousWeek": 3898,
-          "current": 3898,
-          "deltaPct": 0.0,
-          "deltaVsLaunchPct": -1.366397,
-          "deltaVsPreviousPct": 0.0,
-          "deltaType": "percent",
-          "format": "number",
-          "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true,
-          "comparisonUnavailable": true
+          "context": "Total GA4 video_complete events across tracked ElectricNOW platform surfaces. This is event volume, not unique users.",
+          "source": "Fresh GA4 eventName pull, property 497892271, Jul 13-Jul 19, 2026."
         },
         {
           "key": "adRequestEvents",
           "label": "Ad request events",
-          "baseline": 25669,
-          "launchBaseline": 10589,
-          "previousWeek": 26144,
-          "current": 23803,
-          "deltaPct": -8.954253,
-          "deltaVsLaunchPct": 124.789876,
-          "deltaVsPreviousPct": -8.954253,
+          "baseline": 23365,
+          "launchBaseline": 23365,
+          "previousWeek": 23803,
+          "current": 24585,
+          "deltaPct": 3.2853,
+          "deltaVsLaunchPct": 5.221485,
+          "deltaVsPreviousPct": 3.2853,
           "deltaType": "percent",
           "format": "number",
-          "context": "Total ad request events generated by viewing activity. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "stale": true
+          "context": "Total GA4 ads_request events generated by viewing activity across tracked ElectricNOW platform surfaces.",
+          "source": "Fresh GA4 eventName pull, property 497892271, Jul 13-Jul 19, 2026."
         }
       ]
     },
@@ -8330,7 +8312,7 @@
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -8374,14 +8356,14 @@
     },
     "platformSplit": [
       {
-        "label": "Android · mobile",
+        "label": "Android \u00b7 mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android · smart tv",
+        "label": "Android \u00b7 smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -8542,7 +8524,7 @@
   },
   "plainEnglishSummary": {
     "generatedAt": "2026-07-24T07:45:00-07:00",
-    "overview": "For Jul 13-Jul 19, ElectricNOW was mixed but not broken: GA4 active users declined 5.7%, while sessions were slightly up 0.9%, screen views edged up 0.6%, and total engaged time improved 1.1%. Engagement rate slipped from 78.5% to 77.2%, so attention is holding better than user growth. Visible platform sales improved because we found three new valid purchases: two Roku sales and one Stripe sale, adding $42.96 gross; Apple’s latest screenshot added 137 free downloads but no new sales.",
+    "overview": "For Jul 13-Jul 19, ElectricNOW was mixed but not broken: GA4 active users declined 5.7%, while sessions were slightly up 0.9%, screen views edged up 0.6%, and total engaged time improved 1.1%. Engagement rate slipped from 78.5% to 77.2%, so attention is holding better than user growth. Visible platform sales improved because we found three new valid purchases: two Roku sales and one Stripe sale, adding $42.96 gross; Apple\u2019s latest screenshot added 137 free downloads but no new sales.",
     "bullets": [
       "Traffic/use: active users were 3,498 (-5.7% vs prior week), sessions were 9,730 (+0.9%), and screen/page views were 31,964 (+0.6%).",
       "Attention: total engaged time was 5,736 hours (+1.1%), but engagement rate eased to 77.2% from 78.5%. This means fewer people, slightly more visits, and a little more total time, but a softer engaged-session mix.",
@@ -8550,7 +8532,7 @@
       "Apple downloads: latest manual App Store Connect snapshot shows 137 free iOS/watchOS/tvOS downloads for Jul 17-Jul 23, up +41.2% from the prior 97-download snapshot. These are free app downloads, not paid app downloads or title sales.",
       "Roku app engagement: latest Roku App Engagement report (Jul 16-Jul 22) shows 218 new installs, 109 net installs, 344 average daily viewers, 80.16 avg minutes per viewer, and 3,216 hours streamed. Roku app metrics remain separate from GA4 and Roku TRC live-channel metrics.",
       "YouTube: Jul 13-Jul 19 produced 267,023 views, 102,215 hours watched, $4,346.32 estimated revenue, and $95,206.27 YTD estimated revenue. Flyboys remained the leading video by watch time.",
-      "Paid acquisition verdict: acceptable but needs proof of viewing. Meta is currently inactive ($0 spend, no clicks/downloads in Nathan’s latest report), while Google Ads is connected but rate-limited this refresh, so last-good Google data is preserved. Do not read paid-campaign impressions as ElectricNOW in-app ad impressions, and do not infer ROAS because ad-server revenue is unavailable.",
+      "Paid acquisition verdict: acceptable but needs proof of viewing. Meta is currently inactive ($0 spend, no clicks/downloads in Nathan\u2019s latest report), while Google Ads is connected but rate-limited this refresh, so last-good Google data is preserved. Do not read paid-campaign impressions as ElectricNOW in-app ad impressions, and do not infer ROAS because ad-server revenue is unavailable.",
       "Next tests: restart paid spend only with clean measurement, split iOS and Android budgets, focus geos where app usage already exists while reserving a small test budget for underpenetrated states, use show-specific creative tied to actual viewing quality, and review install-to-viewing behavior before scaling budget."
     ],
     "connectorStatus": {
@@ -8611,7 +8593,7 @@
         "key": "estimatedRevenueYtd",
         "label": "YTD YouTube revenue",
         "value": 87968.84,
-        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue — NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
+        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue \u2014 NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
       },
       {
         "key": "adImpressions",
@@ -8733,7 +8715,7 @@
       },
       {
         "videoId": "q5gQB_AGxlo",
-        "title": "🔴 Leverage: Redemption | Season 1 Stream | 24/7 Entertainment 🔴",
+        "title": "\ud83d\udd34 Leverage: Redemption | Season 1 Stream | 24/7 Entertainment \ud83d\udd34",
         "views": 13400,
         "estimatedMinutesWatched": 415967,
         "estimatedHoursWatched": 6932.78,
@@ -9806,5 +9788,12 @@
     "summaryLine": "Top U.S. states this week: California, Texas, Florida, New York, North Carolina. Time-zone mix: Pacific 12.8%, Central/Mountain 22.1%, East Coast 37.6%.",
     "caveat": "GA4 geography is approximate and based on active users with state-level signals; rows do not include non-U.S. users.",
     "methodologyNote": "Mapped U.S. regions into Pacific, Central/Mountain, East Coast, and other/unknown groups for ad-targeting direction."
-  }
+  },
+  "auditNotes": [
+    {
+      "date": "2026-07-24",
+      "section": "Viewing Behavior",
+      "note": "Replaced stale held unique-user/live-segment scorecards with fresh GA4 event-count cards for Jul 13-Jul 19, 2026. Old held cards were internally inconsistent because the dashboard had fresh event data but stale card flags from an earlier partial pull."
+    }
+  ]
 }
