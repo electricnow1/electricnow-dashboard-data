@@ -9293,7 +9293,10 @@
         "engagedSessions": 563,
         "totalEngagementHours": 599.53,
         "sharePct": 8.02,
-        "timeZoneGroup": "Pacific"
+        "timeZoneGroup": "Pacific",
+        "x": 12.0,
+        "y": 34.0,
+        "stateCode": "CA"
       },
       {
         "state": "Texas",
@@ -9302,7 +9305,10 @@
         "engagedSessions": 523,
         "totalEngagementHours": 370.3,
         "sharePct": 7.19,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 42.0,
+        "y": 48.0,
+        "stateCode": "TX"
       },
       {
         "state": "Florida",
@@ -9311,7 +9317,10 @@
         "engagedSessions": 517,
         "totalEngagementHours": 331.0,
         "sharePct": 6.21,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 70.0,
+        "y": 58.0,
+        "stateCode": "FL"
       },
       {
         "state": "New York",
@@ -9320,7 +9329,10 @@
         "engagedSessions": 343,
         "totalEngagementHours": 203.75,
         "sharePct": 5.35,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 79.0,
+        "y": 16.0,
+        "stateCode": "NY"
       },
       {
         "state": "North Carolina",
@@ -9329,7 +9341,10 @@
         "engagedSessions": 357,
         "totalEngagementHours": 271.61,
         "sharePct": 4.63,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 73.0,
+        "y": 39.0,
+        "stateCode": "NC"
       },
       {
         "state": "Pennsylvania",
@@ -9338,7 +9353,10 @@
         "engagedSessions": 328,
         "totalEngagementHours": 232.52,
         "sharePct": 4.39,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 76.0,
+        "y": 23.0,
+        "stateCode": "PA"
       },
       {
         "state": "Ohio",
@@ -9347,7 +9365,10 @@
         "engagedSessions": 402,
         "totalEngagementHours": 339.13,
         "sharePct": 4.02,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 65.0,
+        "y": 25.0,
+        "stateCode": "OH"
       },
       {
         "state": "Georgia",
@@ -9356,7 +9377,10 @@
         "engagedSessions": 327,
         "totalEngagementHours": 208.69,
         "sharePct": 3.99,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 65.0,
+        "y": 46.0,
+        "stateCode": "GA"
       },
       {
         "state": "Illinois",
@@ -9365,7 +9389,10 @@
         "engagedSessions": 284,
         "totalEngagementHours": 143.67,
         "sharePct": 3.62,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 58.0,
+        "y": 28.0,
+        "stateCode": "IL"
       },
       {
         "state": "Michigan",
@@ -9374,7 +9401,10 @@
         "engagedSessions": 293,
         "totalEngagementHours": 148.94,
         "sharePct": 3.54,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 62.0,
+        "y": 18.0,
+        "stateCode": "MI"
       },
       {
         "state": "Tennessee",
@@ -9383,7 +9413,10 @@
         "engagedSessions": 183,
         "totalEngagementHours": 88.18,
         "sharePct": 3.09,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 62.0,
+        "y": 39.0,
+        "stateCode": "TN"
       },
       {
         "state": "Indiana",
@@ -9392,7 +9425,10 @@
         "engagedSessions": 165,
         "totalEngagementHours": 141.97,
         "sharePct": 2.5,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 61.0,
+        "y": 27.0,
+        "stateCode": "IN"
       },
       {
         "state": "Virginia",
@@ -9401,7 +9437,10 @@
         "engagedSessions": 196,
         "totalEngagementHours": 164.6,
         "sharePct": 2.5,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 75.0,
+        "y": 32.0,
+        "stateCode": "VA"
       },
       {
         "state": "Arizona",
@@ -9410,7 +9449,10 @@
         "engagedSessions": 186,
         "totalEngagementHours": 125.61,
         "sharePct": 2.4,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 24.0,
+        "y": 42.0,
+        "stateCode": "AZ"
       },
       {
         "state": "Minnesota",
@@ -9419,7 +9461,10 @@
         "engagedSessions": 254,
         "totalEngagementHours": 326.23,
         "sharePct": 2.24,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 51.0,
+        "y": 14.0,
+        "stateCode": "MN"
       },
       {
         "state": "Alabama",
@@ -9428,7 +9473,10 @@
         "engagedSessions": 155,
         "totalEngagementHours": 100.69,
         "sharePct": 2.18,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 61.0,
+        "y": 46.0,
+        "stateCode": "AL"
       },
       {
         "state": "Missouri",
@@ -9437,7 +9485,10 @@
         "engagedSessions": 136,
         "totalEngagementHours": 80.06,
         "sharePct": 1.97,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 54.0,
+        "y": 32.0,
+        "stateCode": "MO"
       },
       {
         "state": "New Jersey",
@@ -9446,7 +9497,10 @@
         "engagedSessions": 194,
         "totalEngagementHours": 210.91,
         "sharePct": 1.86,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 80.0,
+        "y": 24.0,
+        "stateCode": "NJ"
       },
       {
         "state": "Oklahoma",
@@ -9455,7 +9509,10 @@
         "engagedSessions": 166,
         "totalEngagementHours": 118.94,
         "sharePct": 1.86,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 46.0,
+        "y": 40.0,
+        "stateCode": "OK"
       },
       {
         "state": "Oregon",
@@ -9464,7 +9521,10 @@
         "engagedSessions": 82,
         "totalEngagementHours": 73.83,
         "sharePct": 1.81,
-        "timeZoneGroup": "Pacific"
+        "timeZoneGroup": "Pacific",
+        "x": 14.0,
+        "y": 15.0,
+        "stateCode": "OR"
       },
       {
         "state": "Washington",
@@ -9473,7 +9533,10 @@
         "engagedSessions": 94,
         "totalEngagementHours": 30.46,
         "sharePct": 1.81,
-        "timeZoneGroup": "Pacific"
+        "timeZoneGroup": "Pacific",
+        "x": 15.0,
+        "y": 6.0,
+        "stateCode": "WA"
       },
       {
         "state": "Wisconsin",
@@ -9482,7 +9545,10 @@
         "engagedSessions": 128,
         "totalEngagementHours": 116.03,
         "sharePct": 1.65,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 55.0,
+        "y": 16.0,
+        "stateCode": "WI"
       },
       {
         "state": "Kentucky",
@@ -9491,7 +9557,10 @@
         "engagedSessions": 93,
         "totalEngagementHours": 42.48,
         "sharePct": 1.62,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 64.0,
+        "y": 33.0,
+        "stateCode": "KY"
       },
       {
         "state": "Massachusetts",
@@ -9500,7 +9569,10 @@
         "engagedSessions": 104,
         "totalEngagementHours": 52.02,
         "sharePct": 1.6,
-        "timeZoneGroup": "East Coast"
+        "timeZoneGroup": "East Coast",
+        "x": 84.0,
+        "y": 18.0,
+        "stateCode": "MA"
       },
       {
         "state": "Arkansas",
@@ -9509,7 +9581,10 @@
         "engagedSessions": 136,
         "totalEngagementHours": 94.0,
         "sharePct": 1.54,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 56.0,
+        "y": 42.0,
+        "stateCode": "AR"
       },
       {
         "state": "Colorado",
@@ -9518,7 +9593,10 @@
         "engagedSessions": 142,
         "totalEngagementHours": 113.79,
         "sharePct": 1.49,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 34.0,
+        "y": 32.0,
+        "stateCode": "CO"
       },
       {
         "state": "South Carolina",
@@ -9527,7 +9605,10 @@
         "engagedSessions": 141,
         "totalEngagementHours": 78.05,
         "sharePct": 1.41,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 70.0,
+        "y": 43.0,
+        "stateCode": "SC"
       },
       {
         "state": "Maryland",
@@ -9536,7 +9617,10 @@
         "engagedSessions": 75,
         "totalEngagementHours": 52.81,
         "sharePct": 1.33,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 79.0,
+        "y": 28.0,
+        "stateCode": "MD"
       },
       {
         "state": "Connecticut",
@@ -9545,7 +9629,10 @@
         "engagedSessions": 93,
         "totalEngagementHours": 69.04,
         "sharePct": 1.12,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 83.0,
+        "y": 20.0,
+        "stateCode": "CT"
       },
       {
         "state": "Louisiana",
@@ -9554,7 +9641,10 @@
         "engagedSessions": 74,
         "totalEngagementHours": 204.13,
         "sharePct": 1.12,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 56.0,
+        "y": 50.0,
+        "stateCode": "LA"
       },
       {
         "state": "Iowa",
@@ -9563,7 +9653,10 @@
         "engagedSessions": 74,
         "totalEngagementHours": 81.67,
         "sharePct": 1.01,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 53.0,
+        "y": 24.0,
+        "stateCode": "IA"
       },
       {
         "state": "Nevada",
@@ -9572,7 +9665,10 @@
         "engagedSessions": 82,
         "totalEngagementHours": 75.6,
         "sharePct": 1.01,
-        "timeZoneGroup": "Pacific"
+        "timeZoneGroup": "Pacific",
+        "x": 17.0,
+        "y": 28.0,
+        "stateCode": "NV"
       },
       {
         "state": "Kansas",
@@ -9581,7 +9677,10 @@
         "engagedSessions": 62,
         "totalEngagementHours": 43.13,
         "sharePct": 0.99,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 45.0,
+        "y": 32.0,
+        "stateCode": "KS"
       },
       {
         "state": "Mississippi",
@@ -9590,7 +9689,10 @@
         "engagedSessions": 72,
         "totalEngagementHours": 45.29,
         "sharePct": 0.8,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 59.0,
+        "y": 46.0,
+        "stateCode": "MS"
       },
       {
         "state": "West Virginia",
@@ -9599,7 +9701,10 @@
         "engagedSessions": 61,
         "totalEngagementHours": 99.92,
         "sharePct": 0.72,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 72.0,
+        "y": 30.0,
+        "stateCode": "WV"
       },
       {
         "state": "Idaho",
@@ -9608,7 +9713,10 @@
         "engagedSessions": 70,
         "totalEngagementHours": 34.19,
         "sharePct": 0.67,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 22.0,
+        "y": 16.0,
+        "stateCode": "ID"
       },
       {
         "state": "Nebraska",
@@ -9617,7 +9725,10 @@
         "engagedSessions": 39,
         "totalEngagementHours": 25.9,
         "sharePct": 0.67,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 45.0,
+        "y": 24.0,
+        "stateCode": "NE"
       },
       {
         "state": "Utah",
@@ -9626,7 +9737,10 @@
         "engagedSessions": 47,
         "totalEngagementHours": 27.59,
         "sharePct": 0.67,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 23.0,
+        "y": 28.0,
+        "stateCode": "UT"
       },
       {
         "state": "Maine",
@@ -9635,7 +9749,10 @@
         "engagedSessions": 58,
         "totalEngagementHours": 36.4,
         "sharePct": 0.61,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 85.0,
+        "y": 8.0,
+        "stateCode": "ME"
       },
       {
         "state": "New Mexico",
@@ -9644,7 +9761,10 @@
         "engagedSessions": 48,
         "totalEngagementHours": 31.21,
         "sharePct": 0.61,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 32.0,
+        "y": 42.0,
+        "stateCode": "NM"
       },
       {
         "state": "New Hampshire",
@@ -9653,7 +9773,10 @@
         "engagedSessions": 30,
         "totalEngagementHours": 35.38,
         "sharePct": 0.51,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 84.0,
+        "y": 15.0,
+        "stateCode": "NH"
       },
       {
         "state": "Rhode Island",
@@ -9662,7 +9785,10 @@
         "engagedSessions": 25,
         "totalEngagementHours": 16.1,
         "sharePct": 0.4,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 85.0,
+        "y": 19.0,
+        "stateCode": "RI"
       },
       {
         "state": "Montana",
@@ -9671,7 +9797,10 @@
         "engagedSessions": 26,
         "totalEngagementHours": 15.65,
         "sharePct": 0.32,
-        "timeZoneGroup": "Central/Mountain"
+        "timeZoneGroup": "Central/Mountain",
+        "x": 29.0,
+        "y": 10.0,
+        "stateCode": "MT"
       },
       {
         "state": "South Dakota",
@@ -9680,7 +9809,10 @@
         "engagedSessions": 14,
         "totalEngagementHours": 17.82,
         "sharePct": 0.32,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 44.0,
+        "y": 17.0,
+        "stateCode": "SD"
       },
       {
         "state": "District of Columbia",
@@ -9689,7 +9821,10 @@
         "engagedSessions": 17,
         "totalEngagementHours": 10.51,
         "sharePct": 0.29,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 79.0,
+        "y": 29.0,
+        "stateCode": "DC"
       },
       {
         "state": "Alaska",
@@ -9698,7 +9833,10 @@
         "engagedSessions": 13,
         "totalEngagementHours": 7.64,
         "sharePct": 0.24,
-        "timeZoneGroup": "Pacific"
+        "timeZoneGroup": "Pacific",
+        "x": 7.0,
+        "y": 56.0,
+        "stateCode": "AK"
       },
       {
         "state": "Vermont",
@@ -9707,7 +9845,10 @@
         "engagedSessions": 8,
         "totalEngagementHours": 0.29,
         "sharePct": 0.24,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 82.0,
+        "y": 13.0,
+        "stateCode": "VT"
       },
       {
         "state": "Hawaii",
@@ -9716,7 +9857,10 @@
         "engagedSessions": 7,
         "totalEngagementHours": 6.48,
         "sharePct": 0.21,
-        "timeZoneGroup": "Pacific"
+        "timeZoneGroup": "Pacific",
+        "x": 18.0,
+        "y": 56.0,
+        "stateCode": "HI"
       },
       {
         "state": "North Dakota",
@@ -9725,7 +9869,10 @@
         "engagedSessions": 8,
         "totalEngagementHours": 7.23,
         "sharePct": 0.21,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 44.0,
+        "y": 10.0,
+        "stateCode": "ND"
       },
       {
         "state": "Delaware",
@@ -9734,7 +9881,10 @@
         "engagedSessions": 14,
         "totalEngagementHours": 2.6,
         "sharePct": 0.19,
-        "timeZoneGroup": "Other/unknown"
+        "timeZoneGroup": "Other/unknown",
+        "x": 80.0,
+        "y": 27.0,
+        "stateCode": "DE"
       }
     ],
     "topCities": [
@@ -9929,7 +10079,7 @@
     ],
     "summaryLine": "Top U.S. states this week: California, Texas, Florida, New York, North Carolina. Time-zone mix: Pacific 13.1%, Central/Mountain 22.5%, East Coast 36.2%.",
     "caveat": "GA4 geography is approximate and based on active users with state-level signals; the Jul 27 pull returned a region-only dimension without a separate country filter, consistent with the established dashboard convention of treating this feed as U.S. state-level.",
-    "methodologyNote": "Mapped U.S. regions into Pacific, Central/Mountain, East Coast, and other/unknown groups for ad-targeting direction. City-level breakdown unchanged (no fresh city pull this refresh)."
+    "methodologyNote": "Mapped U.S. regions into Pacific, Central/Mountain, East Coast, and other/unknown groups for ad-targeting direction. City-level breakdown unchanged (no fresh city pull this refresh). Map bubble positions are fixed approximate state locations for display purposes only; they do not affect underlying GA4 figures."
   },
   "auditNotes": [
     {
