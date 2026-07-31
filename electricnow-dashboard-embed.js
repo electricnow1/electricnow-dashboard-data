@@ -754,6 +754,16 @@
   color: var(--good);
   font-size: 24px;
 }
+#electricnow-dashboard-embed .sales-stat-footnote {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 1.3;
+  opacity: 0.85;
+}
+#electricnow-dashboard-embed .sales-audit-recent {
+  border-color: rgba(255, 197, 66, 0.4);
+}
 #electricnow-dashboard-embed .sales-audit {
   border: 1px solid rgba(104, 183, 255, 0.34);
   border-radius: var(--radius-sm);
@@ -6702,31 +6712,31 @@ window.DASHBOARD_DATA = {
       "developerRevShare": 27.98
     },
     "thisWeek": {
-      "label": "Visible platform sales, complete rolling week",
+      "label": "Visible platform sales, complete usage week",
       "range": "Jul 21-Jul 27, 2026",
       "purchases": 5,
       "purchaseRevenue": 96.94,
       "developerRevShare": 92.94,
       "revenuePerPurchase": 19.39,
-      "note": "Complete Jul 21-Jul 27 rolling window: four Stripe sales ($76.95) and one Roku sale ($19.99). Apple had zero new sales this window (no screenshot since Jul 5)."
+      "note": "Complete Jul 21-Jul 27 rolling GA4 usage window: four Stripe sales ($76.95) and one Roku sale ($19.99). This is the dashboard's selected COMPLETE usage week, not the latest sales activity -- it does not include the Apple aggregate snapshot added Jul 31 for Jul 24-Jul 30 ($557.75 gross) or the 23 new Stripe charges added Jul 31 for Jul 29-Jul 31 ($482.77), both of which post-date this window and are already folded into the YTD total above, not into this card."
     },
     "currentCompleteWeek": {
-      "label": "Visible platform sales, complete rolling week",
+      "label": "Visible platform sales, complete usage week",
       "range": "Jul 21-Jul 27, 2026",
       "purchases": 5,
       "purchaseRevenue": 96.94,
       "developerRevShare": 92.94,
       "revenuePerPurchase": 19.39,
-      "note": "Complete Jul 21-Jul 27 rolling window: four Stripe sales ($76.95) and one Roku sale ($19.99). Apple had zero new sales this window (no screenshot since Jul 5)."
+      "note": "Complete Jul 21-Jul 27 rolling GA4 usage window: four Stripe sales ($76.95) and one Roku sale ($19.99). This is the dashboard's selected COMPLETE usage week, not the latest sales activity -- it does not include the Apple aggregate snapshot added Jul 31 for Jul 24-Jul 30 ($557.75 gross) or the 23 new Stripe charges added Jul 31 for Jul 29-Jul 31 ($482.77), both of which post-date this window and are already folded into the YTD total above, not into this card."
     },
     "weekToDate": {
-      "label": "Visible platform sales, complete rolling week",
+      "label": "Visible platform sales, complete usage week",
       "range": "Jul 21-Jul 27, 2026",
       "purchases": 5,
       "purchaseRevenue": 96.94,
       "developerRevShare": 92.94,
       "revenuePerPurchase": 19.39,
-      "note": "Complete Jul 21-Jul 27 rolling window: four Stripe sales ($76.95) and one Roku sale ($19.99). Apple had zero new sales this window (no screenshot since Jul 5)."
+      "note": "Complete Jul 21-Jul 27 rolling GA4 usage window: four Stripe sales ($76.95) and one Roku sale ($19.99). This is the dashboard's selected COMPLETE usage week, not the latest sales activity -- it does not include the Apple aggregate snapshot added Jul 31 for Jul 24-Jul 30 ($557.75 gross) or the 23 new Stripe charges added Jul 31 for Jul 29-Jul 31 ($482.77), both of which post-date this window and are already folded into the YTD total above, not into this card."
     },
     "recent12Days": {
       "label": "Visible sales last 12 days",
@@ -7220,12 +7230,38 @@ window.DASHBOARD_DATA = {
         "developerRevShare": 0.0
       }
     ],
-    "note": "Visible platform sales refreshed Jul 31: 101 purchases / $2495.71 YTD across Stripe (52/$1075.45), Roku (27/$499.73, unchanged), and manual Apple snapshots (22/$920.53, unchanged this run). This run's change: +23 Stripe purchases / +$482.77 since the Jul 28 refresh.",
+    "note": "Visible platform sales refreshed Jul 31: 101 purchases / $2495.71 YTD across Stripe (52/$1075.45), Roku (27/$499.73, unchanged), and manual Apple snapshots (22/$920.53). This run's changes: +23 Stripe purchases / +$482.77 since the Jul 28 refresh (Jul 29-Jul 31 charges), and +$557.75 Apple gross revenue from a new Jul 24-Jul 30 aggregate snapshot (Apple purchase COUNT unchanged at 22 because that snapshot is revenue-only with no per-transaction detail). The 'Sales in usage week' mini-card below still reflects the earlier, complete Jul 21-Jul 27 GA4 usage window and does not include these post-period Apple/Stripe additions; see 'Added after the usage week' for those.",
     "current": {
       "purchases": 78,
       "purchaseRevenue": 1455.19,
       "developerRevShare": 1247.31,
       "label": "Visible YTD (complete rolling week)"
+    },
+    "postUsageWeekAdditions": {
+      "label": "Added after the usage week (already counted in YTD, not in the usage-week card)",
+      "usageWeekRange": "Jul 21-Jul 27, 2026",
+      "asOf": "2026-07-31",
+      "detail": "These are the most recent source updates applied to the dashboard since the Jul 21-Jul 27 usage week closed. They use DIFFERENT, LATER date windows than the usage-week card above and are shown here for visibility into the latest refresh only. Their dollar amounts are already included in the $2,495.71 YTD total (via the Apple and Stripe YTD sub-totals) -- do NOT add these figures to the usage-week card or to the YTD card; that would double-count.",
+      "sources": [
+        {
+          "source": "Apple manual snapshot",
+          "range": "Jul 24-Jul 30, 2026",
+          "purchases": null,
+          "purchaseRevenue": 557.75,
+          "note": "Aggregate gross sales screenshot, revenue-only (no per-transaction count available)."
+        },
+        {
+          "source": "Stripe new charges",
+          "range": "Jul 29-Jul 31, 2026",
+          "purchases": 23,
+          "purchaseRevenue": 482.77,
+          "note": "23 new valid non-refunded Stripe charges identified since the Jul 28, 2026 08:11 PDT refresh."
+        }
+      ],
+      "combinedPurchaseRevenue": 1040.52,
+      "combinedPurchases": 23,
+      "combinedPurchasesNote": "Combined purchase count excludes Apple (revenue-only snapshot, no transaction count).",
+      "alreadyIncludedInYearToDate": true
     }
   },
   "contentUsage": {
@@ -13082,6 +13118,7 @@ function renderPurchases() {
   const monthToDate = sales.monthToDate || sales.recent12Days;
   const lastWeek = sales.lastWeek || sales.currentCompleteWeek;
   const thisWeek = sales.thisWeek || sales.weekToDate;
+  const postUsageWeekAdditions = sales.postUsageWeekAdditions;
   const sourceLabel = sales.sourceLabel || 'Visible platform sales';
   const sourceBreakout = (sales.sourceBreakout || [])
     .filter((source) => source.purchases || source.purchaseRevenue)
@@ -13118,15 +13155,24 @@ function renderPurchases() {
         <em>${lastWeek.range} · ${fmt.number(lastWeek.purchases)} purchases</em>
       </div>
       <div class="sales-stat baseline-set">
-        <span>Sales this week</span>
+        <span>Sales in usage week</span>
         <strong>${fmt.currency(thisWeek.purchaseRevenue)}</strong>
         <em>${thisWeek.range} · ${fmt.number(thisWeek.purchases)} purchases</em>
+        <em class="sales-stat-footnote">Complete GA4 usage week, not the latest sales &mdash; see "Added after usage week" below.</em>
       </div>
     </div>
     ${recentPaymentLine ? `<div class="sales-audit">
       <span>Most recent visible sales</span>
       <strong>${recentPaymentLine}</strong>
       <p>These are the latest sales visible through the sources currently connected, emailed, or manually snapshotted into the dashboard. They remain a partial sales view until Apple App Store is API-connected and Google Play sales are reconciled.</p>
+    </div>` : ''}
+    ${postUsageWeekAdditions ? `<div class="sales-audit sales-audit-recent">
+      <span>${escapeHtml(postUsageWeekAdditions.label)}</span>
+      <strong>${fmt.currency(postUsageWeekAdditions.combinedPurchaseRevenue)} combined</strong>
+      <p>${(postUsageWeekAdditions.sources || [])
+        .map((s) => `${escapeHtml(s.source)} ${escapeHtml(s.range)}: ${fmt.currency(s.purchaseRevenue)}${s.purchases != null ? ` / ${fmt.number(s.purchases)} purchases` : ' (revenue-only)'}`)
+        .join(' &middot; ')}</p>
+      <p>${escapeHtml(postUsageWeekAdditions.detail)}</p>
     </div>` : ''}
     ${appleDownloads ? `<div class="sales-audit">
       <span>Apple App Store Connect downloads</span>
