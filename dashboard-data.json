@@ -244,7 +244,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run \u2014 no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Users who triggered video_start outside the Live screen. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "stale": true
     },
     {
@@ -259,7 +259,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run \u2014 no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Users who triggered a Live play event. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "stale": true
     },
     {
@@ -289,7 +289,7 @@
       "deltaVsPreviousPct": 0.0,
       "deltaType": "percent",
       "format": "number",
-      "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run \u2014 no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
+      "context": "Total Live play events, not unique users. (Last-good Jun 8-14; not refreshed this run — no duration/stream/live source in this scheduled pull.) [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
       "stale": true
     },
     {
@@ -7438,7 +7438,7 @@
           "rank": 2
         },
         {
-          "title": "ElectricNOW en Espa\u00f1ol",
+          "title": "ElectricNOW en Español",
           "plays": 101,
           "activeUsers": 12,
           "rank": 3
@@ -7522,8 +7522,8 @@
     "freshnessNote": "No fresh GA4 app-screen source in the Jun 29-Jul 5, 2026 run; values preserved from the last complete window where a clean app-screen export was available."
   },
   "titleViewership": {
-    "period": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
-    "note": "Top programs roll up GA4 play-event labels into parent shows/collections where possible and rank by play events because ads monetize playback. Live/FAST/linear channels are excluded from Top Shows and Top Videos and reported separately under Live channel usage. Title mapping remains dependent on app metadata quality. On hours watched: GA4 tracks these titles by play events (video starts) and unique viewers, not watched hours \u2014 the app fires a \u201cplay\u201d event per title but no per-title watch-duration, video length, or completion event, so an hours-watched column cannot be shown here without inventing numbers. True watched-hours by title exists today only for YouTube (estimatedMinutesWatched), reported separately in the YouTube section and keyed to YouTube video IDs, so it cannot be mapped onto these app show names. To rank these titles by real hours watched, add a GA4 event that reports elapsed playback time per title \u2014 e.g. a periodic video_progress / video_complete event carrying video_title plus watch seconds (or engagement_time_msec scoped to the title) \u2014 after which this column can switch from Total viewers to Hours watched.",
+    "period": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+    "note": "Top programs roll up GA4 play-event labels into parent shows/collections where possible and rank by play events because ads monetize playback. Live/FAST/linear channels are excluded from Top Shows and Top Videos and reported separately under Live channel usage. Title mapping remains dependent on app metadata quality. On hours watched: GA4 tracks these titles by play events (video starts) and unique viewers, not watched hours — the app fires a “play” event per title but no per-title watch-duration, video length, or completion event, so an hours-watched column cannot be shown here without inventing numbers. True watched-hours by title exists today only for YouTube (estimatedMinutesWatched), reported separately in the YouTube section and keyed to YouTube video IDs, so it cannot be mapped onto these app show names. To rank these titles by real hours watched, add a GA4 event that reports elapsed playback time per title — e.g. a periodic video_progress / video_complete event carrying video_title plus watch seconds (or engagement_time_msec scoped to the title) — after which this column can switch from Total viewers to Hours watched.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
       {
@@ -8667,7 +8667,7 @@
       "paidSocialSessions": 4547
     },
     "previousWeek": {
-      "range": "Preserved \u00b7 last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
+      "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
       "totalGa4ActiveUsers": 7608,
       "totalGa4Sessions": 13911,
       "totalGa4EngagementRate": 78.16835597728416,
@@ -8677,7 +8677,7 @@
       "paidSocialSessions": 3360
     },
     "currentWeek": {
-      "range": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+      "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
       "totalGa4ActiveUsers": 7282,
       "totalGa4Sessions": 13850,
       "totalGa4EngagementRate": 77.50180505415163,
@@ -8689,7 +8689,7 @@
     "landingPage": {
       "sourceLabel": "Landing page acquisition only",
       "currentWeek": {
-        "range": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+        "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
         "activeUsers": 744,
         "newUsers": null,
         "sessions": 1080,
@@ -8699,7 +8699,7 @@
         "eventCount": 2457
       },
       "previousWeek": {
-        "range": "Preserved \u00b7 last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
+        "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
         "activeUsers": 606,
         "newUsers": 497,
         "sessions": 909,
@@ -9292,7 +9292,7 @@
       "adErrorEvents": 158
     },
     "previousWeek": {
-      "range": "Preserved \u00b7 last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
+      "range": "Preserved · last fresh Jun 1-Jun 7, 2026 (no fresh source this run)",
       "viewingEventUsers": 2570,
       "videoStartUsers": 2486,
       "videoStartEvents": 20510,
@@ -9308,7 +9308,7 @@
       "adErrorEvents": 112
     },
     "currentWeek": {
-      "range": "Preserved \u00b7 last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
+      "range": "Preserved · last fresh Jun 8-Jun 14, 2026 (no fresh source this run)",
       "videoStartUsers": 2319,
       "videoStartEvents": 20195,
       "videoPlayUsers": 295,
@@ -9867,7 +9867,7 @@
       "platformEngagementRate": 66.03993021903469,
       "platformEngagementSeconds": 20251827,
       "platformEngagementHours": 5625.5075,
-      "note": "No fresh landing-page-only GA4 pull was available in this Jul 28 refresh cycle. Platform-audience figures below apply last week\u2019s landing-vs-platform share (~3.2% of sessions) to this week\u2019s fresh GA4 totals as an ESTIMATE, not a fresh landing/device-path pull. Flagged for a fresh landing pull next scheduled refresh."
+      "note": "No fresh landing-page-only GA4 pull was available in this Jul 28 refresh cycle. Platform-audience figures below apply last week’s landing-vs-platform share (~3.2% of sessions) to this week’s fresh GA4 totals as an ESTIMATE, not a fresh landing/device-path pull. Flagged for a fresh landing pull next scheduled refresh."
     }
   },
   "weeklyTrend": [
@@ -10789,7 +10789,7 @@
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -10833,14 +10833,14 @@
     },
     "platformSplit": [
       {
-        "label": "Android \u00b7 mobile",
+        "label": "Android · mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android \u00b7 smart tv",
+        "label": "Android · smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -11168,6 +11168,9 @@
       "Apple manual": "MANUAL_UPDATED",
       "TVOD (Michael email)": "UPDATED_AGGREGATE_2026-08-02",
       "TVOD (Michael/user export)": "UPDATED_AGGREGATE_2026-08-02"
+    },
+    "sourceStatus": {
+      "DotStudios app ad-serving": "Manual export updated for Jul 26-Aug 1, 2026; requires weekly manual upload."
     }
   },
   "youtubeSummary": {
@@ -11218,7 +11221,7 @@
         "key": "estimatedRevenueYtd",
         "label": "YTD YouTube revenue",
         "value": 87968.84,
-        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue \u2014 NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
+        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue — NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
       },
       {
         "key": "adImpressions",
@@ -11328,7 +11331,7 @@
       },
       {
         "videoId": "13025kKEUUY",
-        "title": "Untitled video (YouTube ID 13025kKEUUY) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 13025kKEUUY) — title lookup unavailable this refresh",
         "views": 14985,
         "estimatedMinutesWatched": 196356,
         "estimatedHoursWatched": 3272.6,
@@ -11368,7 +11371,7 @@
       },
       {
         "videoId": "G_X8m-NJV-U",
-        "title": "Untitled video (YouTube ID G_X8m-NJV-U) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID G_X8m-NJV-U) — title lookup unavailable this refresh",
         "views": 5404,
         "estimatedMinutesWatched": 69027,
         "estimatedHoursWatched": 1150.45,
@@ -11378,7 +11381,7 @@
       },
       {
         "videoId": "6G2FEy9LGBw",
-        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) — title lookup unavailable this refresh",
         "views": 4907,
         "estimatedMinutesWatched": 59051,
         "estimatedHoursWatched": 984.18,
@@ -11388,7 +11391,7 @@
       },
       {
         "videoId": "NgCIyD4T8JM",
-        "title": "Untitled video (YouTube ID NgCIyD4T8JM) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID NgCIyD4T8JM) — title lookup unavailable this refresh",
         "views": 4127,
         "estimatedMinutesWatched": 54146,
         "estimatedHoursWatched": 902.43,
@@ -11448,7 +11451,7 @@
       },
       {
         "videoId": "pbLonEcXhTs",
-        "title": "Untitled video (YouTube ID pbLonEcXhTs) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID pbLonEcXhTs) — title lookup unavailable this refresh",
         "views": 1541,
         "estimatedMinutesWatched": 506,
         "estimatedHoursWatched": 8.43,
@@ -11458,7 +11461,7 @@
       },
       {
         "videoId": "JeeMINxXYwQ",
-        "title": "Untitled video (YouTube ID JeeMINxXYwQ) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID JeeMINxXYwQ) — title lookup unavailable this refresh",
         "views": 1491,
         "estimatedMinutesWatched": 31892,
         "estimatedHoursWatched": 531.53,
@@ -11498,7 +11501,7 @@
       },
       {
         "videoId": "6etBO8Z9IBA",
-        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) — title lookup unavailable this refresh",
         "views": 1168,
         "estimatedMinutesWatched": 24269,
         "estimatedHoursWatched": 404.48,
@@ -11508,7 +11511,7 @@
       },
       {
         "videoId": "Q9XTdOji2wc",
-        "title": "Untitled video (YouTube ID Q9XTdOji2wc) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID Q9XTdOji2wc) — title lookup unavailable this refresh",
         "views": 1101,
         "estimatedMinutesWatched": 26230,
         "estimatedHoursWatched": 437.17,
@@ -11518,7 +11521,7 @@
       },
       {
         "videoId": "He3ScSePRYM",
-        "title": "Untitled video (YouTube ID He3ScSePRYM) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID He3ScSePRYM) — title lookup unavailable this refresh",
         "views": 1069,
         "estimatedMinutesWatched": 26745,
         "estimatedHoursWatched": 445.75,
@@ -11528,7 +11531,7 @@
       },
       {
         "videoId": "89J-9vWWPuk",
-        "title": "Untitled video (YouTube ID 89J-9vWWPuk) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 89J-9vWWPuk) — title lookup unavailable this refresh",
         "views": 1036,
         "estimatedMinutesWatched": 20993,
         "estimatedHoursWatched": 349.88,
@@ -11538,7 +11541,7 @@
       },
       {
         "videoId": "rVC2lrrZvwc",
-        "title": "Untitled video (YouTube ID rVC2lrrZvwc) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID rVC2lrrZvwc) — title lookup unavailable this refresh",
         "views": 1035,
         "estimatedMinutesWatched": 21112,
         "estimatedHoursWatched": 351.87,
@@ -11548,7 +11551,7 @@
       },
       {
         "videoId": "V21Q6QjV0Hc",
-        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) — title lookup unavailable this refresh",
         "views": 1016,
         "estimatedMinutesWatched": 23796,
         "estimatedHoursWatched": 396.6,
@@ -11558,7 +11561,7 @@
       },
       {
         "videoId": "gJtM5e4S5sU",
-        "title": "Untitled video (YouTube ID gJtM5e4S5sU) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID gJtM5e4S5sU) — title lookup unavailable this refresh",
         "views": 1013,
         "estimatedMinutesWatched": 24085,
         "estimatedHoursWatched": 401.42,
@@ -12605,18 +12608,19 @@
     {
       "date": "2026-07-28",
       "section": "Full refresh",
-      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week\u2019s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
+      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week’s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
     },
     {
       "date": "2026-08-02T08:20:00-07:00",
       "type": "apple_stripe_refresh",
       "summary": "Applied Apple Jul 26-Aug 1 downloads/sales and fresh Stripe connector pull. Apple YTD $1046.68; Stripe YTD 88/$1822.11; visible YTD 137/$3368.52.",
       "stalePreservation": "GA4/Roku/YouTube/Google Ads/Meta/TVOD last-good values preserved where no fresh pull was applied; no values zeroed."
-    }
+    },
+    "Added DotStudios app ad-serving manual export for Jul 26-Aug 1, 2026 (37,918 requests, 52,316 impressions, 931 errors). Kept separate from GA4 ads events and paid media impressions."
   ],
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
-    "eyebrow": "User-provided Michael Johnson TVOD export \u2014 aggregate only",
+    "eyebrow": "User-provided Michael Johnson TVOD export — aggregate only",
     "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-02",
     "emailDate": "2026-08-02",
     "periodStart": "2026-07-03",
@@ -12956,5 +12960,539 @@
     "privacyNote": "Aggregated only; no customer emails or individual customer records are exposed.",
     "sourceUrl": null
   },
-  "weeklyTrendNote": "No fresh daily GA4 trend pull was requested in this Jul 28 ad-hoc refresh; daily weeklyTrend/monthlyTrend rows are preserved from the last scheduled refresh (Jul 27) and are not re-derived here. Aggregate KPI totals above ARE fresh for Jul 21-Jul 27."
+  "weeklyTrendNote": "No fresh daily GA4 trend pull was requested in this Jul 28 ad-hoc refresh; daily weeklyTrend/monthlyTrend rows are preserved from the last scheduled refresh (Jul 27) and are not re-derived here. Aggregate KPI totals above ARE fresh for Jul 21-Jul 27.",
+  "dotStudiosAppAds": {
+    "source": "DotStudios manual app ad-serving export",
+    "sourceType": "manual_weekly_upload",
+    "sourceFileLabel": "DotStudios app ads export pasted/uploaded Aug 2, 2026",
+    "dataFreshness": "manual_current",
+    "manualUpdateRequired": true,
+    "updatedAt": "2026-08-02T16:14:54.463156+00:00",
+    "periodStart": "2026-07-26",
+    "periodEnd": "2026-08-01",
+    "period": "2026-07-26 to 2026-08-01",
+    "rowCount": 393,
+    "totals": {
+      "requests": 37918,
+      "impressions": 52316,
+      "errors": 931,
+      "impressionsPerRequest": 1.38,
+      "impressionsPerRequestPct": 137.97,
+      "errorRatePct": 2.46
+    },
+    "dailyTrend": [
+      {
+        "label": "2026-07-26",
+        "date": "2026-07-26",
+        "requests": 4415,
+        "impressions": 5790,
+        "errors": 47,
+        "impressionsPerRequest": 1.31,
+        "impressionsPerRequestPct": 131.14,
+        "errorRatePct": 1.06,
+        "avgAdsPerPod": 1.31
+      },
+      {
+        "label": "2026-07-27",
+        "date": "2026-07-27",
+        "requests": 3576,
+        "impressions": 4698,
+        "errors": 47,
+        "impressionsPerRequest": 1.31,
+        "impressionsPerRequestPct": 131.38,
+        "errorRatePct": 1.31,
+        "avgAdsPerPod": 1.31
+      },
+      {
+        "label": "2026-07-28",
+        "date": "2026-07-28",
+        "requests": 5028,
+        "impressions": 5693,
+        "errors": 75,
+        "impressionsPerRequest": 1.13,
+        "impressionsPerRequestPct": 113.23,
+        "errorRatePct": 1.49,
+        "avgAdsPerPod": 1.13
+      },
+      {
+        "label": "2026-07-29",
+        "date": "2026-07-29",
+        "requests": 6355,
+        "impressions": 8809,
+        "errors": 203,
+        "impressionsPerRequest": 1.39,
+        "impressionsPerRequestPct": 138.62,
+        "errorRatePct": 3.19,
+        "avgAdsPerPod": 1.38
+      },
+      {
+        "label": "2026-07-30",
+        "date": "2026-07-30",
+        "requests": 6618,
+        "impressions": 9242,
+        "errors": 117,
+        "impressionsPerRequest": 1.4,
+        "impressionsPerRequestPct": 139.65,
+        "errorRatePct": 1.77,
+        "avgAdsPerPod": 1.4
+      },
+      {
+        "label": "2026-07-31",
+        "date": "2026-07-31",
+        "requests": 5948,
+        "impressions": 8545,
+        "errors": 179,
+        "impressionsPerRequest": 1.44,
+        "impressionsPerRequestPct": 143.66,
+        "errorRatePct": 3.01,
+        "avgAdsPerPod": 1.44
+      },
+      {
+        "label": "2026-08-01",
+        "date": "2026-08-01",
+        "requests": 5978,
+        "impressions": 9539,
+        "errors": 263,
+        "impressionsPerRequest": 1.6,
+        "impressionsPerRequestPct": 159.57,
+        "errorRatePct": 4.4,
+        "avgAdsPerPod": 1.6
+      }
+    ],
+    "topChannels": [
+      {
+        "label": "The Ark",
+        "channel": "The Ark",
+        "requests": 16832,
+        "impressions": 15996,
+        "errors": 149,
+        "impressionsPerRequest": 0.95,
+        "impressionsPerRequestPct": 95.03,
+        "errorRatePct": 0.89,
+        "avgAdsPerPod": 0.95
+      },
+      {
+        "label": "Leverage: Redemption - Season 3",
+        "channel": "Leverage: Redemption - Season 3",
+        "requests": 2508,
+        "impressions": 4278,
+        "errors": 61,
+        "impressionsPerRequest": 1.71,
+        "impressionsPerRequestPct": 170.57,
+        "errorRatePct": 2.43,
+        "avgAdsPerPod": 1.71
+      },
+      {
+        "label": "The Ark - Season 1",
+        "channel": "The Ark - Season 1",
+        "requests": 1276,
+        "impressions": 4065,
+        "errors": 182,
+        "impressionsPerRequest": 3.19,
+        "impressionsPerRequestPct": 318.57,
+        "errorRatePct": 14.26,
+        "avgAdsPerPod": 3.19
+      },
+      {
+        "label": "The Ark - Season 2",
+        "channel": "The Ark - Season 2",
+        "requests": 1200,
+        "impressions": 3995,
+        "errors": 151,
+        "impressionsPerRequest": 3.33,
+        "impressionsPerRequestPct": 332.92,
+        "errorRatePct": 12.58,
+        "avgAdsPerPod": 3.33
+      },
+      {
+        "label": "Leverage",
+        "channel": "Leverage",
+        "requests": 3254,
+        "impressions": 3234,
+        "errors": 14,
+        "impressionsPerRequest": 0.99,
+        "impressionsPerRequestPct": 99.39,
+        "errorRatePct": 0.43,
+        "avgAdsPerPod": 0.99
+      },
+      {
+        "label": "The Librarians (Full Series)",
+        "channel": "The Librarians (Full Series)",
+        "requests": 2496,
+        "impressions": 2407,
+        "errors": 45,
+        "impressionsPerRequest": 0.96,
+        "impressionsPerRequestPct": 96.43,
+        "errorRatePct": 1.8,
+        "avgAdsPerPod": 0.97
+      },
+      {
+        "label": "Almost Paradise (Season 1 & 2)",
+        "channel": "Almost Paradise (Season 1 & 2)",
+        "requests": 2083,
+        "impressions": 2109,
+        "errors": 15,
+        "impressionsPerRequest": 1.01,
+        "impressionsPerRequestPct": 101.25,
+        "errorRatePct": 0.72,
+        "avgAdsPerPod": 1.01
+      },
+      {
+        "label": "Leverage: Redemption",
+        "channel": "Leverage: Redemption",
+        "requests": 2089,
+        "impressions": 2056,
+        "errors": 32,
+        "impressionsPerRequest": 0.98,
+        "impressionsPerRequestPct": 98.42,
+        "errorRatePct": 1.53,
+        "avgAdsPerPod": 0.98
+      },
+      {
+        "label": "Leverage - Season 1",
+        "channel": "Leverage - Season 1",
+        "requests": 537,
+        "impressions": 1965,
+        "errors": 20,
+        "impressionsPerRequest": 3.66,
+        "impressionsPerRequestPct": 365.92,
+        "errorRatePct": 3.72,
+        "avgAdsPerPod": 3.66
+      },
+      {
+        "label": "Almost Paradise - Season 1",
+        "channel": "Almost Paradise - Season 1",
+        "requests": 371,
+        "impressions": 1252,
+        "errors": 45,
+        "impressionsPerRequest": 3.37,
+        "impressionsPerRequestPct": 337.47,
+        "errorRatePct": 12.13,
+        "avgAdsPerPod": 3.37
+      },
+      {
+        "label": "The Librarians - Season 1",
+        "channel": "The Librarians - Season 1",
+        "requests": 261,
+        "impressions": 841,
+        "errors": 27,
+        "impressionsPerRequest": 3.22,
+        "impressionsPerRequestPct": 322.22,
+        "errorRatePct": 10.34,
+        "avgAdsPerPod": 3.22
+      },
+      {
+        "label": "Leverage - Season 3",
+        "channel": "Leverage - Season 3",
+        "requests": 198,
+        "impressions": 707,
+        "errors": 3,
+        "impressionsPerRequest": 3.57,
+        "impressionsPerRequestPct": 357.07,
+        "errorRatePct": 1.52,
+        "avgAdsPerPod": 3.57
+      }
+    ],
+    "deviceSplit": [
+      {
+        "label": "roku",
+        "device": "roku",
+        "requests": 6399,
+        "impressions": 22046,
+        "errors": 652,
+        "impressionsPerRequest": 3.45,
+        "impressionsPerRequestPct": 344.52,
+        "errorRatePct": 10.19,
+        "avgAdsPerPod": 3.45
+      },
+      {
+        "label": "android",
+        "device": "android",
+        "requests": 10045,
+        "impressions": 9454,
+        "errors": 106,
+        "impressionsPerRequest": 0.94,
+        "impressionsPerRequestPct": 94.12,
+        "errorRatePct": 1.06,
+        "avgAdsPerPod": 0.94
+      },
+      {
+        "label": "ios",
+        "device": "ios",
+        "requests": 8444,
+        "impressions": 7970,
+        "errors": 105,
+        "impressionsPerRequest": 0.94,
+        "impressionsPerRequestPct": 94.39,
+        "errorRatePct": 1.24,
+        "avgAdsPerPod": 0.94
+      },
+      {
+        "label": "androidtv",
+        "device": "androidtv",
+        "requests": 6118,
+        "impressions": 6026,
+        "errors": 21,
+        "impressionsPerRequest": 0.98,
+        "impressionsPerRequestPct": 98.5,
+        "errorRatePct": 0.34,
+        "avgAdsPerPod": 0.98
+      },
+      {
+        "label": "appletv",
+        "device": "appletv",
+        "requests": 3465,
+        "impressions": 3464,
+        "errors": 1,
+        "impressionsPerRequest": 1.0,
+        "impressionsPerRequestPct": 99.97,
+        "errorRatePct": 0.03,
+        "avgAdsPerPod": 1.0
+      },
+      {
+        "label": "firetv",
+        "device": "firetv",
+        "requests": 3140,
+        "impressions": 3020,
+        "errors": 45,
+        "impressionsPerRequest": 0.96,
+        "impressionsPerRequestPct": 96.18,
+        "errorRatePct": 1.43,
+        "avgAdsPerPod": 0.96
+      },
+      {
+        "label": "webos",
+        "device": "webos",
+        "requests": 307,
+        "impressions": 336,
+        "errors": 1,
+        "impressionsPerRequest": 1.09,
+        "impressionsPerRequestPct": 109.45,
+        "errorRatePct": 0.33,
+        "avgAdsPerPod": 1.09
+      }
+    ],
+    "countrySplit": [
+      {
+        "label": "United States",
+        "country": "United States",
+        "requests": 36964,
+        "impressions": 51337,
+        "errors": 930,
+        "impressionsPerRequest": 1.39,
+        "impressionsPerRequestPct": 138.88,
+        "errorRatePct": 2.52,
+        "avgAdsPerPod": 1.39
+      },
+      {
+        "label": "Canada",
+        "country": "Canada",
+        "requests": 647,
+        "impressions": 643,
+        "errors": 0,
+        "impressionsPerRequest": 0.99,
+        "impressionsPerRequestPct": 99.38,
+        "errorRatePct": 0.0,
+        "avgAdsPerPod": 0.99
+      },
+      {
+        "label": "(not set)",
+        "country": "(not set)",
+        "requests": 295,
+        "impressions": 324,
+        "errors": 1,
+        "impressionsPerRequest": 1.1,
+        "impressionsPerRequestPct": 109.83,
+        "errorRatePct": 0.34,
+        "avgAdsPerPod": 1.1
+      },
+      {
+        "label": "Unknown",
+        "country": "Unknown",
+        "requests": 12,
+        "impressions": 12,
+        "errors": 0,
+        "impressionsPerRequest": 1.0,
+        "impressionsPerRequestPct": 100.0,
+        "errorRatePct": 0.0,
+        "avgAdsPerPod": 1.0
+      }
+    ],
+    "topVideos": [
+      {
+        "label": "(not set)",
+        "video Title": "(not set)",
+        "requests": 5135,
+        "impressions": 4925,
+        "errors": 70,
+        "impressionsPerRequest": 0.96,
+        "impressionsPerRequestPct": 95.91,
+        "errorRatePct": 1.36,
+        "avgAdsPerPod": 0.96
+      },
+      {
+        "label": "Like It Touched the Sun",
+        "video Title": "Like It Touched the Sun",
+        "requests": 2578,
+        "impressions": 3038,
+        "errors": 55,
+        "impressionsPerRequest": 1.18,
+        "impressionsPerRequestPct": 117.84,
+        "errorRatePct": 2.13,
+        "avgAdsPerPod": 1.18
+      },
+      {
+        "label": "It Will Be Over Soon",
+        "video Title": "It Will Be Over Soon",
+        "requests": 1673,
+        "impressions": 2417,
+        "errors": 56,
+        "impressionsPerRequest": 1.44,
+        "impressionsPerRequestPct": 144.47,
+        "errorRatePct": 3.35,
+        "avgAdsPerPod": 1.45
+      },
+      {
+        "label": "Everyone Wanted to Be On This Ship",
+        "video Title": "Everyone Wanted to Be On This Ship",
+        "requests": 1759,
+        "impressions": 2400,
+        "errors": 56,
+        "impressionsPerRequest": 1.36,
+        "impressionsPerRequestPct": 136.44,
+        "errorRatePct": 3.18,
+        "avgAdsPerPod": 1.36
+      },
+      {
+        "label": "Hoping for Forever",
+        "video Title": "Hoping for Forever",
+        "requests": 1849,
+        "impressions": 1744,
+        "errors": 23,
+        "impressionsPerRequest": 0.94,
+        "impressionsPerRequestPct": 94.32,
+        "errorRatePct": 1.24,
+        "avgAdsPerPod": 0.94
+      },
+      {
+        "label": "Anomaly",
+        "video Title": "Anomaly",
+        "requests": 1009,
+        "impressions": 1689,
+        "errors": 78,
+        "impressionsPerRequest": 1.67,
+        "impressionsPerRequestPct": 167.39,
+        "errorRatePct": 7.73,
+        "avgAdsPerPod": 1.67
+      },
+      {
+        "label": "Fortunate",
+        "video Title": "Fortunate",
+        "requests": 1499,
+        "impressions": 1498,
+        "errors": 0,
+        "impressionsPerRequest": 1.0,
+        "impressionsPerRequestPct": 99.93,
+        "errorRatePct": 0.0,
+        "avgAdsPerPod": 1.0
+      },
+      {
+        "label": "The Weekend In Paris Job",
+        "video Title": "The Weekend In Paris Job",
+        "requests": 564,
+        "impressions": 1487,
+        "errors": 35,
+        "impressionsPerRequest": 2.64,
+        "impressionsPerRequestPct": 263.65,
+        "errorRatePct": 6.21,
+        "avgAdsPerPod": 2.64
+      },
+      {
+        "label": "We Weren't Supposed to Be Awake",
+        "video Title": "We Weren't Supposed to Be Awake",
+        "requests": 506,
+        "impressions": 1422,
+        "errors": 84,
+        "impressionsPerRequest": 2.81,
+        "impressionsPerRequestPct": 281.03,
+        "errorRatePct": 16.6,
+        "avgAdsPerPod": 2.81
+      },
+      {
+        "label": "Everybody Wins",
+        "video Title": "Everybody Wins",
+        "requests": 692,
+        "impressions": 1419,
+        "errors": 35,
+        "impressionsPerRequest": 2.05,
+        "impressionsPerRequestPct": 205.06,
+        "errorRatePct": 5.06,
+        "avgAdsPerPod": 2.05
+      },
+      {
+        "label": "The Last Thing You Ever Do",
+        "video Title": "The Last Thing You Ever Do",
+        "requests": 1198,
+        "impressions": 1178,
+        "errors": 12,
+        "impressionsPerRequest": 0.98,
+        "impressionsPerRequestPct": 98.33,
+        "errorRatePct": 1.0,
+        "avgAdsPerPod": 0.98
+      },
+      {
+        "label": "Every Single Person Matters",
+        "video Title": "Every Single Person Matters",
+        "requests": 1159,
+        "impressions": 1088,
+        "errors": 0,
+        "impressionsPerRequest": 0.94,
+        "impressionsPerRequestPct": 93.87,
+        "errorRatePct": 0.0,
+        "avgAdsPerPod": 0.94
+      },
+      {
+        "label": "Failed Experiment",
+        "video Title": "Failed Experiment",
+        "requests": 311,
+        "impressions": 1086,
+        "errors": 18,
+        "impressionsPerRequest": 3.49,
+        "impressionsPerRequestPct": 349.2,
+        "errorRatePct": 5.79,
+        "avgAdsPerPod": 3.49
+      },
+      {
+        "label": "The Side Job",
+        "video Title": "The Side Job",
+        "requests": 275,
+        "impressions": 1047,
+        "errors": 8,
+        "impressionsPerRequest": 3.81,
+        "impressionsPerRequestPct": 380.73,
+        "errorRatePct": 2.91,
+        "avgAdsPerPod": 3.81
+      },
+      {
+        "label": "One Step Forward, Two Steps Back",
+        "video Title": "One Step Forward, Two Steps Back",
+        "requests": 1000,
+        "impressions": 994,
+        "errors": 3,
+        "impressionsPerRequest": 0.99,
+        "impressionsPerRequestPct": 99.4,
+        "errorRatePct": 0.3,
+        "avgAdsPerPod": 0.99
+      }
+    ],
+    "caveats": [
+      "This is DotStudios app ad-serving delivery data, not GA4 ads_* event data.",
+      "These impressions are ElectricNOW in-app ad impressions, not Google/Meta paid-campaign impressions and not YouTube ad impressions.",
+      "The export does not include ad revenue, so it should not be used as ROAS or yield reporting.",
+      "Source fill-rate values can exceed 100% because multiple ads/ad-pod impressions can be served per request; the dashboard labels this as impressions per request.",
+      "The export is manually supplied and must be refreshed weekly before the dashboard can treat this section as current."
+    ],
+    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26–Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
+    "weeklyReminderRecommendation": "Ask the user to upload the DotStudios title-view and app-ad exports each Monday morning before the dashboard refresh."
+  }
 }
