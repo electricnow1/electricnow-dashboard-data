@@ -16278,11 +16278,16 @@ function renderTvodTitleRevenue() {
   const ru = tv.registeredUsers || {};
   const txn = tv.transactions || {};
   const net = tv.netRevenue || {};
+  const tvodNetRevenue =
+    net.netIncludingRefunds ??
+    net.tvodSalesExportPaidNet ??
+    net.tvodSalesEmailTotalNet ??
+    net.csvPaidNetTotal;
   const cards = [
     ['Registered users', fmt.number(ru.total), 'Total registered ElectricNOW accounts'],
     ['Active registered users', fmt.number(ru.active), 'Registered users considered active'],
     ['Paid TVOD transactions', fmt.number(txn.paidTransactions), `${fmt.number(txn.totalRows)} total rows in the report`],
-    ['Net TVOD revenue', fmt.currency(net.tvodSalesEmailTotalNet), 'Cumulative net revenue from title-level transactions'],
+    ['Net TVOD revenue', fmt.currency(tvodNetRevenue), 'Cumulative net revenue from title-level transactions'],
   ];
   $('#tvod-title-revenue-summary').innerHTML = cards
     .map(([label, value, detail]) => usageStat(label, value, detail))
