@@ -1737,7 +1737,7 @@
     </div>
 <script>
 window.DASHBOARD_DATA = {
-  "generatedAt": "2026-08-02 08:20 PDT",
+  "generatedAt": "2026-08-02 08:50 PDT",
   "property": "properties/497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -12885,14 +12885,14 @@ window.DASHBOARD_DATA = {
     "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
   },
   "plainEnglishSummary": {
-    "generatedAt": "2026-08-02T08:20:00-07:00",
-    "overview": "The strongest current signal is sales and downloads: the latest Jul 26-Aug 1 Apple snapshot shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. Traffic/reach from the last full GA4 window remains positive, with active users up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6%; engagement depth remains the caveat, with engaged sessions and engagement rate softer in the last audited GA4 period.",
+    "generatedAt": "2026-08-02T08:50:00-07:00",
+    "overview": "The strongest current signal is sales and downloads: the fresh Aug 2 TVOD export shows 107 paid TVOD transactions and $2,285.89 in the latest seven-day window, with The Ark title family contributing 101 transactions / $2,185.97 and The Ark - Season 3 alone contributing 97 transactions / $2,036.03. The latest Jul 26-Aug 1 Apple snapshot also shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. The important caveat is that the TVOD export may overlap with Stripe, Roku, Apple, or other platform feeds, so it is shown as a separate TVOD transaction section and is not treated as incremental visible-platform revenue until transaction-level reconciliation is complete.",
     "bullets": [
-      "The strongest current signal is sales and downloads: the latest Jul 26-Aug 1 Apple snapshot shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. Traffic/reach from the last full GA4 window remains positive, with active users up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6%; engagement depth remains the caveat, with engaged sessions and engagement rate softer in the last audited GA4 period.",
-      "Sales: Stripe is freshly updated and Apple manual screenshots are freshly updated. Roku sales are preserved from the last-good Roku Sales Activity source rather than zeroed.",
+      "The strongest current signal is sales and downloads: the fresh Aug 2 TVOD export shows 107 paid TVOD transactions and $2,285.89 in the latest seven-day window, with The Ark title family contributing 101 transactions / $2,185.97 and The Ark - Season 3 alone contributing 97 transactions / $2,036.03. The latest Jul 26-Aug 1 Apple snapshot also shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. The important caveat is that the TVOD export may overlap with Stripe, Roku, Apple, or other platform feeds, so it is shown as a separate TVOD transaction section and is not treated as incremental visible-platform revenue until transaction-level reconciliation is complete.",
+      "TVOD title sales: the latest export now shows 118 paid charges / $2,451.73 across Jul 3-Aug 1, with $2,436.74 net after one matching refund. This is aggregate-only and remains separate from Visible Platform Sales.",
+      "The Ark signal: in the latest seven-day window, The Ark title family represents 94.4% of TVOD transactions and 95.6% of TVOD revenue; The Ark - Season 3 alone represents 90.7% of transactions and 89.1% of TVOD revenue.",
       "Apple manual update: Jul 26-Aug 1 produced 405 iOS downloads and $683.90 in gross Apple sales. This supersedes the overlapping Jul 24-Jul 30 Apple aggregate, so the dashboard avoids double-counting.",
       "Stripe update: the connector is working. The Jul 26-Aug 1 pull found 36 valid paid/captured/succeeded/non-refunded charges totaling $749.64; 10 missing charge IDs totaling $209.90 were added to the dashboard and already-present charge IDs were not counted twice.",
-      "Visible platform sales: YTD visible sales are now 137 known purchases / $3368.52. This is Stripe + Roku + manual Apple only; it is not total ElectricNOW sales because some app-store/platform channels may be missing.",
       "Paid acquisition verdict: acceptable but needs proof of viewing. Existing Google Ads/Meta sections should still be read directionally unless fresh ad-source pulls are available; paid-campaign impressions remain separate from ElectricNOW in-app or YouTube ad impressions, and true ROAS is not implied because ad-server revenue is unavailable for a complete matchback.",
       "Next tests: keep pushing The Ark and other high-intent title creative, separate iOS and Android measurement/budgets, shift budget toward audiences that convert into viewing time and sales, exclude weak segments, and keep checking install-to-viewing quality before scaling spend."
     ],
@@ -12904,7 +12904,8 @@ window.DASHBOARD_DATA = {
       "Meta email": "LAST_GOOD_PRESERVED",
       "YouTube": "LAST_GOOD_PRESERVED",
       "Apple manual": "MANUAL_UPDATED",
-      "TVOD (Michael email)": "LAST_GOOD_PRESERVED"
+      "TVOD (Michael email)": "UPDATED_AGGREGATE_2026-08-02",
+      "TVOD (Michael/user export)": "UPDATED_AGGREGATE_2026-08-02"
     }
   },
   "youtubeSummary": {
@@ -14353,362 +14354,344 @@ window.DASHBOARD_DATA = {
   ],
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
-    "eyebrow": "Michael Johnson email — Transactions Per Title and Registered Users by Date",
-    "source": "Michael Johnson email: Transactions Per Title and Registered Users by Date",
-    "emailDate": "2026-07-27T18:52:25Z",
-    "periodStart": "2026-04-01",
-    "periodNote": "Cumulative TVOD (transactional video on demand) transactions since launch (period start Apr 1, 2026), not limited to the Jul 21-Jul 27 GA4 week. Distinct from Stripe/Roku/Apple visible-sales tracking above.",
-    "extractedAt": "2026-07-27T13:01:00-07:00",
+    "eyebrow": "User-provided Michael Johnson TVOD export — aggregate only",
+    "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-02",
+    "emailDate": "2026-08-02",
+    "periodStart": "2026-07-03",
+    "periodEnd": "2026-08-01",
+    "periodNote": "Fresh aggregate TVOD transaction export covering Jul 3-Aug 1, 2026. This section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap.",
+    "extractedAt": "2026-08-02T08:50:00-07:00",
     "registeredUsers": {
       "total": 7914,
       "active": 7814
     },
+    "registeredUsersNote": "Registered-user count preserved from the last Michael Johnson email because the Aug 2 pasted TVOD export included transactions only, not a newer registered-user total.",
     "transactions": {
-      "totalRows": 90,
-      "paidTransactions": 90
+      "totalRows": 119,
+      "paidTransactions": 118,
+      "refundTransactions": 1,
+      "latestSevenDayPaidTransactions": 107
     },
     "netRevenue": {
-      "tvodSalesEmailTotalNet": 1339.15,
-      "csvPaidGrossTotal": 1339.15,
-      "csvPaidNetTotal": 1339.15
+      "tvodSalesExportPaidGross": 2451.73,
+      "tvodSalesExportPaidNet": 2451.73,
+      "refundsGross": -14.99,
+      "refundsNet": -14.99,
+      "netIncludingRefunds": 2436.74,
+      "latestSevenDayGross": 2285.89,
+      "latestSevenDayNet": 2285.89
+    },
+    "latestSevenDay": {
+      "periodStart": "2026-07-26",
+      "periodEnd": "2026-08-01",
+      "transactions": 107,
+      "gross": 2285.89,
+      "net": 2285.89,
+      "arkTitleFamilyTransactions": 101,
+      "arkTitleFamilyGross": 2185.97,
+      "arkTitleFamilyNet": 2185.97,
+      "arkTitleFamilyShareOfTransactionsPct": 94.4,
+      "arkTitleFamilyShareOfRevenuePct": 95.6,
+      "arkSeason3Transactions": 97,
+      "arkSeason3Gross": 2036.03,
+      "arkSeason3Net": 2036.03,
+      "arkSeason3ShareOfTransactionsPct": 90.7,
+      "arkSeason3ShareOfRevenuePct": 89.1,
+      "topTitlesByNet": [
+        {
+          "title": "The Ark - Season 3",
+          "transactions": 97,
+          "gross": 2036.03,
+          "net": 2036.03
+        },
+        {
+          "title": "The Ark",
+          "transactions": 2,
+          "gross": 109.98,
+          "net": 109.98
+        },
+        {
+          "title": "The Librarians: The Next Chapter Season 2",
+          "transactions": 2,
+          "gross": 41.98,
+          "net": 41.98
+        },
+        {
+          "title": "The Ark - Season 1",
+          "transactions": 2,
+          "gross": 39.96,
+          "net": 39.96
+        },
+        {
+          "title": "Parent The Librarians: The Next Chapter",
+          "transactions": 1,
+          "gross": 19.98,
+          "net": 19.98
+        },
+        {
+          "title": "The Librarians - Season 1",
+          "transactions": 1,
+          "gross": 19.98,
+          "net": 19.98
+        },
+        {
+          "title": "The Draw",
+          "transactions": 1,
+          "gross": 14.99,
+          "net": 14.99
+        },
+        {
+          "title": "Universal Soldier II",
+          "transactions": 1,
+          "gross": 2.99,
+          "net": 2.99
+        }
+      ],
+      "channels": [
+        {
+          "channel": "apple",
+          "transactions": 44,
+          "gross": 955.54,
+          "net": 955.54
+        },
+        {
+          "channel": "web",
+          "transactions": 35,
+          "gross": 728.65,
+          "net": 728.65
+        },
+        {
+          "channel": "roku",
+          "transactions": 24,
+          "gross": 535.74,
+          "net": 535.74
+        },
+        {
+          "channel": "android",
+          "transactions": 3,
+          "gross": 62.97,
+          "net": 62.97
+        },
+        {
+          "channel": "amazon_fire",
+          "transactions": 1,
+          "gross": 2.99,
+          "net": 2.99
+        }
+      ]
     },
     "topTitlesByNet": [
       {
-        "title": "The Librarians: The Next Chapter",
-        "transactions": 20,
-        "gross": 299.8,
-        "net": 299.8,
-        "channels": {
-          "web": 8,
-          "roku": 5,
-          "apple": 4,
-          "amazon_fire": 3
-        },
-        "first_date": "2026-04-16",
-        "last_date": "2026-06-27"
-      },
-      {
-        "title": "Leverage: Redemption - Season 3",
-        "transactions": 19,
-        "gross": 284.81,
-        "net": 284.81,
-        "channels": {
-          "apple": 10,
-          "web": 4,
-          "roku": 3,
-          "vizio": 1,
-          "amazon_fire": 1
-        },
-        "first_date": "2026-04-11",
-        "last_date": "2026-06-28"
+        "title": "The Ark - Season 3",
+        "transactions": 97,
+        "gross": 2036.03,
+        "net": 2036.03
       },
       {
         "title": "The Ark",
-        "transactions": 3,
-        "gross": 164.97,
-        "net": 164.97,
-        "channels": {
-          "roku": 2,
-          "vizio": 1
-        },
-        "first_date": "2026-05-06",
-        "last_date": "2026-06-30"
-      },
-      {
-        "title": "The Draw",
-        "transactions": 5,
-        "gross": 74.95,
-        "net": 74.95,
-        "channels": {
-          "vizio": 2,
-          "amazon_fire": 1,
-          "web": 1,
-          "roku": 1
-        },
-        "first_date": "2026-04-13",
-        "last_date": "2026-05-07"
-      },
-      {
-        "title": "Leverage: Redemption",
         "transactions": 2,
-        "gross": 59.98,
-        "net": 59.98,
-        "channels": {
-          "apple": 2
-        },
-        "first_date": "2026-04-16",
-        "last_date": "2026-05-18"
+        "gross": 109.98,
+        "net": 109.98
       },
       {
-        "title": "One Big Happy Family",
-        "transactions": 8,
-        "gross": 59.96,
-        "net": 59.96,
-        "channels": {
-          "web": 4,
-          "roku": 1,
-          "vizio": 1,
-          "apple": 1,
-          "amazon_fire": 1
-        },
-        "first_date": "2026-04-02",
-        "last_date": "2026-06-27"
-      },
-      {
-        "title": "Somewhere in Montana",
+        "title": "Leverage: Redemption - Season 3",
         "transactions": 4,
-        "gross": 59.96,
-        "net": 59.96,
-        "channels": {
-          "amazon_fire": 2,
-          "android": 1,
-          "roku": 1
-        },
-        "first_date": "2026-05-20",
-        "last_date": "2026-06-16"
-      },
-      {
-        "title": "The Librarians",
-        "transactions": 1,
-        "gross": 54.99,
-        "net": 54.99,
-        "channels": {
-          "roku": 1
-        },
-        "first_date": "2026-04-22",
-        "last_date": "2026-04-22"
-      },
-      {
-        "title": "The Messenger",
-        "transactions": 2,
-        "gross": 39.96,
-        "net": 39.96,
-        "channels": {
-          "apple": 1,
-          "vizio": 1
-        },
-        "first_date": "2026-05-06",
-        "last_date": "2026-06-24"
-      },
-      {
-        "title": "Almost Paradise",
-        "transactions": 3,
-        "gross": 29.99,
-        "net": 29.99,
-        "channels": {
-          "web": 2,
-          "vizio": 1
-        },
-        "first_date": "2026-04-01",
-        "last_date": "2026-05-06"
-      },
-      {
-        "title": "The Librarians: The Next Chapter1",
-        "transactions": 4,
-        "gross": 29.98,
-        "net": 29.98,
-        "channels": {
-          "web": 3,
-          "roku": 1
-        },
-        "first_date": "2026-04-03",
-        "last_date": "2026-04-16"
-      },
-      {
-        "title": "The Bunker",
-        "transactions": 2,
-        "gross": 29.98,
-        "net": 29.98,
-        "channels": {
-          "vizio": 2
-        },
-        "first_date": "2026-05-06",
-        "last_date": "2026-05-07"
-      },
-      {
-        "title": "Flyboys",
-        "transactions": 2,
-        "gross": 19.98,
-        "net": 19.98,
-        "channels": {
-          "vizio": 2
-        },
-        "first_date": "2026-05-06",
-        "last_date": "2026-05-07"
-      },
-      {
-        "title": "The Poly Couple",
-        "transactions": 2,
-        "gross": 19.98,
-        "net": 19.98,
-        "channels": {
-          "apple": 1,
-          "web": 1
-        },
-        "first_date": "2026-04-17",
-        "last_date": "2026-04-21"
-      },
-      {
-        "title": "Blank Slate",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98,
-        "channels": {
-          "roku": 1
-        },
-        "first_date": "2026-06-07",
-        "last_date": "2026-06-07"
+        "gross": 64.95,
+        "net": 64.95
       },
       {
         "title": "The Ark - Season 2",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98,
-        "channels": {
-          "roku": 1
-        },
-        "first_date": "2026-05-16",
-        "last_date": "2026-05-16"
+        "transactions": 3,
+        "gross": 59.94,
+        "net": 59.94
+      },
+      {
+        "title": "The Librarians: The Next Chapter Season 2",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98
       },
       {
         "title": "The Ark - Season 1",
+        "transactions": 2,
+        "gross": 39.96,
+        "net": 39.96
+      },
+      {
+        "title": "Parent The Librarians: The Next Chapter",
         "transactions": 1,
         "gross": 19.98,
-        "net": 19.98,
-        "channels": {
-          "vizio": 1
-        },
-        "first_date": "2026-05-07",
-        "last_date": "2026-05-07"
+        "net": 19.98
       },
       {
-        "title": "Una Gran Familia Feliz",
+        "title": "The Librarians - Season 1",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "title": "The Messenger",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "title": "The Draw",
         "transactions": 1,
         "gross": 14.99,
-        "net": 14.99,
-        "channels": {
-          "web": 1
-        },
-        "first_date": "2026-04-27",
-        "last_date": "2026-04-27"
+        "net": 14.99
       },
       {
-        "title": "Blood on the Crown",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "channels": {
-          "vizio": 1
-        },
-        "first_date": "2026-05-06",
-        "last_date": "2026-05-06"
-      },
-      {
-        "title": "Generation Z",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "channels": {
-          "vizio": 1
-        },
-        "first_date": "2026-05-06",
-        "last_date": "2026-05-06"
-      },
-      {
-        "title": "The Librarian: Quest for the Spear",
-        "transactions": 2,
-        "gross": 5.98,
-        "net": 5.98,
-        "channels": {
-          "roku": 2
-        },
-        "first_date": "2026-05-12",
-        "last_date": "2026-05-14"
-      },
-      {
-        "title": "Mythica: A Quest for Heroes",
+        "title": "The Librarians and the Crown of King Arthur in Cinemascope",
         "transactions": 1,
         "gross": 2.99,
-        "net": 2.99,
-        "channels": {
-          "apple": 1
-        },
-        "first_date": "2026-06-30",
-        "last_date": "2026-06-30"
+        "net": 2.99
       },
       {
-        "title": "The Librarian: Curse of the Judas Chalice",
+        "title": "The Triangle Night 1",
         "transactions": 1,
         "gross": 2.99,
-        "net": 2.99,
-        "channels": {
-          "roku": 1
-        },
-        "first_date": "2026-05-13",
-        "last_date": "2026-05-13"
+        "net": 2.99
       },
       {
-        "title": "The Librarian: Return to King Solomon's Mines",
+        "title": "Universal Soldier II",
         "transactions": 1,
         "gross": 2.99,
-        "net": 2.99,
-        "channels": {
-          "roku": 1
-        },
-        "first_date": "2026-05-12",
-        "last_date": "2026-05-12"
+        "net": 2.99
       },
       {
-        "title": "The Outpost",
+        "title": "Somewhere in Montana",
         "transactions": 2,
         "gross": 0.0,
-        "net": 0.0,
-        "channels": {
-          "web": 2
-        },
-        "first_date": "2026-04-03",
-        "last_date": "2026-04-03"
+        "net": 0.0
       }
     ],
     "channels": [
       {
-        "channel": "roku",
-        "transactions": 21,
-        "gross": 396.77,
-        "net": 396.77
-      },
-      {
         "channel": "apple",
-        "transactions": 20,
-        "gross": 317.79,
-        "net": 317.79
-      },
-      {
-        "channel": "vizio",
-        "transactions": 14,
-        "gross": 254.84,
-        "net": 254.84
+        "transactions": 45,
+        "gross": 970.53,
+        "net": 970.53
       },
       {
         "channel": "web",
-        "transactions": 26,
-        "gross": 234.84,
-        "net": 234.84
+        "transactions": 38,
+        "gross": 748.63,
+        "net": 748.63
       },
       {
-        "channel": "amazon_fire",
-        "transactions": 8,
-        "gross": 119.92,
-        "net": 119.92
+        "channel": "roku",
+        "transactions": 28,
+        "gross": 598.67,
+        "net": 598.67
       },
       {
         "channel": "android",
+        "transactions": 3,
+        "gross": 62.97,
+        "net": 62.97
+      },
+      {
+        "channel": "vizio",
+        "transactions": 2,
+        "gross": 29.98,
+        "net": 29.98
+      },
+      {
+        "channel": "amazon_fire",
+        "transactions": 3,
+        "gross": 25.96,
+        "net": 25.96
+      }
+    ],
+    "dailyTrend": [
+      {
+        "date": "2026-07-03",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-05",
         "transactions": 1,
         "gross": 14.99,
         "net": 14.99
+      },
+      {
+        "date": "2026-07-08",
+        "transactions": 2,
+        "gross": 29.98,
+        "net": 29.98
+      },
+      {
+        "date": "2026-07-14",
+        "transactions": 4,
+        "gross": 22.97,
+        "net": 22.97
+      },
+      {
+        "date": "2026-07-20",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-21",
+        "transactions": 2,
+        "gross": 22.97,
+        "net": 22.97
+      },
+      {
+        "date": "2026-07-25",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-26",
+        "transactions": 1,
+        "gross": 20.99,
+        "net": 20.99
+      },
+      {
+        "date": "2026-07-27",
+        "transactions": 6,
+        "gross": 118.93,
+        "net": 118.93
+      },
+      {
+        "date": "2026-07-28",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98
+      },
+      {
+        "date": "2026-07-29",
+        "transactions": 4,
+        "gross": 116.95,
+        "net": 116.95
+      },
+      {
+        "date": "2026-07-30",
+        "transactions": 44,
+        "gross": 905.56,
+        "net": 905.56
+      },
+      {
+        "date": "2026-07-31",
+        "transactions": 29,
+        "gross": 642.71,
+        "net": 642.71
+      },
+      {
+        "date": "2026-08-01",
+        "transactions": 21,
+        "gross": 438.77,
+        "net": 438.77
       }
     ],
-    "note": "No newer Michael Johnson TVOD/registered-users email was found since Jul 27, 2026 (checked again Jul 28); this section is preserved unchanged from the Jul 27 integration. Cumulative since Apr 1, 2026, covering title-level purchase transactions across Roku, Apple, Vizio, web, Amazon Fire, and Android — separate from the Stripe/Roku/Apple visible-sales figures tracked elsewhere on this dashboard. Do not sum this section with salesSummary; they are not reconciled to the same totals. Aggregate counts only; no individual registered-user emails or raw CSV rows are exposed.",
+    "note": "Fresh Aug 2 aggregate export. Customer emails and individual customer rows are intentionally excluded. The latest seven-day window shows 107 paid TVOD transactions / $2,285.89. The Ark title family accounts for 101 transactions / $2,185.97, and The Ark - Season 3 alone accounts for 97 transactions / $2,036.03. Do not add this TVOD export to Visible Platform Sales until it is reconciled against Stripe, Roku, Apple, and other platform-specific transaction feeds.",
+    "privacyNote": "Aggregated only; no customer emails or individual customer records are exposed.",
     "sourceUrl": null
   },
   "weeklyTrendNote": "No fresh daily GA4 trend pull was requested in this Jul 28 ad-hoc refresh; daily weeklyTrend/monthlyTrend rows are preserved from the last scheduled refresh (Jul 27) and are not re-derived here. Aggregate KPI totals above ARE fresh for Jul 21-Jul 27."
