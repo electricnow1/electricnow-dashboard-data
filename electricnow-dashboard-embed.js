@@ -1747,7 +1747,7 @@
     </div>
 <script>
 window.DASHBOARD_DATA = {
-  "generatedAt": "2026-07-31 08:35 PDT",
+  "generatedAt": "2026-08-02 08:20 PDT",
   "property": "properties/497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271",
   "periods": {
@@ -3642,15 +3642,13 @@ window.DASHBOARD_DATA = {
     "engagementRateWeekToDate": 93.5336048879837
   },
   "plainEnglishInsights": [
-    "The rolling Jul 21-Jul 27 window shows platform reach grew: active users were up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6% versus the prior 7 days. YouTube remains very strong separately from the app, with 70,185 hours watched and nearly $2,997.79 in estimated weekly revenue (YTD YouTube revenue now $98,785.81). At the same time, engagement depth softened this week: engaged sessions were down 5.4%, engagement rate fell 11.6 points (from 77.3% to 65.8%), and total GA4 engagement time was slightly down (-0.3%). Paid acquisition verdict: acceptable but needs proof of viewing — Google Ads is rate-limited and Meta has no new report this cycle, so paid data is not fresh and should not be read as evidence of ROAS.",
-    "Traffic/reach: active users were 3,789 (+8.7% vs prior 7 days), sessions were 10,658 (+11.2%), new users were 1,225 (+13.7%), and screen/page views were 35,091 (+8.6%).",
-    "Engagement depth (the honest part): engaged sessions dipped from 7,414 to 7,011 (-5.4%), and engagement rate eased from 77.3% to 65.8% (down 11.6 points). Total engaged time was 5,626 hours (-0.3%). More people visited, but a slightly smaller share of sessions were 'engaged.'",
-    "YouTube (ad-server side, separate from app): Jul 21-Jul 27 produced 201,352 views, 70,185 hours watched, $2,997.79 estimated revenue (757,975 ad impressions — these are YouTube/ad-server ad impressions, not paid campaign impressions), and $98,785.81 YTD estimated revenue. \"Everyone Wanted to Be on This Ship\" (The Ark, S01E01) led by views this week.",
-    "Sales (as of Jul 31 full reconciliation): visible platform sales YTD are 127 purchases / $3032.47 -- Stripe 78/$1612.21 (full rebuild from the fresh connector pull's complete 78-charge valid set, not an incremental diff; supersedes an earlier same-day undercounted figure of 52/$1075.45), Roku 27/$499.73 (unchanged), and manual Apple 22/$920.53 (unchanged this pass). The prior 52/$1075.45 Stripe figure and 101/$2495.71 platform YTD from earlier the same day are superseded and should not be treated as current.",
-    "Roku app engagement: latest available Roku App Engagement report (Jul 20-Jul 26, received Jul 28 6:51 AM PDT) shows 214 new installs, 102 uninstalls, 337 average daily viewers, 76.00 avg minutes per viewer, and 2,987 hours streamed. Roku Sales Activity source date remains Jul 27 (no fresher Sales Activity report yet); Roku app metrics remain separate from GA4 and Roku TRC live-channel metrics.",
-    "TVOD title revenue (unchanged since Jul 27): Michael Johnson's title-transaction report shows 7,914 total registered users (7,814 active) and $1,339.15 net TVOD revenue across 90 paid transactions since Apr 1, 2026. No newer Michael email found on Jul 28. This is a separate, cumulative-since-launch source and is not reconciled against the Stripe/Roku/Apple visible-sales figures above.",
-    "Paid acquisition verdict: acceptable but needs proof of viewing. Google Ads is connected but rate-limited (429, retry ~16638s) so last-good Google data is preserved and labeled stale; Meta has no new performance report this cycle (last known state preserved). Do not read paid-campaign impressions as ElectricNOW in-app/YouTube ad impressions, and do not infer ROAS because ad-server revenue is unavailable for a fresh comparison this cycle.",
-    "Next tests: restart paid spend only with clean measurement, split iOS and Android budgets, focus geos where app usage already exists while reserving a small test budget for underpenetrated states, use show-specific creative tied to actual viewing quality, and review install-to-viewing behavior before scaling budget."
+    "The strongest current signal is sales and downloads: the latest Jul 26-Aug 1 Apple snapshot shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. Traffic/reach from the last full GA4 window remains positive, with active users up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6%; engagement depth remains the caveat, with engaged sessions and engagement rate softer in the last audited GA4 period.",
+    "Sales: Stripe is freshly updated and Apple manual screenshots are freshly updated. Roku sales are preserved from the last-good Roku Sales Activity source rather than zeroed.",
+    "Apple manual update: Jul 26-Aug 1 produced 405 iOS downloads and $683.90 in gross Apple sales. This supersedes the overlapping Jul 24-Jul 30 Apple aggregate, so the dashboard avoids double-counting.",
+    "Stripe update: the connector is working. The Jul 26-Aug 1 pull found 36 valid paid/captured/succeeded/non-refunded charges totaling $749.64; 10 missing charge IDs totaling $209.90 were added to the dashboard and already-present charge IDs were not counted twice.",
+    "Visible platform sales: YTD visible sales are now 137 known purchases / $3368.52. This is Stripe + Roku + manual Apple only; it is not total ElectricNOW sales because some app-store/platform channels may be missing.",
+    "Paid acquisition verdict: acceptable but needs proof of viewing. Existing Google Ads/Meta sections should still be read directionally unless fresh ad-source pulls are available; paid-campaign impressions remain separate from ElectricNOW in-app or YouTube ad impressions, and true ROAS is not implied because ad-server revenue is unavailable for a complete matchback.",
+    "Next tests: keep pushing The Ark and other high-intent title creative, separate iOS and Android measurement/budgets, shift budget toward audiences that convert into viewing time and sales, exclude weak segments, and keep checking install-to-viewing quality before scaling spend."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
@@ -3664,7 +3662,7 @@ window.DASHBOARD_DATA = {
     "sourceDetail": "Visible platform sales combine Stripe-visible net payments (fully rebuilt Jul 31, 2026 from the complete valid charge set: 78 of 100 returned charges), Roku-visible sales from Roku email reports, and manual Apple App Store sales snapshots. Google Play and other stores may be missing, so this is not total ElectricNOW sales.",
     "stripe": {
       "sourceLabel": "Stripe-visible net payments",
-      "sourceDetail": "Stripe connector fully rebuilt Jul 31, 2026 from the fresh connector pull (100 charges returned, 78 valid paid/captured/succeeded/non-refunded, 22 excluded as refunded/incomplete). This is a FULL REBUILD from the complete valid Stripe charge set, not an incremental diff against a prior baseline -- the previous same-day update incorrectly added a 23-charge/$482.77 'since Jul 28' diff on top of a stale 29/$592.68 baseline, producing an undercounted 52/$1,075.45. That value has been superseded. Net non-refunded Stripe charges are now 78/$1,612.21; latest net sale is Jul 31, 2026.",
+      "sourceDetail": "Stripe connector refreshed Aug 2, 2026. Current seven-day pull returned 36 valid paid/captured/succeeded/non-refunded charges totaling $749.64. Ten valid charges totaling $209.90 were not yet in the dashboard and were added by charge ID; already-present charges were not double-counted. Stripe visible YTD is now 88/$1822.11.",
       "baselineWindow": {
         "label": "Stripe launch baseline",
         "range": "Apr 13-Apr 19, 2026",
@@ -3677,11 +3675,161 @@ window.DASHBOARD_DATA = {
       },
       "yearToDate": {
         "label": "Stripe net sales this year",
-        "range": "Jan 1-Jul 31, 2026",
-        "purchases": 78,
-        "purchaseRevenue": 1612.21,
-        "revenuePerPurchase": 20.67,
+        "range": "Jan 1-Aug 1, 2026",
+        "purchases": 88,
+        "purchaseRevenue": 1822.11,
+        "revenuePerPurchase": 20.71,
         "payments": [
+          {
+            "id": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+            "date": "Aug 1",
+            "createdAt": "2026-08-02T02:59:21Z",
+            "sortDate": "2026-08-02T02:59:21Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+            "stripePaymentIntentId": "pi_3TzpcTLG0Cw1zW4e2ONdvaRi",
+            "orderId": "itr-2026080202592092",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzmDeLG0Cw1zW4e1hSM76p5",
+            "date": "Aug 1",
+            "createdAt": "2026-08-01T23:21:31Z",
+            "sortDate": "2026-08-01T23:21:31Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzmDeLG0Cw1zW4e1hSM76p5",
+            "stripePaymentIntentId": "pi_3TzmDeLG0Cw1zW4e1DjlcMXo",
+            "orderId": "baa-2026080123213055",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzUsaLG0Cw1zW4e1E2iPagJ",
+            "date": "Jul 31",
+            "createdAt": "2026-08-01T04:50:37Z",
+            "sortDate": "2026-08-01T04:50:37Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzUsaLG0Cw1zW4e1E2iPagJ",
+            "stripePaymentIntentId": "pi_3TzUsaLG0Cw1zW4e1tfWkCsi",
+            "orderId": "sas-2026080104503658",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzUOVLG0Cw1zW4e1cL58jI6",
+            "date": "Jul 31",
+            "createdAt": "2026-08-01T04:19:31Z",
+            "sortDate": "2026-08-01T04:19:31Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzUOVLG0Cw1zW4e1cL58jI6",
+            "stripePaymentIntentId": "pi_3TzUOVLG0Cw1zW4e1RwTB9hv",
+            "orderId": "wew-2026080104193090",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzUKMLG0Cw1zW4e2kKfWreG",
+            "date": "Jul 31",
+            "createdAt": "2026-08-01T04:15:14Z",
+            "sortDate": "2026-08-01T04:15:14Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzUKMLG0Cw1zW4e2kKfWreG",
+            "stripePaymentIntentId": "pi_3TzUKMLG0Cw1zW4e2H29Ygkt",
+            "orderId": "pyy-2026080104151396",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzS18LG0Cw1zW4e0gJjIT5t",
+            "date": "Jul 31",
+            "createdAt": "2026-08-01T01:47:14Z",
+            "sortDate": "2026-08-01T01:47:14Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzS18LG0Cw1zW4e0gJjIT5t",
+            "stripePaymentIntentId": "pi_3TzS18LG0Cw1zW4e0ZkxzNE3",
+            "orderId": "gol-2026080101471383",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzR9FLG0Cw1zW4e1mPMQLV7",
+            "date": "Jul 31",
+            "createdAt": "2026-08-01T00:51:33Z",
+            "sortDate": "2026-08-01T00:51:33Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzR9FLG0Cw1zW4e1mPMQLV7",
+            "stripePaymentIntentId": "pi_3TzR9FLG0Cw1zW4e1C46ZvYS",
+            "orderId": "bag-2026080100513319",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzQHKLG0Cw1zW4e0m2DJ4QH",
+            "date": "Jul 31",
+            "createdAt": "2026-07-31T23:55:50Z",
+            "sortDate": "2026-07-31T23:55:50Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzQHKLG0Cw1zW4e0m2DJ4QH",
+            "stripePaymentIntentId": "pi_3TzQHKLG0Cw1zW4e0PP1u8tL",
+            "orderId": "brr-2026073123554977",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzJehLG0Cw1zW4e0ZafeOP1",
+            "date": "Jul 31",
+            "createdAt": "2026-07-31T16:51:32Z",
+            "sortDate": "2026-07-31T16:51:32Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzJehLG0Cw1zW4e0ZafeOP1",
+            "stripePaymentIntentId": "pi_3TzJehLG0Cw1zW4e0PvTBJus",
+            "orderId": "com-2026073116513172",
+            "contentId": null,
+            "contentTitle": null
+          },
+          {
+            "id": "ch_3TzJNXLG0Cw1zW4e0nCG3w5s",
+            "date": "Jul 31",
+            "createdAt": "2026-07-31T16:33:48Z",
+            "sortDate": "2026-07-31T16:33:48Z",
+            "amount": 20.99,
+            "developerRevShare": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe",
+            "stripeChargeId": "ch_3TzJNXLG0Cw1zW4e0nCG3w5s",
+            "stripePaymentIntentId": "pi_3TzJNXLG0Cw1zW4e0huvDWSP",
+            "orderId": "sah-2026073116334765",
+            "contentId": null,
+            "contentTitle": null
+          },
           {
             "id": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
             "date": "Jul 31",
@@ -5075,58 +5223,64 @@ window.DASHBOARD_DATA = {
       ],
       "dailyTrend": [
         {
-          "date": "Apr 13",
-          "rawDate": "20260413",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "date": "Jan 1",
+          "rawDate": "20260101",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
         },
         {
-          "date": "Apr 14",
-          "rawDate": "20260414",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "date": "Jan 2",
+          "rawDate": "20260102",
+          "purchases": 1,
+          "purchaseRevenue": 89.99
         },
         {
-          "date": "Apr 15",
-          "rawDate": "20260415",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "date": "Jan 14",
+          "rawDate": "20260114",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Jan 19",
+          "rawDate": "20260119",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
+        },
+        {
+          "date": "Feb 14",
+          "rawDate": "20260214",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Feb 23",
+          "rawDate": "20260223",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
         },
         {
           "date": "Apr 16",
           "rawDate": "20260416",
-          "purchases": 3,
-          "purchaseRevenue": 39.97
+          "purchases": 2,
+          "purchaseRevenue": 29.98
         },
         {
           "date": "Apr 17",
           "rawDate": "20260417",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "Apr 18",
-          "rawDate": "20260418",
           "purchases": 1,
-          "purchaseRevenue": 14.99
+          "purchaseRevenue": 9.99
         },
         {
           "date": "Apr 19",
           "rawDate": "20260419",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "Apr 20",
-          "rawDate": "20260420",
           "purchases": 1,
           "purchaseRevenue": 14.99
         },
         {
           "date": "Apr 21",
           "rawDate": "20260421",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "purchases": 1,
+          "purchaseRevenue": 14.99
         },
         {
           "date": "Apr 22",
@@ -5135,82 +5289,16 @@ window.DASHBOARD_DATA = {
           "purchaseRevenue": 29.98
         },
         {
-          "date": "Apr 23",
-          "rawDate": "20260423",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
           "date": "Apr 24",
           "rawDate": "20260424",
           "purchases": 1,
           "purchaseRevenue": 14.99
         },
         {
-          "date": "Apr 25",
-          "rawDate": "20260425",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "Apr 26",
-          "rawDate": "20260426",
-          "purchases": 1,
-          "purchaseRevenue": 14.99
-        },
-        {
           "date": "Apr 27",
           "rawDate": "20260427",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "Apr 28",
-          "rawDate": "20260428",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "Apr 29",
-          "rawDate": "20260429",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "Apr 30",
-          "rawDate": "20260430",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 1",
-          "rawDate": "20260501",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 2",
-          "rawDate": "20260502",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 3",
-          "rawDate": "20260503",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 4",
-          "rawDate": "20260504",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 5",
-          "rawDate": "20260505",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "purchases": 1,
+          "purchaseRevenue": 14.99
         },
         {
           "date": "May 6",
@@ -5219,136 +5307,22 @@ window.DASHBOARD_DATA = {
           "purchaseRevenue": 14.99
         },
         {
-          "date": "May 7",
-          "rawDate": "20260507",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 8",
-          "rawDate": "20260508",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 9",
-          "rawDate": "20260509",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 10",
-          "rawDate": "20260510",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 11",
-          "rawDate": "20260511",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 12",
-          "rawDate": "20260512",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 13",
-          "rawDate": "20260513",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 14",
-          "rawDate": "20260514",
-          "purchases": 1,
-          "purchaseRevenue": 14.99
-        },
-        {
           "date": "May 15",
           "rawDate": "20260515",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 16",
-          "rawDate": "20260516",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 17",
-          "rawDate": "20260517",
           "purchases": 1,
           "purchaseRevenue": 14.99
         },
         {
           "date": "May 18",
           "rawDate": "20260518",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 19",
-          "rawDate": "20260519",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 20",
-          "rawDate": "20260520",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 21",
-          "rawDate": "20260521",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 22",
-          "rawDate": "20260522",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 23",
-          "rawDate": "20260523",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 24",
-          "rawDate": "20260524",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 25",
-          "rawDate": "20260525",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 26",
-          "rawDate": "20260526",
-          "purchases": 0,
-          "purchaseRevenue": 0
-        },
-        {
-          "date": "May 27",
-          "rawDate": "20260527",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "purchases": 1,
+          "purchaseRevenue": 14.99
         },
         {
           "date": "May 28",
           "rawDate": "20260528",
-          "purchases": 0,
-          "purchaseRevenue": 0
+          "purchases": 1,
+          "purchaseRevenue": 14.99
         },
         {
           "date": "Jun 12",
@@ -5363,10 +5337,46 @@ window.DASHBOARD_DATA = {
           "purchaseRevenue": 14.99
         },
         {
-          "date": "Jun 28",
-          "rawDate": "20260628",
+          "date": "Jun 27",
+          "rawDate": "20260627",
           "purchases": 1,
           "purchaseRevenue": 14.99
+        },
+        {
+          "date": "Jul 19",
+          "rawDate": "20260719",
+          "purchases": 2,
+          "purchaseRevenue": 32.98
+        },
+        {
+          "date": "Jul 20",
+          "rawDate": "20260720",
+          "purchases": 2,
+          "purchaseRevenue": 59.98
+        },
+        {
+          "date": "Jul 21",
+          "rawDate": "20260721",
+          "purchases": 1,
+          "purchaseRevenue": 19.98
+        },
+        {
+          "date": "Jul 26",
+          "rawDate": "20260726",
+          "purchases": 2,
+          "purchaseRevenue": 50.98
+        },
+        {
+          "date": "Jul 27",
+          "rawDate": "20260727",
+          "purchases": 3,
+          "purchaseRevenue": 38.97
+        },
+        {
+          "date": "Jul 28",
+          "rawDate": "20260728",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
         },
         {
           "date": "Jul 29",
@@ -5377,47 +5387,169 @@ window.DASHBOARD_DATA = {
         {
           "date": "Jul 30",
           "rawDate": "20260730",
-          "purchases": 16,
-          "purchaseRevenue": 335.84
+          "purchases": 17,
+          "purchaseRevenue": 365.83
         },
         {
           "date": "Jul 31",
           "rawDate": "20260731",
-          "purchases": 6,
-          "purchaseRevenue": 125.94
+          "purchases": 14,
+          "purchaseRevenue": 293.86
+        },
+        {
+          "date": "Aug 1",
+          "rawDate": "20260801",
+          "purchases": 2,
+          "purchaseRevenue": 41.98
+        },
+        {
+          "date": "Aug 2",
+          "rawDate": "20260802",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Aug 4",
+          "rawDate": "20260804",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
+        },
+        {
+          "date": "Aug 7",
+          "rawDate": "20260807",
+          "purchases": 1,
+          "purchaseRevenue": 2.99
+        },
+        {
+          "date": "Aug 12",
+          "rawDate": "20260812",
+          "purchases": 1,
+          "purchaseRevenue": 2.99
+        },
+        {
+          "date": "Aug 13",
+          "rawDate": "20260813",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Aug 14",
+          "rawDate": "20260814",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
+        },
+        {
+          "date": "Aug 18",
+          "rawDate": "20260818",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Aug 21",
+          "rawDate": "20260821",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Aug 27",
+          "rawDate": "20260827",
+          "purchases": 1,
+          "purchaseRevenue": 2.99
+        },
+        {
+          "date": "Aug 31",
+          "rawDate": "20260831",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Sep 21",
+          "rawDate": "20260921",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
+        },
+        {
+          "date": "Sep 25",
+          "rawDate": "20260925",
+          "purchases": 1,
+          "purchaseRevenue": 2.99
+        },
+        {
+          "date": "Sep 26",
+          "rawDate": "20260926",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Sep 28",
+          "rawDate": "20260928",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
+        },
+        {
+          "date": "Oct 29",
+          "rawDate": "20261029",
+          "purchases": 2,
+          "purchaseRevenue": 19.98
+        },
+        {
+          "date": "Nov 18",
+          "rawDate": "20261118",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Nov 28",
+          "rawDate": "20261128",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
+        },
+        {
+          "date": "Dec 1",
+          "rawDate": "20261201",
+          "purchases": 1,
+          "purchaseRevenue": 9.99
+        },
+        {
+          "date": "Dec 7",
+          "rawDate": "20261207",
+          "purchases": 1,
+          "purchaseRevenue": 19.99
+        },
+        {
+          "date": "Dec 28",
+          "rawDate": "20261228",
+          "purchases": 1,
+          "purchaseRevenue": 29.99
         }
       ],
       "note": "Stripe connector fully rebuilt Jul 31, 2026 from the complete valid charge set (100 charges returned by the fresh connector pull, 78 valid paid/captured/succeeded/non-refunded, 22 excluded as refunded/incomplete). Stripe YTD is now 78 purchases / $1612.21 -- this supersedes an earlier same-day figure of 52 purchases / $1075.45, which undercounted by adding a 23-charge/$482.77 incremental diff onto a stale, already-incomplete 29/$592.68 baseline instead of rebuilding from the full valid set.",
       "connectorStatus": "CONNECTED_UPDATED",
       "lastStripeVisiblePayment": {
-        "id": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
-        "date": "Jul 31",
-        "createdAt": "2026-07-31T11:04:59Z",
-        "sortDate": "2026-07-31T11:04:59Z",
+        "id": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+        "date": "Aug 1",
+        "createdAt": "2026-08-02T02:59:21Z",
+        "sortDate": "2026-08-02T02:59:21Z",
         "amount": 20.99,
+        "developerRevShare": 20.99,
         "description": "Customer User - Season Pass: Signup payment",
         "source": "Stripe",
-        "stripeChargeId": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
-        "stripePaymentIntentId": "pi_3TzEFKLG0Cw1zW4e2BhEcfTJ",
-        "orderId": "spc-2026073111045857",
+        "stripeChargeId": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+        "stripePaymentIntentId": "pi_3TzpcTLG0Cw1zW4e2ONdvaRi",
+        "orderId": "itr-2026080202592092",
         "contentId": null,
         "contentTitle": null
       },
       "latestConnectorAudit": {
-        "checkedAt": "2026-07-31T08:22:00-07:00",
-        "totalChargesReturned": 100,
-        "validPaidCapturedNotRefundedCharges": 78,
-        "purchaseRevenue": 1612.21,
-        "excludedChargesCount": 22,
-        "method": "full_rebuild_from_valid_set",
-        "methodNote": "This audit reflects a full rebuild from the complete valid Stripe charge set returned by the fresh connector pull (78 of 100 returned charges are valid paid/captured/succeeded/non-refunded), not an incremental diff against a prior baseline. Supersedes the same-day 52/$1,075.45 figure, which undercounted by relying on a diff against an incomplete baseline.",
-        "supersededValue": {
-          "purchases": 52,
-          "purchaseRevenue": 1075.45,
-          "note": "Superseded prior-run value; produced by an incremental diff-from-baseline method that undercounted the true connector total. Do not treat as current."
-        }
+        "checkedAt": "2026-08-02T08:20:00-07:00",
+        "totalChargesReturnedInSevenDayPull": 46,
+        "validPaidCapturedNotRefundedChargesInSevenDayPull": 36,
+        "validSevenDayAmount": 749.64,
+        "missingChargeIdsAdded": 10,
+        "missingAmountAdded": 209.9,
+        "method": "id_deduped_incremental_add_from_fresh_connector_pull"
       },
-      "staleNote": "Fresh Stripe connector pull completed Jul 31, 2026 and REBUILT (not diffed) from the full 100-charge return (78 valid). The intermediate 52/$1,075.45 figure from earlier the same day was an undercount caused by diffing against an incomplete baseline and has been corrected; no stale Stripe values remain in this preview.",
+      "staleNote": "Fresh Stripe connector pull checked Aug 2, 2026; missing valid charge IDs were added and no Stripe values were zeroed.",
       "sinceLastRefresh": {
         "label": "Stripe charges since prior dashboard refresh",
         "range": "Jul 28-Jul 31, 2026 (since Jul 28, 08:11 PDT refresh)",
@@ -6466,9 +6598,9 @@ window.DASHBOARD_DATA = {
     },
     "apple": {
       "sourceLabel": "Apple App Store manual snapshot",
-      "sourceDetail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30% before remittance. This remains a manual source until Apple App Store Connect API reporting is connected.",
+      "sourceDetail": "Apple App Store in-app purchase snapshot manually entered from App Store Connect screenshots. The Aug 2 screenshot supersedes the overlapping Jul 24-Jul 30 aggregate ($557.75) with the newer Jul 26-Aug 1 aggregate ($683.90). Gross customer sales are shown; estimated net assumes Apple keeps 30%.",
       "isManualSnapshot": true,
-      "snapshotRange": "Jul 24-Jul 30, 2026",
+      "snapshotRange": "Jul 26-Aug 1, 2026",
       "platformFeePct": 30,
       "estimatedNetPct": 70,
       "baselineWindow": {
@@ -6587,11 +6719,11 @@ window.DASHBOARD_DATA = {
       },
       "yearToDate": {
         "label": "Apple App Store snapshot",
-        "range": "Jan 1-Jul 30, 2026",
+        "range": "Jan 1-Aug 1, 2026",
         "purchases": 22,
-        "purchaseRevenue": 920.53,
-        "developerRevShare": 644.32,
-        "revenuePerPurchase": 41.84,
+        "purchaseRevenue": 1046.68,
+        "developerRevShare": 732.68,
+        "revenuePerPurchase": 47.58,
         "payments": [
           {
             "date": "Apr 16",
@@ -6720,10 +6852,14 @@ window.DASHBOARD_DATA = {
             "source": "Apple App Store"
           },
           {
-            "date": "Jul 24-30 (aggregate)",
-            "amount": 557.75,
+            "date": "Jul 26-Aug 1 (aggregate)",
+            "createdAt": "2026-08-01",
+            "sortDate": "2026-08-01",
+            "amount": 683.9,
+            "developerRevShare": 478.73,
             "description": "Apple App Store - aggregate gross sales, United States (no title breakdown provided)",
-            "source": "Apple App Store"
+            "source": "Apple App Store",
+            "note": "Revenue-only aggregate; no transaction count or per-title detail provided."
           }
         ],
         "purchases_note": "Jul 31, 2026 aggregate sales screenshot reported revenue only (no per-transaction count); 'purchases' count below is NOT incremented for this window to avoid an invented transaction count. revenuePerPurchase is therefore no longer strictly purchases-based for this period; treat purchaseRevenue as the reliable figure."
@@ -6863,22 +6999,6 @@ window.DASHBOARD_DATA = {
           "developerRevShare": 10.49
         },
         {
-          "date": "Jul 24",
-          "rawDate": "20260724",
-          "purchases": null,
-          "purchaseRevenue": 0.0,
-          "developerRevShare": 0.0,
-          "note": null
-        },
-        {
-          "date": "Jul 25",
-          "rawDate": "20260725",
-          "purchases": null,
-          "purchaseRevenue": 0.0,
-          "developerRevShare": 0.0,
-          "note": null
-        },
-        {
           "date": "Jul 26",
           "rawDate": "20260726",
           "purchases": null,
@@ -6890,8 +7010,8 @@ window.DASHBOARD_DATA = {
           "date": "Jul 27",
           "rawDate": "20260727",
           "purchases": null,
-          "purchaseRevenue": 41.98,
-          "developerRevShare": 29.39,
+          "purchaseRevenue": 29.4,
+          "developerRevShare": 20.58,
           "note": "Aggregate revenue only; source screenshot provided no per-transaction count."
         },
         {
@@ -6906,16 +7026,32 @@ window.DASHBOARD_DATA = {
           "date": "Jul 29",
           "rawDate": "20260729",
           "purchases": null,
-          "purchaseRevenue": 74.98,
-          "developerRevShare": 52.49,
+          "purchaseRevenue": 52.5,
+          "developerRevShare": 36.75,
           "note": "Aggregate revenue only; source screenshot provided no per-transaction count."
         },
         {
           "date": "Jul 30",
           "rawDate": "20260730",
           "purchases": null,
-          "purchaseRevenue": 440.79,
-          "developerRevShare": 308.55,
+          "purchaseRevenue": 308.7,
+          "developerRevShare": 216.09,
+          "note": "Aggregate revenue only; source screenshot provided no per-transaction count."
+        },
+        {
+          "date": "Jul 31",
+          "rawDate": "20260731",
+          "purchases": null,
+          "purchaseRevenue": 132.3,
+          "developerRevShare": 92.61,
+          "note": "Aggregate revenue only; source screenshot provided no per-transaction count."
+        },
+        {
+          "date": "Aug 1",
+          "rawDate": "20260801",
+          "purchases": null,
+          "purchaseRevenue": 161.0,
+          "developerRevShare": 112.7,
           "note": "Aggregate revenue only; source screenshot provided no per-transaction count."
         }
       ],
@@ -6968,25 +7104,34 @@ window.DASHBOARD_DATA = {
         "purchaseRevenue": 557.75,
         "alreadyIncludedInCumulative": true,
         "note": "Latest Apple App Store Connect sales screenshot (Jul 24-Jul 30, 2026) shows aggregate daily gross sales totaling $557.75 (Jul 27 $41.98, Jul 29 $74.98, Jul 30 $440.79; Jul 24/25/26/28 $0.00), United States. No per-title/product breakdown was provided, so no transaction count or title-level entries are recorded -- this is an amount-only aggregate. Estimated net at existing 70%-of-gross convention is $390.42. Added Jul 31, 2026, lifting cumulative Apple purchaseRevenue to $920.53 gross (est net $644.32)."
+      },
+      "latestSnapshot": {
+        "label": "Apple latest snapshot",
+        "range": "Jul 26-Aug 1, 2026",
+        "purchaseRevenue": 683.9,
+        "estimatedDeveloperRevShare": 478.73,
+        "downloads": 405,
+        "note": "Manual Apple Connect screenshot. Sales are gross sales; downloads are free app downloads. Apple transaction count was not provided."
       }
     },
     "sourceBreakout": [
       {
         "source": "Stripe",
-        "purchases": 78,
-        "purchaseRevenue": 1612.21,
-        "detail": "Full rebuild Jul 31, 2026 from the fresh Stripe connector pull: 100 charges returned, 78 valid paid/captured/succeeded/non-refunded (22 excluded as refunded or incomplete). This is the complete valid Stripe set, not only incremental post-Jul-28 charges. Supersedes an earlier same-day undercounted figure of 52/$1,075.45 that resulted from diffing against an incomplete baseline instead of rebuilding from the full valid set."
+        "purchases": 88,
+        "purchaseRevenue": 1822.11,
+        "detail": "Stripe refreshed Aug 2, 2026; only missing valid charge IDs from the fresh connector pull were added."
       },
       {
         "source": "Roku",
         "purchases": 27,
-        "purchaseRevenue": 499.73
+        "purchaseRevenue": 499.73,
+        "detail": "Last-good Roku Sales Activity values preserved; no zeroing."
       },
       {
         "source": "Apple manual",
         "purchases": 22,
-        "purchaseRevenue": 920.53,
-        "detail": "Manual Apple App Store snapshot. Jul 31, 2026 aggregate sales screenshot (Jul 24-Jul 30, 2026) adds $557.75 gross (revenue-only; no per-title breakdown, purchases count unchanged). Earlier sales preserved."
+        "purchaseRevenue": 1046.68,
+        "detail": "Manual Apple screenshot superseded Jul 24-Jul 30 $557.75 with Jul 26-Aug 1 $683.90; purchase count unchanged because screenshot was revenue-only."
       }
     ],
     "baselineWindow": {
@@ -7007,246 +7152,1147 @@ window.DASHBOARD_DATA = {
     },
     "yearToDate": {
       "label": "Visible sales this year",
-      "range": "Jan 1-Jul 31, 2026",
-      "purchases": 127,
-      "purchaseRevenue": 3032.47,
-      "developerRevShare": 2657.26,
-      "revenuePerPurchase": 23.88,
-      "developerRevShareNote": "Developer revenue share convention (unchanged from prior refreshes): Stripe full charge amount counted at 100% ($1612.21, no platform cut modeled) + Roku's own reported developer share ($400.73) + Apple's estimated net at the existing 70%-of-gross convention ($644.32) = $2657.26."
+      "range": "Jan 1-Aug 1, 2026",
+      "purchases": 137,
+      "purchaseRevenue": 3368.52,
+      "developerRevShare": 2955.52,
+      "revenuePerPurchase": 24.59,
+      "developerRevShareNote": "Stripe full charge amount counted at 100% ($1822.11) + Roku developer share ($400.73) + Apple's estimated 70% net ($732.68) = $2955.52."
     },
     "monthToDate": {
       "label": "Latest Stripe pull (rolling 7 days)",
-      "range": "Jul 25-Jul 31, 2026",
-      "purchases": 26,
-      "purchaseRevenue": 539.74,
-      "developerRevShare": 539.74,
-      "revenuePerPurchase": 20.76,
+      "range": "Jul 26-Aug 1, 2026",
+      "purchases": 36,
+      "purchaseRevenue": 749.64,
+      "developerRevShare": 749.64,
+      "revenuePerPurchase": 20.82,
       "payments": [
         {
+          "id": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+          "date": "Aug 1",
+          "createdAt": "2026-08-02T02:59:21Z",
+          "sortDate": "2026-08-02T02:59:21Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+          "stripePaymentIntentId": "pi_3TzpcTLG0Cw1zW4e2ONdvaRi",
+          "orderId": "itr-2026080202592092",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzmDeLG0Cw1zW4e1hSM76p5",
+          "date": "Aug 1",
+          "createdAt": "2026-08-01T23:21:31Z",
+          "sortDate": "2026-08-01T23:21:31Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzmDeLG0Cw1zW4e1hSM76p5",
+          "stripePaymentIntentId": "pi_3TzmDeLG0Cw1zW4e1DjlcMXo",
+          "orderId": "baa-2026080123213055",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzUsaLG0Cw1zW4e1E2iPagJ",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T04:50:37Z",
+          "sortDate": "2026-08-01T04:50:37Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzUsaLG0Cw1zW4e1E2iPagJ",
+          "stripePaymentIntentId": "pi_3TzUsaLG0Cw1zW4e1tfWkCsi",
+          "orderId": "sas-2026080104503658",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzUOVLG0Cw1zW4e1cL58jI6",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T04:19:31Z",
+          "sortDate": "2026-08-01T04:19:31Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzUOVLG0Cw1zW4e1cL58jI6",
+          "stripePaymentIntentId": "pi_3TzUOVLG0Cw1zW4e1RwTB9hv",
+          "orderId": "wew-2026080104193090",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzUKMLG0Cw1zW4e2kKfWreG",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T04:15:14Z",
+          "sortDate": "2026-08-01T04:15:14Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzUKMLG0Cw1zW4e2kKfWreG",
+          "stripePaymentIntentId": "pi_3TzUKMLG0Cw1zW4e2H29Ygkt",
+          "orderId": "pyy-2026080104151396",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzS18LG0Cw1zW4e0gJjIT5t",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T01:47:14Z",
+          "sortDate": "2026-08-01T01:47:14Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzS18LG0Cw1zW4e0gJjIT5t",
+          "stripePaymentIntentId": "pi_3TzS18LG0Cw1zW4e0ZkxzNE3",
+          "orderId": "gol-2026080101471383",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzR9FLG0Cw1zW4e1mPMQLV7",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T00:51:33Z",
+          "sortDate": "2026-08-01T00:51:33Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzR9FLG0Cw1zW4e1mPMQLV7",
+          "stripePaymentIntentId": "pi_3TzR9FLG0Cw1zW4e1C46ZvYS",
+          "orderId": "bag-2026080100513319",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzQHKLG0Cw1zW4e0m2DJ4QH",
+          "date": "Jul 31",
+          "createdAt": "2026-07-31T23:55:50Z",
+          "sortDate": "2026-07-31T23:55:50Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzQHKLG0Cw1zW4e0m2DJ4QH",
+          "stripePaymentIntentId": "pi_3TzQHKLG0Cw1zW4e0PP1u8tL",
+          "orderId": "brr-2026073123554977",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzJehLG0Cw1zW4e0ZafeOP1",
+          "date": "Jul 31",
+          "createdAt": "2026-07-31T16:51:32Z",
+          "sortDate": "2026-07-31T16:51:32Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzJehLG0Cw1zW4e0ZafeOP1",
+          "stripePaymentIntentId": "pi_3TzJehLG0Cw1zW4e0PvTBJus",
+          "orderId": "com-2026073116513172",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzJNXLG0Cw1zW4e0nCG3w5s",
+          "date": "Jul 31",
+          "createdAt": "2026-07-31T16:33:48Z",
+          "sortDate": "2026-07-31T16:33:48Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzJNXLG0Cw1zW4e0nCG3w5s",
+          "stripePaymentIntentId": "pi_3TzJNXLG0Cw1zW4e0huvDWSP",
+          "orderId": "sah-2026073116334765",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
           "date": "Jul 31",
           "createdAt": "2026-07-31T11:04:59Z",
+          "sortDate": "2026-07-31T11:04:59Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3TzEFKLG0Cw1zW4e23n3fXCE"
+          "stripeChargeId": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
+          "stripePaymentIntentId": "pi_3TzEFKLG0Cw1zW4e2BhEcfTJ",
+          "orderId": "spc-2026073111045857",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3TzCUiLG0Cw1zW4e16ILLnfy",
           "date": "Jul 31",
           "createdAt": "2026-07-31T09:12:45Z",
+          "sortDate": "2026-07-31T09:12:45Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3TzCUiLG0Cw1zW4e16ILLnfy"
+          "stripeChargeId": "ch_3TzCUiLG0Cw1zW4e16ILLnfy",
+          "stripePaymentIntentId": "pi_3TzCUiLG0Cw1zW4e1e6IMbcp",
+          "orderId": "boj-2026073109124470",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz7MrLG0Cw1zW4e0szfHeWs",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T03:44:17Z",
+          "sortDate": "2026-07-31T03:44:17Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz7MrLG0Cw1zW4e0szfHeWs"
+          "stripeChargeId": "ch_3Tz7MrLG0Cw1zW4e0szfHeWs",
+          "stripePaymentIntentId": "pi_3Tz7MrLG0Cw1zW4e0nFPqa1h",
+          "orderId": "gaj-2026073103441719",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz7J4LG0Cw1zW4e0gBqEDTd",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T03:40:22Z",
+          "sortDate": "2026-07-31T03:40:22Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz7J4LG0Cw1zW4e0gBqEDTd"
+          "stripeChargeId": "ch_3Tz7J4LG0Cw1zW4e0gBqEDTd",
+          "stripePaymentIntentId": "pi_3Tz7J4LG0Cw1zW4e0HUD0BHa",
+          "orderId": "coj-2026073103402209",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz78ULG0Cw1zW4e0qdLvlSR",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T03:29:27Z",
+          "sortDate": "2026-07-31T03:29:27Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Anonymous Customer - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz78ULG0Cw1zW4e0qdLvlSR"
+          "stripeChargeId": "ch_3Tz78ULG0Cw1zW4e0qdLvlSR",
+          "stripePaymentIntentId": "pi_3Tz78ULG0Cw1zW4e0tM1JWeq",
+          "orderId": "huc-2026073103292664",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz47RLG0Cw1zW4e1TUSt1nv",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T00:16:09Z",
+          "sortDate": "2026-07-31T00:16:09Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz47RLG0Cw1zW4e1TUSt1nv"
+          "stripeChargeId": "ch_3Tz47RLG0Cw1zW4e1TUSt1nv",
+          "stripePaymentIntentId": "pi_3Tz47RLG0Cw1zW4e1FYzc0le",
+          "orderId": "taj-2026073100160920",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz3MsLG0Cw1zW4e00hGznTV",
           "date": "Jul 30",
           "createdAt": "2026-07-30T23:28:02Z",
+          "sortDate": "2026-07-30T23:28:02Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz3MsLG0Cw1zW4e00hGznTV"
+          "stripeChargeId": "ch_3Tz3MsLG0Cw1zW4e00hGznTV",
+          "stripePaymentIntentId": "pi_3Tz3MsLG0Cw1zW4e0mjh6SJz",
+          "orderId": "gud-2026073023280174",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz301LG0Cw1zW4e1OHOZPHl",
           "date": "Jul 30",
           "createdAt": "2026-07-30T23:04:26Z",
+          "sortDate": "2026-07-30T23:04:26Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz301LG0Cw1zW4e1OHOZPHl"
+          "stripeChargeId": "ch_3Tz301LG0Cw1zW4e1OHOZPHl",
+          "stripePaymentIntentId": "pi_3Tz301LG0Cw1zW4e1ZokiUw6",
+          "orderId": "war-2026073023042542",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz25ALG0Cw1zW4e2RPbDsa7",
           "date": "Jul 30",
           "createdAt": "2026-07-30T22:05:40Z",
+          "sortDate": "2026-07-30T22:05:40Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz25ALG0Cw1zW4e2RPbDsa7"
+          "stripeChargeId": "ch_3Tz25ALG0Cw1zW4e2RPbDsa7",
+          "stripePaymentIntentId": "pi_3Tz25ALG0Cw1zW4e2WFGOneD",
+          "orderId": "dar-2026073022054001",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz1JNLG0Cw1zW4e1wemmNrK",
           "date": "Jul 30",
           "createdAt": "2026-07-30T21:16:17Z",
+          "sortDate": "2026-07-30T21:16:17Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz1JNLG0Cw1zW4e1wemmNrK"
+          "stripeChargeId": "ch_3Tz1JNLG0Cw1zW4e1wemmNrK",
+          "stripePaymentIntentId": "pi_3Tz1JNLG0Cw1zW4e10c2mJD9",
+          "orderId": "kot-2026073021161666",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tz1ANLG0Cw1zW4e0UQ7AKMZ",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T21:06:59Z",
+          "sortDate": "2026-07-30T21:06:59Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tz1ANLG0Cw1zW4e0UQ7AKMZ",
+          "stripePaymentIntentId": "pi_3Tz1ANLG0Cw1zW4e0p7QtHKt",
+          "orderId": "crj-2026073021065903",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyzCmLG0Cw1zW4e0OkN3IXD",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T19:01:20Z",
+          "sortDate": "2026-07-30T19:01:20Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyzCmLG0Cw1zW4e0OkN3IXD",
+          "stripePaymentIntentId": "pi_3TyzCmLG0Cw1zW4e0B1Gtod3",
+          "orderId": "ind-2026073019012018",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyvJZLG0Cw1zW4e29PYVKoH",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T14:52:05Z",
+          "sortDate": "2026-07-30T14:52:05Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyvJZLG0Cw1zW4e29PYVKoH",
+          "stripePaymentIntentId": "pi_3TyvJZLG0Cw1zW4e2Xwr2Ngh",
+          "orderId": "fis-2026073014520532",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyuURLG0Cw1zW4e2bpnTqLk",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:59:15Z",
+          "sortDate": "2026-07-30T13:59:15Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Anonymous Customer - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyuURLG0Cw1zW4e2bpnTqLk",
+          "stripePaymentIntentId": "pi_3TyuURLG0Cw1zW4e2dGOkWT1",
+          "orderId": "bas-2026073013591485",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tyu2VLG0Cw1zW4e0luUxo96",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:30:23Z",
+          "sortDate": "2026-07-30T13:30:23Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tyu2VLG0Cw1zW4e0luUxo96",
+          "stripePaymentIntentId": "pi_3Tyu2VLG0Cw1zW4e00p70EBS",
+          "orderId": "bom-2026073013302344",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TytxLLG0Cw1zW4e2FpZ4FHc",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:25:03Z",
+          "sortDate": "2026-07-30T13:25:03Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TytxLLG0Cw1zW4e2FpZ4FHc",
+          "stripePaymentIntentId": "pi_3TytxLLG0Cw1zW4e2jaqTlD5",
+          "orderId": "bed-2026073013250321",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TytpLLG0Cw1zW4e2mlSZtpI",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:16:48Z",
+          "sortDate": "2026-07-30T13:16:48Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TytpLLG0Cw1zW4e2mlSZtpI",
+          "stripePaymentIntentId": "pi_3TytpLLG0Cw1zW4e2Uk4gTJE",
+          "orderId": "tid-2026073013164763",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tys4oLG0Cw1zW4e18cjs5pa",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T11:24:38Z",
+          "sortDate": "2026-07-30T11:24:38Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tys4oLG0Cw1zW4e18cjs5pa",
+          "stripePaymentIntentId": "pi_3Tys4oLG0Cw1zW4e1EqfS7yB",
+          "orderId": "ann-2026073011243826",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyrAVLG0Cw1zW4e1FifKDmF",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T10:26:27Z",
+          "sortDate": "2026-07-30T10:26:27Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyrAVLG0Cw1zW4e1FifKDmF",
+          "stripePaymentIntentId": "pi_3TyrAVLG0Cw1zW4e16XWG5po",
+          "orderId": "paj-2026073010262706",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tyq1cLG0Cw1zW4e2FB0Tk9a",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T09:13:13Z",
+          "sortDate": "2026-07-30T09:13:13Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tyq1cLG0Cw1zW4e2FB0Tk9a",
+          "stripePaymentIntentId": "pi_3Tyq1cLG0Cw1zW4e2sUdkqzy",
+          "orderId": "mec-2026073009131248",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TypI6LG0Cw1zW4e1qSCh6i3",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T08:26:10Z",
+          "sortDate": "2026-07-30T08:26:10Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TypI6LG0Cw1zW4e1qSCh6i3",
+          "stripePaymentIntentId": "pi_3TypI6LG0Cw1zW4e1DWOdzwV",
+          "orderId": "pem-2026073008261037",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tyot3LG0Cw1zW4e0qLYtbmV",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T08:00:17Z",
+          "sortDate": "2026-07-30T08:00:17Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tyot3LG0Cw1zW4e0qLYtbmV",
+          "stripePaymentIntentId": "pi_3Tyot3LG0Cw1zW4e065eK1tE",
+          "orderId": "jom-2026073008001694",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyUuPLG0Cw1zW4e2UIrqDbg",
+          "date": "Jul 29",
+          "createdAt": "2026-07-29T10:40:21Z",
+          "sortDate": "2026-07-29T10:40:21Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Purchase Bundle 21: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyUuPLG0Cw1zW4e2UIrqDbg",
+          "stripePaymentIntentId": "pi_3TyUuPLG0Cw1zW4e2XnL5rB4",
+          "orderId": "paj-2026072910402080",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Txt8TLG0Cw1zW4e0nsHWvcG",
+          "date": "Jul 27",
+          "createdAt": "2026-07-27T18:20:21Z",
+          "sortDate": "2026-07-27T18:20:21Z",
+          "amount": 14.99,
+          "developerRevShare": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Txt8TLG0Cw1zW4e0nsHWvcG",
+          "stripePaymentIntentId": "pi_3Txt8TLG0Cw1zW4e0n5w12v6",
+          "orderId": "jom-2026072718202102",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Txt79LG0Cw1zW4e1I51WlLH",
+          "date": "Jul 27",
+          "createdAt": "2026-07-27T18:18:59Z",
+          "sortDate": "2026-07-27T18:18:59Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Purchase Bundle 21: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Txt79LG0Cw1zW4e1I51WlLH",
+          "stripePaymentIntentId": "pi_3Txt79LG0Cw1zW4e1zbs8Q3n",
+          "orderId": "jom-2026072718185937",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TxbcULG0Cw1zW4e1fG5wBI6",
+          "date": "Jul 26",
+          "createdAt": "2026-07-26T23:38:10Z",
+          "sortDate": "2026-07-26T23:38:10Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Purchase Bundle 21: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TxbcULG0Cw1zW4e1fG5wBI6",
+          "stripePaymentIntentId": "pi_3TxbcULG0Cw1zW4e1VCvW9gh",
+          "orderId": "jom-2026072623381034",
+          "contentId": null,
+          "contentTitle": null
         }
       ],
-      "note": "Rolling 7-day window ending on the latest sales-update date (2026-07-31), computed directly from the fresh Stripe connector pull's full 78-charge valid set (not a GA4 usage-week window, not a calendar month/week). This window will always advance to end on the most recent sales-update date on future refreshes."
+      "note": "Fresh Stripe connector pull for Jul 26-Aug 1, 2026. Valid charges are paid/captured/succeeded/non-refunded; duplicate charge IDs already in the dashboard were not counted twice."
     },
     "lastWeek": {
       "label": "Apple latest snapshot",
-      "range": "Jul 24-Jul 30, 2026",
+      "range": "Jul 26-Aug 1, 2026",
       "purchases": null,
-      "purchaseRevenue": 557.75,
-      "estimatedDeveloperRevShare": 390.42,
-      "note": "Most recent Apple App Store Connect aggregate sales screenshot (Jul 24-Jul 30, 2026), overlapping the current rolling 7-day window (Jul 25-Jul 31). Apple's snapshot is a daily gross-revenue aggregate with no per-transaction detail, so no purchase count is shown here (left as null rather than invented) and the window is reported using Apple's own snapshot period rather than being re-sliced to an exact Jul 25-31 boundary. Already included in the Visible YTD total below."
+      "purchaseRevenue": 683.9,
+      "estimatedDeveloperRevShare": 478.73,
+      "downloads": 405,
+      "note": "Most recent Apple App Store Connect screenshot. The sales screenshot is gross revenue by day, not transaction count, so Apple purchase count is left blank rather than invented."
     },
     "thisWeek": {
       "label": "Visible YTD",
-      "range": "Jan 1-Jul 31, 2026",
-      "purchases": 127,
-      "purchaseRevenue": 3032.47,
-      "developerRevShare": 2657.26,
-      "note": "Corrected platform-wide visible year-to-date total: Stripe (78/$1612.21) + Roku (27/$499.73) + Apple (22/$920.53)."
+      "range": "Jan 1-Aug 1, 2026",
+      "purchases": 137,
+      "purchaseRevenue": 3368.52,
+      "developerRevShare": 2955.52,
+      "note": "Visible platform sales: Stripe (88/$1822.11) + Roku (27/$499.73) + Apple manual (22/$1046.68). Apple count excludes unknown transactions from revenue-only screenshots."
     },
     "currentCompleteWeek": {
       "label": "Visible YTD",
-      "range": "Jan 1-Jul 31, 2026",
-      "purchases": 127,
-      "purchaseRevenue": 3032.47,
-      "developerRevShare": 2657.26,
-      "note": "Corrected platform-wide visible year-to-date total: Stripe (78/$1612.21) + Roku (27/$499.73) + Apple (22/$920.53)."
+      "range": "Jan 1-Aug 1, 2026",
+      "purchases": 137,
+      "purchaseRevenue": 3368.52,
+      "developerRevShare": 2955.52,
+      "note": "Visible platform sales: Stripe (88/$1822.11) + Roku (27/$499.73) + Apple manual (22/$1046.68). Apple count excludes unknown transactions from revenue-only screenshots."
     },
     "weekToDate": {
       "label": "Visible YTD",
-      "range": "Jan 1-Jul 31, 2026",
-      "purchases": 127,
-      "purchaseRevenue": 3032.47,
-      "developerRevShare": 2657.26,
-      "note": "Corrected platform-wide visible year-to-date total: Stripe (78/$1612.21) + Roku (27/$499.73) + Apple (22/$920.53)."
+      "range": "Jan 1-Aug 1, 2026",
+      "purchases": 137,
+      "purchaseRevenue": 3368.52,
+      "developerRevShare": 2955.52,
+      "note": "Visible platform sales: Stripe (88/$1822.11) + Roku (27/$499.73) + Apple manual (22/$1046.68). Apple count excludes unknown transactions from revenue-only screenshots."
     },
     "recent12Days": {
       "label": "Latest Stripe pull (rolling 7 days)",
-      "range": "Jul 25-Jul 31, 2026",
-      "purchases": 26,
-      "purchaseRevenue": 539.74,
-      "developerRevShare": 539.74,
-      "revenuePerPurchase": 20.76,
+      "range": "Jul 26-Aug 1, 2026",
+      "purchases": 36,
+      "purchaseRevenue": 749.64,
+      "developerRevShare": 749.64,
+      "revenuePerPurchase": 20.82,
       "payments": [
         {
+          "id": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+          "date": "Aug 1",
+          "createdAt": "2026-08-02T02:59:21Z",
+          "sortDate": "2026-08-02T02:59:21Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzpcTLG0Cw1zW4e2wDuwmDt",
+          "stripePaymentIntentId": "pi_3TzpcTLG0Cw1zW4e2ONdvaRi",
+          "orderId": "itr-2026080202592092",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzmDeLG0Cw1zW4e1hSM76p5",
+          "date": "Aug 1",
+          "createdAt": "2026-08-01T23:21:31Z",
+          "sortDate": "2026-08-01T23:21:31Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzmDeLG0Cw1zW4e1hSM76p5",
+          "stripePaymentIntentId": "pi_3TzmDeLG0Cw1zW4e1DjlcMXo",
+          "orderId": "baa-2026080123213055",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzUsaLG0Cw1zW4e1E2iPagJ",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T04:50:37Z",
+          "sortDate": "2026-08-01T04:50:37Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzUsaLG0Cw1zW4e1E2iPagJ",
+          "stripePaymentIntentId": "pi_3TzUsaLG0Cw1zW4e1tfWkCsi",
+          "orderId": "sas-2026080104503658",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzUOVLG0Cw1zW4e1cL58jI6",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T04:19:31Z",
+          "sortDate": "2026-08-01T04:19:31Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzUOVLG0Cw1zW4e1cL58jI6",
+          "stripePaymentIntentId": "pi_3TzUOVLG0Cw1zW4e1RwTB9hv",
+          "orderId": "wew-2026080104193090",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzUKMLG0Cw1zW4e2kKfWreG",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T04:15:14Z",
+          "sortDate": "2026-08-01T04:15:14Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzUKMLG0Cw1zW4e2kKfWreG",
+          "stripePaymentIntentId": "pi_3TzUKMLG0Cw1zW4e2H29Ygkt",
+          "orderId": "pyy-2026080104151396",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzS18LG0Cw1zW4e0gJjIT5t",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T01:47:14Z",
+          "sortDate": "2026-08-01T01:47:14Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzS18LG0Cw1zW4e0gJjIT5t",
+          "stripePaymentIntentId": "pi_3TzS18LG0Cw1zW4e0ZkxzNE3",
+          "orderId": "gol-2026080101471383",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzR9FLG0Cw1zW4e1mPMQLV7",
+          "date": "Jul 31",
+          "createdAt": "2026-08-01T00:51:33Z",
+          "sortDate": "2026-08-01T00:51:33Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzR9FLG0Cw1zW4e1mPMQLV7",
+          "stripePaymentIntentId": "pi_3TzR9FLG0Cw1zW4e1C46ZvYS",
+          "orderId": "bag-2026080100513319",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzQHKLG0Cw1zW4e0m2DJ4QH",
+          "date": "Jul 31",
+          "createdAt": "2026-07-31T23:55:50Z",
+          "sortDate": "2026-07-31T23:55:50Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzQHKLG0Cw1zW4e0m2DJ4QH",
+          "stripePaymentIntentId": "pi_3TzQHKLG0Cw1zW4e0PP1u8tL",
+          "orderId": "brr-2026073123554977",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzJehLG0Cw1zW4e0ZafeOP1",
+          "date": "Jul 31",
+          "createdAt": "2026-07-31T16:51:32Z",
+          "sortDate": "2026-07-31T16:51:32Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzJehLG0Cw1zW4e0ZafeOP1",
+          "stripePaymentIntentId": "pi_3TzJehLG0Cw1zW4e0PvTBJus",
+          "orderId": "com-2026073116513172",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzJNXLG0Cw1zW4e0nCG3w5s",
+          "date": "Jul 31",
+          "createdAt": "2026-07-31T16:33:48Z",
+          "sortDate": "2026-07-31T16:33:48Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TzJNXLG0Cw1zW4e0nCG3w5s",
+          "stripePaymentIntentId": "pi_3TzJNXLG0Cw1zW4e0huvDWSP",
+          "orderId": "sah-2026073116334765",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
           "date": "Jul 31",
           "createdAt": "2026-07-31T11:04:59Z",
+          "sortDate": "2026-07-31T11:04:59Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3TzEFKLG0Cw1zW4e23n3fXCE"
+          "stripeChargeId": "ch_3TzEFKLG0Cw1zW4e23n3fXCE",
+          "stripePaymentIntentId": "pi_3TzEFKLG0Cw1zW4e2BhEcfTJ",
+          "orderId": "spc-2026073111045857",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3TzCUiLG0Cw1zW4e16ILLnfy",
           "date": "Jul 31",
           "createdAt": "2026-07-31T09:12:45Z",
+          "sortDate": "2026-07-31T09:12:45Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3TzCUiLG0Cw1zW4e16ILLnfy"
+          "stripeChargeId": "ch_3TzCUiLG0Cw1zW4e16ILLnfy",
+          "stripePaymentIntentId": "pi_3TzCUiLG0Cw1zW4e1e6IMbcp",
+          "orderId": "boj-2026073109124470",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz7MrLG0Cw1zW4e0szfHeWs",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T03:44:17Z",
+          "sortDate": "2026-07-31T03:44:17Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz7MrLG0Cw1zW4e0szfHeWs"
+          "stripeChargeId": "ch_3Tz7MrLG0Cw1zW4e0szfHeWs",
+          "stripePaymentIntentId": "pi_3Tz7MrLG0Cw1zW4e0nFPqa1h",
+          "orderId": "gaj-2026073103441719",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz7J4LG0Cw1zW4e0gBqEDTd",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T03:40:22Z",
+          "sortDate": "2026-07-31T03:40:22Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz7J4LG0Cw1zW4e0gBqEDTd"
+          "stripeChargeId": "ch_3Tz7J4LG0Cw1zW4e0gBqEDTd",
+          "stripePaymentIntentId": "pi_3Tz7J4LG0Cw1zW4e0HUD0BHa",
+          "orderId": "coj-2026073103402209",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz78ULG0Cw1zW4e0qdLvlSR",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T03:29:27Z",
+          "sortDate": "2026-07-31T03:29:27Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Anonymous Customer - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz78ULG0Cw1zW4e0qdLvlSR"
+          "stripeChargeId": "ch_3Tz78ULG0Cw1zW4e0qdLvlSR",
+          "stripePaymentIntentId": "pi_3Tz78ULG0Cw1zW4e0tM1JWeq",
+          "orderId": "huc-2026073103292664",
+          "contentId": null,
+          "contentTitle": null
         },
         {
-          "date": "Jul 31",
+          "id": "ch_3Tz47RLG0Cw1zW4e1TUSt1nv",
+          "date": "Jul 30",
           "createdAt": "2026-07-31T00:16:09Z",
+          "sortDate": "2026-07-31T00:16:09Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz47RLG0Cw1zW4e1TUSt1nv"
+          "stripeChargeId": "ch_3Tz47RLG0Cw1zW4e1TUSt1nv",
+          "stripePaymentIntentId": "pi_3Tz47RLG0Cw1zW4e1FYzc0le",
+          "orderId": "taj-2026073100160920",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz3MsLG0Cw1zW4e00hGznTV",
           "date": "Jul 30",
           "createdAt": "2026-07-30T23:28:02Z",
+          "sortDate": "2026-07-30T23:28:02Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz3MsLG0Cw1zW4e00hGznTV"
+          "stripeChargeId": "ch_3Tz3MsLG0Cw1zW4e00hGznTV",
+          "stripePaymentIntentId": "pi_3Tz3MsLG0Cw1zW4e0mjh6SJz",
+          "orderId": "gud-2026073023280174",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz301LG0Cw1zW4e1OHOZPHl",
           "date": "Jul 30",
           "createdAt": "2026-07-30T23:04:26Z",
+          "sortDate": "2026-07-30T23:04:26Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz301LG0Cw1zW4e1OHOZPHl"
+          "stripeChargeId": "ch_3Tz301LG0Cw1zW4e1OHOZPHl",
+          "stripePaymentIntentId": "pi_3Tz301LG0Cw1zW4e1ZokiUw6",
+          "orderId": "war-2026073023042542",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz25ALG0Cw1zW4e2RPbDsa7",
           "date": "Jul 30",
           "createdAt": "2026-07-30T22:05:40Z",
+          "sortDate": "2026-07-30T22:05:40Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz25ALG0Cw1zW4e2RPbDsa7"
+          "stripeChargeId": "ch_3Tz25ALG0Cw1zW4e2RPbDsa7",
+          "stripePaymentIntentId": "pi_3Tz25ALG0Cw1zW4e2WFGOneD",
+          "orderId": "dar-2026073022054001",
+          "contentId": null,
+          "contentTitle": null
         },
         {
+          "id": "ch_3Tz1JNLG0Cw1zW4e1wemmNrK",
           "date": "Jul 30",
           "createdAt": "2026-07-30T21:16:17Z",
+          "sortDate": "2026-07-30T21:16:17Z",
           "amount": 20.99,
           "developerRevShare": 20.99,
           "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe",
-          "stripeChargeId": "ch_3Tz1JNLG0Cw1zW4e1wemmNrK"
+          "stripeChargeId": "ch_3Tz1JNLG0Cw1zW4e1wemmNrK",
+          "stripePaymentIntentId": "pi_3Tz1JNLG0Cw1zW4e10c2mJD9",
+          "orderId": "kot-2026073021161666",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tz1ANLG0Cw1zW4e0UQ7AKMZ",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T21:06:59Z",
+          "sortDate": "2026-07-30T21:06:59Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tz1ANLG0Cw1zW4e0UQ7AKMZ",
+          "stripePaymentIntentId": "pi_3Tz1ANLG0Cw1zW4e0p7QtHKt",
+          "orderId": "crj-2026073021065903",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyzCmLG0Cw1zW4e0OkN3IXD",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T19:01:20Z",
+          "sortDate": "2026-07-30T19:01:20Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyzCmLG0Cw1zW4e0OkN3IXD",
+          "stripePaymentIntentId": "pi_3TyzCmLG0Cw1zW4e0B1Gtod3",
+          "orderId": "ind-2026073019012018",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyvJZLG0Cw1zW4e29PYVKoH",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T14:52:05Z",
+          "sortDate": "2026-07-30T14:52:05Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyvJZLG0Cw1zW4e29PYVKoH",
+          "stripePaymentIntentId": "pi_3TyvJZLG0Cw1zW4e2Xwr2Ngh",
+          "orderId": "fis-2026073014520532",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyuURLG0Cw1zW4e2bpnTqLk",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:59:15Z",
+          "sortDate": "2026-07-30T13:59:15Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Anonymous Customer - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyuURLG0Cw1zW4e2bpnTqLk",
+          "stripePaymentIntentId": "pi_3TyuURLG0Cw1zW4e2dGOkWT1",
+          "orderId": "bas-2026073013591485",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tyu2VLG0Cw1zW4e0luUxo96",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:30:23Z",
+          "sortDate": "2026-07-30T13:30:23Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tyu2VLG0Cw1zW4e0luUxo96",
+          "stripePaymentIntentId": "pi_3Tyu2VLG0Cw1zW4e00p70EBS",
+          "orderId": "bom-2026073013302344",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TytxLLG0Cw1zW4e2FpZ4FHc",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:25:03Z",
+          "sortDate": "2026-07-30T13:25:03Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TytxLLG0Cw1zW4e2FpZ4FHc",
+          "stripePaymentIntentId": "pi_3TytxLLG0Cw1zW4e2jaqTlD5",
+          "orderId": "bed-2026073013250321",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TytpLLG0Cw1zW4e2mlSZtpI",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T13:16:48Z",
+          "sortDate": "2026-07-30T13:16:48Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TytpLLG0Cw1zW4e2mlSZtpI",
+          "stripePaymentIntentId": "pi_3TytpLLG0Cw1zW4e2Uk4gTJE",
+          "orderId": "tid-2026073013164763",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tys4oLG0Cw1zW4e18cjs5pa",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T11:24:38Z",
+          "sortDate": "2026-07-30T11:24:38Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tys4oLG0Cw1zW4e18cjs5pa",
+          "stripePaymentIntentId": "pi_3Tys4oLG0Cw1zW4e1EqfS7yB",
+          "orderId": "ann-2026073011243826",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyrAVLG0Cw1zW4e1FifKDmF",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T10:26:27Z",
+          "sortDate": "2026-07-30T10:26:27Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyrAVLG0Cw1zW4e1FifKDmF",
+          "stripePaymentIntentId": "pi_3TyrAVLG0Cw1zW4e16XWG5po",
+          "orderId": "paj-2026073010262706",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tyq1cLG0Cw1zW4e2FB0Tk9a",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T09:13:13Z",
+          "sortDate": "2026-07-30T09:13:13Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tyq1cLG0Cw1zW4e2FB0Tk9a",
+          "stripePaymentIntentId": "pi_3Tyq1cLG0Cw1zW4e2sUdkqzy",
+          "orderId": "mec-2026073009131248",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TypI6LG0Cw1zW4e1qSCh6i3",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T08:26:10Z",
+          "sortDate": "2026-07-30T08:26:10Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TypI6LG0Cw1zW4e1qSCh6i3",
+          "stripePaymentIntentId": "pi_3TypI6LG0Cw1zW4e1DWOdzwV",
+          "orderId": "pem-2026073008261037",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Tyot3LG0Cw1zW4e0qLYtbmV",
+          "date": "Jul 30",
+          "createdAt": "2026-07-30T08:00:17Z",
+          "sortDate": "2026-07-30T08:00:17Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Tyot3LG0Cw1zW4e0qLYtbmV",
+          "stripePaymentIntentId": "pi_3Tyot3LG0Cw1zW4e065eK1tE",
+          "orderId": "jom-2026073008001694",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TyUuPLG0Cw1zW4e2UIrqDbg",
+          "date": "Jul 29",
+          "createdAt": "2026-07-29T10:40:21Z",
+          "sortDate": "2026-07-29T10:40:21Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Purchase Bundle 21: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TyUuPLG0Cw1zW4e2UIrqDbg",
+          "stripePaymentIntentId": "pi_3TyUuPLG0Cw1zW4e2XnL5rB4",
+          "orderId": "paj-2026072910402080",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Txt8TLG0Cw1zW4e0nsHWvcG",
+          "date": "Jul 27",
+          "createdAt": "2026-07-27T18:20:21Z",
+          "sortDate": "2026-07-27T18:20:21Z",
+          "amount": 14.99,
+          "developerRevShare": 14.99,
+          "description": "Customer User - Purchase this title: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Txt8TLG0Cw1zW4e0nsHWvcG",
+          "stripePaymentIntentId": "pi_3Txt8TLG0Cw1zW4e0n5w12v6",
+          "orderId": "jom-2026072718202102",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3Txt79LG0Cw1zW4e1I51WlLH",
+          "date": "Jul 27",
+          "createdAt": "2026-07-27T18:18:59Z",
+          "sortDate": "2026-07-27T18:18:59Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Purchase Bundle 21: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3Txt79LG0Cw1zW4e1I51WlLH",
+          "stripePaymentIntentId": "pi_3Txt79LG0Cw1zW4e1zbs8Q3n",
+          "orderId": "jom-2026072718185937",
+          "contentId": null,
+          "contentTitle": null
+        },
+        {
+          "id": "ch_3TxbcULG0Cw1zW4e1fG5wBI6",
+          "date": "Jul 26",
+          "createdAt": "2026-07-26T23:38:10Z",
+          "sortDate": "2026-07-26T23:38:10Z",
+          "amount": 20.99,
+          "developerRevShare": 20.99,
+          "description": "Customer User - Purchase Bundle 21: Signup payment",
+          "source": "Stripe",
+          "stripeChargeId": "ch_3TxbcULG0Cw1zW4e1fG5wBI6",
+          "stripePaymentIntentId": "pi_3TxbcULG0Cw1zW4e1VCvW9gh",
+          "orderId": "jom-2026072623381034",
+          "contentId": null,
+          "contentTitle": null
         }
       ],
-      "note": "Rolling 7-day window ending on the latest sales-update date (2026-07-31), computed directly from the fresh Stripe connector pull's full 78-charge valid set (not a GA4 usage-week window, not a calendar month/week). This window will always advance to end on the most recent sales-update date on future refreshes."
+      "note": "Fresh Stripe connector pull for Jul 26-Aug 1, 2026. Valid charges are paid/captured/succeeded/non-refunded; duplicate charge IDs already in the dashboard were not counted twice."
     },
     "lifetimeObserved": {
       "range": "Through Jun 8, 2026 refresh",
@@ -7257,18 +8303,21 @@ window.DASHBOARD_DATA = {
     "mix": [
       {
         "source": "Stripe",
-        "purchases": 29,
-        "purchaseRevenue": 592.68
+        "purchases": 88,
+        "purchaseRevenue": 1822.11,
+        "detail": "Stripe refreshed Aug 2, 2026; only missing valid charge IDs from the fresh connector pull were added."
       },
       {
         "source": "Roku",
         "purchases": 27,
-        "purchaseRevenue": 499.73
+        "purchaseRevenue": 499.73,
+        "detail": "Last-good Roku Sales Activity values preserved; no zeroing."
       },
       {
         "source": "Apple manual",
         "purchases": 22,
-        "purchaseRevenue": 362.78
+        "purchaseRevenue": 1046.68,
+        "detail": "Manual Apple screenshot superseded Jul 24-Jul 30 $557.75 with Jul 26-Aug 1 $683.90; purchase count unchanged because screenshot was revenue-only."
       }
     ],
     "recentPayments": [
@@ -7371,6 +8420,48 @@ window.DASHBOARD_DATA = {
     ],
     "dailyTrend": [
       {
+        "date": "Jan 1",
+        "rawDate": "20260101",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jan 2",
+        "rawDate": "20260102",
+        "purchases": 1,
+        "purchaseRevenue": 89.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jan 14",
+        "rawDate": "20260114",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jan 19",
+        "rawDate": "20260119",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Feb 14",
+        "rawDate": "20260214",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Feb 23",
+        "rawDate": "20260223",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
         "date": "Apr 13",
         "rawDate": "20260413",
         "purchases": 1,
@@ -7394,43 +8485,43 @@ window.DASHBOARD_DATA = {
       {
         "date": "Apr 16",
         "rawDate": "20260416",
-        "purchases": 6,
-        "purchaseRevenue": 84.94,
+        "purchases": 5,
+        "purchaseRevenue": 74.95,
         "developerRevShare": 32.98
       },
       {
         "date": "Apr 17",
         "rawDate": "20260417",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
+        "purchases": 2,
+        "purchaseRevenue": 24.98,
         "developerRevShare": 11.99
       },
       {
         "date": "Apr 18",
         "rawDate": "20260418",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
       },
       {
         "date": "Apr 19",
         "rawDate": "20260419",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
+        "purchases": 2,
+        "purchaseRevenue": 29.98,
         "developerRevShare": 11.99
       },
       {
         "date": "Apr 20",
         "rawDate": "20260420",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
       },
       {
         "date": "Apr 21",
         "rawDate": "20260421",
-        "purchases": 1,
-        "purchaseRevenue": 9.99,
+        "purchases": 2,
+        "purchaseRevenue": 24.98,
         "developerRevShare": 6.99
       },
       {
@@ -7464,15 +8555,15 @@ window.DASHBOARD_DATA = {
       {
         "date": "Apr 26",
         "rawDate": "20260426",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
       },
       {
         "date": "Apr 27",
         "rawDate": "20260427",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
         "developerRevShare": 0.0
       },
       {
@@ -7590,15 +8681,15 @@ window.DASHBOARD_DATA = {
       {
         "date": "May 14",
         "rawDate": "20260514",
-        "purchases": 2,
-        "purchaseRevenue": 17.98,
+        "purchases": 1,
+        "purchaseRevenue": 2.99,
         "developerRevShare": 2.39
       },
       {
         "date": "May 15",
         "rawDate": "20260515",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
         "developerRevShare": 0.0
       },
       {
@@ -7611,15 +8702,15 @@ window.DASHBOARD_DATA = {
       {
         "date": "May 17",
         "rawDate": "20260517",
-        "purchases": 1,
-        "purchaseRevenue": 14.99,
+        "purchases": 0,
+        "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
       },
       {
         "date": "May 18",
         "rawDate": "20260518",
-        "purchases": 3,
-        "purchaseRevenue": 59.97,
+        "purchases": 4,
+        "purchaseRevenue": 74.96,
         "developerRevShare": 43.47
       },
       {
@@ -7688,8 +8779,8 @@ window.DASHBOARD_DATA = {
       {
         "date": "May 28",
         "rawDate": "20260528",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
         "developerRevShare": 0.0
       },
       {
@@ -7712,14 +8803,336 @@ window.DASHBOARD_DATA = {
         "purchases": 0,
         "purchaseRevenue": 0.0,
         "developerRevShare": 0.0
+      },
+      {
+        "date": "Jun 10",
+        "rawDate": "20260610",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jun 11",
+        "rawDate": "20260611",
+        "purchases": 2,
+        "purchaseRevenue": 29.98,
+        "developerRevShare": 22.48
+      },
+      {
+        "date": "Jun 12",
+        "rawDate": "20260612",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jun 13",
+        "rawDate": "20260613",
+        "purchases": 3,
+        "purchaseRevenue": 44.97,
+        "developerRevShare": 32.98
+      },
+      {
+        "date": "Jun 14",
+        "rawDate": "20260614",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jun 15",
+        "rawDate": "20260615",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jun 16",
+        "rawDate": "20260616",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jun 19",
+        "rawDate": "20260619",
+        "purchases": 1,
+        "purchaseRevenue": 54.99,
+        "developerRevShare": 43.99
+      },
+      {
+        "date": "Jun 22",
+        "rawDate": "20260622",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jun 24",
+        "rawDate": "20260624",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 13.99
+      },
+      {
+        "date": "Jun 26",
+        "rawDate": "20260626",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jun 27",
+        "rawDate": "20260627",
+        "purchases": 3,
+        "purchaseRevenue": 44.97,
+        "developerRevShare": 22.48
+      },
+      {
+        "date": "Jun 28",
+        "rawDate": "20260628",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jun 30",
+        "rawDate": "20260630",
+        "purchases": 2,
+        "purchaseRevenue": 57.98,
+        "developerRevShare": 46.08
+      },
+      {
+        "date": "Jul 2",
+        "rawDate": "20260702",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jul 5",
+        "rawDate": "20260705",
+        "purchases": 1,
+        "purchaseRevenue": 14.99,
+        "developerRevShare": 10.49
+      },
+      {
+        "date": "Jul 19",
+        "rawDate": "20260719",
+        "purchases": 2,
+        "purchaseRevenue": 32.98,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jul 20",
+        "rawDate": "20260720",
+        "purchases": 2,
+        "purchaseRevenue": 59.98,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jul 21",
+        "rawDate": "20260721",
+        "purchases": 1,
+        "purchaseRevenue": 19.98,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jul 26",
+        "rawDate": "20260726",
+        "purchases": 2,
+        "purchaseRevenue": 50.98,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jul 27",
+        "rawDate": "20260727",
+        "purchases": 3,
+        "purchaseRevenue": 68.37,
+        "developerRevShare": 20.58
+      },
+      {
+        "date": "Jul 28",
+        "rawDate": "20260728",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Jul 29",
+        "rawDate": "20260729",
+        "purchases": 1,
+        "purchaseRevenue": 73.49,
+        "developerRevShare": 36.75
+      },
+      {
+        "date": "Jul 30",
+        "rawDate": "20260730",
+        "purchases": 17,
+        "purchaseRevenue": 674.53,
+        "developerRevShare": 216.09
+      },
+      {
+        "date": "Jul 31",
+        "rawDate": "20260731",
+        "purchases": 14,
+        "purchaseRevenue": 426.16,
+        "developerRevShare": 92.61
+      },
+      {
+        "date": "Aug 1",
+        "rawDate": "20260801",
+        "purchases": 2,
+        "purchaseRevenue": 202.98,
+        "developerRevShare": 112.7
+      },
+      {
+        "date": "Aug 2",
+        "rawDate": "20260802",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 4",
+        "rawDate": "20260804",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 7",
+        "rawDate": "20260807",
+        "purchases": 1,
+        "purchaseRevenue": 2.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 12",
+        "rawDate": "20260812",
+        "purchases": 1,
+        "purchaseRevenue": 2.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 13",
+        "rawDate": "20260813",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 14",
+        "rawDate": "20260814",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 18",
+        "rawDate": "20260818",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 21",
+        "rawDate": "20260821",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 27",
+        "rawDate": "20260827",
+        "purchases": 1,
+        "purchaseRevenue": 2.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Aug 31",
+        "rawDate": "20260831",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Sep 21",
+        "rawDate": "20260921",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Sep 25",
+        "rawDate": "20260925",
+        "purchases": 1,
+        "purchaseRevenue": 2.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Sep 26",
+        "rawDate": "20260926",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Sep 28",
+        "rawDate": "20260928",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Oct 29",
+        "rawDate": "20261029",
+        "purchases": 2,
+        "purchaseRevenue": 19.98,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Nov 18",
+        "rawDate": "20261118",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Nov 28",
+        "rawDate": "20261128",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Dec 1",
+        "rawDate": "20261201",
+        "purchases": 1,
+        "purchaseRevenue": 9.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Dec 7",
+        "rawDate": "20261207",
+        "purchases": 1,
+        "purchaseRevenue": 19.99,
+        "developerRevShare": 0.0
+      },
+      {
+        "date": "Dec 28",
+        "rawDate": "20261228",
+        "purchases": 1,
+        "purchaseRevenue": 29.99,
+        "developerRevShare": 0.0
       }
     ],
     "note": "Visible platform sales fully reconciled Jul 31, 2026: 127 purchases / $3032.47 YTD across Stripe (78/$1612.21, full rebuild from the fresh connector pull's complete 78-charge valid set), Roku (27/$499.73, unchanged), and manual Apple snapshots (22/$920.53, unchanged this pass). This corrects an earlier same-day undercount: the prior 52/$1075.45 Stripe figure and 101/$2495.71 platform YTD resulted from diffing 23 new charges against a stale, already-incomplete baseline instead of rebuilding from the full valid Stripe charge set, and are both superseded -- do not treat them as current. The three small sales cards below are now rolling 7-day windows ending on the latest sales-update date (2026-07-31): 'Latest Stripe pull', 'Apple latest snapshot', and 'Visible YTD'. The former GA4-usage-week $96.94 figure is retained only as a clearly labeled secondary historical note, not a headline card.",
     "current": {
-      "purchases": 127,
-      "purchaseRevenue": 3032.47,
-      "developerRevShare": 2657.26,
-      "label": "Visible YTD (Jan 1-Jul 31, 2026)"
+      "purchases": 137,
+      "purchaseRevenue": 3368.52,
+      "developerRevShare": 2955.52,
+      "label": "Visible YTD (Jan 1-Aug 1, 2026)"
     },
     "postUsageWeekAdditions": {
       "label": "Superseded: see 'Latest Stripe pull' / 'Apple latest snapshot' / 'Visible YTD' cards",
@@ -7729,10 +9142,10 @@ window.DASHBOARD_DATA = {
     },
     "lifetime": {
       "label": "Visible lifetime sales (through this refresh)",
-      "purchases": 127,
-      "purchaseRevenue": 3032.47,
-      "developerRevShare": 2657.26,
-      "asOf": "2026-07-31"
+      "purchases": 137,
+      "purchaseRevenue": 3368.52,
+      "developerRevShare": 2955.52,
+      "asOf": "2026-08-01"
     },
     "usageWeekHistorical": {
       "label": "Historical note: complete GA4 usage week (superseded as a headline card)",
@@ -7742,6 +9155,16 @@ window.DASHBOARD_DATA = {
       "note": "This is the dashboard's previously-selected complete GA4 usage week (Jul 21-Jul 27, 2026). It is retained here ONLY as a secondary historical reference and is NOT one of the three main sales cards -- it should not be read as the current/latest sales figure. The user correctly flagged this $96.94 number as misleading when circled/screenshotted as if it were the current headline sales figure; see 'Latest Stripe pull', 'Apple latest snapshot', and 'Visible YTD' above for current figures.",
       "isHistoricalOnly": true,
       "isMainCard": false
+    },
+    "latestSevenDayVisibleSales": {
+      "label": "Latest visible sales snapshot",
+      "range": "Jul 26-Aug 1, 2026",
+      "knownStripePurchases": 36,
+      "stripeRevenue": 749.64,
+      "appleGrossRevenue": 683.9,
+      "knownVisibleRevenue": 1433.54,
+      "appleDownloads": 405,
+      "note": "Seven-day visible sales combines fresh Stripe charges plus Apple gross sales. Roku sales are not included in this seven-day figure unless a matching fresh Roku Sales Activity report is available."
     }
   },
   "contentUsage": {
@@ -10962,10 +12385,10 @@ window.DASHBOARD_DATA = {
     "note": "Visits are GA4 sessions, not unique people. Landing-page/device acquisition traffic remains excluded from platform audience (estimated split this cycle; see platformAudience.currentWeek.note)."
   },
   "manualAppleSalesUpdate": {
-    "updatedAt": "2026-07-31T15:20:00+00:00",
-    "source": "manual_apple_sales.json updated Jul 31, 2026 with one aggregate gross-sales entry for Jul 24-Jul 30, 2026 ($557.75, revenue-only, no title breakdown); preserved across refresh",
+    "updatedAt": "2026-08-02T08:20:00-07:00",
+    "source": "manual_apple_sales.json updated Aug 2, 2026 with one aggregate gross-sales entry for Jul 26-Aug 1, 2026 ($683.90, revenue-only, no title breakdown)",
     "totalManualAppleEntries": 17,
-    "note": "17 manual entries; Jul 31, 2026 adds an aggregate Jul 24-Jul 30, 2026 gross-sales entry ($557.75 total, est net $390.42) from an Apple Connect sales screenshot that showed daily totals only (no per-product names). No prior entry overlaps this window (last recorded sale before this run was Jul 5, 2026), so this is fully net-new with zero double-counting risk."
+    "note": "New Apple sales snapshot supersedes the overlapping Jul 24-Jul 30 $557.75 aggregate; old aggregate was removed to avoid double-counting. Apple purchases count is unchanged because the screenshot provided revenue by day, not transaction counts."
   },
   "googleAdsSummary": {
     "source": "Google Ads connector",
@@ -11314,68 +12737,241 @@ window.DASHBOARD_DATA = {
     "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
   },
   "manualAppleDownloads": {
-    "sourceLabel": "Manual Apple App Store Connect snapshot",
-    "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads. This is app download activity, not paid sales and not GA4 active users.",
-    "capturedAt": "2026-07-31 08:20 PDT",
-    "enteredAt": "2026-07-31 08:20 PDT",
-    "uploadedAttachments": [
-      "uploaded_attachments/b6ada2ee1ce244b29823d9414891e933/image.jpeg"
-    ],
+    "downloads": 405,
+    "displayDownloads": "405",
+    "updates": null,
+    "displayUpdates": null,
+    "dailyAverage": 58,
+    "updatesDailyAverage": null,
+    "start": "2026-07-26",
+    "end": "2026-08-01",
+    "period": "Jul 26-Aug 1, 2026",
+    "priorDownloads": 360,
+    "priorUpdates": 351,
+    "priorPeriod": "Jul 24-Jul 30, 2026",
+    "deltaPct": 12.5,
+    "updatesDeltaPct": null,
     "product": "ElectricNOW",
-    "platform": "Free iOS/watchOS/tvOS",
-    "period": "Jul 24-Jul 30, 2026",
-    "start": "2026-07-24",
-    "end": "2026-07-30",
-    "downloads": 360,
-    "displayDownloads": "360",
-    "dailyAverage": 51,
-    "deltaPct": 163.0,
+    "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
     "territories": [
       {
         "territory": "United States",
-        "downloads": 360,
-        "deltaPct": 163.0
+        "downloads": 405,
+        "deltaPct": null
       }
     ],
-    "note": "Manual Apple Connect screenshot entered Jul 31, 2026. Total units 360 for Jul 24-Jul 30, 2026 (daily avg 51, overall delta +163.0%). Category breakdown: Paid iOS/watchOS/tvOS 0; Free iOS/watchOS/tvOS 334 (+143.8%); In-App iOS/tvOS 26 (+100.0%); Paid/Free/In-App macOS all 0. No exact daily bar values were visible in the screenshot, so no daily rows are fabricated. Prior Jul 20-Jul 26 window preserved below as priorSnapshot, not double-counted. Preserved until replaced by a newer screenshot or an Apple App Store Connect API integration.",
-    "fiveWeekSnapshot": {
-      "period": "Apr 27-May 31, 2026",
-      "start": "2026-04-27",
-      "end": "2026-05-31",
-      "downloads": 6183,
-      "displayDownloads": "6.18K",
-      "weeklyAverage": 1240,
-      "deltaPct": 353.0,
-      "territories": [
-        {
-          "territory": "United States",
-          "downloads": 6174,
-          "deltaPct": 357.0
+    "sourceLabel": "Manual Apple App Store Connect snapshot",
+    "sourceDetail": "User-provided App Store Connect screenshots for iOS downloads. This is app download activity, not paid sales and not GA4 active users.",
+    "sourceScreenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+    "sourceScreenshots": [
+      {
+        "metric": "downloads",
+        "path": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg"
+      },
+      {
+        "metric": "sales",
+        "path": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image-1.jpeg"
+      }
+    ],
+    "note": "Manual Apple Connect screenshots uploaded Aug 2, 2026 for Jul 26-Aug 1, 2026. The latest download screenshot shows exact daily rows totaling 405 downloads. The paired sales screenshot shows $683.90 gross sales for the same period. Prior Jul 24-Jul 30 download snapshot is preserved as priorSnapshot, not double-counted.",
+    "updatedAtUtc": "2026-08-02T15:20:00+00:00",
+    "snapshots": [
+      {
+        "daily": [
+          {
+            "date": "2026-07-17",
+            "downloads": 28
+          },
+          {
+            "date": "2026-07-18",
+            "downloads": 11
+          },
+          {
+            "date": "2026-07-19",
+            "downloads": 16
+          },
+          {
+            "date": "2026-07-20",
+            "downloads": 16
+          },
+          {
+            "date": "2026-07-21",
+            "downloads": 27
+          },
+          {
+            "date": "2026-07-22",
+            "downloads": 18
+          },
+          {
+            "date": "2026-07-23",
+            "downloads": 21
+          }
+        ],
+        "metric": "free_app_downloads",
+        "period_end": "2026-07-23",
+        "period_start": "2026-07-17",
+        "platform": "iOS/watchOS/tvOS",
+        "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+        "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+        "source": "Apple App Store Connect screenshot",
+        "total_downloads": 137
+      },
+      {
+        "daily": [
+          {
+            "date": "2026-07-20",
+            "downloads": 16,
+            "updates": 53
+          },
+          {
+            "date": "2026-07-21",
+            "downloads": 27,
+            "updates": 58
+          },
+          {
+            "date": "2026-07-22",
+            "downloads": 18,
+            "updates": 55
+          },
+          {
+            "date": "2026-07-23",
+            "downloads": 21,
+            "updates": 46
+          },
+          {
+            "date": "2026-07-24",
+            "downloads": 15,
+            "updates": 43
+          },
+          {
+            "date": "2026-07-25",
+            "downloads": 19,
+            "updates": 44
+          },
+          {
+            "date": "2026-07-26",
+            "downloads": 23,
+            "updates": 52
+          }
+        ],
+        "metric": "free_app_downloads_and_updates",
+        "period_end": "2026-07-26",
+        "period_start": "2026-07-20",
+        "platform": "iOS/watchOS/tvOS",
+        "recorded_at": "2026-07-27T15:57:00+00:00",
+        "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+        "source": "Apple App Store Connect screenshots",
+        "source_screenshots": [
+          "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+          "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+        ],
+        "total_downloads": 139,
+        "total_updates": 351
+      },
+      {
+        "metric": "downloads_units_breakdown",
+        "period_start": "2026-07-24",
+        "period_end": "2026-07-30",
+        "platform": "iOS/watchOS/tvOS + macOS",
+        "recorded_at": "2026-07-31T15:20:00+00:00",
+        "source": "Apple App Store Connect screenshot",
+        "total_units": 360,
+        "daily_average": 51,
+        "overall_delta_pct": 163.0,
+        "breakdown": {
+          "paid_ios_watchos_tvos": 0,
+          "free_ios_watchos_tvos": 334,
+          "free_ios_watchos_tvos_delta_pct": 143.8,
+          "inapp_ios_tvos": 26,
+          "inapp_ios_tvos_delta_pct": 100.0,
+          "paid_macos": 0,
+          "free_macos": 0,
+          "inapp_macos": 0
         },
-        {
-          "territory": "Australia",
-          "downloads": 9,
-          "deltaPct": -35.7
-        }
-      ]
-    },
+        "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+        "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+      },
+      {
+        "metric": "free_app_downloads",
+        "period_start": "2026-07-26",
+        "period_end": "2026-08-01",
+        "platform": "iOS/watchOS/tvOS",
+        "recorded_at": "2026-08-02T15:20:00+00:00",
+        "source": "Apple App Store Connect screenshot",
+        "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+        "total_downloads": 405,
+        "daily": [
+          {
+            "date": "2026-07-26",
+            "downloads": 23
+          },
+          {
+            "date": "2026-07-27",
+            "downloads": 25
+          },
+          {
+            "date": "2026-07-28",
+            "downloads": 43
+          },
+          {
+            "date": "2026-07-29",
+            "downloads": 54
+          },
+          {
+            "date": "2026-07-30",
+            "downloads": 155
+          },
+          {
+            "date": "2026-07-31",
+            "downloads": 55
+          },
+          {
+            "date": "2026-08-01",
+            "downloads": 50
+          }
+        ],
+        "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+      }
+    ],
     "priorSnapshot": {
-      "period": "Jul 20-Jul 26, 2026",
-      "start": "2026-07-20",
-      "end": "2026-07-26",
-      "downloads": 139
+      "period": "Jul 24-Jul 30, 2026",
+      "start": "2026-07-24",
+      "end": "2026-07-30",
+      "downloads": 360
     },
-    "updates": 351,
-    "categoryBreakdown": {
-      "paidIosWatchosTvos": 0,
-      "freeIosWatchosTvos": 334,
-      "freeIosWatchosTvosDeltaPct": 143.8,
-      "inAppIosTvos": 26,
-      "inAppIosTvosDeltaPct": 100.0,
-      "paidMacos": 0,
-      "freeMacos": 0,
-      "inAppMacos": 0
-    }
+    "categoryBreakdown": null,
+    "daily": [
+      {
+        "date": "2026-07-26",
+        "downloads": 23
+      },
+      {
+        "date": "2026-07-27",
+        "downloads": 25
+      },
+      {
+        "date": "2026-07-28",
+        "downloads": 43
+      },
+      {
+        "date": "2026-07-29",
+        "downloads": 54
+      },
+      {
+        "date": "2026-07-30",
+        "downloads": 155
+      },
+      {
+        "date": "2026-07-31",
+        "downloads": 55
+      },
+      {
+        "date": "2026-08-01",
+        "downloads": 50
+      }
+    ],
+    "capturedAt": "2026-08-02 08:20 PDT",
+    "enteredAt": "2026-08-02 08:20 PDT"
   },
   "manualDataPatch": {
     "updatedAt": "2026-06-07 07:55 PDT",
@@ -11402,27 +12998,26 @@ window.DASHBOARD_DATA = {
     "rule": "Same video-title rows are collapsed; blank collection labels no longer become standalone Top Shows rows. Active users are not summed across duplicate title rows to avoid overcounting."
   },
   "plainEnglishSummary": {
-    "generatedAt": "2026-07-28T08:11:00-07:00",
-    "overview": "The rolling Jul 21-Jul 27 window shows platform reach grew: active users were up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6% versus the prior 7 days. YouTube remains very strong separately from the app, with 70,185 hours watched and nearly $2,997.79 in estimated weekly revenue (YTD YouTube revenue now $98,785.81). At the same time, engagement depth softened this week: engaged sessions were down 5.4%, engagement rate fell 11.6 points (from 77.3% to 65.8%), and total GA4 engagement time was slightly down (-0.3%). Paid acquisition verdict: acceptable but needs proof of viewing — Google Ads is rate-limited and Meta has no new report this cycle, so paid data is not fresh and should not be read as evidence of ROAS.",
+    "generatedAt": "2026-08-02T08:20:00-07:00",
+    "overview": "The strongest current signal is sales and downloads: the latest Jul 26-Aug 1 Apple snapshot shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. Traffic/reach from the last full GA4 window remains positive, with active users up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6%; engagement depth remains the caveat, with engaged sessions and engagement rate softer in the last audited GA4 period.",
     "bullets": [
-      "Traffic/reach: active users were 3,789 (+8.7% vs prior 7 days), sessions were 10,658 (+11.2%), new users were 1,225 (+13.7%), and screen/page views were 35,091 (+8.6%).",
-      "Engagement depth (the honest part): engaged sessions dipped from 7,414 to 7,011 (-5.4%), and engagement rate eased from 77.3% to 65.8% (down 11.6 points). Total engaged time was 5,626 hours (-0.3%). More people visited, but a slightly smaller share of sessions were 'engaged.'",
-      "YouTube (ad-server side, separate from app): Jul 21-Jul 27 produced 201,352 views, 70,185 hours watched, $2,997.79 estimated revenue (757,975 ad impressions — these are YouTube/ad-server ad impressions, not paid campaign impressions), and $98,785.81 YTD estimated revenue. \"Everyone Wanted to Be on This Ship\" (The Ark, S01E01) led by views this week.",
-      "Sales (as of Jul 31 full reconciliation): visible platform sales YTD are 127 purchases / $3032.47 -- Stripe 78/$1612.21 (full rebuild from the fresh connector pull's complete 78-charge valid set; supersedes an earlier same-day undercounted figure of 52/$1075.45 produced by diffing against a stale baseline), Roku 27/$499.73 (unchanged), and manual Apple 22/$920.53 (unchanged this pass). The prior 101/$2495.71 platform YTD and 52/$1075.45 Stripe figure are superseded and should not be treated as current.",
-      "Roku app engagement: latest available Roku App Engagement report (Jul 20-Jul 26, received Jul 28 6:51 AM PDT) shows 214 new installs, 102 uninstalls, 337 average daily viewers, 76.00 avg minutes per viewer, and 2,987 hours streamed. Roku Sales Activity source date remains Jul 27 (no fresher Sales Activity report yet); Roku app metrics remain separate from GA4 and Roku TRC live-channel metrics.",
-      "TVOD title revenue (unchanged since Jul 27): Michael Johnson's title-transaction report shows 7,914 total registered users (7,814 active) and $1,339.15 net TVOD revenue across 90 paid transactions since Apr 1, 2026. No newer Michael email found on Jul 28. This is a separate, cumulative-since-launch source and is not reconciled against the Stripe/Roku/Apple visible-sales figures above.",
-      "Paid acquisition verdict: acceptable but needs proof of viewing. Google Ads is connected but rate-limited (429, retry ~16638s) so last-good Google data is preserved and labeled stale; Meta has no new performance report this cycle (last known state preserved). Do not read paid-campaign impressions as ElectricNOW in-app/YouTube ad impressions, and do not infer ROAS because ad-server revenue is unavailable for a fresh comparison this cycle.",
-      "Next tests: restart paid spend only with clean measurement, split iOS and Android budgets, focus geos where app usage already exists while reserving a small test budget for underpenetrated states, use show-specific creative tied to actual viewing quality, and review install-to-viewing behavior before scaling budget."
+      "The strongest current signal is sales and downloads: the latest Jul 26-Aug 1 Apple snapshot shows 405 iOS downloads and $683.90 in Apple gross sales, while the fresh Stripe connector shows 36 valid Stripe charges totaling $749.64 for the same seven-day window. Together, known Apple+Stripe visible sales for the week were $1433.54, and visible platform YTD sales now stand at 137 known purchases / $3368.52. Traffic/reach from the last full GA4 window remains positive, with active users up 8.7%, sessions up 11.2%, new users up 13.7%, and screen/page views up 8.6%; engagement depth remains the caveat, with engaged sessions and engagement rate softer in the last audited GA4 period.",
+      "Sales: Stripe is freshly updated and Apple manual screenshots are freshly updated. Roku sales are preserved from the last-good Roku Sales Activity source rather than zeroed.",
+      "Apple manual update: Jul 26-Aug 1 produced 405 iOS downloads and $683.90 in gross Apple sales. This supersedes the overlapping Jul 24-Jul 30 Apple aggregate, so the dashboard avoids double-counting.",
+      "Stripe update: the connector is working. The Jul 26-Aug 1 pull found 36 valid paid/captured/succeeded/non-refunded charges totaling $749.64; 10 missing charge IDs totaling $209.90 were added to the dashboard and already-present charge IDs were not counted twice.",
+      "Visible platform sales: YTD visible sales are now 137 known purchases / $3368.52. This is Stripe + Roku + manual Apple only; it is not total ElectricNOW sales because some app-store/platform channels may be missing.",
+      "Paid acquisition verdict: acceptable but needs proof of viewing. Existing Google Ads/Meta sections should still be read directionally unless fresh ad-source pulls are available; paid-campaign impressions remain separate from ElectricNOW in-app or YouTube ad impressions, and true ROAS is not implied because ad-server revenue is unavailable for a complete matchback.",
+      "Next tests: keep pushing The Ark and other high-intent title creative, separate iOS and Android measurement/budgets, shift budget toward audiences that convert into viewing time and sales, exclude weak segments, and keep checking install-to-viewing quality before scaling spend."
     ],
     "connectorStatus": {
-      "GA4": "CONNECTED_FRESH",
+      "GA4": "LAST_GOOD_PRESERVED",
       "Stripe": "CONNECTED_UPDATED",
-      "Outlook/Roku": "CONNECTED_UPDATED",
-      "Google Ads": "CONNECTED_RATE_LIMITED_STALE_PRESERVED",
-      "Meta email": "STALE_NO_NEW_REPORT",
-      "YouTube": "CONNECTED_FRESH",
-      "Apple manual": "STALE_NO_NEW_SCREENSHOT_PRESERVED",
-      "TVOD (Michael email)": "STALE_NO_NEW_EMAIL_PRESERVED"
+      "Outlook/Roku": "LAST_GOOD_PRESERVED",
+      "Google Ads": "CONNECTED_LAST_GOOD_PRESERVED",
+      "Meta email": "LAST_GOOD_PRESERVED",
+      "YouTube": "LAST_GOOD_PRESERVED",
+      "Apple manual": "MANUAL_UPDATED",
+      "TVOD (Michael email)": "LAST_GOOD_PRESERVED"
     }
   },
   "youtubeSummary": {
@@ -12861,6 +14456,12 @@ window.DASHBOARD_DATA = {
       "date": "2026-07-28",
       "section": "Full refresh",
       "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week’s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
+    },
+    {
+      "date": "2026-08-02T08:20:00-07:00",
+      "type": "apple_stripe_refresh",
+      "summary": "Applied Apple Jul 26-Aug 1 downloads/sales and fresh Stripe connector pull. Apple YTD $1046.68; Stripe YTD 88/$1822.11; visible YTD 137/$3368.52.",
+      "stalePreservation": "GA4/Roku/YouTube/Google Ads/Meta/TVOD last-good values preserved where no fresh pull was applied; no values zeroed."
     }
   ],
   "tvodTitleRevenue": {
