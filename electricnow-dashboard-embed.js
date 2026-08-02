@@ -1444,7 +1444,6 @@
           <a href="#funnel" data-testid="nav-funnel">App funnel</a>
           <a href="#ads" data-testid="nav-ads">Ad signals</a>
           <a href="#google-ads" data-testid="nav-google-ads">Google Ads</a>
-          <a href="#acquisition" data-testid="nav-acquisition">Acquisition</a>
           <a href="#content" data-testid="nav-content">Content</a>
         </nav>
         <div class="source-card">
@@ -1477,7 +1476,7 @@
             <p class="eyebrow">Corrected metric framing</p>
             <h2 id="overview-title">Acquisition, app usage, viewing, and time are now separated.</h2>
             <p>
-              The top scorecards now show which numbers are web acquisition, which are Apple/Android app-stream usage, which are actual viewing events, and which measure time spent across all GA4-tracked platforms.
+              The top scorecards now separate Apple/Android app-stream usage, actual viewing events, sales signals, geography, and time spent across GA4-tracked platforms.
             </p>
           </div>
           <div class="hero-meta">
@@ -1634,15 +1633,6 @@
             <p id="platform-time-note" class="panel-note"></p>
             <div id="platform-time-table" class="table-wrap" data-testid="table-platform-time"></div>
             <div id="platform-table" class="table-wrap" data-testid="table-platform"></div>
-          </article>
-          <article class="panel span-6" id="acquisition" aria-labelledby="acquisition-title">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Audience sources</p>
-                <h2 id="acquisition-title">Top acquisition</h2>
-              </div>
-            </div>
-            <div id="acquisition-table" class="table-wrap" data-testid="table-acquisition"></div>
           </article>
         </section>
 
@@ -15309,6 +15299,22 @@ function usageStat(label, value, detail = '', exactTitle = '') {
   `;
 }
 
+function engagementRateFrom(row) {
+  const explicit = toFiniteNumber(row?.engagementRate);
+  if (explicit !== null) return explicit;
+  const engaged = toFiniteNumber(row?.engagedSessions);
+  const sessions = toFiniteNumber(row?.sessions);
+  if (engaged === null || sessions === null || sessions <= 0) return null;
+  return (engaged / sessions) * 100;
+}
+
+function engagementHoursPerUser(row) {
+  const hours = toFiniteNumber(row?.totalEngagementHours);
+  const users = toFiniteNumber(row?.activeUsers);
+  if (hours === null || users === null || users <= 0) return null;
+  return hours / users;
+}
+
 function renderUsagePlatformList(selector, rows) {
   const max = Math.max(...(rows || []).map((row) => row.activeUsers || 0), 1);
   $(selector).innerHTML = (rows || [])
@@ -15656,17 +15662,6 @@ function renderTables() {
       `<strong>${fmt.number(p.current.activeUsers)}</strong> <em class="delta ${deltaClass(p.activeUsersDeltaPct)}">${fmt.delta(p.activeUsersDeltaPct)}</em>`,
       fmt.number(p.current.sessions),
       fmt.percent(p.engagementRateCurrent),
-    ],
-  );
-  renderTable(
-    '#acquisition-table',
-    ['Source / medium', 'Users', 'Sessions', 'Eng. rate'],
-    data.acquisition || [],
-    (r) => [
-      `<strong>${escapeHtml(r.sourceMedium || r.sessionSourceMedium || r.source || 'Unknown source')}</strong>`,
-      fmt.number(r.activeUsers),
-      fmt.number(r.sessions),
-      fmt.percent(r.engagementRate),
     ],
   );
   renderContentActivity();
@@ -16266,14 +16261,17 @@ function renderUsGeography() {
   if (noteEl) noteEl.textContent = `Source: ${geo.source}. ${geo.summaryLine || ''}`;
 
   const t = geo.usTotals || {};
+  const totalEngagementHours = toFiniteNumber(t.totalEngagementHours);
+  const activeUsers = toFiniteNumber(t.activeUsers);
+  const avgHoursPerUser = totalEngagementHours !== null && activeUsers !== null && activeUsers > 0 ? totalEngagementHours / activeUsers : null;
   const kpisEl = $('#us-geography-kpis');
   if (kpisEl) {
     kpisEl.innerHTML = [
       usageStat('U.S. active users', t.activeUsers, 'Deduplicated country-level GA4 count'),
       usageStat('Sessions', t.sessions, 'U.S. sessions this week'),
-      usageStat('Engagement rate', fmt.percent(t.engagementRate), 'U.S. engaged sessions / sessions'),
-      usageStat('Screen / page views', t.screenPageViews, 'U.S. views this week'),
-      usageStat('Events', t.eventCount, 'U.S. event count this week'),
+      usageStat('Engagement rate', fmt.percent(engagementRateFrom(t)), 'U.S. engaged sessions / sessions'),
+      usageStat('Engagement hours', totalEngagementHours === null ? NOT_AVAILABLE : fmt.number(totalEngagementHours), 'U.S. GA4 engagement time'),
+      usageStat('Avg hours / user', avgHoursPerUser === null ? NOT_AVAILABLE : avgHoursPerUser.toFixed(1), 'Engagement hours divided by active users'),
     ].join('');
   }
 
@@ -16289,7 +16287,7 @@ function renderUsGeography() {
         const r = 1.6 + Math.sqrt(s.activeUsers / maxAu) * 6.4;
         const intensity = 0.35 + (s.activeUsers / maxAu) * 0.55;
         const showLabel = s.activeUsers >= maxAu * 0.28;
-        const title = `${s.state}: ${fmt.number(s.activeUsers)} active users · ${fmt.number(s.sessions)} sessions · ${fmt.percent(s.engagementRate)} ER`;
+        const title = `${s.state}: ${fmt.number(s.activeUsers)} active users · ${fmt.number(s.sessions)} sessions · ${fmt.percent(engagementRateFrom(s))} ER`;
         return `<g class="us-geo-bubble">
             <title>${escapeHtml(title)}</title>
             <circle cx="${s.x}" cy="${s.y}" r="${r.toFixed(2)}" fill="rgba(56,189,248,${intensity.toFixed(2)})" stroke="rgba(14,165,233,0.9)" stroke-width="0.3"></circle>
@@ -16311,16 +16309,16 @@ function renderUsGeography() {
     const rows = geo.states.filter((s) => s.activeUsers > 0).slice(0, 12);
     statesEl.innerHTML = `
       <table>
-        <thead><tr><th>State</th><th>Active users</th><th>Sessions</th><th>Eng. rate</th><th>Views</th><th>Events</th></tr></thead>
+        <thead><tr><th>State</th><th>Active users</th><th>Sessions</th><th>Eng. rate</th><th>Eng. hours</th><th>Hours / user</th></tr></thead>
         <tbody>
           ${rows.map((s) => `
             <tr>
               <td>${escapeHtml(s.state)}</td>
               <td>${fmt.number(s.activeUsers)}</td>
               <td>${fmt.number(s.sessions)}</td>
-              <td>${fmt.percent(s.engagementRate)}</td>
-              <td>${fmt.number(s.screenPageViews)}</td>
-              <td>${fmt.number(s.eventCount)}</td>
+              <td>${fmt.percent(engagementRateFrom(s))}</td>
+              <td>${fmt.number(s.totalEngagementHours)}</td>
+              <td>${engagementHoursPerUser(s) === null ? NOT_AVAILABLE : engagementHoursPerUser(s).toFixed(1)}</td>
             </tr>`).join('')}
         </tbody>
       </table>`;
