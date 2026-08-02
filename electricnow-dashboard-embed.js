@@ -1905,54 +1905,6 @@ window.DASHBOARD_DATA = {
       "context": "Fresh GA4 property 497892271 platform metric for Jul 21-Jul 27, 2026 (estimated landing/device exclusion; see platformAudience note)."
     },
     {
-      "key": "landingPageUsers",
-      "label": "Landing-page users",
-      "baseline": 686,
-      "launchBaseline": 1045,
-      "previousWeek": 686,
-      "current": 163,
-      "deltaPct": -76.239067,
-      "deltaVsLaunchPct": -84.401914,
-      "deltaVsPreviousPct": -76.239067,
-      "deltaType": "percent",
-      "format": "number",
-      "context": "Web acquisition: users whose entry/page path contains “landing” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. This is acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-      "comparisonUnavailable": false,
-      "stale": true
-    },
-    {
-      "key": "devicesPageUsers",
-      "label": "Devices-page users",
-      "baseline": 139,
-      "launchBaseline": 2028,
-      "previousWeek": 139,
-      "current": 24,
-      "deltaPct": -82.733813,
-      "deltaVsLaunchPct": -98.816568,
-      "deltaVsPreviousPct": -82.733813,
-      "deltaType": "percent",
-      "format": "number",
-      "context": "Web acquisition: users whose page path contains “devices” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-      "comparisonUnavailable": false,
-      "stale": true
-    },
-    {
-      "key": "paidSocialUsers",
-      "label": "Paid social users",
-      "baseline": 639,
-      "launchBaseline": 4441,
-      "previousWeek": 639,
-      "current": 380,
-      "deltaPct": -40.532081,
-      "deltaVsLaunchPct": -91.443369,
-      "deltaVsPreviousPct": -40.532081,
-      "deltaType": "percent",
-      "format": "number",
-      "context": "Web acquisition: users from GA4 session source/medium containing Facebook, Instagram, or Meta (property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-      "comparisonUnavailable": false,
-      "stale": true
-    },
-    {
       "key": "appActiveUsers",
       "label": "App stream active users",
       "baseline": 5383,
@@ -11058,7 +11010,7 @@ window.DASHBOARD_DATA = {
         "eventCount": 578
       }
     ],
-    "note": "Acquisition rows are GA4 source/medium and campaign rows. Landing-page users are acquisition-only and are not counted as platform audience."
+    "note": "Acquisition rows are GA4 source/medium and campaign rows. Website landing traffic is acquisition-only and is not counted as platform audience."
   },
   "viewingBehavior": {
     "launchBaseline": {
@@ -11115,7 +11067,7 @@ window.DASHBOARD_DATA = {
     {
       "title": "Measured ElectricNOW Platform Audience",
       "eyebrow": "Is the measured platform growing or shrinking?",
-      "definition": "GA4 active users across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Landing-page traffic is reported only in Web Acquisition. Reconcile with Amagi, app stores, ad servers, and platform dashboards before treating this as total company-wide audience.",
+      "definition": "GA4 active users across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Landing-page traffic remains excluded from platform audience. Reconcile with Amagi, app stores, ad servers, and platform dashboards before treating this as total company-wide audience.",
       "cards": [
         {
           "key": "platformActiveUsers",
@@ -11187,61 +11139,6 @@ window.DASHBOARD_DATA = {
           "deltaType": "minutes",
           "format": "minutes",
           "context": "Fresh GA4 property 497892271 platform metric for Jul 21-Jul 27, 2026 (estimated landing/device exclusion; see platformAudience note)."
-        }
-      ]
-    },
-    {
-      "title": "Web Acquisition",
-      "eyebrow": "Who arrived through the website and campaigns",
-      "definition": "Website, landing-page, device-page, and paid-social traffic. These metrics explain acquisition and campaign reach, not app viewing.",
-      "cards": [
-        {
-          "key": "landingPageUsers",
-          "label": "Landing-page users",
-          "baseline": 686,
-          "launchBaseline": 1045,
-          "previousWeek": 686,
-          "current": 163,
-          "deltaPct": -76.239067,
-          "deltaVsLaunchPct": -84.401914,
-          "deltaVsPreviousPct": -76.239067,
-          "deltaType": "percent",
-          "format": "number",
-          "context": "Web acquisition: users whose entry/page path contains “landing” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. This is acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "comparisonUnavailable": false,
-          "stale": true
-        },
-        {
-          "key": "devicesPageUsers",
-          "label": "Devices-page users",
-          "baseline": 139,
-          "launchBaseline": 2028,
-          "previousWeek": 139,
-          "current": 24,
-          "deltaPct": -82.733813,
-          "deltaVsLaunchPct": -98.816568,
-          "deltaVsPreviousPct": -82.733813,
-          "deltaType": "percent",
-          "format": "number",
-          "context": "Web acquisition: users whose page path contains “devices” (GA4 unifiedPageScreen, property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "comparisonUnavailable": false,
-          "stale": true
-        },
-        {
-          "key": "paidSocialUsers",
-          "label": "Paid social users",
-          "baseline": 639,
-          "launchBaseline": 4441,
-          "previousWeek": 639,
-          "current": 380,
-          "deltaPct": -40.532081,
-          "deltaVsLaunchPct": -91.443369,
-          "deltaVsPreviousPct": -40.532081,
-          "deltaType": "percent",
-          "format": "number",
-          "context": "Web acquisition: users from GA4 session source/medium containing Facebook, Instagram, or Meta (property 497892271). Week of Jun 29-Jul 5 vs the prior week Jun 22-28. Acquisition traffic, not platform audience. [Held: not refreshed for the Jul 6-12, 2026 week. The Jul 13 GA4 pull was daily top-line only (no userEngagementDuration / event / segment detail), so this reflects the last fully-instrumented week (Jun 29-Jul 5, 2026).]",
-          "comparisonUnavailable": false,
-          "stale": true
         }
       ]
     },
@@ -11686,7 +11583,7 @@ window.DASHBOARD_DATA = {
       "platformEngagementRate": 59.70126848307439,
       "platformEngagementSeconds": 13150791,
       "platformEngagementHours": 3652.9975,
-      "note": "Excludes landing-page acquisition paths. Landing-page traffic is tracked only in Web Acquisition."
+      "note": "Excludes landing-page acquisition paths. Landing-page traffic is excluded from platform audience and no longer displayed as a dashboard section."
     },
     "previousWeek": {
       "range": "Jul 14-Jul 20, 2026",
@@ -14998,9 +14895,10 @@ function previousWeekCompare(card) {
 
 function renderKpis() {
   const grid = $('#kpi-grid');
-  const groups = data.scorecardGroups?.length
+  const groups = (data.scorecardGroups?.length
     ? data.scorecardGroups
-    : [{ title: 'Weekly scorecard', eyebrow: 'Overview', definition: '', cards: data.scorecards }];
+    : [{ title: 'Weekly scorecard', eyebrow: 'Overview', definition: '', cards: data.scorecards }])
+    .filter((group) => String(group?.title || '').toLowerCase() !== 'web acquisition');
   grid.innerHTML = groups
     .map(
       (group) => `
