@@ -18688,7 +18688,7 @@ function renderVisitSummary() {
               <span>${escapeHtml(card.label)}</span>
               <strong>${fmt.number(card.sessions)}</strong>
               <div class="visit-card-meta">
-                <small>${card.asOfNote ? `Last complete: ${escapeHtml(card.range)}` : escapeHtml(card.range)}</small>
+                <small>${card.asOfNote ? `Last complete: ${escapeHtml(card.range)}` : escapeHtml(card.rollingWindowLabel || card.range)}</small>
                 <em class="delta ${deltaClass(card.deltaVsPreviousPct)}">${card.deltaVsPreviousPct === null || card.deltaVsPreviousPct === undefined ? escapeHtml(card.comparisonLabel || 'latest period') : `${deltaText({ deltaType: 'percent' }, card.deltaVsPreviousPct)} ${escapeHtml(card.comparisonLabel || '')}`}</em>
               </div>
               <p>${fmt.number(card.activeUsers)} active users · ${fmt.number(card.engagedSessions)} engaged sessions</p>

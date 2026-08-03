@@ -15374,10 +15374,11 @@
       "engagedSessions": 33396,
       "previousRange": "Jun 8-Jul 5, 2026",
       "previousSessions": 48596,
-      "deltaVsPreviousPct": null,
-      "comparisonLabel": "Rolling 28 days: Jul 6-Aug 2, 2026"
+      "deltaVsPreviousPct": -12.258210552308832,
+      "comparisonLabel": "vs previous 28 days",
+      "rollingWindowLabel": "Rolling 28 days: Jul 6-Aug 2, 2026"
     },
-    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Landing-page traffic remains acquisition-only and is not included here."
+    "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Monthly visits use the latest rolling 28 complete days and compare against the previous rolling 28 complete days. Landing-page traffic remains acquisition-only and is not included here."
   },
   "manualAppleSalesUpdate": {
     "updatedAt": "2026-08-02T08:20:00-07:00",
@@ -18400,7 +18401,8 @@
       "timestamp": "2026-08-03 13:18 PDT",
       "summary": "Final pre-publish audit: Outlook ROKU-folder-first search reconfirmed Aug 3 Sales Activity, App Engagement, and Viewership Summary reports; TRC Live reports remain excluded from app/platform usage. Fixed U.S. geography time-zone renderer for array-shaped timeZoneUsage and removed retired retired web-acquisition wording from dashboard copy."
     },
-    "Aug 3 clarification fix: launch-baseline badges now show baseline unavailable when the baseline is missing/zero; monthly visits label now states the rolling 28-day date range."
+    "Aug 3 clarification fix: launch-baseline badges now show baseline unavailable when the baseline is missing/zero; monthly visits label now states the rolling 28-day date range.",
+    "Aug 3 visits card fix: monthly visits badge restored to show up/down/equal vs previous 28 days while keeping the rolling 28-day date range visible."
   ],
   "connectorStatus": {
     "Outlook/Roku emails": "CONNECTED; Aug 3 Sales Activity, App Engagement, and Viewership Summary confirmed by ROKU-folder-first search with broader sender fallback.",
