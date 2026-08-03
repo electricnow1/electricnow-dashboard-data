@@ -14321,29 +14321,31 @@
           "key": "totalEngagementHours",
           "label": "Total engaged hours",
           "baseline": 0,
-          "launchBaseline": 0,
+          "launchBaseline": 3652.9975,
           "previousWeek": 5453.795,
           "current": 6648.422222222222,
           "deltaPct": 21.904512769956007,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 81.99909039691985,
           "deltaVsPreviousPct": 21.904512769956007,
           "deltaType": "percent",
           "format": "number",
-          "context": "Total GA4 engaged time converted to hours."
+          "context": "Total GA4 engaged time converted to hours.",
+          "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026"
         },
         {
           "key": "avgEngagedMinutesPerUser",
           "label": "Avg time per user",
           "baseline": 0,
-          "launchBaseline": 0,
+          "launchBaseline": 25.164161882893225,
           "previousWeek": 93.22726495726495,
           "current": 71.3350023843586,
           "deltaPct": -21.892262572906347,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 46.17084050146538,
           "deltaVsPreviousPct": -21.892262572906347,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total engaged time divided by active users, excluding landing-page acquisition paths."
+          "context": "Total engaged time divided by active users, excluding landing-page acquisition paths.",
+          "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026"
         }
       ]
     },
@@ -14496,43 +14498,46 @@
           "key": "avgEngagedMinutesPerUser",
           "label": "Avg time per user",
           "baseline": 0,
-          "launchBaseline": 0,
+          "launchBaseline": 25.164161882893225,
           "previousWeek": 93.22726495726495,
           "current": 71.3350023843586,
           "deltaPct": -21.892262572906347,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 46.17084050146538,
           "deltaVsPreviousPct": -21.892262572906347,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total engaged time divided by active users."
+          "context": "Total engaged time divided by active users.",
+          "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026"
         },
         {
           "key": "avgEngagedMinutesPerSession",
           "label": "Avg time per session",
           "baseline": 0,
-          "launchBaseline": 0,
+          "launchBaseline": 16.45123845980635,
           "previousWeek": 33.373554309026005,
           "current": 27.899379866648015,
           "deltaPct": -5.47417444237799,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 11.448141406841664,
           "deltaVsPreviousPct": -5.47417444237799,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total engaged time divided by sessions."
+          "context": "Total engaged time divided by sessions.",
+          "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026"
         },
         {
           "key": "totalEngagementHours",
           "label": "Total engaged hours",
           "baseline": 0,
-          "launchBaseline": 0,
+          "launchBaseline": 3652.9975,
           "previousWeek": 5453.795,
           "current": 6648.422222222222,
           "deltaPct": 21.904512769956007,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 81.99909039691985,
           "deltaVsPreviousPct": 21.904512769956007,
           "deltaType": "percent",
           "format": "number",
-          "context": "Total GA4 engaged time converted to hours."
+          "context": "Total GA4 engaged time converted to hours.",
+          "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026"
         }
       ]
     }
@@ -18402,7 +18407,8 @@
       "summary": "Final pre-publish audit: Outlook ROKU-folder-first search reconfirmed Aug 3 Sales Activity, App Engagement, and Viewership Summary reports; TRC Live reports remain excluded from app/platform usage. Fixed U.S. geography time-zone renderer for array-shaped timeZoneUsage and removed retired retired web-acquisition wording from dashboard copy."
     },
     "Aug 3 clarification fix: launch-baseline badges now show baseline unavailable when the baseline is missing/zero; monthly visits label now states the rolling 28-day date range.",
-    "Aug 3 visits card fix: monthly visits badge restored to show up/down/equal vs previous 28 days while keeping the rolling 28-day date range visible."
+    "Aug 3 visits card fix: monthly visits badge restored to show up/down/equal vs previous 28 days while keeping the rolling 28-day date range visible.",
+    "Aug 3 time baseline fix: restored launch-week GA4 baselines for Avg time per user, Avg time per session, and Total engaged hours using Apr 13-Apr 19, 2026 baseline values from historical dashboard data."
   ],
   "connectorStatus": {
     "Outlook/Roku emails": "CONNECTED; Aug 3 Sales Activity, App Engagement, and Viewership Summary confirmed by ROKU-folder-first search with broader sender fallback.",
