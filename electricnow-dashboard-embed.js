@@ -72,53 +72,53 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   },
   "periodTotals": {
     "launchBaseline": {
-      "activeUsers": 8739.0,
-      "newUsers": 8011.0,
-      "sessions": 13421.0,
-      "engagedSessions": 7960.0,
+      "activeUsers": 8739,
+      "newUsers": 8011,
+      "sessions": 13421,
+      "engagedSessions": 7960,
       "engagementRate": 59.310036509947096,
-      "screenPageViews": 39326.0,
-      "eventCount": 705015.0,
+      "screenPageViews": 39326,
+      "eventCount": 705015,
       "purchaseRevenue": 89.94999999999999
     },
     "previousWeek": {
-      "activeUsers": 3544.0,
-      "newUsers": 1127.0,
-      "sessions": 9899.0,
-      "engagedSessions": 7617.0,
+      "activeUsers": 3544,
+      "newUsers": 1127,
+      "sessions": 9899,
+      "engagedSessions": 7617,
       "engagementRate": 76.94716638044247,
-      "screenPageViews": 34262.0,
-      "eventCount": 1017477.0,
-      "purchaseRevenue": 0.0
+      "screenPageViews": 34262,
+      "eventCount": 1017477,
+      "purchaseRevenue": 0
     },
     "baseline": {
-      "activeUsers": 3544.0,
-      "newUsers": 1127.0,
-      "sessions": 9899.0,
-      "engagedSessions": 7617.0,
+      "activeUsers": 3544,
+      "newUsers": 1127,
+      "sessions": 9899,
+      "engagedSessions": 7617,
       "engagementRate": 76.94716638044247,
-      "screenPageViews": 34262.0,
-      "eventCount": 1017477.0,
-      "purchaseRevenue": 0.0
+      "screenPageViews": 34262,
+      "eventCount": 1017477,
+      "purchaseRevenue": 0
     },
     "currentWeek": {
-      "activeUsers": 5702.0,
-      "newUsers": 2949.0,
-      "sessions": 14519.0,
-      "engagedSessions": 11527.0,
+      "activeUsers": 5702,
+      "newUsers": 2949,
+      "sessions": 14519,
+      "engagedSessions": 11527,
       "engagementRate": 79.39252014601557,
-      "screenPageViews": 54022.0,
-      "eventCount": 1178518.0,
+      "screenPageViews": 54022,
+      "eventCount": 1178518,
       "purchaseRevenue": 422.19983
     },
     "weekToDate": {
-      "activeUsers": 5702.0,
-      "newUsers": 2949.0,
-      "sessions": 14519.0,
-      "engagedSessions": 11527.0,
+      "activeUsers": 5702,
+      "newUsers": 2949,
+      "sessions": 14519,
+      "engagedSessions": 11527,
       "engagementRate": 79.39252014601557,
-      "screenPageViews": 54022.0,
-      "eventCount": 1178518.0,
+      "screenPageViews": 54022,
+      "eventCount": 1178518,
       "purchaseRevenue": 422.19983
     }
   },
@@ -168,8 +168,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     {
       "key": "totalEngagementHours",
       "label": "Total engaged hours",
-      "baseline": 0.0,
-      "launchBaseline": 0.0,
+      "baseline": 0,
+      "launchBaseline": 0,
       "previousWeek": 5453.795,
       "current": 6648.422222222222,
       "deltaPct": 21.904512769956007,
@@ -205,7 +205,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "deltaVsPreviousPct": 284.4594594594595,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with \u201clanding\u201d in the path."
+      "context": "Users reaching pages with “landing” in the path."
     },
     {
       "key": "devicesPageUsers",
@@ -219,7 +219,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "deltaVsPreviousPct": 97.77777777777777,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with \u201cdevices\u201d in the path."
+      "context": "Users reaching pages with “devices” in the path."
     },
     {
       "key": "paidSocialUsers",
@@ -392,8 +392,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     {
       "key": "totalEngagementHours",
       "label": "Total engaged hours",
-      "baseline": 0.0,
-      "launchBaseline": 0.0,
+      "baseline": 0,
+      "launchBaseline": 0,
       "previousWeek": 5453.795,
       "current": 6648.422222222222,
       "deltaPct": 21.904512769956007,
@@ -865,7 +865,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "engagedSessions": 1064,
       "screenPageViews": 228,
       "eventCount": 30144,
-      "engagementRate": 80.0
+      "engagementRate": 80
     },
     {
       "date": "May 25",
@@ -1272,7 +1272,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "engagedSessions": 561,
       "screenPageViews": 121,
       "eventCount": 23587,
-      "engagementRate": 75.0
+      "engagementRate": 75
     },
     {
       "date": "Jul 1",
@@ -1809,7 +1809,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "baseline": 2,
       "current": 20,
       "weekToDate": 20,
-      "deltaPct": 900.0,
+      "deltaPct": 900,
       "tracked": true,
       "note": "Launch baseline: 6 purchases / $84.94"
     },
@@ -3206,7 +3206,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "category": "Connected TV",
         "tracked": true,
         "activeUsers": 1426,
-        "sharePct": 25.0,
+        "sharePct": 25,
         "sessions": 4757,
         "engagedSessions": 3896,
         "detail": "Roku activity from the electricnow-roku GA4 stream."
@@ -3310,7 +3310,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "sessions": 850,
       "engagedSessions": 0,
       "eventCount": 87503,
-      "engagementRate": 0.0
+      "engagementRate": 0
     },
     {
       "sourceMedium": "channel-store / (not set)",
@@ -3337,7 +3337,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "sessions": 100,
       "engagedSessions": 89,
       "eventCount": 5169,
-      "engagementRate": 89.0
+      "engagementRate": 89
     },
     {
       "sourceMedium": "fb / paid",
@@ -8195,7 +8195,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "label": "Apple sales last week",
         "range": "Jul 27-Aug 2, 2026",
         "purchases": null,
-        "purchaseRevenue": 728.0,
+        "purchaseRevenue": 728,
         "developerRevShare": 509.6,
         "downloads": 423,
         "note": "Manual Apple App Store Connect snapshot. Sales are gross revenue by day; transaction count was not provided."
@@ -8205,7 +8205,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "range": "Aug 3-Aug 3, 2026",
         "purchases": 0,
         "purchaseRevenue": 0,
-        "developerRevShare": 0.0,
+        "developerRevShare": 0,
         "revenuePerPurchase": 0,
         "payments": []
       },
@@ -8219,7 +8219,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "payments": [
           {
             "date": "Aug 1",
-            "amount": 161.0,
+            "amount": 161,
             "description": "Apple App Store - Aggregate Apple App Store gross sales",
             "source": "Apple App Store"
           },
@@ -8235,7 +8235,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "label": "Apple sales last 12 days",
         "range": "Jul 23-Aug 3, 2026",
         "purchases": 0,
-        "purchaseRevenue": 728.0,
+        "purchaseRevenue": 728,
         "developerRevShare": 509.6,
         "revenuePerPurchase": 0,
         "payments": [
@@ -8265,7 +8265,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           },
           {
             "date": "Aug 1",
-            "amount": 161.0,
+            "amount": 161,
             "description": "Apple App Store - Aggregate Apple App Store gross sales",
             "source": "Apple App Store"
           },
@@ -8432,7 +8432,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           {
             "date": "Jul 27-Aug 2, 2026",
             "createdAt": "2026-07-27/2026-08-02",
-            "amount": 728.0,
+            "amount": 728,
             "developerRevShare": 509.6,
             "description": "Apple App Store - Aggregate Apple App Store gross sales",
             "source": "Apple App Store",
@@ -8454,8 +8454,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "date": "Jul 28",
           "rawDate": "20260728",
           "purchases": null,
-          "purchaseRevenue": 0.0,
-          "developerRevShare": 0.0,
+          "purchaseRevenue": 0,
+          "developerRevShare": 0,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
@@ -8486,7 +8486,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "date": "Aug 1",
           "rawDate": "20260801",
           "purchases": null,
-          "purchaseRevenue": 161.0,
+          "purchaseRevenue": 161,
           "developerRevShare": 112.7,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
@@ -8527,12 +8527,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $1055.80 gross in-app purchase sales manually entered so far, or approximately $739.06 after Apple\u2019s 30% platform fee. Revenue-only aggregate screenshots are included as gross revenue but do not increase purchase counts unless Apple provides transaction detail. These figures remain manual until Apple App Store Connect API reporting is connected.",
+      "note": "Apple App Store screenshots show $1055.80 gross in-app purchase sales manually entered so far, or approximately $739.06 after Apple’s 30% platform fee. Revenue-only aggregate screenshots are included as gross revenue but do not increase purchase counts unless Apple provides transaction detail. These figures remain manual until Apple App Store Connect API reporting is connected.",
       "latestSnapshot": {
         "label": "Apple sales last week",
         "range": "Jul 27-Aug 2, 2026",
         "purchases": null,
-        "purchaseRevenue": 728.0,
+        "purchaseRevenue": 728,
         "developerRevShare": 509.6,
         "downloads": 423,
         "note": "Manual Apple App Store Connect snapshot. Sales are gross revenue by day; transaction count was not provided."
@@ -9996,7 +9996,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         {
           "date": "Jul 27-Aug 2, 2026",
           "createdAt": "2026-07-27/2026-08-02",
-          "amount": 728.0,
+          "amount": 728,
           "developerRevShare": 509.6,
           "description": "Apple App Store - Aggregate Apple App Store gross sales",
           "source": "Apple App Store",
@@ -10830,7 +10830,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "label": "Apple sales last week",
       "range": "Jul 27-Aug 2, 2026",
       "purchases": null,
-      "purchaseRevenue": 728.0,
+      "purchaseRevenue": 728,
       "developerRevShare": 509.6,
       "downloads": 423,
       "note": "Manual Apple App Store Connect snapshot. Sales are gross revenue by day; transaction count was not provided."
@@ -12038,22 +12038,22 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 13",
         "rawDate": "20260413",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 14",
         "rawDate": "20260414",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 15",
         "rawDate": "20260415",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 16",
@@ -12066,8 +12066,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 17",
         "rawDate": "20260417",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 18",
@@ -12080,8 +12080,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 19",
         "rawDate": "20260419",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 20",
@@ -12094,8 +12094,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 21",
         "rawDate": "20260421",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 22",
@@ -12108,8 +12108,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 23",
         "rawDate": "20260423",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 24",
@@ -12122,8 +12122,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 25",
         "rawDate": "20260425",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 26",
@@ -12136,64 +12136,64 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Apr 27",
         "rawDate": "20260427",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 28",
         "rawDate": "20260428",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 29",
         "rawDate": "20260429",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Apr 30",
         "rawDate": "20260430",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 1",
         "rawDate": "20260501",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 2",
         "rawDate": "20260502",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 3",
         "rawDate": "20260503",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 4",
         "rawDate": "20260504",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 5",
         "rawDate": "20260505",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 6",
@@ -12206,50 +12206,50 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "May 7",
         "rawDate": "20260507",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 8",
         "rawDate": "20260508",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 9",
         "rawDate": "20260509",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 10",
         "rawDate": "20260510",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 11",
         "rawDate": "20260511",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 12",
         "rawDate": "20260512",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 13",
         "rawDate": "20260513",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 14",
@@ -12262,15 +12262,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "May 15",
         "rawDate": "20260515",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 16",
         "rawDate": "20260516",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 17",
@@ -12283,71 +12283,71 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "May 18",
         "rawDate": "20260518",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 19",
         "rawDate": "20260519",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 20",
         "rawDate": "20260520",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 21",
         "rawDate": "20260521",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 22",
         "rawDate": "20260522",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 23",
         "rawDate": "20260523",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 24",
         "rawDate": "20260524",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 25",
         "rawDate": "20260525",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 26",
         "rawDate": "20260526",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 27",
         "rawDate": "20260527",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 28",
@@ -12360,99 +12360,99 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "May 29",
         "rawDate": "20260529",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 30",
         "rawDate": "20260530",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "May 31",
         "rawDate": "20260531",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 1",
         "rawDate": "20260601",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 2",
         "rawDate": "20260602",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 3",
         "rawDate": "20260603",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 4",
         "rawDate": "20260604",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 5",
         "rawDate": "20260605",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 6",
         "rawDate": "20260606",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 7",
         "rawDate": "20260607",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 8",
         "rawDate": "20260608",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 9",
         "rawDate": "20260609",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 10",
         "rawDate": "20260610",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 11",
         "rawDate": "20260611",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 12",
@@ -12465,15 +12465,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jun 13",
         "rawDate": "20260613",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 14",
         "rawDate": "20260614",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 15",
@@ -12486,78 +12486,78 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jun 16",
         "rawDate": "20260616",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 17",
         "rawDate": "20260617",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 18",
         "rawDate": "20260618",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 19",
         "rawDate": "20260619",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 20",
         "rawDate": "20260620",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 21",
         "rawDate": "20260621",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 22",
         "rawDate": "20260622",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 23",
         "rawDate": "20260623",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 24",
         "rawDate": "20260624",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 25",
         "rawDate": "20260625",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 26",
         "rawDate": "20260626",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 27",
@@ -12570,15 +12570,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jun 28",
         "rawDate": "20260628",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 29",
         "rawDate": "20260629",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jun 30",
@@ -12591,92 +12591,92 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jul 1",
         "rawDate": "20260701",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 2",
         "rawDate": "20260702",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 3",
         "rawDate": "20260703",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 4",
         "rawDate": "20260704",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 5",
         "rawDate": "20260705",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 6",
         "rawDate": "20260706",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 7",
         "rawDate": "20260707",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 8",
         "rawDate": "20260708",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 9",
         "rawDate": "20260709",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 10",
         "rawDate": "20260710",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 11",
         "rawDate": "20260711",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 12",
         "rawDate": "20260712",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 13",
         "rawDate": "20260713",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 14",
@@ -12689,36 +12689,36 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jul 15",
         "rawDate": "20260715",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 16",
         "rawDate": "20260716",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 17",
         "rawDate": "20260717",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 18",
         "rawDate": "20260718",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 19",
         "rawDate": "20260719",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 20",
@@ -12738,22 +12738,22 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jul 22",
         "rawDate": "20260722",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 23",
         "rawDate": "20260723",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 24",
         "rawDate": "20260724",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 25",
@@ -12780,8 +12780,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "date": "Jul 28",
         "rawDate": "20260728",
         "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0
+        "purchaseRevenue": 0,
+        "developerRevShare": 0
       },
       {
         "date": "Jul 29",
@@ -12834,7 +12834,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "stripeRevenue": 853.58,
       "rokuPurchases": 26,
       "rokuRevenue": 577.74,
-      "appleGrossRevenue": 728.0,
+      "appleGrossRevenue": 728,
       "appleDownloads": 423,
       "knownVisibleRevenue": 2159.32,
       "note": "Combines Stripe + Roku + Apple visible revenue for Jul 27-Aug 2. Apple transaction count is unavailable."
@@ -12901,7 +12901,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "rank": 1
         },
         {
-          "title": "ElectricNOW en Espa\u00f1ol",
+          "title": "ElectricNOW en Español",
           "plays": 459,
           "activeUsers": 22,
           "rank": 2
@@ -12991,7 +12991,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   },
   "titleViewership": {
     "period": "Jul 27-Aug 2, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only \u2014 live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
+    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage' and 'Live Channel on Roku'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
       {
@@ -13531,7 +13531,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "rank": 50,
-        "program": "It\u2019s What\u2019s On the Inside",
+        "program": "It’s What’s On the Inside",
         "plays": 23,
         "activeUsers": 1,
         "viewerMethod": "deduped_ga4_filter",
@@ -14125,7 +14125,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "engagedSessions": 0,
       "engagementRate": 0,
       "totalEngagementSeconds": 0,
-      "totalEngagementHours": 0.0,
+      "totalEngagementHours": 0,
       "avgEngagedMinutesPerUser": 0,
       "avgEngagedMinutesPerSession": 0,
       "ga4AverageSessionMinutes": 0,
@@ -14220,8 +14220,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   "acquisitionSummary": {
     "launchBaseline": {
       "range": "Apr 13-Apr 19, 2026",
-      "totalGa4ActiveUsers": 8739.0,
-      "totalGa4Sessions": 13421.0,
+      "totalGa4ActiveUsers": 8739,
+      "totalGa4Sessions": 13421,
       "totalGa4EngagementRate": 59.310036509947096,
       "landingPageUsers": 1045,
       "landingPageSessions": 1485,
@@ -14232,8 +14232,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     },
     "previousWeek": {
       "range": "Jul 20-Jul 26, 2026",
-      "totalGa4ActiveUsers": 3544.0,
-      "totalGa4Sessions": 9899.0,
+      "totalGa4ActiveUsers": 3544,
+      "totalGa4Sessions": 9899,
       "totalGa4EngagementRate": 76.94716638044247,
       "landingPageUsers": 148,
       "landingPageSessions": 329,
@@ -14244,8 +14244,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     },
     "currentWeek": {
       "range": "Jul 27-Aug 2, 2026",
-      "totalGa4ActiveUsers": 5702.0,
-      "totalGa4Sessions": 14519.0,
+      "totalGa4ActiveUsers": 5702,
+      "totalGa4Sessions": 14519,
       "totalGa4EngagementRate": 79.39252014601557,
       "landingPageUsers": 569,
       "landingPageSessions": 885,
@@ -14356,8 +14356,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         {
           "key": "totalEngagementHours",
           "label": "Total engaged hours",
-          "baseline": 0.0,
-          "launchBaseline": 0.0,
+          "baseline": 0,
+          "launchBaseline": 0,
           "previousWeek": 5453.795,
           "current": 6648.422222222222,
           "deltaPct": 21.904512769956007,
@@ -14375,7 +14375,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 93.22726495726495,
           "current": 71.3350023843586,
           "deltaPct": -21.892262572906347,
-          "deltaVsLaunchPct": 71.3350023843586,
+          "deltaVsLaunchPct": null,
           "deltaVsPreviousPct": -21.892262572906347,
           "deltaType": "minutes",
           "format": "minutes",
@@ -14536,7 +14536,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 93.22726495726495,
           "current": 71.3350023843586,
           "deltaPct": -21.892262572906347,
-          "deltaVsLaunchPct": 71.3350023843586,
+          "deltaVsLaunchPct": null,
           "deltaVsPreviousPct": -21.892262572906347,
           "deltaType": "minutes",
           "format": "minutes",
@@ -14550,7 +14550,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 33.373554309026005,
           "current": 27.899379866648015,
           "deltaPct": -5.47417444237799,
-          "deltaVsLaunchPct": 27.899379866648015,
+          "deltaVsLaunchPct": null,
           "deltaVsPreviousPct": -5.47417444237799,
           "deltaType": "minutes",
           "format": "minutes",
@@ -14559,8 +14559,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         {
           "key": "totalEngagementHours",
           "label": "Total engaged hours",
-          "baseline": 0.0,
-          "launchBaseline": 0.0,
+          "baseline": 0,
+          "launchBaseline": 0,
           "previousWeek": 5453.795,
           "current": 6648.422222222222,
           "deltaPct": 21.904512769956007,
@@ -14651,9 +14651,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "sessions": 14,
           "engagedSessions": 0,
           "eventCount": 91,
-          "engagementRate": 0.0,
+          "engagementRate": 0,
           "avgEngagedMinutesPerUser": 0,
-          "avgEngagedMinutesPerSession": 0.0
+          "avgEngagedMinutesPerSession": 0
         }
       ],
       "note": "Surface rows come from GA4 streamName/streamId. The headline total measured audience is deduped at the property level; surface rows may not dedupe the same person across multiple surfaces."
@@ -14735,9 +14735,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "sessions": 360,
           "engagedSessions": 0,
           "eventCount": 6170,
-          "engagementRate": 0.0,
+          "engagementRate": 0,
           "avgEngagedMinutesPerUser": 0,
-          "avgEngagedMinutesPerSession": 0.0
+          "avgEngagedMinutesPerSession": 0
         }
       ],
       "note": "Surface rows come from GA4 streamName/streamId. The headline total measured audience is deduped at the property level; surface rows may not dedupe the same person across multiple surfaces."
@@ -14819,9 +14819,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "sessions": 5,
           "engagedSessions": 0,
           "eventCount": 22,
-          "engagementRate": 0.0,
+          "engagementRate": 0,
           "avgEngagedMinutesPerUser": 0,
-          "avgEngagedMinutesPerSession": 0.0
+          "avgEngagedMinutesPerSession": 0
         },
         {
           "surface": "LG / webOS",
@@ -14832,9 +14832,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "sessions": 550,
           "engagedSessions": 0,
           "eventCount": 6958,
-          "engagementRate": 0.0,
+          "engagementRate": 0,
           "avgEngagedMinutesPerUser": 0,
-          "avgEngagedMinutesPerSession": 0.0
+          "avgEngagedMinutesPerSession": 0
         }
       ],
       "note": "Surface rows come from GA4 streamName/streamId. The headline total measured audience is deduped at the property level; surface rows may not dedupe the same person across multiple surfaces."
@@ -15301,13 +15301,13 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "section": "En Espanol",
-        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Espa\u00f1ol, Espanol, Spanish, or matching paths.",
+        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Español, Espanol, Spanish, or matching paths.",
         "activeUsers": 20,
         "sessions": 21,
         "engagedSessions": 21,
         "screenPageViews": 40,
         "eventCount": 193,
-        "engagementRate": 100.0,
+        "engagementRate": 100,
         "totalEngagementSeconds": 951,
         "totalEngagementHours": 0.26416666666666666,
         "avgEngagedMinutesPerUser": 0.7925,
@@ -15411,7 +15411,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "previousRange": "Jun 8-Jul 5, 2026",
       "previousSessions": 48596,
       "deltaVsPreviousPct": null,
-      "comparisonLabel": "latest 28 days"
+      "comparisonLabel": "Rolling 28 days: Jul 6-Aug 2, 2026"
     },
     "note": "Visits are GA4 sessions, not unique people. Weekly visits use the latest 7 complete days and compare against the previous 7 complete days. Landing-page traffic remains acquisition-only and is not included here."
   },
@@ -15436,8 +15436,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "ctrPct": 2.916346891788181,
     "cost": 66.47,
     "avgCpc": 0.21865670065789475,
-    "conversions": 124.0,
-    "allConversions": 235.0,
+    "conversions": 124,
+    "allConversions": 235,
     "conversionRatePct": 40.78947368421053,
     "costPerConversion": 0.5360615887096775,
     "daily": [
@@ -15447,8 +15447,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 14.011478,
         "impressions": 2071,
         "clicks": 69,
-        "conversions": 28.0,
-        "allConversions": 56.0,
+        "conversions": 28,
+        "allConversions": 56,
         "ctrPct": 3.3317238049251565,
         "avgCpc": 0.20306489855072465,
         "costPerConversion": 0.5004099285714286
@@ -15459,8 +15459,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 17.030354,
         "impressions": 2515,
         "clicks": 70,
-        "conversions": 30.0,
-        "allConversions": 55.0,
+        "conversions": 30,
+        "allConversions": 55,
         "ctrPct": 2.783300198807157,
         "avgCpc": 0.24329077142857142,
         "costPerConversion": 0.5676784666666667
@@ -15471,8 +15471,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 16.340343,
         "impressions": 2704,
         "clicks": 87,
-        "conversions": 29.0,
-        "allConversions": 55.0,
+        "conversions": 29,
+        "allConversions": 55,
         "ctrPct": 3.217455621301775,
         "avgCpc": 0.18782003448275864,
         "costPerConversion": 0.5634601034482759
@@ -15483,8 +15483,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 16.226717999999998,
         "impressions": 2683,
         "clicks": 68,
-        "conversions": 30.0,
-        "allConversions": 59.0,
+        "conversions": 30,
+        "allConversions": 59,
         "ctrPct": 2.5344763324636603,
         "avgCpc": 0.23862820588235292,
         "costPerConversion": 0.5408905999999999
@@ -15495,8 +15495,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 2.862744,
         "impressions": 451,
         "clicks": 10,
-        "conversions": 7.0,
-        "allConversions": 10.0,
+        "conversions": 7,
+        "allConversions": 10,
         "ctrPct": 2.2172949002217295,
         "avgCpc": 0.28627440000000004,
         "costPerConversion": 0.4089634285714286
@@ -15509,8 +15509,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 54.282101999999995,
         "impressions": 8384,
         "clicks": 252,
-        "conversions": 97.0,
-        "allConversions": 189.0,
+        "conversions": 97,
+        "allConversions": 189,
         "ctrPct": 3.0057251908396947,
         "avgCpc": 0.21540516666666665,
         "costPerConversion": 0.5596092989690721
@@ -15521,8 +15521,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 12.156039000000002,
         "impressions": 2034,
         "clicks": 52,
-        "conversions": 27.0,
-        "allConversions": 46.0,
+        "conversions": 27,
+        "allConversions": 46,
         "ctrPct": 2.55653883972468,
         "avgCpc": 0.2337699807692308,
         "costPerConversion": 0.45022366666666674
@@ -15533,9 +15533,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "cost": 0.033496000000000005,
         "impressions": 6,
         "clicks": 0,
-        "conversions": 0.0,
-        "allConversions": 0.0,
-        "ctrPct": 0.0,
+        "conversions": 0,
+        "allConversions": 0,
+        "ctrPct": 0,
         "avgCpc": null,
         "costPerConversion": null
       }
@@ -15544,14 +15544,14 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       {
         "campaign": "PCSM - ElectricNow App Promotion - Android",
         "conversionAction": "electricnow-4fbb4 - com.electric.now (Android) First open",
-        "conversions": 124.0,
-        "allConversions": 136.0
+        "conversions": 124,
+        "allConversions": 136
       },
       {
         "campaign": "PCSM - ElectricNow App Promotion - Android",
         "conversionAction": "Android installs (all other apps)",
-        "conversions": 0.0,
-        "allConversions": 99.0
+        "conversions": 0,
+        "allConversions": 99
       }
     ],
     "plainEnglish": "Google Ads produced 124 counted Android first-open conversions on $66.47 of spend, about $0.54 per conversion.",
@@ -15572,8 +15572,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "clicks": 1458,
       "ctrPct": 3.1,
       "avgCpc": 0.17,
-      "firstOpenConversions": 443.0,
-      "allConversions": 967.0,
+      "firstOpenConversions": 443,
+      "allConversions": 967,
       "conversionRatePct": 30.38,
       "costPerConversion": 0.54,
       "source": "Google Ads connector",
@@ -15587,7 +15587,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "clicks": 5050,
       "ctrPct": 4.64,
       "downloads": 1,
-      "costPerDownload": 0.0,
+      "costPerDownload": 0,
       "iosDownloads": 0,
       "androidDownloads": 1,
       "source": "Nathan / Forge One Meta email report",
@@ -15622,23 +15622,23 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "periodStart": "2026-07-12",
     "periodEnd": "2026-07-18",
     "comparison": "vs prior Meta report period",
-    "spend": 0.0,
+    "spend": 0,
     "impressions": 0,
     "linkClicks": 0,
-    "costPerClick": 0.0,
+    "costPerClick": 0,
     "iosDownloads": 0,
     "androidDownloads": 0,
     "totalDownloads": 0,
     "costPerIosDownload": null,
     "costPerAndroidDownload": null,
-    "costPerDownload": 0.0,
-    "ctrPct": 0.0,
+    "costPerDownload": 0,
+    "ctrPct": 0,
     "deltas": {
-      "spendPct": -100.0,
-      "impressionsPct": -100.0,
-      "linkClicksPct": -100.0,
-      "costPerClickPct": -100.0,
-      "iosDownloadsPct": -100.0,
+      "spendPct": -100,
+      "impressionsPct": -100,
+      "linkClicksPct": -100,
+      "costPerClickPct": -100,
+      "iosDownloadsPct": -100,
       "costPerIosDownloadPct": null,
       "comparisonNote": "Deltas vs prior Meta report period (Jul 2-Jul 8, 2026)."
     },
@@ -15671,7 +15671,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -15715,14 +15715,14 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     },
     "platformSplit": [
       {
-        "label": "Android \u00b7 mobile",
+        "label": "Android · mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android \u00b7 smart tv",
+        "label": "Android · smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -15908,13 +15908,13 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "source": "Apple App Store Connect screenshot",
         "total_units": 360,
         "daily_average": 51,
-        "overall_delta_pct": 163.0,
+        "overall_delta_pct": 163,
         "breakdown": {
           "paid_ios_watchos_tvos": 0,
           "free_ios_watchos_tvos": 334,
           "free_ios_watchos_tvos_delta_pct": 143.8,
           "inapp_ios_tvos": 26,
-          "inapp_ios_tvos_delta_pct": 100.0,
+          "inapp_ios_tvos_delta_pct": 100,
           "paid_macos": 0,
           "free_macos": 0,
           "inapp_macos": 0
@@ -16141,7 +16141,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "key": "estimatedRevenueYtd",
         "label": "YTD YouTube revenue",
         "value": 87968.84,
-        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue \u2014 NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
+        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue — NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
       },
       {
         "key": "adImpressions",
@@ -16251,7 +16251,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "13025kKEUUY",
-        "title": "Untitled video (YouTube ID 13025kKEUUY) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 13025kKEUUY) — title lookup unavailable this refresh",
         "views": 14985,
         "estimatedMinutesWatched": 196356,
         "estimatedHoursWatched": 3272.6,
@@ -16291,7 +16291,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "G_X8m-NJV-U",
-        "title": "Untitled video (YouTube ID G_X8m-NJV-U) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID G_X8m-NJV-U) — title lookup unavailable this refresh",
         "views": 5404,
         "estimatedMinutesWatched": 69027,
         "estimatedHoursWatched": 1150.45,
@@ -16301,7 +16301,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "6G2FEy9LGBw",
-        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) — title lookup unavailable this refresh",
         "views": 4907,
         "estimatedMinutesWatched": 59051,
         "estimatedHoursWatched": 984.18,
@@ -16311,7 +16311,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "NgCIyD4T8JM",
-        "title": "Untitled video (YouTube ID NgCIyD4T8JM) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID NgCIyD4T8JM) — title lookup unavailable this refresh",
         "views": 4127,
         "estimatedMinutesWatched": 54146,
         "estimatedHoursWatched": 902.43,
@@ -16371,7 +16371,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "pbLonEcXhTs",
-        "title": "Untitled video (YouTube ID pbLonEcXhTs) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID pbLonEcXhTs) — title lookup unavailable this refresh",
         "views": 1541,
         "estimatedMinutesWatched": 506,
         "estimatedHoursWatched": 8.43,
@@ -16381,7 +16381,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "JeeMINxXYwQ",
-        "title": "Untitled video (YouTube ID JeeMINxXYwQ) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID JeeMINxXYwQ) — title lookup unavailable this refresh",
         "views": 1491,
         "estimatedMinutesWatched": 31892,
         "estimatedHoursWatched": 531.53,
@@ -16421,7 +16421,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "6etBO8Z9IBA",
-        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) — title lookup unavailable this refresh",
         "views": 1168,
         "estimatedMinutesWatched": 24269,
         "estimatedHoursWatched": 404.48,
@@ -16431,7 +16431,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "Q9XTdOji2wc",
-        "title": "Untitled video (YouTube ID Q9XTdOji2wc) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID Q9XTdOji2wc) — title lookup unavailable this refresh",
         "views": 1101,
         "estimatedMinutesWatched": 26230,
         "estimatedHoursWatched": 437.17,
@@ -16441,7 +16441,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "He3ScSePRYM",
-        "title": "Untitled video (YouTube ID He3ScSePRYM) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID He3ScSePRYM) — title lookup unavailable this refresh",
         "views": 1069,
         "estimatedMinutesWatched": 26745,
         "estimatedHoursWatched": 445.75,
@@ -16451,7 +16451,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "89J-9vWWPuk",
-        "title": "Untitled video (YouTube ID 89J-9vWWPuk) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 89J-9vWWPuk) — title lookup unavailable this refresh",
         "views": 1036,
         "estimatedMinutesWatched": 20993,
         "estimatedHoursWatched": 349.88,
@@ -16461,7 +16461,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "rVC2lrrZvwc",
-        "title": "Untitled video (YouTube ID rVC2lrrZvwc) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID rVC2lrrZvwc) — title lookup unavailable this refresh",
         "views": 1035,
         "estimatedMinutesWatched": 21112,
         "estimatedHoursWatched": 351.87,
@@ -16471,7 +16471,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "V21Q6QjV0Hc",
-        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) — title lookup unavailable this refresh",
         "views": 1016,
         "estimatedMinutesWatched": 23796,
         "estimatedHoursWatched": 396.6,
@@ -16481,7 +16481,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "gJtM5e4S5sU",
-        "title": "Untitled video (YouTube ID gJtM5e4S5sU) \u2014 title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID gJtM5e4S5sU) — title lookup unavailable this refresh",
         "views": 1013,
         "estimatedMinutesWatched": 24085,
         "estimatedHoursWatched": 401.42,
@@ -16495,7 +16495,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "source": "RELATED_VIDEO",
         "label": "Related videos",
         "views": 64768,
-        "viewSharePct": 48.0,
+        "viewSharePct": 48,
         "estimatedHoursWatched": 35617.57,
         "averageViewDuration": "32m 59s"
       },
@@ -16732,8 +16732,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 596.59,
         "sharePct": 8.18,
         "timeZoneGroup": "Pacific",
-        "x": 12.0,
-        "y": 34.0,
+        "x": 12,
+        "y": 34,
         "stateCode": "CA"
       },
       {
@@ -16744,8 +16744,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 386.37,
         "sharePct": 7.34,
         "timeZoneGroup": "Central/Mountain",
-        "x": 42.0,
-        "y": 48.0,
+        "x": 42,
+        "y": 48,
         "stateCode": "TX"
       },
       {
@@ -16756,8 +16756,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 311.75,
         "sharePct": 6.42,
         "timeZoneGroup": "East Coast",
-        "x": 70.0,
-        "y": 58.0,
+        "x": 70,
+        "y": 58,
         "stateCode": "FL"
       },
       {
@@ -16768,8 +16768,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 186.07,
         "sharePct": 5.13,
         "timeZoneGroup": "East Coast",
-        "x": 79.0,
-        "y": 16.0,
+        "x": 79,
+        "y": 16,
         "stateCode": "NY"
       },
       {
@@ -16780,8 +16780,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 275.15,
         "sharePct": 4.65,
         "timeZoneGroup": "East Coast",
-        "x": 73.0,
-        "y": 39.0,
+        "x": 73,
+        "y": 39,
         "stateCode": "NC"
       },
       {
@@ -16792,8 +16792,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 226.79,
         "sharePct": 4.49,
         "timeZoneGroup": "East Coast",
-        "x": 76.0,
-        "y": 23.0,
+        "x": 76,
+        "y": 23,
         "stateCode": "PA"
       },
       {
@@ -16804,8 +16804,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 197.89,
         "sharePct": 3.99,
         "timeZoneGroup": "East Coast",
-        "x": 65.0,
-        "y": 46.0,
+        "x": 65,
+        "y": 46,
         "stateCode": "GA"
       },
       {
@@ -16813,11 +16813,11 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "activeUsers": 155,
         "sessions": 489,
         "engagedSessions": 356,
-        "totalEngagementHours": 274.0,
+        "totalEngagementHours": 274,
         "sharePct": 3.94,
         "timeZoneGroup": "East Coast",
-        "x": 65.0,
-        "y": 25.0,
+        "x": 65,
+        "y": 25,
         "stateCode": "OH"
       },
       {
@@ -16828,8 +16828,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 152.17,
         "sharePct": 3.68,
         "timeZoneGroup": "Central/Mountain",
-        "x": 58.0,
-        "y": 28.0,
+        "x": 58,
+        "y": 28,
         "stateCode": "IL"
       },
       {
@@ -16840,8 +16840,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 135.76,
         "sharePct": 3.68,
         "timeZoneGroup": "East Coast",
-        "x": 62.0,
-        "y": 18.0,
+        "x": 62,
+        "y": 18,
         "stateCode": "MI"
       },
       {
@@ -16852,8 +16852,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 91.58,
         "sharePct": 3.02,
         "timeZoneGroup": "Central/Mountain",
-        "x": 62.0,
-        "y": 39.0,
+        "x": 62,
+        "y": 39,
         "stateCode": "TN"
       },
       {
@@ -16864,8 +16864,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 164.05,
         "sharePct": 2.54,
         "timeZoneGroup": "East Coast",
-        "x": 75.0,
-        "y": 32.0,
+        "x": 75,
+        "y": 32,
         "stateCode": "VA"
       },
       {
@@ -16876,8 +16876,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 111.99,
         "sharePct": 2.39,
         "timeZoneGroup": "Central/Mountain",
-        "x": 24.0,
-        "y": 42.0,
+        "x": 24,
+        "y": 42,
         "stateCode": "AZ"
       },
       {
@@ -16888,8 +16888,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 128.61,
         "sharePct": 2.39,
         "timeZoneGroup": "Other/unknown",
-        "x": 61.0,
-        "y": 27.0,
+        "x": 61,
+        "y": 27,
         "stateCode": "IN"
       },
       {
@@ -16900,8 +16900,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 318.27,
         "sharePct": 2.31,
         "timeZoneGroup": "Central/Mountain",
-        "x": 51.0,
-        "y": 14.0,
+        "x": 51,
+        "y": 14,
         "stateCode": "MN"
       },
       {
@@ -16912,8 +16912,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 36.12,
         "sharePct": 2.31,
         "timeZoneGroup": "Pacific",
-        "x": 15.0,
-        "y": 6.0,
+        "x": 15,
+        "y": 6,
         "stateCode": "WA"
       },
       {
@@ -16924,8 +16924,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 102.38,
         "sharePct": 2.23,
         "timeZoneGroup": "Other/unknown",
-        "x": 61.0,
-        "y": 46.0,
+        "x": 61,
+        "y": 46,
         "stateCode": "AL"
       },
       {
@@ -16936,8 +16936,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 84.6,
         "sharePct": 2.13,
         "timeZoneGroup": "Other/unknown",
-        "x": 54.0,
-        "y": 32.0,
+        "x": 54,
+        "y": 32,
         "stateCode": "MO"
       },
       {
@@ -16948,8 +16948,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 75.79,
         "sharePct": 2.01,
         "timeZoneGroup": "Pacific",
-        "x": 14.0,
-        "y": 15.0,
+        "x": 14,
+        "y": 15,
         "stateCode": "OR"
       },
       {
@@ -16960,8 +16960,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 202.8,
         "sharePct": 1.85,
         "timeZoneGroup": "Other/unknown",
-        "x": 80.0,
-        "y": 24.0,
+        "x": 80,
+        "y": 24,
         "stateCode": "NJ"
       },
       {
@@ -16972,8 +16972,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 107.52,
         "sharePct": 1.8,
         "timeZoneGroup": "Other/unknown",
-        "x": 46.0,
-        "y": 40.0,
+        "x": 46,
+        "y": 40,
         "stateCode": "OK"
       },
       {
@@ -16984,8 +16984,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 122.57,
         "sharePct": 1.7,
         "timeZoneGroup": "Other/unknown",
-        "x": 55.0,
-        "y": 16.0,
+        "x": 55,
+        "y": 16,
         "stateCode": "WI"
       },
       {
@@ -16996,8 +16996,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 63.82,
         "sharePct": 1.68,
         "timeZoneGroup": "East Coast",
-        "x": 84.0,
-        "y": 18.0,
+        "x": 84,
+        "y": 18,
         "stateCode": "MA"
       },
       {
@@ -17008,8 +17008,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 46.88,
         "sharePct": 1.45,
         "timeZoneGroup": "Other/unknown",
-        "x": 64.0,
-        "y": 33.0,
+        "x": 64,
+        "y": 33,
         "stateCode": "KY"
       },
       {
@@ -17020,8 +17020,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 94.46,
         "sharePct": 1.42,
         "timeZoneGroup": "Other/unknown",
-        "x": 56.0,
-        "y": 42.0,
+        "x": 56,
+        "y": 42,
         "stateCode": "AR"
       },
       {
@@ -17032,8 +17032,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 98.54,
         "sharePct": 1.42,
         "timeZoneGroup": "Central/Mountain",
-        "x": 34.0,
-        "y": 32.0,
+        "x": 34,
+        "y": 32,
         "stateCode": "CO"
       },
       {
@@ -17044,8 +17044,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 82.89,
         "sharePct": 1.42,
         "timeZoneGroup": "Other/unknown",
-        "x": 70.0,
-        "y": 43.0,
+        "x": 70,
+        "y": 43,
         "stateCode": "SC"
       },
       {
@@ -17056,8 +17056,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 51.71,
         "sharePct": 1.4,
         "timeZoneGroup": "Other/unknown",
-        "x": 79.0,
-        "y": 28.0,
+        "x": 79,
+        "y": 28,
         "stateCode": "MD"
       },
       {
@@ -17068,8 +17068,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 76.13,
         "sharePct": 1.07,
         "timeZoneGroup": "Other/unknown",
-        "x": 53.0,
-        "y": 24.0,
+        "x": 53,
+        "y": 24,
         "stateCode": "IA"
       },
       {
@@ -17080,8 +17080,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 194.9,
         "sharePct": 1.07,
         "timeZoneGroup": "Other/unknown",
-        "x": 56.0,
-        "y": 50.0,
+        "x": 56,
+        "y": 50,
         "stateCode": "LA"
       },
       {
@@ -17092,8 +17092,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 76.15,
         "sharePct": 1.02,
         "timeZoneGroup": "Other/unknown",
-        "x": 83.0,
-        "y": 20.0,
+        "x": 83,
+        "y": 20,
         "stateCode": "CT"
       },
       {
@@ -17104,8 +17104,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 79.92,
         "sharePct": 1.02,
         "timeZoneGroup": "Pacific",
-        "x": 17.0,
-        "y": 28.0,
+        "x": 17,
+        "y": 28,
         "stateCode": "NV"
       },
       {
@@ -17116,8 +17116,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 38.86,
         "sharePct": 0.99,
         "timeZoneGroup": "Other/unknown",
-        "x": 45.0,
-        "y": 32.0,
+        "x": 45,
+        "y": 32,
         "stateCode": "KS"
       },
       {
@@ -17128,8 +17128,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 46.46,
         "sharePct": 0.91,
         "timeZoneGroup": "Other/unknown",
-        "x": 59.0,
-        "y": 46.0,
+        "x": 59,
+        "y": 46,
         "stateCode": "MS"
       },
       {
@@ -17140,8 +17140,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 88.3,
         "sharePct": 0.74,
         "timeZoneGroup": "Other/unknown",
-        "x": 72.0,
-        "y": 30.0,
+        "x": 72,
+        "y": 30,
         "stateCode": "WV"
       },
       {
@@ -17152,8 +17152,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 42.53,
         "sharePct": 0.69,
         "timeZoneGroup": "Central/Mountain",
-        "x": 23.0,
-        "y": 28.0,
+        "x": 23,
+        "y": 28,
         "stateCode": "UT"
       },
       {
@@ -17164,8 +17164,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 40.16,
         "sharePct": 0.63,
         "timeZoneGroup": "Central/Mountain",
-        "x": 22.0,
-        "y": 16.0,
+        "x": 22,
+        "y": 16,
         "stateCode": "ID"
       },
       {
@@ -17176,8 +17176,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 28.82,
         "sharePct": 0.63,
         "timeZoneGroup": "Other/unknown",
-        "x": 45.0,
-        "y": 24.0,
+        "x": 45,
+        "y": 24,
         "stateCode": "NE"
       },
       {
@@ -17188,8 +17188,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 39.68,
         "sharePct": 0.58,
         "timeZoneGroup": "Other/unknown",
-        "x": 85.0,
-        "y": 8.0,
+        "x": 85,
+        "y": 8,
         "stateCode": "ME"
       },
       {
@@ -17200,8 +17200,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 26.52,
         "sharePct": 0.58,
         "timeZoneGroup": "Central/Mountain",
-        "x": 32.0,
-        "y": 42.0,
+        "x": 32,
+        "y": 42,
         "stateCode": "NM"
       },
       {
@@ -17212,8 +17212,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 26.34,
         "sharePct": 0.51,
         "timeZoneGroup": "Other/unknown",
-        "x": 84.0,
-        "y": 15.0,
+        "x": 84,
+        "y": 15,
         "stateCode": "NH"
       },
       {
@@ -17224,8 +17224,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 10.38,
         "sharePct": 0.38,
         "timeZoneGroup": "Other/unknown",
-        "x": 85.0,
-        "y": 19.0,
+        "x": 85,
+        "y": 19,
         "stateCode": "RI"
       },
       {
@@ -17236,8 +17236,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 11.32,
         "sharePct": 0.33,
         "timeZoneGroup": "Other/unknown",
-        "x": 79.0,
-        "y": 29.0,
+        "x": 79,
+        "y": 29,
         "stateCode": "DC"
       },
       {
@@ -17248,8 +17248,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 13.73,
         "sharePct": 0.3,
         "timeZoneGroup": "Pacific",
-        "x": 18.0,
-        "y": 56.0,
+        "x": 18,
+        "y": 56,
         "stateCode": "HI"
       },
       {
@@ -17260,8 +17260,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 15.01,
         "sharePct": 0.3,
         "timeZoneGroup": "Other/unknown",
-        "x": 44.0,
-        "y": 17.0,
+        "x": 44,
+        "y": 17,
         "stateCode": "SD"
       },
       {
@@ -17272,8 +17272,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 7.71,
         "sharePct": 0.28,
         "timeZoneGroup": "Pacific",
-        "x": 7.0,
-        "y": 56.0,
+        "x": 7,
+        "y": 56,
         "stateCode": "AK"
       },
       {
@@ -17284,8 +17284,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 13.12,
         "sharePct": 0.28,
         "timeZoneGroup": "Central/Mountain",
-        "x": 29.0,
-        "y": 10.0,
+        "x": 29,
+        "y": 10,
         "stateCode": "MT"
       },
       {
@@ -17296,8 +17296,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 2.53,
         "sharePct": 0.23,
         "timeZoneGroup": "Other/unknown",
-        "x": 80.0,
-        "y": 27.0,
+        "x": 80,
+        "y": 27,
         "stateCode": "DE"
       },
       {
@@ -17308,8 +17308,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 0.2,
         "sharePct": 0.2,
         "timeZoneGroup": "Other/unknown",
-        "x": 82.0,
-        "y": 13.0,
+        "x": 82,
+        "y": 13,
         "stateCode": "VT"
       },
       {
@@ -17320,8 +17320,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "totalEngagementHours": 1.67,
         "sharePct": 0.15,
         "timeZoneGroup": "Central/Mountain",
-        "x": 30.0,
-        "y": 20.0,
+        "x": 30,
+        "y": 20,
         "stateCode": "WY"
       }
     ],
@@ -17368,7 +17368,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 117,
         "screenPageViews": 219,
         "eventCount": 13913,
-        "engagementRate": 83.0
+        "engagementRate": 83
       },
       {
         "city": "Philadelphia",
@@ -17528,7 +17528,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     {
       "date": "2026-07-28",
       "section": "Full refresh",
-      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week\u2019s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
+      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week’s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
     },
     {
       "date": "2026-08-02T08:20:00-07:00",
@@ -17546,7 +17546,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   ],
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
-    "eyebrow": "User-provided Michael Johnson TVOD export \u2014 aggregate only",
+    "eyebrow": "User-provided Michael Johnson TVOD export — aggregate only",
     "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-02",
     "emailDate": "2026-08-02",
     "periodStart": "2026-07-03",
@@ -17754,8 +17754,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       {
         "title": "Somewhere in Montana",
         "transactions": 2,
-        "gross": 0.0,
-        "net": 0.0
+        "gross": 0,
+        "net": 0
       }
     ],
     "channels": [
@@ -18170,10 +18170,10 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "requests": 3465,
         "impressions": 3464,
         "errors": 1,
-        "impressionsPerRequest": 1.0,
+        "impressionsPerRequest": 1,
         "impressionsPerRequestPct": 99.97,
         "errorRatePct": 0.03,
-        "avgAdsPerPod": 1.0
+        "avgAdsPerPod": 1
       },
       {
         "label": "firetv",
@@ -18218,7 +18218,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "errors": 0,
         "impressionsPerRequest": 0.99,
         "impressionsPerRequestPct": 99.38,
-        "errorRatePct": 0.0,
+        "errorRatePct": 0,
         "avgAdsPerPod": 0.99
       },
       {
@@ -18238,10 +18238,10 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "requests": 12,
         "impressions": 12,
         "errors": 0,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 100.0,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 1.0
+        "impressionsPerRequest": 1,
+        "impressionsPerRequestPct": 100,
+        "errorRatePct": 0,
+        "avgAdsPerPod": 1
       }
     ],
     "topVideos": [
@@ -18317,10 +18317,10 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "requests": 1499,
         "impressions": 1498,
         "errors": 0,
-        "impressionsPerRequest": 1.0,
+        "impressionsPerRequest": 1,
         "impressionsPerRequestPct": 99.93,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 1.0
+        "errorRatePct": 0,
+        "avgAdsPerPod": 1
       },
       {
         "label": "The Weekend In Paris Job",
@@ -18363,7 +18363,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "errors": 12,
         "impressionsPerRequest": 0.98,
         "impressionsPerRequestPct": 98.33,
-        "errorRatePct": 1.0,
+        "errorRatePct": 1,
         "avgAdsPerPod": 0.98
       },
       {
@@ -18374,7 +18374,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "errors": 0,
         "impressionsPerRequest": 0.94,
         "impressionsPerRequestPct": 93.87,
-        "errorRatePct": 0.0,
+        "errorRatePct": 0,
         "avgAdsPerPod": 0.94
       },
       {
@@ -18418,7 +18418,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "Source fill-rate values can exceed 100% because multiple ads/ad-pod impressions can be served per request; the dashboard labels this as impressions per request.",
       "The export is manually supplied and must be refreshed weekly before the dashboard can treat this section as current."
     ],
-    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26\u2013Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
+    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26–Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
     "weeklyReminderRecommendation": "Ask the user to upload the DotStudios title-view and app-ad exports each Monday morning before the dashboard refresh."
   },
   "sourceStatus": {
@@ -18435,7 +18435,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     {
       "timestamp": "2026-08-03 13:18 PDT",
       "summary": "Final pre-publish audit: Outlook ROKU-folder-first search reconfirmed Aug 3 Sales Activity, App Engagement, and Viewership Summary reports; TRC Live reports remain excluded from app/platform usage. Fixed U.S. geography time-zone renderer for array-shaped timeZoneUsage and removed retired retired web-acquisition wording from dashboard copy."
-    }
+    },
+    "Aug 3 clarification fix: launch-baseline badges now show baseline unavailable when the baseline is missing/zero; monthly visits label now states the rolling 28-day date range."
   ],
   "connectorStatus": {
     "Outlook/Roku emails": "CONNECTED; Aug 3 Sales Activity, App Engagement, and Viewership Summary confirmed by ROKU-folder-first search with broader sender fallback.",
@@ -18595,11 +18596,11 @@ function launchBaselineCompare(card) {
   const baseline = toFiniteNumber(card.launchBaseline);
   const delta = card.deltaVsLaunchPct;
   const hasDelta = delta !== null && delta !== undefined && !Number.isNaN(delta);
-  if (hasDelta) {
-    return { cls: deltaClass(delta), text: deltaText(card, delta) };
-  }
   if (baseline === null || baseline === 0) {
     return { cls: 'baseline-unavailable', text: 'baseline unavailable' };
+  }
+  if (hasDelta) {
+    return { cls: deltaClass(delta), text: deltaText(card, delta) };
   }
   return { cls: '', text: 'not tracked at launch' };
 }
