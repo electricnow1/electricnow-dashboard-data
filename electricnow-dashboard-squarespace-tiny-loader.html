@@ -1,0 +1,14 @@
+<div id="electricnow-dashboard-hosted-mount">Loading ElectricNOW dashboard...</div>
+<script>
+(() => {
+  const url = 'https://cdn.jsdelivr.net/gh/electricnow1/electricnow-dashboard-data@main/electricnow-dashboard-embed.js?v=' + Date.now();
+  const script = document.createElement('script');
+  script.src = url;
+  script.async = true;
+  script.onerror = () => {
+    const mount = document.getElementById('electricnow-dashboard-hosted-mount');
+    if (mount) mount.textContent = 'ElectricNOW dashboard failed to load.';
+  };
+  document.head.appendChild(script);
+})();
+</script>
