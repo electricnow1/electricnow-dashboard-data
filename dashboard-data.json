@@ -3504,7 +3504,7 @@
   },
   "plainEnglishInsights": [
     "The strongest news this week is that sales and app downloads are still moving sharply in the right direction. For Jul 27-Aug 2, visible Stripe, Roku, and Apple revenue reached $2159.32, with 423 iOS downloads in the latest Apple snapshot and fresh Roku Sales Activity included. GA4 is also refreshed for Jul 27-Aug 2, so the dashboard now pairs the sales spike with the latest complete-week platform usage data.",
-    "Sales: visible YTD sales are now 128 countable purchases and $3360.70, with Apple aggregate revenue included but Apple aggregate transaction count intentionally left out.",
+    "Sales: the newer DotStudios/Michael Johnson TVOD export shows 182 paid title transactions and $3794.08 gross from Jul 5-Aug 3 ($3779.09 after the one refund shown in the export). The older visible-source rollup remains lower at 128 countable purchases and $3360.70 because it only combines Stripe, Roku, and manual Apple snapshots and should be treated as a source-reconciliation subtotal, not the authoritative title-level TVOD total.",
     "Last week: Jul 27-Aug 2 visible revenue was $2159.32: Stripe $853.58, Roku $577.74, and Apple $728.00.",
     "Stripe: the connector is working again. The stale auth-required note has been removed and the Stripe branch is corrected to 2026-only visible Stripe sales from the fresh connector pull.",
     "Apple: the newest manual App Store Connect snapshot shows 423 downloads and $728.00 gross sales for Jul 27-Aug 2; it supersedes the prior overlapping Apple snapshot.",
@@ -12795,7 +12795,7 @@
         "developerRevShare": 314.85
       }
     ],
-    "note": "Visible platform sales show 128 countable purchases and $3360.70 year to date, plus Apple aggregate revenue where transaction counts are unavailable. Last week visible revenue was $2159.32: Stripe $853.58, Roku $577.74, and Apple $728.00. Do not treat this as total ElectricNOW sales until Google Play and any other platform reports are connected or manually added.",
+    "note": "Reconciliation note: the DotStudios/Michael Johnson TVOD export is the more complete title-level sales view currently in the dashboard, showing 182 paid title transactions and $3794.08 gross from Jul 5-Aug 3 ($3779.09 after the one refund shown in the export). The visible Stripe/Roku/Apple rollup remains lower at 128 countable purchases and $3360.70 because it is a source-limited subtotal; do not add the two together because they overlap.",
     "latestSevenDayVisibleSales": {
       "label": "Latest visible sales snapshot",
       "range": "Jul 27-Aug 2, 2026",
@@ -16059,7 +16059,7 @@
     "overview": "The strongest news this week is that sales and app downloads are still moving sharply in the right direction. For Jul 27-Aug 2, visible Stripe, Roku, and Apple revenue reached $2159.32, with 423 iOS downloads in the latest Apple snapshot and fresh Roku Sales Activity included. GA4 is also refreshed for Jul 27-Aug 2, so the dashboard now pairs the sales spike with the latest complete-week platform usage data.",
     "bullets": [
       "The strongest news this week is that sales and app downloads are still moving sharply in the right direction. For Jul 27-Aug 2, visible Stripe, Roku, and Apple revenue reached $2159.32, with 423 iOS downloads in the latest Apple snapshot and fresh Roku Sales Activity included. GA4 is also refreshed for Jul 27-Aug 2, so the dashboard now pairs the sales spike with the latest complete-week platform usage data.",
-      "Sales: visible YTD sales are now 128 countable purchases and $3360.70, with Apple aggregate revenue included but Apple aggregate transaction count intentionally left out.",
+      "Sales: the newer DotStudios/Michael Johnson TVOD export shows 182 paid title transactions and $3794.08 gross from Jul 5-Aug 3 ($3779.09 after the one refund shown in the export). The older visible-source rollup remains lower at 128 countable purchases and $3360.70 because it only combines Stripe, Roku, and manual Apple snapshots and should be treated as a source-reconciliation subtotal, not the authoritative title-level TVOD total.",
       "Last week: Jul 27-Aug 2 visible revenue was $2159.32: Stripe $853.58, Roku $577.74, and Apple $728.00.",
       "Stripe: the connector is working again. The stale auth-required note has been removed and the Stripe branch is corrected to 2026-only visible Stripe sales from the fresh connector pull.",
       "Apple: the newest manual App Store Connect snapshot shows 423 downloads and $728.00 gross sales for Jul 27-Aug 2; it supersedes the prior overlapping Apple snapshot.",
