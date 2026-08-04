@@ -171,7 +171,7 @@
       "deltaVsPreviousPct": 284.4594594594595,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “landing” in the path."
+      "context": "Users reaching pages with \u201clanding\u201d in the path."
     },
     {
       "key": "devicesPageUsers",
@@ -185,7 +185,7 @@
       "deltaVsPreviousPct": 97.77777777777777,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “devices” in the path."
+      "context": "Users reaching pages with \u201cdevices\u201d in the path."
     },
     {
       "key": "paidSocialUsers",
@@ -8496,7 +8496,7 @@
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $1055.80 gross in-app purchase sales manually entered so far, or approximately $739.06 after Apple’s 30% platform fee. Revenue-only aggregate screenshots are included as gross revenue but do not increase purchase counts unless Apple provides transaction detail. These figures remain manual until Apple App Store Connect API reporting is connected.",
+      "note": "Apple App Store screenshots show $1055.80 gross in-app purchase sales manually entered so far, or approximately $739.06 after Apple\u2019s 30% platform fee. Revenue-only aggregate screenshots are included as gross revenue but do not increase purchase counts unless Apple provides transaction detail. These figures remain manual until Apple App Store Connect API reporting is connected.",
       "latestSnapshot": {
         "label": "Apple sales last week",
         "range": "Jul 27-Aug 2, 2026",
@@ -12870,7 +12870,7 @@
           "rank": 1
         },
         {
-          "title": "ElectricNOW en Español",
+          "title": "ElectricNOW en Espa\u00f1ol",
           "plays": 459,
           "activeUsers": 22,
           "rank": 2
@@ -12960,7 +12960,7 @@
   },
   "titleViewership": {
     "period": "Jul 27-Aug 2, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
+    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only \u2014 live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage' and 'Live Channel on Roku'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
       {
@@ -13500,7 +13500,7 @@
       },
       {
         "rank": 50,
-        "program": "It’s What’s On the Inside",
+        "program": "It\u2019s What\u2019s On the Inside",
         "plays": 23,
         "activeUsers": 1,
         "viewerMethod": "deduped_ga4_filter",
@@ -15275,7 +15275,7 @@
       },
       {
         "section": "En Espanol",
-        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Español, Espanol, Spanish, or matching paths.",
+        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Espa\u00f1ol, Espanol, Spanish, or matching paths.",
         "activeUsers": 20,
         "sessions": 21,
         "engagedSessions": 21,
@@ -15646,7 +15646,7 @@
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -15690,14 +15690,14 @@
     },
     "platformSplit": [
       {
-        "label": "Android · mobile",
+        "label": "Android \u00b7 mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android · smart tv",
+        "label": "Android \u00b7 smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -16028,7 +16028,17 @@
       "rokuAppEngagement",
       "metaAdsSummary"
     ],
-    "note": "Manual/email data patch applied without changing GA4, Stripe, Roku sales, or Apple sales totals."
+    "note": "Manual/email data patch applied without changing GA4, Stripe, Roku sales, or Apple sales totals.",
+    "latestTvodManualExport": {
+      "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-04",
+      "periodStart": "2026-07-05",
+      "periodEnd": "2026-08-03",
+      "paidTransactions": 182,
+      "paidNet": 3794.08,
+      "arkNet": 2602.74,
+      "librariansNet": 1070.45,
+      "doubleCountCaveat": "Fresh aggregate TVOD transaction export covering 2026-07-05\u20132026-08-03. This manual section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap."
+    }
   },
   "titleAggregationPatch": {
     "updatedAt": "2026-06-07 07:59 PDT",
@@ -16065,7 +16075,8 @@
       "Apple manual": "CURRENT_MANUAL_UPDATED",
       "Meta email": "STALE_NO_NEW_REPORT",
       "Google Ads": "STALE_RATE_LIMITED",
-      "YouTube": "CONNECTED"
+      "YouTube": "CONNECTED",
+      "TVOD manual export": "UPDATED_AGGREGATE_2026-08-04"
     }
   },
   "youtubeSummary": {
@@ -16116,7 +16127,7 @@
         "key": "estimatedRevenueYtd",
         "label": "YTD YouTube revenue",
         "value": 87968.84,
-        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue — NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
+        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue \u2014 NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
       },
       {
         "key": "adImpressions",
@@ -16226,7 +16237,7 @@
       },
       {
         "videoId": "13025kKEUUY",
-        "title": "Untitled video (YouTube ID 13025kKEUUY) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 13025kKEUUY) \u2014 title lookup unavailable this refresh",
         "views": 14985,
         "estimatedMinutesWatched": 196356,
         "estimatedHoursWatched": 3272.6,
@@ -16266,7 +16277,7 @@
       },
       {
         "videoId": "G_X8m-NJV-U",
-        "title": "Untitled video (YouTube ID G_X8m-NJV-U) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID G_X8m-NJV-U) \u2014 title lookup unavailable this refresh",
         "views": 5404,
         "estimatedMinutesWatched": 69027,
         "estimatedHoursWatched": 1150.45,
@@ -16276,7 +16287,7 @@
       },
       {
         "videoId": "6G2FEy9LGBw",
-        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) \u2014 title lookup unavailable this refresh",
         "views": 4907,
         "estimatedMinutesWatched": 59051,
         "estimatedHoursWatched": 984.18,
@@ -16286,7 +16297,7 @@
       },
       {
         "videoId": "NgCIyD4T8JM",
-        "title": "Untitled video (YouTube ID NgCIyD4T8JM) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID NgCIyD4T8JM) \u2014 title lookup unavailable this refresh",
         "views": 4127,
         "estimatedMinutesWatched": 54146,
         "estimatedHoursWatched": 902.43,
@@ -16346,7 +16357,7 @@
       },
       {
         "videoId": "pbLonEcXhTs",
-        "title": "Untitled video (YouTube ID pbLonEcXhTs) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID pbLonEcXhTs) \u2014 title lookup unavailable this refresh",
         "views": 1541,
         "estimatedMinutesWatched": 506,
         "estimatedHoursWatched": 8.43,
@@ -16356,7 +16367,7 @@
       },
       {
         "videoId": "JeeMINxXYwQ",
-        "title": "Untitled video (YouTube ID JeeMINxXYwQ) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID JeeMINxXYwQ) \u2014 title lookup unavailable this refresh",
         "views": 1491,
         "estimatedMinutesWatched": 31892,
         "estimatedHoursWatched": 531.53,
@@ -16396,7 +16407,7 @@
       },
       {
         "videoId": "6etBO8Z9IBA",
-        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) \u2014 title lookup unavailable this refresh",
         "views": 1168,
         "estimatedMinutesWatched": 24269,
         "estimatedHoursWatched": 404.48,
@@ -16406,7 +16417,7 @@
       },
       {
         "videoId": "Q9XTdOji2wc",
-        "title": "Untitled video (YouTube ID Q9XTdOji2wc) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID Q9XTdOji2wc) \u2014 title lookup unavailable this refresh",
         "views": 1101,
         "estimatedMinutesWatched": 26230,
         "estimatedHoursWatched": 437.17,
@@ -16416,7 +16427,7 @@
       },
       {
         "videoId": "He3ScSePRYM",
-        "title": "Untitled video (YouTube ID He3ScSePRYM) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID He3ScSePRYM) \u2014 title lookup unavailable this refresh",
         "views": 1069,
         "estimatedMinutesWatched": 26745,
         "estimatedHoursWatched": 445.75,
@@ -16426,7 +16437,7 @@
       },
       {
         "videoId": "89J-9vWWPuk",
-        "title": "Untitled video (YouTube ID 89J-9vWWPuk) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 89J-9vWWPuk) \u2014 title lookup unavailable this refresh",
         "views": 1036,
         "estimatedMinutesWatched": 20993,
         "estimatedHoursWatched": 349.88,
@@ -16436,7 +16447,7 @@
       },
       {
         "videoId": "rVC2lrrZvwc",
-        "title": "Untitled video (YouTube ID rVC2lrrZvwc) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID rVC2lrrZvwc) \u2014 title lookup unavailable this refresh",
         "views": 1035,
         "estimatedMinutesWatched": 21112,
         "estimatedHoursWatched": 351.87,
@@ -16446,7 +16457,7 @@
       },
       {
         "videoId": "V21Q6QjV0Hc",
-        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) \u2014 title lookup unavailable this refresh",
         "views": 1016,
         "estimatedMinutesWatched": 23796,
         "estimatedHoursWatched": 396.6,
@@ -16456,7 +16467,7 @@
       },
       {
         "videoId": "gJtM5e4S5sU",
-        "title": "Untitled video (YouTube ID gJtM5e4S5sU) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID gJtM5e4S5sU) \u2014 title lookup unavailable this refresh",
         "views": 1013,
         "estimatedMinutesWatched": 24085,
         "estimatedHoursWatched": 401.42,
@@ -17503,7 +17514,7 @@
     {
       "date": "2026-07-28",
       "section": "Full refresh",
-      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week’s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
+      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week\u2019s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
     },
     {
       "date": "2026-08-02T08:20:00-07:00",
@@ -17521,67 +17532,105 @@
   ],
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
-    "eyebrow": "User-provided Michael Johnson TVOD export — aggregate only",
-    "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-02",
-    "emailDate": "2026-08-02",
-    "periodStart": "2026-07-03",
-    "periodEnd": "2026-08-01",
-    "periodNote": "Fresh aggregate TVOD transaction export covering Jul 3-Aug 1, 2026. This section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap.",
-    "extractedAt": "2026-08-02T08:50:00-07:00",
+    "eyebrow": "User-provided Michael Johnson TVOD export \u2014 aggregate only",
+    "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-04",
+    "emailDate": "2026-08-04",
+    "periodStart": "2026-07-05",
+    "periodEnd": "2026-08-03",
+    "periodNote": "Fresh aggregate TVOD transaction export covering 2026-07-05\u20132026-08-03. This manual section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap.",
+    "extractedAt": "2026-08-04T07:37:00-07:00",
     "registeredUsers": {
       "total": 7914,
       "active": 7814
     },
     "registeredUsersNote": "Registered-user count preserved from the last Michael Johnson email because the Aug 2 pasted TVOD export included transactions only, not a newer registered-user total.",
     "transactions": {
-      "totalRows": 119,
-      "paidTransactions": 118,
+      "totalRows": 183,
+      "paidTransactions": 182,
       "refundTransactions": 1,
-      "latestSevenDayPaidTransactions": 107
+      "latestSevenDayPaidTransactions": 165
     },
     "netRevenue": {
-      "tvodSalesExportPaidGross": 2451.73,
-      "tvodSalesExportPaidNet": 2451.73,
+      "tvodSalesExportPaidGross": 3794.08,
+      "tvodSalesExportPaidNet": 3794.08,
       "refundsGross": -14.99,
       "refundsNet": -14.99,
-      "netIncludingRefunds": 2436.74,
-      "latestSevenDayGross": 2285.89,
-      "latestSevenDayNet": 2285.89
+      "netIncludingRefunds": 3779.09,
+      "latestSevenDayGross": 3508.3,
+      "latestSevenDayNet": 3508.3
+    },
+    "familyTotals": [
+      {
+        "family": "The Ark",
+        "transactions": 121,
+        "gross": 2602.74,
+        "net": 2602.74
+      },
+      {
+        "family": "The Librarians",
+        "transactions": 52,
+        "gross": 1070.45,
+        "net": 1070.45
+      },
+      {
+        "family": "Other",
+        "transactions": 9,
+        "gross": 120.89,
+        "net": 120.89
+      }
+    ],
+    "titleFamilySummary": {
+      "arkTransactions": 121,
+      "arkGross": 2602.74,
+      "arkNet": 2602.74,
+      "arkShareOfPaidTransactionsPct": 66.5,
+      "arkShareOfPaidNetPct": 68.6,
+      "librariansTransactions": 52,
+      "librariansGross": 1070.45,
+      "librariansNet": 1070.45,
+      "librariansShareOfPaidTransactionsPct": 28.6,
+      "librariansShareOfPaidNetPct": 28.2,
+      "arkSeason3Transactions": 114,
+      "arkSeason3Gross": 2392.86,
+      "arkSeason3Net": 2392.86,
+      "librariansNextChapterSeason2Transactions": 48,
+      "librariansNextChapterSeason2Gross": 1007.52,
+      "librariansNextChapterSeason2Net": 1007.52
     },
     "latestSevenDay": {
-      "periodStart": "2026-07-26",
-      "periodEnd": "2026-08-01",
-      "transactions": 107,
-      "gross": 2285.89,
-      "net": 2285.89,
-      "arkTitleFamilyTransactions": 101,
-      "arkTitleFamilyGross": 2185.97,
-      "arkTitleFamilyNet": 2185.97,
-      "arkTitleFamilyShareOfTransactionsPct": 94.4,
-      "arkTitleFamilyShareOfRevenuePct": 95.6,
-      "arkSeason3Transactions": 97,
-      "arkSeason3Gross": 2036.03,
-      "arkSeason3Net": 2036.03,
-      "arkSeason3ShareOfTransactionsPct": 90.7,
-      "arkSeason3ShareOfRevenuePct": 89.1,
+      "periodStart": "2026-07-28",
+      "periodEnd": "2026-08-03",
+      "transactions": 165,
+      "gross": 3508.3,
+      "net": 3508.3,
+      "arkTitleFamilyTransactions": 113,
+      "arkTitleFamilyGross": 2437.85,
+      "arkTitleFamilyNet": 2437.85,
+      "arkTitleFamilyShareOfTransactionsPct": 68.5,
+      "arkTitleFamilyShareOfRevenuePct": 69.5,
+      "librariansTitleFamilyTransactions": 51,
+      "librariansTitleFamilyGross": 1067.46,
+      "librariansTitleFamilyNet": 1067.46,
+      "librariansTitleFamilyShareOfTransactionsPct": 30.9,
+      "librariansTitleFamilyShareOfRevenuePct": 30.4,
       "topTitlesByNet": [
         {
           "title": "The Ark - Season 3",
-          "transactions": 97,
-          "gross": 2036.03,
-          "net": 2036.03
+          "transactions": 109,
+          "gross": 2287.91,
+          "net": 2287.91
+        },
+        {
+          "title": "The Librarians: The Next Chapter Season 2",
+          "transactions": 48,
+          "gross": 1007.52,
+          "net": 1007.52
         },
         {
           "title": "The Ark",
           "transactions": 2,
           "gross": 109.98,
           "net": 109.98
-        },
-        {
-          "title": "The Librarians: The Next Chapter Season 2",
-          "transactions": 2,
-          "gross": 41.98,
-          "net": 41.98
         },
         {
           "title": "The Ark - Season 1",
@@ -17591,21 +17640,15 @@
         },
         {
           "title": "Parent The Librarians: The Next Chapter",
-          "transactions": 1,
-          "gross": 19.98,
-          "net": 19.98
+          "transactions": 2,
+          "gross": 39.96,
+          "net": 39.96
         },
         {
           "title": "The Librarians - Season 1",
           "transactions": 1,
           "gross": 19.98,
           "net": 19.98
-        },
-        {
-          "title": "The Draw",
-          "transactions": 1,
-          "gross": 14.99,
-          "net": 14.99
         },
         {
           "title": "Universal Soldier II",
@@ -17617,21 +17660,21 @@
       "channels": [
         {
           "channel": "apple",
-          "transactions": 44,
-          "gross": 955.54,
-          "net": 955.54
+          "transactions": 66,
+          "gross": 1417.32,
+          "net": 1417.32
         },
         {
           "channel": "web",
-          "transactions": 35,
-          "gross": 728.65,
-          "net": 728.65
+          "transactions": 63,
+          "gross": 1321.36,
+          "net": 1321.36
         },
         {
           "channel": "roku",
-          "transactions": 24,
-          "gross": 535.74,
-          "net": 535.74
+          "transactions": 32,
+          "gross": 703.66,
+          "net": 703.66
         },
         {
           "channel": "android",
@@ -17645,14 +17688,40 @@
           "gross": 2.99,
           "net": 2.99
         }
+      ],
+      "familyTotals": [
+        {
+          "family": "The Ark",
+          "transactions": 113,
+          "gross": 2437.85,
+          "net": 2437.85
+        },
+        {
+          "family": "The Librarians",
+          "transactions": 51,
+          "gross": 1067.46,
+          "net": 1067.46
+        },
+        {
+          "family": "Other",
+          "transactions": 1,
+          "gross": 2.99,
+          "net": 2.99
+        }
       ]
     },
     "topTitlesByNet": [
       {
         "title": "The Ark - Season 3",
-        "transactions": 97,
-        "gross": 2036.03,
-        "net": 2036.03
+        "transactions": 114,
+        "gross": 2392.86,
+        "net": 2392.86
+      },
+      {
+        "title": "The Librarians: The Next Chapter Season 2",
+        "transactions": 48,
+        "gross": 1007.52,
+        "net": 1007.52
       },
       {
         "title": "The Ark",
@@ -17667,28 +17736,22 @@
         "net": 64.95
       },
       {
-        "title": "The Ark - Season 2",
+        "title": "The Ark - Season 1",
         "transactions": 3,
         "gross": 59.94,
         "net": 59.94
       },
       {
-        "title": "The Librarians: The Next Chapter Season 2",
-        "transactions": 2,
-        "gross": 41.98,
-        "net": 41.98
-      },
-      {
-        "title": "The Ark - Season 1",
+        "title": "Parent The Librarians: The Next Chapter",
         "transactions": 2,
         "gross": 39.96,
         "net": 39.96
       },
       {
-        "title": "Parent The Librarians: The Next Chapter",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
+        "title": "The Ark - Season 2",
+        "transactions": 2,
+        "gross": 39.96,
+        "net": 39.96
       },
       {
         "title": "The Librarians - Season 1",
@@ -17709,7 +17772,13 @@
         "net": 14.99
       },
       {
-        "title": "The Librarians and the Crown of King Arthur in Cinemascope",
+        "title": "Somewhere in Montana",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99
+      },
+      {
+        "title": "Universal Soldier II",
         "transactions": 1,
         "gross": 2.99,
         "net": 2.99
@@ -17721,36 +17790,30 @@
         "net": 2.99
       },
       {
-        "title": "Universal Soldier II",
+        "title": "The Librarians and the Crown of King Arthur in Cinemascope",
         "transactions": 1,
         "gross": 2.99,
         "net": 2.99
-      },
-      {
-        "title": "Somewhere in Montana",
-        "transactions": 2,
-        "gross": 0,
-        "net": 0
       }
     ],
     "channels": [
       {
         "channel": "apple",
-        "transactions": 45,
-        "gross": 970.53,
-        "net": 970.53
+        "transactions": 69,
+        "gross": 1474.29,
+        "net": 1474.29
       },
       {
         "channel": "web",
-        "transactions": 38,
-        "gross": 748.63,
-        "net": 748.63
+        "transactions": 68,
+        "gross": 1413.3,
+        "net": 1413.3
       },
       {
         "channel": "roku",
-        "transactions": 28,
-        "gross": 598.67,
-        "net": 598.67
+        "transactions": 38,
+        "gross": 807.56,
+        "net": 807.56
       },
       {
         "channel": "android",
@@ -17766,77 +17829,17 @@
       },
       {
         "channel": "amazon_fire",
-        "transactions": 3,
-        "gross": 25.96,
-        "net": 25.96
+        "transactions": 2,
+        "gross": 5.98,
+        "net": 5.98
       }
     ],
     "dailyTrend": [
       {
-        "date": "2026-07-03",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
-      },
-      {
-        "date": "2026-07-05",
-        "transactions": 1,
-        "gross": 14.99,
-        "net": 14.99
-      },
-      {
-        "date": "2026-07-08",
-        "transactions": 2,
-        "gross": 29.98,
-        "net": 29.98
-      },
-      {
-        "date": "2026-07-14",
-        "transactions": 4,
-        "gross": 22.97,
-        "net": 22.97
-      },
-      {
-        "date": "2026-07-20",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
-      },
-      {
-        "date": "2026-07-21",
-        "transactions": 2,
-        "gross": 22.97,
-        "net": 22.97
-      },
-      {
-        "date": "2026-07-25",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
-      },
-      {
-        "date": "2026-07-26",
-        "transactions": 1,
-        "gross": 20.99,
-        "net": 20.99
-      },
-      {
-        "date": "2026-07-27",
-        "transactions": 6,
-        "gross": 118.93,
-        "net": 118.93
-      },
-      {
-        "date": "2026-07-28",
-        "transactions": 2,
-        "gross": 41.98,
-        "net": 41.98
-      },
-      {
-        "date": "2026-07-29",
-        "transactions": 4,
-        "gross": 116.95,
-        "net": 116.95
+        "date": "2026-08-03",
+        "transactions": 56,
+        "gross": 1173.42,
+        "net": 1173.42
       },
       {
         "date": "2026-07-30",
@@ -17855,9 +17858,75 @@
         "transactions": 21,
         "gross": 438.77,
         "net": 438.77
+      },
+      {
+        "date": "2026-08-02",
+        "transactions": 9,
+        "gross": 188.91,
+        "net": 188.91
+      },
+      {
+        "date": "2026-07-27",
+        "transactions": 6,
+        "gross": 118.93,
+        "net": 118.93
+      },
+      {
+        "date": "2026-07-29",
+        "transactions": 4,
+        "gross": 116.95,
+        "net": 116.95
+      },
+      {
+        "date": "2026-07-28",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98
+      },
+      {
+        "date": "2026-07-14",
+        "transactions": 3,
+        "gross": 37.96,
+        "net": 37.96
+      },
+      {
+        "date": "2026-07-08",
+        "transactions": 2,
+        "gross": 29.98,
+        "net": 29.98
+      },
+      {
+        "date": "2026-07-21",
+        "transactions": 2,
+        "gross": 22.97,
+        "net": 22.97
+      },
+      {
+        "date": "2026-07-26",
+        "transactions": 1,
+        "gross": 20.99,
+        "net": 20.99
+      },
+      {
+        "date": "2026-07-25",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-20",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-05",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99
       }
     ],
-    "note": "Fresh Aug 2 aggregate export. Customer emails and individual customer rows are intentionally excluded. The latest seven-day window shows 107 paid TVOD transactions / $2,285.89. The Ark title family accounts for 101 transactions / $2,185.97, and The Ark - Season 3 alone accounts for 97 transactions / $2,036.03. Do not add this TVOD export to Visible Platform Sales until it is reconciled against Stripe, Roku, Apple, and other platform-specific transaction feeds.",
+    "note": "Fresh Aug 4 aggregate export. Customer emails and individual customer rows are intentionally excluded. The full export covers 182 paid TVOD transactions / $3,794.08 net from 2026-07-05\u20132026-08-03. The Ark title family totals 121 transactions / $2,602.74; The Librarians title family totals 52 transactions / $1,070.45. Do not add this TVOD export to Visible Platform Sales until it is reconciled against Stripe, Roku, Apple, and other platform-specific transaction feeds.",
     "privacyNote": "Aggregated only; no customer emails or individual customer records are exposed.",
     "sourceUrl": null
   },
@@ -18393,7 +18462,7 @@
       "Source fill-rate values can exceed 100% because multiple ads/ad-pod impressions can be served per request; the dashboard labels this as impressions per request.",
       "The export is manually supplied and must be refreshed weekly before the dashboard can treat this section as current."
     ],
-    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26–Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
+    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26\u2013Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
     "weeklyReminderRecommendation": "Ask the user to upload the DotStudios title-view and app-ad exports each Monday morning before the dashboard refresh."
   },
   "sourceStatus": {
@@ -18404,7 +18473,8 @@
     "Apple manual": "CURRENT_MANUAL_UPDATED",
     "Meta email": "STALE_NO_NEW_REPORT",
     "Google Ads": "STALE_RATE_LIMITED",
-    "YouTube": "CONNECTED"
+    "YouTube": "CONNECTED",
+    "TVOD manual export": "UPDATED_AGGREGATE_2026-08-04"
   },
   "refreshAuditNotes": [
     {

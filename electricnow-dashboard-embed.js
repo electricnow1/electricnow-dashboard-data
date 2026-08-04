@@ -20,7 +20,7 @@
 
   if (!document.getElementById('electricnow-dashboard-embed')) {
     const template = document.createElement('template');
-    template.innerHTML = "<div id=\"electricnow-dashboard-embed\" class=\"app-shell\">\n      <aside class=\"sidebar\" aria-label=\"Dashboard sections\">\n        <a class=\"brand\" href=\"#overview\" data-testid=\"link-overview\">\n          <svg class=\"brand-mark\" viewBox=\"0 0 48 48\" aria-hidden=\"true\">\n            <path d=\"M30 4 9 28h13l-4 16 22-26H27l3-14Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n            <path d=\"M27 12 15 26h11l-2 9 11-14H24l3-9Z\" fill=\"currentColor\" />\n          </svg>\n          <span><strong>Electric</strong><strong>NOW</strong><small>Growth dashboard</small></span>\n        </a>\n        <nav class=\"side-nav\">\n          <a href=\"#overview\" data-testid=\"nav-overview\">Overview</a>\n          <a href=\"#purchases\" data-testid=\"nav-purchases\">Purchases</a>\n          <a href=\"#live\" data-testid=\"nav-live\">Live TV</a>\n          <a href=\"#sections\" data-testid=\"nav-sections\">App sections</a>\n          <a href=\"#viewership\" data-testid=\"nav-viewership\">Viewership</a>\n          <a href=\"#titles\" data-testid=\"nav-titles\">Top titles</a>\n          <a href=\"#videos\" data-testid=\"nav-videos\">Top videos</a>\n          <a href=\"#tvod-title-revenue\" data-testid=\"nav-tvod-title-revenue\">Registered users</a>\n          <a href=\"#platforms\" data-testid=\"nav-platforms\">Platforms</a>\n          <a href=\"#roku-app\" data-testid=\"nav-roku-app\">Roku app</a>\n          <a href=\"#funnel\" data-testid=\"nav-funnel\">App funnel</a>\n          <a href=\"#ads\" data-testid=\"nav-ads\">Ad signals</a>\n          <a href=\"#dotstudios-app-ads\" data-testid=\"nav-dotstudios-app-ads\">App ads</a>\n          <a href=\"#google-ads\" data-testid=\"nav-google-ads\">Google Ads</a>\n          <a href=\"#content\" data-testid=\"nav-content\">Content</a>\n        </nav>\n        <div class=\"source-card\">\n          <span>Source</span>\n          <strong>Internal GA4 pull</strong>\n          <p>Property 497892271. Reconcile with app-store, Amagi, ad-server, YouTube, and Meta reporting.</p>\n        </div>\n      </aside>\n\n      <header class=\"topbar\">\n        <div>\n          <p class=\"eyebrow\">Private snapshot</p>\n          <h1>ElectricNOW performance dashboard</h1>\n        </div>\n        <div class=\"topbar-actions\">\n          <label class=\"select-label\" for=\"period-select\">Period</label>\n          <select id=\"period-select\" data-testid=\"select-period\">\n            <option value=\"currentWeek\">Latest app usage</option>\n            <option value=\"weekToDate\">Apr 28-30 watch</option>\n          </select>\n          <button class=\"ghost-button refresh-button\" type=\"button\" id=\"refresh-data\" data-testid=\"button-refresh-data\">Update data</button>\n          <button class=\"ghost-button\" type=\"button\" id=\"plain-toggle\" data-testid=\"button-toggle-plain\" aria-controls=\"plain-panel\" aria-expanded=\"false\">Plain English</button>\n          <span class=\"refresh-status\" id=\"refresh-status\" role=\"status\" aria-live=\"polite\"></span>\n        </div>\n      </header>\n\n      <main id=\"main\" class=\"main\" tabindex=\"-1\">\n        <section class=\"hero-panel\" id=\"overview\" aria-labelledby=\"overview-title\">\n          <div>\n            <p class=\"eyebrow\">Corrected metric framing</p>\n            <h2 id=\"overview-title\">Acquisition, app usage, viewing, and time are now separated.</h2>\n            <p>\n              The top scorecards now separate Apple/Android app-stream usage, actual viewing events, sales signals, geography, and time spent across GA4-tracked platforms.\n            </p>\n          </div>\n          <div class=\"hero-meta\">\n            <span id=\"generated-at\">Generated</span>\n            <strong id=\"source-label\">GA4 property 497892271</strong>\n          </div>\n        </section>\n\n        <section class=\"visit-strip\" id=\"visit-summary\" aria-label=\"Weekly and monthly visits\" data-testid=\"section-visit-summary\"></section>\n\n        <section class=\"plain-panel\" id=\"plain-panel\" aria-labelledby=\"plain-title\" tabindex=\"-1\">\n          <div>\n            <p class=\"eyebrow\">Plain-English headlines</p>\n            <h2 id=\"plain-title\">What changed?</h2>\n          </div>\n          <ul id=\"insights-list\" role=\"list\" data-testid=\"list-insights\"></ul>\n        </section>\n\n        <section class=\"kpi-grid\" id=\"kpi-grid\" aria-label=\"Weekly scorecard\" data-testid=\"grid-kpis\"></section>\n\n        <section class=\"dashboard-grid two-col\">\n          <article class=\"panel span-8\" aria-labelledby=\"traffic-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">App use and engagement</p>\n                <h2 id=\"traffic-title\">Daily app trend</h2>\n              </div>\n              <span class=\"period-chip\" id=\"trend-period\">Apr 14-30</span>\n            </div>\n            <div class=\"chart-legend\" aria-label=\"Daily trend legend\">\n              <span><i class=\"legend-swatch legend-blue\"></i>Blue line: app active users</span>\n              <span><i class=\"legend-swatch legend-green\"></i>Green line: app sessions (daily)</span>\n            </div>\n            <p class=\"chart-note\" id=\"trend-note\"></p>\n            <h3>Past seven days</h3>\n            <div class=\"chart-wrap\">\n              <svg id=\"traffic-chart\" viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Daily traffic and engagement trend\" data-testid=\"chart-traffic\"></svg>\n            </div>\n            <h3>Past month</h3>\n            <div class=\"chart-wrap\">\n              <svg id=\"monthly-traffic-chart\" viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Monthly app traffic and engagement trend\" data-testid=\"chart-monthly-traffic\"></svg>\n            </div>\n            <h3>Year to date (weekly)</h3>\n            <p class=\"chart-note\" id=\"ytd-trend-note\"></p>\n            <div class=\"chart-wrap\">\n              <svg id=\"ytd-traffic-chart\" viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Year-to-date weekly app traffic and engagement trend\" data-testid=\"chart-ytd-traffic\"></svg>\n            </div>\n          </article>\n          <article class=\"panel span-4\" id=\"purchases\" aria-labelledby=\"purchase-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Sales baseline</p>\n                <h2 id=\"purchase-title\">In-app purchases and revenue</h2>\n              </div>\n            </div>\n            <div id=\"sales-summary\" class=\"sales-summary\" data-testid=\"section-sales-summary\"></div>\n            <div id=\"purchase-summary\" class=\"purchase-summary\" data-testid=\"section-purchases\"></div>\n            <div class=\"mini-chart-wrap\">\n              <svg id=\"purchase-chart\" viewBox=\"0 0 420 160\" role=\"img\" aria-label=\"Daily in-app purchase trend\"></svg>\n            </div>\n          </article>\n        </section>\n\n        <section class=\"panel\" id=\"sections\" aria-labelledby=\"sections-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">App navigation</p>\n              <h2 id=\"sections-title\">Traffic and time by app section</h2>\n            </div>\n            <span class=\"period-chip\" id=\"section-usage-period\">Latest</span>\n          </div>\n          <p id=\"section-usage-note\" class=\"panel-note\"></p>\n          <div id=\"section-usage-list\" class=\"section-usage-list\" data-testid=\"section-app-sections\"></div>\n        </section>\n\n        <section class=\"dashboard-grid three-col\" id=\"live\" aria-labelledby=\"live-title\">\n          <article class=\"panel span-4\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Live channels</p>\n                <h2 id=\"live-title\">Live TV performance</h2>\n              </div>\n            </div>\n            <div id=\"live-summary\" class=\"metric-list\" data-testid=\"section-live\"></div>\n          </article>\n          <article class=\"panel span-4\" id=\"funnel\" aria-labelledby=\"funnel-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">New app funnel</p>\n                <h2 id=\"funnel-title\">Installs to viewing</h2>\n              </div>\n            </div>\n            <div id=\"funnel-list\" class=\"bar-list\" data-testid=\"section-funnel\"></div>\n          </article>\n          <article class=\"panel span-4\" id=\"ads\" aria-labelledby=\"ads-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Monetization proxy</p>\n                <h2 id=\"ads-title\">Ad event signals</h2>\n              </div>\n            </div>\n            <div id=\"ad-list\" class=\"bar-list\" data-testid=\"section-ads\"></div>\n          </article>\n        </section>\n\n        <section class=\"panel dotstudios-ads-panel\" id=\"dotstudios-app-ads\" aria-labelledby=\"dotstudios-app-ads-title\" hidden>\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Manual app ad-serving source</p>\n              <h2 id=\"dotstudios-app-ads-title\">DotStudios App Ad Delivery</h2>\n            </div>\n            <span class=\"period-chip\" id=\"dotstudios-app-ads-period\">Manual upload</span>\n          </div>\n          <p id=\"dotstudios-app-ads-note\" class=\"panel-note\"></p>\n          <div class=\"usage-card-grid dotstudios-ads-kpis\" id=\"dotstudios-app-ads-kpis\" data-testid=\"dotstudios-app-ads-kpis\"></div>\n          <div class=\"google-ads-split\">\n            <div>\n              <h3>By device</h3>\n              <div id=\"dotstudios-app-ads-devices\" class=\"google-ads-device-list\" data-testid=\"dotstudios-app-ads-devices\"></div>\n            </div>\n            <div>\n              <h3>By channel</h3>\n              <div id=\"dotstudios-app-ads-channels\" class=\"google-ads-action-list\" data-testid=\"dotstudios-app-ads-channels\"></div>\n            </div>\n          </div>\n          <h3>Top videos by app ad impressions</h3>\n          <div id=\"dotstudios-app-ads-videos\" class=\"table-wrap title-table\" data-testid=\"table-dotstudios-app-ads-videos\"></div>\n          <h3>Daily app ad delivery</h3>\n          <div id=\"dotstudios-app-ads-daily\" class=\"table-wrap\" data-testid=\"table-dotstudios-app-ads-daily\"></div>\n          <p class=\"panel-note google-ads-context\" id=\"dotstudios-app-ads-plain\"></p>\n          <ul class=\"dotstudios-ads-caveats\" id=\"dotstudios-app-ads-caveats\" data-testid=\"dotstudios-app-ads-caveats\"></ul>\n        </section>\n\n        <section class=\"dashboard-grid two-col\" id=\"viewership\" aria-labelledby=\"viewership-title\">\n          <article class=\"panel span-6\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Feature usage</p>\n                <h2 id=\"viewership-title\">Live channel usage</h2>\n              </div>\n              <span class=\"period-chip\" id=\"content-usage-period\">Latest</span>\n            </div>\n            <div id=\"live-usage-cards\" class=\"usage-card-grid\" data-testid=\"section-live-usage-cards\"></div>\n            <h3>Top 10 Live channels</h3>\n            <div id=\"live-channel-table\" class=\"table-wrap title-table\" data-testid=\"table-live-channels\"></div>\n            <h3>Live usage by platform</h3>\n            <div id=\"live-platform-breakdown\" class=\"platform-share-list\" data-testid=\"section-live-platforms\"></div>\n            <h3>Live playback signals</h3>\n            <div id=\"live-playback-list\" class=\"bar-list\" data-testid=\"section-live-playback\"></div>\n            <p id=\"live-usage-note\" class=\"platform-note\"></p>\n          </article>\n          <article class=\"panel span-6\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Feature usage</p>\n                <h2>On Demand usage</h2>\n              </div>\n            </div>\n            <div id=\"ondemand-usage-cards\" class=\"usage-card-grid\" data-testid=\"section-ondemand-usage-cards\"></div>\n            <h3>On Demand usage by platform</h3>\n            <div id=\"ondemand-platform-breakdown\" class=\"platform-share-list\" data-testid=\"section-ondemand-platforms\"></div>\n            <p id=\"ondemand-usage-note\" class=\"platform-note\"></p>\n          </article>\n        </section>\n\n        <section class=\"dashboard-grid two-col\">\n          <article class=\"panel span-6\" id=\"platforms\" aria-labelledby=\"platform-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Measured audience by surface</p>\n                <h2 id=\"platform-title\">Where users are coming from</h2>\n              </div>\n              <span class=\"period-chip\" id=\"platform-mix-period\">Latest</span>\n            </div>\n            <h3>Audience by GA4 stream</h3>\n            <p id=\"surface-note\" class=\"panel-note\"></p>\n            <div id=\"surface-table\" class=\"table-wrap\" data-testid=\"table-surface-breakout\"></div>\n            <h3>Audience by app, web, and connected TV platform</h3>\n            <div id=\"platform-mix\" class=\"platform-mix\" data-testid=\"section-platform-mix\"></div>\n            <p id=\"platform-note\" class=\"platform-note\"></p>\n            <h3>Average time by platform</h3>\n            <p id=\"platform-time-note\" class=\"panel-note\"></p>\n            <div id=\"platform-time-table\" class=\"table-wrap\" data-testid=\"table-platform-time\"></div>\n            <div id=\"platform-table\" class=\"table-wrap\" data-testid=\"table-platform\"></div>\n          </article>\n        </section>\n\n        <section class=\"panel\" id=\"roku-app\" aria-labelledby=\"roku-app-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Roku app report</p>\n              <h2 id=\"roku-app-title\">Roku App Engagement</h2>\n            </div>\n            <span class=\"period-chip\" id=\"roku-app-period\">Latest</span>\n          </div>\n          <p id=\"roku-app-note\" class=\"panel-note\"></p>\n          <div id=\"roku-app-summary\" class=\"usage-card-grid roku-engagement-grid\" data-testid=\"section-roku-app-engagement\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"content\" aria-labelledby=\"content-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">App screen activity and tracking health</p>\n              <h2 id=\"content-title\">Where people are active in the app</h2>\n            </div>\n          </div>\n          <p id=\"content-readout\" class=\"panel-note\"></p>\n          <p id=\"content-note\" class=\"panel-note\"></p>\n          <div id=\"content-table\" class=\"table-wrap\" data-testid=\"table-content\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"titles\" aria-labelledby=\"titles-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Viewing by program</p>\n              <h2 id=\"titles-title\">Top 50 watched shows and collections</h2>\n            </div>\n            <span class=\"period-chip\" id=\"top-title-period\">Latest</span>\n          </div>\n          <p id=\"top-title-note\" class=\"panel-note\"></p>\n          <div id=\"top-titles-table\" class=\"table-wrap title-table\" data-testid=\"table-top-titles\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"videos\" aria-labelledby=\"videos-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Viewing by individual video</p>\n              <h2 id=\"videos-title\">Top 50 individual videos played</h2>\n            </div>\n            <span class=\"period-chip\" id=\"top-video-period\">Latest</span>\n          </div>\n          <p id=\"top-video-note\" class=\"panel-note\"></p>\n          <div id=\"top-videos-table\" class=\"table-wrap title-table\" data-testid=\"table-top-videos\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"tvod-title-revenue\" aria-labelledby=\"tvod-title-revenue-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\" id=\"tvod-title-revenue-eyebrow\">TVOD title revenue &amp; registered users</p>\n              <h2 id=\"tvod-title-revenue-title\">TVOD Title Revenue &amp; Registered Users</h2>\n            </div>\n            <span class=\"period-chip\" id=\"tvod-title-revenue-period\">Cumulative since launch</span>\n          </div>\n          <p id=\"tvod-title-revenue-note\" class=\"panel-note\"></p>\n          <div class=\"usage-card-grid\" id=\"tvod-title-revenue-summary\" data-testid=\"section-tvod-title-revenue-summary\"></div>\n          <div id=\"tvod-title-revenue-table\" class=\"table-wrap title-table\" data-testid=\"table-tvod-title-revenue\"></div>\n          <h3>Net revenue by channel</h3>\n          <div id=\"tvod-title-revenue-channels\" class=\"table-wrap\" data-testid=\"table-tvod-title-revenue-channels\"></div>\n        </section>\n\n        <section class=\"panel google-ads-panel\" id=\"google-ads\" aria-labelledby=\"google-ads-title\" hidden>\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Paid acquisition efficiency</p>\n              <h2 id=\"google-ads-title\">Google Ads &mdash; Android App Campaign</h2>\n            </div>\n            <span class=\"period-chip\" id=\"google-ads-period\">Latest</span>\n          </div>\n          <p id=\"google-ads-note\" class=\"panel-note\"></p>\n          <div class=\"google-ads-campaign\" id=\"google-ads-campaign\" data-testid=\"google-ads-campaign\"></div>\n          <div class=\"usage-card-grid google-ads-kpis\" id=\"google-ads-kpis\" data-testid=\"google-ads-kpis\"></div>\n          <div class=\"google-ads-split\">\n            <div>\n              <h3>By device</h3>\n              <div id=\"google-ads-devices\" class=\"google-ads-device-list\" data-testid=\"google-ads-devices\"></div>\n            </div>\n            <div>\n              <h3>Conversion actions</h3>\n              <div id=\"google-ads-actions\" class=\"google-ads-action-list\" data-testid=\"google-ads-actions\"></div>\n            </div>\n          </div>\n          <p class=\"panel-note google-ads-context\" id=\"google-ads-plain\"></p>\n        </section>\n\n        <section class=\"panel gaps-panel\" aria-labelledby=\"gaps-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Developer follow-up</p>\n              <h2 id=\"gaps-title\">Measurement gaps to close</h2>\n            </div>\n          </div>\n          <ul id=\"gaps-list\" class=\"gap-list\" role=\"list\" data-testid=\"list-gaps\"></ul>\n        </section>\n\n      </main>\n    </div>";
+    template.innerHTML = "<div id=\"electricnow-dashboard-embed\" class=\"app-shell\">\n      <aside class=\"sidebar\" aria-label=\"Dashboard sections\">\n        <a class=\"brand\" href=\"#overview\" data-testid=\"link-overview\">\n          <svg class=\"brand-mark\" viewBox=\"0 0 48 48\" aria-hidden=\"true\">\n            <path d=\"M30 4 9 28h13l-4 16 22-26H27l3-14Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n            <path d=\"M27 12 15 26h11l-2 9 11-14H24l3-9Z\" fill=\"currentColor\" />\n          </svg>\n          <span><strong>Electric</strong><strong>NOW</strong><small>Growth dashboard</small></span>\n        </a>\n        <nav class=\"side-nav\">\n          <a href=\"#overview\" data-testid=\"nav-overview\">Overview</a>\n          <a href=\"#purchases\" data-testid=\"nav-purchases\">Purchases</a>\n          <a href=\"#live\" data-testid=\"nav-live\">Live TV</a>\n          <a href=\"#sections\" data-testid=\"nav-sections\">App sections</a>\n          <a href=\"#viewership\" data-testid=\"nav-viewership\">Viewership</a>\n          <a href=\"#titles\" data-testid=\"nav-titles\">Top titles</a>\n          <a href=\"#videos\" data-testid=\"nav-videos\">Top videos</a>\n          <a href=\"#tvod-title-revenue\" data-testid=\"nav-tvod-title-revenue\">Registered users</a>\n          <a href=\"#platforms\" data-testid=\"nav-platforms\">Platforms</a>\n          <a href=\"#roku-app\" data-testid=\"nav-roku-app\">Roku app</a>\n          <a href=\"#funnel\" data-testid=\"nav-funnel\">App funnel</a>\n          <a href=\"#ads\" data-testid=\"nav-ads\">Ad signals</a>\n          <a href=\"#dotstudios-app-ads\" data-testid=\"nav-dotstudios-app-ads\">App ads</a>\n          <a href=\"#google-ads\" data-testid=\"nav-google-ads\">Google Ads</a>\n          <a href=\"#content\" data-testid=\"nav-content\">Content</a>\n        </nav>\n        <div class=\"source-card\">\n          <span>Source</span>\n          <strong>Internal GA4 pull</strong>\n          <p>Property 497892271. Reconcile with app-store, Amagi, ad-server, YouTube, and Meta reporting.</p>\n        </div>\n      </aside>\n\n      <header class=\"topbar\">\n        <div>\n          <p class=\"eyebrow\">Private snapshot</p>\n          <h1>ElectricNOW performance dashboard</h1>\n        </div>\n        <div class=\"topbar-actions\">\n          <label class=\"select-label\" for=\"period-select\">Period</label>\n          <select id=\"period-select\" data-testid=\"select-period\">\n            <option value=\"currentWeek\">Latest app usage</option>\n            <option value=\"weekToDate\">Apr 28-30 watch</option>\n          </select>\n          <button class=\"ghost-button refresh-button\" type=\"button\" id=\"refresh-data\" data-testid=\"button-refresh-data\">Update data</button>\n          <button class=\"ghost-button\" type=\"button\" id=\"plain-toggle\" data-testid=\"button-toggle-plain\" aria-controls=\"plain-panel\" aria-expanded=\"false\">Plain English</button>\n          <span class=\"refresh-status\" id=\"refresh-status\" role=\"status\" aria-live=\"polite\"></span>\n        </div>\n      </header>\n\n      <main id=\"main\" class=\"main\" tabindex=\"-1\">\n        <section class=\"hero-panel\" id=\"overview\" aria-labelledby=\"overview-title\">\n          <div>\n            <p class=\"eyebrow\">Corrected metric framing</p>\n            <h2 id=\"overview-title\">Acquisition, app usage, viewing, and time are now separated.</h2>\n            <p>\n              The top scorecards now separate Apple/Android app-stream usage, actual viewing events, sales signals, geography, and time spent across GA4-tracked platforms.\n            </p>\n          </div>\n          <div class=\"hero-meta\">\n            <span id=\"generated-at\">Generated</span>\n            <strong id=\"source-label\">GA4 property 497892271</strong>\n          </div>\n        </section>\n\n        <section class=\"visit-strip\" id=\"visit-summary\" aria-label=\"Weekly and monthly visits\" data-testid=\"section-visit-summary\"></section>\n\n        <section class=\"plain-panel\" id=\"plain-panel\" aria-labelledby=\"plain-title\" tabindex=\"-1\">\n          <div>\n            <p class=\"eyebrow\">Plain-English headlines</p>\n            <h2 id=\"plain-title\">What changed?</h2>\n          </div>\n          <ul id=\"insights-list\" role=\"list\" data-testid=\"list-insights\"></ul>\n        </section>\n\n        <section class=\"kpi-grid\" id=\"kpi-grid\" aria-label=\"Weekly scorecard\" data-testid=\"grid-kpis\"></section>\n\n        <section class=\"dashboard-grid two-col\">\n          <article class=\"panel span-8\" aria-labelledby=\"traffic-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">App use and engagement</p>\n                <h2 id=\"traffic-title\">Daily app trend</h2>\n              </div>\n              <span class=\"period-chip\" id=\"trend-period\">Apr 14-30</span>\n            </div>\n            <div class=\"chart-legend\" aria-label=\"Daily trend legend\">\n              <span><i class=\"legend-swatch legend-blue\"></i>Blue line: app active users</span>\n              <span><i class=\"legend-swatch legend-green\"></i>Green line: app sessions (daily)</span>\n            </div>\n            <p class=\"chart-note\" id=\"trend-note\"></p>\n            <h3>Past seven days</h3>\n            <div class=\"chart-wrap\">\n              <svg id=\"traffic-chart\" viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Daily traffic and engagement trend\" data-testid=\"chart-traffic\"></svg>\n            </div>\n            <h3>Past month</h3>\n            <div class=\"chart-wrap\">\n              <svg id=\"monthly-traffic-chart\" viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Monthly app traffic and engagement trend\" data-testid=\"chart-monthly-traffic\"></svg>\n            </div>\n            <h3>Year to date (weekly)</h3>\n            <p class=\"chart-note\" id=\"ytd-trend-note\"></p>\n            <div class=\"chart-wrap\">\n              <svg id=\"ytd-traffic-chart\" viewBox=\"0 0 820 300\" role=\"img\" aria-label=\"Year-to-date weekly app traffic and engagement trend\" data-testid=\"chart-ytd-traffic\"></svg>\n            </div>\n          </article>\n          <article class=\"panel span-4\" id=\"purchases\" aria-labelledby=\"purchase-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Sales baseline</p>\n                <h2 id=\"purchase-title\">In-app purchases and revenue</h2>\n              </div>\n            </div>\n            <div id=\"sales-summary\" class=\"sales-summary\" data-testid=\"section-sales-summary\"></div>\n            <div id=\"purchase-summary\" class=\"purchase-summary\" data-testid=\"section-purchases\"></div>\n            <div class=\"mini-chart-wrap\">\n              <svg id=\"purchase-chart\" viewBox=\"0 0 420 160\" role=\"img\" aria-label=\"Daily in-app purchase trend\"></svg>\n            </div>\n          </article>\n        </section>\n\n        <section class=\"panel\" id=\"sections\" aria-labelledby=\"sections-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">App navigation</p>\n              <h2 id=\"sections-title\">Traffic and time by app section</h2>\n            </div>\n            <span class=\"period-chip\" id=\"section-usage-period\">Latest</span>\n          </div>\n          <p id=\"section-usage-note\" class=\"panel-note\"></p>\n          <div id=\"section-usage-list\" class=\"section-usage-list\" data-testid=\"section-app-sections\"></div>\n        </section>\n\n        <section class=\"dashboard-grid three-col\" id=\"live\" aria-labelledby=\"live-title\">\n          <article class=\"panel span-4\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Live channels</p>\n                <h2 id=\"live-title\">Live TV performance</h2>\n              </div>\n            </div>\n            <div id=\"live-summary\" class=\"metric-list\" data-testid=\"section-live\"></div>\n          </article>\n          <article class=\"panel span-4\" id=\"funnel\" aria-labelledby=\"funnel-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">New app funnel</p>\n                <h2 id=\"funnel-title\">Installs to viewing</h2>\n              </div>\n            </div>\n            <div id=\"funnel-list\" class=\"bar-list\" data-testid=\"section-funnel\"></div>\n          </article>\n          <article class=\"panel span-4\" id=\"ads\" aria-labelledby=\"ads-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Monetization proxy</p>\n                <h2 id=\"ads-title\">Ad event signals</h2>\n              </div>\n            </div>\n            <div id=\"ad-list\" class=\"bar-list\" data-testid=\"section-ads\"></div>\n          </article>\n        </section>\n\n        <section class=\"panel dotstudios-ads-panel\" id=\"dotstudios-app-ads\" aria-labelledby=\"dotstudios-app-ads-title\" hidden>\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Manual app ad-serving source</p>\n              <h2 id=\"dotstudios-app-ads-title\">DotStudios App Ad Delivery</h2>\n            </div>\n            <span class=\"period-chip\" id=\"dotstudios-app-ads-period\">Manual upload</span>\n          </div>\n          <p id=\"dotstudios-app-ads-note\" class=\"panel-note\"></p>\n          <div class=\"usage-card-grid dotstudios-ads-kpis\" id=\"dotstudios-app-ads-kpis\" data-testid=\"dotstudios-app-ads-kpis\"></div>\n          <div class=\"google-ads-split\">\n            <div>\n              <h3>By device</h3>\n              <div id=\"dotstudios-app-ads-devices\" class=\"google-ads-device-list\" data-testid=\"dotstudios-app-ads-devices\"></div>\n            </div>\n            <div>\n              <h3>By channel</h3>\n              <div id=\"dotstudios-app-ads-channels\" class=\"google-ads-action-list\" data-testid=\"dotstudios-app-ads-channels\"></div>\n            </div>\n          </div>\n          <h3>Top videos by app ad impressions</h3>\n          <div id=\"dotstudios-app-ads-videos\" class=\"table-wrap title-table\" data-testid=\"table-dotstudios-app-ads-videos\"></div>\n          <h3>Daily app ad delivery</h3>\n          <div id=\"dotstudios-app-ads-daily\" class=\"table-wrap\" data-testid=\"table-dotstudios-app-ads-daily\"></div>\n          <p class=\"panel-note google-ads-context\" id=\"dotstudios-app-ads-plain\"></p>\n          <ul class=\"dotstudios-ads-caveats\" id=\"dotstudios-app-ads-caveats\" data-testid=\"dotstudios-app-ads-caveats\"></ul>\n        </section>\n\n        <section class=\"dashboard-grid two-col\" id=\"viewership\" aria-labelledby=\"viewership-title\">\n          <article class=\"panel span-6\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Feature usage</p>\n                <h2 id=\"viewership-title\">Live channel usage</h2>\n              </div>\n              <span class=\"period-chip\" id=\"content-usage-period\">Latest</span>\n            </div>\n            <div id=\"live-usage-cards\" class=\"usage-card-grid\" data-testid=\"section-live-usage-cards\"></div>\n            <h3>Top 10 Live channels</h3>\n            <div id=\"live-channel-table\" class=\"table-wrap title-table\" data-testid=\"table-live-channels\"></div>\n            <h3>Live usage by platform</h3>\n            <div id=\"live-platform-breakdown\" class=\"platform-share-list\" data-testid=\"section-live-platforms\"></div>\n            <h3>Live playback signals</h3>\n            <div id=\"live-playback-list\" class=\"bar-list\" data-testid=\"section-live-playback\"></div>\n            <p id=\"live-usage-note\" class=\"platform-note\"></p>\n          </article>\n          <article class=\"panel span-6\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Feature usage</p>\n                <h2>On Demand usage</h2>\n              </div>\n            </div>\n            <div id=\"ondemand-usage-cards\" class=\"usage-card-grid\" data-testid=\"section-ondemand-usage-cards\"></div>\n            <h3>On Demand usage by platform</h3>\n            <div id=\"ondemand-platform-breakdown\" class=\"platform-share-list\" data-testid=\"section-ondemand-platforms\"></div>\n            <p id=\"ondemand-usage-note\" class=\"platform-note\"></p>\n          </article>\n        </section>\n\n        <section class=\"dashboard-grid two-col\">\n          <article class=\"panel span-6\" id=\"platforms\" aria-labelledby=\"platform-title\">\n            <div class=\"panel-header\">\n              <div>\n                <p class=\"eyebrow\">Measured audience by surface</p>\n                <h2 id=\"platform-title\">Where users are coming from</h2>\n              </div>\n              <span class=\"period-chip\" id=\"platform-mix-period\">Latest</span>\n            </div>\n            <h3>Audience by GA4 stream</h3>\n            <p id=\"surface-note\" class=\"panel-note\"></p>\n            <div id=\"surface-table\" class=\"table-wrap\" data-testid=\"table-surface-breakout\"></div>\n            <h3>Audience by app, web, and connected TV platform</h3>\n            <div id=\"platform-mix\" class=\"platform-mix\" data-testid=\"section-platform-mix\"></div>\n            <p id=\"platform-note\" class=\"platform-note\"></p>\n            <h3>Average time by platform</h3>\n            <p id=\"platform-time-note\" class=\"panel-note\"></p>\n            <div id=\"platform-time-table\" class=\"table-wrap\" data-testid=\"table-platform-time\"></div>\n            <div id=\"platform-table\" class=\"table-wrap\" data-testid=\"table-platform\"></div>\n          </article>\n        </section>\n\n        <section class=\"panel\" id=\"roku-app\" aria-labelledby=\"roku-app-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Roku app report</p>\n              <h2 id=\"roku-app-title\">Roku App Engagement</h2>\n            </div>\n            <span class=\"period-chip\" id=\"roku-app-period\">Latest</span>\n          </div>\n          <p id=\"roku-app-note\" class=\"panel-note\"></p>\n          <div id=\"roku-app-summary\" class=\"usage-card-grid roku-engagement-grid\" data-testid=\"section-roku-app-engagement\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"content\" aria-labelledby=\"content-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">App screen activity and tracking health</p>\n              <h2 id=\"content-title\">Where people are active in the app</h2>\n            </div>\n          </div>\n          <p id=\"content-readout\" class=\"panel-note\"></p>\n          <p id=\"content-note\" class=\"panel-note\"></p>\n          <div id=\"content-table\" class=\"table-wrap\" data-testid=\"table-content\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"titles\" aria-labelledby=\"titles-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Viewing by program</p>\n              <h2 id=\"titles-title\">Top 50 watched shows and collections</h2>\n            </div>\n            <span class=\"period-chip\" id=\"top-title-period\">Latest</span>\n          </div>\n          <p id=\"top-title-note\" class=\"panel-note\"></p>\n          <div id=\"top-titles-table\" class=\"table-wrap title-table\" data-testid=\"table-top-titles\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"videos\" aria-labelledby=\"videos-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Viewing by individual video</p>\n              <h2 id=\"videos-title\">Top 50 individual videos played</h2>\n            </div>\n            <span class=\"period-chip\" id=\"top-video-period\">Latest</span>\n          </div>\n          <p id=\"top-video-note\" class=\"panel-note\"></p>\n          <div id=\"top-videos-table\" class=\"table-wrap title-table\" data-testid=\"table-top-videos\"></div>\n        </section>\n\n        <section class=\"panel\" id=\"tvod-title-revenue\" aria-labelledby=\"tvod-title-revenue-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\" id=\"tvod-title-revenue-eyebrow\">TVOD title revenue &amp; registered users</p>\n              <h2 id=\"tvod-title-revenue-title\">TVOD Title Revenue &amp; Registered Users</h2>\n            </div>\n            <span class=\"period-chip\" id=\"tvod-title-revenue-period\">Cumulative since launch</span>\n          </div>\n          <p id=\"tvod-title-revenue-note\" class=\"panel-note\"></p>\n          <div class=\"usage-card-grid\" id=\"tvod-title-revenue-summary\" data-testid=\"section-tvod-title-revenue-summary\"></div>\n          <h3>Title-family totals</h3>\n          <div id=\"tvod-title-family-table\" class=\"table-wrap\" data-testid=\"table-tvod-title-family\"></div>\n          <div id=\"tvod-title-revenue-table\" class=\"table-wrap title-table\" data-testid=\"table-tvod-title-revenue\"></div>\n          <h3>Net revenue by channel</h3>\n          <div id=\"tvod-title-revenue-channels\" class=\"table-wrap\" data-testid=\"table-tvod-title-revenue-channels\"></div>\n        </section>\n\n        <section class=\"panel google-ads-panel\" id=\"google-ads\" aria-labelledby=\"google-ads-title\" hidden>\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Paid acquisition efficiency</p>\n              <h2 id=\"google-ads-title\">Google Ads &mdash; Android App Campaign</h2>\n            </div>\n            <span class=\"period-chip\" id=\"google-ads-period\">Latest</span>\n          </div>\n          <p id=\"google-ads-note\" class=\"panel-note\"></p>\n          <div class=\"google-ads-campaign\" id=\"google-ads-campaign\" data-testid=\"google-ads-campaign\"></div>\n          <div class=\"usage-card-grid google-ads-kpis\" id=\"google-ads-kpis\" data-testid=\"google-ads-kpis\"></div>\n          <div class=\"google-ads-split\">\n            <div>\n              <h3>By device</h3>\n              <div id=\"google-ads-devices\" class=\"google-ads-device-list\" data-testid=\"google-ads-devices\"></div>\n            </div>\n            <div>\n              <h3>Conversion actions</h3>\n              <div id=\"google-ads-actions\" class=\"google-ads-action-list\" data-testid=\"google-ads-actions\"></div>\n            </div>\n          </div>\n          <p class=\"panel-note google-ads-context\" id=\"google-ads-plain\"></p>\n        </section>\n\n        <section class=\"panel gaps-panel\" aria-labelledby=\"gaps-title\">\n          <div class=\"panel-header\">\n            <div>\n              <p class=\"eyebrow\">Developer follow-up</p>\n              <h2 id=\"gaps-title\">Measurement gaps to close</h2>\n            </div>\n          </div>\n          <ul id=\"gaps-list\" class=\"gap-list\" role=\"list\" data-testid=\"list-gaps\"></ul>\n        </section>\n\n      </main>\n    </div>";
     const mount = document.getElementById('electricnow-dashboard-hosted-mount');
     if (mount) {
       mount.replaceWith(template.content.cloneNode(true));
@@ -207,7 +207,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "deltaVsPreviousPct": 284.4594594594595,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “landing” in the path."
+      "context": "Users reaching pages with \u201clanding\u201d in the path."
     },
     {
       "key": "devicesPageUsers",
@@ -221,7 +221,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "deltaVsPreviousPct": 97.77777777777777,
       "deltaType": "percent",
       "format": "number",
-      "context": "Users reaching pages with “devices” in the path."
+      "context": "Users reaching pages with \u201cdevices\u201d in the path."
     },
     {
       "key": "paidSocialUsers",
@@ -8532,7 +8532,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "developerRevShare": 6.99
         }
       ],
-      "note": "Apple App Store screenshots show $1055.80 gross in-app purchase sales manually entered so far, or approximately $739.06 after Apple’s 30% platform fee. Revenue-only aggregate screenshots are included as gross revenue but do not increase purchase counts unless Apple provides transaction detail. These figures remain manual until Apple App Store Connect API reporting is connected.",
+      "note": "Apple App Store screenshots show $1055.80 gross in-app purchase sales manually entered so far, or approximately $739.06 after Apple\u2019s 30% platform fee. Revenue-only aggregate screenshots are included as gross revenue but do not increase purchase counts unless Apple provides transaction detail. These figures remain manual until Apple App Store Connect API reporting is connected.",
       "latestSnapshot": {
         "label": "Apple sales last week",
         "range": "Jul 27-Aug 2, 2026",
@@ -12906,7 +12906,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "rank": 1
         },
         {
-          "title": "ElectricNOW en Español",
+          "title": "ElectricNOW en Espa\u00f1ol",
           "plays": 459,
           "activeUsers": 22,
           "rank": 2
@@ -12996,7 +12996,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   },
   "titleViewership": {
     "period": "Jul 27-Aug 2, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
+    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only \u2014 live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
     "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage' and 'Live Channel on Roku'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
     "topPrograms": [
       {
@@ -13536,7 +13536,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "rank": 50,
-        "program": "It’s What’s On the Inside",
+        "program": "It\u2019s What\u2019s On the Inside",
         "plays": 23,
         "activeUsers": 1,
         "viewerMethod": "deduped_ga4_filter",
@@ -15311,7 +15311,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "section": "En Espanol",
-        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Español, Espanol, Spanish, or matching paths.",
+        "definition": "Spanish-language section activity inferred from GA4 labels containing En Espanol, Espa\u00f1ol, Espanol, Spanish, or matching paths.",
         "activeUsers": 20,
         "sessions": 21,
         "engagedSessions": 21,
@@ -15682,7 +15682,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   "ga4PurchaseSignals": {
     "sourceLabel": "GA4 In-App Purchase Signals",
     "sourceShortLabel": "Google Play / Android purchase signals",
-    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only — GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
+    "sourceDetail": "These are GA4 in_app_purchase events from property 497892271. They are directional purchase signals only \u2014 GA4 does not return Google Play / Android billing transaction IDs, so these rows must be reconciled against Google Play Console before being treated as financial revenue. They are intentionally kept out of the Stripe / Roku / Apple visible-sales rollup above.",
     "reconciliationLabel": "GA4 purchase signal, not reconciled revenue",
     "reconciliationDetail": "Likely Google Play / Android billing. Reconcile against Google Play Console before counting toward final sales. Do not double count if the same purchase later appears in Stripe, Roku, Apple, or official Google Play reporting.",
     "isFinancialRevenue": false,
@@ -15726,14 +15726,14 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     },
     "platformSplit": [
       {
-        "label": "Android · mobile",
+        "label": "Android \u00b7 mobile",
         "platform": "Android",
         "deviceCategory": "mobile",
         "eventCount": 1,
         "purchaseRevenue": 14.99
       },
       {
-        "label": "Android · smart tv",
+        "label": "Android \u00b7 smart tv",
         "platform": "Android",
         "deviceCategory": "smart tv",
         "eventCount": 1,
@@ -16064,7 +16064,17 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "rokuAppEngagement",
       "metaAdsSummary"
     ],
-    "note": "Manual/email data patch applied without changing GA4, Stripe, Roku sales, or Apple sales totals."
+    "note": "Manual/email data patch applied without changing GA4, Stripe, Roku sales, or Apple sales totals.",
+    "latestTvodManualExport": {
+      "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-04",
+      "periodStart": "2026-07-05",
+      "periodEnd": "2026-08-03",
+      "paidTransactions": 182,
+      "paidNet": 3794.08,
+      "arkNet": 2602.74,
+      "librariansNet": 1070.45,
+      "doubleCountCaveat": "Fresh aggregate TVOD transaction export covering 2026-07-05\u20132026-08-03. This manual section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap."
+    }
   },
   "titleAggregationPatch": {
     "updatedAt": "2026-06-07 07:59 PDT",
@@ -16101,7 +16111,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "Apple manual": "CURRENT_MANUAL_UPDATED",
       "Meta email": "STALE_NO_NEW_REPORT",
       "Google Ads": "STALE_RATE_LIMITED",
-      "YouTube": "CONNECTED"
+      "YouTube": "CONNECTED",
+      "TVOD manual export": "UPDATED_AGGREGATE_2026-08-04"
     }
   },
   "youtubeSummary": {
@@ -16152,7 +16163,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "key": "estimatedRevenueYtd",
         "label": "YTD YouTube revenue",
         "value": 87968.84,
-        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue — NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
+        "detail": "Estimated total YouTube revenue Jan 1-Jul 10, 2026 (ads + other). YouTube-only estimated revenue \u2014 NOT ElectricNOW in-app / platform sales. Est. ad revenue: $79,108.12"
       },
       {
         "key": "adImpressions",
@@ -16262,7 +16273,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "13025kKEUUY",
-        "title": "Untitled video (YouTube ID 13025kKEUUY) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 13025kKEUUY) \u2014 title lookup unavailable this refresh",
         "views": 14985,
         "estimatedMinutesWatched": 196356,
         "estimatedHoursWatched": 3272.6,
@@ -16302,7 +16313,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "G_X8m-NJV-U",
-        "title": "Untitled video (YouTube ID G_X8m-NJV-U) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID G_X8m-NJV-U) \u2014 title lookup unavailable this refresh",
         "views": 5404,
         "estimatedMinutesWatched": 69027,
         "estimatedHoursWatched": 1150.45,
@@ -16312,7 +16323,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "6G2FEy9LGBw",
-        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6G2FEy9LGBw) \u2014 title lookup unavailable this refresh",
         "views": 4907,
         "estimatedMinutesWatched": 59051,
         "estimatedHoursWatched": 984.18,
@@ -16322,7 +16333,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "NgCIyD4T8JM",
-        "title": "Untitled video (YouTube ID NgCIyD4T8JM) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID NgCIyD4T8JM) \u2014 title lookup unavailable this refresh",
         "views": 4127,
         "estimatedMinutesWatched": 54146,
         "estimatedHoursWatched": 902.43,
@@ -16382,7 +16393,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "pbLonEcXhTs",
-        "title": "Untitled video (YouTube ID pbLonEcXhTs) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID pbLonEcXhTs) \u2014 title lookup unavailable this refresh",
         "views": 1541,
         "estimatedMinutesWatched": 506,
         "estimatedHoursWatched": 8.43,
@@ -16392,7 +16403,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "JeeMINxXYwQ",
-        "title": "Untitled video (YouTube ID JeeMINxXYwQ) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID JeeMINxXYwQ) \u2014 title lookup unavailable this refresh",
         "views": 1491,
         "estimatedMinutesWatched": 31892,
         "estimatedHoursWatched": 531.53,
@@ -16432,7 +16443,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "6etBO8Z9IBA",
-        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 6etBO8Z9IBA) \u2014 title lookup unavailable this refresh",
         "views": 1168,
         "estimatedMinutesWatched": 24269,
         "estimatedHoursWatched": 404.48,
@@ -16442,7 +16453,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "Q9XTdOji2wc",
-        "title": "Untitled video (YouTube ID Q9XTdOji2wc) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID Q9XTdOji2wc) \u2014 title lookup unavailable this refresh",
         "views": 1101,
         "estimatedMinutesWatched": 26230,
         "estimatedHoursWatched": 437.17,
@@ -16452,7 +16463,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "He3ScSePRYM",
-        "title": "Untitled video (YouTube ID He3ScSePRYM) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID He3ScSePRYM) \u2014 title lookup unavailable this refresh",
         "views": 1069,
         "estimatedMinutesWatched": 26745,
         "estimatedHoursWatched": 445.75,
@@ -16462,7 +16473,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "89J-9vWWPuk",
-        "title": "Untitled video (YouTube ID 89J-9vWWPuk) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID 89J-9vWWPuk) \u2014 title lookup unavailable this refresh",
         "views": 1036,
         "estimatedMinutesWatched": 20993,
         "estimatedHoursWatched": 349.88,
@@ -16472,7 +16483,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "rVC2lrrZvwc",
-        "title": "Untitled video (YouTube ID rVC2lrrZvwc) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID rVC2lrrZvwc) \u2014 title lookup unavailable this refresh",
         "views": 1035,
         "estimatedMinutesWatched": 21112,
         "estimatedHoursWatched": 351.87,
@@ -16482,7 +16493,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "V21Q6QjV0Hc",
-        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID V21Q6QjV0Hc) \u2014 title lookup unavailable this refresh",
         "views": 1016,
         "estimatedMinutesWatched": 23796,
         "estimatedHoursWatched": 396.6,
@@ -16492,7 +16503,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "videoId": "gJtM5e4S5sU",
-        "title": "Untitled video (YouTube ID gJtM5e4S5sU) — title lookup unavailable this refresh",
+        "title": "Untitled video (YouTube ID gJtM5e4S5sU) \u2014 title lookup unavailable this refresh",
         "views": 1013,
         "estimatedMinutesWatched": 24085,
         "estimatedHoursWatched": 401.42,
@@ -17539,7 +17550,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     {
       "date": "2026-07-28",
       "section": "Full refresh",
-      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week’s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
+      "note": "Tuesday manual refresh (rolling latest-complete-7-day window Jul 21-Jul 27, 2026 vs Jul 14-Jul 20, 2026). Fresh: GA4, YouTube, Stripe, Roku App Engagement. Stale/preserved with labels: Roku Sales Activity (source date still Jul 27), Google Ads (rate-limited 429, retry ~16638s), Meta (no new report), Apple sales and downloads (no new screenshot since Jul 5/Jul 26 respectively), TVOD/registered users (no new Michael email since Jul 27). No fresh landing-page-only or daily-trend GA4 pulls this cycle; platformAudience landing split is estimated from last week\u2019s ratio and weeklyTrend/dailyTrend rows are preserved, both explicitly labeled."
     },
     {
       "date": "2026-08-02T08:20:00-07:00",
@@ -17557,67 +17568,105 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   ],
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
-    "eyebrow": "User-provided Michael Johnson TVOD export — aggregate only",
-    "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-02",
-    "emailDate": "2026-08-02",
-    "periodStart": "2026-07-03",
-    "periodEnd": "2026-08-01",
-    "periodNote": "Fresh aggregate TVOD transaction export covering Jul 3-Aug 1, 2026. This section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap.",
-    "extractedAt": "2026-08-02T08:50:00-07:00",
+    "eyebrow": "User-provided Michael Johnson TVOD export \u2014 aggregate only",
+    "source": "User-provided TVOD transaction CSV pasted in chat on 2026-08-04",
+    "emailDate": "2026-08-04",
+    "periodStart": "2026-07-05",
+    "periodEnd": "2026-08-03",
+    "periodNote": "Fresh aggregate TVOD transaction export covering 2026-07-05\u20132026-08-03. This manual section is separate from Stripe/Roku/Apple Visible Platform Sales and should not be summed with salesSummary until transaction-level reconciliation confirms there is no overlap.",
+    "extractedAt": "2026-08-04T07:37:00-07:00",
     "registeredUsers": {
       "total": 7914,
       "active": 7814
     },
     "registeredUsersNote": "Registered-user count preserved from the last Michael Johnson email because the Aug 2 pasted TVOD export included transactions only, not a newer registered-user total.",
     "transactions": {
-      "totalRows": 119,
-      "paidTransactions": 118,
+      "totalRows": 183,
+      "paidTransactions": 182,
       "refundTransactions": 1,
-      "latestSevenDayPaidTransactions": 107
+      "latestSevenDayPaidTransactions": 165
     },
     "netRevenue": {
-      "tvodSalesExportPaidGross": 2451.73,
-      "tvodSalesExportPaidNet": 2451.73,
+      "tvodSalesExportPaidGross": 3794.08,
+      "tvodSalesExportPaidNet": 3794.08,
       "refundsGross": -14.99,
       "refundsNet": -14.99,
-      "netIncludingRefunds": 2436.74,
-      "latestSevenDayGross": 2285.89,
-      "latestSevenDayNet": 2285.89
+      "netIncludingRefunds": 3779.09,
+      "latestSevenDayGross": 3508.3,
+      "latestSevenDayNet": 3508.3
+    },
+    "familyTotals": [
+      {
+        "family": "The Ark",
+        "transactions": 121,
+        "gross": 2602.74,
+        "net": 2602.74
+      },
+      {
+        "family": "The Librarians",
+        "transactions": 52,
+        "gross": 1070.45,
+        "net": 1070.45
+      },
+      {
+        "family": "Other",
+        "transactions": 9,
+        "gross": 120.89,
+        "net": 120.89
+      }
+    ],
+    "titleFamilySummary": {
+      "arkTransactions": 121,
+      "arkGross": 2602.74,
+      "arkNet": 2602.74,
+      "arkShareOfPaidTransactionsPct": 66.5,
+      "arkShareOfPaidNetPct": 68.6,
+      "librariansTransactions": 52,
+      "librariansGross": 1070.45,
+      "librariansNet": 1070.45,
+      "librariansShareOfPaidTransactionsPct": 28.6,
+      "librariansShareOfPaidNetPct": 28.2,
+      "arkSeason3Transactions": 114,
+      "arkSeason3Gross": 2392.86,
+      "arkSeason3Net": 2392.86,
+      "librariansNextChapterSeason2Transactions": 48,
+      "librariansNextChapterSeason2Gross": 1007.52,
+      "librariansNextChapterSeason2Net": 1007.52
     },
     "latestSevenDay": {
-      "periodStart": "2026-07-26",
-      "periodEnd": "2026-08-01",
-      "transactions": 107,
-      "gross": 2285.89,
-      "net": 2285.89,
-      "arkTitleFamilyTransactions": 101,
-      "arkTitleFamilyGross": 2185.97,
-      "arkTitleFamilyNet": 2185.97,
-      "arkTitleFamilyShareOfTransactionsPct": 94.4,
-      "arkTitleFamilyShareOfRevenuePct": 95.6,
-      "arkSeason3Transactions": 97,
-      "arkSeason3Gross": 2036.03,
-      "arkSeason3Net": 2036.03,
-      "arkSeason3ShareOfTransactionsPct": 90.7,
-      "arkSeason3ShareOfRevenuePct": 89.1,
+      "periodStart": "2026-07-28",
+      "periodEnd": "2026-08-03",
+      "transactions": 165,
+      "gross": 3508.3,
+      "net": 3508.3,
+      "arkTitleFamilyTransactions": 113,
+      "arkTitleFamilyGross": 2437.85,
+      "arkTitleFamilyNet": 2437.85,
+      "arkTitleFamilyShareOfTransactionsPct": 68.5,
+      "arkTitleFamilyShareOfRevenuePct": 69.5,
+      "librariansTitleFamilyTransactions": 51,
+      "librariansTitleFamilyGross": 1067.46,
+      "librariansTitleFamilyNet": 1067.46,
+      "librariansTitleFamilyShareOfTransactionsPct": 30.9,
+      "librariansTitleFamilyShareOfRevenuePct": 30.4,
       "topTitlesByNet": [
         {
           "title": "The Ark - Season 3",
-          "transactions": 97,
-          "gross": 2036.03,
-          "net": 2036.03
+          "transactions": 109,
+          "gross": 2287.91,
+          "net": 2287.91
+        },
+        {
+          "title": "The Librarians: The Next Chapter Season 2",
+          "transactions": 48,
+          "gross": 1007.52,
+          "net": 1007.52
         },
         {
           "title": "The Ark",
           "transactions": 2,
           "gross": 109.98,
           "net": 109.98
-        },
-        {
-          "title": "The Librarians: The Next Chapter Season 2",
-          "transactions": 2,
-          "gross": 41.98,
-          "net": 41.98
         },
         {
           "title": "The Ark - Season 1",
@@ -17627,21 +17676,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         },
         {
           "title": "Parent The Librarians: The Next Chapter",
-          "transactions": 1,
-          "gross": 19.98,
-          "net": 19.98
+          "transactions": 2,
+          "gross": 39.96,
+          "net": 39.96
         },
         {
           "title": "The Librarians - Season 1",
           "transactions": 1,
           "gross": 19.98,
           "net": 19.98
-        },
-        {
-          "title": "The Draw",
-          "transactions": 1,
-          "gross": 14.99,
-          "net": 14.99
         },
         {
           "title": "Universal Soldier II",
@@ -17653,21 +17696,21 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "channels": [
         {
           "channel": "apple",
-          "transactions": 44,
-          "gross": 955.54,
-          "net": 955.54
+          "transactions": 66,
+          "gross": 1417.32,
+          "net": 1417.32
         },
         {
           "channel": "web",
-          "transactions": 35,
-          "gross": 728.65,
-          "net": 728.65
+          "transactions": 63,
+          "gross": 1321.36,
+          "net": 1321.36
         },
         {
           "channel": "roku",
-          "transactions": 24,
-          "gross": 535.74,
-          "net": 535.74
+          "transactions": 32,
+          "gross": 703.66,
+          "net": 703.66
         },
         {
           "channel": "android",
@@ -17681,14 +17724,40 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "gross": 2.99,
           "net": 2.99
         }
+      ],
+      "familyTotals": [
+        {
+          "family": "The Ark",
+          "transactions": 113,
+          "gross": 2437.85,
+          "net": 2437.85
+        },
+        {
+          "family": "The Librarians",
+          "transactions": 51,
+          "gross": 1067.46,
+          "net": 1067.46
+        },
+        {
+          "family": "Other",
+          "transactions": 1,
+          "gross": 2.99,
+          "net": 2.99
+        }
       ]
     },
     "topTitlesByNet": [
       {
         "title": "The Ark - Season 3",
-        "transactions": 97,
-        "gross": 2036.03,
-        "net": 2036.03
+        "transactions": 114,
+        "gross": 2392.86,
+        "net": 2392.86
+      },
+      {
+        "title": "The Librarians: The Next Chapter Season 2",
+        "transactions": 48,
+        "gross": 1007.52,
+        "net": 1007.52
       },
       {
         "title": "The Ark",
@@ -17703,28 +17772,22 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "net": 64.95
       },
       {
-        "title": "The Ark - Season 2",
+        "title": "The Ark - Season 1",
         "transactions": 3,
         "gross": 59.94,
         "net": 59.94
       },
       {
-        "title": "The Librarians: The Next Chapter Season 2",
-        "transactions": 2,
-        "gross": 41.98,
-        "net": 41.98
-      },
-      {
-        "title": "The Ark - Season 1",
+        "title": "Parent The Librarians: The Next Chapter",
         "transactions": 2,
         "gross": 39.96,
         "net": 39.96
       },
       {
-        "title": "Parent The Librarians: The Next Chapter",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
+        "title": "The Ark - Season 2",
+        "transactions": 2,
+        "gross": 39.96,
+        "net": 39.96
       },
       {
         "title": "The Librarians - Season 1",
@@ -17745,7 +17808,13 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "net": 14.99
       },
       {
-        "title": "The Librarians and the Crown of King Arthur in Cinemascope",
+        "title": "Somewhere in Montana",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99
+      },
+      {
+        "title": "Universal Soldier II",
         "transactions": 1,
         "gross": 2.99,
         "net": 2.99
@@ -17757,36 +17826,30 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "net": 2.99
       },
       {
-        "title": "Universal Soldier II",
+        "title": "The Librarians and the Crown of King Arthur in Cinemascope",
         "transactions": 1,
         "gross": 2.99,
         "net": 2.99
-      },
-      {
-        "title": "Somewhere in Montana",
-        "transactions": 2,
-        "gross": 0,
-        "net": 0
       }
     ],
     "channels": [
       {
         "channel": "apple",
-        "transactions": 45,
-        "gross": 970.53,
-        "net": 970.53
+        "transactions": 69,
+        "gross": 1474.29,
+        "net": 1474.29
       },
       {
         "channel": "web",
-        "transactions": 38,
-        "gross": 748.63,
-        "net": 748.63
+        "transactions": 68,
+        "gross": 1413.3,
+        "net": 1413.3
       },
       {
         "channel": "roku",
-        "transactions": 28,
-        "gross": 598.67,
-        "net": 598.67
+        "transactions": 38,
+        "gross": 807.56,
+        "net": 807.56
       },
       {
         "channel": "android",
@@ -17802,77 +17865,17 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "channel": "amazon_fire",
-        "transactions": 3,
-        "gross": 25.96,
-        "net": 25.96
+        "transactions": 2,
+        "gross": 5.98,
+        "net": 5.98
       }
     ],
     "dailyTrend": [
       {
-        "date": "2026-07-03",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
-      },
-      {
-        "date": "2026-07-05",
-        "transactions": 1,
-        "gross": 14.99,
-        "net": 14.99
-      },
-      {
-        "date": "2026-07-08",
-        "transactions": 2,
-        "gross": 29.98,
-        "net": 29.98
-      },
-      {
-        "date": "2026-07-14",
-        "transactions": 4,
-        "gross": 22.97,
-        "net": 22.97
-      },
-      {
-        "date": "2026-07-20",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
-      },
-      {
-        "date": "2026-07-21",
-        "transactions": 2,
-        "gross": 22.97,
-        "net": 22.97
-      },
-      {
-        "date": "2026-07-25",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98
-      },
-      {
-        "date": "2026-07-26",
-        "transactions": 1,
-        "gross": 20.99,
-        "net": 20.99
-      },
-      {
-        "date": "2026-07-27",
-        "transactions": 6,
-        "gross": 118.93,
-        "net": 118.93
-      },
-      {
-        "date": "2026-07-28",
-        "transactions": 2,
-        "gross": 41.98,
-        "net": 41.98
-      },
-      {
-        "date": "2026-07-29",
-        "transactions": 4,
-        "gross": 116.95,
-        "net": 116.95
+        "date": "2026-08-03",
+        "transactions": 56,
+        "gross": 1173.42,
+        "net": 1173.42
       },
       {
         "date": "2026-07-30",
@@ -17891,9 +17894,75 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "transactions": 21,
         "gross": 438.77,
         "net": 438.77
+      },
+      {
+        "date": "2026-08-02",
+        "transactions": 9,
+        "gross": 188.91,
+        "net": 188.91
+      },
+      {
+        "date": "2026-07-27",
+        "transactions": 6,
+        "gross": 118.93,
+        "net": 118.93
+      },
+      {
+        "date": "2026-07-29",
+        "transactions": 4,
+        "gross": 116.95,
+        "net": 116.95
+      },
+      {
+        "date": "2026-07-28",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98
+      },
+      {
+        "date": "2026-07-14",
+        "transactions": 3,
+        "gross": 37.96,
+        "net": 37.96
+      },
+      {
+        "date": "2026-07-08",
+        "transactions": 2,
+        "gross": 29.98,
+        "net": 29.98
+      },
+      {
+        "date": "2026-07-21",
+        "transactions": 2,
+        "gross": 22.97,
+        "net": 22.97
+      },
+      {
+        "date": "2026-07-26",
+        "transactions": 1,
+        "gross": 20.99,
+        "net": 20.99
+      },
+      {
+        "date": "2026-07-25",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-20",
+        "transactions": 1,
+        "gross": 19.98,
+        "net": 19.98
+      },
+      {
+        "date": "2026-07-05",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99
       }
     ],
-    "note": "Fresh Aug 2 aggregate export. Customer emails and individual customer rows are intentionally excluded. The latest seven-day window shows 107 paid TVOD transactions / $2,285.89. The Ark title family accounts for 101 transactions / $2,185.97, and The Ark - Season 3 alone accounts for 97 transactions / $2,036.03. Do not add this TVOD export to Visible Platform Sales until it is reconciled against Stripe, Roku, Apple, and other platform-specific transaction feeds.",
+    "note": "Fresh Aug 4 aggregate export. Customer emails and individual customer rows are intentionally excluded. The full export covers 182 paid TVOD transactions / $3,794.08 net from 2026-07-05\u20132026-08-03. The Ark title family totals 121 transactions / $2,602.74; The Librarians title family totals 52 transactions / $1,070.45. Do not add this TVOD export to Visible Platform Sales until it is reconciled against Stripe, Roku, Apple, and other platform-specific transaction feeds.",
     "privacyNote": "Aggregated only; no customer emails or individual customer records are exposed.",
     "sourceUrl": null
   },
@@ -18429,7 +18498,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "Source fill-rate values can exceed 100% because multiple ads/ad-pod impressions can be served per request; the dashboard labels this as impressions per request.",
       "The export is manually supplied and must be refreshed weekly before the dashboard can treat this section as current."
     ],
-    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26–Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
+    "plainEnglish": "DotStudios app ad-serving data shows 52,316 in-app ad impressions from 37,918 ad requests for Jul 26\u2013Aug 1, with 931 errors. This gives the team a real app monetization delivery signal that GA4 alone does not provide, but it still needs revenue/yield data before it can answer true monetization performance.",
     "weeklyReminderRecommendation": "Ask the user to upload the DotStudios title-view and app-ad exports each Monday morning before the dashboard refresh."
   },
   "sourceStatus": {
@@ -18440,7 +18509,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "Apple manual": "CURRENT_MANUAL_UPDATED",
     "Meta email": "STALE_NO_NEW_REPORT",
     "Google Ads": "STALE_RATE_LIMITED",
-    "YouTube": "CONNECTED"
+    "YouTube": "CONNECTED",
+    "TVOD manual export": "UPDATED_AGGREGATE_2026-08-04"
   },
   "refreshAuditNotes": [
     {
@@ -20224,6 +20294,19 @@ function renderTvodTitleRevenue() {
   $('#tvod-title-revenue-summary').innerHTML = cards
     .map(([label, value, detail]) => usageStat(label, value, detail))
     .join('');
+
+  const familyTotals = tv.familyTotals || [];
+  renderTable(
+    '#tvod-title-family-table',
+    ['Title family', 'Transactions', 'Gross', 'Net'],
+    familyTotals,
+    (row) => [
+      `<strong>${escapeHtml(row.family || 'Unknown')}</strong>`,
+      fmt.number(row.transactions),
+      fmt.currency(row.gross),
+      fmt.currency(row.net),
+    ],
+  );
 
   const titles = (tv.topTitlesByNet || [])
     .filter((row) => !_enRowIsLive(row))
