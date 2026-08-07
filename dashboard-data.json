@@ -27460,7 +27460,7 @@
     "source": "YouTube Analytics connector, ElectricNOW channel",
     "connectorStatus": "CONNECTED_PARTIAL",
     "period": "Jul 31-Aug 4, 2026",
-    "periodNote": "YouTube connector returned rows through Aug 4 during the Aug 7 refresh; Aug 5-Aug 6 are marked pending until YouTube finalizes or returns those dates.",
+    "periodNote": "YouTube connector returned rows through Aug 4 during the Aug 7 refresh; Aug 5-Aug 6 are marked pending until YouTube finalizes or returns those dates. Year-to-date YouTube income is preserved from the last successful cumulative pull through Jul 27, 2026 because the Aug 7 partial connector response did not include updated YTD fields.",
     "isPlatformSales": false,
     "revenueType": "estimated YouTube ad revenue",
     "totals": {
@@ -27470,7 +27470,8 @@
       "averageViewDuration": 1265,
       "averageViewDurationLabel": "21m 05s",
       "estimatedRevenue": 2893.63,
-      "adImpressions": 745965
+      "adImpressions": 745965,
+      "estimatedAdRevenue": 2893.63
     },
     "kpis": [
       {
@@ -27492,6 +27493,12 @@
         "detail": "Estimated YouTube revenue, separate from ElectricNOW platform sales"
       },
       {
+        "key": "estimatedRevenueYtd",
+        "label": "YTD YouTube income",
+        "value": 98785.811,
+        "detail": "Preserved last successful cumulative YouTube estimate through Jul 27, 2026; not ElectricNOW app sales."
+      },
+      {
         "key": "adImpressions",
         "label": "YouTube ad impressions",
         "value": 745965,
@@ -27505,7 +27512,8 @@
         "estimatedMinutesWatched": 858346,
         "estimatedHoursWatched": 14305.77,
         "estimatedRevenue": 580.36,
-        "adImpressions": 146372
+        "adImpressions": 146372,
+        "estimatedAdRevenue": 580.36
       },
       {
         "date": "2026-08-01",
@@ -27513,7 +27521,8 @@
         "estimatedMinutesWatched": 842876,
         "estimatedHoursWatched": 14047.93,
         "estimatedRevenue": 569.15,
-        "adImpressions": 142675
+        "adImpressions": 142675,
+        "estimatedAdRevenue": 569.15
       },
       {
         "date": "2026-08-02",
@@ -27521,7 +27530,8 @@
         "estimatedMinutesWatched": 868952,
         "estimatedHoursWatched": 14482.53,
         "estimatedRevenue": 579.76,
-        "adImpressions": 150949
+        "adImpressions": 150949,
+        "estimatedAdRevenue": 579.76
       },
       {
         "date": "2026-08-03",
@@ -27529,7 +27539,8 @@
         "estimatedMinutesWatched": 924740,
         "estimatedHoursWatched": 15412.33,
         "estimatedRevenue": 614.16,
-        "adImpressions": 161560
+        "adImpressions": 161560,
+        "estimatedAdRevenue": 614.16
       },
       {
         "date": "2026-08-04",
@@ -27537,10 +27548,27 @@
         "estimatedMinutesWatched": 826795,
         "estimatedHoursWatched": 13779.92,
         "estimatedRevenue": 550.21,
-        "adImpressions": 144409
+        "adImpressions": 144409,
+        "estimatedAdRevenue": 550.21
       }
     ],
-    "note": "Partial current rows are preserved and labeled; missing dates are not zeroed."
+    "note": "Partial current rows are preserved and labeled; missing dates are not zeroed.",
+    "ytdRevenue": 98785.811,
+    "ytdViews": 6240229,
+    "ytdHoursWatched": 2660146.63,
+    "ytdAdImpressions": 27533044,
+    "ytdMonetizedPlaybacks": 4833550,
+    "yearToDate": {
+      "ytdRevenue": 98785.811,
+      "ytdViews": 6240229,
+      "ytdHoursWatched": 2660146.63,
+      "ytdAdImpressions": 27533044,
+      "ytdMonetizedPlaybacks": 4833550,
+      "sourcePeriod": "Jan 1-Jul 27, 2026",
+      "status": "PRESERVED_LAST_SUCCESSFUL",
+      "note": "YouTube YTD income is preserved from the last successful cumulative YouTube pull. The Aug 7 YouTube connector response returned only partial latest-period rows through Aug 4 and did not return updated YTD fields, so this YTD value is labeled preserved/stale rather than zeroed or hidden."
+    },
+    "ytdFreshnessNote": "YouTube YTD income is preserved from the last successful cumulative YouTube pull. The Aug 7 YouTube connector response returned only partial latest-period rows through Aug 4 and did not return updated YTD fields, so this YTD value is labeled preserved/stale rather than zeroed or hidden."
   },
   "appTrendNote": "This trend charts total app/platform sessions in green alongside daily active users in blue for the complete week ending Aug 6, 2026. Sessions were 15,274 (+23.2% vs Jul 24-Jul 30), active users were 5,614 (+11.7%), and total engaged hours were 6,750.8 (+11.6%). Landing-page acquisition traffic remains excluded from platform-audience totals.",
   "ytdTrend": [
@@ -28445,7 +28473,8 @@
       "type": "aug3_stripe_reconnect_refresh",
       "summary": "Started from the Aug 3 refresh candidate, replaced stale Stripe auth-required data with a fresh connector pull, updated Apple manual downloads/sales to the Aug 3 snapshot, and removed the retired web-acquisition section from visible scorecard groups.",
       "blockers": []
-    }
+    },
+    "YouTube YTD income restored as preserved/stale from the last successful cumulative pull through Jul 27, 2026; Aug 7 YouTube data remains partial through Aug 4 and did not include updated YTD fields."
   ],
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
