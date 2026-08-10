@@ -28492,7 +28492,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 12,
         "y": 34,
-        "stateCode": "CA"
+        "stateCode": "CA",
+        "userEngagementDuration": 3316678.0,
+        "totalEngagementHours": 921.2994444444445
       },
       {
         "state": "Texas",
@@ -28508,7 +28510,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 42,
         "y": 48,
-        "stateCode": "TX"
+        "stateCode": "TX",
+        "userEngagementDuration": 2213473.0,
+        "totalEngagementHours": 614.8536111111111
       },
       {
         "state": "Florida",
@@ -28524,7 +28528,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 70,
         "y": 58,
-        "stateCode": "FL"
+        "stateCode": "FL",
+        "userEngagementDuration": 1246035.0,
+        "totalEngagementHours": 346.12083333333334
       },
       {
         "state": "New York",
@@ -28540,7 +28546,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 79,
         "y": 16,
-        "stateCode": "NY"
+        "stateCode": "NY",
+        "userEngagementDuration": 809032.0,
+        "totalEngagementHours": 224.73111111111112
       },
       {
         "state": "Pennsylvania",
@@ -28556,7 +28564,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 76,
         "y": 23,
-        "stateCode": "PA"
+        "stateCode": "PA",
+        "userEngagementDuration": 853172.0,
+        "totalEngagementHours": 236.9922222222222
       },
       {
         "state": "Ohio",
@@ -28572,7 +28582,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 65,
         "y": 25,
-        "stateCode": "OH"
+        "stateCode": "OH",
+        "userEngagementDuration": 550028.0,
+        "totalEngagementHours": 152.78555555555556
       },
       {
         "state": "North Carolina",
@@ -28588,7 +28600,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 73,
         "y": 39,
-        "stateCode": "NC"
+        "stateCode": "NC",
+        "userEngagementDuration": 687028.0,
+        "totalEngagementHours": 190.8411111111111
       },
       {
         "state": "Illinois",
@@ -28604,7 +28618,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 58,
         "y": 28,
-        "stateCode": "IL"
+        "stateCode": "IL",
+        "userEngagementDuration": 612725.0,
+        "totalEngagementHours": 170.20138888888889
       },
       {
         "state": "Michigan",
@@ -28620,7 +28636,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 62,
         "y": 18,
-        "stateCode": "MI"
+        "stateCode": "MI",
+        "userEngagementDuration": 493149.0,
+        "totalEngagementHours": 136.98583333333335
       },
       {
         "state": "Georgia",
@@ -28636,7 +28654,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 65,
         "y": 46,
-        "stateCode": "GA"
+        "stateCode": "GA",
+        "userEngagementDuration": 460878.0,
+        "totalEngagementHours": 128.02166666666668
       },
       {
         "state": "Virginia",
@@ -28652,7 +28672,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 75,
         "y": 32,
-        "stateCode": "VA"
+        "stateCode": "VA",
+        "userEngagementDuration": 402050.0,
+        "totalEngagementHours": 111.68055555555556
       },
       {
         "state": "Indiana",
@@ -28668,7 +28690,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 61,
         "y": 27,
-        "stateCode": "IN"
+        "stateCode": "IN",
+        "userEngagementDuration": 445849.0,
+        "totalEngagementHours": 123.84694444444445
       },
       {
         "state": "Tennessee",
@@ -28684,7 +28708,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 62,
         "y": 39,
-        "stateCode": "TN"
+        "stateCode": "TN",
+        "userEngagementDuration": 474205.0,
+        "totalEngagementHours": 131.7236111111111
       },
       {
         "state": "Washington",
@@ -28700,7 +28726,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 15,
         "y": 6,
-        "stateCode": "WA"
+        "stateCode": "WA",
+        "userEngagementDuration": 314525.0,
+        "totalEngagementHours": 87.36805555555556
       },
       {
         "state": "Missouri",
@@ -28716,7 +28744,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 54,
         "y": 32,
-        "stateCode": "MO"
+        "stateCode": "MO",
+        "userEngagementDuration": 369392.0,
+        "totalEngagementHours": 102.60888888888888
       },
       {
         "state": "Arizona",
@@ -28732,7 +28762,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 24,
         "y": 42,
-        "stateCode": "AZ"
+        "stateCode": "AZ",
+        "userEngagementDuration": 347795.0,
+        "totalEngagementHours": 96.60972222222222
       },
       {
         "state": "Maryland",
@@ -28748,7 +28780,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 79,
         "y": 28,
-        "stateCode": "MD"
+        "stateCode": "MD",
+        "userEngagementDuration": 690735.0,
+        "totalEngagementHours": 191.87083333333334
       },
       {
         "state": "New Jersey",
@@ -28764,7 +28798,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 80,
         "y": 24,
-        "stateCode": "NJ"
+        "stateCode": "NJ",
+        "userEngagementDuration": 541592.0,
+        "totalEngagementHours": 150.44222222222223
       },
       {
         "state": "Alabama",
@@ -28780,7 +28816,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 61,
         "y": 46,
-        "stateCode": "AL"
+        "stateCode": "AL",
+        "userEngagementDuration": 388121.0,
+        "totalEngagementHours": 107.81138888888889
       },
       {
         "state": "Colorado",
@@ -28796,7 +28834,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 34,
         "y": 32,
-        "stateCode": "CO"
+        "stateCode": "CO",
+        "userEngagementDuration": 424043.0,
+        "totalEngagementHours": 117.78972222222222
       },
       {
         "state": "Minnesota",
@@ -28812,7 +28852,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 51,
         "y": 14,
-        "stateCode": "MN"
+        "stateCode": "MN",
+        "userEngagementDuration": 735035.0,
+        "totalEngagementHours": 204.17638888888888
       },
       {
         "state": "Oregon",
@@ -28828,7 +28870,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 14,
         "y": 15,
-        "stateCode": "OR"
+        "stateCode": "OR",
+        "userEngagementDuration": 388632.0,
+        "totalEngagementHours": 107.95333333333333
       },
       {
         "state": "Wisconsin",
@@ -28844,7 +28888,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 55,
         "y": 16,
-        "stateCode": "WI"
+        "stateCode": "WI",
+        "userEngagementDuration": 401563.0,
+        "totalEngagementHours": 111.54527777777778
       },
       {
         "state": "Massachusetts",
@@ -28860,7 +28906,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 84,
         "y": 18,
-        "stateCode": "MA"
+        "stateCode": "MA",
+        "userEngagementDuration": 437361.0,
+        "totalEngagementHours": 121.48916666666666
       },
       {
         "state": "Kentucky",
@@ -28876,7 +28924,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 64,
         "y": 33,
-        "stateCode": "KY"
+        "stateCode": "KY",
+        "userEngagementDuration": 298142.0,
+        "totalEngagementHours": 82.81722222222223
       },
       {
         "state": "South Carolina",
@@ -28892,7 +28942,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 70,
         "y": 43,
-        "stateCode": "SC"
+        "stateCode": "SC",
+        "userEngagementDuration": 313209.0,
+        "totalEngagementHours": 87.0025
       },
       {
         "state": "Oklahoma",
@@ -28908,7 +28960,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 46,
         "y": 40,
-        "stateCode": "OK"
+        "stateCode": "OK",
+        "userEngagementDuration": 230714.0,
+        "totalEngagementHours": 64.08722222222222
       },
       {
         "state": "Louisiana",
@@ -28924,7 +28978,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 56,
         "y": 50,
-        "stateCode": "LA"
+        "stateCode": "LA",
+        "userEngagementDuration": 559021.0,
+        "totalEngagementHours": 155.2836111111111
       },
       {
         "state": "Arkansas",
@@ -28940,7 +28996,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 56,
         "y": 42,
-        "stateCode": "AR"
+        "stateCode": "AR",
+        "userEngagementDuration": 196897.0,
+        "totalEngagementHours": 54.69361111111111
       },
       {
         "state": "Kansas",
@@ -28956,7 +29014,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 45,
         "y": 32,
-        "stateCode": "KS"
+        "stateCode": "KS",
+        "userEngagementDuration": 271113.0,
+        "totalEngagementHours": 75.30916666666667
       },
       {
         "state": "Connecticut",
@@ -28972,7 +29032,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 83,
         "y": 20,
-        "stateCode": "CT"
+        "stateCode": "CT",
+        "userEngagementDuration": 162443.0,
+        "totalEngagementHours": 45.12305555555555
       },
       {
         "state": "Mississippi",
@@ -28988,7 +29050,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 59,
         "y": 46,
-        "stateCode": "MS"
+        "stateCode": "MS",
+        "userEngagementDuration": 151165.0,
+        "totalEngagementHours": 41.99027777777778
       },
       {
         "state": "Iowa",
@@ -29004,7 +29068,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 53,
         "y": 24,
-        "stateCode": "IA"
+        "stateCode": "IA",
+        "userEngagementDuration": 165061.0,
+        "totalEngagementHours": 45.85027777777778
       },
       {
         "state": "Nevada",
@@ -29020,7 +29086,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 17,
         "y": 28,
-        "stateCode": "NV"
+        "stateCode": "NV",
+        "userEngagementDuration": 346571.0,
+        "totalEngagementHours": 96.26972222222223
       },
       {
         "state": "Utah",
@@ -29036,7 +29104,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 23,
         "y": 28,
-        "stateCode": "UT"
+        "stateCode": "UT",
+        "userEngagementDuration": 107928.0,
+        "totalEngagementHours": 29.98
       },
       {
         "state": "Idaho",
@@ -29052,7 +29122,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 22,
         "y": 16,
-        "stateCode": "ID"
+        "stateCode": "ID",
+        "userEngagementDuration": 98909.0,
+        "totalEngagementHours": 27.474722222222223
       },
       {
         "state": "West Virginia",
@@ -29068,7 +29140,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 72,
         "y": 30,
-        "stateCode": "WV"
+        "stateCode": "WV",
+        "userEngagementDuration": 324721.0,
+        "totalEngagementHours": 90.20027777777777
       },
       {
         "state": "Nebraska",
@@ -29084,7 +29158,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 45,
         "y": 24,
-        "stateCode": "NE"
+        "stateCode": "NE",
+        "userEngagementDuration": 77109.0,
+        "totalEngagementHours": 21.419166666666666
       },
       {
         "state": "Maine",
@@ -29100,7 +29176,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 85,
         "y": 8,
-        "stateCode": "ME"
+        "stateCode": "ME",
+        "userEngagementDuration": 162870.0,
+        "totalEngagementHours": 45.24166666666667
       },
       {
         "state": "New Mexico",
@@ -29116,7 +29194,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 32,
         "y": 42,
-        "stateCode": "NM"
+        "stateCode": "NM",
+        "userEngagementDuration": 34259.0,
+        "totalEngagementHours": 9.516388888888889
       },
       {
         "state": "New Hampshire",
@@ -29132,7 +29212,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 84,
         "y": 15,
-        "stateCode": "NH"
+        "stateCode": "NH",
+        "userEngagementDuration": 50178.0,
+        "totalEngagementHours": 13.938333333333333
       },
       {
         "state": "District of Columbia",
@@ -29148,7 +29230,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 79,
         "y": 29,
-        "stateCode": "DC"
+        "stateCode": "DC",
+        "userEngagementDuration": 7836.0,
+        "totalEngagementHours": 2.1766666666666667
       },
       {
         "state": "Hawaii",
@@ -29164,7 +29248,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 18,
         "y": 56,
-        "stateCode": "HI"
+        "stateCode": "HI",
+        "userEngagementDuration": 56978.0,
+        "totalEngagementHours": 15.827222222222222
       },
       {
         "state": "Rhode Island",
@@ -29180,7 +29266,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 85,
         "y": 19,
-        "stateCode": "RI"
+        "stateCode": "RI",
+        "userEngagementDuration": 51421.0,
+        "totalEngagementHours": 14.283611111111112
       },
       {
         "state": "(not set)",
@@ -29193,7 +29281,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "screenPageViews": 0,
         "eventCount": 0,
         "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 3-Aug 9, 2026"
+        "period": "Aug 3-Aug 9, 2026",
+        "userEngagementDuration": 1614.0,
+        "totalEngagementHours": 0.4483333333333333
       },
       {
         "state": "Alaska",
@@ -29209,7 +29299,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 7,
         "y": 56,
-        "stateCode": "AK"
+        "stateCode": "AK",
+        "userEngagementDuration": 23276.0,
+        "totalEngagementHours": 6.4655555555555555
       },
       {
         "state": "South Dakota",
@@ -29225,7 +29317,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 44,
         "y": 17,
-        "stateCode": "SD"
+        "stateCode": "SD",
+        "userEngagementDuration": 7402.0,
+        "totalEngagementHours": 2.056111111111111
       },
       {
         "state": "Montana",
@@ -29241,7 +29335,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 29,
         "y": 10,
-        "stateCode": "MT"
+        "stateCode": "MT",
+        "userEngagementDuration": 78113.0,
+        "totalEngagementHours": 21.698055555555555
       },
       {
         "state": "Delaware",
@@ -29257,7 +29353,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 80,
         "y": 27,
-        "stateCode": "DE"
+        "stateCode": "DE",
+        "userEngagementDuration": 14234.0,
+        "totalEngagementHours": 3.953888888888889
       },
       {
         "state": "Vermont",
@@ -29273,7 +29371,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 82,
         "y": 13,
-        "stateCode": "VT"
+        "stateCode": "VT",
+        "userEngagementDuration": 71531.0,
+        "totalEngagementHours": 19.869722222222222
       },
       {
         "state": "North Dakota",
@@ -29289,7 +29389,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 44,
         "y": 10,
-        "stateCode": "ND"
+        "stateCode": "ND",
+        "userEngagementDuration": 22393.0,
+        "totalEngagementHours": 6.220277777777778
       },
       {
         "state": "Wyoming",
@@ -29305,7 +29407,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 30,
         "y": 20,
-        "stateCode": "WY"
+        "stateCode": "WY",
+        "userEngagementDuration": 59775.0,
+        "totalEngagementHours": 16.604166666666668
       }
     ],
     "topStates": [
@@ -29323,7 +29427,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 12,
         "y": 34,
-        "stateCode": "CA"
+        "stateCode": "CA",
+        "userEngagementDuration": 3316678.0,
+        "totalEngagementHours": 921.2994444444445
       },
       {
         "state": "Texas",
@@ -29339,7 +29445,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 42,
         "y": 48,
-        "stateCode": "TX"
+        "stateCode": "TX",
+        "userEngagementDuration": 2213473.0,
+        "totalEngagementHours": 614.8536111111111
       },
       {
         "state": "Florida",
@@ -29355,7 +29463,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 70,
         "y": 58,
-        "stateCode": "FL"
+        "stateCode": "FL",
+        "userEngagementDuration": 1246035.0,
+        "totalEngagementHours": 346.12083333333334
       },
       {
         "state": "New York",
@@ -29371,7 +29481,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 79,
         "y": 16,
-        "stateCode": "NY"
+        "stateCode": "NY",
+        "userEngagementDuration": 809032.0,
+        "totalEngagementHours": 224.73111111111112
       },
       {
         "state": "Pennsylvania",
@@ -29387,7 +29499,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 76,
         "y": 23,
-        "stateCode": "PA"
+        "stateCode": "PA",
+        "userEngagementDuration": 853172.0,
+        "totalEngagementHours": 236.9922222222222
       },
       {
         "state": "Ohio",
@@ -29403,7 +29517,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 65,
         "y": 25,
-        "stateCode": "OH"
+        "stateCode": "OH",
+        "userEngagementDuration": 550028.0,
+        "totalEngagementHours": 152.78555555555556
       },
       {
         "state": "North Carolina",
@@ -29419,7 +29535,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 73,
         "y": 39,
-        "stateCode": "NC"
+        "stateCode": "NC",
+        "userEngagementDuration": 687028.0,
+        "totalEngagementHours": 190.8411111111111
       },
       {
         "state": "Illinois",
@@ -29435,7 +29553,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 58,
         "y": 28,
-        "stateCode": "IL"
+        "stateCode": "IL",
+        "userEngagementDuration": 612725.0,
+        "totalEngagementHours": 170.20138888888889
       },
       {
         "state": "Michigan",
@@ -29451,7 +29571,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 62,
         "y": 18,
-        "stateCode": "MI"
+        "stateCode": "MI",
+        "userEngagementDuration": 493149.0,
+        "totalEngagementHours": 136.98583333333335
       },
       {
         "state": "Georgia",
@@ -29467,7 +29589,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 3-Aug 9, 2026",
         "x": 65,
         "y": 46,
-        "stateCode": "GA"
+        "stateCode": "GA",
+        "userEngagementDuration": 460878.0,
+        "totalEngagementHours": 128.02166666666668
       }
     ],
     "note": "Fresh GA4 region data; map should render from this non-empty state list.",
@@ -29475,7 +29599,18 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "status": "fixed",
       "updatedAt": "2026-08-10 13:04 PDT",
       "note": "State rows augmented with static x/y/stateCode values so the U.S. bubble map renders while keeping GA4 metrics unchanged."
-    }
+    },
+    "usTotals": {
+      "activeUsers": 5271,
+      "sessions": 12299,
+      "engagedSessions": 10169,
+      "engagementRate": 0.8268151882266851,
+      "userEngagementDuration": 21547979.0,
+      "totalEngagementHours": 5985.549722222222,
+      "avgHoursPerUser": 1.1355624591580766
+    },
+    "summaryLine": "U.S. state-level GA4 geography shows 5,271 active users, 12,299 sessions, 82.7% engagement rate, and 5,986 engagement hours for Aug 3-Aug 9, 2026.",
+    "methodology": "State-level totals are summed from the GA4 region pull for United States rows. Active users summed across states may differ slightly from a deduplicated country-level total when users appear in more than one state."
   },
   "auditNotes": [
     {
@@ -32093,7 +32228,7 @@ function usageStat(label, value, detail = '', exactTitle = '') {
 
 function engagementRateFrom(row) {
   const explicit = toFiniteNumber(row?.engagementRate);
-  if (explicit !== null) return explicit;
+  if (explicit !== null) return explicit <= 1 ? explicit * 100 : explicit;
   const engaged = toFiniteNumber(row?.engagedSessions);
   const sessions = toFiniteNumber(row?.sessions);
   if (engaged === null || sessions === null || sessions <= 0) return null;
@@ -33192,14 +33327,29 @@ function renderUsGeography() {
   const noteEl = $('#us-geography-note');
   if (noteEl) noteEl.textContent = `Source: ${geo.source}. ${geo.summaryLine || ''}`;
 
-  const t = geo.usTotals || {};
+  const stateRowsForTotals = Array.isArray(geo.states) ? geo.states : [];
+  const derivedUsTotals = stateRowsForTotals.reduce((acc, s) => {
+    acc.activeUsers += toFiniteNumber(s.activeUsers) || 0;
+    acc.sessions += toFiniteNumber(s.sessions) || 0;
+    acc.engagedSessions += toFiniteNumber(s.engagedSessions) || 0;
+    acc.userEngagementDuration += toFiniteNumber(s.userEngagementDuration) || 0;
+    acc.totalEngagementHours += toFiniteNumber(s.totalEngagementHours) || 0;
+    return acc;
+  }, { activeUsers: 0, sessions: 0, engagedSessions: 0, userEngagementDuration: 0, totalEngagementHours: 0 });
+  if (!derivedUsTotals.totalEngagementHours && derivedUsTotals.userEngagementDuration) {
+    derivedUsTotals.totalEngagementHours = derivedUsTotals.userEngagementDuration / 3600;
+  }
+  const t = {
+    ...derivedUsTotals,
+    ...(geo.usTotals || {}),
+  };
   const totalEngagementHours = toFiniteNumber(t.totalEngagementHours);
   const activeUsers = toFiniteNumber(t.activeUsers);
   const avgHoursPerUser = totalEngagementHours !== null && activeUsers !== null && activeUsers > 0 ? totalEngagementHours / activeUsers : null;
   const kpisEl = $('#us-geography-kpis');
   if (kpisEl) {
     kpisEl.innerHTML = [
-      usageStat('U.S. active users', t.activeUsers, 'Deduplicated country-level GA4 count'),
+      usageStat('U.S. active users', t.activeUsers, 'State-rollup GA4 active users'),
       usageStat('Sessions', t.sessions, 'U.S. sessions this week'),
       usageStat('Engagement rate', fmt.percent(engagementRateFrom(t)), 'U.S. engaged sessions / sessions'),
       usageStat('Engagement hours', totalEngagementHours === null ? NOT_AVAILABLE : fmt.number(totalEngagementHours), 'U.S. GA4 engagement time'),
