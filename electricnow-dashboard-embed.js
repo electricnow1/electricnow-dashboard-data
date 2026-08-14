@@ -35,7 +35,7 @@
   }
 
 window.ELECTRICNOW_DASHBOARD_DATA = {
-  "generatedAt": "2026-08-10 12:56 PDT",
+  "generatedAt": "2026-08-14 07:39 PDT",
   "property": "properties/497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271, plus labeled connector/manual sources",
   "periods": {
@@ -3461,9 +3461,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "bullets": [
       "Traffic direction: active users were -9.4% week over week and sessions were -8.8%, while engagement rate moved only -0.2 percentage points, which means the audience was smaller but still highly engaged.",
       "Viewing depth: GA4 engaged hours were down week over week, but Roku separately reported 3,857 hours streamed and 71.7 average minutes per viewer in its latest app-engagement email.",
-      "Visible sales check: fresh Stripe plus Roku current-week data show $2,081.01 across 98 transactions for Aug 3-Aug 9, 2026. Apple’s latest manual snapshot remains preserved separately, and DotStudios TVOD remains preserved from Aug 7, so this card should not be read as total ElectricNOW sales.",
+      "Visible sales check: fresh Stripe plus Roku current-week data show $2,081.01 across 98 transactions for Aug 3-Aug 9, 2026. Apple’s latest manual snapshot now covers Aug 7-Aug 13, and DotStudios TVOD now reflects the fresh Aug 7-Aug 13 transaction export, so this card should not be read as total ElectricNOW sales.",
       "Paid acquisition verdict: acceptable but needs proof of viewing. Google Ads could not refresh because the connector/API version failed, and no new Meta-only email was found, so prior paid-campaign values are preserved rather than treated as current.",
-      "Caveat: GA4, Roku App Engagement, Roku Sales, Stripe current-week charges, YouTube current-period rows, Apple manual snapshots, DotStudios TVOD, Google Ads, and Meta are separate sources with different coverage; the dashboard should not imply true ROAS because ad-server revenue and some app-store sales remain incomplete."
+      "Caveat: GA4, Roku App Engagement, Roku Sales, Stripe current-week charges, YouTube current-period rows, Apple manual snapshots, including the fresh Aug 7-Aug 13 App Store Connect screenshot, DotStudios TVOD, Google Ads, and Meta are separate sources with different coverage; the dashboard should not imply true ROAS because ad-server revenue and some app-store sales remain incomplete."
     ],
     "period": "Aug 3-Aug 9, 2026",
     "comparisonPeriod": "Jul 27-Aug 2, 2026",
@@ -3502,8 +3502,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "YouTube returned only Jul 30-Aug 3 rows during the Aug 6 refresh, so YouTube Aug 4-Aug 5 should be treated as pending/partial."
   ],
   "salesSummary": {
-    "sourceLabel": "Fresh visible sales check — Stripe + Roku only",
-    "sourceDetail": "Fresh visible sales for Aug 3-Aug 9 combine Stripe and Roku only. Apple is preserved separately from the latest manual App Store Connect snapshot, and DotStudios TVOD remains a separate broader manual source that overlaps these channel checks.",
+    "sourceLabel": "Fresh source checks — DotStudios TVOD plus Apple manual snapshot",
+    "sourceDetail": "Fresh Aug 7-Aug 13 manual inputs now include DotStudios TVOD transaction export and Apple App Store Connect sales/download screenshots. DotStudios is the broader title/device TVOD source and overlaps Apple/Roku/web/android platform checks, so the dashboard does not add them together.",
     "stripe": {
       "sourceLabel": "Stripe-visible net payments",
       "sourceDetail": "Stripe connector refreshed Aug 10 after reauth for Aug 3-Aug 9, 2026; 59 successful current-week live charges totaling $1,265.40.",
@@ -8048,8 +8048,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     },
     "apple": {
       "sourceLabel": "Apple App Store manual sales",
-      "sourceDetail": "Apple App Store in-app purchase snapshots are manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30%. The latest Aug 7 snapshot covers Jul 31-Aug 6, 2026 and supersedes older overlapping aggregate snapshots for the current dashboard view. The latest Apple sales snapshot is revenue-only, so no transaction count is fabricated.",
-      "snapshotRange": "Jul 31-Aug 6, 2026",
+      "sourceDetail": "Apple App Store in-app purchase snapshots are manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30%. The latest Aug 14 snapshot covers Aug 7-Aug 13, 2026. The latest Apple sales snapshot is revenue-only, so no transaction count is fabricated.",
+      "snapshotRange": "Aug 7-Aug 13, 2026",
       "yearToDate": {
         "label": "Apple manual gross sales this year",
         "range": "Jan 1-Aug 6, 2026",
@@ -8216,86 +8216,95 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       "lastWeek": {
         "label": "Apple manual gross sales latest snapshot",
-        "range": "Jul 31-Aug 6, 2026",
+        "range": "Aug 7-Aug 13, 2026",
         "purchases": null,
-        "purchaseRevenue": 1406.32,
-        "developerRevShare": 984.42,
-        "note": "Latest App Store Connect gross sales screenshot; revenue-only source with no transaction count fabricated."
+        "purchaseRevenue": 648.69,
+        "developerRevShare": 454.08,
+        "downloads": 608,
+        "note": "Latest App Store Connect gross sales/download screenshot; revenue-only source with no transaction count fabricated."
       },
       "latestSnapshot": {
         "label": "Apple sales latest manual snapshot",
-        "range": "Jul 29-Aug 4, 2026",
+        "range": "Aug 7-Aug 13, 2026",
         "purchases": null,
-        "purchaseRevenue": 1095.5,
-        "developerRevShare": 766.85,
-        "downloads": 434,
+        "purchaseRevenue": 648.69,
+        "developerRevShare": 454.08,
+        "downloads": 608,
         "note": "Manual Apple App Store Connect snapshot. Sales are gross revenue by day; transaction count was not provided."
       },
       "dailyTrend": [
         {
-          "date": "Jul 29",
-          "rawDate": "20260729",
+          "date": "Aug 7",
+          "rawDate": "20260807",
           "purchases": null,
-          "purchaseRevenue": 52.5,
-          "developerRevShare": 36.75,
+          "purchaseRevenue": 104.95,
+          "developerRevShare": 73.46,
+          "downloads": 101,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
-          "date": "Jul 30",
-          "rawDate": "20260730",
+          "date": "Aug 8",
+          "rawDate": "20260808",
           "purchases": null,
-          "purchaseRevenue": 308.7,
-          "developerRevShare": 216.09,
+          "purchaseRevenue": 145.93,
+          "developerRevShare": 102.15,
+          "downloads": 87,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
-          "date": "Jul 31",
-          "rawDate": "20260731",
+          "date": "Aug 9",
+          "rawDate": "20260809",
           "purchases": null,
-          "purchaseRevenue": 132.3,
-          "developerRevShare": 92.61,
+          "purchaseRevenue": 41.98,
+          "developerRevShare": 29.39,
+          "downloads": 110,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
-          "date": "Aug 1",
-          "rawDate": "20260801",
+          "date": "Aug 10",
+          "rawDate": "20260810",
           "purchases": null,
-          "purchaseRevenue": 161,
-          "developerRevShare": 112.7,
+          "purchaseRevenue": 82.96,
+          "developerRevShare": 58.07,
+          "downloads": 124,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
-          "date": "Aug 2",
-          "rawDate": "20260802",
+          "date": "Aug 11",
+          "rawDate": "20260811",
           "purchases": null,
-          "purchaseRevenue": 44.1,
-          "developerRevShare": 30.87,
+          "purchaseRevenue": 104.95,
+          "developerRevShare": 73.46,
+          "downloads": 104,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
-          "date": "Aug 3",
-          "rawDate": "20260803",
+          "date": "Aug 12",
+          "rawDate": "20260812",
           "purchases": null,
-          "purchaseRevenue": 279.3,
-          "developerRevShare": 195.51,
+          "purchaseRevenue": 41.98,
+          "developerRevShare": 29.39,
+          "downloads": 47,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         },
         {
-          "date": "Aug 4",
-          "rawDate": "20260804",
+          "date": "Aug 13",
+          "rawDate": "20260813",
           "purchases": null,
-          "purchaseRevenue": 117.6,
-          "developerRevShare": 82.32,
+          "purchaseRevenue": 125.94,
+          "developerRevShare": 88.16,
+          "downloads": 35,
           "note": "Aggregate Apple revenue only; transaction count unavailable."
         }
       ],
       "latestSevenDay": {
         "label": "Apple manual gross sales latest snapshot",
-        "range": "Jul 31-Aug 6, 2026",
+        "range": "Aug 7-Aug 13, 2026",
         "purchases": null,
-        "purchaseRevenue": 1406.32,
-        "developerRevShare": 984.42,
-        "note": "Latest App Store Connect gross sales screenshot; revenue-only source with no transaction count fabricated."
+        "purchaseRevenue": 648.69,
+        "developerRevShare": 454.08,
+        "downloads": 608,
+        "note": "Latest App Store Connect gross sales/download screenshot; revenue-only source with no transaction count fabricated."
       }
     },
     "sourceBreakout": [
@@ -10774,16 +10783,14 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "note": "Purchase count includes Stripe + Roku only for this window; Apple latest snapshot adds revenue but has no transaction count."
     },
     "currentCompleteWeek": {
-      "period": "Aug 3-Aug 9, 2026",
-      "knownFreshGross": 2081.01,
-      "knownFreshTransactions": 98,
-      "stripeGross": 1265.4,
-      "stripeTransactions": 59,
-      "rokuGross": 815.61,
-      "rokuTransactions": 39,
-      "appleManualSnapshotGrossPreserved": 1406.32,
-      "appleManualSnapshotPeriod": "Jul 31-Aug 6, 2026",
-      "note": "Known visible platform sales for Aug 3-Aug 9 include fresh Stripe and Roku. Apple data for this exact week was not newly provided, so the last Apple manual snapshot is preserved separately and not represented as fresh. DotStudios TVOD remains the broader manual revenue reference when uploaded."
+      "label": "Fresh DotStudios TVOD and Apple manual checks",
+      "period": "Aug 7-Aug 13, 2026",
+      "dotStudiosTvodGross": 2317.84,
+      "dotStudiosTvodTransactions": 109,
+      "appleManualSnapshotGross": 648.69,
+      "appleManualSnapshotDownloads": 608,
+      "appleManualSnapshotPeriod": "Aug 7-Aug 13, 2026",
+      "note": "Fresh manual checks now include DotStudios TVOD and Apple App Store Connect for Aug 7-Aug 13. Do not add DotStudios to Apple/Roku/Stripe because the sources overlap; use DotStudios for current title/device TVOD detail and Apple as an Apple-only confirmation slice."
     },
     "weekToDate": {
       "label": "Visible source-snapshot sales in latest usage week",
@@ -12749,151 +12756,138 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "rokuRevenue": 815.61,
       "knownFreshVisibleTransactions": 98,
       "knownFreshVisibleRevenue": 2081.01,
-      "appleGrossRevenuePreserved": 1406.32,
-      "appleDownloadsPreserved": 388,
-      "appleInAppUnitsPreserved": 69,
-      "appleTotalUnitsPreserved": 457,
-      "appleSnapshotPeriod": "Jul 31-Aug 6, 2026",
-      "appleStatus": "stale_preserved",
+      "appleGrossRevenuePreserved": 648.69,
+      "appleDownloadsPreserved": 608,
+      "appleInAppUnitsPreserved": null,
+      "appleTotalUnitsPreserved": 608,
+      "appleSnapshotPeriod": "Aug 7-Aug 13, 2026",
+      "appleStatus": "fresh_manual_different_period",
       "knownVisibleRevenueWithPreservedAppleSnapshot": 3487.33,
       "dotStudiosHeadlineRevenuePreserved": 6940.32,
       "dotStudiosStatus": "stale_preserved_manual_source",
-      "note": "Fresh same-week visible sales combine Stripe and Roku only for Aug 3-Aug 9. Apple’s last manual snapshot is preserved from Jul 31-Aug 6 and shown separately; do not treat preserved Apple as fresh Aug 3-Aug 9. Do not add DotStudios TVOD totals to Stripe/Roku/Apple because the sources overlap."
+      "note": "Fresh same-week visible sales combine Stripe and Roku only for Aug 3-Aug 9. Apple now has a fresh manual snapshot for Aug 7-Aug 13, shown separately because it is a different source window. Do not add DotStudios TVOD totals to Stripe/Roku/Apple because the sources overlap."
     },
     "dotStudiosTvod": {
       "sourceLabel": "DotStudios TVOD dashboard export",
-      "period": "Jul 31-Aug 6, 2026",
-      "grossRevenue": 4089.99,
-      "netRevenue": 4089.99,
-      "transactions": 195,
+      "period": "Aug 7-Aug 13, 2026",
+      "grossRevenue": 2317.84,
+      "netRevenue": 2317.84,
+      "transactions": 109,
       "platformBreakout": [
         {
           "channel": "web",
-          "transactions": 68,
-          "gross": 1426.31,
-          "net": 1426.31,
-          "shareOfPaidNetPct": 34.9,
-          "shareOfTransactionsPct": 34.9
+          "transactions": 33,
+          "gross": 716.63,
+          "net": 716.63,
+          "shareOfPaidNetPct": 30.9,
+          "shareOfTransactionsPct": 30.3
         },
         {
           "channel": "apple",
-          "transactions": 68,
-          "gross": 1406.31,
-          "net": 1406.31,
-          "shareOfPaidNetPct": 34.4,
-          "shareOfTransactionsPct": 34.9
-        },
-        {
-          "channel": "roku",
-          "transactions": 41,
-          "gross": 891.56,
-          "net": 891.56,
-          "shareOfPaidNetPct": 21.8,
-          "shareOfTransactionsPct": 21
+          "transactions": 30,
+          "gross": 627.68,
+          "net": 627.68,
+          "shareOfPaidNetPct": 27.1,
+          "shareOfTransactionsPct": 27.5
         },
         {
           "channel": "android",
-          "transactions": 17,
-          "gross": 355.82,
-          "net": 355.82,
-          "shareOfPaidNetPct": 8.7,
-          "shareOfTransactionsPct": 8.7
+          "transactions": 28,
+          "gross": 587.72,
+          "net": 587.72,
+          "shareOfPaidNetPct": 25.4,
+          "shareOfTransactionsPct": 25.7
         },
         {
-          "channel": "amazon_fire",
-          "transactions": 1,
-          "gross": 9.99,
-          "net": 9.99,
-          "shareOfPaidNetPct": 0.2,
-          "shareOfTransactionsPct": 0.5
+          "channel": "roku",
+          "transactions": 18,
+          "gross": 385.81,
+          "net": 385.81,
+          "shareOfPaidNetPct": 16.6,
+          "shareOfTransactionsPct": 16.5
         }
       ],
       "titleBreakout": [
         {
-          "title": "The Ark - Season 3",
-          "transactions": 103,
-          "gross": 2161.97,
-          "net": 2161.97,
-          "shareOfPaidNetPct": 52.9
-        },
-        {
           "title": "The Librarians: The Next Chapter Season 2",
-          "transactions": 80,
-          "gross": 1679.2,
-          "net": 1679.2,
-          "shareOfPaidNetPct": 41.1
+          "transactions": 52,
+          "gross": 1091.48,
+          "net": 1091.48,
+          "shareOfPaidNetPct": 47.1,
+          "shareOfTransactionsPct": 47.7
         },
         {
-          "title": "Parent The Librarians: The Next Chapter",
+          "title": "The Ark - Season 3",
+          "transactions": 47,
+          "gross": 986.53,
+          "net": 986.53,
+          "shareOfPaidNetPct": 42.6,
+          "shareOfTransactionsPct": 43.1
+        },
+        {
+          "title": "The Ark - Season 1",
           "transactions": 3,
           "gross": 59.94,
           "net": 59.94,
-          "shareOfPaidNetPct": 1.5
+          "shareOfPaidNetPct": 2.6,
+          "shareOfTransactionsPct": 2.8
         },
         {
           "title": "The Ark",
           "transactions": 1,
           "gross": 54.99,
           "net": 54.99,
-          "shareOfPaidNetPct": 1.3
+          "shareOfPaidNetPct": 2.4,
+          "shareOfTransactionsPct": 0.9
         },
         {
-          "title": "The Librarians",
-          "transactions": 1,
-          "gross": 54.99,
-          "net": 54.99,
-          "shareOfPaidNetPct": 1.3
-        },
-        {
-          "title": "The Ark - Season 1",
+          "title": "Parent The Librarians: The Next Chapter",
           "transactions": 2,
           "gross": 39.96,
           "net": 39.96,
-          "shareOfPaidNetPct": 1
+          "shareOfPaidNetPct": 1.7,
+          "shareOfTransactionsPct": 1.8
         },
         {
           "title": "The Ark - Season 2",
-          "transactions": 1,
-          "gross": 19.98,
-          "net": 19.98,
-          "shareOfPaidNetPct": 0.5
-        },
-        {
-          "title": "Almost Paradise - Season 1",
-          "transactions": 1,
-          "gross": 9.99,
-          "net": 9.99,
-          "shareOfPaidNetPct": 0.2
-        },
-        {
-          "title": "The Librarian: Quest for the Spear",
           "transactions": 2,
-          "gross": 5.98,
-          "net": 5.98,
-          "shareOfPaidNetPct": 0.1
+          "gross": 39.96,
+          "net": 39.96,
+          "shareOfPaidNetPct": 1.7,
+          "shareOfTransactionsPct": 1.8
         },
         {
-          "title": "The Librarian: Return to King Solomon's Mines",
+          "title": "Leverage: Redemption",
           "transactions": 1,
-          "gross": 2.99,
-          "net": 2.99,
-          "shareOfPaidNetPct": 0.1
+          "gross": 29.99,
+          "net": 29.99,
+          "shareOfPaidNetPct": 1.3,
+          "shareOfTransactionsPct": 0.9
+        },
+        {
+          "title": "Somewhere in Montana",
+          "transactions": 1,
+          "gross": 14.99,
+          "net": 14.99,
+          "shareOfPaidNetPct": 0.6,
+          "shareOfTransactionsPct": 0.9
         }
       ],
       "note": "Best current title/platform TVOD view. Separate from, and overlapping with, Stripe/Roku/Apple source snapshots."
     },
     "appleManual": {
-      "salesGross": 1406.32,
-      "downloads": 388,
+      "salesGross": 648.69,
+      "downloads": 608,
       "updates": null,
-      "inAppUnits": 69,
-      "totalUnits": 457,
-      "period": "Jul 31-Aug 6, 2026",
-      "updatedAtUtc": "2026-08-07T16:21:00+00:00",
-      "status": "preserved_manual_no_new_apple_for_aug_10"
+      "inAppUnits": null,
+      "totalUnits": 608,
+      "period": "Aug 7-Aug 13, 2026",
+      "updatedAtUtc": "2026-08-14T07:39:00-07:00",
+      "status": "fresh_manual_aug_14",
+      "note": "Fresh App Store Connect screenshot for Aug 7-Aug 13. Apple revenue is a platform slice and may overlap DotStudios apple device rows."
     },
-    "visiblePlatformSalesDefinition": "Visible platform sales combine Stripe, Roku, and preserved manual Apple snapshots where available; they are not total ElectricNOW sales because Google Play and other stores/channels may be missing, and DotStudios TVOD may be broader than connector-visible sources.",
-    "reconciliationNote": "Use fresh same-week Stripe + Roku for current visible-source checks; use preserved Apple and DotStudios only as labeled manual snapshots. DotStudios is broader and overlaps platform sources, so it is not added to visible-source sales totals."
+    "visiblePlatformSalesDefinition": "Visible platform sales combine connector/manual platform slices where available; DotStudios TVOD is broader and overlaps these slices, so it is displayed separately as the current title/device TVOD source rather than added to platform sales.",
+    "reconciliationNote": "Use the fresh DotStudios Aug 7-Aug 13 export for current TVOD title/device performance. Use Apple’s fresh Aug 7-Aug 13 screenshot as an Apple-only platform check. Do not add the two together."
   },
   "contentUsage": {
     "period": "Jul 27-Aug 2, 2026",
@@ -15482,12 +15476,13 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   },
   "manualAppleSalesUpdate": {
     "sourceLabel": "Manual Apple App Store Connect sales snapshot",
-    "period": "Jul 31-Aug 6, 2026",
-    "grossRevenue": 1406.32,
-    "estimatedNetRevenue": 984.42,
-    "inAppUnits": 69,
-    "totalUnits": 457,
-    "note": "Manual Apple sales are preserved as source checks and may overlap DotStudios TVOD Apple-platform transactions."
+    "period": "Aug 7-Aug 13, 2026",
+    "grossRevenue": 648.69,
+    "estimatedNetRevenue": 454.08,
+    "downloads": 608,
+    "inAppUnits": null,
+    "totalUnits": 608,
+    "note": "Manual Apple sales are an Apple-only source check and may overlap DotStudios TVOD apple-platform transactions."
   },
   "googleAdsSummary": {
     "source": "Google Ads connector",
@@ -15852,115 +15847,114 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
   },
   "manualAppleDownloads": {
-    "downloads": 388,
-    "displayDownloads": "388",
+    "downloads": 608,
+    "displayDownloads": "608",
     "updates": null,
     "displayUpdates": null,
-    "inAppUnits": 69,
-    "totalUnits": 457,
-    "dailyAverage": 55,
+    "inAppUnits": null,
+    "totalUnits": 608,
+    "dailyAverage": 87,
     "updatesDailyAverage": null,
-    "start": "2026-07-31",
-    "end": "2026-08-06",
-    "period": "Jul 31-Aug 6, 2026",
+    "start": "2026-08-07",
+    "end": "2026-08-13",
+    "period": "Aug 7-Aug 13, 2026",
     "priorDownloads": 388,
     "priorUpdates": null,
     "priorPeriod": "Jul 31-Aug 6, 2026",
-    "deltaPct": 0,
+    "deltaPct": 56.7,
     "updatesDeltaPct": null,
     "product": "ElectricNOW",
     "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
     "territories": [
       {
         "territory": "United States",
-        "downloads": 388,
+        "downloads": 608,
         "deltaPct": null
       }
     ],
     "sourceLabel": "Manual Apple App Store Connect snapshot",
     "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-    "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
     "sourceScreenshots": [
       {
         "metric": "sales",
-        "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+        "path": "uploaded_attachments/cfb29ca050a24517966dde0d1d52d0d4/image.jpeg"
       },
       {
         "metric": "downloads",
-        "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+        "path": "uploaded_attachments/cfb29ca050a24517966dde0d1d52d0d4/image-1.jpeg"
       }
     ],
-    "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
-    "updatedAtUtc": "2026-08-07T16:21:00+00:00",
+    "note": "Manual Apple Connect screenshots for Aug 7-Aug 13, 2026. Sales screenshot totals $648.69 gross; download screenshot totals 608 downloads. Sales are an Apple-only source check and may overlap the DotStudios TVOD export's apple device rows.",
+    "updatedAtUtc": "2026-08-14T07:39:00-07:00",
     "daily": [
       {
-        "date": "2026-07-31",
-        "downloads": 55
+        "date": "2026-08-07",
+        "downloads": 101
       },
       {
-        "date": "2026-08-01",
-        "downloads": 50
+        "date": "2026-08-08",
+        "downloads": 87
       },
       {
-        "date": "2026-08-02",
-        "downloads": 41
+        "date": "2026-08-09",
+        "downloads": 110
       },
       {
-        "date": "2026-08-03",
-        "downloads": 44
+        "date": "2026-08-10",
+        "downloads": 124
       },
       {
-        "date": "2026-08-04",
-        "downloads": 43
+        "date": "2026-08-11",
+        "downloads": 104
       },
       {
-        "date": "2026-08-05",
-        "downloads": 82
+        "date": "2026-08-12",
+        "downloads": 47
       },
       {
-        "date": "2026-08-06",
-        "downloads": 73
+        "date": "2026-08-13",
+        "downloads": 35
       }
     ],
     "salesDaily": [
       {
-        "date": "2026-07-31",
-        "grossRevenue": 188.91,
-        "estimatedNetRevenue": 132.24
+        "date": "2026-08-07",
+        "grossRevenue": 104.95,
+        "estimatedNetRevenue": 73.46
       },
       {
-        "date": "2026-08-01",
-        "grossRevenue": 229.89,
-        "estimatedNetRevenue": 160.92
+        "date": "2026-08-08",
+        "grossRevenue": 145.93,
+        "estimatedNetRevenue": 102.15
       },
       {
-        "date": "2026-08-02",
-        "grossRevenue": 62.97,
-        "estimatedNetRevenue": 44.08
+        "date": "2026-08-09",
+        "grossRevenue": 41.98,
+        "estimatedNetRevenue": 29.39
       },
       {
-        "date": "2026-08-03",
-        "grossRevenue": 398.81,
-        "estimatedNetRevenue": 279.17
+        "date": "2026-08-10",
+        "grossRevenue": 82.96,
+        "estimatedNetRevenue": 58.07
       },
       {
-        "date": "2026-08-04",
-        "grossRevenue": 167.92,
-        "estimatedNetRevenue": 117.54
+        "date": "2026-08-11",
+        "grossRevenue": 104.95,
+        "estimatedNetRevenue": 73.46
       },
       {
-        "date": "2026-08-05",
-        "grossRevenue": 146.93,
-        "estimatedNetRevenue": 102.85
+        "date": "2026-08-12",
+        "grossRevenue": 41.98,
+        "estimatedNetRevenue": 29.39
       },
       {
-        "date": "2026-08-06",
-        "grossRevenue": 210.89,
-        "estimatedNetRevenue": 147.62
+        "date": "2026-08-13",
+        "grossRevenue": 125.94,
+        "estimatedNetRevenue": 88.16
       }
     ],
-    "salesGross": 1406.32,
-    "salesEstimatedNet": 984.42,
+    "salesGross": 648.69,
+    "salesEstimatedNet": 454.08,
     "priorSnapshot": {
       "downloads": 388,
       "displayDownloads": "388",
@@ -16072,7297 +16066,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "salesGross": 1406.32,
       "salesEstimatedNet": 984.42,
       "priorSnapshot": {
-        "downloads": 388,
-        "displayDownloads": "388",
-        "updates": null,
-        "displayUpdates": null,
-        "inAppUnits": 69,
-        "totalUnits": 457,
-        "dailyAverage": 55,
-        "updatesDailyAverage": null,
-        "start": "2026-07-31",
-        "end": "2026-08-06",
-        "period": "Jul 31-Aug 6, 2026",
-        "priorDownloads": 434,
-        "priorUpdates": null,
-        "priorPeriod": "Jul 29-Aug 4, 2026",
-        "deltaPct": -10.599078341013826,
-        "updatesDeltaPct": null,
-        "product": "ElectricNOW",
-        "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-        "territories": [
-          {
-            "territory": "United States",
-            "downloads": 388,
-            "deltaPct": null
-          }
-        ],
-        "sourceLabel": "Manual Apple App Store Connect snapshot",
-        "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-        "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-        "sourceScreenshots": [
-          {
-            "metric": "sales",
-            "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-          },
-          {
-            "metric": "downloads",
-            "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-          }
-        ],
-        "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
-        "updatedAtUtc": "2026-08-07T16:21:00+00:00",
-        "daily": [
-          {
-            "date": "2026-07-31",
-            "downloads": 55
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 41
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 44
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-05",
-            "downloads": 82
-          },
-          {
-            "date": "2026-08-06",
-            "downloads": 73
-          }
-        ],
-        "salesDaily": [
-          {
-            "date": "2026-07-31",
-            "grossRevenue": 188.91,
-            "estimatedNetRevenue": 132.24
-          },
-          {
-            "date": "2026-08-01",
-            "grossRevenue": 229.89,
-            "estimatedNetRevenue": 160.92
-          },
-          {
-            "date": "2026-08-02",
-            "grossRevenue": 62.97,
-            "estimatedNetRevenue": 44.08
-          },
-          {
-            "date": "2026-08-03",
-            "grossRevenue": 398.81,
-            "estimatedNetRevenue": 279.17
-          },
-          {
-            "date": "2026-08-04",
-            "grossRevenue": 167.92,
-            "estimatedNetRevenue": 117.54
-          },
-          {
-            "date": "2026-08-05",
-            "grossRevenue": 146.93,
-            "estimatedNetRevenue": 102.85
-          },
-          {
-            "date": "2026-08-06",
-            "grossRevenue": 210.89,
-            "estimatedNetRevenue": 147.62
-          }
-        ],
-        "salesGross": 1406.32,
-        "salesEstimatedNet": 984.42,
-        "priorSnapshot": {
-          "downloads": 434,
-          "displayDownloads": "434",
-          "updates": null,
-          "displayUpdates": null,
-          "dailyAverage": 62,
-          "updatesDailyAverage": null,
-          "start": "2026-07-29",
-          "end": "2026-08-04",
-          "period": "Jul 29-Aug 4, 2026",
-          "priorDownloads": 434,
-          "priorUpdates": null,
-          "priorPeriod": "Jul 29-Aug 4, 2026",
-          "deltaPct": 0,
-          "updatesDeltaPct": null,
-          "product": "ElectricNOW",
-          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-          "territories": [
-            {
-              "territory": "United States",
-              "downloads": 434,
-              "deltaPct": null
-            }
-          ],
-          "sourceLabel": "Manual Apple App Store Connect snapshot",
-          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-          "sourceScreenshots": [
-            {
-              "metric": "sales",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-            },
-            {
-              "metric": "downloads",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            }
-          ],
-          "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-          "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-          "daily": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "salesDaily": [
-            {
-              "date": "2026-07-29",
-              "grossRevenue": 52.5,
-              "estimatedNetRevenue": 36.75
-            },
-            {
-              "date": "2026-07-30",
-              "grossRevenue": 308.7,
-              "estimatedNetRevenue": 216.09
-            },
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 132.3,
-              "estimatedNetRevenue": 92.61
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 161,
-              "estimatedNetRevenue": 112.7
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 44.1,
-              "estimatedNetRevenue": 30.87
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 279.3,
-              "estimatedNetRevenue": 195.51
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 117.6,
-              "estimatedNetRevenue": 82.32
-            }
-          ],
-          "salesGross": 1095.5,
-          "salesEstimatedNet": 766.85,
-          "snapshots": [
-            {
-              "daily": [
-                {
-                  "date": "2026-07-17",
-                  "downloads": 28
-                },
-                {
-                  "date": "2026-07-18",
-                  "downloads": 11
-                },
-                {
-                  "date": "2026-07-19",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21
-                }
-              ],
-              "metric": "free_app_downloads",
-              "period_end": "2026-07-23",
-              "period_start": "2026-07-17",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-              "source": "Apple App Store Connect screenshot",
-              "total_downloads": 137
-            },
-            {
-              "daily": [
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16,
-                  "updates": 53
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27,
-                  "updates": 58
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18,
-                  "updates": 55
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21,
-                  "updates": 46
-                },
-                {
-                  "date": "2026-07-24",
-                  "downloads": 15,
-                  "updates": 43
-                },
-                {
-                  "date": "2026-07-25",
-                  "downloads": 19,
-                  "updates": 44
-                },
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23,
-                  "updates": 52
-                }
-              ],
-              "metric": "free_app_downloads_and_updates",
-              "period_end": "2026-07-26",
-              "period_start": "2026-07-20",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-27T15:57:00+00:00",
-              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-              ],
-              "total_downloads": 139,
-              "total_updates": 351
-            },
-            {
-              "metric": "downloads_units_breakdown",
-              "period_start": "2026-07-24",
-              "period_end": "2026-07-30",
-              "platform": "iOS/watchOS/tvOS + macOS",
-              "recorded_at": "2026-07-31T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "total_units": 360,
-              "daily_average": 51,
-              "overall_delta_pct": 163,
-              "breakdown": {
-                "paid_ios_watchos_tvos": 0,
-                "free_ios_watchos_tvos": 334,
-                "free_ios_watchos_tvos_delta_pct": 143.8,
-                "inapp_ios_tvos": 26,
-                "inapp_ios_tvos_delta_pct": 100,
-                "paid_macos": 0,
-                "free_macos": 0,
-                "inapp_macos": 0
-              },
-              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-26",
-              "period_end": "2026-08-01",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-02T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-              "total_downloads": 405,
-              "daily": [
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23
-                },
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-27",
-              "period_end": "2026-08-02",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-03T14:23:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-              "total_downloads": 423,
-              "daily": [
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 41
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-05T14:37:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-              "total_downloads": 434,
-              "daily": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            }
-          ],
-          "priorSnapshot": {
-            "period": "Jul 29-Aug 4, 2026",
-            "start": "2026-07-29",
-            "end": "2026-08-04",
-            "downloads": 434,
-            "grossSales": 1095.5
-          },
-          "capturedAt": "2026-08-06 07:28 PDT",
-          "enteredAt": "2026-08-06 07:28 PDT"
-        },
-        "snapshots": [
-          {
-            "daily": [
-              {
-                "date": "2026-07-17",
-                "downloads": 28
-              },
-              {
-                "date": "2026-07-18",
-                "downloads": 11
-              },
-              {
-                "date": "2026-07-19",
-                "downloads": 16
-              },
-              {
-                "date": "2026-07-20",
-                "downloads": 16
-              },
-              {
-                "date": "2026-07-21",
-                "downloads": 27
-              },
-              {
-                "date": "2026-07-22",
-                "downloads": 18
-              },
-              {
-                "date": "2026-07-23",
-                "downloads": 21
-              }
-            ],
-            "metric": "free_app_downloads",
-            "period_end": "2026-07-23",
-            "period_start": "2026-07-17",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-            "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-            "source": "Apple App Store Connect screenshot",
-            "total_downloads": 137
-          },
-          {
-            "daily": [
-              {
-                "date": "2026-07-20",
-                "downloads": 16,
-                "updates": 53
-              },
-              {
-                "date": "2026-07-21",
-                "downloads": 27,
-                "updates": 58
-              },
-              {
-                "date": "2026-07-22",
-                "downloads": 18,
-                "updates": 55
-              },
-              {
-                "date": "2026-07-23",
-                "downloads": 21,
-                "updates": 46
-              },
-              {
-                "date": "2026-07-24",
-                "downloads": 15,
-                "updates": 43
-              },
-              {
-                "date": "2026-07-25",
-                "downloads": 19,
-                "updates": 44
-              },
-              {
-                "date": "2026-07-26",
-                "downloads": 23,
-                "updates": 52
-              }
-            ],
-            "metric": "free_app_downloads_and_updates",
-            "period_end": "2026-07-26",
-            "period_start": "2026-07-20",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-07-27T15:57:00+00:00",
-            "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-              "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-            ],
-            "total_downloads": 139,
-            "total_updates": 351
-          },
-          {
-            "metric": "downloads_units_breakdown",
-            "period_start": "2026-07-24",
-            "period_end": "2026-07-30",
-            "platform": "iOS/watchOS/tvOS + macOS",
-            "recorded_at": "2026-07-31T15:20:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "total_units": 360,
-            "daily_average": 51,
-            "overall_delta_pct": 163,
-            "breakdown": {
-              "paid_ios_watchos_tvos": 0,
-              "free_ios_watchos_tvos": 334,
-              "free_ios_watchos_tvos_delta_pct": 143.8,
-              "inapp_ios_tvos": 26,
-              "inapp_ios_tvos_delta_pct": 100,
-              "paid_macos": 0,
-              "free_macos": 0,
-              "inapp_macos": 0
-            },
-            "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-            "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-26",
-            "period_end": "2026-08-01",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-02T15:20:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-            "total_downloads": 405,
-            "daily": [
-              {
-                "date": "2026-07-26",
-                "downloads": 23
-              },
-              {
-                "date": "2026-07-27",
-                "downloads": 25
-              },
-              {
-                "date": "2026-07-28",
-                "downloads": 43
-              },
-              {
-                "date": "2026-07-29",
-                "downloads": 54
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 55
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-27",
-            "period_end": "2026-08-02",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-03T14:23:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-            "total_downloads": 423,
-            "daily": [
-              {
-                "date": "2026-07-27",
-                "downloads": 25
-              },
-              {
-                "date": "2026-07-28",
-                "downloads": 43
-              },
-              {
-                "date": "2026-07-29",
-                "downloads": 54
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 55
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 41
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-05T14:37:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-            "total_downloads": 434,
-            "daily": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "downloads": 434,
-            "displayDownloads": "434",
-            "updates": null,
-            "displayUpdates": null,
-            "dailyAverage": 62,
-            "updatesDailyAverage": null,
-            "start": "2026-07-29",
-            "end": "2026-08-04",
-            "period": "Jul 29-Aug 4, 2026",
-            "priorDownloads": 434,
-            "priorUpdates": null,
-            "priorPeriod": "Jul 29-Aug 4, 2026",
-            "deltaPct": 0,
-            "updatesDeltaPct": null,
-            "product": "ElectricNOW",
-            "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-            "territories": [
-              {
-                "territory": "United States",
-                "downloads": 434,
-                "deltaPct": null
-              }
-            ],
-            "sourceLabel": "Manual Apple App Store Connect snapshot",
-            "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-            "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-            "sourceScreenshots": [
-              {
-                "metric": "sales",
-                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-              },
-              {
-                "metric": "downloads",
-                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              }
-            ],
-            "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-            "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-            "daily": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "salesDaily": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5,
-                "estimatedNetRevenue": 36.75
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7,
-                "estimatedNetRevenue": 216.09
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3,
-                "estimatedNetRevenue": 92.61
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161,
-                "estimatedNetRevenue": 112.7
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1,
-                "estimatedNetRevenue": 30.87
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3,
-                "estimatedNetRevenue": 195.51
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6,
-                "estimatedNetRevenue": 82.32
-              }
-            ],
-            "salesGross": 1095.5,
-            "salesEstimatedNet": 766.85,
-            "snapshots": [
-              {
-                "daily": [
-                  {
-                    "date": "2026-07-17",
-                    "downloads": 28
-                  },
-                  {
-                    "date": "2026-07-18",
-                    "downloads": 11
-                  },
-                  {
-                    "date": "2026-07-19",
-                    "downloads": 16
-                  },
-                  {
-                    "date": "2026-07-20",
-                    "downloads": 16
-                  },
-                  {
-                    "date": "2026-07-21",
-                    "downloads": 27
-                  },
-                  {
-                    "date": "2026-07-22",
-                    "downloads": 18
-                  },
-                  {
-                    "date": "2026-07-23",
-                    "downloads": 21
-                  }
-                ],
-                "metric": "free_app_downloads",
-                "period_end": "2026-07-23",
-                "period_start": "2026-07-17",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-                "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-                "source": "Apple App Store Connect screenshot",
-                "total_downloads": 137
-              },
-              {
-                "daily": [
-                  {
-                    "date": "2026-07-20",
-                    "downloads": 16,
-                    "updates": 53
-                  },
-                  {
-                    "date": "2026-07-21",
-                    "downloads": 27,
-                    "updates": 58
-                  },
-                  {
-                    "date": "2026-07-22",
-                    "downloads": 18,
-                    "updates": 55
-                  },
-                  {
-                    "date": "2026-07-23",
-                    "downloads": 21,
-                    "updates": 46
-                  },
-                  {
-                    "date": "2026-07-24",
-                    "downloads": 15,
-                    "updates": 43
-                  },
-                  {
-                    "date": "2026-07-25",
-                    "downloads": 19,
-                    "updates": 44
-                  },
-                  {
-                    "date": "2026-07-26",
-                    "downloads": 23,
-                    "updates": 52
-                  }
-                ],
-                "metric": "free_app_downloads_and_updates",
-                "period_end": "2026-07-26",
-                "period_start": "2026-07-20",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-07-27T15:57:00+00:00",
-                "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-                ],
-                "total_downloads": 139,
-                "total_updates": 351
-              },
-              {
-                "metric": "downloads_units_breakdown",
-                "period_start": "2026-07-24",
-                "period_end": "2026-07-30",
-                "platform": "iOS/watchOS/tvOS + macOS",
-                "recorded_at": "2026-07-31T15:20:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "total_units": 360,
-                "daily_average": 51,
-                "overall_delta_pct": 163,
-                "breakdown": {
-                  "paid_ios_watchos_tvos": 0,
-                  "free_ios_watchos_tvos": 334,
-                  "free_ios_watchos_tvos_delta_pct": 143.8,
-                  "inapp_ios_tvos": 26,
-                  "inapp_ios_tvos_delta_pct": 100,
-                  "paid_macos": 0,
-                  "free_macos": 0,
-                  "inapp_macos": 0
-                },
-                "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-                "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-26",
-                "period_end": "2026-08-01",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-02T15:20:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-                "total_downloads": 405,
-                "daily": [
-                  {
-                    "date": "2026-07-26",
-                    "downloads": 23
-                  },
-                  {
-                    "date": "2026-07-27",
-                    "downloads": 25
-                  },
-                  {
-                    "date": "2026-07-28",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 54
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 55
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-27",
-                "period_end": "2026-08-02",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-03T14:23:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-                "total_downloads": 423,
-                "daily": [
-                  {
-                    "date": "2026-07-27",
-                    "downloads": 25
-                  },
-                  {
-                    "date": "2026-07-28",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 54
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 55
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 41
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-05T14:37:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-                "total_downloads": 434,
-                "daily": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              }
-            ],
-            "priorSnapshot": {
-              "period": "Jul 29-Aug 4, 2026",
-              "start": "2026-07-29",
-              "end": "2026-08-04",
-              "downloads": 434,
-              "grossSales": 1095.5
-            },
-            "capturedAt": "2026-08-06 07:28 PDT",
-            "enteredAt": "2026-08-06 07:28 PDT"
-          }
-        ],
-        "enteredAt": "2026-08-07 09:21 PDT",
-        "capturedAt": "2026-08-07T09:21:00-07:00"
-      },
-      "snapshots": [
-        {
-          "daily": [
-            {
-              "date": "2026-07-17",
-              "downloads": 28
-            },
-            {
-              "date": "2026-07-18",
-              "downloads": 11
-            },
-            {
-              "date": "2026-07-19",
-              "downloads": 16
-            },
-            {
-              "date": "2026-07-20",
-              "downloads": 16
-            },
-            {
-              "date": "2026-07-21",
-              "downloads": 27
-            },
-            {
-              "date": "2026-07-22",
-              "downloads": 18
-            },
-            {
-              "date": "2026-07-23",
-              "downloads": 21
-            }
-          ],
-          "metric": "free_app_downloads",
-          "period_end": "2026-07-23",
-          "period_start": "2026-07-17",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-          "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-          "source": "Apple App Store Connect screenshot",
-          "total_downloads": 137
-        },
-        {
-          "daily": [
-            {
-              "date": "2026-07-20",
-              "downloads": 16,
-              "updates": 53
-            },
-            {
-              "date": "2026-07-21",
-              "downloads": 27,
-              "updates": 58
-            },
-            {
-              "date": "2026-07-22",
-              "downloads": 18,
-              "updates": 55
-            },
-            {
-              "date": "2026-07-23",
-              "downloads": 21,
-              "updates": 46
-            },
-            {
-              "date": "2026-07-24",
-              "downloads": 15,
-              "updates": 43
-            },
-            {
-              "date": "2026-07-25",
-              "downloads": 19,
-              "updates": 44
-            },
-            {
-              "date": "2026-07-26",
-              "downloads": 23,
-              "updates": 52
-            }
-          ],
-          "metric": "free_app_downloads_and_updates",
-          "period_end": "2026-07-26",
-          "period_start": "2026-07-20",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-07-27T15:57:00+00:00",
-          "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-          "source": "Apple App Store Connect screenshots",
-          "source_screenshots": [
-            "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-            "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-          ],
-          "total_downloads": 139,
-          "total_updates": 351
-        },
-        {
-          "metric": "downloads_units_breakdown",
-          "period_start": "2026-07-24",
-          "period_end": "2026-07-30",
-          "platform": "iOS/watchOS/tvOS + macOS",
-          "recorded_at": "2026-07-31T15:20:00+00:00",
-          "source": "Apple App Store Connect screenshot",
-          "total_units": 360,
-          "daily_average": 51,
-          "overall_delta_pct": 163,
-          "breakdown": {
-            "paid_ios_watchos_tvos": 0,
-            "free_ios_watchos_tvos": 334,
-            "free_ios_watchos_tvos_delta_pct": 143.8,
-            "inapp_ios_tvos": 26,
-            "inapp_ios_tvos_delta_pct": 100,
-            "paid_macos": 0,
-            "free_macos": 0,
-            "inapp_macos": 0
-          },
-          "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-          "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-        },
-        {
-          "metric": "free_app_downloads",
-          "period_start": "2026-07-26",
-          "period_end": "2026-08-01",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-08-02T15:20:00+00:00",
-          "source": "Apple App Store Connect screenshot",
-          "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-          "total_downloads": 405,
-          "daily": [
-            {
-              "date": "2026-07-26",
-              "downloads": 23
-            },
-            {
-              "date": "2026-07-27",
-              "downloads": 25
-            },
-            {
-              "date": "2026-07-28",
-              "downloads": 43
-            },
-            {
-              "date": "2026-07-29",
-              "downloads": 54
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 55
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            }
-          ],
-          "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-        },
-        {
-          "metric": "free_app_downloads",
-          "period_start": "2026-07-27",
-          "period_end": "2026-08-02",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-08-03T14:23:00+00:00",
-          "source": "Apple App Store Connect screenshot",
-          "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-          "total_downloads": 423,
-          "daily": [
-            {
-              "date": "2026-07-27",
-              "downloads": 25
-            },
-            {
-              "date": "2026-07-28",
-              "downloads": 43
-            },
-            {
-              "date": "2026-07-29",
-              "downloads": 54
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 55
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 41
-            }
-          ],
-          "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-        },
-        {
-          "metric": "free_app_downloads",
-          "period_start": "2026-07-29",
-          "period_end": "2026-08-04",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-08-05T14:37:00+00:00",
-          "source": "Apple App Store Connect screenshot",
-          "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-          "total_downloads": 434,
-          "daily": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-        },
-        {
-          "metric": "free_app_downloads_and_gross_sales",
-          "period_start": "2026-07-29",
-          "period_end": "2026-08-04",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-08-06T14:28:00+00:00",
-          "source": "Apple App Store Connect screenshots",
-          "source_screenshots": [
-            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-          ],
-          "total_downloads": 434,
-          "gross_sales": 1095.5,
-          "daily_downloads": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "daily_sales": [
-            {
-              "date": "2026-07-29",
-              "grossRevenue": 52.5
-            },
-            {
-              "date": "2026-07-30",
-              "grossRevenue": 308.7
-            },
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 132.3
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 161
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 44.1
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 279.3
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 117.6
-            }
-          ]
-        },
-        {
-          "metric": "free_app_downloads_and_gross_sales",
-          "period_start": "2026-07-29",
-          "period_end": "2026-08-04",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-08-06T14:28:00+00:00",
-          "source": "Apple App Store Connect screenshots",
-          "source_screenshots": [
-            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-          ],
-          "total_downloads": 434,
-          "gross_sales": 1095.5,
-          "daily_downloads": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "daily_sales": [
-            {
-              "date": "2026-07-29",
-              "grossRevenue": 52.5
-            },
-            {
-              "date": "2026-07-30",
-              "grossRevenue": 308.7
-            },
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 132.3
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 161
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 44.1
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 279.3
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 117.6
-            }
-          ]
-        },
-        {
-          "metric": "free_app_downloads_and_gross_sales",
-          "period_start": "2026-07-29",
-          "period_end": "2026-08-04",
-          "platform": "iOS/watchOS/tvOS",
-          "recorded_at": "2026-08-06T14:28:00+00:00",
-          "source": "Apple App Store Connect screenshots",
-          "source_screenshots": [
-            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-          ],
-          "total_downloads": 434,
-          "gross_sales": 1095.5,
-          "daily_downloads": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "daily_sales": [
-            {
-              "date": "2026-07-29",
-              "grossRevenue": 52.5
-            },
-            {
-              "date": "2026-07-30",
-              "grossRevenue": 308.7
-            },
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 132.3
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 161
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 44.1
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 279.3
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 117.6
-            }
-          ]
-        },
-        {
-          "downloads": 434,
-          "displayDownloads": "434",
-          "updates": null,
-          "displayUpdates": null,
-          "dailyAverage": 62,
-          "updatesDailyAverage": null,
-          "start": "2026-07-29",
-          "end": "2026-08-04",
-          "period": "Jul 29-Aug 4, 2026",
-          "priorDownloads": 434,
-          "priorUpdates": null,
-          "priorPeriod": "Jul 29-Aug 4, 2026",
-          "deltaPct": 0,
-          "updatesDeltaPct": null,
-          "product": "ElectricNOW",
-          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-          "territories": [
-            {
-              "territory": "United States",
-              "downloads": 434,
-              "deltaPct": null
-            }
-          ],
-          "sourceLabel": "Manual Apple App Store Connect snapshot",
-          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-          "sourceScreenshots": [
-            {
-              "metric": "sales",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-            },
-            {
-              "metric": "downloads",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            }
-          ],
-          "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-          "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-          "daily": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "salesDaily": [
-            {
-              "date": "2026-07-29",
-              "grossRevenue": 52.5,
-              "estimatedNetRevenue": 36.75
-            },
-            {
-              "date": "2026-07-30",
-              "grossRevenue": 308.7,
-              "estimatedNetRevenue": 216.09
-            },
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 132.3,
-              "estimatedNetRevenue": 92.61
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 161,
-              "estimatedNetRevenue": 112.7
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 44.1,
-              "estimatedNetRevenue": 30.87
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 279.3,
-              "estimatedNetRevenue": 195.51
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 117.6,
-              "estimatedNetRevenue": 82.32
-            }
-          ],
-          "salesGross": 1095.5,
-          "salesEstimatedNet": 766.85,
-          "snapshots": [
-            {
-              "daily": [
-                {
-                  "date": "2026-07-17",
-                  "downloads": 28
-                },
-                {
-                  "date": "2026-07-18",
-                  "downloads": 11
-                },
-                {
-                  "date": "2026-07-19",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21
-                }
-              ],
-              "metric": "free_app_downloads",
-              "period_end": "2026-07-23",
-              "period_start": "2026-07-17",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-              "source": "Apple App Store Connect screenshot",
-              "total_downloads": 137
-            },
-            {
-              "daily": [
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16,
-                  "updates": 53
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27,
-                  "updates": 58
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18,
-                  "updates": 55
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21,
-                  "updates": 46
-                },
-                {
-                  "date": "2026-07-24",
-                  "downloads": 15,
-                  "updates": 43
-                },
-                {
-                  "date": "2026-07-25",
-                  "downloads": 19,
-                  "updates": 44
-                },
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23,
-                  "updates": 52
-                }
-              ],
-              "metric": "free_app_downloads_and_updates",
-              "period_end": "2026-07-26",
-              "period_start": "2026-07-20",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-27T15:57:00+00:00",
-              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-              ],
-              "total_downloads": 139,
-              "total_updates": 351
-            },
-            {
-              "metric": "downloads_units_breakdown",
-              "period_start": "2026-07-24",
-              "period_end": "2026-07-30",
-              "platform": "iOS/watchOS/tvOS + macOS",
-              "recorded_at": "2026-07-31T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "total_units": 360,
-              "daily_average": 51,
-              "overall_delta_pct": 163,
-              "breakdown": {
-                "paid_ios_watchos_tvos": 0,
-                "free_ios_watchos_tvos": 334,
-                "free_ios_watchos_tvos_delta_pct": 143.8,
-                "inapp_ios_tvos": 26,
-                "inapp_ios_tvos_delta_pct": 100,
-                "paid_macos": 0,
-                "free_macos": 0,
-                "inapp_macos": 0
-              },
-              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-26",
-              "period_end": "2026-08-01",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-02T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-              "total_downloads": 405,
-              "daily": [
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23
-                },
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-27",
-              "period_end": "2026-08-02",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-03T14:23:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-              "total_downloads": 423,
-              "daily": [
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 41
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-05T14:37:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-              "total_downloads": 434,
-              "daily": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            }
-          ],
-          "priorSnapshot": {
-            "period": "Jul 29-Aug 4, 2026",
-            "start": "2026-07-29",
-            "end": "2026-08-04",
-            "downloads": 434,
-            "grossSales": 1095.5
-          },
-          "capturedAt": "2026-08-06 07:28 PDT",
-          "enteredAt": "2026-08-06 07:28 PDT"
-        },
-        {
-          "downloads": 388,
-          "displayDownloads": "388",
-          "updates": null,
-          "displayUpdates": null,
-          "inAppUnits": 69,
-          "totalUnits": 457,
-          "dailyAverage": 55,
-          "updatesDailyAverage": null,
-          "start": "2026-07-31",
-          "end": "2026-08-06",
-          "period": "Jul 31-Aug 6, 2026",
-          "priorDownloads": 434,
-          "priorUpdates": null,
-          "priorPeriod": "Jul 29-Aug 4, 2026",
-          "deltaPct": -10.599078341013826,
-          "updatesDeltaPct": null,
-          "product": "ElectricNOW",
-          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-          "territories": [
-            {
-              "territory": "United States",
-              "downloads": 388,
-              "deltaPct": null
-            }
-          ],
-          "sourceLabel": "Manual Apple App Store Connect snapshot",
-          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-          "sourceScreenshots": [
-            {
-              "metric": "sales",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-            },
-            {
-              "metric": "downloads",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            }
-          ],
-          "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
-          "updatedAtUtc": "2026-08-07T16:21:00+00:00",
-          "daily": [
-            {
-              "date": "2026-07-31",
-              "downloads": 55
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 41
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 44
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-05",
-              "downloads": 82
-            },
-            {
-              "date": "2026-08-06",
-              "downloads": 73
-            }
-          ],
-          "salesDaily": [
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 188.91,
-              "estimatedNetRevenue": 132.24
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 229.89,
-              "estimatedNetRevenue": 160.92
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 62.97,
-              "estimatedNetRevenue": 44.08
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 398.81,
-              "estimatedNetRevenue": 279.17
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 167.92,
-              "estimatedNetRevenue": 117.54
-            },
-            {
-              "date": "2026-08-05",
-              "grossRevenue": 146.93,
-              "estimatedNetRevenue": 102.85
-            },
-            {
-              "date": "2026-08-06",
-              "grossRevenue": 210.89,
-              "estimatedNetRevenue": 147.62
-            }
-          ],
-          "salesGross": 1406.32,
-          "salesEstimatedNet": 984.42,
-          "priorSnapshot": {
-            "downloads": 434,
-            "displayDownloads": "434",
-            "updates": null,
-            "displayUpdates": null,
-            "dailyAverage": 62,
-            "updatesDailyAverage": null,
-            "start": "2026-07-29",
-            "end": "2026-08-04",
-            "period": "Jul 29-Aug 4, 2026",
-            "priorDownloads": 434,
-            "priorUpdates": null,
-            "priorPeriod": "Jul 29-Aug 4, 2026",
-            "deltaPct": 0,
-            "updatesDeltaPct": null,
-            "product": "ElectricNOW",
-            "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-            "territories": [
-              {
-                "territory": "United States",
-                "downloads": 434,
-                "deltaPct": null
-              }
-            ],
-            "sourceLabel": "Manual Apple App Store Connect snapshot",
-            "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-            "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-            "sourceScreenshots": [
-              {
-                "metric": "sales",
-                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-              },
-              {
-                "metric": "downloads",
-                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              }
-            ],
-            "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-            "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-            "daily": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "salesDaily": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5,
-                "estimatedNetRevenue": 36.75
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7,
-                "estimatedNetRevenue": 216.09
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3,
-                "estimatedNetRevenue": 92.61
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161,
-                "estimatedNetRevenue": 112.7
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1,
-                "estimatedNetRevenue": 30.87
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3,
-                "estimatedNetRevenue": 195.51
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6,
-                "estimatedNetRevenue": 82.32
-              }
-            ],
-            "salesGross": 1095.5,
-            "salesEstimatedNet": 766.85,
-            "snapshots": [
-              {
-                "daily": [
-                  {
-                    "date": "2026-07-17",
-                    "downloads": 28
-                  },
-                  {
-                    "date": "2026-07-18",
-                    "downloads": 11
-                  },
-                  {
-                    "date": "2026-07-19",
-                    "downloads": 16
-                  },
-                  {
-                    "date": "2026-07-20",
-                    "downloads": 16
-                  },
-                  {
-                    "date": "2026-07-21",
-                    "downloads": 27
-                  },
-                  {
-                    "date": "2026-07-22",
-                    "downloads": 18
-                  },
-                  {
-                    "date": "2026-07-23",
-                    "downloads": 21
-                  }
-                ],
-                "metric": "free_app_downloads",
-                "period_end": "2026-07-23",
-                "period_start": "2026-07-17",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-                "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-                "source": "Apple App Store Connect screenshot",
-                "total_downloads": 137
-              },
-              {
-                "daily": [
-                  {
-                    "date": "2026-07-20",
-                    "downloads": 16,
-                    "updates": 53
-                  },
-                  {
-                    "date": "2026-07-21",
-                    "downloads": 27,
-                    "updates": 58
-                  },
-                  {
-                    "date": "2026-07-22",
-                    "downloads": 18,
-                    "updates": 55
-                  },
-                  {
-                    "date": "2026-07-23",
-                    "downloads": 21,
-                    "updates": 46
-                  },
-                  {
-                    "date": "2026-07-24",
-                    "downloads": 15,
-                    "updates": 43
-                  },
-                  {
-                    "date": "2026-07-25",
-                    "downloads": 19,
-                    "updates": 44
-                  },
-                  {
-                    "date": "2026-07-26",
-                    "downloads": 23,
-                    "updates": 52
-                  }
-                ],
-                "metric": "free_app_downloads_and_updates",
-                "period_end": "2026-07-26",
-                "period_start": "2026-07-20",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-07-27T15:57:00+00:00",
-                "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-                ],
-                "total_downloads": 139,
-                "total_updates": 351
-              },
-              {
-                "metric": "downloads_units_breakdown",
-                "period_start": "2026-07-24",
-                "period_end": "2026-07-30",
-                "platform": "iOS/watchOS/tvOS + macOS",
-                "recorded_at": "2026-07-31T15:20:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "total_units": 360,
-                "daily_average": 51,
-                "overall_delta_pct": 163,
-                "breakdown": {
-                  "paid_ios_watchos_tvos": 0,
-                  "free_ios_watchos_tvos": 334,
-                  "free_ios_watchos_tvos_delta_pct": 143.8,
-                  "inapp_ios_tvos": 26,
-                  "inapp_ios_tvos_delta_pct": 100,
-                  "paid_macos": 0,
-                  "free_macos": 0,
-                  "inapp_macos": 0
-                },
-                "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-                "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-26",
-                "period_end": "2026-08-01",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-02T15:20:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-                "total_downloads": 405,
-                "daily": [
-                  {
-                    "date": "2026-07-26",
-                    "downloads": 23
-                  },
-                  {
-                    "date": "2026-07-27",
-                    "downloads": 25
-                  },
-                  {
-                    "date": "2026-07-28",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 54
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 55
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-27",
-                "period_end": "2026-08-02",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-03T14:23:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-                "total_downloads": 423,
-                "daily": [
-                  {
-                    "date": "2026-07-27",
-                    "downloads": 25
-                  },
-                  {
-                    "date": "2026-07-28",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 54
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 55
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 41
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-05T14:37:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-                "total_downloads": 434,
-                "daily": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              }
-            ],
-            "priorSnapshot": {
-              "period": "Jul 29-Aug 4, 2026",
-              "start": "2026-07-29",
-              "end": "2026-08-04",
-              "downloads": 434,
-              "grossSales": 1095.5
-            },
-            "capturedAt": "2026-08-06 07:28 PDT",
-            "enteredAt": "2026-08-06 07:28 PDT"
-          },
-          "snapshots": [
-            {
-              "daily": [
-                {
-                  "date": "2026-07-17",
-                  "downloads": 28
-                },
-                {
-                  "date": "2026-07-18",
-                  "downloads": 11
-                },
-                {
-                  "date": "2026-07-19",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21
-                }
-              ],
-              "metric": "free_app_downloads",
-              "period_end": "2026-07-23",
-              "period_start": "2026-07-17",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-              "source": "Apple App Store Connect screenshot",
-              "total_downloads": 137
-            },
-            {
-              "daily": [
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16,
-                  "updates": 53
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27,
-                  "updates": 58
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18,
-                  "updates": 55
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21,
-                  "updates": 46
-                },
-                {
-                  "date": "2026-07-24",
-                  "downloads": 15,
-                  "updates": 43
-                },
-                {
-                  "date": "2026-07-25",
-                  "downloads": 19,
-                  "updates": 44
-                },
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23,
-                  "updates": 52
-                }
-              ],
-              "metric": "free_app_downloads_and_updates",
-              "period_end": "2026-07-26",
-              "period_start": "2026-07-20",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-27T15:57:00+00:00",
-              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-              ],
-              "total_downloads": 139,
-              "total_updates": 351
-            },
-            {
-              "metric": "downloads_units_breakdown",
-              "period_start": "2026-07-24",
-              "period_end": "2026-07-30",
-              "platform": "iOS/watchOS/tvOS + macOS",
-              "recorded_at": "2026-07-31T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "total_units": 360,
-              "daily_average": 51,
-              "overall_delta_pct": 163,
-              "breakdown": {
-                "paid_ios_watchos_tvos": 0,
-                "free_ios_watchos_tvos": 334,
-                "free_ios_watchos_tvos_delta_pct": 143.8,
-                "inapp_ios_tvos": 26,
-                "inapp_ios_tvos_delta_pct": 100,
-                "paid_macos": 0,
-                "free_macos": 0,
-                "inapp_macos": 0
-              },
-              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-26",
-              "period_end": "2026-08-01",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-02T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-              "total_downloads": 405,
-              "daily": [
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23
-                },
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-27",
-              "period_end": "2026-08-02",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-03T14:23:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-              "total_downloads": 423,
-              "daily": [
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 41
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-05T14:37:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-              "total_downloads": 434,
-              "daily": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "downloads": 434,
-              "displayDownloads": "434",
-              "updates": null,
-              "displayUpdates": null,
-              "dailyAverage": 62,
-              "updatesDailyAverage": null,
-              "start": "2026-07-29",
-              "end": "2026-08-04",
-              "period": "Jul 29-Aug 4, 2026",
-              "priorDownloads": 434,
-              "priorUpdates": null,
-              "priorPeriod": "Jul 29-Aug 4, 2026",
-              "deltaPct": 0,
-              "updatesDeltaPct": null,
-              "product": "ElectricNOW",
-              "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-              "territories": [
-                {
-                  "territory": "United States",
-                  "downloads": 434,
-                  "deltaPct": null
-                }
-              ],
-              "sourceLabel": "Manual Apple App Store Connect snapshot",
-              "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-              "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-              "sourceScreenshots": [
-                {
-                  "metric": "sales",
-                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-                },
-                {
-                  "metric": "downloads",
-                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                }
-              ],
-              "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-              "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-              "daily": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "salesDaily": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5,
-                  "estimatedNetRevenue": 36.75
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7,
-                  "estimatedNetRevenue": 216.09
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3,
-                  "estimatedNetRevenue": 92.61
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161,
-                  "estimatedNetRevenue": 112.7
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1,
-                  "estimatedNetRevenue": 30.87
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3,
-                  "estimatedNetRevenue": 195.51
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6,
-                  "estimatedNetRevenue": 82.32
-                }
-              ],
-              "salesGross": 1095.5,
-              "salesEstimatedNet": 766.85,
-              "snapshots": [
-                {
-                  "daily": [
-                    {
-                      "date": "2026-07-17",
-                      "downloads": 28
-                    },
-                    {
-                      "date": "2026-07-18",
-                      "downloads": 11
-                    },
-                    {
-                      "date": "2026-07-19",
-                      "downloads": 16
-                    },
-                    {
-                      "date": "2026-07-20",
-                      "downloads": 16
-                    },
-                    {
-                      "date": "2026-07-21",
-                      "downloads": 27
-                    },
-                    {
-                      "date": "2026-07-22",
-                      "downloads": 18
-                    },
-                    {
-                      "date": "2026-07-23",
-                      "downloads": 21
-                    }
-                  ],
-                  "metric": "free_app_downloads",
-                  "period_end": "2026-07-23",
-                  "period_start": "2026-07-17",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-                  "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-                  "source": "Apple App Store Connect screenshot",
-                  "total_downloads": 137
-                },
-                {
-                  "daily": [
-                    {
-                      "date": "2026-07-20",
-                      "downloads": 16,
-                      "updates": 53
-                    },
-                    {
-                      "date": "2026-07-21",
-                      "downloads": 27,
-                      "updates": 58
-                    },
-                    {
-                      "date": "2026-07-22",
-                      "downloads": 18,
-                      "updates": 55
-                    },
-                    {
-                      "date": "2026-07-23",
-                      "downloads": 21,
-                      "updates": 46
-                    },
-                    {
-                      "date": "2026-07-24",
-                      "downloads": 15,
-                      "updates": 43
-                    },
-                    {
-                      "date": "2026-07-25",
-                      "downloads": 19,
-                      "updates": 44
-                    },
-                    {
-                      "date": "2026-07-26",
-                      "downloads": 23,
-                      "updates": 52
-                    }
-                  ],
-                  "metric": "free_app_downloads_and_updates",
-                  "period_end": "2026-07-26",
-                  "period_start": "2026-07-20",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-07-27T15:57:00+00:00",
-                  "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-                  "source": "Apple App Store Connect screenshots",
-                  "source_screenshots": [
-                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-                  ],
-                  "total_downloads": 139,
-                  "total_updates": 351
-                },
-                {
-                  "metric": "downloads_units_breakdown",
-                  "period_start": "2026-07-24",
-                  "period_end": "2026-07-30",
-                  "platform": "iOS/watchOS/tvOS + macOS",
-                  "recorded_at": "2026-07-31T15:20:00+00:00",
-                  "source": "Apple App Store Connect screenshot",
-                  "total_units": 360,
-                  "daily_average": 51,
-                  "overall_delta_pct": 163,
-                  "breakdown": {
-                    "paid_ios_watchos_tvos": 0,
-                    "free_ios_watchos_tvos": 334,
-                    "free_ios_watchos_tvos_delta_pct": 143.8,
-                    "inapp_ios_tvos": 26,
-                    "inapp_ios_tvos_delta_pct": 100,
-                    "paid_macos": 0,
-                    "free_macos": 0,
-                    "inapp_macos": 0
-                  },
-                  "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-                  "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-                },
-                {
-                  "metric": "free_app_downloads",
-                  "period_start": "2026-07-26",
-                  "period_end": "2026-08-01",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-08-02T15:20:00+00:00",
-                  "source": "Apple App Store Connect screenshot",
-                  "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-                  "total_downloads": 405,
-                  "daily": [
-                    {
-                      "date": "2026-07-26",
-                      "downloads": 23
-                    },
-                    {
-                      "date": "2026-07-27",
-                      "downloads": 25
-                    },
-                    {
-                      "date": "2026-07-28",
-                      "downloads": 43
-                    },
-                    {
-                      "date": "2026-07-29",
-                      "downloads": 54
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "downloads": 155
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "downloads": 55
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "downloads": 50
-                    }
-                  ],
-                  "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-                },
-                {
-                  "metric": "free_app_downloads",
-                  "period_start": "2026-07-27",
-                  "period_end": "2026-08-02",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-08-03T14:23:00+00:00",
-                  "source": "Apple App Store Connect screenshot",
-                  "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-                  "total_downloads": 423,
-                  "daily": [
-                    {
-                      "date": "2026-07-27",
-                      "downloads": 25
-                    },
-                    {
-                      "date": "2026-07-28",
-                      "downloads": 43
-                    },
-                    {
-                      "date": "2026-07-29",
-                      "downloads": 54
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "downloads": 155
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "downloads": 55
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "downloads": 50
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "downloads": 41
-                    }
-                  ],
-                  "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-                },
-                {
-                  "metric": "free_app_downloads",
-                  "period_start": "2026-07-29",
-                  "period_end": "2026-08-04",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-08-05T14:37:00+00:00",
-                  "source": "Apple App Store Connect screenshot",
-                  "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-                  "total_downloads": 434,
-                  "daily": [
-                    {
-                      "date": "2026-07-29",
-                      "downloads": 51
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "downloads": 155
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "downloads": 53
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "downloads": 50
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "downloads": 40
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "downloads": 43
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "downloads": 42
-                    }
-                  ],
-                  "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-                },
-                {
-                  "metric": "free_app_downloads_and_gross_sales",
-                  "period_start": "2026-07-29",
-                  "period_end": "2026-08-04",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-08-06T14:28:00+00:00",
-                  "source": "Apple App Store Connect screenshots",
-                  "source_screenshots": [
-                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                  ],
-                  "total_downloads": 434,
-                  "gross_sales": 1095.5,
-                  "daily_downloads": [
-                    {
-                      "date": "2026-07-29",
-                      "downloads": 51
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "downloads": 155
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "downloads": 53
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "downloads": 50
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "downloads": 40
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "downloads": 43
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "downloads": 42
-                    }
-                  ],
-                  "daily_sales": [
-                    {
-                      "date": "2026-07-29",
-                      "grossRevenue": 52.5
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "grossRevenue": 308.7
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "grossRevenue": 132.3
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "grossRevenue": 161
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "grossRevenue": 44.1
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "grossRevenue": 279.3
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "grossRevenue": 117.6
-                    }
-                  ]
-                },
-                {
-                  "metric": "free_app_downloads_and_gross_sales",
-                  "period_start": "2026-07-29",
-                  "period_end": "2026-08-04",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-08-06T14:28:00+00:00",
-                  "source": "Apple App Store Connect screenshots",
-                  "source_screenshots": [
-                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                  ],
-                  "total_downloads": 434,
-                  "gross_sales": 1095.5,
-                  "daily_downloads": [
-                    {
-                      "date": "2026-07-29",
-                      "downloads": 51
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "downloads": 155
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "downloads": 53
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "downloads": 50
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "downloads": 40
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "downloads": 43
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "downloads": 42
-                    }
-                  ],
-                  "daily_sales": [
-                    {
-                      "date": "2026-07-29",
-                      "grossRevenue": 52.5
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "grossRevenue": 308.7
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "grossRevenue": 132.3
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "grossRevenue": 161
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "grossRevenue": 44.1
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "grossRevenue": 279.3
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "grossRevenue": 117.6
-                    }
-                  ]
-                },
-                {
-                  "metric": "free_app_downloads_and_gross_sales",
-                  "period_start": "2026-07-29",
-                  "period_end": "2026-08-04",
-                  "platform": "iOS/watchOS/tvOS",
-                  "recorded_at": "2026-08-06T14:28:00+00:00",
-                  "source": "Apple App Store Connect screenshots",
-                  "source_screenshots": [
-                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                  ],
-                  "total_downloads": 434,
-                  "gross_sales": 1095.5,
-                  "daily_downloads": [
-                    {
-                      "date": "2026-07-29",
-                      "downloads": 51
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "downloads": 155
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "downloads": 53
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "downloads": 50
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "downloads": 40
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "downloads": 43
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "downloads": 42
-                    }
-                  ],
-                  "daily_sales": [
-                    {
-                      "date": "2026-07-29",
-                      "grossRevenue": 52.5
-                    },
-                    {
-                      "date": "2026-07-30",
-                      "grossRevenue": 308.7
-                    },
-                    {
-                      "date": "2026-07-31",
-                      "grossRevenue": 132.3
-                    },
-                    {
-                      "date": "2026-08-01",
-                      "grossRevenue": 161
-                    },
-                    {
-                      "date": "2026-08-02",
-                      "grossRevenue": 44.1
-                    },
-                    {
-                      "date": "2026-08-03",
-                      "grossRevenue": 279.3
-                    },
-                    {
-                      "date": "2026-08-04",
-                      "grossRevenue": 117.6
-                    }
-                  ]
-                }
-              ],
-              "priorSnapshot": {
-                "period": "Jul 29-Aug 4, 2026",
-                "start": "2026-07-29",
-                "end": "2026-08-04",
-                "downloads": 434,
-                "grossSales": 1095.5
-              },
-              "capturedAt": "2026-08-06 07:28 PDT",
-              "enteredAt": "2026-08-06 07:28 PDT"
-            }
-          ],
-          "enteredAt": "2026-08-07 09:21 PDT",
-          "capturedAt": "2026-08-07T09:21:00-07:00"
-        }
-      ],
-      "enteredAt": "2026-08-07 09:21 PDT",
-      "capturedAt": "2026-08-07T09:21:00-07:00"
-    },
-    "snapshots": [
-      {
-        "daily": [
-          {
-            "date": "2026-07-17",
-            "downloads": 28
-          },
-          {
-            "date": "2026-07-18",
-            "downloads": 11
-          },
-          {
-            "date": "2026-07-19",
-            "downloads": 16
-          },
-          {
-            "date": "2026-07-20",
-            "downloads": 16
-          },
-          {
-            "date": "2026-07-21",
-            "downloads": 27
-          },
-          {
-            "date": "2026-07-22",
-            "downloads": 18
-          },
-          {
-            "date": "2026-07-23",
-            "downloads": 21
-          }
-        ],
-        "metric": "free_app_downloads",
-        "period_end": "2026-07-23",
-        "period_start": "2026-07-17",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-        "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-        "source": "Apple App Store Connect screenshot",
-        "total_downloads": 137
-      },
-      {
-        "daily": [
-          {
-            "date": "2026-07-20",
-            "downloads": 16,
-            "updates": 53
-          },
-          {
-            "date": "2026-07-21",
-            "downloads": 27,
-            "updates": 58
-          },
-          {
-            "date": "2026-07-22",
-            "downloads": 18,
-            "updates": 55
-          },
-          {
-            "date": "2026-07-23",
-            "downloads": 21,
-            "updates": 46
-          },
-          {
-            "date": "2026-07-24",
-            "downloads": 15,
-            "updates": 43
-          },
-          {
-            "date": "2026-07-25",
-            "downloads": 19,
-            "updates": 44
-          },
-          {
-            "date": "2026-07-26",
-            "downloads": 23,
-            "updates": 52
-          }
-        ],
-        "metric": "free_app_downloads_and_updates",
-        "period_end": "2026-07-26",
-        "period_start": "2026-07-20",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-07-27T15:57:00+00:00",
-        "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-        "source": "Apple App Store Connect screenshots",
-        "source_screenshots": [
-          "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-          "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-        ],
-        "total_downloads": 139,
-        "total_updates": 351
-      },
-      {
-        "metric": "downloads_units_breakdown",
-        "period_start": "2026-07-24",
-        "period_end": "2026-07-30",
-        "platform": "iOS/watchOS/tvOS + macOS",
-        "recorded_at": "2026-07-31T15:20:00+00:00",
-        "source": "Apple App Store Connect screenshot",
-        "total_units": 360,
-        "daily_average": 51,
-        "overall_delta_pct": 163,
-        "breakdown": {
-          "paid_ios_watchos_tvos": 0,
-          "free_ios_watchos_tvos": 334,
-          "free_ios_watchos_tvos_delta_pct": 143.8,
-          "inapp_ios_tvos": 26,
-          "inapp_ios_tvos_delta_pct": 100,
-          "paid_macos": 0,
-          "free_macos": 0,
-          "inapp_macos": 0
-        },
-        "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-        "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-      },
-      {
-        "metric": "free_app_downloads",
-        "period_start": "2026-07-26",
-        "period_end": "2026-08-01",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-08-02T15:20:00+00:00",
-        "source": "Apple App Store Connect screenshot",
-        "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-        "total_downloads": 405,
-        "daily": [
-          {
-            "date": "2026-07-26",
-            "downloads": 23
-          },
-          {
-            "date": "2026-07-27",
-            "downloads": 25
-          },
-          {
-            "date": "2026-07-28",
-            "downloads": 43
-          },
-          {
-            "date": "2026-07-29",
-            "downloads": 54
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 55
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          }
-        ],
-        "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-      },
-      {
-        "metric": "free_app_downloads",
-        "period_start": "2026-07-27",
-        "period_end": "2026-08-02",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-08-03T14:23:00+00:00",
-        "source": "Apple App Store Connect screenshot",
-        "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-        "total_downloads": 423,
-        "daily": [
-          {
-            "date": "2026-07-27",
-            "downloads": 25
-          },
-          {
-            "date": "2026-07-28",
-            "downloads": 43
-          },
-          {
-            "date": "2026-07-29",
-            "downloads": 54
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 55
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 41
-          }
-        ],
-        "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-      },
-      {
-        "metric": "free_app_downloads",
-        "period_start": "2026-07-29",
-        "period_end": "2026-08-04",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-08-05T14:37:00+00:00",
-        "source": "Apple App Store Connect screenshot",
-        "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-        "total_downloads": 434,
-        "daily": [
-          {
-            "date": "2026-07-29",
-            "downloads": 51
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 53
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 40
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 42
-          }
-        ],
-        "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-      },
-      {
-        "metric": "free_app_downloads_and_gross_sales",
-        "period_start": "2026-07-29",
-        "period_end": "2026-08-04",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-08-06T14:28:00+00:00",
-        "source": "Apple App Store Connect screenshots",
-        "source_screenshots": [
-          "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-          "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-        ],
-        "total_downloads": 434,
-        "gross_sales": 1095.5,
-        "daily_downloads": [
-          {
-            "date": "2026-07-29",
-            "downloads": 51
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 53
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 40
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 42
-          }
-        ],
-        "daily_sales": [
-          {
-            "date": "2026-07-29",
-            "grossRevenue": 52.5
-          },
-          {
-            "date": "2026-07-30",
-            "grossRevenue": 308.7
-          },
-          {
-            "date": "2026-07-31",
-            "grossRevenue": 132.3
-          },
-          {
-            "date": "2026-08-01",
-            "grossRevenue": 161
-          },
-          {
-            "date": "2026-08-02",
-            "grossRevenue": 44.1
-          },
-          {
-            "date": "2026-08-03",
-            "grossRevenue": 279.3
-          },
-          {
-            "date": "2026-08-04",
-            "grossRevenue": 117.6
-          }
-        ]
-      },
-      {
-        "metric": "free_app_downloads_and_gross_sales",
-        "period_start": "2026-07-29",
-        "period_end": "2026-08-04",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-08-06T14:28:00+00:00",
-        "source": "Apple App Store Connect screenshots",
-        "source_screenshots": [
-          "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-          "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-        ],
-        "total_downloads": 434,
-        "gross_sales": 1095.5,
-        "daily_downloads": [
-          {
-            "date": "2026-07-29",
-            "downloads": 51
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 53
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 40
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 42
-          }
-        ],
-        "daily_sales": [
-          {
-            "date": "2026-07-29",
-            "grossRevenue": 52.5
-          },
-          {
-            "date": "2026-07-30",
-            "grossRevenue": 308.7
-          },
-          {
-            "date": "2026-07-31",
-            "grossRevenue": 132.3
-          },
-          {
-            "date": "2026-08-01",
-            "grossRevenue": 161
-          },
-          {
-            "date": "2026-08-02",
-            "grossRevenue": 44.1
-          },
-          {
-            "date": "2026-08-03",
-            "grossRevenue": 279.3
-          },
-          {
-            "date": "2026-08-04",
-            "grossRevenue": 117.6
-          }
-        ]
-      },
-      {
-        "metric": "free_app_downloads_and_gross_sales",
-        "period_start": "2026-07-29",
-        "period_end": "2026-08-04",
-        "platform": "iOS/watchOS/tvOS",
-        "recorded_at": "2026-08-06T14:28:00+00:00",
-        "source": "Apple App Store Connect screenshots",
-        "source_screenshots": [
-          "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-          "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-        ],
-        "total_downloads": 434,
-        "gross_sales": 1095.5,
-        "daily_downloads": [
-          {
-            "date": "2026-07-29",
-            "downloads": 51
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 53
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 40
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 42
-          }
-        ],
-        "daily_sales": [
-          {
-            "date": "2026-07-29",
-            "grossRevenue": 52.5
-          },
-          {
-            "date": "2026-07-30",
-            "grossRevenue": 308.7
-          },
-          {
-            "date": "2026-07-31",
-            "grossRevenue": 132.3
-          },
-          {
-            "date": "2026-08-01",
-            "grossRevenue": 161
-          },
-          {
-            "date": "2026-08-02",
-            "grossRevenue": 44.1
-          },
-          {
-            "date": "2026-08-03",
-            "grossRevenue": 279.3
-          },
-          {
-            "date": "2026-08-04",
-            "grossRevenue": 117.6
-          }
-        ]
-      },
-      {
-        "downloads": 434,
-        "displayDownloads": "434",
-        "updates": null,
-        "displayUpdates": null,
-        "dailyAverage": 62,
-        "updatesDailyAverage": null,
-        "start": "2026-07-29",
-        "end": "2026-08-04",
-        "period": "Jul 29-Aug 4, 2026",
-        "priorDownloads": 434,
-        "priorUpdates": null,
-        "priorPeriod": "Jul 29-Aug 4, 2026",
-        "deltaPct": 0,
-        "updatesDeltaPct": null,
-        "product": "ElectricNOW",
-        "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-        "territories": [
-          {
-            "territory": "United States",
-            "downloads": 434,
-            "deltaPct": null
-          }
-        ],
-        "sourceLabel": "Manual Apple App Store Connect snapshot",
-        "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-        "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-        "sourceScreenshots": [
-          {
-            "metric": "sales",
-            "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-          },
-          {
-            "metric": "downloads",
-            "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-          }
-        ],
-        "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-        "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-        "daily": [
-          {
-            "date": "2026-07-29",
-            "downloads": 51
-          },
-          {
-            "date": "2026-07-30",
-            "downloads": 155
-          },
-          {
-            "date": "2026-07-31",
-            "downloads": 53
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 40
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 42
-          }
-        ],
-        "salesDaily": [
-          {
-            "date": "2026-07-29",
-            "grossRevenue": 52.5,
-            "estimatedNetRevenue": 36.75
-          },
-          {
-            "date": "2026-07-30",
-            "grossRevenue": 308.7,
-            "estimatedNetRevenue": 216.09
-          },
-          {
-            "date": "2026-07-31",
-            "grossRevenue": 132.3,
-            "estimatedNetRevenue": 92.61
-          },
-          {
-            "date": "2026-08-01",
-            "grossRevenue": 161,
-            "estimatedNetRevenue": 112.7
-          },
-          {
-            "date": "2026-08-02",
-            "grossRevenue": 44.1,
-            "estimatedNetRevenue": 30.87
-          },
-          {
-            "date": "2026-08-03",
-            "grossRevenue": 279.3,
-            "estimatedNetRevenue": 195.51
-          },
-          {
-            "date": "2026-08-04",
-            "grossRevenue": 117.6,
-            "estimatedNetRevenue": 82.32
-          }
-        ],
-        "salesGross": 1095.5,
-        "salesEstimatedNet": 766.85,
-        "snapshots": [
-          {
-            "daily": [
-              {
-                "date": "2026-07-17",
-                "downloads": 28
-              },
-              {
-                "date": "2026-07-18",
-                "downloads": 11
-              },
-              {
-                "date": "2026-07-19",
-                "downloads": 16
-              },
-              {
-                "date": "2026-07-20",
-                "downloads": 16
-              },
-              {
-                "date": "2026-07-21",
-                "downloads": 27
-              },
-              {
-                "date": "2026-07-22",
-                "downloads": 18
-              },
-              {
-                "date": "2026-07-23",
-                "downloads": 21
-              }
-            ],
-            "metric": "free_app_downloads",
-            "period_end": "2026-07-23",
-            "period_start": "2026-07-17",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-            "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-            "source": "Apple App Store Connect screenshot",
-            "total_downloads": 137
-          },
-          {
-            "daily": [
-              {
-                "date": "2026-07-20",
-                "downloads": 16,
-                "updates": 53
-              },
-              {
-                "date": "2026-07-21",
-                "downloads": 27,
-                "updates": 58
-              },
-              {
-                "date": "2026-07-22",
-                "downloads": 18,
-                "updates": 55
-              },
-              {
-                "date": "2026-07-23",
-                "downloads": 21,
-                "updates": 46
-              },
-              {
-                "date": "2026-07-24",
-                "downloads": 15,
-                "updates": 43
-              },
-              {
-                "date": "2026-07-25",
-                "downloads": 19,
-                "updates": 44
-              },
-              {
-                "date": "2026-07-26",
-                "downloads": 23,
-                "updates": 52
-              }
-            ],
-            "metric": "free_app_downloads_and_updates",
-            "period_end": "2026-07-26",
-            "period_start": "2026-07-20",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-07-27T15:57:00+00:00",
-            "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-              "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-            ],
-            "total_downloads": 139,
-            "total_updates": 351
-          },
-          {
-            "metric": "downloads_units_breakdown",
-            "period_start": "2026-07-24",
-            "period_end": "2026-07-30",
-            "platform": "iOS/watchOS/tvOS + macOS",
-            "recorded_at": "2026-07-31T15:20:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "total_units": 360,
-            "daily_average": 51,
-            "overall_delta_pct": 163,
-            "breakdown": {
-              "paid_ios_watchos_tvos": 0,
-              "free_ios_watchos_tvos": 334,
-              "free_ios_watchos_tvos_delta_pct": 143.8,
-              "inapp_ios_tvos": 26,
-              "inapp_ios_tvos_delta_pct": 100,
-              "paid_macos": 0,
-              "free_macos": 0,
-              "inapp_macos": 0
-            },
-            "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-            "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-26",
-            "period_end": "2026-08-01",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-02T15:20:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-            "total_downloads": 405,
-            "daily": [
-              {
-                "date": "2026-07-26",
-                "downloads": 23
-              },
-              {
-                "date": "2026-07-27",
-                "downloads": 25
-              },
-              {
-                "date": "2026-07-28",
-                "downloads": 43
-              },
-              {
-                "date": "2026-07-29",
-                "downloads": 54
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 55
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-27",
-            "period_end": "2026-08-02",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-03T14:23:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-            "total_downloads": 423,
-            "daily": [
-              {
-                "date": "2026-07-27",
-                "downloads": 25
-              },
-              {
-                "date": "2026-07-28",
-                "downloads": 43
-              },
-              {
-                "date": "2026-07-29",
-                "downloads": 54
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 55
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 41
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-05T14:37:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-            "total_downloads": 434,
-            "daily": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          }
-        ],
-        "priorSnapshot": {
-          "period": "Jul 29-Aug 4, 2026",
-          "start": "2026-07-29",
-          "end": "2026-08-04",
-          "downloads": 434,
-          "grossSales": 1095.5
-        },
-        "capturedAt": "2026-08-06 07:28 PDT",
-        "enteredAt": "2026-08-06 07:28 PDT"
-      },
-      {
-        "downloads": 388,
-        "displayDownloads": "388",
-        "updates": null,
-        "displayUpdates": null,
-        "inAppUnits": 69,
-        "totalUnits": 457,
-        "dailyAverage": 55,
-        "updatesDailyAverage": null,
-        "start": "2026-07-31",
-        "end": "2026-08-06",
-        "period": "Jul 31-Aug 6, 2026",
-        "priorDownloads": 434,
-        "priorUpdates": null,
-        "priorPeriod": "Jul 29-Aug 4, 2026",
-        "deltaPct": -10.599078341013826,
-        "updatesDeltaPct": null,
-        "product": "ElectricNOW",
-        "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-        "territories": [
-          {
-            "territory": "United States",
-            "downloads": 388,
-            "deltaPct": null
-          }
-        ],
-        "sourceLabel": "Manual Apple App Store Connect snapshot",
-        "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-        "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-        "sourceScreenshots": [
-          {
-            "metric": "sales",
-            "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-          },
-          {
-            "metric": "downloads",
-            "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-          }
-        ],
-        "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
-        "updatedAtUtc": "2026-08-07T16:21:00+00:00",
-        "daily": [
-          {
-            "date": "2026-07-31",
-            "downloads": 55
-          },
-          {
-            "date": "2026-08-01",
-            "downloads": 50
-          },
-          {
-            "date": "2026-08-02",
-            "downloads": 41
-          },
-          {
-            "date": "2026-08-03",
-            "downloads": 44
-          },
-          {
-            "date": "2026-08-04",
-            "downloads": 43
-          },
-          {
-            "date": "2026-08-05",
-            "downloads": 82
-          },
-          {
-            "date": "2026-08-06",
-            "downloads": 73
-          }
-        ],
-        "salesDaily": [
-          {
-            "date": "2026-07-31",
-            "grossRevenue": 188.91,
-            "estimatedNetRevenue": 132.24
-          },
-          {
-            "date": "2026-08-01",
-            "grossRevenue": 229.89,
-            "estimatedNetRevenue": 160.92
-          },
-          {
-            "date": "2026-08-02",
-            "grossRevenue": 62.97,
-            "estimatedNetRevenue": 44.08
-          },
-          {
-            "date": "2026-08-03",
-            "grossRevenue": 398.81,
-            "estimatedNetRevenue": 279.17
-          },
-          {
-            "date": "2026-08-04",
-            "grossRevenue": 167.92,
-            "estimatedNetRevenue": 117.54
-          },
-          {
-            "date": "2026-08-05",
-            "grossRevenue": 146.93,
-            "estimatedNetRevenue": 102.85
-          },
-          {
-            "date": "2026-08-06",
-            "grossRevenue": 210.89,
-            "estimatedNetRevenue": 147.62
-          }
-        ],
-        "salesGross": 1406.32,
-        "salesEstimatedNet": 984.42,
-        "priorSnapshot": {
-          "downloads": 434,
-          "displayDownloads": "434",
-          "updates": null,
-          "displayUpdates": null,
-          "dailyAverage": 62,
-          "updatesDailyAverage": null,
-          "start": "2026-07-29",
-          "end": "2026-08-04",
-          "period": "Jul 29-Aug 4, 2026",
-          "priorDownloads": 434,
-          "priorUpdates": null,
-          "priorPeriod": "Jul 29-Aug 4, 2026",
-          "deltaPct": 0,
-          "updatesDeltaPct": null,
-          "product": "ElectricNOW",
-          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-          "territories": [
-            {
-              "territory": "United States",
-              "downloads": 434,
-              "deltaPct": null
-            }
-          ],
-          "sourceLabel": "Manual Apple App Store Connect snapshot",
-          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-          "sourceScreenshots": [
-            {
-              "metric": "sales",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-            },
-            {
-              "metric": "downloads",
-              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            }
-          ],
-          "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-          "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-          "daily": [
-            {
-              "date": "2026-07-29",
-              "downloads": 51
-            },
-            {
-              "date": "2026-07-30",
-              "downloads": 155
-            },
-            {
-              "date": "2026-07-31",
-              "downloads": 53
-            },
-            {
-              "date": "2026-08-01",
-              "downloads": 50
-            },
-            {
-              "date": "2026-08-02",
-              "downloads": 40
-            },
-            {
-              "date": "2026-08-03",
-              "downloads": 43
-            },
-            {
-              "date": "2026-08-04",
-              "downloads": 42
-            }
-          ],
-          "salesDaily": [
-            {
-              "date": "2026-07-29",
-              "grossRevenue": 52.5,
-              "estimatedNetRevenue": 36.75
-            },
-            {
-              "date": "2026-07-30",
-              "grossRevenue": 308.7,
-              "estimatedNetRevenue": 216.09
-            },
-            {
-              "date": "2026-07-31",
-              "grossRevenue": 132.3,
-              "estimatedNetRevenue": 92.61
-            },
-            {
-              "date": "2026-08-01",
-              "grossRevenue": 161,
-              "estimatedNetRevenue": 112.7
-            },
-            {
-              "date": "2026-08-02",
-              "grossRevenue": 44.1,
-              "estimatedNetRevenue": 30.87
-            },
-            {
-              "date": "2026-08-03",
-              "grossRevenue": 279.3,
-              "estimatedNetRevenue": 195.51
-            },
-            {
-              "date": "2026-08-04",
-              "grossRevenue": 117.6,
-              "estimatedNetRevenue": 82.32
-            }
-          ],
-          "salesGross": 1095.5,
-          "salesEstimatedNet": 766.85,
-          "snapshots": [
-            {
-              "daily": [
-                {
-                  "date": "2026-07-17",
-                  "downloads": 28
-                },
-                {
-                  "date": "2026-07-18",
-                  "downloads": 11
-                },
-                {
-                  "date": "2026-07-19",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21
-                }
-              ],
-              "metric": "free_app_downloads",
-              "period_end": "2026-07-23",
-              "period_start": "2026-07-17",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-              "source": "Apple App Store Connect screenshot",
-              "total_downloads": 137
-            },
-            {
-              "daily": [
-                {
-                  "date": "2026-07-20",
-                  "downloads": 16,
-                  "updates": 53
-                },
-                {
-                  "date": "2026-07-21",
-                  "downloads": 27,
-                  "updates": 58
-                },
-                {
-                  "date": "2026-07-22",
-                  "downloads": 18,
-                  "updates": 55
-                },
-                {
-                  "date": "2026-07-23",
-                  "downloads": 21,
-                  "updates": 46
-                },
-                {
-                  "date": "2026-07-24",
-                  "downloads": 15,
-                  "updates": 43
-                },
-                {
-                  "date": "2026-07-25",
-                  "downloads": 19,
-                  "updates": 44
-                },
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23,
-                  "updates": 52
-                }
-              ],
-              "metric": "free_app_downloads_and_updates",
-              "period_end": "2026-07-26",
-              "period_start": "2026-07-20",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-07-27T15:57:00+00:00",
-              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-              ],
-              "total_downloads": 139,
-              "total_updates": 351
-            },
-            {
-              "metric": "downloads_units_breakdown",
-              "period_start": "2026-07-24",
-              "period_end": "2026-07-30",
-              "platform": "iOS/watchOS/tvOS + macOS",
-              "recorded_at": "2026-07-31T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "total_units": 360,
-              "daily_average": 51,
-              "overall_delta_pct": 163,
-              "breakdown": {
-                "paid_ios_watchos_tvos": 0,
-                "free_ios_watchos_tvos": 334,
-                "free_ios_watchos_tvos_delta_pct": 143.8,
-                "inapp_ios_tvos": 26,
-                "inapp_ios_tvos_delta_pct": 100,
-                "paid_macos": 0,
-                "free_macos": 0,
-                "inapp_macos": 0
-              },
-              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-26",
-              "period_end": "2026-08-01",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-02T15:20:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-              "total_downloads": 405,
-              "daily": [
-                {
-                  "date": "2026-07-26",
-                  "downloads": 23
-                },
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-27",
-              "period_end": "2026-08-02",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-03T14:23:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-              "total_downloads": 423,
-              "daily": [
-                {
-                  "date": "2026-07-27",
-                  "downloads": 25
-                },
-                {
-                  "date": "2026-07-28",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-07-29",
-                  "downloads": 54
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 55
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 41
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-            },
-            {
-              "metric": "free_app_downloads",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-05T14:37:00+00:00",
-              "source": "Apple App Store Connect screenshot",
-              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-              "total_downloads": 434,
-              "daily": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            },
-            {
-              "metric": "free_app_downloads_and_gross_sales",
-              "period_start": "2026-07-29",
-              "period_end": "2026-08-04",
-              "platform": "iOS/watchOS/tvOS",
-              "recorded_at": "2026-08-06T14:28:00+00:00",
-              "source": "Apple App Store Connect screenshots",
-              "source_screenshots": [
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              ],
-              "total_downloads": 434,
-              "gross_sales": 1095.5,
-              "daily_downloads": [
-                {
-                  "date": "2026-07-29",
-                  "downloads": 51
-                },
-                {
-                  "date": "2026-07-30",
-                  "downloads": 155
-                },
-                {
-                  "date": "2026-07-31",
-                  "downloads": 53
-                },
-                {
-                  "date": "2026-08-01",
-                  "downloads": 50
-                },
-                {
-                  "date": "2026-08-02",
-                  "downloads": 40
-                },
-                {
-                  "date": "2026-08-03",
-                  "downloads": 43
-                },
-                {
-                  "date": "2026-08-04",
-                  "downloads": 42
-                }
-              ],
-              "daily_sales": [
-                {
-                  "date": "2026-07-29",
-                  "grossRevenue": 52.5
-                },
-                {
-                  "date": "2026-07-30",
-                  "grossRevenue": 308.7
-                },
-                {
-                  "date": "2026-07-31",
-                  "grossRevenue": 132.3
-                },
-                {
-                  "date": "2026-08-01",
-                  "grossRevenue": 161
-                },
-                {
-                  "date": "2026-08-02",
-                  "grossRevenue": 44.1
-                },
-                {
-                  "date": "2026-08-03",
-                  "grossRevenue": 279.3
-                },
-                {
-                  "date": "2026-08-04",
-                  "grossRevenue": 117.6
-                }
-              ]
-            }
-          ],
-          "priorSnapshot": {
-            "period": "Jul 29-Aug 4, 2026",
-            "start": "2026-07-29",
-            "end": "2026-08-04",
-            "downloads": 434,
-            "grossSales": 1095.5
-          },
-          "capturedAt": "2026-08-06 07:28 PDT",
-          "enteredAt": "2026-08-06 07:28 PDT"
-        },
-        "snapshots": [
-          {
-            "daily": [
-              {
-                "date": "2026-07-17",
-                "downloads": 28
-              },
-              {
-                "date": "2026-07-18",
-                "downloads": 11
-              },
-              {
-                "date": "2026-07-19",
-                "downloads": 16
-              },
-              {
-                "date": "2026-07-20",
-                "downloads": 16
-              },
-              {
-                "date": "2026-07-21",
-                "downloads": 27
-              },
-              {
-                "date": "2026-07-22",
-                "downloads": 18
-              },
-              {
-                "date": "2026-07-23",
-                "downloads": 21
-              }
-            ],
-            "metric": "free_app_downloads",
-            "period_end": "2026-07-23",
-            "period_start": "2026-07-17",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-            "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-            "source": "Apple App Store Connect screenshot",
-            "total_downloads": 137
-          },
-          {
-            "daily": [
-              {
-                "date": "2026-07-20",
-                "downloads": 16,
-                "updates": 53
-              },
-              {
-                "date": "2026-07-21",
-                "downloads": 27,
-                "updates": 58
-              },
-              {
-                "date": "2026-07-22",
-                "downloads": 18,
-                "updates": 55
-              },
-              {
-                "date": "2026-07-23",
-                "downloads": 21,
-                "updates": 46
-              },
-              {
-                "date": "2026-07-24",
-                "downloads": 15,
-                "updates": 43
-              },
-              {
-                "date": "2026-07-25",
-                "downloads": 19,
-                "updates": 44
-              },
-              {
-                "date": "2026-07-26",
-                "downloads": 23,
-                "updates": 52
-              }
-            ],
-            "metric": "free_app_downloads_and_updates",
-            "period_end": "2026-07-26",
-            "period_start": "2026-07-20",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-07-27T15:57:00+00:00",
-            "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-              "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-            ],
-            "total_downloads": 139,
-            "total_updates": 351
-          },
-          {
-            "metric": "downloads_units_breakdown",
-            "period_start": "2026-07-24",
-            "period_end": "2026-07-30",
-            "platform": "iOS/watchOS/tvOS + macOS",
-            "recorded_at": "2026-07-31T15:20:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "total_units": 360,
-            "daily_average": 51,
-            "overall_delta_pct": 163,
-            "breakdown": {
-              "paid_ios_watchos_tvos": 0,
-              "free_ios_watchos_tvos": 334,
-              "free_ios_watchos_tvos_delta_pct": 143.8,
-              "inapp_ios_tvos": 26,
-              "inapp_ios_tvos_delta_pct": 100,
-              "paid_macos": 0,
-              "free_macos": 0,
-              "inapp_macos": 0
-            },
-            "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-            "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-26",
-            "period_end": "2026-08-01",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-02T15:20:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-            "total_downloads": 405,
-            "daily": [
-              {
-                "date": "2026-07-26",
-                "downloads": 23
-              },
-              {
-                "date": "2026-07-27",
-                "downloads": 25
-              },
-              {
-                "date": "2026-07-28",
-                "downloads": 43
-              },
-              {
-                "date": "2026-07-29",
-                "downloads": 54
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 55
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-27",
-            "period_end": "2026-08-02",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-03T14:23:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-            "total_downloads": 423,
-            "daily": [
-              {
-                "date": "2026-07-27",
-                "downloads": 25
-              },
-              {
-                "date": "2026-07-28",
-                "downloads": 43
-              },
-              {
-                "date": "2026-07-29",
-                "downloads": 54
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 55
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 41
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-          },
-          {
-            "metric": "free_app_downloads",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-05T14:37:00+00:00",
-            "source": "Apple App Store Connect screenshot",
-            "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-            "total_downloads": 434,
-            "daily": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "metric": "free_app_downloads_and_gross_sales",
-            "period_start": "2026-07-29",
-            "period_end": "2026-08-04",
-            "platform": "iOS/watchOS/tvOS",
-            "recorded_at": "2026-08-06T14:28:00+00:00",
-            "source": "Apple App Store Connect screenshots",
-            "source_screenshots": [
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-              "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-            ],
-            "total_downloads": 434,
-            "gross_sales": 1095.5,
-            "daily_downloads": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "daily_sales": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6
-              }
-            ]
-          },
-          {
-            "downloads": 434,
-            "displayDownloads": "434",
-            "updates": null,
-            "displayUpdates": null,
-            "dailyAverage": 62,
-            "updatesDailyAverage": null,
-            "start": "2026-07-29",
-            "end": "2026-08-04",
-            "period": "Jul 29-Aug 4, 2026",
-            "priorDownloads": 434,
-            "priorUpdates": null,
-            "priorPeriod": "Jul 29-Aug 4, 2026",
-            "deltaPct": 0,
-            "updatesDeltaPct": null,
-            "product": "ElectricNOW",
-            "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
-            "territories": [
-              {
-                "territory": "United States",
-                "downloads": 434,
-                "deltaPct": null
-              }
-            ],
-            "sourceLabel": "Manual Apple App Store Connect snapshot",
-            "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
-            "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-            "sourceScreenshots": [
-              {
-                "metric": "sales",
-                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
-              },
-              {
-                "metric": "downloads",
-                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-              }
-            ],
-            "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
-            "updatedAtUtc": "2026-08-06T14:28:00+00:00",
-            "daily": [
-              {
-                "date": "2026-07-29",
-                "downloads": 51
-              },
-              {
-                "date": "2026-07-30",
-                "downloads": 155
-              },
-              {
-                "date": "2026-07-31",
-                "downloads": 53
-              },
-              {
-                "date": "2026-08-01",
-                "downloads": 50
-              },
-              {
-                "date": "2026-08-02",
-                "downloads": 40
-              },
-              {
-                "date": "2026-08-03",
-                "downloads": 43
-              },
-              {
-                "date": "2026-08-04",
-                "downloads": 42
-              }
-            ],
-            "salesDaily": [
-              {
-                "date": "2026-07-29",
-                "grossRevenue": 52.5,
-                "estimatedNetRevenue": 36.75
-              },
-              {
-                "date": "2026-07-30",
-                "grossRevenue": 308.7,
-                "estimatedNetRevenue": 216.09
-              },
-              {
-                "date": "2026-07-31",
-                "grossRevenue": 132.3,
-                "estimatedNetRevenue": 92.61
-              },
-              {
-                "date": "2026-08-01",
-                "grossRevenue": 161,
-                "estimatedNetRevenue": 112.7
-              },
-              {
-                "date": "2026-08-02",
-                "grossRevenue": 44.1,
-                "estimatedNetRevenue": 30.87
-              },
-              {
-                "date": "2026-08-03",
-                "grossRevenue": 279.3,
-                "estimatedNetRevenue": 195.51
-              },
-              {
-                "date": "2026-08-04",
-                "grossRevenue": 117.6,
-                "estimatedNetRevenue": 82.32
-              }
-            ],
-            "salesGross": 1095.5,
-            "salesEstimatedNet": 766.85,
-            "snapshots": [
-              {
-                "daily": [
-                  {
-                    "date": "2026-07-17",
-                    "downloads": 28
-                  },
-                  {
-                    "date": "2026-07-18",
-                    "downloads": 11
-                  },
-                  {
-                    "date": "2026-07-19",
-                    "downloads": 16
-                  },
-                  {
-                    "date": "2026-07-20",
-                    "downloads": 16
-                  },
-                  {
-                    "date": "2026-07-21",
-                    "downloads": 27
-                  },
-                  {
-                    "date": "2026-07-22",
-                    "downloads": 18
-                  },
-                  {
-                    "date": "2026-07-23",
-                    "downloads": 21
-                  }
-                ],
-                "metric": "free_app_downloads",
-                "period_end": "2026-07-23",
-                "period_start": "2026-07-17",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-07-24T14:20:19.894661+00:00",
-                "sales_note": "No new iOS sales included in this screenshot; downloads only.",
-                "source": "Apple App Store Connect screenshot",
-                "total_downloads": 137
-              },
-              {
-                "daily": [
-                  {
-                    "date": "2026-07-20",
-                    "downloads": 16,
-                    "updates": 53
-                  },
-                  {
-                    "date": "2026-07-21",
-                    "downloads": 27,
-                    "updates": 58
-                  },
-                  {
-                    "date": "2026-07-22",
-                    "downloads": 18,
-                    "updates": 55
-                  },
-                  {
-                    "date": "2026-07-23",
-                    "downloads": 21,
-                    "updates": 46
-                  },
-                  {
-                    "date": "2026-07-24",
-                    "downloads": 15,
-                    "updates": 43
-                  },
-                  {
-                    "date": "2026-07-25",
-                    "downloads": 19,
-                    "updates": 44
-                  },
-                  {
-                    "date": "2026-07-26",
-                    "downloads": 23,
-                    "updates": 52
-                  }
-                ],
-                "metric": "free_app_downloads_and_updates",
-                "period_end": "2026-07-26",
-                "period_start": "2026-07-20",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-07-27T15:57:00+00:00",
-                "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
-                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
-                ],
-                "total_downloads": 139,
-                "total_updates": 351
-              },
-              {
-                "metric": "downloads_units_breakdown",
-                "period_start": "2026-07-24",
-                "period_end": "2026-07-30",
-                "platform": "iOS/watchOS/tvOS + macOS",
-                "recorded_at": "2026-07-31T15:20:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "total_units": 360,
-                "daily_average": 51,
-                "overall_delta_pct": 163,
-                "breakdown": {
-                  "paid_ios_watchos_tvos": 0,
-                  "free_ios_watchos_tvos": 334,
-                  "free_ios_watchos_tvos_delta_pct": 143.8,
-                  "inapp_ios_tvos": 26,
-                  "inapp_ios_tvos_delta_pct": 100,
-                  "paid_macos": 0,
-                  "free_macos": 0,
-                  "inapp_macos": 0
-                },
-                "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
-                "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-26",
-                "period_end": "2026-08-01",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-02T15:20:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
-                "total_downloads": 405,
-                "daily": [
-                  {
-                    "date": "2026-07-26",
-                    "downloads": 23
-                  },
-                  {
-                    "date": "2026-07-27",
-                    "downloads": 25
-                  },
-                  {
-                    "date": "2026-07-28",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 54
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 55
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-27",
-                "period_end": "2026-08-02",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-03T14:23:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
-                "total_downloads": 423,
-                "daily": [
-                  {
-                    "date": "2026-07-27",
-                    "downloads": 25
-                  },
-                  {
-                    "date": "2026-07-28",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 54
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 55
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 41
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
-              },
-              {
-                "metric": "free_app_downloads",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-05T14:37:00+00:00",
-                "source": "Apple App Store Connect screenshot",
-                "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
-                "total_downloads": 434,
-                "daily": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              },
-              {
-                "metric": "free_app_downloads_and_gross_sales",
-                "period_start": "2026-07-29",
-                "period_end": "2026-08-04",
-                "platform": "iOS/watchOS/tvOS",
-                "recorded_at": "2026-08-06T14:28:00+00:00",
-                "source": "Apple App Store Connect screenshots",
-                "source_screenshots": [
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
-                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
-                ],
-                "total_downloads": 434,
-                "gross_sales": 1095.5,
-                "daily_downloads": [
-                  {
-                    "date": "2026-07-29",
-                    "downloads": 51
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "downloads": 155
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "downloads": 53
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "downloads": 50
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "downloads": 40
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "downloads": 43
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "downloads": 42
-                  }
-                ],
-                "daily_sales": [
-                  {
-                    "date": "2026-07-29",
-                    "grossRevenue": 52.5
-                  },
-                  {
-                    "date": "2026-07-30",
-                    "grossRevenue": 308.7
-                  },
-                  {
-                    "date": "2026-07-31",
-                    "grossRevenue": 132.3
-                  },
-                  {
-                    "date": "2026-08-01",
-                    "grossRevenue": 161
-                  },
-                  {
-                    "date": "2026-08-02",
-                    "grossRevenue": 44.1
-                  },
-                  {
-                    "date": "2026-08-03",
-                    "grossRevenue": 279.3
-                  },
-                  {
-                    "date": "2026-08-04",
-                    "grossRevenue": 117.6
-                  }
-                ]
-              }
-            ],
-            "priorSnapshot": {
-              "period": "Jul 29-Aug 4, 2026",
-              "start": "2026-07-29",
-              "end": "2026-08-04",
-              "downloads": 434,
-              "grossSales": 1095.5
-            },
-            "capturedAt": "2026-08-06 07:28 PDT",
-            "enteredAt": "2026-08-06 07:28 PDT"
-          }
-        ],
-        "enteredAt": "2026-08-07 09:21 PDT",
-        "capturedAt": "2026-08-07T09:21:00-07:00"
-      },
-      {
         "downloads": 388,
         "displayDownloads": "388",
         "updates": null,
@@ -27986,10 +20689,7412 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         ],
         "enteredAt": "2026-08-07 09:21 PDT",
         "capturedAt": "2026-08-07T09:21:00-07:00"
-      }
-    ],
-    "enteredAt": "2026-08-07 09:21 PDT",
-    "capturedAt": "2026-08-07T09:21:00-07:00"
+      },
+      "snapshots": [
+        {
+          "daily": [
+            {
+              "date": "2026-07-17",
+              "downloads": 28
+            },
+            {
+              "date": "2026-07-18",
+              "downloads": 11
+            },
+            {
+              "date": "2026-07-19",
+              "downloads": 16
+            },
+            {
+              "date": "2026-07-20",
+              "downloads": 16
+            },
+            {
+              "date": "2026-07-21",
+              "downloads": 27
+            },
+            {
+              "date": "2026-07-22",
+              "downloads": 18
+            },
+            {
+              "date": "2026-07-23",
+              "downloads": 21
+            }
+          ],
+          "metric": "free_app_downloads",
+          "period_end": "2026-07-23",
+          "period_start": "2026-07-17",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+          "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+          "source": "Apple App Store Connect screenshot",
+          "total_downloads": 137
+        },
+        {
+          "daily": [
+            {
+              "date": "2026-07-20",
+              "downloads": 16,
+              "updates": 53
+            },
+            {
+              "date": "2026-07-21",
+              "downloads": 27,
+              "updates": 58
+            },
+            {
+              "date": "2026-07-22",
+              "downloads": 18,
+              "updates": 55
+            },
+            {
+              "date": "2026-07-23",
+              "downloads": 21,
+              "updates": 46
+            },
+            {
+              "date": "2026-07-24",
+              "downloads": 15,
+              "updates": 43
+            },
+            {
+              "date": "2026-07-25",
+              "downloads": 19,
+              "updates": 44
+            },
+            {
+              "date": "2026-07-26",
+              "downloads": 23,
+              "updates": 52
+            }
+          ],
+          "metric": "free_app_downloads_and_updates",
+          "period_end": "2026-07-26",
+          "period_start": "2026-07-20",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-07-27T15:57:00+00:00",
+          "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+          "source": "Apple App Store Connect screenshots",
+          "source_screenshots": [
+            "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+            "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+          ],
+          "total_downloads": 139,
+          "total_updates": 351
+        },
+        {
+          "metric": "downloads_units_breakdown",
+          "period_start": "2026-07-24",
+          "period_end": "2026-07-30",
+          "platform": "iOS/watchOS/tvOS + macOS",
+          "recorded_at": "2026-07-31T15:20:00+00:00",
+          "source": "Apple App Store Connect screenshot",
+          "total_units": 360,
+          "daily_average": 51,
+          "overall_delta_pct": 163,
+          "breakdown": {
+            "paid_ios_watchos_tvos": 0,
+            "free_ios_watchos_tvos": 334,
+            "free_ios_watchos_tvos_delta_pct": 143.8,
+            "inapp_ios_tvos": 26,
+            "inapp_ios_tvos_delta_pct": 100,
+            "paid_macos": 0,
+            "free_macos": 0,
+            "inapp_macos": 0
+          },
+          "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+          "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+        },
+        {
+          "metric": "free_app_downloads",
+          "period_start": "2026-07-26",
+          "period_end": "2026-08-01",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-08-02T15:20:00+00:00",
+          "source": "Apple App Store Connect screenshot",
+          "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+          "total_downloads": 405,
+          "daily": [
+            {
+              "date": "2026-07-26",
+              "downloads": 23
+            },
+            {
+              "date": "2026-07-27",
+              "downloads": 25
+            },
+            {
+              "date": "2026-07-28",
+              "downloads": 43
+            },
+            {
+              "date": "2026-07-29",
+              "downloads": 54
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 55
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            }
+          ],
+          "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+        },
+        {
+          "metric": "free_app_downloads",
+          "period_start": "2026-07-27",
+          "period_end": "2026-08-02",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-08-03T14:23:00+00:00",
+          "source": "Apple App Store Connect screenshot",
+          "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+          "total_downloads": 423,
+          "daily": [
+            {
+              "date": "2026-07-27",
+              "downloads": 25
+            },
+            {
+              "date": "2026-07-28",
+              "downloads": 43
+            },
+            {
+              "date": "2026-07-29",
+              "downloads": 54
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 55
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 41
+            }
+          ],
+          "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+        },
+        {
+          "metric": "free_app_downloads",
+          "period_start": "2026-07-29",
+          "period_end": "2026-08-04",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-08-05T14:37:00+00:00",
+          "source": "Apple App Store Connect screenshot",
+          "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+          "total_downloads": 434,
+          "daily": [
+            {
+              "date": "2026-07-29",
+              "downloads": 51
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 53
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 40
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 42
+            }
+          ],
+          "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+        },
+        {
+          "metric": "free_app_downloads_and_gross_sales",
+          "period_start": "2026-07-29",
+          "period_end": "2026-08-04",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-08-06T14:28:00+00:00",
+          "source": "Apple App Store Connect screenshots",
+          "source_screenshots": [
+            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+          ],
+          "total_downloads": 434,
+          "gross_sales": 1095.5,
+          "daily_downloads": [
+            {
+              "date": "2026-07-29",
+              "downloads": 51
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 53
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 40
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 42
+            }
+          ],
+          "daily_sales": [
+            {
+              "date": "2026-07-29",
+              "grossRevenue": 52.5
+            },
+            {
+              "date": "2026-07-30",
+              "grossRevenue": 308.7
+            },
+            {
+              "date": "2026-07-31",
+              "grossRevenue": 132.3
+            },
+            {
+              "date": "2026-08-01",
+              "grossRevenue": 161
+            },
+            {
+              "date": "2026-08-02",
+              "grossRevenue": 44.1
+            },
+            {
+              "date": "2026-08-03",
+              "grossRevenue": 279.3
+            },
+            {
+              "date": "2026-08-04",
+              "grossRevenue": 117.6
+            }
+          ]
+        },
+        {
+          "metric": "free_app_downloads_and_gross_sales",
+          "period_start": "2026-07-29",
+          "period_end": "2026-08-04",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-08-06T14:28:00+00:00",
+          "source": "Apple App Store Connect screenshots",
+          "source_screenshots": [
+            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+          ],
+          "total_downloads": 434,
+          "gross_sales": 1095.5,
+          "daily_downloads": [
+            {
+              "date": "2026-07-29",
+              "downloads": 51
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 53
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 40
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 42
+            }
+          ],
+          "daily_sales": [
+            {
+              "date": "2026-07-29",
+              "grossRevenue": 52.5
+            },
+            {
+              "date": "2026-07-30",
+              "grossRevenue": 308.7
+            },
+            {
+              "date": "2026-07-31",
+              "grossRevenue": 132.3
+            },
+            {
+              "date": "2026-08-01",
+              "grossRevenue": 161
+            },
+            {
+              "date": "2026-08-02",
+              "grossRevenue": 44.1
+            },
+            {
+              "date": "2026-08-03",
+              "grossRevenue": 279.3
+            },
+            {
+              "date": "2026-08-04",
+              "grossRevenue": 117.6
+            }
+          ]
+        },
+        {
+          "metric": "free_app_downloads_and_gross_sales",
+          "period_start": "2026-07-29",
+          "period_end": "2026-08-04",
+          "platform": "iOS/watchOS/tvOS",
+          "recorded_at": "2026-08-06T14:28:00+00:00",
+          "source": "Apple App Store Connect screenshots",
+          "source_screenshots": [
+            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+            "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+          ],
+          "total_downloads": 434,
+          "gross_sales": 1095.5,
+          "daily_downloads": [
+            {
+              "date": "2026-07-29",
+              "downloads": 51
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 53
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 40
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 42
+            }
+          ],
+          "daily_sales": [
+            {
+              "date": "2026-07-29",
+              "grossRevenue": 52.5
+            },
+            {
+              "date": "2026-07-30",
+              "grossRevenue": 308.7
+            },
+            {
+              "date": "2026-07-31",
+              "grossRevenue": 132.3
+            },
+            {
+              "date": "2026-08-01",
+              "grossRevenue": 161
+            },
+            {
+              "date": "2026-08-02",
+              "grossRevenue": 44.1
+            },
+            {
+              "date": "2026-08-03",
+              "grossRevenue": 279.3
+            },
+            {
+              "date": "2026-08-04",
+              "grossRevenue": 117.6
+            }
+          ]
+        },
+        {
+          "downloads": 434,
+          "displayDownloads": "434",
+          "updates": null,
+          "displayUpdates": null,
+          "dailyAverage": 62,
+          "updatesDailyAverage": null,
+          "start": "2026-07-29",
+          "end": "2026-08-04",
+          "period": "Jul 29-Aug 4, 2026",
+          "priorDownloads": 434,
+          "priorUpdates": null,
+          "priorPeriod": "Jul 29-Aug 4, 2026",
+          "deltaPct": 0,
+          "updatesDeltaPct": null,
+          "product": "ElectricNOW",
+          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+          "territories": [
+            {
+              "territory": "United States",
+              "downloads": 434,
+              "deltaPct": null
+            }
+          ],
+          "sourceLabel": "Manual Apple App Store Connect snapshot",
+          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+          "sourceScreenshots": [
+            {
+              "metric": "sales",
+              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+            },
+            {
+              "metric": "downloads",
+              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+            }
+          ],
+          "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+          "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+          "daily": [
+            {
+              "date": "2026-07-29",
+              "downloads": 51
+            },
+            {
+              "date": "2026-07-30",
+              "downloads": 155
+            },
+            {
+              "date": "2026-07-31",
+              "downloads": 53
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 40
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 42
+            }
+          ],
+          "salesDaily": [
+            {
+              "date": "2026-07-29",
+              "grossRevenue": 52.5,
+              "estimatedNetRevenue": 36.75
+            },
+            {
+              "date": "2026-07-30",
+              "grossRevenue": 308.7,
+              "estimatedNetRevenue": 216.09
+            },
+            {
+              "date": "2026-07-31",
+              "grossRevenue": 132.3,
+              "estimatedNetRevenue": 92.61
+            },
+            {
+              "date": "2026-08-01",
+              "grossRevenue": 161,
+              "estimatedNetRevenue": 112.7
+            },
+            {
+              "date": "2026-08-02",
+              "grossRevenue": 44.1,
+              "estimatedNetRevenue": 30.87
+            },
+            {
+              "date": "2026-08-03",
+              "grossRevenue": 279.3,
+              "estimatedNetRevenue": 195.51
+            },
+            {
+              "date": "2026-08-04",
+              "grossRevenue": 117.6,
+              "estimatedNetRevenue": 82.32
+            }
+          ],
+          "salesGross": 1095.5,
+          "salesEstimatedNet": 766.85,
+          "snapshots": [
+            {
+              "daily": [
+                {
+                  "date": "2026-07-17",
+                  "downloads": 28
+                },
+                {
+                  "date": "2026-07-18",
+                  "downloads": 11
+                },
+                {
+                  "date": "2026-07-19",
+                  "downloads": 16
+                },
+                {
+                  "date": "2026-07-20",
+                  "downloads": 16
+                },
+                {
+                  "date": "2026-07-21",
+                  "downloads": 27
+                },
+                {
+                  "date": "2026-07-22",
+                  "downloads": 18
+                },
+                {
+                  "date": "2026-07-23",
+                  "downloads": 21
+                }
+              ],
+              "metric": "free_app_downloads",
+              "period_end": "2026-07-23",
+              "period_start": "2026-07-17",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+              "source": "Apple App Store Connect screenshot",
+              "total_downloads": 137
+            },
+            {
+              "daily": [
+                {
+                  "date": "2026-07-20",
+                  "downloads": 16,
+                  "updates": 53
+                },
+                {
+                  "date": "2026-07-21",
+                  "downloads": 27,
+                  "updates": 58
+                },
+                {
+                  "date": "2026-07-22",
+                  "downloads": 18,
+                  "updates": 55
+                },
+                {
+                  "date": "2026-07-23",
+                  "downloads": 21,
+                  "updates": 46
+                },
+                {
+                  "date": "2026-07-24",
+                  "downloads": 15,
+                  "updates": 43
+                },
+                {
+                  "date": "2026-07-25",
+                  "downloads": 19,
+                  "updates": 44
+                },
+                {
+                  "date": "2026-07-26",
+                  "downloads": 23,
+                  "updates": 52
+                }
+              ],
+              "metric": "free_app_downloads_and_updates",
+              "period_end": "2026-07-26",
+              "period_start": "2026-07-20",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-07-27T15:57:00+00:00",
+              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+              ],
+              "total_downloads": 139,
+              "total_updates": 351
+            },
+            {
+              "metric": "downloads_units_breakdown",
+              "period_start": "2026-07-24",
+              "period_end": "2026-07-30",
+              "platform": "iOS/watchOS/tvOS + macOS",
+              "recorded_at": "2026-07-31T15:20:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "total_units": 360,
+              "daily_average": 51,
+              "overall_delta_pct": 163,
+              "breakdown": {
+                "paid_ios_watchos_tvos": 0,
+                "free_ios_watchos_tvos": 334,
+                "free_ios_watchos_tvos_delta_pct": 143.8,
+                "inapp_ios_tvos": 26,
+                "inapp_ios_tvos_delta_pct": 100,
+                "paid_macos": 0,
+                "free_macos": 0,
+                "inapp_macos": 0
+              },
+              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-26",
+              "period_end": "2026-08-01",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-02T15:20:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+              "total_downloads": 405,
+              "daily": [
+                {
+                  "date": "2026-07-26",
+                  "downloads": 23
+                },
+                {
+                  "date": "2026-07-27",
+                  "downloads": 25
+                },
+                {
+                  "date": "2026-07-28",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-07-29",
+                  "downloads": 54
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-27",
+              "period_end": "2026-08-02",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-03T14:23:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+              "total_downloads": 423,
+              "daily": [
+                {
+                  "date": "2026-07-27",
+                  "downloads": 25
+                },
+                {
+                  "date": "2026-07-28",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-07-29",
+                  "downloads": 54
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 41
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-05T14:37:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "total_downloads": 434,
+              "daily": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            }
+          ],
+          "priorSnapshot": {
+            "period": "Jul 29-Aug 4, 2026",
+            "start": "2026-07-29",
+            "end": "2026-08-04",
+            "downloads": 434,
+            "grossSales": 1095.5
+          },
+          "capturedAt": "2026-08-06 07:28 PDT",
+          "enteredAt": "2026-08-06 07:28 PDT"
+        },
+        {
+          "downloads": 388,
+          "displayDownloads": "388",
+          "updates": null,
+          "displayUpdates": null,
+          "inAppUnits": 69,
+          "totalUnits": 457,
+          "dailyAverage": 55,
+          "updatesDailyAverage": null,
+          "start": "2026-07-31",
+          "end": "2026-08-06",
+          "period": "Jul 31-Aug 6, 2026",
+          "priorDownloads": 434,
+          "priorUpdates": null,
+          "priorPeriod": "Jul 29-Aug 4, 2026",
+          "deltaPct": -10.599078341013826,
+          "updatesDeltaPct": null,
+          "product": "ElectricNOW",
+          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+          "territories": [
+            {
+              "territory": "United States",
+              "downloads": 388,
+              "deltaPct": null
+            }
+          ],
+          "sourceLabel": "Manual Apple App Store Connect snapshot",
+          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+          "sourceScreenshots": [
+            {
+              "metric": "sales",
+              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+            },
+            {
+              "metric": "downloads",
+              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+            }
+          ],
+          "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
+          "updatedAtUtc": "2026-08-07T16:21:00+00:00",
+          "daily": [
+            {
+              "date": "2026-07-31",
+              "downloads": 55
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 41
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 44
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-05",
+              "downloads": 82
+            },
+            {
+              "date": "2026-08-06",
+              "downloads": 73
+            }
+          ],
+          "salesDaily": [
+            {
+              "date": "2026-07-31",
+              "grossRevenue": 188.91,
+              "estimatedNetRevenue": 132.24
+            },
+            {
+              "date": "2026-08-01",
+              "grossRevenue": 229.89,
+              "estimatedNetRevenue": 160.92
+            },
+            {
+              "date": "2026-08-02",
+              "grossRevenue": 62.97,
+              "estimatedNetRevenue": 44.08
+            },
+            {
+              "date": "2026-08-03",
+              "grossRevenue": 398.81,
+              "estimatedNetRevenue": 279.17
+            },
+            {
+              "date": "2026-08-04",
+              "grossRevenue": 167.92,
+              "estimatedNetRevenue": 117.54
+            },
+            {
+              "date": "2026-08-05",
+              "grossRevenue": 146.93,
+              "estimatedNetRevenue": 102.85
+            },
+            {
+              "date": "2026-08-06",
+              "grossRevenue": 210.89,
+              "estimatedNetRevenue": 147.62
+            }
+          ],
+          "salesGross": 1406.32,
+          "salesEstimatedNet": 984.42,
+          "priorSnapshot": {
+            "downloads": 434,
+            "displayDownloads": "434",
+            "updates": null,
+            "displayUpdates": null,
+            "dailyAverage": 62,
+            "updatesDailyAverage": null,
+            "start": "2026-07-29",
+            "end": "2026-08-04",
+            "period": "Jul 29-Aug 4, 2026",
+            "priorDownloads": 434,
+            "priorUpdates": null,
+            "priorPeriod": "Jul 29-Aug 4, 2026",
+            "deltaPct": 0,
+            "updatesDeltaPct": null,
+            "product": "ElectricNOW",
+            "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+            "territories": [
+              {
+                "territory": "United States",
+                "downloads": 434,
+                "deltaPct": null
+              }
+            ],
+            "sourceLabel": "Manual Apple App Store Connect snapshot",
+            "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+            "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+            "sourceScreenshots": [
+              {
+                "metric": "sales",
+                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+              },
+              {
+                "metric": "downloads",
+                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              }
+            ],
+            "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+            "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+            "daily": [
+              {
+                "date": "2026-07-29",
+                "downloads": 51
+              },
+              {
+                "date": "2026-07-30",
+                "downloads": 155
+              },
+              {
+                "date": "2026-07-31",
+                "downloads": 53
+              },
+              {
+                "date": "2026-08-01",
+                "downloads": 50
+              },
+              {
+                "date": "2026-08-02",
+                "downloads": 40
+              },
+              {
+                "date": "2026-08-03",
+                "downloads": 43
+              },
+              {
+                "date": "2026-08-04",
+                "downloads": 42
+              }
+            ],
+            "salesDaily": [
+              {
+                "date": "2026-07-29",
+                "grossRevenue": 52.5,
+                "estimatedNetRevenue": 36.75
+              },
+              {
+                "date": "2026-07-30",
+                "grossRevenue": 308.7,
+                "estimatedNetRevenue": 216.09
+              },
+              {
+                "date": "2026-07-31",
+                "grossRevenue": 132.3,
+                "estimatedNetRevenue": 92.61
+              },
+              {
+                "date": "2026-08-01",
+                "grossRevenue": 161,
+                "estimatedNetRevenue": 112.7
+              },
+              {
+                "date": "2026-08-02",
+                "grossRevenue": 44.1,
+                "estimatedNetRevenue": 30.87
+              },
+              {
+                "date": "2026-08-03",
+                "grossRevenue": 279.3,
+                "estimatedNetRevenue": 195.51
+              },
+              {
+                "date": "2026-08-04",
+                "grossRevenue": 117.6,
+                "estimatedNetRevenue": 82.32
+              }
+            ],
+            "salesGross": 1095.5,
+            "salesEstimatedNet": 766.85,
+            "snapshots": [
+              {
+                "daily": [
+                  {
+                    "date": "2026-07-17",
+                    "downloads": 28
+                  },
+                  {
+                    "date": "2026-07-18",
+                    "downloads": 11
+                  },
+                  {
+                    "date": "2026-07-19",
+                    "downloads": 16
+                  },
+                  {
+                    "date": "2026-07-20",
+                    "downloads": 16
+                  },
+                  {
+                    "date": "2026-07-21",
+                    "downloads": 27
+                  },
+                  {
+                    "date": "2026-07-22",
+                    "downloads": 18
+                  },
+                  {
+                    "date": "2026-07-23",
+                    "downloads": 21
+                  }
+                ],
+                "metric": "free_app_downloads",
+                "period_end": "2026-07-23",
+                "period_start": "2026-07-17",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                "source": "Apple App Store Connect screenshot",
+                "total_downloads": 137
+              },
+              {
+                "daily": [
+                  {
+                    "date": "2026-07-20",
+                    "downloads": 16,
+                    "updates": 53
+                  },
+                  {
+                    "date": "2026-07-21",
+                    "downloads": 27,
+                    "updates": 58
+                  },
+                  {
+                    "date": "2026-07-22",
+                    "downloads": 18,
+                    "updates": 55
+                  },
+                  {
+                    "date": "2026-07-23",
+                    "downloads": 21,
+                    "updates": 46
+                  },
+                  {
+                    "date": "2026-07-24",
+                    "downloads": 15,
+                    "updates": 43
+                  },
+                  {
+                    "date": "2026-07-25",
+                    "downloads": 19,
+                    "updates": 44
+                  },
+                  {
+                    "date": "2026-07-26",
+                    "downloads": 23,
+                    "updates": 52
+                  }
+                ],
+                "metric": "free_app_downloads_and_updates",
+                "period_end": "2026-07-26",
+                "period_start": "2026-07-20",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-07-27T15:57:00+00:00",
+                "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                ],
+                "total_downloads": 139,
+                "total_updates": 351
+              },
+              {
+                "metric": "downloads_units_breakdown",
+                "period_start": "2026-07-24",
+                "period_end": "2026-07-30",
+                "platform": "iOS/watchOS/tvOS + macOS",
+                "recorded_at": "2026-07-31T15:20:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "total_units": 360,
+                "daily_average": 51,
+                "overall_delta_pct": 163,
+                "breakdown": {
+                  "paid_ios_watchos_tvos": 0,
+                  "free_ios_watchos_tvos": 334,
+                  "free_ios_watchos_tvos_delta_pct": 143.8,
+                  "inapp_ios_tvos": 26,
+                  "inapp_ios_tvos_delta_pct": 100,
+                  "paid_macos": 0,
+                  "free_macos": 0,
+                  "inapp_macos": 0
+                },
+                "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+              },
+              {
+                "metric": "free_app_downloads",
+                "period_start": "2026-07-26",
+                "period_end": "2026-08-01",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-02T15:20:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                "total_downloads": 405,
+                "daily": [
+                  {
+                    "date": "2026-07-26",
+                    "downloads": 23
+                  },
+                  {
+                    "date": "2026-07-27",
+                    "downloads": 25
+                  },
+                  {
+                    "date": "2026-07-28",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 54
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 55
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  }
+                ],
+                "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+              },
+              {
+                "metric": "free_app_downloads",
+                "period_start": "2026-07-27",
+                "period_end": "2026-08-02",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-03T14:23:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                "total_downloads": 423,
+                "daily": [
+                  {
+                    "date": "2026-07-27",
+                    "downloads": 25
+                  },
+                  {
+                    "date": "2026-07-28",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 54
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 55
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 41
+                  }
+                ],
+                "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+              },
+              {
+                "metric": "free_app_downloads",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-05T14:37:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                "total_downloads": 434,
+                "daily": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+              },
+              {
+                "metric": "free_app_downloads_and_gross_sales",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-06T14:28:00+00:00",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                ],
+                "total_downloads": 434,
+                "gross_sales": 1095.5,
+                "daily_downloads": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "daily_sales": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6
+                  }
+                ]
+              },
+              {
+                "metric": "free_app_downloads_and_gross_sales",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-06T14:28:00+00:00",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                ],
+                "total_downloads": 434,
+                "gross_sales": 1095.5,
+                "daily_downloads": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "daily_sales": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6
+                  }
+                ]
+              },
+              {
+                "metric": "free_app_downloads_and_gross_sales",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-06T14:28:00+00:00",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                ],
+                "total_downloads": 434,
+                "gross_sales": 1095.5,
+                "daily_downloads": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "daily_sales": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6
+                  }
+                ]
+              }
+            ],
+            "priorSnapshot": {
+              "period": "Jul 29-Aug 4, 2026",
+              "start": "2026-07-29",
+              "end": "2026-08-04",
+              "downloads": 434,
+              "grossSales": 1095.5
+            },
+            "capturedAt": "2026-08-06 07:28 PDT",
+            "enteredAt": "2026-08-06 07:28 PDT"
+          },
+          "snapshots": [
+            {
+              "daily": [
+                {
+                  "date": "2026-07-17",
+                  "downloads": 28
+                },
+                {
+                  "date": "2026-07-18",
+                  "downloads": 11
+                },
+                {
+                  "date": "2026-07-19",
+                  "downloads": 16
+                },
+                {
+                  "date": "2026-07-20",
+                  "downloads": 16
+                },
+                {
+                  "date": "2026-07-21",
+                  "downloads": 27
+                },
+                {
+                  "date": "2026-07-22",
+                  "downloads": 18
+                },
+                {
+                  "date": "2026-07-23",
+                  "downloads": 21
+                }
+              ],
+              "metric": "free_app_downloads",
+              "period_end": "2026-07-23",
+              "period_start": "2026-07-17",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+              "source": "Apple App Store Connect screenshot",
+              "total_downloads": 137
+            },
+            {
+              "daily": [
+                {
+                  "date": "2026-07-20",
+                  "downloads": 16,
+                  "updates": 53
+                },
+                {
+                  "date": "2026-07-21",
+                  "downloads": 27,
+                  "updates": 58
+                },
+                {
+                  "date": "2026-07-22",
+                  "downloads": 18,
+                  "updates": 55
+                },
+                {
+                  "date": "2026-07-23",
+                  "downloads": 21,
+                  "updates": 46
+                },
+                {
+                  "date": "2026-07-24",
+                  "downloads": 15,
+                  "updates": 43
+                },
+                {
+                  "date": "2026-07-25",
+                  "downloads": 19,
+                  "updates": 44
+                },
+                {
+                  "date": "2026-07-26",
+                  "downloads": 23,
+                  "updates": 52
+                }
+              ],
+              "metric": "free_app_downloads_and_updates",
+              "period_end": "2026-07-26",
+              "period_start": "2026-07-20",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-07-27T15:57:00+00:00",
+              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+              ],
+              "total_downloads": 139,
+              "total_updates": 351
+            },
+            {
+              "metric": "downloads_units_breakdown",
+              "period_start": "2026-07-24",
+              "period_end": "2026-07-30",
+              "platform": "iOS/watchOS/tvOS + macOS",
+              "recorded_at": "2026-07-31T15:20:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "total_units": 360,
+              "daily_average": 51,
+              "overall_delta_pct": 163,
+              "breakdown": {
+                "paid_ios_watchos_tvos": 0,
+                "free_ios_watchos_tvos": 334,
+                "free_ios_watchos_tvos_delta_pct": 143.8,
+                "inapp_ios_tvos": 26,
+                "inapp_ios_tvos_delta_pct": 100,
+                "paid_macos": 0,
+                "free_macos": 0,
+                "inapp_macos": 0
+              },
+              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-26",
+              "period_end": "2026-08-01",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-02T15:20:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+              "total_downloads": 405,
+              "daily": [
+                {
+                  "date": "2026-07-26",
+                  "downloads": 23
+                },
+                {
+                  "date": "2026-07-27",
+                  "downloads": 25
+                },
+                {
+                  "date": "2026-07-28",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-07-29",
+                  "downloads": 54
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-27",
+              "period_end": "2026-08-02",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-03T14:23:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+              "total_downloads": 423,
+              "daily": [
+                {
+                  "date": "2026-07-27",
+                  "downloads": 25
+                },
+                {
+                  "date": "2026-07-28",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-07-29",
+                  "downloads": 54
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 41
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-05T14:37:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "total_downloads": 434,
+              "daily": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "downloads": 434,
+              "displayDownloads": "434",
+              "updates": null,
+              "displayUpdates": null,
+              "dailyAverage": 62,
+              "updatesDailyAverage": null,
+              "start": "2026-07-29",
+              "end": "2026-08-04",
+              "period": "Jul 29-Aug 4, 2026",
+              "priorDownloads": 434,
+              "priorUpdates": null,
+              "priorPeriod": "Jul 29-Aug 4, 2026",
+              "deltaPct": 0,
+              "updatesDeltaPct": null,
+              "product": "ElectricNOW",
+              "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+              "territories": [
+                {
+                  "territory": "United States",
+                  "downloads": 434,
+                  "deltaPct": null
+                }
+              ],
+              "sourceLabel": "Manual Apple App Store Connect snapshot",
+              "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+              "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "sourceScreenshots": [
+                {
+                  "metric": "sales",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                },
+                {
+                  "metric": "downloads",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                }
+              ],
+              "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+              "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+              "daily": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "salesDaily": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5,
+                  "estimatedNetRevenue": 36.75
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7,
+                  "estimatedNetRevenue": 216.09
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3,
+                  "estimatedNetRevenue": 92.61
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161,
+                  "estimatedNetRevenue": 112.7
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1,
+                  "estimatedNetRevenue": 30.87
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3,
+                  "estimatedNetRevenue": 195.51
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6,
+                  "estimatedNetRevenue": 82.32
+                }
+              ],
+              "salesGross": 1095.5,
+              "salesEstimatedNet": 766.85,
+              "snapshots": [
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-17",
+                      "downloads": 28
+                    },
+                    {
+                      "date": "2026-07-18",
+                      "downloads": 11
+                    },
+                    {
+                      "date": "2026-07-19",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21
+                    }
+                  ],
+                  "metric": "free_app_downloads",
+                  "period_end": "2026-07-23",
+                  "period_start": "2026-07-17",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                  "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_downloads": 137
+                },
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16,
+                      "updates": 53
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27,
+                      "updates": 58
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18,
+                      "updates": 55
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21,
+                      "updates": 46
+                    },
+                    {
+                      "date": "2026-07-24",
+                      "downloads": 15,
+                      "updates": 43
+                    },
+                    {
+                      "date": "2026-07-25",
+                      "downloads": 19,
+                      "updates": 44
+                    },
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23,
+                      "updates": 52
+                    }
+                  ],
+                  "metric": "free_app_downloads_and_updates",
+                  "period_end": "2026-07-26",
+                  "period_start": "2026-07-20",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-27T15:57:00+00:00",
+                  "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                  ],
+                  "total_downloads": 139,
+                  "total_updates": 351
+                },
+                {
+                  "metric": "downloads_units_breakdown",
+                  "period_start": "2026-07-24",
+                  "period_end": "2026-07-30",
+                  "platform": "iOS/watchOS/tvOS + macOS",
+                  "recorded_at": "2026-07-31T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_units": 360,
+                  "daily_average": 51,
+                  "overall_delta_pct": 163,
+                  "breakdown": {
+                    "paid_ios_watchos_tvos": 0,
+                    "free_ios_watchos_tvos": 334,
+                    "free_ios_watchos_tvos_delta_pct": 143.8,
+                    "inapp_ios_tvos": 26,
+                    "inapp_ios_tvos_delta_pct": 100,
+                    "paid_macos": 0,
+                    "free_macos": 0,
+                    "inapp_macos": 0
+                  },
+                  "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                  "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-26",
+                  "period_end": "2026-08-01",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-02T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                  "total_downloads": 405,
+                  "daily": [
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23
+                    },
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-27",
+                  "period_end": "2026-08-02",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-03T14:23:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                  "total_downloads": 423,
+                  "daily": [
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 41
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-05T14:37:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                  "total_downloads": 434,
+                  "daily": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                }
+              ],
+              "priorSnapshot": {
+                "period": "Jul 29-Aug 4, 2026",
+                "start": "2026-07-29",
+                "end": "2026-08-04",
+                "downloads": 434,
+                "grossSales": 1095.5
+              },
+              "capturedAt": "2026-08-06 07:28 PDT",
+              "enteredAt": "2026-08-06 07:28 PDT"
+            }
+          ],
+          "enteredAt": "2026-08-07 09:21 PDT",
+          "capturedAt": "2026-08-07T09:21:00-07:00"
+        },
+        {
+          "downloads": 388,
+          "displayDownloads": "388",
+          "updates": null,
+          "displayUpdates": null,
+          "inAppUnits": 69,
+          "totalUnits": 457,
+          "dailyAverage": 55,
+          "updatesDailyAverage": null,
+          "start": "2026-07-31",
+          "end": "2026-08-06",
+          "period": "Jul 31-Aug 6, 2026",
+          "priorDownloads": 388,
+          "priorUpdates": null,
+          "priorPeriod": "Jul 31-Aug 6, 2026",
+          "deltaPct": 0,
+          "updatesDeltaPct": null,
+          "product": "ElectricNOW",
+          "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+          "territories": [
+            {
+              "territory": "United States",
+              "downloads": 388,
+              "deltaPct": null
+            }
+          ],
+          "sourceLabel": "Manual Apple App Store Connect snapshot",
+          "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+          "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+          "sourceScreenshots": [
+            {
+              "metric": "sales",
+              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+            },
+            {
+              "metric": "downloads",
+              "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+            }
+          ],
+          "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
+          "updatedAtUtc": "2026-08-07T16:21:00+00:00",
+          "daily": [
+            {
+              "date": "2026-07-31",
+              "downloads": 55
+            },
+            {
+              "date": "2026-08-01",
+              "downloads": 50
+            },
+            {
+              "date": "2026-08-02",
+              "downloads": 41
+            },
+            {
+              "date": "2026-08-03",
+              "downloads": 44
+            },
+            {
+              "date": "2026-08-04",
+              "downloads": 43
+            },
+            {
+              "date": "2026-08-05",
+              "downloads": 82
+            },
+            {
+              "date": "2026-08-06",
+              "downloads": 73
+            }
+          ],
+          "salesDaily": [
+            {
+              "date": "2026-07-31",
+              "grossRevenue": 188.91,
+              "estimatedNetRevenue": 132.24
+            },
+            {
+              "date": "2026-08-01",
+              "grossRevenue": 229.89,
+              "estimatedNetRevenue": 160.92
+            },
+            {
+              "date": "2026-08-02",
+              "grossRevenue": 62.97,
+              "estimatedNetRevenue": 44.08
+            },
+            {
+              "date": "2026-08-03",
+              "grossRevenue": 398.81,
+              "estimatedNetRevenue": 279.17
+            },
+            {
+              "date": "2026-08-04",
+              "grossRevenue": 167.92,
+              "estimatedNetRevenue": 117.54
+            },
+            {
+              "date": "2026-08-05",
+              "grossRevenue": 146.93,
+              "estimatedNetRevenue": 102.85
+            },
+            {
+              "date": "2026-08-06",
+              "grossRevenue": 210.89,
+              "estimatedNetRevenue": 147.62
+            }
+          ],
+          "salesGross": 1406.32,
+          "salesEstimatedNet": 984.42,
+          "priorSnapshot": {
+            "downloads": 388,
+            "displayDownloads": "388",
+            "updates": null,
+            "displayUpdates": null,
+            "inAppUnits": 69,
+            "totalUnits": 457,
+            "dailyAverage": 55,
+            "updatesDailyAverage": null,
+            "start": "2026-07-31",
+            "end": "2026-08-06",
+            "period": "Jul 31-Aug 6, 2026",
+            "priorDownloads": 434,
+            "priorUpdates": null,
+            "priorPeriod": "Jul 29-Aug 4, 2026",
+            "deltaPct": -10.599078341013826,
+            "updatesDeltaPct": null,
+            "product": "ElectricNOW",
+            "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+            "territories": [
+              {
+                "territory": "United States",
+                "downloads": 388,
+                "deltaPct": null
+              }
+            ],
+            "sourceLabel": "Manual Apple App Store Connect snapshot",
+            "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+            "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+            "sourceScreenshots": [
+              {
+                "metric": "sales",
+                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+              },
+              {
+                "metric": "downloads",
+                "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              }
+            ],
+            "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
+            "updatedAtUtc": "2026-08-07T16:21:00+00:00",
+            "daily": [
+              {
+                "date": "2026-07-31",
+                "downloads": 55
+              },
+              {
+                "date": "2026-08-01",
+                "downloads": 50
+              },
+              {
+                "date": "2026-08-02",
+                "downloads": 41
+              },
+              {
+                "date": "2026-08-03",
+                "downloads": 44
+              },
+              {
+                "date": "2026-08-04",
+                "downloads": 43
+              },
+              {
+                "date": "2026-08-05",
+                "downloads": 82
+              },
+              {
+                "date": "2026-08-06",
+                "downloads": 73
+              }
+            ],
+            "salesDaily": [
+              {
+                "date": "2026-07-31",
+                "grossRevenue": 188.91,
+                "estimatedNetRevenue": 132.24
+              },
+              {
+                "date": "2026-08-01",
+                "grossRevenue": 229.89,
+                "estimatedNetRevenue": 160.92
+              },
+              {
+                "date": "2026-08-02",
+                "grossRevenue": 62.97,
+                "estimatedNetRevenue": 44.08
+              },
+              {
+                "date": "2026-08-03",
+                "grossRevenue": 398.81,
+                "estimatedNetRevenue": 279.17
+              },
+              {
+                "date": "2026-08-04",
+                "grossRevenue": 167.92,
+                "estimatedNetRevenue": 117.54
+              },
+              {
+                "date": "2026-08-05",
+                "grossRevenue": 146.93,
+                "estimatedNetRevenue": 102.85
+              },
+              {
+                "date": "2026-08-06",
+                "grossRevenue": 210.89,
+                "estimatedNetRevenue": 147.62
+              }
+            ],
+            "salesGross": 1406.32,
+            "salesEstimatedNet": 984.42,
+            "priorSnapshot": {
+              "downloads": 434,
+              "displayDownloads": "434",
+              "updates": null,
+              "displayUpdates": null,
+              "dailyAverage": 62,
+              "updatesDailyAverage": null,
+              "start": "2026-07-29",
+              "end": "2026-08-04",
+              "period": "Jul 29-Aug 4, 2026",
+              "priorDownloads": 434,
+              "priorUpdates": null,
+              "priorPeriod": "Jul 29-Aug 4, 2026",
+              "deltaPct": 0,
+              "updatesDeltaPct": null,
+              "product": "ElectricNOW",
+              "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+              "territories": [
+                {
+                  "territory": "United States",
+                  "downloads": 434,
+                  "deltaPct": null
+                }
+              ],
+              "sourceLabel": "Manual Apple App Store Connect snapshot",
+              "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+              "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "sourceScreenshots": [
+                {
+                  "metric": "sales",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                },
+                {
+                  "metric": "downloads",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                }
+              ],
+              "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+              "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+              "daily": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "salesDaily": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5,
+                  "estimatedNetRevenue": 36.75
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7,
+                  "estimatedNetRevenue": 216.09
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3,
+                  "estimatedNetRevenue": 92.61
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161,
+                  "estimatedNetRevenue": 112.7
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1,
+                  "estimatedNetRevenue": 30.87
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3,
+                  "estimatedNetRevenue": 195.51
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6,
+                  "estimatedNetRevenue": 82.32
+                }
+              ],
+              "salesGross": 1095.5,
+              "salesEstimatedNet": 766.85,
+              "snapshots": [
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-17",
+                      "downloads": 28
+                    },
+                    {
+                      "date": "2026-07-18",
+                      "downloads": 11
+                    },
+                    {
+                      "date": "2026-07-19",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21
+                    }
+                  ],
+                  "metric": "free_app_downloads",
+                  "period_end": "2026-07-23",
+                  "period_start": "2026-07-17",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                  "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_downloads": 137
+                },
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16,
+                      "updates": 53
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27,
+                      "updates": 58
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18,
+                      "updates": 55
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21,
+                      "updates": 46
+                    },
+                    {
+                      "date": "2026-07-24",
+                      "downloads": 15,
+                      "updates": 43
+                    },
+                    {
+                      "date": "2026-07-25",
+                      "downloads": 19,
+                      "updates": 44
+                    },
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23,
+                      "updates": 52
+                    }
+                  ],
+                  "metric": "free_app_downloads_and_updates",
+                  "period_end": "2026-07-26",
+                  "period_start": "2026-07-20",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-27T15:57:00+00:00",
+                  "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                  ],
+                  "total_downloads": 139,
+                  "total_updates": 351
+                },
+                {
+                  "metric": "downloads_units_breakdown",
+                  "period_start": "2026-07-24",
+                  "period_end": "2026-07-30",
+                  "platform": "iOS/watchOS/tvOS + macOS",
+                  "recorded_at": "2026-07-31T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_units": 360,
+                  "daily_average": 51,
+                  "overall_delta_pct": 163,
+                  "breakdown": {
+                    "paid_ios_watchos_tvos": 0,
+                    "free_ios_watchos_tvos": 334,
+                    "free_ios_watchos_tvos_delta_pct": 143.8,
+                    "inapp_ios_tvos": 26,
+                    "inapp_ios_tvos_delta_pct": 100,
+                    "paid_macos": 0,
+                    "free_macos": 0,
+                    "inapp_macos": 0
+                  },
+                  "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                  "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-26",
+                  "period_end": "2026-08-01",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-02T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                  "total_downloads": 405,
+                  "daily": [
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23
+                    },
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-27",
+                  "period_end": "2026-08-02",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-03T14:23:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                  "total_downloads": 423,
+                  "daily": [
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 41
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-05T14:37:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                  "total_downloads": 434,
+                  "daily": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                }
+              ],
+              "priorSnapshot": {
+                "period": "Jul 29-Aug 4, 2026",
+                "start": "2026-07-29",
+                "end": "2026-08-04",
+                "downloads": 434,
+                "grossSales": 1095.5
+              },
+              "capturedAt": "2026-08-06 07:28 PDT",
+              "enteredAt": "2026-08-06 07:28 PDT"
+            },
+            "snapshots": [
+              {
+                "daily": [
+                  {
+                    "date": "2026-07-17",
+                    "downloads": 28
+                  },
+                  {
+                    "date": "2026-07-18",
+                    "downloads": 11
+                  },
+                  {
+                    "date": "2026-07-19",
+                    "downloads": 16
+                  },
+                  {
+                    "date": "2026-07-20",
+                    "downloads": 16
+                  },
+                  {
+                    "date": "2026-07-21",
+                    "downloads": 27
+                  },
+                  {
+                    "date": "2026-07-22",
+                    "downloads": 18
+                  },
+                  {
+                    "date": "2026-07-23",
+                    "downloads": 21
+                  }
+                ],
+                "metric": "free_app_downloads",
+                "period_end": "2026-07-23",
+                "period_start": "2026-07-17",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                "source": "Apple App Store Connect screenshot",
+                "total_downloads": 137
+              },
+              {
+                "daily": [
+                  {
+                    "date": "2026-07-20",
+                    "downloads": 16,
+                    "updates": 53
+                  },
+                  {
+                    "date": "2026-07-21",
+                    "downloads": 27,
+                    "updates": 58
+                  },
+                  {
+                    "date": "2026-07-22",
+                    "downloads": 18,
+                    "updates": 55
+                  },
+                  {
+                    "date": "2026-07-23",
+                    "downloads": 21,
+                    "updates": 46
+                  },
+                  {
+                    "date": "2026-07-24",
+                    "downloads": 15,
+                    "updates": 43
+                  },
+                  {
+                    "date": "2026-07-25",
+                    "downloads": 19,
+                    "updates": 44
+                  },
+                  {
+                    "date": "2026-07-26",
+                    "downloads": 23,
+                    "updates": 52
+                  }
+                ],
+                "metric": "free_app_downloads_and_updates",
+                "period_end": "2026-07-26",
+                "period_start": "2026-07-20",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-07-27T15:57:00+00:00",
+                "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                  "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                ],
+                "total_downloads": 139,
+                "total_updates": 351
+              },
+              {
+                "metric": "downloads_units_breakdown",
+                "period_start": "2026-07-24",
+                "period_end": "2026-07-30",
+                "platform": "iOS/watchOS/tvOS + macOS",
+                "recorded_at": "2026-07-31T15:20:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "total_units": 360,
+                "daily_average": 51,
+                "overall_delta_pct": 163,
+                "breakdown": {
+                  "paid_ios_watchos_tvos": 0,
+                  "free_ios_watchos_tvos": 334,
+                  "free_ios_watchos_tvos_delta_pct": 143.8,
+                  "inapp_ios_tvos": 26,
+                  "inapp_ios_tvos_delta_pct": 100,
+                  "paid_macos": 0,
+                  "free_macos": 0,
+                  "inapp_macos": 0
+                },
+                "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+              },
+              {
+                "metric": "free_app_downloads",
+                "period_start": "2026-07-26",
+                "period_end": "2026-08-01",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-02T15:20:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                "total_downloads": 405,
+                "daily": [
+                  {
+                    "date": "2026-07-26",
+                    "downloads": 23
+                  },
+                  {
+                    "date": "2026-07-27",
+                    "downloads": 25
+                  },
+                  {
+                    "date": "2026-07-28",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 54
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 55
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  }
+                ],
+                "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+              },
+              {
+                "metric": "free_app_downloads",
+                "period_start": "2026-07-27",
+                "period_end": "2026-08-02",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-03T14:23:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                "total_downloads": 423,
+                "daily": [
+                  {
+                    "date": "2026-07-27",
+                    "downloads": 25
+                  },
+                  {
+                    "date": "2026-07-28",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 54
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 55
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 41
+                  }
+                ],
+                "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+              },
+              {
+                "metric": "free_app_downloads",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-05T14:37:00+00:00",
+                "source": "Apple App Store Connect screenshot",
+                "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                "total_downloads": 434,
+                "daily": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+              },
+              {
+                "metric": "free_app_downloads_and_gross_sales",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-06T14:28:00+00:00",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                ],
+                "total_downloads": 434,
+                "gross_sales": 1095.5,
+                "daily_downloads": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "daily_sales": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6
+                  }
+                ]
+              },
+              {
+                "metric": "free_app_downloads_and_gross_sales",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-06T14:28:00+00:00",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                ],
+                "total_downloads": 434,
+                "gross_sales": 1095.5,
+                "daily_downloads": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "daily_sales": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6
+                  }
+                ]
+              },
+              {
+                "metric": "free_app_downloads_and_gross_sales",
+                "period_start": "2026-07-29",
+                "period_end": "2026-08-04",
+                "platform": "iOS/watchOS/tvOS",
+                "recorded_at": "2026-08-06T14:28:00+00:00",
+                "source": "Apple App Store Connect screenshots",
+                "source_screenshots": [
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                  "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                ],
+                "total_downloads": 434,
+                "gross_sales": 1095.5,
+                "daily_downloads": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "daily_sales": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6
+                  }
+                ]
+              },
+              {
+                "downloads": 434,
+                "displayDownloads": "434",
+                "updates": null,
+                "displayUpdates": null,
+                "dailyAverage": 62,
+                "updatesDailyAverage": null,
+                "start": "2026-07-29",
+                "end": "2026-08-04",
+                "period": "Jul 29-Aug 4, 2026",
+                "priorDownloads": 434,
+                "priorUpdates": null,
+                "priorPeriod": "Jul 29-Aug 4, 2026",
+                "deltaPct": 0,
+                "updatesDeltaPct": null,
+                "product": "ElectricNOW",
+                "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+                "territories": [
+                  {
+                    "territory": "United States",
+                    "downloads": 434,
+                    "deltaPct": null
+                  }
+                ],
+                "sourceLabel": "Manual Apple App Store Connect snapshot",
+                "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+                "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                "sourceScreenshots": [
+                  {
+                    "metric": "sales",
+                    "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                  },
+                  {
+                    "metric": "downloads",
+                    "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  }
+                ],
+                "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+                "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+                "daily": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "salesDaily": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5,
+                    "estimatedNetRevenue": 36.75
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7,
+                    "estimatedNetRevenue": 216.09
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3,
+                    "estimatedNetRevenue": 92.61
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161,
+                    "estimatedNetRevenue": 112.7
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1,
+                    "estimatedNetRevenue": 30.87
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3,
+                    "estimatedNetRevenue": 195.51
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6,
+                    "estimatedNetRevenue": 82.32
+                  }
+                ],
+                "salesGross": 1095.5,
+                "salesEstimatedNet": 766.85,
+                "snapshots": [
+                  {
+                    "daily": [
+                      {
+                        "date": "2026-07-17",
+                        "downloads": 28
+                      },
+                      {
+                        "date": "2026-07-18",
+                        "downloads": 11
+                      },
+                      {
+                        "date": "2026-07-19",
+                        "downloads": 16
+                      },
+                      {
+                        "date": "2026-07-20",
+                        "downloads": 16
+                      },
+                      {
+                        "date": "2026-07-21",
+                        "downloads": 27
+                      },
+                      {
+                        "date": "2026-07-22",
+                        "downloads": 18
+                      },
+                      {
+                        "date": "2026-07-23",
+                        "downloads": 21
+                      }
+                    ],
+                    "metric": "free_app_downloads",
+                    "period_end": "2026-07-23",
+                    "period_start": "2026-07-17",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                    "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                    "source": "Apple App Store Connect screenshot",
+                    "total_downloads": 137
+                  },
+                  {
+                    "daily": [
+                      {
+                        "date": "2026-07-20",
+                        "downloads": 16,
+                        "updates": 53
+                      },
+                      {
+                        "date": "2026-07-21",
+                        "downloads": 27,
+                        "updates": 58
+                      },
+                      {
+                        "date": "2026-07-22",
+                        "downloads": 18,
+                        "updates": 55
+                      },
+                      {
+                        "date": "2026-07-23",
+                        "downloads": 21,
+                        "updates": 46
+                      },
+                      {
+                        "date": "2026-07-24",
+                        "downloads": 15,
+                        "updates": 43
+                      },
+                      {
+                        "date": "2026-07-25",
+                        "downloads": 19,
+                        "updates": 44
+                      },
+                      {
+                        "date": "2026-07-26",
+                        "downloads": 23,
+                        "updates": 52
+                      }
+                    ],
+                    "metric": "free_app_downloads_and_updates",
+                    "period_end": "2026-07-26",
+                    "period_start": "2026-07-20",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-07-27T15:57:00+00:00",
+                    "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                      "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                    ],
+                    "total_downloads": 139,
+                    "total_updates": 351
+                  },
+                  {
+                    "metric": "downloads_units_breakdown",
+                    "period_start": "2026-07-24",
+                    "period_end": "2026-07-30",
+                    "platform": "iOS/watchOS/tvOS + macOS",
+                    "recorded_at": "2026-07-31T15:20:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "total_units": 360,
+                    "daily_average": 51,
+                    "overall_delta_pct": 163,
+                    "breakdown": {
+                      "paid_ios_watchos_tvos": 0,
+                      "free_ios_watchos_tvos": 334,
+                      "free_ios_watchos_tvos_delta_pct": 143.8,
+                      "inapp_ios_tvos": 26,
+                      "inapp_ios_tvos_delta_pct": 100,
+                      "paid_macos": 0,
+                      "free_macos": 0,
+                      "inapp_macos": 0
+                    },
+                    "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                    "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                  },
+                  {
+                    "metric": "free_app_downloads",
+                    "period_start": "2026-07-26",
+                    "period_end": "2026-08-01",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-02T15:20:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                    "total_downloads": 405,
+                    "daily": [
+                      {
+                        "date": "2026-07-26",
+                        "downloads": 23
+                      },
+                      {
+                        "date": "2026-07-27",
+                        "downloads": 25
+                      },
+                      {
+                        "date": "2026-07-28",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 54
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 55
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      }
+                    ],
+                    "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                  },
+                  {
+                    "metric": "free_app_downloads",
+                    "period_start": "2026-07-27",
+                    "period_end": "2026-08-02",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-03T14:23:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                    "total_downloads": 423,
+                    "daily": [
+                      {
+                        "date": "2026-07-27",
+                        "downloads": 25
+                      },
+                      {
+                        "date": "2026-07-28",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 54
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 55
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 41
+                      }
+                    ],
+                    "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                  },
+                  {
+                    "metric": "free_app_downloads",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-05T14:37:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                    "total_downloads": 434,
+                    "daily": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                  },
+                  {
+                    "metric": "free_app_downloads_and_gross_sales",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-06T14:28:00+00:00",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    ],
+                    "total_downloads": 434,
+                    "gross_sales": 1095.5,
+                    "daily_downloads": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "daily_sales": [
+                      {
+                        "date": "2026-07-29",
+                        "grossRevenue": 52.5
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "grossRevenue": 308.7
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "grossRevenue": 132.3
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "grossRevenue": 161
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "grossRevenue": 44.1
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "grossRevenue": 279.3
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "grossRevenue": 117.6
+                      }
+                    ]
+                  },
+                  {
+                    "metric": "free_app_downloads_and_gross_sales",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-06T14:28:00+00:00",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    ],
+                    "total_downloads": 434,
+                    "gross_sales": 1095.5,
+                    "daily_downloads": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "daily_sales": [
+                      {
+                        "date": "2026-07-29",
+                        "grossRevenue": 52.5
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "grossRevenue": 308.7
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "grossRevenue": 132.3
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "grossRevenue": 161
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "grossRevenue": 44.1
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "grossRevenue": 279.3
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "grossRevenue": 117.6
+                      }
+                    ]
+                  },
+                  {
+                    "metric": "free_app_downloads_and_gross_sales",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-06T14:28:00+00:00",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    ],
+                    "total_downloads": 434,
+                    "gross_sales": 1095.5,
+                    "daily_downloads": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "daily_sales": [
+                      {
+                        "date": "2026-07-29",
+                        "grossRevenue": 52.5
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "grossRevenue": 308.7
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "grossRevenue": 132.3
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "grossRevenue": 161
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "grossRevenue": 44.1
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "grossRevenue": 279.3
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "grossRevenue": 117.6
+                      }
+                    ]
+                  }
+                ],
+                "priorSnapshot": {
+                  "period": "Jul 29-Aug 4, 2026",
+                  "start": "2026-07-29",
+                  "end": "2026-08-04",
+                  "downloads": 434,
+                  "grossSales": 1095.5
+                },
+                "capturedAt": "2026-08-06 07:28 PDT",
+                "enteredAt": "2026-08-06 07:28 PDT"
+              }
+            ],
+            "enteredAt": "2026-08-07 09:21 PDT",
+            "capturedAt": "2026-08-07T09:21:00-07:00"
+          },
+          "snapshots": [
+            {
+              "daily": [
+                {
+                  "date": "2026-07-17",
+                  "downloads": 28
+                },
+                {
+                  "date": "2026-07-18",
+                  "downloads": 11
+                },
+                {
+                  "date": "2026-07-19",
+                  "downloads": 16
+                },
+                {
+                  "date": "2026-07-20",
+                  "downloads": 16
+                },
+                {
+                  "date": "2026-07-21",
+                  "downloads": 27
+                },
+                {
+                  "date": "2026-07-22",
+                  "downloads": 18
+                },
+                {
+                  "date": "2026-07-23",
+                  "downloads": 21
+                }
+              ],
+              "metric": "free_app_downloads",
+              "period_end": "2026-07-23",
+              "period_start": "2026-07-17",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+              "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+              "source": "Apple App Store Connect screenshot",
+              "total_downloads": 137
+            },
+            {
+              "daily": [
+                {
+                  "date": "2026-07-20",
+                  "downloads": 16,
+                  "updates": 53
+                },
+                {
+                  "date": "2026-07-21",
+                  "downloads": 27,
+                  "updates": 58
+                },
+                {
+                  "date": "2026-07-22",
+                  "downloads": 18,
+                  "updates": 55
+                },
+                {
+                  "date": "2026-07-23",
+                  "downloads": 21,
+                  "updates": 46
+                },
+                {
+                  "date": "2026-07-24",
+                  "downloads": 15,
+                  "updates": 43
+                },
+                {
+                  "date": "2026-07-25",
+                  "downloads": 19,
+                  "updates": 44
+                },
+                {
+                  "date": "2026-07-26",
+                  "downloads": 23,
+                  "updates": 52
+                }
+              ],
+              "metric": "free_app_downloads_and_updates",
+              "period_end": "2026-07-26",
+              "period_start": "2026-07-20",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-07-27T15:57:00+00:00",
+              "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+              ],
+              "total_downloads": 139,
+              "total_updates": 351
+            },
+            {
+              "metric": "downloads_units_breakdown",
+              "period_start": "2026-07-24",
+              "period_end": "2026-07-30",
+              "platform": "iOS/watchOS/tvOS + macOS",
+              "recorded_at": "2026-07-31T15:20:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "total_units": 360,
+              "daily_average": 51,
+              "overall_delta_pct": 163,
+              "breakdown": {
+                "paid_ios_watchos_tvos": 0,
+                "free_ios_watchos_tvos": 334,
+                "free_ios_watchos_tvos_delta_pct": 143.8,
+                "inapp_ios_tvos": 26,
+                "inapp_ios_tvos_delta_pct": 100,
+                "paid_macos": 0,
+                "free_macos": 0,
+                "inapp_macos": 0
+              },
+              "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+              "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-26",
+              "period_end": "2026-08-01",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-02T15:20:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+              "total_downloads": 405,
+              "daily": [
+                {
+                  "date": "2026-07-26",
+                  "downloads": 23
+                },
+                {
+                  "date": "2026-07-27",
+                  "downloads": 25
+                },
+                {
+                  "date": "2026-07-28",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-07-29",
+                  "downloads": 54
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-27",
+              "period_end": "2026-08-02",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-03T14:23:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+              "total_downloads": 423,
+              "daily": [
+                {
+                  "date": "2026-07-27",
+                  "downloads": 25
+                },
+                {
+                  "date": "2026-07-28",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-07-29",
+                  "downloads": 54
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 41
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+            },
+            {
+              "metric": "free_app_downloads",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-05T14:37:00+00:00",
+              "source": "Apple App Store Connect screenshot",
+              "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "total_downloads": 434,
+              "daily": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "metric": "free_app_downloads_and_gross_sales",
+              "period_start": "2026-07-29",
+              "period_end": "2026-08-04",
+              "platform": "iOS/watchOS/tvOS",
+              "recorded_at": "2026-08-06T14:28:00+00:00",
+              "source": "Apple App Store Connect screenshots",
+              "source_screenshots": [
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+              ],
+              "total_downloads": 434,
+              "gross_sales": 1095.5,
+              "daily_downloads": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "daily_sales": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6
+                }
+              ]
+            },
+            {
+              "downloads": 434,
+              "displayDownloads": "434",
+              "updates": null,
+              "displayUpdates": null,
+              "dailyAverage": 62,
+              "updatesDailyAverage": null,
+              "start": "2026-07-29",
+              "end": "2026-08-04",
+              "period": "Jul 29-Aug 4, 2026",
+              "priorDownloads": 434,
+              "priorUpdates": null,
+              "priorPeriod": "Jul 29-Aug 4, 2026",
+              "deltaPct": 0,
+              "updatesDeltaPct": null,
+              "product": "ElectricNOW",
+              "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+              "territories": [
+                {
+                  "territory": "United States",
+                  "downloads": 434,
+                  "deltaPct": null
+                }
+              ],
+              "sourceLabel": "Manual Apple App Store Connect snapshot",
+              "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+              "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "sourceScreenshots": [
+                {
+                  "metric": "sales",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                },
+                {
+                  "metric": "downloads",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                }
+              ],
+              "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+              "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+              "daily": [
+                {
+                  "date": "2026-07-29",
+                  "downloads": 51
+                },
+                {
+                  "date": "2026-07-30",
+                  "downloads": 155
+                },
+                {
+                  "date": "2026-07-31",
+                  "downloads": 53
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 40
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 42
+                }
+              ],
+              "salesDaily": [
+                {
+                  "date": "2026-07-29",
+                  "grossRevenue": 52.5,
+                  "estimatedNetRevenue": 36.75
+                },
+                {
+                  "date": "2026-07-30",
+                  "grossRevenue": 308.7,
+                  "estimatedNetRevenue": 216.09
+                },
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 132.3,
+                  "estimatedNetRevenue": 92.61
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 161,
+                  "estimatedNetRevenue": 112.7
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 44.1,
+                  "estimatedNetRevenue": 30.87
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 279.3,
+                  "estimatedNetRevenue": 195.51
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 117.6,
+                  "estimatedNetRevenue": 82.32
+                }
+              ],
+              "salesGross": 1095.5,
+              "salesEstimatedNet": 766.85,
+              "snapshots": [
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-17",
+                      "downloads": 28
+                    },
+                    {
+                      "date": "2026-07-18",
+                      "downloads": 11
+                    },
+                    {
+                      "date": "2026-07-19",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21
+                    }
+                  ],
+                  "metric": "free_app_downloads",
+                  "period_end": "2026-07-23",
+                  "period_start": "2026-07-17",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                  "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_downloads": 137
+                },
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16,
+                      "updates": 53
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27,
+                      "updates": 58
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18,
+                      "updates": 55
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21,
+                      "updates": 46
+                    },
+                    {
+                      "date": "2026-07-24",
+                      "downloads": 15,
+                      "updates": 43
+                    },
+                    {
+                      "date": "2026-07-25",
+                      "downloads": 19,
+                      "updates": 44
+                    },
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23,
+                      "updates": 52
+                    }
+                  ],
+                  "metric": "free_app_downloads_and_updates",
+                  "period_end": "2026-07-26",
+                  "period_start": "2026-07-20",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-27T15:57:00+00:00",
+                  "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                  ],
+                  "total_downloads": 139,
+                  "total_updates": 351
+                },
+                {
+                  "metric": "downloads_units_breakdown",
+                  "period_start": "2026-07-24",
+                  "period_end": "2026-07-30",
+                  "platform": "iOS/watchOS/tvOS + macOS",
+                  "recorded_at": "2026-07-31T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_units": 360,
+                  "daily_average": 51,
+                  "overall_delta_pct": 163,
+                  "breakdown": {
+                    "paid_ios_watchos_tvos": 0,
+                    "free_ios_watchos_tvos": 334,
+                    "free_ios_watchos_tvos_delta_pct": 143.8,
+                    "inapp_ios_tvos": 26,
+                    "inapp_ios_tvos_delta_pct": 100,
+                    "paid_macos": 0,
+                    "free_macos": 0,
+                    "inapp_macos": 0
+                  },
+                  "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                  "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-26",
+                  "period_end": "2026-08-01",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-02T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                  "total_downloads": 405,
+                  "daily": [
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23
+                    },
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-27",
+                  "period_end": "2026-08-02",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-03T14:23:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                  "total_downloads": 423,
+                  "daily": [
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 41
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-05T14:37:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                  "total_downloads": 434,
+                  "daily": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                }
+              ],
+              "priorSnapshot": {
+                "period": "Jul 29-Aug 4, 2026",
+                "start": "2026-07-29",
+                "end": "2026-08-04",
+                "downloads": 434,
+                "grossSales": 1095.5
+              },
+              "capturedAt": "2026-08-06 07:28 PDT",
+              "enteredAt": "2026-08-06 07:28 PDT"
+            },
+            {
+              "downloads": 388,
+              "displayDownloads": "388",
+              "updates": null,
+              "displayUpdates": null,
+              "inAppUnits": 69,
+              "totalUnits": 457,
+              "dailyAverage": 55,
+              "updatesDailyAverage": null,
+              "start": "2026-07-31",
+              "end": "2026-08-06",
+              "period": "Jul 31-Aug 6, 2026",
+              "priorDownloads": 434,
+              "priorUpdates": null,
+              "priorPeriod": "Jul 29-Aug 4, 2026",
+              "deltaPct": -10.599078341013826,
+              "updatesDeltaPct": null,
+              "product": "ElectricNOW",
+              "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+              "territories": [
+                {
+                  "territory": "United States",
+                  "downloads": 388,
+                  "deltaPct": null
+                }
+              ],
+              "sourceLabel": "Manual Apple App Store Connect snapshot",
+              "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+              "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+              "sourceScreenshots": [
+                {
+                  "metric": "sales",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                },
+                {
+                  "metric": "downloads",
+                  "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                }
+              ],
+              "note": "Manual Apple Connect screenshots for Jul 31-Aug 6, 2026. Sales screenshot totals $1,406.32 gross; download screenshot totals 388 downloads, with 69 in-app units and 457 total units. Prior Apple snapshots are preserved and not overwritten.",
+              "updatedAtUtc": "2026-08-07T16:21:00+00:00",
+              "daily": [
+                {
+                  "date": "2026-07-31",
+                  "downloads": 55
+                },
+                {
+                  "date": "2026-08-01",
+                  "downloads": 50
+                },
+                {
+                  "date": "2026-08-02",
+                  "downloads": 41
+                },
+                {
+                  "date": "2026-08-03",
+                  "downloads": 44
+                },
+                {
+                  "date": "2026-08-04",
+                  "downloads": 43
+                },
+                {
+                  "date": "2026-08-05",
+                  "downloads": 82
+                },
+                {
+                  "date": "2026-08-06",
+                  "downloads": 73
+                }
+              ],
+              "salesDaily": [
+                {
+                  "date": "2026-07-31",
+                  "grossRevenue": 188.91,
+                  "estimatedNetRevenue": 132.24
+                },
+                {
+                  "date": "2026-08-01",
+                  "grossRevenue": 229.89,
+                  "estimatedNetRevenue": 160.92
+                },
+                {
+                  "date": "2026-08-02",
+                  "grossRevenue": 62.97,
+                  "estimatedNetRevenue": 44.08
+                },
+                {
+                  "date": "2026-08-03",
+                  "grossRevenue": 398.81,
+                  "estimatedNetRevenue": 279.17
+                },
+                {
+                  "date": "2026-08-04",
+                  "grossRevenue": 167.92,
+                  "estimatedNetRevenue": 117.54
+                },
+                {
+                  "date": "2026-08-05",
+                  "grossRevenue": 146.93,
+                  "estimatedNetRevenue": 102.85
+                },
+                {
+                  "date": "2026-08-06",
+                  "grossRevenue": 210.89,
+                  "estimatedNetRevenue": 147.62
+                }
+              ],
+              "salesGross": 1406.32,
+              "salesEstimatedNet": 984.42,
+              "priorSnapshot": {
+                "downloads": 434,
+                "displayDownloads": "434",
+                "updates": null,
+                "displayUpdates": null,
+                "dailyAverage": 62,
+                "updatesDailyAverage": null,
+                "start": "2026-07-29",
+                "end": "2026-08-04",
+                "period": "Jul 29-Aug 4, 2026",
+                "priorDownloads": 434,
+                "priorUpdates": null,
+                "priorPeriod": "Jul 29-Aug 4, 2026",
+                "deltaPct": 0,
+                "updatesDeltaPct": null,
+                "product": "ElectricNOW",
+                "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+                "territories": [
+                  {
+                    "territory": "United States",
+                    "downloads": 434,
+                    "deltaPct": null
+                  }
+                ],
+                "sourceLabel": "Manual Apple App Store Connect snapshot",
+                "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+                "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                "sourceScreenshots": [
+                  {
+                    "metric": "sales",
+                    "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                  },
+                  {
+                    "metric": "downloads",
+                    "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  }
+                ],
+                "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+                "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+                "daily": [
+                  {
+                    "date": "2026-07-29",
+                    "downloads": 51
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "downloads": 155
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "downloads": 53
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "downloads": 50
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "downloads": 40
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "downloads": 43
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "downloads": 42
+                  }
+                ],
+                "salesDaily": [
+                  {
+                    "date": "2026-07-29",
+                    "grossRevenue": 52.5,
+                    "estimatedNetRevenue": 36.75
+                  },
+                  {
+                    "date": "2026-07-30",
+                    "grossRevenue": 308.7,
+                    "estimatedNetRevenue": 216.09
+                  },
+                  {
+                    "date": "2026-07-31",
+                    "grossRevenue": 132.3,
+                    "estimatedNetRevenue": 92.61
+                  },
+                  {
+                    "date": "2026-08-01",
+                    "grossRevenue": 161,
+                    "estimatedNetRevenue": 112.7
+                  },
+                  {
+                    "date": "2026-08-02",
+                    "grossRevenue": 44.1,
+                    "estimatedNetRevenue": 30.87
+                  },
+                  {
+                    "date": "2026-08-03",
+                    "grossRevenue": 279.3,
+                    "estimatedNetRevenue": 195.51
+                  },
+                  {
+                    "date": "2026-08-04",
+                    "grossRevenue": 117.6,
+                    "estimatedNetRevenue": 82.32
+                  }
+                ],
+                "salesGross": 1095.5,
+                "salesEstimatedNet": 766.85,
+                "snapshots": [
+                  {
+                    "daily": [
+                      {
+                        "date": "2026-07-17",
+                        "downloads": 28
+                      },
+                      {
+                        "date": "2026-07-18",
+                        "downloads": 11
+                      },
+                      {
+                        "date": "2026-07-19",
+                        "downloads": 16
+                      },
+                      {
+                        "date": "2026-07-20",
+                        "downloads": 16
+                      },
+                      {
+                        "date": "2026-07-21",
+                        "downloads": 27
+                      },
+                      {
+                        "date": "2026-07-22",
+                        "downloads": 18
+                      },
+                      {
+                        "date": "2026-07-23",
+                        "downloads": 21
+                      }
+                    ],
+                    "metric": "free_app_downloads",
+                    "period_end": "2026-07-23",
+                    "period_start": "2026-07-17",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                    "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                    "source": "Apple App Store Connect screenshot",
+                    "total_downloads": 137
+                  },
+                  {
+                    "daily": [
+                      {
+                        "date": "2026-07-20",
+                        "downloads": 16,
+                        "updates": 53
+                      },
+                      {
+                        "date": "2026-07-21",
+                        "downloads": 27,
+                        "updates": 58
+                      },
+                      {
+                        "date": "2026-07-22",
+                        "downloads": 18,
+                        "updates": 55
+                      },
+                      {
+                        "date": "2026-07-23",
+                        "downloads": 21,
+                        "updates": 46
+                      },
+                      {
+                        "date": "2026-07-24",
+                        "downloads": 15,
+                        "updates": 43
+                      },
+                      {
+                        "date": "2026-07-25",
+                        "downloads": 19,
+                        "updates": 44
+                      },
+                      {
+                        "date": "2026-07-26",
+                        "downloads": 23,
+                        "updates": 52
+                      }
+                    ],
+                    "metric": "free_app_downloads_and_updates",
+                    "period_end": "2026-07-26",
+                    "period_start": "2026-07-20",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-07-27T15:57:00+00:00",
+                    "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                      "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                    ],
+                    "total_downloads": 139,
+                    "total_updates": 351
+                  },
+                  {
+                    "metric": "downloads_units_breakdown",
+                    "period_start": "2026-07-24",
+                    "period_end": "2026-07-30",
+                    "platform": "iOS/watchOS/tvOS + macOS",
+                    "recorded_at": "2026-07-31T15:20:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "total_units": 360,
+                    "daily_average": 51,
+                    "overall_delta_pct": 163,
+                    "breakdown": {
+                      "paid_ios_watchos_tvos": 0,
+                      "free_ios_watchos_tvos": 334,
+                      "free_ios_watchos_tvos_delta_pct": 143.8,
+                      "inapp_ios_tvos": 26,
+                      "inapp_ios_tvos_delta_pct": 100,
+                      "paid_macos": 0,
+                      "free_macos": 0,
+                      "inapp_macos": 0
+                    },
+                    "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                    "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                  },
+                  {
+                    "metric": "free_app_downloads",
+                    "period_start": "2026-07-26",
+                    "period_end": "2026-08-01",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-02T15:20:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                    "total_downloads": 405,
+                    "daily": [
+                      {
+                        "date": "2026-07-26",
+                        "downloads": 23
+                      },
+                      {
+                        "date": "2026-07-27",
+                        "downloads": 25
+                      },
+                      {
+                        "date": "2026-07-28",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 54
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 55
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      }
+                    ],
+                    "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                  },
+                  {
+                    "metric": "free_app_downloads",
+                    "period_start": "2026-07-27",
+                    "period_end": "2026-08-02",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-03T14:23:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                    "total_downloads": 423,
+                    "daily": [
+                      {
+                        "date": "2026-07-27",
+                        "downloads": 25
+                      },
+                      {
+                        "date": "2026-07-28",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 54
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 55
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 41
+                      }
+                    ],
+                    "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                  },
+                  {
+                    "metric": "free_app_downloads",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-05T14:37:00+00:00",
+                    "source": "Apple App Store Connect screenshot",
+                    "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                    "total_downloads": 434,
+                    "daily": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                  },
+                  {
+                    "metric": "free_app_downloads_and_gross_sales",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-06T14:28:00+00:00",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    ],
+                    "total_downloads": 434,
+                    "gross_sales": 1095.5,
+                    "daily_downloads": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "daily_sales": [
+                      {
+                        "date": "2026-07-29",
+                        "grossRevenue": 52.5
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "grossRevenue": 308.7
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "grossRevenue": 132.3
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "grossRevenue": 161
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "grossRevenue": 44.1
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "grossRevenue": 279.3
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "grossRevenue": 117.6
+                      }
+                    ]
+                  },
+                  {
+                    "metric": "free_app_downloads_and_gross_sales",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-06T14:28:00+00:00",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    ],
+                    "total_downloads": 434,
+                    "gross_sales": 1095.5,
+                    "daily_downloads": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "daily_sales": [
+                      {
+                        "date": "2026-07-29",
+                        "grossRevenue": 52.5
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "grossRevenue": 308.7
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "grossRevenue": 132.3
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "grossRevenue": 161
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "grossRevenue": 44.1
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "grossRevenue": 279.3
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "grossRevenue": 117.6
+                      }
+                    ]
+                  },
+                  {
+                    "metric": "free_app_downloads_and_gross_sales",
+                    "period_start": "2026-07-29",
+                    "period_end": "2026-08-04",
+                    "platform": "iOS/watchOS/tvOS",
+                    "recorded_at": "2026-08-06T14:28:00+00:00",
+                    "source": "Apple App Store Connect screenshots",
+                    "source_screenshots": [
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                      "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    ],
+                    "total_downloads": 434,
+                    "gross_sales": 1095.5,
+                    "daily_downloads": [
+                      {
+                        "date": "2026-07-29",
+                        "downloads": 51
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "downloads": 155
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "downloads": 53
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "downloads": 50
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "downloads": 40
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "downloads": 43
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "downloads": 42
+                      }
+                    ],
+                    "daily_sales": [
+                      {
+                        "date": "2026-07-29",
+                        "grossRevenue": 52.5
+                      },
+                      {
+                        "date": "2026-07-30",
+                        "grossRevenue": 308.7
+                      },
+                      {
+                        "date": "2026-07-31",
+                        "grossRevenue": 132.3
+                      },
+                      {
+                        "date": "2026-08-01",
+                        "grossRevenue": 161
+                      },
+                      {
+                        "date": "2026-08-02",
+                        "grossRevenue": 44.1
+                      },
+                      {
+                        "date": "2026-08-03",
+                        "grossRevenue": 279.3
+                      },
+                      {
+                        "date": "2026-08-04",
+                        "grossRevenue": 117.6
+                      }
+                    ]
+                  }
+                ],
+                "priorSnapshot": {
+                  "period": "Jul 29-Aug 4, 2026",
+                  "start": "2026-07-29",
+                  "end": "2026-08-04",
+                  "downloads": 434,
+                  "grossSales": 1095.5
+                },
+                "capturedAt": "2026-08-06 07:28 PDT",
+                "enteredAt": "2026-08-06 07:28 PDT"
+              },
+              "snapshots": [
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-17",
+                      "downloads": 28
+                    },
+                    {
+                      "date": "2026-07-18",
+                      "downloads": 11
+                    },
+                    {
+                      "date": "2026-07-19",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21
+                    }
+                  ],
+                  "metric": "free_app_downloads",
+                  "period_end": "2026-07-23",
+                  "period_start": "2026-07-17",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                  "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_downloads": 137
+                },
+                {
+                  "daily": [
+                    {
+                      "date": "2026-07-20",
+                      "downloads": 16,
+                      "updates": 53
+                    },
+                    {
+                      "date": "2026-07-21",
+                      "downloads": 27,
+                      "updates": 58
+                    },
+                    {
+                      "date": "2026-07-22",
+                      "downloads": 18,
+                      "updates": 55
+                    },
+                    {
+                      "date": "2026-07-23",
+                      "downloads": 21,
+                      "updates": 46
+                    },
+                    {
+                      "date": "2026-07-24",
+                      "downloads": 15,
+                      "updates": 43
+                    },
+                    {
+                      "date": "2026-07-25",
+                      "downloads": 19,
+                      "updates": 44
+                    },
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23,
+                      "updates": 52
+                    }
+                  ],
+                  "metric": "free_app_downloads_and_updates",
+                  "period_end": "2026-07-26",
+                  "period_start": "2026-07-20",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-07-27T15:57:00+00:00",
+                  "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                    "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                  ],
+                  "total_downloads": 139,
+                  "total_updates": 351
+                },
+                {
+                  "metric": "downloads_units_breakdown",
+                  "period_start": "2026-07-24",
+                  "period_end": "2026-07-30",
+                  "platform": "iOS/watchOS/tvOS + macOS",
+                  "recorded_at": "2026-07-31T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "total_units": 360,
+                  "daily_average": 51,
+                  "overall_delta_pct": 163,
+                  "breakdown": {
+                    "paid_ios_watchos_tvos": 0,
+                    "free_ios_watchos_tvos": 334,
+                    "free_ios_watchos_tvos_delta_pct": 143.8,
+                    "inapp_ios_tvos": 26,
+                    "inapp_ios_tvos_delta_pct": 100,
+                    "paid_macos": 0,
+                    "free_macos": 0,
+                    "inapp_macos": 0
+                  },
+                  "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                  "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-26",
+                  "period_end": "2026-08-01",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-02T15:20:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                  "total_downloads": 405,
+                  "daily": [
+                    {
+                      "date": "2026-07-26",
+                      "downloads": 23
+                    },
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-27",
+                  "period_end": "2026-08-02",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-03T14:23:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                  "total_downloads": 423,
+                  "daily": [
+                    {
+                      "date": "2026-07-27",
+                      "downloads": 25
+                    },
+                    {
+                      "date": "2026-07-28",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 54
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 55
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 41
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                },
+                {
+                  "metric": "free_app_downloads",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-05T14:37:00+00:00",
+                  "source": "Apple App Store Connect screenshot",
+                  "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                  "total_downloads": 434,
+                  "daily": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "metric": "free_app_downloads_and_gross_sales",
+                  "period_start": "2026-07-29",
+                  "period_end": "2026-08-04",
+                  "platform": "iOS/watchOS/tvOS",
+                  "recorded_at": "2026-08-06T14:28:00+00:00",
+                  "source": "Apple App Store Connect screenshots",
+                  "source_screenshots": [
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                    "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                  ],
+                  "total_downloads": 434,
+                  "gross_sales": 1095.5,
+                  "daily_downloads": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "daily_sales": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6
+                    }
+                  ]
+                },
+                {
+                  "downloads": 434,
+                  "displayDownloads": "434",
+                  "updates": null,
+                  "displayUpdates": null,
+                  "dailyAverage": 62,
+                  "updatesDailyAverage": null,
+                  "start": "2026-07-29",
+                  "end": "2026-08-04",
+                  "period": "Jul 29-Aug 4, 2026",
+                  "priorDownloads": 434,
+                  "priorUpdates": null,
+                  "priorPeriod": "Jul 29-Aug 4, 2026",
+                  "deltaPct": 0,
+                  "updatesDeltaPct": null,
+                  "product": "ElectricNOW",
+                  "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
+                  "territories": [
+                    {
+                      "territory": "United States",
+                      "downloads": 434,
+                      "deltaPct": null
+                    }
+                  ],
+                  "sourceLabel": "Manual Apple App Store Connect snapshot",
+                  "sourceDetail": "User-provided App Store Connect screenshots for Free iOS/watchOS/tvOS downloads and aggregate gross sales. App downloads are not paid sales and not GA4 active users.",
+                  "sourceScreenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                  "sourceScreenshots": [
+                    {
+                      "metric": "sales",
+                      "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg"
+                    },
+                    {
+                      "metric": "downloads",
+                      "path": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                    }
+                  ],
+                  "note": "Manual Apple Connect screenshots uploaded Aug 5/6, 2026 for Jul 29-Aug 4, 2026. Sales screenshot totals $1,095.50 gross; download screenshot totals 434 downloads. Prior overlapping Apple snapshots are preserved but superseded for the current dashboard snapshot.",
+                  "updatedAtUtc": "2026-08-06T14:28:00+00:00",
+                  "daily": [
+                    {
+                      "date": "2026-07-29",
+                      "downloads": 51
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "downloads": 155
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "downloads": 53
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "downloads": 50
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "downloads": 40
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "downloads": 43
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "downloads": 42
+                    }
+                  ],
+                  "salesDaily": [
+                    {
+                      "date": "2026-07-29",
+                      "grossRevenue": 52.5,
+                      "estimatedNetRevenue": 36.75
+                    },
+                    {
+                      "date": "2026-07-30",
+                      "grossRevenue": 308.7,
+                      "estimatedNetRevenue": 216.09
+                    },
+                    {
+                      "date": "2026-07-31",
+                      "grossRevenue": 132.3,
+                      "estimatedNetRevenue": 92.61
+                    },
+                    {
+                      "date": "2026-08-01",
+                      "grossRevenue": 161,
+                      "estimatedNetRevenue": 112.7
+                    },
+                    {
+                      "date": "2026-08-02",
+                      "grossRevenue": 44.1,
+                      "estimatedNetRevenue": 30.87
+                    },
+                    {
+                      "date": "2026-08-03",
+                      "grossRevenue": 279.3,
+                      "estimatedNetRevenue": 195.51
+                    },
+                    {
+                      "date": "2026-08-04",
+                      "grossRevenue": 117.6,
+                      "estimatedNetRevenue": 82.32
+                    }
+                  ],
+                  "salesGross": 1095.5,
+                  "salesEstimatedNet": 766.85,
+                  "snapshots": [
+                    {
+                      "daily": [
+                        {
+                          "date": "2026-07-17",
+                          "downloads": 28
+                        },
+                        {
+                          "date": "2026-07-18",
+                          "downloads": 11
+                        },
+                        {
+                          "date": "2026-07-19",
+                          "downloads": 16
+                        },
+                        {
+                          "date": "2026-07-20",
+                          "downloads": 16
+                        },
+                        {
+                          "date": "2026-07-21",
+                          "downloads": 27
+                        },
+                        {
+                          "date": "2026-07-22",
+                          "downloads": 18
+                        },
+                        {
+                          "date": "2026-07-23",
+                          "downloads": 21
+                        }
+                      ],
+                      "metric": "free_app_downloads",
+                      "period_end": "2026-07-23",
+                      "period_start": "2026-07-17",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-07-24T14:20:19.894661+00:00",
+                      "sales_note": "No new iOS sales included in this screenshot; downloads only.",
+                      "source": "Apple App Store Connect screenshot",
+                      "total_downloads": 137
+                    },
+                    {
+                      "daily": [
+                        {
+                          "date": "2026-07-20",
+                          "downloads": 16,
+                          "updates": 53
+                        },
+                        {
+                          "date": "2026-07-21",
+                          "downloads": 27,
+                          "updates": 58
+                        },
+                        {
+                          "date": "2026-07-22",
+                          "downloads": 18,
+                          "updates": 55
+                        },
+                        {
+                          "date": "2026-07-23",
+                          "downloads": 21,
+                          "updates": 46
+                        },
+                        {
+                          "date": "2026-07-24",
+                          "downloads": 15,
+                          "updates": 43
+                        },
+                        {
+                          "date": "2026-07-25",
+                          "downloads": 19,
+                          "updates": 44
+                        },
+                        {
+                          "date": "2026-07-26",
+                          "downloads": 23,
+                          "updates": 52
+                        }
+                      ],
+                      "metric": "free_app_downloads_and_updates",
+                      "period_end": "2026-07-26",
+                      "period_start": "2026-07-20",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-07-27T15:57:00+00:00",
+                      "sales_note": "No new iOS sales included in these screenshots; downloads and updates only.",
+                      "source": "Apple App Store Connect screenshots",
+                      "source_screenshots": [
+                        "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image.jpeg",
+                        "uploaded_attachments/edae3d6b5f0543f2bb2de390b593f8a1/image-1.jpeg"
+                      ],
+                      "total_downloads": 139,
+                      "total_updates": 351
+                    },
+                    {
+                      "metric": "downloads_units_breakdown",
+                      "period_start": "2026-07-24",
+                      "period_end": "2026-07-30",
+                      "platform": "iOS/watchOS/tvOS + macOS",
+                      "recorded_at": "2026-07-31T15:20:00+00:00",
+                      "source": "Apple App Store Connect screenshot",
+                      "total_units": 360,
+                      "daily_average": 51,
+                      "overall_delta_pct": 163,
+                      "breakdown": {
+                        "paid_ios_watchos_tvos": 0,
+                        "free_ios_watchos_tvos": 334,
+                        "free_ios_watchos_tvos_delta_pct": 143.8,
+                        "inapp_ios_tvos": 26,
+                        "inapp_ios_tvos_delta_pct": 100,
+                        "paid_macos": 0,
+                        "free_macos": 0,
+                        "inapp_macos": 0
+                      },
+                      "sales_note": "No new iOS sales included in this units screenshot; a separate aggregate sales screenshot for the same week was recorded in manual_apple_sales.json.",
+                      "notes": "Screenshot does not show exact per-day numeric bar values; category totals and grand total (360) preserved without fabricating daily rows."
+                    },
+                    {
+                      "metric": "free_app_downloads",
+                      "period_start": "2026-07-26",
+                      "period_end": "2026-08-01",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-08-02T15:20:00+00:00",
+                      "source": "Apple App Store Connect screenshot",
+                      "source_screenshot": "uploaded_attachments/4beeea98ae04412ebed20a096a881497/image.jpeg",
+                      "total_downloads": 405,
+                      "daily": [
+                        {
+                          "date": "2026-07-26",
+                          "downloads": 23
+                        },
+                        {
+                          "date": "2026-07-27",
+                          "downloads": 25
+                        },
+                        {
+                          "date": "2026-07-28",
+                          "downloads": 43
+                        },
+                        {
+                          "date": "2026-07-29",
+                          "downloads": 54
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "downloads": 155
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "downloads": 55
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "downloads": 50
+                        }
+                      ],
+                      "sales_note": "Paired Apple sales screenshot for the same period totals $683.90 gross."
+                    },
+                    {
+                      "metric": "free_app_downloads",
+                      "period_start": "2026-07-27",
+                      "period_end": "2026-08-02",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-08-03T14:23:00+00:00",
+                      "source": "Apple App Store Connect screenshot",
+                      "source_screenshot": "uploaded_attachments/22a148189cae4686a75126fc79d3e232/image-1.jpeg",
+                      "total_downloads": 423,
+                      "daily": [
+                        {
+                          "date": "2026-07-27",
+                          "downloads": 25
+                        },
+                        {
+                          "date": "2026-07-28",
+                          "downloads": 43
+                        },
+                        {
+                          "date": "2026-07-29",
+                          "downloads": 54
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "downloads": 155
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "downloads": 55
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "downloads": 50
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "downloads": 41
+                        }
+                      ],
+                      "sales_note": "Paired Apple sales screenshot for the same period totals $728.00 gross."
+                    },
+                    {
+                      "metric": "free_app_downloads",
+                      "period_start": "2026-07-29",
+                      "period_end": "2026-08-04",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-08-05T14:37:00+00:00",
+                      "source": "Apple App Store Connect screenshot",
+                      "source_screenshot": "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg",
+                      "total_downloads": 434,
+                      "daily": [
+                        {
+                          "date": "2026-07-29",
+                          "downloads": 51
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "downloads": 155
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "downloads": 53
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "downloads": 50
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "downloads": 40
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "downloads": 43
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "downloads": 42
+                        }
+                      ],
+                      "sales_note": "Paired Apple sales screenshot for the same period totals $1,095.50 gross."
+                    },
+                    {
+                      "metric": "free_app_downloads_and_gross_sales",
+                      "period_start": "2026-07-29",
+                      "period_end": "2026-08-04",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-08-06T14:28:00+00:00",
+                      "source": "Apple App Store Connect screenshots",
+                      "source_screenshots": [
+                        "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                        "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                      ],
+                      "total_downloads": 434,
+                      "gross_sales": 1095.5,
+                      "daily_downloads": [
+                        {
+                          "date": "2026-07-29",
+                          "downloads": 51
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "downloads": 155
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "downloads": 53
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "downloads": 50
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "downloads": 40
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "downloads": 43
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "downloads": 42
+                        }
+                      ],
+                      "daily_sales": [
+                        {
+                          "date": "2026-07-29",
+                          "grossRevenue": 52.5
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "grossRevenue": 308.7
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "grossRevenue": 132.3
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "grossRevenue": 161
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "grossRevenue": 44.1
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "grossRevenue": 279.3
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "grossRevenue": 117.6
+                        }
+                      ]
+                    },
+                    {
+                      "metric": "free_app_downloads_and_gross_sales",
+                      "period_start": "2026-07-29",
+                      "period_end": "2026-08-04",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-08-06T14:28:00+00:00",
+                      "source": "Apple App Store Connect screenshots",
+                      "source_screenshots": [
+                        "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                        "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                      ],
+                      "total_downloads": 434,
+                      "gross_sales": 1095.5,
+                      "daily_downloads": [
+                        {
+                          "date": "2026-07-29",
+                          "downloads": 51
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "downloads": 155
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "downloads": 53
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "downloads": 50
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "downloads": 40
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "downloads": 43
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "downloads": 42
+                        }
+                      ],
+                      "daily_sales": [
+                        {
+                          "date": "2026-07-29",
+                          "grossRevenue": 52.5
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "grossRevenue": 308.7
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "grossRevenue": 132.3
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "grossRevenue": 161
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "grossRevenue": 44.1
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "grossRevenue": 279.3
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "grossRevenue": 117.6
+                        }
+                      ]
+                    },
+                    {
+                      "metric": "free_app_downloads_and_gross_sales",
+                      "period_start": "2026-07-29",
+                      "period_end": "2026-08-04",
+                      "platform": "iOS/watchOS/tvOS",
+                      "recorded_at": "2026-08-06T14:28:00+00:00",
+                      "source": "Apple App Store Connect screenshots",
+                      "source_screenshots": [
+                        "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image.jpeg",
+                        "uploaded_attachments/00339f1b39c34d9c81487e25fcc37ebf/image-1.jpeg"
+                      ],
+                      "total_downloads": 434,
+                      "gross_sales": 1095.5,
+                      "daily_downloads": [
+                        {
+                          "date": "2026-07-29",
+                          "downloads": 51
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "downloads": 155
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "downloads": 53
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "downloads": 50
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "downloads": 40
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "downloads": 43
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "downloads": 42
+                        }
+                      ],
+                      "daily_sales": [
+                        {
+                          "date": "2026-07-29",
+                          "grossRevenue": 52.5
+                        },
+                        {
+                          "date": "2026-07-30",
+                          "grossRevenue": 308.7
+                        },
+                        {
+                          "date": "2026-07-31",
+                          "grossRevenue": 132.3
+                        },
+                        {
+                          "date": "2026-08-01",
+                          "grossRevenue": 161
+                        },
+                        {
+                          "date": "2026-08-02",
+                          "grossRevenue": 44.1
+                        },
+                        {
+                          "date": "2026-08-03",
+                          "grossRevenue": 279.3
+                        },
+                        {
+                          "date": "2026-08-04",
+                          "grossRevenue": 117.6
+                        }
+                      ]
+                    }
+                  ],
+                  "priorSnapshot": {
+                    "period": "Jul 29-Aug 4, 2026",
+                    "start": "2026-07-29",
+                    "end": "2026-08-04",
+                    "downloads": 434,
+                    "grossSales": 1095.5
+                  },
+                  "capturedAt": "2026-08-06 07:28 PDT",
+                  "enteredAt": "2026-08-06 07:28 PDT"
+                }
+              ],
+              "enteredAt": "2026-08-07 09:21 PDT",
+              "capturedAt": "2026-08-07T09:21:00-07:00"
+            }
+          ],
+          "enteredAt": "2026-08-07 09:21 PDT",
+          "capturedAt": "2026-08-07T09:21:00-07:00"
+        }
+      ],
+      "enteredAt": "2026-08-07 09:21 PDT",
+      "capturedAt": "2026-08-07T09:21:00-07:00"
+    }
   },
   "manualDataPatch": {
     "updatedAt": "2026-08-07 09:21 PDT",
@@ -28003,22 +28108,127 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     ],
     "note": "Manual/source patch applied without changing the rule that DotStudios TVOD is separate from visible-source sales totals.",
     "latestTvodManualExport": {
-      "source": "User-provided DotStudios TVOD dashboard CSV pasted in chat on 2026-08-07",
-      "periodStart": "2026-07-31",
-      "periodEnd": "2026-08-06",
-      "paidTransactions": 195,
-      "paidNet": 4089.99,
-      "arkNet": 2276.9,
-      "librariansNet": 1803.1,
-      "doubleCountCaveat": "Do not add DotStudios TVOD totals to Stripe or Apple totals. DotStudios already includes web/Stripe, Apple, Roku, Android, and Fire-platform purchases for the same transaction window."
+      "source": "User-provided DotStudios revenue-transactions-7.csv uploaded in chat on 2026-08-14",
+      "uploadedAt": "2026-08-14T07:39:00-07:00",
+      "periodStart": "2026-08-07",
+      "periodEnd": "2026-08-13",
+      "period": "Aug 7-Aug 13, 2026",
+      "rowCount": 109,
+      "paidTransactions": 109,
+      "gross": 2317.84,
+      "net": 2317.84,
+      "titleRows": [
+        {
+          "title": "The Librarians: The Next Chapter Season 2",
+          "transactions": 52,
+          "gross": 1091.48,
+          "net": 1091.48,
+          "shareOfPaidNetPct": 47.1,
+          "shareOfTransactionsPct": 47.7
+        },
+        {
+          "title": "The Ark - Season 3",
+          "transactions": 47,
+          "gross": 986.53,
+          "net": 986.53,
+          "shareOfPaidNetPct": 42.6,
+          "shareOfTransactionsPct": 43.1
+        },
+        {
+          "title": "The Ark - Season 1",
+          "transactions": 3,
+          "gross": 59.94,
+          "net": 59.94,
+          "shareOfPaidNetPct": 2.6,
+          "shareOfTransactionsPct": 2.8
+        },
+        {
+          "title": "The Ark",
+          "transactions": 1,
+          "gross": 54.99,
+          "net": 54.99,
+          "shareOfPaidNetPct": 2.4,
+          "shareOfTransactionsPct": 0.9
+        },
+        {
+          "title": "Parent The Librarians: The Next Chapter",
+          "transactions": 2,
+          "gross": 39.96,
+          "net": 39.96,
+          "shareOfPaidNetPct": 1.7,
+          "shareOfTransactionsPct": 1.8
+        },
+        {
+          "title": "The Ark - Season 2",
+          "transactions": 2,
+          "gross": 39.96,
+          "net": 39.96,
+          "shareOfPaidNetPct": 1.7,
+          "shareOfTransactionsPct": 1.8
+        },
+        {
+          "title": "Leverage: Redemption",
+          "transactions": 1,
+          "gross": 29.99,
+          "net": 29.99,
+          "shareOfPaidNetPct": 1.3,
+          "shareOfTransactionsPct": 0.9
+        },
+        {
+          "title": "Somewhere in Montana",
+          "transactions": 1,
+          "gross": 14.99,
+          "net": 14.99,
+          "shareOfPaidNetPct": 0.6,
+          "shareOfTransactionsPct": 0.9
+        }
+      ],
+      "platformRows": [
+        {
+          "channel": "web",
+          "transactions": 33,
+          "gross": 716.63,
+          "net": 716.63,
+          "shareOfPaidNetPct": 30.9,
+          "shareOfTransactionsPct": 30.3
+        },
+        {
+          "channel": "apple",
+          "transactions": 30,
+          "gross": 627.68,
+          "net": 627.68,
+          "shareOfPaidNetPct": 27.1,
+          "shareOfTransactionsPct": 27.5
+        },
+        {
+          "channel": "android",
+          "transactions": 28,
+          "gross": 587.72,
+          "net": 587.72,
+          "shareOfPaidNetPct": 25.4,
+          "shareOfTransactionsPct": 25.7
+        },
+        {
+          "channel": "roku",
+          "transactions": 18,
+          "gross": 385.81,
+          "net": 385.81,
+          "shareOfPaidNetPct": 16.6,
+          "shareOfTransactionsPct": 16.5
+        }
+      ],
+      "doubleCountCaveat": "DotStudios transaction export overlaps Apple/Roku/web/android platform source checks and is not summed with them."
     },
     "latestAppleSnapshot": {
-      "periodStart": "2026-07-31",
-      "periodEnd": "2026-08-06",
-      "salesGross": 1406.32,
-      "downloads": 388,
-      "inAppUnits": 69,
-      "totalUnits": 457
+      "periodStart": "2026-08-07",
+      "periodEnd": "2026-08-13",
+      "salesGross": 648.69,
+      "salesEstimatedNet": 454.08,
+      "downloads": 608,
+      "inAppUnits": null,
+      "totalUnits": 608,
+      "source": "User-provided App Store Connect screenshots uploaded in chat on 2026-08-14",
+      "doubleCountCaveat": "Apple gross sales are a platform slice and may overlap DotStudios TVOD apple device rows."
     }
   },
   "titleAggregationPatch": {
@@ -28041,9 +28251,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "bullets": [
       "Traffic direction: active users were -9.4% week over week and sessions were -8.8%, while engagement rate moved only -0.2 percentage points, which means the audience was smaller but still highly engaged.",
       "Viewing depth: GA4 engaged hours were down week over week, but Roku separately reported 3,857 hours streamed and 71.7 average minutes per viewer in its latest app-engagement email.",
-      "Visible sales check: fresh Stripe plus Roku current-week data show $2,081.01 across 98 transactions for Aug 3-Aug 9, 2026. Apple’s latest manual snapshot remains preserved separately, and DotStudios TVOD remains preserved from Aug 7, so this card should not be read as total ElectricNOW sales.",
+      "Visible sales check: fresh Stripe plus Roku current-week data show $2,081.01 across 98 transactions for Aug 3-Aug 9, 2026. Apple’s latest manual snapshot now covers Aug 7-Aug 13, and DotStudios TVOD now reflects the fresh Aug 7-Aug 13 transaction export, so this card should not be read as total ElectricNOW sales.",
       "Paid acquisition verdict: acceptable but needs proof of viewing. Google Ads could not refresh because the connector/API version failed, and no new Meta-only email was found, so prior paid-campaign values are preserved rather than treated as current.",
-      "Caveat: GA4, Roku App Engagement, Roku Sales, Stripe current-week charges, YouTube current-period rows, Apple manual snapshots, DotStudios TVOD, Google Ads, and Meta are separate sources with different coverage; the dashboard should not imply true ROAS because ad-server revenue and some app-store sales remain incomplete."
+      "Caveat: GA4, Roku App Engagement, Roku Sales, Stripe current-week charges, YouTube current-period rows, Apple manual snapshots, including the fresh Aug 7-Aug 13 App Store Connect screenshot, DotStudios TVOD, Google Ads, and Meta are separate sources with different coverage; the dashboard should not imply true ROAS because ad-server revenue and some app-store sales remain incomplete."
     ],
     "period": "Aug 3-Aug 9, 2026",
     "comparisonPeriod": "Jul 27-Aug 2, 2026",
@@ -29641,418 +29851,368 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
     "eyebrow": "User-provided DotStudios TVOD dashboard export — aggregate only",
-    "source": "User-provided DotStudios TVOD dashboard CSV pasted in chat on 2026-08-07",
-    "emailDate": "2026-08-07",
-    "periodStart": "2026-07-31",
-    "periodEnd": "2026-08-06",
-    "period": "Jul 31-Aug 6, 2026",
-    "periodNote": "DotStudios Revenue Overview shows $6,940.32 for its Last 7 Days dashboard view. The pasted Jul 31-Aug 6 transaction export explains $4,089.99 of line-item TVOD transactions and is used for title/platform detail; the two are not the same reporting view.",
-    "extractedAt": "2026-08-07T10:08:00-07:00",
+    "source": "User-provided DotStudios revenue-transactions-7.csv uploaded in chat on 2026-08-14",
+    "emailDate": "2026-08-14",
+    "periodStart": "2026-08-07",
+    "periodEnd": "2026-08-13",
+    "period": "Aug 7-Aug 13, 2026",
+    "periodNote": "Fresh DotStudios revenue-transactions-7.csv export for Aug 7-Aug 13, 2026. The export contains 109 paid line-item TVOD transactions totaling $2,317.84 gross/net. It replaces the preserved Aug 7 transaction-export detail. Do not add it to Stripe/Roku/Apple because the platform sources overlap.",
+    "extractedAt": "2026-08-14T07:39:00-07:00",
     "registeredUsers": {
       "total": 7914,
       "active": 7814
     },
-    "registeredUsersNote": "Registered-user count preserved from the last Michael Johnson/DotStudios email because the latest pasted TVOD export included transactions only, not a newer registered-user total.",
+    "registeredUsersNote": "Registered-user count preserved from the last Michael Johnson/DotStudios email; this Aug 7-Aug 13 TVOD CSV contains transactions only.",
     "transactions": {
-      "totalRows": 195,
-      "paidTransactions": 195,
+      "totalRows": 109,
+      "paidTransactions": 109,
       "refundTransactions": 0,
-      "latestSevenDayPaidTransactions": 195
+      "latestSevenDayPaidTransactions": 109
     },
     "netRevenue": {
-      "tvodSalesExportPaidGross": 4089.99,
-      "tvodSalesExportPaidNet": 4089.99,
-      "refundsGross": 0,
-      "refundsNet": 0,
-      "netIncludingRefunds": 4089.99,
-      "latestSevenDayGross": 4089.99,
-      "latestSevenDayNet": 4089.99
+      "tvodSalesExportPaidGross": 2317.84,
+      "tvodSalesExportPaidNet": 2317.84,
+      "refundsGross": 0.0,
+      "refundsNet": 0.0,
+      "netIncludingRefunds": 2317.84,
+      "latestSevenDayGross": 2317.84,
+      "latestSevenDayNet": 2317.84
     },
     "familyTotals": [
       {
         "family": "The Ark",
-        "transactions": 107,
-        "gross": 2276.9,
-        "net": 2276.9,
-        "shareOfPaidNetPct": 55.7,
-        "shareOfTransactionsPct": 54.9
+        "transactions": 53,
+        "gross": 1141.42,
+        "net": 1141.42,
+        "shareOfPaidNetPct": 49.2,
+        "shareOfTransactionsPct": 48.6
       },
       {
         "family": "The Librarians",
-        "transactions": 87,
-        "gross": 1803.1,
-        "net": 1803.1,
-        "shareOfPaidNetPct": 44.1,
-        "shareOfTransactionsPct": 44.6
+        "transactions": 54,
+        "gross": 1131.44,
+        "net": 1131.44,
+        "shareOfPaidNetPct": 48.8,
+        "shareOfTransactionsPct": 49.5
       },
       {
         "family": "Other",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "shareOfPaidNetPct": 0.2,
-        "shareOfTransactionsPct": 0.5
+        "transactions": 2,
+        "gross": 44.98,
+        "net": 44.98,
+        "shareOfPaidNetPct": 1.9,
+        "shareOfTransactionsPct": 1.8
       }
     ],
     "titleFamilySummary": {
-      "arkTransactions": 107,
-      "arkGross": 2276.9,
-      "arkNet": 2276.9,
-      "arkShareOfPaidTransactionsPct": 54.9,
-      "arkShareOfPaidNetPct": 55.7,
-      "librariansTransactions": 87,
-      "librariansGross": 1803.1,
-      "librariansNet": 1803.1,
-      "librariansShareOfPaidTransactionsPct": 44.6,
-      "librariansShareOfPaidNetPct": 44.1
+      "arkTransactions": 53,
+      "arkGross": 1141.42,
+      "arkNet": 1141.42,
+      "arkShareOfPaidTransactionsPct": 48.6,
+      "arkShareOfPaidNetPct": 49.2,
+      "librariansTransactions": 54,
+      "librariansGross": 1131.44,
+      "librariansNet": 1131.44,
+      "librariansShareOfPaidTransactionsPct": 49.5,
+      "librariansShareOfPaidNetPct": 48.8
     },
     "topTitlesByNet": [
       {
-        "title": "The Ark - Season 3",
-        "transactions": 103,
-        "gross": 2161.97,
-        "net": 2161.97,
-        "shareOfPaidNetPct": 52.9,
-        "shareOfTransactionsPct": 52.8
-      },
-      {
         "title": "The Librarians: The Next Chapter Season 2",
-        "transactions": 80,
-        "gross": 1679.2,
-        "net": 1679.2,
-        "shareOfPaidNetPct": 41.1,
-        "shareOfTransactionsPct": 41
+        "transactions": 52,
+        "gross": 1091.48,
+        "net": 1091.48,
+        "shareOfPaidNetPct": 47.1,
+        "shareOfTransactionsPct": 47.7
       },
       {
-        "title": "Parent The Librarians: The Next Chapter",
+        "title": "The Ark - Season 3",
+        "transactions": 47,
+        "gross": 986.53,
+        "net": 986.53,
+        "shareOfPaidNetPct": 42.6,
+        "shareOfTransactionsPct": 43.1
+      },
+      {
+        "title": "The Ark - Season 1",
         "transactions": 3,
         "gross": 59.94,
         "net": 59.94,
-        "shareOfPaidNetPct": 1.5,
-        "shareOfTransactionsPct": 1.5
+        "shareOfPaidNetPct": 2.6,
+        "shareOfTransactionsPct": 2.8
       },
       {
         "title": "The Ark",
         "transactions": 1,
         "gross": 54.99,
         "net": 54.99,
-        "shareOfPaidNetPct": 1.3,
-        "shareOfTransactionsPct": 0.5
+        "shareOfPaidNetPct": 2.4,
+        "shareOfTransactionsPct": 0.9
       },
       {
-        "title": "The Librarians",
-        "transactions": 1,
-        "gross": 54.99,
-        "net": 54.99,
-        "shareOfPaidNetPct": 1.3,
-        "shareOfTransactionsPct": 0.5
-      },
-      {
-        "title": "The Ark - Season 1",
+        "title": "Parent The Librarians: The Next Chapter",
         "transactions": 2,
         "gross": 39.96,
         "net": 39.96,
-        "shareOfPaidNetPct": 1,
-        "shareOfTransactionsPct": 1
+        "shareOfPaidNetPct": 1.7,
+        "shareOfTransactionsPct": 1.8
       },
       {
         "title": "The Ark - Season 2",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98,
-        "shareOfPaidNetPct": 0.5,
-        "shareOfTransactionsPct": 0.5
-      },
-      {
-        "title": "Almost Paradise - Season 1",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "shareOfPaidNetPct": 0.2,
-        "shareOfTransactionsPct": 0.5
-      },
-      {
-        "title": "The Librarian: Quest for the Spear",
         "transactions": 2,
-        "gross": 5.98,
-        "net": 5.98,
-        "shareOfPaidNetPct": 0.1,
-        "shareOfTransactionsPct": 1
+        "gross": 39.96,
+        "net": 39.96,
+        "shareOfPaidNetPct": 1.7,
+        "shareOfTransactionsPct": 1.8
       },
       {
-        "title": "The Librarian: Return to King Solomon's Mines",
+        "title": "Leverage: Redemption",
         "transactions": 1,
-        "gross": 2.99,
-        "net": 2.99,
-        "shareOfPaidNetPct": 0.1,
-        "shareOfTransactionsPct": 0.5
+        "gross": 29.99,
+        "net": 29.99,
+        "shareOfPaidNetPct": 1.3,
+        "shareOfTransactionsPct": 0.9
+      },
+      {
+        "title": "Somewhere in Montana",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99,
+        "shareOfPaidNetPct": 0.6,
+        "shareOfTransactionsPct": 0.9
       }
     ],
     "channels": [
       {
         "channel": "web",
-        "transactions": 68,
-        "gross": 1426.31,
-        "net": 1426.31,
-        "shareOfPaidNetPct": 34.9,
-        "shareOfTransactionsPct": 34.9
+        "transactions": 33,
+        "gross": 716.63,
+        "net": 716.63,
+        "shareOfPaidNetPct": 30.9,
+        "shareOfTransactionsPct": 30.3
       },
       {
         "channel": "apple",
-        "transactions": 68,
-        "gross": 1406.31,
-        "net": 1406.31,
-        "shareOfPaidNetPct": 34.4,
-        "shareOfTransactionsPct": 34.9
-      },
-      {
-        "channel": "roku",
-        "transactions": 41,
-        "gross": 891.56,
-        "net": 891.56,
-        "shareOfPaidNetPct": 21.8,
-        "shareOfTransactionsPct": 21
+        "transactions": 30,
+        "gross": 627.68,
+        "net": 627.68,
+        "shareOfPaidNetPct": 27.1,
+        "shareOfTransactionsPct": 27.5
       },
       {
         "channel": "android",
-        "transactions": 17,
-        "gross": 355.82,
-        "net": 355.82,
-        "shareOfPaidNetPct": 8.7,
-        "shareOfTransactionsPct": 8.7
+        "transactions": 28,
+        "gross": 587.72,
+        "net": 587.72,
+        "shareOfPaidNetPct": 25.4,
+        "shareOfTransactionsPct": 25.7
       },
       {
-        "channel": "amazon_fire",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "shareOfPaidNetPct": 0.2,
-        "shareOfTransactionsPct": 0.5
+        "channel": "roku",
+        "transactions": 18,
+        "gross": 385.81,
+        "net": 385.81,
+        "shareOfPaidNetPct": 16.6,
+        "shareOfTransactionsPct": 16.5
       }
     ],
     "dailyTrend": [
       {
-        "date": "2026-07-31",
-        "transactions": 29,
-        "gross": 642.71,
-        "net": 642.71
-      },
-      {
-        "date": "2026-08-01",
+        "date": "2026-08-07",
         "transactions": 21,
-        "gross": 438.77,
-        "net": 438.77
+        "gross": 434.79,
+        "net": 434.79
       },
       {
-        "date": "2026-08-02",
-        "transactions": 9,
-        "gross": 188.91,
-        "net": 188.91
+        "date": "2026-08-08",
+        "transactions": 18,
+        "gross": 375.8,
+        "net": 375.8
       },
       {
-        "date": "2026-08-03",
-        "transactions": 56,
-        "gross": 1173.42,
-        "net": 1173.42
+        "date": "2026-08-09",
+        "transactions": 16,
+        "gross": 368.83,
+        "net": 368.83
       },
       {
-        "date": "2026-08-04",
-        "transactions": 22,
-        "gross": 461.78,
-        "net": 461.78
+        "date": "2026-08-10",
+        "transactions": 26,
+        "gross": 542.71,
+        "net": 542.71
       },
       {
-        "date": "2026-08-05",
-        "transactions": 25,
-        "gross": 523.74,
-        "net": 523.74
+        "date": "2026-08-11",
+        "transactions": 10,
+        "gross": 208.89,
+        "net": 208.89
       },
       {
-        "date": "2026-08-06",
-        "transactions": 33,
-        "gross": 660.66,
-        "net": 660.66
+        "date": "2026-08-12",
+        "transactions": 7,
+        "gross": 146.93,
+        "net": 146.93
+      },
+      {
+        "date": "2026-08-13",
+        "transactions": 11,
+        "gross": 239.89,
+        "net": 239.89
       }
     ],
     "latestSevenDay": {
-      "period": "Jul 31-Aug 6, 2026",
-      "gross": 4089.99,
-      "net": 4089.99,
-      "paidTransactions": 195,
-      "topTitle": "The Ark - Season 3"
+      "period": "Aug 7-Aug 13, 2026",
+      "gross": 2317.84,
+      "net": 2317.84,
+      "paidTransactions": 109,
+      "topTitle": "The Librarians: The Next Chapter Season 2"
     },
     "privacyNote": "Customer emails from the DotStudios export are intentionally excluded from the dashboard; only aggregate title, platform, and daily totals are displayed.",
-    "note": "Do not add DotStudios totals to Stripe, Roku, or Apple source checks. DotStudios already overlaps those platform sources. The $6,940.32 Revenue Overview is the headline dashboard total; the $4,089.99 transaction export is a line-item subtotal used for title and device breakdowns.",
-    "totalGross": 4089.99,
-    "grossRevenue": 4089.99,
-    "totalNet": 4089.99,
-    "paidTransactions": 195,
+    "note": "Do not add DotStudios totals to Stripe, Roku, or Apple source checks. DotStudios already overlaps web/Stripe, Apple, Android, and Roku platform purchase sources for the same window. The Aug 7-Aug 13 export is the current best title/device TVOD view.",
+    "totalGross": 2317.84,
+    "grossRevenue": 2317.84,
+    "totalNet": 2317.84,
+    "paidTransactions": 109,
     "titleFamilies": [
       {
         "family": "The Ark",
-        "transactions": 107,
-        "gross": 2276.9,
-        "net": 2276.9,
-        "shareOfPaidNetPct": 55.7,
-        "shareOfTransactionsPct": 54.9
+        "transactions": 53,
+        "gross": 1141.42,
+        "net": 1141.42,
+        "shareOfPaidNetPct": 49.2,
+        "shareOfTransactionsPct": 48.6
       },
       {
         "family": "The Librarians",
-        "transactions": 87,
-        "gross": 1803.1,
-        "net": 1803.1,
-        "shareOfPaidNetPct": 44.1,
-        "shareOfTransactionsPct": 44.6
+        "transactions": 54,
+        "gross": 1131.44,
+        "net": 1131.44,
+        "shareOfPaidNetPct": 48.8,
+        "shareOfTransactionsPct": 49.5
       },
       {
         "family": "Other",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "shareOfPaidNetPct": 0.2,
-        "shareOfTransactionsPct": 0.5
+        "transactions": 2,
+        "gross": 44.98,
+        "net": 44.98,
+        "shareOfPaidNetPct": 1.9,
+        "shareOfTransactionsPct": 1.8
       }
     ],
     "topTitles": [
       {
-        "title": "The Ark - Season 3",
-        "transactions": 103,
-        "gross": 2161.97,
-        "net": 2161.97,
-        "shareOfPaidNetPct": 52.9,
-        "shareOfTransactionsPct": 52.8
-      },
-      {
         "title": "The Librarians: The Next Chapter Season 2",
-        "transactions": 80,
-        "gross": 1679.2,
-        "net": 1679.2,
-        "shareOfPaidNetPct": 41.1,
-        "shareOfTransactionsPct": 41
+        "transactions": 52,
+        "gross": 1091.48,
+        "net": 1091.48,
+        "shareOfPaidNetPct": 47.1,
+        "shareOfTransactionsPct": 47.7
       },
       {
-        "title": "Parent The Librarians: The Next Chapter",
+        "title": "The Ark - Season 3",
+        "transactions": 47,
+        "gross": 986.53,
+        "net": 986.53,
+        "shareOfPaidNetPct": 42.6,
+        "shareOfTransactionsPct": 43.1
+      },
+      {
+        "title": "The Ark - Season 1",
         "transactions": 3,
         "gross": 59.94,
         "net": 59.94,
-        "shareOfPaidNetPct": 1.5,
-        "shareOfTransactionsPct": 1.5
+        "shareOfPaidNetPct": 2.6,
+        "shareOfTransactionsPct": 2.8
       },
       {
         "title": "The Ark",
         "transactions": 1,
         "gross": 54.99,
         "net": 54.99,
-        "shareOfPaidNetPct": 1.3,
-        "shareOfTransactionsPct": 0.5
+        "shareOfPaidNetPct": 2.4,
+        "shareOfTransactionsPct": 0.9
       },
       {
-        "title": "The Librarians",
-        "transactions": 1,
-        "gross": 54.99,
-        "net": 54.99,
-        "shareOfPaidNetPct": 1.3,
-        "shareOfTransactionsPct": 0.5
-      },
-      {
-        "title": "The Ark - Season 1",
+        "title": "Parent The Librarians: The Next Chapter",
         "transactions": 2,
         "gross": 39.96,
         "net": 39.96,
-        "shareOfPaidNetPct": 1,
-        "shareOfTransactionsPct": 1
+        "shareOfPaidNetPct": 1.7,
+        "shareOfTransactionsPct": 1.8
       },
       {
         "title": "The Ark - Season 2",
-        "transactions": 1,
-        "gross": 19.98,
-        "net": 19.98,
-        "shareOfPaidNetPct": 0.5,
-        "shareOfTransactionsPct": 0.5
-      },
-      {
-        "title": "Almost Paradise - Season 1",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "shareOfPaidNetPct": 0.2,
-        "shareOfTransactionsPct": 0.5
-      },
-      {
-        "title": "The Librarian: Quest for the Spear",
         "transactions": 2,
-        "gross": 5.98,
-        "net": 5.98,
-        "shareOfPaidNetPct": 0.1,
-        "shareOfTransactionsPct": 1
+        "gross": 39.96,
+        "net": 39.96,
+        "shareOfPaidNetPct": 1.7,
+        "shareOfTransactionsPct": 1.8
       },
       {
-        "title": "The Librarian: Return to King Solomon's Mines",
+        "title": "Leverage: Redemption",
         "transactions": 1,
-        "gross": 2.99,
-        "net": 2.99,
-        "shareOfPaidNetPct": 0.1,
-        "shareOfTransactionsPct": 0.5
+        "gross": 29.99,
+        "net": 29.99,
+        "shareOfPaidNetPct": 1.3,
+        "shareOfTransactionsPct": 0.9
+      },
+      {
+        "title": "Somewhere in Montana",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99,
+        "shareOfPaidNetPct": 0.6,
+        "shareOfTransactionsPct": 0.9
       }
     ],
     "channelBreakout": [
       {
         "channel": "web",
-        "transactions": 68,
-        "gross": 1426.31,
-        "net": 1426.31,
-        "shareOfPaidNetPct": 34.9,
-        "shareOfTransactionsPct": 34.9
+        "transactions": 33,
+        "gross": 716.63,
+        "net": 716.63,
+        "shareOfPaidNetPct": 30.9,
+        "shareOfTransactionsPct": 30.3
       },
       {
         "channel": "apple",
-        "transactions": 68,
-        "gross": 1406.31,
-        "net": 1406.31,
-        "shareOfPaidNetPct": 34.4,
-        "shareOfTransactionsPct": 34.9
-      },
-      {
-        "channel": "roku",
-        "transactions": 41,
-        "gross": 891.56,
-        "net": 891.56,
-        "shareOfPaidNetPct": 21.8,
-        "shareOfTransactionsPct": 21
+        "transactions": 30,
+        "gross": 627.68,
+        "net": 627.68,
+        "shareOfPaidNetPct": 27.1,
+        "shareOfTransactionsPct": 27.5
       },
       {
         "channel": "android",
-        "transactions": 17,
-        "gross": 355.82,
-        "net": 355.82,
-        "shareOfPaidNetPct": 8.7,
-        "shareOfTransactionsPct": 8.7
+        "transactions": 28,
+        "gross": 587.72,
+        "net": 587.72,
+        "shareOfPaidNetPct": 25.4,
+        "shareOfTransactionsPct": 25.7
       },
       {
-        "channel": "amazon_fire",
-        "transactions": 1,
-        "gross": 9.99,
-        "net": 9.99,
-        "shareOfPaidNetPct": 0.2,
-        "shareOfTransactionsPct": 0.5
+        "channel": "roku",
+        "transactions": 18,
+        "gross": 385.81,
+        "net": 385.81,
+        "shareOfPaidNetPct": 16.6,
+        "shareOfTransactionsPct": 16.5
       }
     ],
-    "sourceLabel": "DotStudios dashboard revenue overview plus transaction-export detail",
-    "sourceNote": "Use the DotStudios Revenue Overview card as the headline current sales number. Use the pasted transaction export subtotal only for title, channel, and daily breakdowns.",
+    "sourceLabel": "DotStudios TVOD dashboard export",
+    "sourceNote": "Manual DotStudios transaction export. Separate from visible platform sales because it overlaps Apple/Roku/web/android purchase sources.",
     "revenueOverview": {
-      "source": "User-provided DotStudios Revenue Overview screenshot uploaded Aug 7, 2026",
+      "source": "User-provided DotStudios revenue-transactions-7.csv uploaded in chat on 2026-08-14",
       "dateRangeSelection": "Last 7 Days",
-      "period": "Last 7 Days as shown in DotStudios on Aug 7, 2026",
-      "totalRevenue": 6940.32,
-      "grossRevenue": 6940.32,
-      "netRevenue": 6940.32,
-      "activeSubscribers": 1147,
-      "mrr": 0,
-      "note": "This is the top-line DotStudios dashboard Revenue Overview card. It is broader than the pasted line-item transaction export used for title, channel, and daily breakdowns."
+      "period": "Aug 7-Aug 13, 2026",
+      "totalRevenue": 2317.84,
+      "grossRevenue": 2317.84,
+      "netRevenue": 2317.84,
+      "activeSubscribers": null,
+      "note": "The Aug 14 CSV is a transaction export, not the separate DotStudios Revenue Overview card, so active-subscriber count is not refreshed here."
     },
-    "status": "stale_preserved_manual",
-    "freshness": "Preserved manual DotStudios TVOD source from Aug 7; no newer DotStudios export uploaded before the Aug 10 scheduled refresh.",
-    "sourceCaveat": "DotStudios revenue overview may include channels not present in Stripe/Roku/Apple connector-visible checks; do not reconcile it as the same total."
+    "sourceStatus": "fresh_manual",
+    "freshness": "Fresh manual DotStudios TVOD source uploaded Aug 14; transaction export covers Aug 7-Aug 13, 2026."
   },
   "weeklyTrendNote": "Fresh GA4 daily rows for Jul 31-Aug 6, 2026; property 497892271.",
   "dotStudiosAppAds": {
@@ -30621,11 +30781,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "details": "335 new installs; 3,857 hours streamed."
     },
     "appleManual": {
-      "status": "stale_preserved",
-      "label": "Apple manual snapshot preserved",
-      "period": "Jul 31-Aug 6, 2026",
-      "updatedAt": "2026-08-07T16:21:00+00:00",
-      "details": "No newer Apple App Store Connect data was provided for this scheduled refresh, so the last manual Apple snapshot was preserved and not represented as fresh Aug 3-Aug 9 data."
+      "status": "fresh_manual",
+      "period": "Aug 7-Aug 13, 2026",
+      "detail": "Fresh Apple App Store Connect sales/download screenshots uploaded Aug 14 and integrated as current Apple manual snapshot."
     },
     "googleAds": {
       "status": "stale_connector_error",
@@ -30649,11 +30807,14 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "details": "6 daily YouTube rows returned; current-period totals updated while YTD cumulative income is preserved from the last successful cumulative pull."
     },
     "dotStudiosTvod": {
-      "status": "stale_preserved",
-      "label": "DotStudios TVOD manual export preserved",
-      "period": "Last 7 Days as shown in DotStudios on Aug 7, 2026",
-      "updatedAt": "2026-08-07",
-      "details": "No newer DotStudios TVOD export was uploaded before this Aug 10 refresh; preserve $6,940.32 revenue overview and transaction detail reconciliation."
+      "status": "fresh_manual",
+      "period": "Aug 7-Aug 13, 2026",
+      "detail": "Fresh DotStudios TVOD transaction export uploaded Aug 14 and integrated as current title/device TVOD section."
+    },
+    "apple": {
+      "status": "fresh_manual",
+      "period": "Aug 7-Aug 13, 2026",
+      "detail": "Fresh Apple App Store Connect sales/download screenshots uploaded Aug 14 and integrated as current Apple manual snapshot."
     }
   },
   "refreshAuditNotes": [
@@ -30676,8 +30837,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "Google Ads": "CONNECTED status check, but pull failed because connector uses deprecated Google Ads API v21. Needs connector/tool repair, not a user reconnect.",
     "YouTube": "CONNECTED; current query returned partial rows through Aug 4.",
     "Meta Ads direct connector": "Not used; workflow uses Nathan/Forge One Meta-only Outlook emails. Latest Meta email remains stale.",
-    "Apple App Store Connect": "Manual screenshot source updated for Jul 31-Aug 6; preserved prior manual entries.",
-    "DotStudios TVOD": "Manual CSV pasted Aug 7 integrated as separate title/platform TVOD export.",
+    "Apple App Store Connect": "Manual sales/download screenshots uploaded Aug 14 integrated for Aug 7-Aug 13, 2026.",
+    "DotStudios TVOD": "Manual CSV uploaded Aug 14 integrated as separate title/platform TVOD export covering Aug 7-Aug 13, 2026.",
     "stripe": {
       "status": "fresh",
       "label": "Stripe current-week refreshed after reauthorization",
@@ -31655,11 +31816,14 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "details": "6 daily YouTube rows returned; current-period totals updated while YTD cumulative income is preserved from the last successful cumulative pull."
     },
     "dotStudiosTvod": {
-      "status": "stale_preserved",
-      "label": "DotStudios TVOD manual export preserved",
-      "period": "Last 7 Days as shown in DotStudios on Aug 7, 2026",
-      "updatedAt": "2026-08-07",
-      "details": "No newer DotStudios TVOD export was uploaded before this Aug 10 refresh; preserve $6,940.32 revenue overview and transaction detail reconciliation."
+      "status": "fresh_manual",
+      "period": "Aug 7-Aug 13, 2026",
+      "detail": "Fresh DotStudios TVOD transaction export uploaded Aug 14 and integrated as current title/device TVOD section."
+    },
+    "apple": {
+      "status": "fresh_manual",
+      "period": "Aug 7-Aug 13, 2026",
+      "detail": "Fresh Apple App Store Connect sales/download screenshots uploaded Aug 14 and integrated as current Apple manual snapshot."
     }
   },
   "auditStatus": {
@@ -31684,8 +31848,24 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "No new Meta-only Nathan/Forge One report found.",
       "No new Apple or DotStudios manual export uploaded for the Aug 10 refresh."
     ]
+  },
+  "lastManualSourceUpdate": {
+    "updatedAt": "2026-08-14T07:39:00-07:00",
+    "sources": [
+      "DotStudios TVOD revenue-transactions-7.csv",
+      "Apple App Store Connect sales screenshot",
+      "Apple App Store Connect downloads screenshot"
+    ],
+    "period": "Aug 7-Aug 13, 2026",
+    "summary": {
+      "dotStudiosTvodGross": 2317.84,
+      "dotStudiosTvodTransactions": 109,
+      "appleGross": 648.69,
+      "appleDownloads": 608
+    },
+    "caveat": "DotStudios and Apple overlap. DotStudios is not added to Apple."
   }
-};
+}
 
 
 // ---- Defensive live/FAST channel filter (reliability guardrail 2026-05-28) ----
@@ -32124,9 +32304,9 @@ function renderPurchases() {
   const tvodLatestGross = tvodNet.latestSevenDayGross;
   const tvodReconciliation = (revenueOverviewGross != null || tvodPaidGross != null) ? `
     <div class="sales-callout sales-callout-secondary">
-      <span>DotStudios Revenue Overview</span>
+      <span>DotStudios TVOD transaction export</span>
       <strong>${revenueOverviewGross != null ? fmt.currency(revenueOverviewGross) : fmt.currency(tvodPaidGross)} total revenue</strong>
-      <p>${escapeHtml(revenueOverview.period || tvod.period || '')}. This is the DotStudios dashboard-level revenue card from the latest screenshot. It is the headline sales number because it reflects the broader DotStudios revenue view.</p>
+      <p>${escapeHtml(revenueOverview.period || tvod.period || '')}. This is the latest DotStudios transaction export provided for the dashboard and is the current title/device TVOD sales view.</p>
       ${revenueOverviewNet != null ? `<p class="sales-net">Net revenue shown in DotStudios: ${fmt.currency(revenueOverviewNet)}${revenueOverview.activeSubscribers != null ? ` · Active subscribers: ${fmt.number(revenueOverview.activeSubscribers)}` : ''}</p>` : ''}
       ${tvodPaidGross != null ? `<p class="sales-net">Line-item transaction export subtotal: ${fmt.number(tvodTxn.paidTransactions)} paid rows / ${fmt.currency(tvodPaidGross)} gross for ${escapeHtml(tvod.period || '')}. This subtotal supports title, device, and daily breakdowns, but it does not equal the broader DotStudios Revenue Overview card.</p>` : ''}
       <p class="sales-net">Reconciliation: the fresh same-week visible payment-source check below is ${fmt.currency(headlineVisibleRevenue)} for ${escapeHtml(headlineVisibleRange)}. It combines only sources that refreshed for the same week and should not be added to the DotStudios total because those sources overlap.</p>
