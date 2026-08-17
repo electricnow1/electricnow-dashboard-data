@@ -3105,7 +3105,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "period": "Jul 27-Aug 2, 2026",
     "metric": "Active users",
     "totalViewers": 5702,
-    "note": "Viewer share uses GA4 active users grouped by stream and device data where available. People who use more than one platform may appear in more than one bucket. Apple TV is not separately broken out yet; Amazon/Fire TV is inferred from Amazon AFT smart-TV device models until the developer confirms a cleaner Fire TV label.",
+    "note": "Viewer share mostly uses GA4 active users grouped by stream and device data where available. Apple TV is now shown as a DotStudios manual video-views breakout for the current uploaded period, so it is a viewing signal and not directly comparable to GA4 active-user rows. People who use more than one platform may appear in more than one bucket.",
     "groups": [
       {
         "platform": "Web",
@@ -3170,12 +3170,16 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       {
         "platform": "Apple TV",
         "category": "Connected TV",
-        "tracked": false,
+        "tracked": true,
         "activeUsers": null,
-        "sharePct": null,
+        "sharePct": 1.4,
         "sessions": null,
         "engagedSessions": null,
-        "detail": "Not separately broken out yet. It is likely inside the Apple app stream until the developer sends a distinct Apple TV platform or stream."
+        "detail": "DotStudios video-views export shows 311 Apple TV views for Aug 10-Aug 16, 2026, equal to 1.4% of 21,555 DotStudios video views. This is not a GA4 active-user count.",
+        "views": 311,
+        "metricLabel": "views",
+        "sourceLabel": "DotStudios",
+        "sourcePeriod": "Aug 10-Aug 16, 2026"
       }
     ],
     "comingSoon": [
@@ -3509,21 +3513,21 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "sourceDetail": "Current TVOD dashboard total is DotStudios Aug 10-Aug 16 export. Stripe, Roku, and Apple overlap DotStudios by platform and should not be summed into it.",
     "stripe": {
       "sourceLabel": "Stripe connector source check",
-      "sourceDetail": "Stripe connector checked fresh for Aug 10-Aug 16, 2026 and returned no additional successful Stripe-visible charges for that exact period. Stripe overlaps the DotStudios TVOD ecosystem and is not added to the DotStudios total.",
+      "sourceDetail": "Stripe connector checked fresh for Aug 10-Aug 16, 2026 and returned 31 successful Stripe-visible charges totaling $647.66. Stripe overlaps the DotStudios TVOD ecosystem and is not added to the DotStudios total.",
       "connectorStatus": "CONNECTED_FRESH",
       "staleNote": null,
       "latestSevenDay": {
         "label": "Stripe connector source check",
         "range": "Aug 10-Aug 16, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0,
+        "purchases": 31,
+        "purchaseRevenue": 647.66,
+        "developerRevShare": 647.66,
         "note": "Stripe is a web/payment-source check for the same TVOD ecosystem and overlaps the DotStudios export; it is not added to DotStudios totals."
       },
       "currentWeek": {
         "period": "Aug 10-Aug 16, 2026",
-        "gross": 0.0,
-        "transactions": 0,
+        "gross": 647.66,
+        "transactions": 31,
         "source": "Stripe connector charge list",
         "status": "fresh",
         "hasMore": false,
@@ -29464,6 +29468,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
 }
 
 
+
 // ---- Defensive live/FAST channel filter (reliability guardrail 2026-05-28) ----
 // Strips known live/FAST/linear channel rows from on-demand top lists at
 // render time, in case any data source ever ships them. The Live Channel on
@@ -29856,7 +29861,22 @@ function renderPurchases() {
   const tvod = data.tvodTitleRevenue;
   const appleDownloads = data.manualAppleDownloads;
   const yearToDate = sales.yearToDate || sales.lifetimeObserved || sales.baselineWindow;
-  const stripeLatest = sales.stripe?.latestSevenDay || sales.stripe?.lastWeek || sales.monthToDate || sales.recent12Days;
+  const stripeSourceStatus = data.sourceStatus?.stripe;
+  const rawStripeLatest = sales.stripe?.latestSevenDay || sales.stripe?.lastWeek || sales.monthToDate || sales.recent12Days;
+  const stripeLatest = rawStripeLatest
+    && Number(rawStripeLatest.purchaseRevenue || 0) === 0
+    && Number(rawStripeLatest.purchases || 0) === 0
+    && stripeSourceStatus?.status === 'fresh'
+    && Number(stripeSourceStatus.gross || 0) > 0
+      ? {
+          label: 'Stripe connector source check',
+          range: stripeSourceStatus.period || rawStripeLatest.range,
+          purchases: stripeSourceStatus.transactions,
+          purchaseRevenue: stripeSourceStatus.gross,
+          developerRevShare: stripeSourceStatus.gross,
+          note: stripeSourceStatus.note || rawStripeLatest.note,
+        }
+      : rawStripeLatest;
   const appleLatest = data.manualAppleSalesUpdate
     ? {
         label: data.manualAppleSalesUpdate.sourceLabel || 'Apple latest snapshot',
@@ -30409,13 +30429,16 @@ function renderPlatformMix() {
     </div>
     <div class="platform-share-list">
       ${mix.groups
-        .map(
-          (row) => `
+        .map((row) => {
+          const rowValue = row.activeUsers ?? row.views ?? 0;
+          const metricLabel = row.metricLabel || (row.views != null && row.activeUsers == null ? 'views' : 'active users');
+          const rowSource = row.sourceLabel ? ` · ${escapeHtml(row.sourceLabel)}` : '';
+          return `
             <article class="platform-share-card ${row.tracked === false ? 'is-untracked' : ''}">
               <header>
                 <div>
                   <strong>${escapeHtml(row.platform || 'Unknown')}</strong>
-                  <span>${row.category ? `${escapeHtml(row.category)} · ` : ''}${row.tracked === false ? 'not separately tracked yet' : `${fmt.number(row.activeUsers || 0)} active users`}</span>
+                  <span>${row.category ? `${escapeHtml(row.category)} · ` : ''}${row.tracked === false ? 'not separately tracked yet' : `${fmt.number(rowValue)} ${escapeHtml(metricLabel)}${rowSource}`}</span>
                 </div>
                 <b>${row.tracked === false ? 'TBD' : fmt.percent(row.sharePct || 0)}</b>
               </header>
@@ -30428,8 +30451,8 @@ function renderPlatformMix() {
               }
               <p>${escapeHtml(row.detail || '')}</p>
             </article>
-          `,
-        )
+          `;
+        })
         .join('')}
     </div>
     <div class="coming-platforms">

@@ -3069,7 +3069,7 @@
     "period": "Jul 27-Aug 2, 2026",
     "metric": "Active users",
     "totalViewers": 5702,
-    "note": "Viewer share uses GA4 active users grouped by stream and device data where available. People who use more than one platform may appear in more than one bucket. Apple TV is not separately broken out yet; Amazon/Fire TV is inferred from Amazon AFT smart-TV device models until the developer confirms a cleaner Fire TV label.",
+    "note": "Viewer share mostly uses GA4 active users grouped by stream and device data where available. Apple TV is now shown as a DotStudios manual video-views breakout for the current uploaded period, so it is a viewing signal and not directly comparable to GA4 active-user rows. People who use more than one platform may appear in more than one bucket.",
     "groups": [
       {
         "platform": "Web",
@@ -3134,12 +3134,16 @@
       {
         "platform": "Apple TV",
         "category": "Connected TV",
-        "tracked": false,
+        "tracked": true,
         "activeUsers": null,
-        "sharePct": null,
+        "sharePct": 1.4,
         "sessions": null,
         "engagedSessions": null,
-        "detail": "Not separately broken out yet. It is likely inside the Apple app stream until the developer sends a distinct Apple TV platform or stream."
+        "detail": "DotStudios video-views export shows 311 Apple TV views for Aug 10-Aug 16, 2026, equal to 1.4% of 21,555 DotStudios video views. This is not a GA4 active-user count.",
+        "views": 311,
+        "metricLabel": "views",
+        "sourceLabel": "DotStudios",
+        "sourcePeriod": "Aug 10-Aug 16, 2026"
       }
     ],
     "comingSoon": [
@@ -3473,21 +3477,21 @@
     "sourceDetail": "Current TVOD dashboard total is DotStudios Aug 10-Aug 16 export. Stripe, Roku, and Apple overlap DotStudios by platform and should not be summed into it.",
     "stripe": {
       "sourceLabel": "Stripe connector source check",
-      "sourceDetail": "Stripe connector checked fresh for Aug 10-Aug 16, 2026 and returned no additional successful Stripe-visible charges for that exact period. Stripe overlaps the DotStudios TVOD ecosystem and is not added to the DotStudios total.",
+      "sourceDetail": "Stripe connector checked fresh for Aug 10-Aug 16, 2026 and returned 31 successful Stripe-visible charges totaling $647.66. Stripe overlaps the DotStudios TVOD ecosystem and is not added to the DotStudios total.",
       "connectorStatus": "CONNECTED_FRESH",
       "staleNote": null,
       "latestSevenDay": {
         "label": "Stripe connector source check",
         "range": "Aug 10-Aug 16, 2026",
-        "purchases": 0,
-        "purchaseRevenue": 0.0,
-        "developerRevShare": 0.0,
+        "purchases": 31,
+        "purchaseRevenue": 647.66,
+        "developerRevShare": 647.66,
         "note": "Stripe is a web/payment-source check for the same TVOD ecosystem and overlaps the DotStudios export; it is not added to DotStudios totals."
       },
       "currentWeek": {
         "period": "Aug 10-Aug 16, 2026",
-        "gross": 0.0,
-        "transactions": 0,
+        "gross": 647.66,
+        "transactions": 31,
         "source": "Stripe connector charge list",
         "status": "fresh",
         "hasMore": false,
