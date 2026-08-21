@@ -11853,103 +11853,164 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "note": "GA4 property 497892271 only. Landing-page traffic is treated as acquisition only, not platform audience."
   },
   "monthlyTrend": {
-    "period": "Aug 14-Aug 20, 2026",
-    "previousPeriod": "Aug 7-Aug 13, 2026",
+    "period": "Jul 24-Aug 20, 2026",
+    "previousPeriod": "Jun 26-Jul 23, 2026",
     "source": "Internal GA4 pull, property 497892271",
     "rows": [
       {
-        "activeUsers": 965,
-        "newUsers": 257,
-        "sessions": 1716,
-        "engagedSessions": 1366,
-        "engagementRate": 79.6037296037296,
-        "screenPageViews": 6576,
-        "eventCount": 151107,
-        "userEngagementDuration": 3219119,
-        "totalEngagementHours": 894.1997222222222,
-        "date": "2026-08-14",
-        "label": "Aug 14"
+        "activeUsers": 674,
+        "newUsers": 137,
+        "sessions": 1445,
+        "engagedSessions": 1098,
+        "engagementRate": 75.98615916955018,
+        "screenPageViews": 4911,
+        "eventCount": 143262,
+        "date": "2026-07-24",
+        "label": "Jul 24"
       },
       {
-        "activeUsers": 962,
-        "newUsers": 283,
-        "sessions": 1623,
-        "engagedSessions": 1280,
-        "engagementRate": 78.86629698089956,
-        "screenPageViews": 7225,
-        "eventCount": 156225,
-        "userEngagementDuration": 3101483,
-        "totalEngagementHours": 861.5230555555555,
-        "date": "2026-08-15",
-        "label": "Aug 15"
+        "activeUsers": 710,
+        "newUsers": 170,
+        "sessions": 1411,
+        "engagedSessions": 1099,
+        "engagementRate": 77.8880226789511,
+        "screenPageViews": 4892,
+        "eventCount": 142937,
+        "date": "2026-07-25",
+        "label": "Jul 25"
       },
       {
-        "activeUsers": 985,
-        "newUsers": 266,
-        "sessions": 1688,
-        "engagedSessions": 1393,
-        "engagementRate": 82.52369668246445,
-        "screenPageViews": 8599,
-        "eventCount": 156627,
-        "userEngagementDuration": 3520445,
-        "totalEngagementHours": 977.9013888888888,
-        "date": "2026-08-16",
-        "label": "Aug 16"
+        "activeUsers": 807,
+        "newUsers": 191,
+        "sessions": 1578,
+        "engagedSessions": 1195,
+        "engagementRate": 75.72877059569075,
+        "screenPageViews": 4977,
+        "eventCount": 155040,
+        "date": "2026-07-26",
+        "label": "Jul 26"
       },
       {
-        "activeUsers": 935,
-        "newUsers": 226,
-        "sessions": 1655,
-        "engagedSessions": 1359,
-        "engagementRate": 82.11480362537765,
-        "screenPageViews": 8598,
-        "eventCount": 139352,
-        "userEngagementDuration": 2783276,
-        "totalEngagementHours": 773.1322222222223,
-        "date": "2026-08-17",
-        "label": "Aug 17"
+        "activeUsers": 790,
+        "newUsers": 236,
+        "sessions": 1489,
+        "engagedSessions": 1247,
+        "engagementRate": 83.74748153122901,
+        "screenPageViews": 5227,
+        "eventCount": 149202,
+        "date": "2026-07-27",
+        "label": "Jul 27"
       },
       {
-        "activeUsers": 894,
-        "newUsers": 211,
-        "sessions": 1627,
-        "engagedSessions": 1345,
-        "engagementRate": 82.66748617086662,
-        "screenPageViews": 9740,
-        "eventCount": 135748,
-        "userEngagementDuration": 3057769,
-        "totalEngagementHours": 849.3802777777778,
-        "date": "2026-08-18",
-        "label": "Aug 18"
+        "activeUsers": 1049,
+        "newUsers": 384,
+        "sessions": 1883,
+        "engagedSessions": 1477,
+        "engagementRate": 78.43866171003717,
+        "screenPageViews": 6626,
+        "eventCount": 166714,
+        "date": "2026-07-28",
+        "label": "Jul 28"
       },
       {
-        "activeUsers": 932,
-        "newUsers": 233,
-        "sessions": 1645,
-        "engagedSessions": 1324,
-        "engagementRate": 80.48632218844985,
-        "screenPageViews": 8216,
-        "eventCount": 131215,
-        "userEngagementDuration": 2766969,
-        "totalEngagementHours": 768.6025,
-        "date": "2026-08-19",
-        "label": "Aug 19"
+        "activeUsers": 1229,
+        "newUsers": 503,
+        "sessions": 2242,
+        "engagedSessions": 1849,
+        "engagementRate": 82.47100802854594,
+        "screenPageViews": 9000,
+        "eventCount": 176500,
+        "date": "2026-07-29",
+        "label": "Jul 29"
+      },
+      {
+        "activeUsers": 1670,
+        "newUsers": 767,
+        "sessions": 2869,
+        "engagedSessions": 2346,
+        "engagementRate": 81.77065179505054,
+        "screenPageViews": 11016,
+        "eventCount": 172213,
+        "date": "2026-07-30",
+        "label": "Jul 30"
       },
       {
         "activeUsers": 1173,
-        "newUsers": 199,
-        "sessions": 2227,
-        "engagedSessions": 430,
-        "engagementRate": 19.308486753480018,
-        "screenPageViews": 7994,
-        "eventCount": 193275,
-        "userEngagementDuration": 3553419,
-        "totalEngagementHours": 987.0608333333333,
-        "date": "2026-08-20",
-        "label": "Aug 20"
-      }
-    ],
-    "previousRows": [
+        "newUsers": 396,
+        "sessions": 2146,
+        "engagedSessions": 1698,
+        "engagementRate": 79.12395153774465,
+        "screenPageViews": 7732,
+        "eventCount": 167365,
+        "date": "2026-07-31",
+        "label": "Jul 31"
+      },
+      {
+        "activeUsers": 1052,
+        "newUsers": 299,
+        "sessions": 1907,
+        "engagedSessions": 1541,
+        "engagementRate": 80.80755112742527,
+        "screenPageViews": 7123,
+        "eventCount": 172795,
+        "date": "2026-08-01",
+        "label": "Aug 1"
+      },
+      {
+        "activeUsers": 1207,
+        "newUsers": 364,
+        "sessions": 2217,
+        "engagedSessions": 1695,
+        "engagementRate": 76.45466847090663,
+        "screenPageViews": 7326,
+        "eventCount": 174517,
+        "date": "2026-08-02",
+        "label": "Aug 2"
+      },
+      {
+        "activeUsers": 1245,
+        "newUsers": 349,
+        "sessions": 2272,
+        "engagedSessions": 1786,
+        "engagementRate": 78.60915492957746,
+        "screenPageViews": 8030,
+        "eventCount": 168153,
+        "date": "2026-08-03",
+        "label": "Aug 3"
+      },
+      {
+        "activeUsers": 1056,
+        "newUsers": 272,
+        "sessions": 1884,
+        "engagedSessions": 1471,
+        "engagementRate": 78.07855626326963,
+        "screenPageViews": 7000,
+        "eventCount": 155989,
+        "date": "2026-08-04",
+        "label": "Aug 4"
+      },
+      {
+        "activeUsers": 1074,
+        "newUsers": 308,
+        "sessions": 1968,
+        "engagedSessions": 1565,
+        "engagementRate": 79.52235772357723,
+        "screenPageViews": 6733,
+        "eventCount": 143873,
+        "date": "2026-08-05",
+        "label": "Aug 5"
+      },
+      {
+        "activeUsers": 1074,
+        "newUsers": 270,
+        "sessions": 1878,
+        "engagedSessions": 1469,
+        "engagementRate": 78.22151224707136,
+        "screenPageViews": 6724,
+        "eventCount": 157118,
+        "date": "2026-08-06",
+        "label": "Aug 6"
+      },
       {
         "activeUsers": 920,
         "newUsers": 279,
@@ -11958,8 +12019,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 81.22297714638665,
         "screenPageViews": 5484,
         "eventCount": 146056,
-        "userEngagementDuration": 2983777,
-        "totalEngagementHours": 828.8269444444444,
         "date": "2026-08-07",
         "label": "Aug 7"
       },
@@ -11971,8 +12030,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 81.95664909197421,
         "screenPageViews": 6000,
         "eventCount": 152115,
-        "userEngagementDuration": 2905018,
-        "totalEngagementHours": 806.9494444444445,
         "date": "2026-08-08",
         "label": "Aug 8"
       },
@@ -11984,8 +12041,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 79.05138339920948,
         "screenPageViews": 5321,
         "eventCount": 151555,
-        "userEngagementDuration": 3115770,
-        "totalEngagementHours": 865.4916666666667,
         "date": "2026-08-09",
         "label": "Aug 9"
       },
@@ -11997,8 +12052,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 79.57710159876224,
         "screenPageViews": 6945,
         "eventCount": 159264,
-        "userEngagementDuration": 2954567,
-        "totalEngagementHours": 820.7130555555556,
         "date": "2026-08-10",
         "label": "Aug 10"
       },
@@ -12010,8 +12063,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 79.38144329896907,
         "screenPageViews": 5727,
         "eventCount": 153520,
-        "userEngagementDuration": 3059200,
-        "totalEngagementHours": 849.7777777777778,
         "date": "2026-08-11",
         "label": "Aug 11"
       },
@@ -12023,8 +12074,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 80.9863339275104,
         "screenPageViews": 6151,
         "eventCount": 147891,
-        "userEngagementDuration": 2781220,
-        "totalEngagementHours": 772.5611111111111,
         "date": "2026-08-12",
         "label": "Aug 12"
       },
@@ -12036,13 +12085,102 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagementRate": 80.2983219390926,
         "screenPageViews": 6024,
         "eventCount": 153551,
-        "userEngagementDuration": 2739038,
-        "totalEngagementHours": 760.8438888888888,
         "date": "2026-08-13",
         "label": "Aug 13"
+      },
+      {
+        "activeUsers": 965,
+        "newUsers": 257,
+        "sessions": 1716,
+        "engagedSessions": 1366,
+        "engagementRate": 79.6037296037296,
+        "screenPageViews": 6576,
+        "eventCount": 151107,
+        "date": "2026-08-14",
+        "label": "Aug 14",
+        "userEngagementDuration": 3219119,
+        "totalEngagementHours": 894.1997222222222
+      },
+      {
+        "activeUsers": 962,
+        "newUsers": 283,
+        "sessions": 1623,
+        "engagedSessions": 1280,
+        "engagementRate": 78.86629698089956,
+        "screenPageViews": 7225,
+        "eventCount": 156225,
+        "date": "2026-08-15",
+        "label": "Aug 15",
+        "userEngagementDuration": 3101483,
+        "totalEngagementHours": 861.5230555555555
+      },
+      {
+        "activeUsers": 985,
+        "newUsers": 266,
+        "sessions": 1688,
+        "engagedSessions": 1393,
+        "engagementRate": 82.52369668246445,
+        "screenPageViews": 8599,
+        "eventCount": 156627,
+        "date": "2026-08-16",
+        "label": "Aug 16",
+        "userEngagementDuration": 3520445,
+        "totalEngagementHours": 977.9013888888888
+      },
+      {
+        "activeUsers": 935,
+        "newUsers": 226,
+        "sessions": 1655,
+        "engagedSessions": 1359,
+        "engagementRate": 82.11480362537765,
+        "screenPageViews": 8598,
+        "eventCount": 139352,
+        "date": "2026-08-17",
+        "label": "Aug 17",
+        "userEngagementDuration": 2783276,
+        "totalEngagementHours": 773.1322222222223
+      },
+      {
+        "activeUsers": 894,
+        "newUsers": 211,
+        "sessions": 1627,
+        "engagedSessions": 1345,
+        "engagementRate": 82.66748617086662,
+        "screenPageViews": 9740,
+        "eventCount": 135748,
+        "date": "2026-08-18",
+        "label": "Aug 18",
+        "userEngagementDuration": 3057769,
+        "totalEngagementHours": 849.3802777777778
+      },
+      {
+        "activeUsers": 932,
+        "newUsers": 233,
+        "sessions": 1645,
+        "engagedSessions": 1324,
+        "engagementRate": 80.48632218844985,
+        "screenPageViews": 8216,
+        "eventCount": 131215,
+        "date": "2026-08-19",
+        "label": "Aug 19",
+        "userEngagementDuration": 2766969,
+        "totalEngagementHours": 768.6025
+      },
+      {
+        "activeUsers": 1173,
+        "newUsers": 199,
+        "sessions": 2227,
+        "engagedSessions": 430,
+        "engagementRate": 19.308486753480018,
+        "screenPageViews": 7994,
+        "eventCount": 193275,
+        "date": "2026-08-20",
+        "label": "Aug 20",
+        "userEngagementDuration": 3553419,
+        "totalEngagementHours": 987.0608333333333
       }
     ],
-    "note": "GA4 property 497892271 only. Landing-page traffic is treated as acquisition only, not platform audience."
+    "note": "Latest 28 complete days. Aug 14-Aug 20 rows are from the Aug 21 GA4 pull; Jul 24-Aug 13 rows are preserved from the Aug 17 monthly daily GA4 pull."
   },
   "appSectionUsage": {
     "period": "Aug 3-Aug 9, 2026",
@@ -12433,7 +12571,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     ],
     "plainEnglish": "Google Ads could not be refreshed this run because the connector is using deprecated API version v21. Treat displayed Google Ads numbers as stale until the connector is updated or repaired.",
     "dataFreshnessNote": "Google Ads connector failed during the Aug 7 refresh because it is calling deprecated Google Ads API version v21. Last-good values are preserved and this section is marked stale; values were not zeroed.",
-    "statusDetail": "error:\nAxiosError - Request failed with status code 400: {\"error\":{\"code\":400,\"message\":\"Request contains an invalid argument.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.ads.googleads.v21.errors.GoogleAdsFailure\",\"errors\":[{\"errorCode\":{\"requestError\":\"UNSUPPORTED_VERSION\"},\"message\":\"Version v21 is deprecated. Requests to this version will be blocked.\"}],\"requestId\":\"iKGBQpFPkiFbGyHDrD740Q\"}]}}",
+    "statusDetail": "error:
+AxiosError - Request failed with status code 400: {\"error\":{\"code\":400,\"message\":\"Request contains an invalid argument.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.ads.googleads.v21.errors.GoogleAdsFailure\",\"errors\":[{\"errorCode\":{\"requestError\":\"UNSUPPORTED_VERSION\"},\"message\":\"Version v21 is deprecated. Requests to this version will be blocked.\"}],\"requestId\":\"iKGBQpFPkiFbGyHDrD740Q\"}]}}",
     "lastSuccessfulPull": "2026-06-11 14:40 PDT",
     "staleNote": "Aug 21 Google Ads connector returned campaign inventory only, not performance metrics; previous paid-efficiency metrics are preserved and not represented as fresh.",
     "latestQueryPeriod": "Jul 31-Aug 6, 2026",
@@ -13069,7 +13208,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     ],
     "estimatedRevenue": 3671.83
   },
-  "appTrendNote": "This trend charts total app/platform sessions in green alongside daily active users in blue for the complete week ending Aug 6, 2026. Sessions were 15,274 (+23.2% vs Jul 24-Jul 30), active users were 5,614 (+11.7%), and total engaged hours were 6,750.8 (+11.6%). Landing-page acquisition traffic remains excluded from platform-audience totals.",
+  "appTrendNote": "This trend charts total app/platform sessions in green alongside daily active users in blue for the complete week ending Aug 20, 2026. Landing-page acquisition traffic remains excluded from platform audience totals.",
   "ytdTrend": [
     {
       "date": "Apr 13",
@@ -13138,7 +13277,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "sessions": 10658
     }
   ],
-  "ytdTrendNote": "Weekly GA4 totals from property 497892271. Latest point is Jul 21-Jul 27, 2026: active users and sessions both up versus the prior window, while engagement rate softened.",
+  "ytdTrendNote": "Weekly GA4 totals from property 497892271. Year-to-date trend is retained as weekly context and should be compared against the launch-baseline week, not the latest 7-day period.",
   "eventCardsNote": "Fresh GA4 event counts for Aug 14-Aug 20. Prior-event comparison rows were not included in the Aug 21 saved raw bundle, so previous event-card deltas are not recalculated.",
   "usGeography": {
     "period": "Aug 14-Aug 20, 2026",
@@ -14034,7 +14173,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     ],
     "reconciliationNote": "DotStudios is the broadest current TVOD dashboard export. Stripe, Apple, and Roku are overlapping checks/slices, not additive sales sources."
   },
-  "weeklyTrendNote": "Fresh GA4 daily rows for Aug 10-Aug 16, 2026; property 497892271.",
+  "weeklyTrendNote": "Fresh GA4 daily rows for Aug 14-Aug 20, 2026; property 497892271.",
   "dotStudiosAppAds": {
     "source": "DotStudios manual app ad-serving export",
     "sourceType": "manual_weekly_upload",
@@ -14711,9 +14850,10 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   "updateNotes": [
     "Complete Aug 21 refresh applied for Aug 14-Aug 20, 2026.",
     "DotStudios TVOD is treated as broadest current sales source; Apple, Roku, and Stripe are overlapping checks.",
-    "Roku TRC emails are live-channel-only and excluded from ElectricNOW app/platform usage."
+    "Roku TRC emails are live-channel-only and excluded from ElectricNOW app/platform usage.",
+    "Strict pre-publish audit added; trend notes and 28-day chart rows repaired on Aug 21 before publishing."
   ],
-  "monthlyTrendNote": "Rolling 28-day trend compares Jul 20-Aug 16, 2026 against Jun 22-Jul 19, 2026.",
+  "monthlyTrendNote": "Rolling 28-day trend covers Jul 24-Aug 20, 2026 and compares against Jun 26-Jul 23, 2026 where summary comparisons are available.",
   "lastUpdated": "2026-08-21 08:27 PDT",
   "lastUpdatedIso": "2026-08-21T08:27:00-07:00",
   "generatedAtIso": "2026-08-21T08:27:00-07:00",
@@ -16341,117 +16481,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "gross": 2012.01,
     "transactions": 98
   }
-}
-
-
-
-// ---- Defensive live/FAST channel filter (reliability guardrail 2026-05-28) ----
-// Strips known live/FAST/linear channel rows from on-demand top lists at
-// render time, in case any data source ever ships them. The Live Channel on
-// Roku and Live TV sections, which legitimately render channel labels, are
-// not touched.
-const LIVE_CHANNEL_SEED = ["DARK MATTER TV","Kung Fu Movies","spot on news","Horror Asylum","a-z Classic Flix","Box Cinema","ElectricNOW en Espanol","ElectricNOW en Español","ElectricNOW en Espa","Cartoon Classics","Grindhouse Gold","Daily Flash","ToonOvation","TooNovation","Stoner TV Network","Ghost Dimension","Fancy A Movie","Comercio TV","Play Ibiza","a-z Western Grit","SportsTVPlus","Urban Action Channel","Hollywood Classic Movies","Cowboy Classics","Celebrity Scene","Colorized.TV","Mor2CTV","4ACETV CLASSIC HITS","4ACETV","CinePast","The Health Channel","a-z Best Classic TV","The Family TV Channel","IndieBox","Rock Solid Wrestling TV","Wrestling Spotlight","DJ Central TV","POWERtube TV","MomCave","Fitness Rewind by Collage Video","MMA Futures","Beyond The Score","AMPD TV","AMusic Channel","Rockola Television","BayView Documentaries","Viajar TV","Mythica: The Darkspore","El Bumbun"];
-const LIVE_CHANNEL_PREFIXES = ["electricnow en espa","electricnow en espan"];
-const LIVE_CHANNEL_SUBSTRINGS = ["live tv","live channel","linear channel","fast channel"];
-function _enLiveNorm(v){
-  if (v == null) return '';
-  let s = String(v);
-  try { s = s.normalize('NFKD').replace(/[̀-ͯ]/g,''); } catch(e) {}
-  return s.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
-}
-const _LIVE_CHANNEL_NAMES = new Set(LIVE_CHANNEL_SEED.map(_enLiveNorm).filter(Boolean));
-function _enIsLive(v){
-  const n = _enLiveNorm(v);
-  if (!n) return false;
-  if (_LIVE_CHANNEL_NAMES.has(n)) return true;
-  for (const p of LIVE_CHANNEL_PREFIXES){ if (p && (n === p || n.startsWith(p))) return true; }
-  for (const sub of LIVE_CHANNEL_SUBSTRINGS){ if (n.indexOf(sub) >= 0) return true; }
-  return false;
-}
-const _EN_FIELDS = ["program","title","group","channelTitle","channel_title","parent","parentLabel","label","show","collection","groupedTitle"];
-function _enRowIsLive(row){
-  if (!row || typeof row !== 'object') return false;
-  for (const f of _EN_FIELDS){ if (f in row && _enIsLive(row[f])) return true; }
-  if (Array.isArray(row.examples)){ for (const ex of row.examples){ if (_enIsLive(ex)) return true; } }
-  return false;
-}
-function _enPurgeLiveFromOnDemand(d){
-  if (!d || typeof d !== 'object') return d;
-  const tv = d.titleViewership;
-  if (!tv || typeof tv !== 'object') return d;
-  for (const key of ['topPrograms','topVideoTitles','topChannelTitles']){
-    const rows = tv[key];
-    if (!Array.isArray(rows)) continue;
-    const kept = [];
-    for (const r of rows){ if (!_enRowIsLive(r)) kept.push(r); }
-    kept.forEach((r,i)=>{ if (r && typeof r === 'object') r.rank = i+1; });
-    tv[key] = kept;
-  }
-  return d;
-}
-// ---- end defensive filter ----
-
-const ELECTRICNOW_ROOT = document.getElementById('electricnow-dashboard-embed') || document;
-const $ = (selector) => ELECTRICNOW_ROOT.querySelector(selector);
-let data = window.DASHBOARD_DATA || window.ELECTRICNOW_DASHBOARD_DATA;
-_enPurgeLiveFromOnDemand(data);
-const API_BASE = window.ELECTRICNOW_DASHBOARD_API_BASE || '';
-const HOSTED_DATA_URL = window.DASHBOARD_DATA_URL || 'https://raw.githubusercontent.com/electricnow1/electricnow-dashboard-data/main/dashboard-data.json';
-
-const NOT_AVAILABLE = 'Not reported';
-function toFiniteNumber(value) {
-  if (value === null || value === undefined || value === '') return null;
-  if (typeof value === 'number') return Number.isFinite(value) ? value : null;
-  if (typeof value === 'string') {
-    const cleaned = value.replace(/,/g, '').trim();
-    if (!cleaned) return null;
-    const n = Number(cleaned);
-    return Number.isFinite(n) ? n : null;
-  }
-  const n = Number(value);
-  return Number.isFinite(n) ? n : null;
-}
-const fmt = {
-  number(value) {
-    const n = toFiniteNumber(value);
-    if (n === null) return NOT_AVAILABLE;
-    if (Math.abs(n) >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
-    if (Math.abs(n) >= 1_000) return `${(n / 1_000).toFixed(n >= 10_000 ? 0 : 1)}K`;
-    return n.toLocaleString();
-  },
-  percent(value) {
-    const n = toFiniteNumber(value);
-    if (n === null) return NOT_AVAILABLE;
-    return `${n.toFixed(1)}%`;
-  },
-  minutes(value) {
-    const n = toFiniteNumber(value);
-    if (n === null) return NOT_AVAILABLE;
-    return `${n.toFixed(1)} min`;
-  },
-  currency(value) {
-    const n = toFiniteNumber(value);
-    if (n === null) return NOT_AVAILABLE;
-    return `$${n.toLocaleString(undefined, {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })}`;
-  },
-  delta(value) {
-    if (value === null || value === undefined || Number.isNaN(value)) return 'new';
-    const sign = value > 0 ? '+' : '';
-    return `${sign}${Number(value).toFixed(1)}%`;
-  },
-  points(value) {
-    if (value === null || value === undefined || Number.isNaN(value)) return 'new';
-    const sign = value > 0 ? '+' : '';
-    return `${sign}${Number(value).toFixed(1)} pts`;
-  },
-  minuteDelta(value) {
-    if (value === null || value === undefined || Number.isNaN(value)) return 'new';
-    const sign = value > 0 ? '+' : '';
-    return `${sign}${Number(value).toFixed(1)} min`;
-  },
 };
 
 function escapeHtml(value) {
@@ -16633,22 +16662,23 @@ function chartPoints(rows, key, width, height, pad, maxOverride = null) {
 
 function renderLineTrendChart(selector, rows) {
   const svg = $(selector);
-  if (!svg || !rows?.length) return;
+  const chartRows = Array.isArray(rows) ? rows : (rows?.rows || []);
+  if (!svg || !chartRows.length) return;
   const width = 820;
   const height = 300;
   const pad = { left: 38, right: 20, top: 24, bottom: 38 };
   // Green line plots total app sessions (reliable daily activity), not engagedSessions.
   // GA4's engaged-session classification wobbles on isolated days (e.g. Sun Jun 28 2026),
   // which renders as a false "engagement collapse" even when users/sessions/time held up.
-  const maxValue = Math.max(...rows.map((d) => Math.max(Number(d.activeUsers || 0), Number(d.sessions || 0))), 1);
-  const active = chartPoints(rows, 'activeUsers', width, height, pad, maxValue);
-  const engaged = chartPoints(rows, 'sessions', width, height, pad, maxValue);
-  const tickStep = rows.length > 16 ? 7 : 2;
-  const ticks = rows
-    .filter((_, i) => i === 0 || i === rows.length - 1 || i % tickStep === 0)
+  const maxValue = Math.max(...chartRows.map((d) => Math.max(Number(d.activeUsers || 0), Number(d.sessions || 0))), 1);
+  const active = chartPoints(chartRows, 'activeUsers', width, height, pad, maxValue);
+  const engaged = chartPoints(chartRows, 'sessions', width, height, pad, maxValue);
+  const tickStep = chartRows.length > 16 ? 7 : 2;
+  const ticks = chartRows
+    .filter((_, i) => i === 0 || i === chartRows.length - 1 || i % tickStep === 0)
     .map((d, i) => {
-      const x = active[rows.indexOf(d)]?.x || pad.left;
-      return `<text class="chart-label" x="${x}" y="${height - 8}" text-anchor="${i === 0 ? 'start' : 'middle'}">${d.date}</text>`;
+      const x = active[chartRows.indexOf(d)]?.x || pad.left;
+      return `<text class="chart-label" x="${x}" y="${height - 8}" text-anchor="${i === 0 ? 'start' : 'middle'}">${d.label || d.date}</text>`;
     })
     .join('');
   svg.innerHTML = `
