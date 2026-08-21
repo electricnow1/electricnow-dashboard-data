@@ -12,6 +12,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
+import tempfile
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from pathlib import Path
@@ -73,6 +75,73 @@ def row_date(row: dict[str, Any]) -> datetime | None:
 
 def add(checks: list[Check], name: str, ok: bool, detail: str, severity: str = "error") -> None:
     checks.append(Check(name=name, status="pass" if ok else "fail", detail=detail, severity=severity))
+
+
+def contains_dom_id(text: str, dom_id: str) -> bool:
+    return f'id="{dom_id}"' in text or f'id=\\"{dom_id}\\"' in text or f"id='{dom_id}'" in text or f"id=\\'{dom_id}\\'" in text
+
+
+def run_shareable_smoke_test(shareable_path: Path) -> dict[str, Any]:
+    script = r"""
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1600 } });
+  const errors = [];
+  page.on('pageerror', (e) => errors.push(e.stack || e.message));
+  page.on('console', (msg) => { if (msg.type() === 'error') errors.push(msg.text()); });
+  await page.goto('file://' + process.argv[2], { waitUntil: 'load' });
+  await page.waitForTimeout(1200);
+  const ids = [
+    'kpi-grid',
+    'traffic-chart',
+    'monthly-traffic-chart',
+    'ytd-traffic-chart',
+    'trend-period',
+    'purchase-chart',
+    'purchase-summary',
+    'content-table',
+    'tvod-title-revenue-summary',
+  ];
+  const sections = {};
+  for (const id of ids) {
+    sections[id] = await page.$eval('#' + id, (el) => {
+      const r = el.getBoundingClientRect();
+      return {
+        textLength: (el.innerText || el.textContent || '').trim().length,
+        htmlLength: el.innerHTML.length,
+        width: r.width,
+        height: r.height,
+      };
+    }).catch((e) => ({ error: e.message }));
+  }
+  await browser.close();
+  console.log(JSON.stringify({ errors, sections }));
+})().catch((e) => {
+  console.log(JSON.stringify({ errors: [e.stack || e.message], sections: {} }));
+  process.exit(1);
+});
+"""
+    with tempfile.NamedTemporaryFile("w", suffix=".js", dir=str(shareable_path.parent), delete=False, encoding="utf-8") as tmp:
+        tmp.write(script)
+        tmp_path = Path(tmp.name)
+    try:
+        proc = subprocess.run(
+            ["node", str(tmp_path), str(shareable_path)],
+            text=True,
+            capture_output=True,
+            timeout=30,
+        )
+        try:
+            result = json.loads(proc.stdout.strip().splitlines()[-1])
+        except Exception:
+            result = {"errors": [proc.stderr or proc.stdout or "Unable to parse Playwright smoke-test output"], "sections": {}}
+        result["returncode"] = proc.returncode
+        return result
+    except subprocess.TimeoutExpired:
+        return {"errors": ["Playwright smoke test timed out"], "sections": {}, "returncode": 124}
+    finally:
+        tmp_path.unlink(missing_ok=True)
 
 
 def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expected_period: str | None) -> dict[str, Any]:
@@ -195,6 +264,35 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
         bool(period and period in embed_text),
         f"embed contains reporting period {period!r}",
     )
+    for required_id in [
+        "kpi-grid",
+        "plain-panel",
+        "trend-period",
+        "purchase-chart",
+        "purchase-summary",
+        "tvod-title-revenue-summary",
+        "youtube-kpis",
+    ]:
+        add(
+            checks,
+            f"embed_markup_contains_{required_id}",
+            contains_dom_id(embed_text, required_id),
+            f"required visible container id={required_id!r} must exist in the hosted embed markup",
+        )
+    add(
+        checks,
+        "embed_sales_summary_selector_is_guarded",
+        "const salesSummaryEl = $('#sales-summary') || $('#purchase-summary');" in embed_text,
+        "purchase renderer must fall back from #sales-summary to #purchase-summary so a selector mismatch cannot stop later charts",
+    )
+    if embed_path.exists():
+        syntax = subprocess.run(["node", "--check", str(embed_path)], text=True, capture_output=True)
+        add(
+            checks,
+            "embed_javascript_syntax_valid",
+            syntax.returncode == 0,
+            (syntax.stderr or syntax.stdout or "node --check passed")[:500],
+        )
 
     if shareable_path:
         shareable_exists = shareable_path.exists()
@@ -213,6 +311,72 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
                 bool(period and period in shareable_text),
                 f"shareable contains reporting period {period!r}",
             )
+            for required_id in [
+                "kpi-grid",
+                "plain-panel",
+                "trend-period",
+                "purchase-chart",
+                "purchase-summary",
+                "tvod-title-revenue-summary",
+                "youtube-kpis",
+            ]:
+                add(
+                    checks,
+                    f"shareable_markup_contains_{required_id}",
+                    contains_dom_id(shareable_text, required_id),
+                    f"required visible container id={required_id!r} must exist in the shareable markup",
+                )
+            add(
+                checks,
+                "shareable_sales_summary_selector_is_guarded",
+                "const salesSummaryEl = document.querySelector('#sales-summary') || document.querySelector('#purchase-summary');" in shareable_text,
+                "purchase renderer must fall back from #sales-summary to #purchase-summary so a selector mismatch cannot stop later charts",
+            )
+            script_matches = re.findall(r"<script>\s*(.*?)\s*</script>", shareable_text, flags=re.S)
+            if script_matches:
+                with tempfile.NamedTemporaryFile("w", suffix=".js", delete=False, encoding="utf-8") as tmp:
+                    tmp.write(script_matches[-1])
+                    tmp_path = Path(tmp.name)
+                try:
+                    syntax = subprocess.run(["node", "--check", str(tmp_path)], text=True, capture_output=True)
+                    add(
+                        checks,
+                        "shareable_javascript_syntax_valid",
+                        syntax.returncode == 0,
+                        (syntax.stderr or syntax.stdout or "node --check passed")[:500],
+                    )
+                finally:
+                    tmp_path.unlink(missing_ok=True)
+            else:
+                add(checks, "shareable_script_block_found", False, "No terminal <script> block found for syntax validation")
+
+            smoke = run_shareable_smoke_test(shareable_path)
+            smoke_errors = smoke.get("errors") or []
+            add(
+                checks,
+                "shareable_runtime_has_no_console_or_page_errors",
+                not smoke_errors,
+                "; ".join(str(e)[:220] for e in smoke_errors[:4]) or "No browser runtime errors",
+            )
+            sections = smoke.get("sections") or {}
+            for required_id in [
+                "kpi-grid",
+                "traffic-chart",
+                "monthly-traffic-chart",
+                "ytd-traffic-chart",
+                "purchase-chart",
+                "purchase-summary",
+                "content-table",
+                "tvod-title-revenue-summary",
+            ]:
+                section = sections.get(required_id) or {}
+                rendered = not section.get("error") and int(section.get("htmlLength") or 0) > 0
+                add(
+                    checks,
+                    f"shareable_runtime_renders_{required_id}",
+                    rendered,
+                    f"{required_id} smoke-test section={section}",
+                )
 
     failures = [c for c in checks if c.status == "fail" and c.severity == "error"]
     warnings = [c for c in checks if c.status == "fail" and c.severity == "warning"]
