@@ -1,4 +1,4 @@
-{
+window.ELECTRICNOW_DASHBOARD_DATA = {
   "generatedAt": "2026-08-21 08:27 PDT",
   "property": "properties/497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271, plus labeled connector/manual sources",
@@ -16461,4 +16461,4 @@
     "gross": 2012.01,
     "transactions": 98
   }
-}
+};

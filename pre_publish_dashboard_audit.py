@@ -229,6 +229,31 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
     ytd_revenue = money(((youtube.get("yearToDate") or {}).get("estimatedRevenue")) or ((youtube.get("totals") or {}).get("yearToDateRevenue")))
     add(checks, "youtube_ytd_revenue_present", ytd_revenue is not None and ytd_revenue > 0, f"YouTube YTD revenue={ytd_revenue}")
 
+    # Manual Apple screenshots often include revenue/downloads but not transaction count.
+    # The dashboard must not summarize the whole Apple card as "Not Reported" when values exist.
+    apple_status = (data.get("sourceStatus") or {}).get("apple") or (data.get("sourceStatus") or {}).get("appleManual") or {}
+    apple_latest = (((data.get("salesSummary") or {}).get("apple") or {}).get("latestSevenDay") or {})
+    apple_sales = money(apple_status.get("salesGross") or apple_latest.get("purchaseRevenue"))
+    apple_downloads = apple_status.get("downloads") or apple_latest.get("downloads")
+    apple_period = apple_status.get("period") or apple_latest.get("range")
+    has_apple_values = (apple_sales is not None and apple_sales > 0) or bool(apple_downloads)
+    add(
+        checks,
+        "apple_manual_snapshot_values_displayed",
+        (not has_apple_values) or (
+            money(apple_latest.get("purchaseRevenue")) == apple_sales
+            and apple_latest.get("range") == apple_period
+            and (apple_latest.get("downloads") == apple_downloads or not apple_downloads)
+        ),
+        f"Apple sourceStatus sales={apple_sales}, downloads={apple_downloads}, period={apple_period!r}; salesSummary.latestSevenDay={apple_latest}",
+    )
+    add(
+        checks,
+        "apple_manual_snapshot_not_reduced_to_not_reported",
+        (not has_apple_values) or str(apple_latest.get("note") or "").lower().find("transaction count") >= 0,
+        "When Apple sales/download values exist, only transaction count may be labeled not reported.",
+    )
+
     # Connector/source freshness must be explicit. Failed sources are allowed only when labeled stale/preserved/blocked.
     status_blobs = [
         data.get("connectorStatus") or {},

@@ -4774,9 +4774,9 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       }
     },
     "apple": {
-      "sourceLabel": "Apple App Store manual sales",
-      "sourceDetail": "Apple App Store in-app purchase snapshots are manually entered from App Store Connect screenshots. Gross customer sales are shown; estimated net assumes Apple keeps 30%. The latest Aug 14 snapshot covers Aug 7-Aug 13, 2026. The latest Apple sales snapshot is revenue-only, so no transaction count is fabricated.",
-      "snapshotRange": "Aug 7-Aug 13, 2026",
+      "sourceLabel": "Apple App Store manual sales/download snapshot",
+      "sourceDetail": "Apple App Store Connect screenshots were manually uploaded and integrated for Aug 14-Aug 20, 2026. Gross customer sales are shown; the screenshot does not provide a transaction count, so no purchase count is fabricated. Downloads are shown separately and are not paid sales or GA4 active users.",
+      "snapshotRange": "Aug 14-Aug 20, 2026",
       "yearToDate": {
         "label": "Apple manual gross sales this year",
         "range": "Jan 1-Aug 6, 2026",
@@ -5025,13 +5025,22 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         }
       ],
       "latestSevenDay": {
-        "label": "Apple manual gross sales latest snapshot",
-        "range": "Aug 7-Aug 13, 2026",
+        "label": "Apple manual gross sales/download latest snapshot",
+        "range": "Aug 14-Aug 20, 2026",
         "purchases": null,
-        "purchaseRevenue": 648.69,
-        "developerRevShare": 454.08,
-        "downloads": 608,
-        "note": "Latest App Store Connect gross sales/download screenshot; revenue-only source with no transaction count fabricated."
+        "purchaseRevenue": 572.71,
+        "developerRevShare": 400.9,
+        "downloads": 531,
+        "note": "Latest App Store Connect screenshots; gross sales and downloads are reported, but transaction count is not provided."
+      },
+      "currentWeek": {
+        "label": "Apple manual gross sales/download latest snapshot",
+        "range": "Aug 14-Aug 20, 2026",
+        "purchases": null,
+        "purchaseRevenue": 572.71,
+        "developerRevShare": 400.9,
+        "downloads": 531,
+        "note": "Latest App Store Connect screenshots; gross sales and downloads are reported, but transaction count is not provided."
       }
     },
     "sourceBreakout": [
@@ -14804,7 +14813,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "Google Ads": "CONNECTED inventory check only; Aug 21 pull did not provide performance metrics, so previous metrics are preserved and labeled stale.",
     "Meta Ads": "Outlook search did not find a newer Nathan/Forge One Meta-only report; prior values preserved and labeled stale.",
     "YouTube": "CONNECTED; YTD refreshed through Aug 20 and current-period daily rows returned through 2026-08-18.",
-    "Apple App Store Connect": "Manual sales/download screenshots uploaded Aug 21 integrated for Aug 14-Aug 20, 2026.",
+    "Apple App Store Connect": "Manual sales/download screenshots uploaded Aug 21 integrated for Aug 14-Aug 20, 2026: $572.71 gross sales and 531 downloads; transaction count is not reported by the screenshots.",
     "DotStudios TVOD": "Manual revenue-transactions-10.csv uploaded Aug 21 integrated as broadest TVOD export covering Aug 14-Aug 20, 2026."
   },
   "audit": {
@@ -15790,7 +15799,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "No newer Nathan/Forge One Meta-only report found in the saved Outlook search.",
       "YouTube current-period daily rows returned through Aug 18 only; Aug 19-Aug 20 were not zero-filled.",
       "No new DotStudios app-installs or video-views CSV was attached in the Aug 21 refresh."
-    ]
+    ],
+    "appleSnapshotDisplay": {
+      "status": "fresh_manual_displayed",
+      "period": "Aug 14-Aug 20, 2026",
+      "salesGross": 572.71,
+      "downloads": 531,
+      "transactionCount": "not_reported_by_screenshot",
+      "displayRule": "Do not render Apple as simply Not Reported when sales/download values exist; only transaction count is not reported."
+    }
   },
   "lastManualSourceUpdate": {
     "updatedAt": "2026-08-17T12:30:00-07:00",
@@ -16480,7 +16497,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "gross": 2012.01,
     "transactions": 98
   }
-};
+}
 let data = window.DASHBOARD_DATA || window.ELECTRICNOW_DASHBOARD_DATA;
 function _enRowIsLive(row) {
   const text = [
@@ -16947,7 +16964,7 @@ function renderPurchases() {
       <div class="sales-stat">
         <span>Apple latest snapshot</span>
         <strong>${fmt.currency(appleLatest.purchaseRevenue)}</strong>
-        <em>${appleLatest.range} · ${appleLatest.purchases != null ? `${fmt.number(appleLatest.purchases)} purchases` : 'revenue-only, no transaction count'}</em>
+        <em>${appleLatest.range} · ${appleLatest.downloads != null ? `${fmt.number(appleLatest.downloads)} downloads · ` : ''}${appleLatest.purchases != null ? `${fmt.number(appleLatest.purchases)} purchases` : 'transaction count not reported'}</em>
         <em class="sales-stat-footnote">${escapeHtml(appleLatest.detail || 'Aggregate gross App Store Connect screenshot; overlaps DotStudios Apple-platform TVOD.')}</em>
       </div>
       <div class="sales-stat">
