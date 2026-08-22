@@ -18385,9 +18385,9 @@ function renderTvodTitleRevenue() {
     return;
   }
   section.hidden = false;
-  const periodLabel = tv.periodStart ? `Since ${tv.periodStart}` : 'Cumulative since launch';
+  const periodLabel = tv.period || (tv.periodStart && tv.periodEnd ? `${tv.periodStart} to ${tv.periodEnd}` : tv.periodStart ? `Since ${tv.periodStart}` : 'Cumulative since launch');
   $('#tvod-title-revenue-period').textContent = periodLabel;
-  $('#tvod-title-revenue-note').textContent = tv.note || '';
+  $('#tvod-title-revenue-note').textContent = tv.periodNote || tv.note || '';
 
   const ru = tv.registeredUsers || {};
   const txn = tv.transactions || {};
@@ -18398,15 +18398,22 @@ function renderTvodTitleRevenue() {
     net.tvodSalesExportPaidNet ??
     net.tvodSalesEmailTotalNet ??
     net.csvPaidNetTotal;
-  const dashboardRevenue = revenueOverview.totalRevenue ?? revenueOverview.grossRevenue ?? tv.totalGross;
+  const hasDashboardRevenue = revenueOverview.totalRevenue != null || revenueOverview.grossRevenue != null || tv.totalGross != null;
+  const dashboardRevenue = hasDashboardRevenue ? (revenueOverview.totalRevenue ?? revenueOverview.grossRevenue ?? tv.totalGross) : tvodNetRevenue;
+  const revenueCardLabel = hasDashboardRevenue ? 'DotStudios revenue overview' : 'DotStudios TVOD export total';
+  const revenueCardDetail = hasDashboardRevenue
+    ? (revenueOverview.period ? `${revenueOverview.period} · dashboard-level total` : 'Dashboard-level revenue total')
+    : `${fmt.number(txn.paidTransactions)} paid line items · ${periodLabel}`;
   const cards = [
-    ['DotStudios revenue overview', fmt.currency(dashboardRevenue), revenueOverview.period ? `${revenueOverview.period} · dashboard-level total` : 'Dashboard-level revenue total'],
+    [revenueCardLabel, fmt.currency(dashboardRevenue), revenueCardDetail],
     ['Registered users', fmt.number(ru.total), 'Total registered ElectricNOW accounts'],
     ['Active registered users', fmt.number(ru.active), 'Registered users considered active'],
-    ['Active subscribers', fmt.number(revenueOverview.activeSubscribers), 'DotStudios Revenue Overview card'],
     ['Line-item export rows', fmt.number(txn.paidTransactions), `${fmt.number(txn.totalRows)} paid rows in the title/device export`],
     ['Line-item export subtotal', fmt.currency(tvodNetRevenue), 'Subtotal used for title-family and channel breakdowns'],
   ];
+  if (revenueOverview.activeSubscribers != null) {
+    cards.splice(3, 0, ['Active subscribers', fmt.number(revenueOverview.activeSubscribers), 'DotStudios Revenue Overview card']);
+  }
   $('#tvod-title-revenue-summary').innerHTML = cards
     .map(([label, value, detail]) => usageStat(label, value, detail))
     .join('');

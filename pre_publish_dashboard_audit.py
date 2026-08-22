@@ -251,6 +251,26 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
         add(checks, "tvod_daily_total_reconciles", daily_sum == tvod_total, f"daily={daily_sum}; tvod_total={tvod_total}")
         add(checks, "tvod_family_total_reconciles", family_sum == tvod_total, f"family={family_sum}; tvod_total={tvod_total}")
         add(checks, "tvod_channel_total_reconciles", channel_sum == tvod_total, f"channel={channel_sum}; tvod_total={tvod_total}")
+    tvod_net = tvod.get("netRevenue") or {}
+    tvod_txn = tvod.get("transactions") or {}
+    tvod_export_total = (
+        money(tvod_net.get("netIncludingRefunds"))
+        or money(tvod_net.get("tvodSalesExportPaidNet"))
+        or money(tvod_net.get("latestSevenDayNet"))
+        or money(tvod_net.get("latestSevenDayGross"))
+    )
+    if tvod_export_total is not None and tvod_export_total > 0:
+        embed_text = embed_path.read_text(encoding="utf-8", errors="replace")
+        shareable_text = shareable_path.read_text(encoding="utf-8", errors="replace") if shareable_path and shareable_path.exists() else ""
+        renderer_has_tvod_fallback = "DotStudios TVOD export total" in embed_text and "hasDashboardRevenue" in embed_text
+        if shareable_text:
+            renderer_has_tvod_fallback = renderer_has_tvod_fallback and "DotStudios TVOD export total" in shareable_text and "hasDashboardRevenue" in shareable_text
+        add(
+            checks,
+            "tvod_summary_card_uses_export_total_fallback",
+            renderer_has_tvod_fallback,
+            f"TVOD export total={tvod_export_total}; paid rows={tvod_txn.get('paidTransactions')}; renderer must not show revenue as Not reported",
+        )
 
     # YouTube YTD should never disappear when current-period rows are partial.
     youtube = data.get("youtubeSummary") or {}
