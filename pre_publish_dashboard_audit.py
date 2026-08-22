@@ -253,6 +253,25 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
         (not has_apple_values) or str(apple_latest.get("note") or "").lower().find("transaction count") >= 0,
         "When Apple sales/download values exist, only transaction count may be labeled not reported.",
     )
+    try:
+        embed_text = embed_path.read_text(encoding="utf-8")
+    except Exception as exc:
+        embed_text = ""
+        add(checks, "embed_readable_for_apple_render_audit", False, f"Could not read embed for Apple renderer audit: {exc}")
+    if has_apple_values and apple_status.get("salesGross") is not None:
+        add(
+            checks,
+            "apple_renderer_accepts_salesGross_field",
+            "manualAppleSalesUpdate.grossRevenue ?? data.manualAppleSalesUpdate.salesGross" in embed_text
+            or "manualAppleSalesUpdate.salesGross ?? data.manualAppleSalesUpdate.grossRevenue" in embed_text,
+            "Apple manual snapshot uses salesGross in current data; renderer must fall back to salesGross, not only grossRevenue.",
+        )
+        add(
+            checks,
+            "apple_renderer_includes_downloads_line",
+            "appleLatest.downloads" in embed_text and "transaction count not reported" in embed_text,
+            "Apple card should display revenue/downloads and reserve 'not reported' only for transaction count.",
+        )
 
     # Connector/source freshness must be explicit. Failed sources are allowed only when labeled stale/preserved/blocked.
     status_blobs = [

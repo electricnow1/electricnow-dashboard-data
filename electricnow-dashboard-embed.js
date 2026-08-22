@@ -16887,7 +16887,8 @@ function renderPurchases() {
         label: data.manualAppleSalesUpdate.sourceLabel || 'Apple latest snapshot',
         range: data.manualAppleSalesUpdate.period,
         purchases: null,
-        purchaseRevenue: data.manualAppleSalesUpdate.grossRevenue,
+        purchaseRevenue: data.manualAppleSalesUpdate.grossRevenue ?? data.manualAppleSalesUpdate.salesGross,
+        downloads: data.manualAppleSalesUpdate.downloads,
         detail: data.manualAppleSalesUpdate.note,
       }
     : sales.apple?.latestSevenDay || sales.apple?.lastWeek || sales.lastWeek;
