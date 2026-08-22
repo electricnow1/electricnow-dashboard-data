@@ -215,6 +215,32 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
             stale_hits = [p for p in stale_note_patterns if re.search(p, note) and period not in note and "stale" not in note.lower()]
             add(checks, f"{key}_not_misleadingly_stale", not stale_hits, f"{key} stale pattern hits={stale_hits}; reportingPeriod={period!r}")
 
+    # Content/activity labeling: GA4 commonly returns the useful screen value in unifiedPageScreen.
+    # The renderer must not show those rows as repeated "Unlabeled activity" placeholders.
+    top_pages = data.get("topPages") or {}
+    top_page_rows = normalize_rows(top_pages)
+    named_unified_rows = [
+        str(row.get("unifiedPageScreen") or row.get("pageScreen") or row.get("pageTitle") or "").strip()
+        for row in top_page_rows
+    ]
+    named_unified_rows = [name for name in named_unified_rows if name and name != "(not set)"]
+    add(
+        checks,
+        "top_pages_include_named_unified_screens",
+        bool(named_unified_rows),
+        f"named unifiedPageScreen/pageScreen/pageTitle rows={named_unified_rows[:10]}",
+    )
+    if named_unified_rows:
+        app_js = embed_path.read_text(encoding="utf-8", errors="replace")
+        shareable_js = shareable_path.read_text(encoding="utf-8", errors="replace") if shareable_path and shareable_path.exists() else ""
+        renderer_uses_unified = "unifiedPageScreen" in app_js and (not shareable_js or "unifiedPageScreen" in shareable_js)
+        add(
+            checks,
+            "content_renderer_uses_unified_screen_labels",
+            renderer_uses_unified,
+            "Renderer must read unifiedPageScreen/pageScreen/pageTitle before falling back to Unlabeled activity.",
+        )
+
     # TVOD reconciliation: title family and channel totals should roll up to the DotStudios TVOD total.
     tvod = data.get("tvodTitleRevenue") or {}
     tvod_total = money((tvod.get("netRevenue") or {}).get("latestSevenDayGross"))
