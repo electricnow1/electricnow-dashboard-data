@@ -100,6 +100,8 @@ const { chromium } = require('playwright');
     'trend-period',
     'purchase-chart',
     'purchase-summary',
+    'funnel-list',
+    'ad-list',
     'content-table',
     'tvod-title-revenue-summary',
   ];
@@ -361,6 +363,8 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
                 "trend-period",
                 "purchase-chart",
                 "purchase-summary",
+                "funnel-list",
+                "ad-list",
                 "tvod-title-revenue-summary",
                 "youtube-kpis",
             ]:

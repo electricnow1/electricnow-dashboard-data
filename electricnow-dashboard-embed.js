@@ -17197,16 +17197,34 @@ function renderRokuAppEngagement() {
 
 function barRows(selector, events, accent = false) {
   const rows = events
-    .map((name) => data.eventCards.find((e) => e.event === name))
+    .map((name) => {
+      const row = (data.eventCards || []).find((e) => (e.event || e.eventName) === name);
+      if (!row) return null;
+      const value = selectedPeriod === 'weekToDate'
+        ? (row.weekToDate ?? row.current ?? row.eventCount)
+        : (row.current ?? row.eventCount ?? row.weekToDate);
+      return {
+        ...row,
+        event: row.event || row.eventName || name,
+        label: row.label || row.eventName || row.event || name,
+        displayValue: toFiniteNumber(value) ?? 0,
+      };
+    })
     .filter(Boolean);
-  const max = Math.max(...rows.map((r) => (selectedPeriod === 'weekToDate' ? r.weekToDate : r.current)), 1);
-  $(selector).innerHTML = rows
+  const target = $(selector);
+  if (!target) return;
+  if (!rows.length) {
+    target.innerHTML = '<p class="panel-note">No matching GA4 event rows were returned for this period.</p>';
+    return;
+  }
+  const max = Math.max(...rows.map((r) => r.displayValue), 1);
+  target.innerHTML = rows
     .map((r) => {
-      const value = selectedPeriod === 'weekToDate' ? r.weekToDate : r.current;
+      const value = r.displayValue;
       const width = Math.max(3, (value / max) * 100);
       return `
         <div class="bar-row">
-          <header><span>${r.label}</span><strong>${fmt.number(value)}</strong></header>
+          <header><span>${escapeHtml(r.label)}</span><strong>${fmt.number(value)}</strong></header>
           <div class="bar-track"><div class="bar-fill" style="width:${width}%; ${accent ? 'background:linear-gradient(90deg,var(--warn),var(--primary-2));' : ''}"></div></div>
         </div>
       `;
