@@ -197,7 +197,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "deltaVsLaunchPct": -44.631989895510394,
       "deltaType": "percent",
       "format": "number",
-      "context": "GA4 active users on measured ElectricNOW platform surfaces; landing-page acquisition paths are not counted as platform audience.",
+      "context": "GA4 active users on app/platform surfaces; landing pages excluded.",
       "period": "Aug 17-Aug 23, 2026",
       "comparisonPeriod": "Aug 3-Aug 9, 2026",
       "currentWeek": 4708,
@@ -239,7 +239,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       "deltaVsLaunchPct": -10.971763292279963,
       "deltaType": "percent",
       "format": "number",
-      "context": "GA4 sessions on measured ElectricNOW platform surfaces; landing pages remain acquisition-only.",
+      "context": "GA4 sessions on app/platform surfaces; landing pages excluded.",
       "period": "Aug 17-Aug 23, 2026",
       "comparisonPeriod": "Aug 3-Aug 9, 2026",
       "currentWeek": 11138,
@@ -11079,7 +11079,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "deltaVsPreviousPct": -6.767208043310132,
           "deltaType": "percent",
           "format": "number",
-          "context": "GA4 active users on measured ElectricNOW platform surfaces; landing-page acquisition paths are not counted as platform audience.",
+          "context": "GA4 active users on app/platform surfaces; landing pages excluded.",
           "period": "Aug 17-Aug 23, 2026",
           "comparisonPeriod": "Aug 3-Aug 9, 2026",
           "currentWeek": 4708,
@@ -11100,7 +11100,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "deltaVsPreviousPct": -10.12811765597756,
           "deltaType": "percent",
           "format": "number",
-          "context": "GA4 sessions on measured ElectricNOW platform surfaces; landing pages remain acquisition-only.",
+          "context": "GA4 sessions on app/platform surfaces; landing pages excluded.",
           "period": "Aug 17-Aug 23, 2026",
           "comparisonPeriod": "Aug 3-Aug 9, 2026",
           "currentWeek": 11138,
@@ -11121,7 +11121,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "deltaVsPreviousPct": -3.1953902566788894,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users who triggered on-demand video_start or Live play events."
+          "context": "Users who triggered on-demand or Live play events."
         },
         {
           "key": "totalEngagementHours",
@@ -11157,7 +11157,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "deltaVsPreviousPct": 4.2033011316950315,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total GA4 engaged time divided by active users.",
+          "context": "GA4 engaged time divided by active users.",
           "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026",
           "period": "Aug 17-Aug 23, 2026",
           "comparisonPeriod": "Aug 3-Aug 9, 2026",
@@ -11235,7 +11235,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "deltaVsPreviousPct": -3.1953902566788894,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users who triggered on-demand video_start or Live play events."
+          "context": "Users who triggered on-demand or Live play events."
         },
         {
           "key": "onDemandStartUsers",
@@ -11326,7 +11326,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "deltaVsPreviousPct": 4.2033011316950315,
           "deltaType": "minutes",
           "format": "minutes",
-          "context": "Total GA4 engaged time divided by active users.",
+          "context": "GA4 engaged time divided by active users.",
           "baselineSource": "GA4 property 497892271 launch week, Apr 13-Apr 19, 2026",
           "period": "Aug 17-Aug 23, 2026",
           "comparisonPeriod": "Aug 3-Aug 9, 2026",
