@@ -11065,7 +11065,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     {
       "title": "Measured ElectricNOW Platform Audience",
       "eyebrow": "Is the measured platform growing or shrinking?",
-      "definition": "GA4 active users across tracked ElectricNOW platform surfaces, excluding landing-page acquisition paths. Landing-page traffic is reported only as acquisition context and is not counted as platform audience. Reconcile with Amagi, app stores, ad servers, and platform dashboards before treating this as total company-wide audience.",
+      "definition": "GA4 active users across tracked ElectricNOW app/platform surfaces. Landing pages are acquisition context only. Reconcile with Amagi, app stores, ad servers, and platform dashboards before treating this as total company-wide audience.",
       "cards": [
         {
           "key": "platformActiveUsers",
@@ -12192,7 +12192,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedHours": 188.26,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 3-Aug 9, 2026",
-        "note": "GA4 screen/page grouping; landing-page acquisition is not counted as platform audience."
+        "note": "GA4 screen/page grouping; landing-page acquisition excluded."
       },
       {
         "section": "Home / App Entry",
@@ -12202,7 +12202,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedHours": 3584.98,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 3-Aug 9, 2026",
-        "note": "GA4 screen/page grouping; landing-page acquisition is not counted as platform audience."
+        "note": "GA4 screen/page grouping; landing-page acquisition excluded."
       },
       {
         "section": "Live TV",
@@ -12212,7 +12212,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedHours": 1991.83,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 3-Aug 9, 2026",
-        "note": "GA4 screen/page grouping; landing-page acquisition is not counted as platform audience."
+        "note": "GA4 screen/page grouping; landing-page acquisition excluded."
       },
       {
         "section": "Other App / Web Screens",
@@ -12222,7 +12222,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedHours": 328.39,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 3-Aug 9, 2026",
-        "note": "GA4 screen/page grouping; landing-page acquisition is not counted as platform audience."
+        "note": "GA4 screen/page grouping; landing-page acquisition excluded."
       },
       {
         "section": "Search / Discovery",
@@ -12232,7 +12232,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedHours": 8.32,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 3-Aug 9, 2026",
-        "note": "GA4 screen/page grouping; landing-page acquisition is not counted as platform audience."
+        "note": "GA4 screen/page grouping; landing-page acquisition excluded."
       },
       {
         "section": "Account / Settings",
@@ -12242,7 +12242,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedHours": 2.12,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 3-Aug 9, 2026",
-        "note": "GA4 screen/page grouping; landing-page acquisition is not counted as platform audience."
+        "note": "GA4 screen/page grouping; landing-page acquisition excluded."
       }
     ],
     "note": "Grouped from GA4 screen/page names. Landing-page traffic is treated as acquisition and not platform audience."
@@ -15656,7 +15656,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "eventCount": 5
       }
     ],
-    "note": "Landing-page/session acquisition rows are acquisition context only; they are not counted as platform audience."
+    "note": "Landing-page/session rows are acquisition context only and excluded from platform audience."
   },
   "campaignSummary": {
     "period": "Aug 10-Aug 16, 2026",
