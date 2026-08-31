@@ -10239,636 +10239,1178 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   },
   "titleViewership": {
     "period": "Aug 24-Aug 30, 2026",
-    "note": "Top programs roll up fragmented GA4 play-event labels into parent shows/collections where possible, then use a GA4 filter to estimate deduped active users for each program. Play events remain the ranking metric because ads monetize playback; active users are total GA4 users who triggered matching play events for that program during the period. On-demand shows and collections only — live/FAST/linear channels (DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network, etc.) are excluded here and reported separately under Live channel usage and Live Channel on Roku. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level predicate. Treat this as GA-tracked viewership, not a fully cleaned catalog report yet, until the app sends content_type, series_title, season, episode, and video_id consistently.",
-    "topVideoTitlesNote": "Top videos shows individual on-demand video plays only. Live/FAST/linear channel rows (e.g. DARK MATTER TV, Kung Fu Movies, spot on news, ToonOvation, ElectricNOW en Espanol, Stoner TV Network) are excluded here and reported separately in 'Live channel usage' and 'Live Channel on Roku'. Top 50 may list fewer than 50 entries until the next GA4 refresh overfetches with the stricter row-level live-channel predicate.",
+    "note": "Fresh Internal GA4 pull, property 497892271 for Aug 24-Aug 30, 2026. Rows are GA4 channel_title values, which the app currently sends at season/collection level, not per episode - so 'Play events' counts video_start (playback initiations) for that collection. Total viewers is the largest single-label GA4 active-user count, not a sum, because users are not additive across labels. Live/FAST channels (ElectricNOW, ElectricNOW en Espanol, Stoner TV Network, DARK MATTER TV, ToonOvation, CinePast, AMPD TV, Colorized.TV, Horror Asylum, Hollywood Classic Movies) are excluded here and reported separately under Live channel usage. Episode-level reporting needs the app to send content_type, series_title, season, episode and video_id consistently.",
+    "topVideoTitlesNote": "Fresh Internal GA4 pull, property 497892271 for Aug 24-Aug 30, 2026. Rows are GA4 channel_title values, which the app currently sends at season/collection level, not per episode - so 'Play events' counts video_start (playback initiations) for that collection. Total viewers is the largest single-label GA4 active-user count, not a sum, because users are not additive across labels. Live/FAST channels (ElectricNOW, ElectricNOW en Espanol, Stoner TV Network, DARK MATTER TV, ToonOvation, CinePast, AMPD TV, Colorized.TV, Horror Asylum, Hollywood Classic Movies) are excluded here and reported separately under Live channel usage. Episode-level reporting needs the app to send content_type, series_title, season, episode and video_id consistently.",
     "topPrograms": [
       {
         "rank": 1,
         "program": "The Ark",
-        "plays": 28425,
-        "activeUsers": 440,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 29,
+        "plays": 2180,
+        "activeUsers": 134,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 5,
         "examples": [
-          "Everyone Wanted to Be On This Ship",
-          "Like It Touched the Sun",
-          "We Weren't Supposed to Be Awake"
-        ]
+          "The Ark",
+          "The Ark - Season 1",
+          "The Ark - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 2,
         "program": "The Librarians: The Next Chapter",
-        "plays": 10367,
-        "activeUsers": 432,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 15,
+        "plays": 1848,
+        "activeUsers": 118,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 3,
         "examples": [
-          "And the Deadly Drekavac",
-          "And the Ghost Train",
-          "And the Dance of Doom!"
-        ]
+          "The Librarians: The Next Chapter",
+          "The Librarians: The Next Chapter (Season 1)",
+          "The Librarians: The Next Chapter Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 3,
-        "program": "Leverage: Redemption",
-        "plays": 7208,
-        "activeUsers": 67,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 33,
+        "program": "Leverage",
+        "plays": 793,
+        "activeUsers": 50,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 6,
         "examples": [
-          "The Weekend In Paris Job",
-          "The Digital Frankenstein Job",
-          "The Scared Stiff Job"
-        ]
+          "Leverage",
+          "Leverage - Season 1",
+          "Leverage - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 4,
-        "program": "Leverage",
-        "plays": 5018,
-        "activeUsers": 48,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 36,
+        "program": "Leverage: Redemption",
+        "plays": 520,
+        "activeUsers": 24,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 4,
         "examples": [
-          "The Nigerian Job (Pilot) - 43 Min Cut",
-          "The Mile High Job",
-          "The Wedding Job"
-        ]
+          "Leverage: Redemption",
+          "Leverage: Redemption -  Season 1",
+          "Leverage: Redemption - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 5,
         "program": "The Librarians",
-        "plays": 4424,
+        "plays": 508,
         "activeUsers": 54,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 19,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 5,
         "examples": [
-          "And the Crown of King Arthur",
-          "And the Horns of a Dilemma",
-          "And the Sword in the Stone"
-        ]
+          "The Librarians (Full Series)",
+          "The Librarians - Season 1",
+          "The Librarians - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 6,
-        "program": "Almost Paradise",
-        "plays": 2902,
-        "activeUsers": 33,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 9,
+        "program": "Catch up on The Librarians: The Next Chapter",
+        "plays": 228,
+        "activeUsers": 30,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "Finding Mabuhay",
-          "Uncle Danny",
-          "Lone Wolf"
-        ]
+          "Catch up on The Librarians: The Next Chapter"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 7,
-        "program": "The Ark Season 3 Premieres July 29 on SyFy",
-        "plays": 1298,
-        "activeUsers": 529,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Almost Paradise",
+        "plays": 208,
+        "activeUsers": 1,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 2,
         "examples": [
-          "The Ark Season 3 Trailer"
-        ]
+          "Almost Paradise - Season 1",
+          "Almost Paradise - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 8,
-        "program": "The Messenger",
-        "plays": 620,
-        "activeUsers": 22,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "After the Ark",
+        "plays": 180,
+        "activeUsers": 58,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 4,
         "examples": [
-          "Episode 1",
-          "Episode 2",
-          "Episode 4"
-        ]
+          "After the Ark",
+          "After the Ark - Season 1",
+          "After the Ark - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 9,
-        "program": "Catch up on The Librarians: The Next Chapter",
-        "plays": 602,
-        "activeUsers": 46,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "The Ark Season 3 Premieres July 29 on SyFy",
+        "plays": 91,
+        "activeUsers": 50,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
         "examples": [
-          "And the Deadly Drekavac",
-          "And the Dance of Doom!",
-          "And the Memory Crystal"
-        ]
+          "The Ark Season 3 Premieres July 29 on SyFy"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 10,
-        "program": "La Arca",
-        "plays": 454,
-        "activeUsers": 6,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Checking Out: The Librarians: The Next Chapter",
+        "plays": 91,
+        "activeUsers": 10,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
         "examples": [
-          "Get Out and Push",
-          "Everyone Wanted to Be On This Ship",
-          "One Step Forward, Two Steps Back"
-        ]
+          "Checking Out: The Librarians: The Next Chapter - Season 2"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 11,
-        "program": "The Poly Couple",
-        "plays": 421,
-        "activeUsers": 15,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 10,
+        "program": "Checking Out: The Librarians Next Chapter",
+        "plays": 63,
+        "activeUsers": 25,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 2,
         "examples": [
-          "So This Is How Polyamory Happens",
-          "Morning Breath",
-          "He Forgot the Date"
-        ]
+          "Checking Out: The Librarians Next Chapter",
+          "Checking Out: The Librarians Next Chapter - Season 1"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 12,
-        "program": "Checking Out: The Librarians Next Chapter",
-        "plays": 367,
-        "activeUsers": 35,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 4,
+        "program": "Almost Paradise (Season 1 & 2)",
+        "plays": 58,
+        "activeUsers": 21,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "TNC Series Preview",
-          "And the Deadly Drekavac",
-          "And the Dance of Doom"
-        ]
+          "Almost Paradise (Season 1 & 2)"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 13,
-        "program": "The Ark - Trailer",
-        "plays": 356,
-        "activeUsers": 99,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "El Puesto de Avanzada",
+        "plays": 52,
+        "activeUsers": 1,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "El Puesto de Avanzada"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 14,
-        "program": "After the Ark",
-        "plays": 319,
-        "activeUsers": 105,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 6,
+        "program": "Grindhouse Gold",
+        "plays": 34,
+        "activeUsers": 10,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "After the Ark - Season 3 Recap",
-          "Episode 101",
-          "Episode 112"
-        ]
+          "Grindhouse Gold"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 15,
-        "program": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
-        "plays": 221,
-        "activeUsers": 86,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "The Poly Couple",
+        "plays": 32,
+        "activeUsers": 8,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 2,
         "examples": [
-          "TNT - The Librarians: The Next Chapter Season 2 Premieres Aug 2!"
-        ]
+          "The Poly Couple",
+          "The Poly Couple (Season 1)"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 16,
-        "program": "Checking Out: The Librarians: The Next Chapter",
-        "plays": 181,
-        "activeUsers": 63,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "program": "The Outpost",
+        "plays": 29,
+        "activeUsers": 7,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 3,
         "examples": [
-          "Checking Out: The Librarians The Next Chapter - Season 2 Recap"
-        ]
+          "The Outpost",
+          "The Outpost - Season 1",
+          "The Outpost - Season 4"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 17,
-        "program": "The Book of Love",
-        "plays": 119,
-        "activeUsers": 3,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "program": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
+        "plays": 28,
+        "activeUsers": 17,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "The Book of Love Official Trailer"
-        ]
+          "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 18,
-        "program": "The Librarians: The Next Chapter at SDCC 2026",
-        "plays": 110,
-        "activeUsers": 46,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "IndieBox",
+        "plays": 28,
+        "activeUsers": 7,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "IndieBox"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 19,
-        "program": "The Triangle Night 1",
-        "plays": 109,
-        "activeUsers": 2,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "a-z Classic Flix",
+        "plays": 26,
+        "activeUsers": 9,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "a-z Classic Flix"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 20,
-        "program": "The Outpost",
-        "plays": 105,
-        "activeUsers": 10,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 8,
+        "program": "Ghost Dimension",
+        "plays": 25,
+        "activeUsers": 13,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "One Is the Loneliest Number",
-          "Two Heads are Better than None",
-          "In the Worst Corner of My Memory"
-        ]
+          "Ghost Dimension"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 21,
-        "program": "Flyboys",
-        "plays": 97,
-        "activeUsers": 9,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "The Official Leverage: Redemption After Show - A Very Distinctive Podcast",
+        "plays": 22,
+        "activeUsers": 2,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "The Official Leverage: Redemption After Show - A Very Distinctive Podcast"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 22,
-        "program": "Paranormal Quest",
-        "plays": 95,
-        "activeUsers": 2,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Generation Z",
+        "plays": 22,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 2,
         "examples": [
-          "Overnight at the Most Terrifying Hospital in West Virginia",
-          "Ghost Hunting at a Real Haunted House",
-          "Overnigh at a Haunted Ghost Ship"
-        ]
+          "Generation Z",
+          "Generation Z - Season 1"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 23,
-        "program": "Inglorious Treksperts",
-        "plays": 94,
+        "program": "The Messenger",
+        "plays": 21,
         "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 2,
         "examples": [
-          "Inglorious Treksperts, Episode 30",
-          "Inglorious Treksperts, Episode 46",
-          "Inglorious Treksperts, Episode 43"
-        ]
+          "The Messenger",
+          "The Messenger - Season 1"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 24,
-        "program": "The Official Leverage: Redemption After Show - A Very Distinctive Podcast",
-        "plays": 89,
-        "activeUsers": 1,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Fancy A Movie",
+        "plays": 19,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
         "examples": [
-          "The Double-Edged Sword Job",
-          "The Mastermind Job",
-          "The Harry Wilson Job"
-        ]
+          "Fancy A Movie"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 25,
-        "program": "The Librarian: Quest for the Spear",
-        "plays": 86,
-        "activeUsers": 7,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "Cartoon Classics",
+        "plays": 17,
+        "activeUsers": 11,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "Cartoon Classics"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 26,
-        "program": "Mythica: A Quest for Heroes",
-        "plays": 82,
-        "activeUsers": 8,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Bad Samaritan",
+        "plays": 17,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 2,
-        "examples": []
+        "examples": [
+          "Bad Samaritan",
+          "Bad Samaritan - Trailer"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 27,
-        "program": "Wizards vs. Aliens",
-        "plays": 78,
-        "activeUsers": 10,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "program": "The Librarians: The Next Chapter at SDCC 2026",
+        "plays": 16,
+        "activeUsers": 9,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "Wizards vs. Aliens - Dawn of the Nekross: Part 1",
-          "Wizards vs. Aliens - Dawn of the Nekross: Part 2",
-          "Wizards vs. Aliens - Rebel Magic: Part 2"
-        ]
+          "The Librarians: The Next Chapter at SDCC 2026"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 28,
-        "program": "Generation Z",
-        "plays": 73,
-        "activeUsers": 3,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "program": "The Debutante Job",
+        "plays": 15,
+        "activeUsers": 12,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "Episode 4",
-          "Episode 3",
-          "Episode 2"
-        ]
+          "The Debutante Job"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 29,
-        "program": "Bad Samaritan",
-        "plays": 66,
-        "activeUsers": 2,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "The Librarians: The Next Chapter Season 2 Teaser",
+        "plays": 12,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "The Librarians: The Next Chapter Season 2 Teaser"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 30,
-        "program": "The Librarian: Curse of the Judas Chalice",
-        "plays": 64,
-        "activeUsers": 6,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "Betty Boop Collection",
+        "plays": 12,
+        "activeUsers": 1,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "Betty Boop Collection"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 31,
-        "program": "LBJ",
-        "plays": 60,
-        "activeUsers": 3,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "BayView Documentaries",
+        "plays": 12,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "BayView Documentaries"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 32,
-        "program": "Solar Impact",
-        "plays": 52,
+        "program": "White Sky",
+        "plays": 11,
         "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "Solar Impact - Trailer"
-        ]
+          "White Sky"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 33,
-        "program": "La Arca - Temporada 1",
-        "plays": 52,
-        "activeUsers": 1,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Daily Flash",
+        "plays": 11,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
         "examples": [
-          "Everybody Wins",
-          "Everyone Wanted to Be On This Ship",
-          "A Slow Death Is Worse"
-        ]
+          "Daily Flash"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 34,
-        "program": "William Shatner's: A Twist in the Tale",
-        "plays": 52,
-        "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "program": "Mythica: A Quest for Heroes",
+        "plays": 10,
+        "activeUsers": 7,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "William Shatner's: A Twist in the Tale - Obsession in August",
-          "William Shatner's: A Twist in the Tale - A Crack in Time",
-          "William Shatner's: A Twist in the Tale - The Anchoress"
-        ]
+          "Mythica: A Quest for Heroes"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 35,
-        "program": "In the Line of Duty",
-        "plays": 50,
-        "activeUsers": 2,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Everyone Wanted to be on This Ship",
+        "plays": 10,
+        "activeUsers": 6,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
         "examples": [
-          "A Cop for the Killing"
-        ]
+          "Everyone Wanted to be on This Ship"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 36,
-        "program": "The Librarians: The Next Chapter Season 2 Teaser",
-        "plays": 49,
-        "activeUsers": 6,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Los Bibliotecarios",
+        "plays": 10,
+        "activeUsers": 3,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "Los Bibliotecarios"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 37,
-        "program": "TIDPIX-AUTHENTICALLY AFRICAN",
-        "plays": 44,
-        "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Urban Action Channel",
+        "plays": 10,
+        "activeUsers": 6,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "Urban Action Channel"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 38,
-        "program": "Awake in the Woods",
-        "plays": 42,
-        "activeUsers": 6,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "The Dean's List",
+        "plays": 9,
+        "activeUsers": 7,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "The Dean's List"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 39,
-        "program": "Spoils of War",
-        "plays": 37,
+        "program": "4ACETV CLASSIC HITS",
+        "plays": 9,
         "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "4ACETV CLASSIC HITS"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 40,
-        "program": "Bed & Breakfast",
-        "plays": 34,
-        "activeUsers": 1,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "The Librarian: Curse of the Judas Chalice",
+        "plays": 8,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "The Librarian: Curse of the Judas Chalice"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 41,
-        "program": "The Librarians and the Crown of King Arthur in Cinemascope",
-        "plays": 34,
-        "activeUsers": 6,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "MMA Futures",
+        "plays": 8,
+        "activeUsers": 7,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "MMA Futures"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 42,
-        "program": "Bonded In Blood",
-        "plays": 34,
-        "activeUsers": 3,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "The Patrick LabyorSheaux with Patrick Labyorteaux",
+        "plays": 7,
+        "activeUsers": 6,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "The Patrick LabyorSheaux with Patrick Labyorteaux"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 43,
-        "program": "Black Mamba",
-        "plays": 33,
-        "activeUsers": 3,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "Old West TV",
+        "plays": 7,
+        "activeUsers": 4,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "Old West TV"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 44,
-        "program": "The Librarian: Return to King Solomon's Mines",
-        "plays": 31,
-        "activeUsers": 4,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "a-z Western Grit",
+        "plays": 7,
+        "activeUsers": 6,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "a-z Western Grit"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 45,
-        "program": "Boxing Spotlight",
-        "plays": 30,
-        "activeUsers": 9,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "The Librarians and the Crown of King Arthur in Cinemascope",
+        "plays": 6,
+        "activeUsers": 2,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "The Librarians and the Crown of King Arthur in Cinemascope"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 46,
-        "program": "The Librarians: The Next Chapter Season 2",
-        "plays": 29,
-        "activeUsers": 7,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
+        "program": "La Arca",
+        "plays": 6,
+        "activeUsers": 2,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
         "examples": [
-          "And the Burning Heart"
-        ]
+          "La Arca"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 47,
-        "program": "Enigma",
-        "plays": 27,
-        "activeUsers": 2,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "Solar Impact",
+        "plays": 6,
+        "activeUsers": 4,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "Solar Impact"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 48,
-        "program": "Exile",
-        "plays": 26,
-        "activeUsers": 5,
-        "viewerMethod": "deduped_ga4_filter",
-        "rawLabelCount": 2,
-        "examples": []
+        "program": "The Librarian: Quest for the Spear",
+        "plays": 6,
+        "activeUsers": 4,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
+        "rawLabelCount": 1,
+        "examples": [
+          "The Librarian: Quest for the Spear"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 49,
-        "program": "Black Fly",
-        "plays": 25,
+        "program": "24 Seven",
+        "plays": 6,
         "activeUsers": 2,
-        "viewerMethod": "deduped_ga4_filter",
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "24 Seven"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       },
       {
         "rank": 50,
-        "program": "It’s What’s On the Inside",
-        "plays": 23,
-        "activeUsers": 1,
-        "viewerMethod": "deduped_ga4_filter",
+        "program": "Flyboys",
+        "plays": 5,
+        "activeUsers": 5,
+        "viewerMethod": "ga4_channel_title_video_start_max_users",
         "rawLabelCount": 1,
-        "examples": []
+        "examples": [
+          "Flyboys"
+        ],
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
       }
     ],
     "topVideoTitles": [
       {
-        "title": "The Librarians: The Next Chapter Season 2",
-        "screenPageViews": 126,
-        "activeUsers": 62,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
+        "rank": 1,
         "title": "The Ark - Season 3",
-        "screenPageViews": 76,
-        "activeUsers": 44,
+        "group": "The Ark",
+        "plays": 1093,
+        "activeUsers": 134,
+        "screenPageViews": 3013,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026"
       },
       {
-        "title": "Leverage",
-        "screenPageViews": 61,
-        "activeUsers": 19,
+        "rank": 2,
+        "title": "The Librarians: The Next Chapter Season 2",
+        "group": "The Librarians: The Next Chapter",
+        "plays": 968,
+        "activeUsers": 84,
+        "screenPageViews": 1868,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026"
       },
       {
-        "title": "The Librarians (Full Series)",
-        "screenPageViews": 42,
-        "activeUsers": 17,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
-        "title": "After the Ark",
-        "screenPageViews": 37,
-        "activeUsers": 17,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
-        "title": "The Librarians: The Next Chapter (Season 1)",
-        "screenPageViews": 36,
-        "activeUsers": 7,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
-        "title": "Checking Out: The Librarians Next Chapter",
-        "screenPageViews": 27,
-        "activeUsers": 10,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
-        "title": "Everyone Wanted to be on This Ship",
-        "screenPageViews": 27,
-        "activeUsers": 7,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
-        "title": "Almost Paradise (Season 1 & 2)",
-        "screenPageViews": 25,
-        "activeUsers": 15,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
-        "title": "Leverage: Redemption - Season 3",
-        "screenPageViews": 21,
-        "activeUsers": 15,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026"
-      },
-      {
+        "rank": 3,
         "title": "The Ark",
-        "screenPageViews": 20,
-        "activeUsers": 13,
+        "group": "The Ark",
+        "plays": 676,
+        "activeUsers": 99,
+        "screenPageViews": 1299,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026"
       },
       {
+        "rank": 4,
+        "title": "Leverage",
+        "group": "Leverage",
+        "plays": 468,
+        "activeUsers": 50,
+        "screenPageViews": 777,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 5,
+        "title": "The Librarians: The Next Chapter (Season 1)",
+        "group": "The Librarians: The Next Chapter",
+        "plays": 460,
+        "activeUsers": 118,
+        "screenPageViews": 1060,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 6,
+        "title": "The Librarians: The Next Chapter",
+        "group": "The Librarians: The Next Chapter",
+        "plays": 420,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 7,
+        "title": "The Librarians (Full Series)",
+        "group": "The Librarians",
+        "plays": 324,
+        "activeUsers": 54,
+        "screenPageViews": 594,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 8,
+        "title": "Leverage: Redemption - Season 3",
+        "group": "Leverage: Redemption",
+        "plays": 262,
+        "activeUsers": 21,
+        "screenPageViews": 381,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 9,
+        "title": "Catch up on The Librarians: The Next Chapter",
+        "group": "Catch up on The Librarians: The Next Chapter",
+        "plays": 228,
+        "activeUsers": 30,
+        "screenPageViews": 309,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 10,
+        "title": "The Ark - Season 2",
+        "group": "The Ark",
+        "plays": 208,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 11,
         "title": "Leverage: Redemption",
-        "screenPageViews": 19,
+        "group": "Leverage: Redemption",
+        "plays": 179,
+        "activeUsers": 24,
+        "screenPageViews": 331,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 12,
+        "title": "The Ark - Season 1",
+        "group": "The Ark",
+        "plays": 153,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 13,
+        "title": "Almost Paradise - Season 1",
+        "group": "Almost Paradise",
+        "plays": 127,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 14,
+        "title": "Leverage - Season 2",
+        "group": "Leverage",
+        "plays": 104,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 15,
+        "title": "Leverage - Season 1",
+        "group": "Leverage",
+        "plays": 93,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 16,
+        "title": "The Ark Season 3 Premieres July 29 on SyFy",
+        "group": "The Ark Season 3 Premieres July 29 on SyFy",
+        "plays": 91,
+        "activeUsers": 50,
+        "screenPageViews": 332,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 17,
+        "title": "Checking Out: The Librarians: The Next Chapter - Season 2",
+        "group": "Checking Out: The Librarians: The Next Chapter",
+        "plays": 91,
+        "activeUsers": 10,
+        "screenPageViews": 81,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 18,
+        "title": "After the Ark",
+        "group": "After the Ark",
+        "plays": 89,
+        "activeUsers": 58,
+        "screenPageViews": 467,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 19,
+        "title": "Leverage - Season 3",
+        "group": "Leverage",
+        "plays": 85,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 20,
+        "title": "Almost Paradise - Season 2",
+        "group": "Almost Paradise",
+        "plays": 81,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 21,
+        "title": "Almost Paradise (Season 1 & 2)",
+        "group": "Almost Paradise (Season 1 & 2)",
+        "plays": 58,
+        "activeUsers": 21,
+        "screenPageViews": 288,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 22,
+        "title": "The Librarians - Season 1",
+        "group": "The Librarians",
+        "plays": 52,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 23,
+        "title": "El Puesto de Avanzada",
+        "group": "El Puesto de Avanzada",
+        "plays": 52,
+        "activeUsers": 1,
+        "screenPageViews": 67,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 24,
+        "title": "The Ark - Trailer",
+        "group": "The Ark",
+        "plays": 50,
+        "activeUsers": 22,
+        "screenPageViews": 236,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 25,
+        "title": "Leverage: Redemption -  Season 1",
+        "group": "Leverage: Redemption",
+        "plays": 49,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 26,
+        "title": "After the Ark - Season 3",
+        "group": "After the Ark",
+        "plays": 49,
+        "activeUsers": 4,
+        "screenPageViews": 65,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 27,
+        "title": "The Librarians - Season 4",
+        "group": "The Librarians",
+        "plays": 48,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 28,
+        "title": "The Librarians - Season 3",
+        "group": "The Librarians",
+        "plays": 44,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 29,
+        "title": "Checking Out: The Librarians Next Chapter",
+        "group": "Checking Out: The Librarians Next Chapter",
+        "plays": 41,
+        "activeUsers": 25,
+        "screenPageViews": 204,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 30,
+        "title": "The Librarians - Season 2",
+        "group": "The Librarians",
+        "plays": 40,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 31,
+        "title": "Grindhouse Gold",
+        "group": "Grindhouse Gold",
+        "plays": 34,
+        "activeUsers": 10,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 32,
+        "title": "After the Ark - Season 1",
+        "group": "After the Ark",
+        "plays": 33,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 33,
+        "title": "Leverage: Redemption - Season 2",
+        "group": "Leverage: Redemption",
+        "plays": 30,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 34,
+        "title": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
+        "group": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
+        "plays": 28,
+        "activeUsers": 17,
+        "screenPageViews": 120,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 35,
+        "title": "The Poly Couple (Season 1)",
+        "group": "The Poly Couple",
+        "plays": 28,
+        "activeUsers": 8,
+        "screenPageViews": 80,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 36,
+        "title": "IndieBox",
+        "group": "IndieBox",
+        "plays": 28,
+        "activeUsers": 7,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 37,
+        "title": "a-z Classic Flix",
+        "group": "a-z Classic Flix",
+        "plays": 26,
+        "activeUsers": 9,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 38,
+        "title": "Ghost Dimension",
+        "group": "Ghost Dimension",
+        "plays": 25,
         "activeUsers": 13,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 39,
+        "title": "Leverage - Season 4",
+        "group": "Leverage",
+        "plays": 22,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 40,
+        "title": "Checking Out: The Librarians Next Chapter - Season 1",
+        "group": "Checking Out: The Librarians Next Chapter",
+        "plays": 22,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 41,
+        "title": "The Official Leverage: Redemption After Show - A Very Distinctive Podcast",
+        "group": "The Official Leverage: Redemption After Show - A Very Distinctive Podcast",
+        "plays": 22,
+        "activeUsers": 2,
+        "screenPageViews": 19,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 42,
+        "title": "Leverage - Season 5",
+        "group": "Leverage",
+        "plays": 21,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 43,
+        "title": "Fancy A Movie",
+        "group": "Fancy A Movie",
+        "plays": 19,
+        "activeUsers": 5,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 44,
+        "title": "Generation Z - Season 1",
+        "group": "Generation Z",
+        "plays": 17,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 45,
+        "title": "Cartoon Classics",
+        "group": "Cartoon Classics",
+        "plays": 17,
+        "activeUsers": 11,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 46,
+        "title": "The Messenger - Season 1",
+        "group": "The Messenger",
+        "plays": 16,
+        "activeUsers": 1,
+        "screenPageViews": 0,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 47,
+        "title": "The Librarians: The Next Chapter at SDCC 2026",
+        "group": "The Librarians: The Next Chapter at SDCC 2026",
+        "plays": 16,
+        "activeUsers": 9,
+        "screenPageViews": 96,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 48,
+        "title": "Bad Samaritan",
+        "group": "Bad Samaritan",
+        "plays": 15,
+        "activeUsers": 5,
+        "screenPageViews": 49,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 49,
+        "title": "The Debutante Job",
+        "group": "The Debutante Job",
+        "plays": 15,
+        "activeUsers": 12,
+        "screenPageViews": 48,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026"
+      },
+      {
+        "rank": 50,
+        "title": "The Outpost - Season 1",
+        "group": "The Outpost",
+        "plays": 14,
+        "activeUsers": 1,
+        "screenPageViews": 0,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026"
       }
@@ -11024,7 +11566,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "plays": 331,
         "activeUsers": 1
       }
-    ]
+    ],
+    "source": "Internal GA4 pull, property 497892271"
   },
   "metaCampaignContext": {
     "source": "ENow-TV-April-1st-May-3rd-Meta-Ads.xlsx, Raw Data Report!A1:W361",
@@ -12343,103 +12886,187 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       {
         "section": "Home / Browse",
         "activeUsers": 3394,
+        "sessions": 7375,
+        "eventCount": 150471,
+        "userEngagementDuration": 2294073,
+        "avgEngagedMinutesPerUser": 11.3,
+        "avgEngagedMinutesPerSession": 5.2,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Home Page, ElectricNOW, Intro, Splash. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "views": 29195
+        "views": 29195,
+        "screenPageViews": 29195
       },
       {
         "section": "On Demand / TVOD",
         "activeUsers": 1708,
+        "sessions": 4387,
+        "eventCount": 18722,
+        "userEngagementDuration": 269983,
+        "avgEngagedMinutesPerUser": 2.6,
+        "avgEngagedMinutesPerSession": 1.0,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: PDP, On Demand, Category, Purchases, Continue Watching, My List. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "views": 11738
+        "views": 11738,
+        "screenPageViews": 11738
       },
       {
         "section": "Player",
         "activeUsers": 738,
+        "sessions": 3103,
+        "eventCount": 54884,
+        "userEngagementDuration": 6629965,
+        "avgEngagedMinutesPerUser": 149.7,
+        "avgEngagedMinutesPerSession": 35.6,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Player. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "views": 4679
-      },
-      {
-        "section": "Search",
-        "activeUsers": 338,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026",
-        "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "views": 2505
+        "views": 4679,
+        "screenPageViews": 4679
       },
       {
         "section": "Live TV",
         "activeUsers": 539,
+        "sessions": 1758,
+        "eventCount": 13733,
+        "userEngagementDuration": 4567825,
+        "avgEngagedMinutesPerUser": 141.2,
+        "avgEngagedMinutesPerSession": 43.3,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Live. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "views": 1803
+        "views": 1803,
+        "screenPageViews": 1803
       },
       {
         "section": "Account / Settings",
         "activeUsers": 249,
+        "sessions": 314,
+        "eventCount": 1803,
+        "userEngagementDuration": 12241,
+        "avgEngagedMinutesPerUser": 0.8,
+        "avgEngagedMinutesPerSession": 0.6,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Settings, Manage Profile, My Favorites, My Reactions, About Us. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "views": 1133
+        "views": 1133,
+        "screenPageViews": 1133
+      },
+      {
+        "section": "Search",
+        "activeUsers": 338,
+        "sessions": 637,
+        "eventCount": 3496,
+        "userEngagementDuration": 14512,
+        "avgEngagedMinutesPerUser": 0.7,
+        "avgEngagedMinutesPerSession": 0.4,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Search Channels. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
+        "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
+        "views": 1131,
+        "screenPageViews": 1131
       }
     ],
     "rows": [
       {
         "section": "Home / Browse",
         "activeUsers": 3394,
+        "sessions": 7375,
+        "eventCount": 150471,
+        "userEngagementDuration": 2294073,
+        "avgEngagedMinutesPerUser": 11.3,
+        "avgEngagedMinutesPerSession": 5.2,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Home Page, ElectricNOW, Intro, Splash. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "screenPageViews": 29195
+        "screenPageViews": 29195,
+        "views": 29195
       },
       {
         "section": "On Demand / TVOD",
         "activeUsers": 1708,
+        "sessions": 4387,
+        "eventCount": 18722,
+        "userEngagementDuration": 269983,
+        "avgEngagedMinutesPerUser": 2.6,
+        "avgEngagedMinutesPerSession": 1.0,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: PDP, On Demand, Category, Purchases, Continue Watching, My List. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "screenPageViews": 11738
+        "screenPageViews": 11738,
+        "views": 11738
       },
       {
         "section": "Player",
         "activeUsers": 738,
+        "sessions": 3103,
+        "eventCount": 54884,
+        "userEngagementDuration": 6629965,
+        "avgEngagedMinutesPerUser": 149.7,
+        "avgEngagedMinutesPerSession": 35.6,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Player. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "screenPageViews": 4679
-      },
-      {
-        "section": "Search",
-        "activeUsers": 338,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 24-Aug 30, 2026",
-        "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "screenPageViews": 2505
+        "screenPageViews": 4679,
+        "views": 4679
       },
       {
         "section": "Live TV",
         "activeUsers": 539,
+        "sessions": 1758,
+        "eventCount": 13733,
+        "userEngagementDuration": 4567825,
+        "avgEngagedMinutesPerUser": 141.2,
+        "avgEngagedMinutesPerSession": 43.3,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Live. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "screenPageViews": 1803
+        "screenPageViews": 1803,
+        "views": 1803
       },
       {
         "section": "Account / Settings",
         "activeUsers": 249,
+        "sessions": 314,
+        "eventCount": 1803,
+        "userEngagementDuration": 12241,
+        "avgEngagedMinutesPerUser": 0.8,
+        "avgEngagedMinutesPerSession": 0.6,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Settings, Manage Profile, My Favorites, My Reactions, About Us. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
         "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
-        "screenPageViews": 1133
+        "screenPageViews": 1133,
+        "views": 1133
+      },
+      {
+        "section": "Search",
+        "activeUsers": 338,
+        "sessions": 637,
+        "eventCount": 3496,
+        "userEngagementDuration": 14512,
+        "avgEngagedMinutesPerUser": 0.7,
+        "avgEngagedMinutesPerSession": 0.4,
+        "source": "Internal GA4 pull, property 497892271",
+        "period": "Aug 24-Aug 30, 2026",
+        "definition": "GA4 screens rolled in: Search Channels. Users and sessions are the max across those screens, not a sum, because GA4 users and sessions are not additive across screens; views, events and engaged time are summed.",
+        "note": "activeUsers is the max across grouped screens, not a sum - GA4 users are not additive across screens.",
+        "screenPageViews": 1131,
+        "views": 1131
       }
     ],
-    "note": "Grouped from GA4 screen/page names. Landing-page traffic is treated as acquisition and not platform audience. 'items' and 'rows' are kept in sync because different renderer builds read different keys."
+    "note": "Grouped from GA4 screen/page names for Aug 24-Aug 30, 2026 (Internal GA4 pull, property 497892271). Landing-page traffic is treated as acquisition, not platform audience. 'items' and 'rows' are kept in sync because different renderer builds read different keys."
   },
   "rokuAppEngagement": {
     "newInstalls": 267,
@@ -13945,8 +14572,11 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   "eventCardsNote": "Fresh GA4 event counts for Aug 24-Aug 30, 2026 (Internal GA4 pull, property 497892271). ads_* events are ElectricNOW IN-APP ad delivery, not paid-campaign impressions.",
   "usGeography": {
     "period": "Aug 24-Aug 30, 2026",
+    "freshness": "Aug 24-Aug 30, 2026",
     "source": "Internal GA4 pull, property 497892271",
-    "rows": [
+    "eyebrow": "Where the ElectricNOW app & platform is used across the United States",
+    "summaryLine": "4,544 U.S. active users across 51 states/regions and 25 reported metros for Aug 24-Aug 30, 2026.",
+    "states": [
       {
         "state": "Texas",
         "activeUsers": 418,
@@ -13954,9 +14584,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 756,
         "screenPageViews": 4517,
         "eventCount": 72483,
+        "userEngagementDuration": 1606518,
         "totalEngagementHours": 446.3,
-        "lat": 42.0,
-        "lon": 48.0,
         "shareOfUsActiveUsersPct": 9.2
       },
       {
@@ -13966,9 +14595,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 692,
         "screenPageViews": 5009,
         "eventCount": 81808,
+        "userEngagementDuration": 2776587,
         "totalEngagementHours": 771.3,
-        "lat": 12.0,
-        "lon": 34.0,
         "shareOfUsActiveUsersPct": 9.1
       },
       {
@@ -13978,9 +14606,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 606,
         "screenPageViews": 3740,
         "eventCount": 74646,
+        "userEngagementDuration": 1555896,
         "totalEngagementHours": 432.2,
-        "lat": 70.0,
-        "lon": 58.0,
         "shareOfUsActiveUsersPct": 6.6
       },
       {
@@ -13990,9 +14617,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 457,
         "screenPageViews": 2586,
         "eventCount": 51749,
+        "userEngagementDuration": 1000123,
         "totalEngagementHours": 277.8,
-        "lat": 79.0,
-        "lon": 16.0,
         "shareOfUsActiveUsersPct": 4.8
       },
       {
@@ -14002,9 +14628,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 437,
         "screenPageViews": 2488,
         "eventCount": 47133,
+        "userEngagementDuration": 1199727,
         "totalEngagementHours": 333.3,
-        "lat": 65.0,
-        "lon": 25.0,
         "shareOfUsActiveUsersPct": 4.2
       },
       {
@@ -14014,9 +14639,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 340,
         "screenPageViews": 1931,
         "eventCount": 35986,
+        "userEngagementDuration": 707271,
         "totalEngagementHours": 196.5,
-        "lat": 76.0,
-        "lon": 23.0,
         "shareOfUsActiveUsersPct": 4.1
       },
       {
@@ -14026,9 +14650,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 422,
         "screenPageViews": 2186,
         "eventCount": 23749,
+        "userEngagementDuration": 540882,
         "totalEngagementHours": 150.2,
-        "lat": 58.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 3.9
       },
       {
@@ -14038,9 +14661,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 332,
         "screenPageViews": 1611,
         "eventCount": 27444,
+        "userEngagementDuration": 731956,
         "totalEngagementHours": 203.3,
-        "lat": 65.0,
-        "lon": 46.0,
         "shareOfUsActiveUsersPct": 3.5
       },
       {
@@ -14050,9 +14672,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 279,
         "screenPageViews": 1789,
         "eventCount": 33727,
+        "userEngagementDuration": 595312,
         "totalEngagementHours": 165.4,
-        "lat": 73.0,
-        "lon": 39.0,
         "shareOfUsActiveUsersPct": 3.2
       },
       {
@@ -14062,9 +14683,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 285,
         "screenPageViews": 1681,
         "eventCount": 18897,
+        "userEngagementDuration": 470554,
         "totalEngagementHours": 130.7,
-        "lat": 62.0,
-        "lon": 18.0,
         "shareOfUsActiveUsersPct": 3.0
       },
       {
@@ -14074,9 +14694,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 200,
         "screenPageViews": 1091,
         "eventCount": 16728,
+        "userEngagementDuration": 729557,
         "totalEngagementHours": 202.7,
-        "lat": 75.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 2.8
       },
       {
@@ -14086,9 +14705,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 227,
         "screenPageViews": 1349,
         "eventCount": 20244,
+        "userEngagementDuration": 679476,
         "totalEngagementHours": 188.7,
-        "lat": 62.0,
-        "lon": 39.0,
         "shareOfUsActiveUsersPct": 2.7
       },
       {
@@ -14098,9 +14716,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 218,
         "screenPageViews": 1508,
         "eventCount": 30579,
+        "userEngagementDuration": 504086,
         "totalEngagementHours": 140.0,
-        "lat": 24.0,
-        "lon": 42.0,
         "shareOfUsActiveUsersPct": 2.6
       },
       {
@@ -14110,9 +14727,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 163,
         "screenPageViews": 1013,
         "eventCount": 9848,
+        "userEngagementDuration": 235188,
         "totalEngagementHours": 65.3,
-        "lat": 15.0,
-        "lon": 6.0,
         "shareOfUsActiveUsersPct": 2.6
       },
       {
@@ -14122,9 +14738,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 253,
         "screenPageViews": 1477,
         "eventCount": 37082,
+        "userEngagementDuration": 1404941,
         "totalEngagementHours": 390.3,
-        "lat": 51.0,
-        "lon": 14.0,
         "shareOfUsActiveUsersPct": 2.4
       },
       {
@@ -14134,9 +14749,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 155,
         "screenPageViews": 874,
         "eventCount": 15174,
+        "userEngagementDuration": 229731,
         "totalEngagementHours": 63.8,
-        "lat": 54.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 1.9
       },
       {
@@ -14146,9 +14760,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 144,
         "screenPageViews": 998,
         "eventCount": 17139,
+        "userEngagementDuration": 330099,
         "totalEngagementHours": 91.7,
-        "lat": 61.0,
-        "lon": 27.0,
         "shareOfUsActiveUsersPct": 1.9
       },
       {
@@ -14158,9 +14771,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 136,
         "screenPageViews": 796,
         "eventCount": 15186,
+        "userEngagementDuration": 274623,
         "totalEngagementHours": 76.3,
-        "lat": 34.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14170,9 +14782,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 162,
         "screenPageViews": 1019,
         "eventCount": 19842,
+        "userEngagementDuration": 379308,
         "totalEngagementHours": 105.4,
-        "lat": 46.0,
-        "lon": 40.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14182,9 +14793,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 119,
         "screenPageViews": 709,
         "eventCount": 12491,
+        "userEngagementDuration": 229156,
         "totalEngagementHours": 63.7,
-        "lat": 61.0,
-        "lon": 46.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14194,9 +14804,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 86,
         "screenPageViews": 553,
         "eventCount": 7807,
+        "userEngagementDuration": 311341,
         "totalEngagementHours": 86.5,
-        "lat": 14.0,
-        "lon": 15.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14206,9 +14815,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 144,
         "screenPageViews": 870,
         "eventCount": 44785,
+        "userEngagementDuration": 712489,
         "totalEngagementHours": 197.9,
-        "lat": 55.0,
-        "lon": 16.0,
         "shareOfUsActiveUsersPct": 1.7
       },
       {
@@ -14218,9 +14826,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 190,
         "screenPageViews": 1002,
         "eventCount": 31771,
+        "userEngagementDuration": 612648,
         "totalEngagementHours": 170.2,
-        "lat": 84.0,
-        "lon": 18.0,
         "shareOfUsActiveUsersPct": 1.7
       },
       {
@@ -14230,9 +14837,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 172,
         "screenPageViews": 983,
         "eventCount": 13542,
+        "userEngagementDuration": 299596,
         "totalEngagementHours": 83.2,
-        "lat": 70.0,
-        "lon": 43.0,
         "shareOfUsActiveUsersPct": 1.6
       },
       {
@@ -14242,9 +14848,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 165,
         "screenPageViews": 861,
         "eventCount": 10396,
+        "userEngagementDuration": 408646,
         "totalEngagementHours": 113.5,
-        "lat": 80.0,
-        "lon": 24.0,
         "shareOfUsActiveUsersPct": 1.5
       },
       {
@@ -14254,9 +14859,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 120,
         "screenPageViews": 706,
         "eventCount": 21865,
+        "userEngagementDuration": 365816,
         "totalEngagementHours": 101.6,
-        "lat": 56.0,
-        "lon": 42.0,
         "shareOfUsActiveUsersPct": 1.5
       },
       {
@@ -14266,9 +14870,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 86,
         "screenPageViews": 504,
         "eventCount": 21113,
+        "userEngagementDuration": 367696,
         "totalEngagementHours": 102.1,
-        "lat": 56.0,
-        "lon": 50.0,
         "shareOfUsActiveUsersPct": 1.5
       },
       {
@@ -14278,9 +14881,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 125,
         "screenPageViews": 840,
         "eventCount": 8634,
+        "userEngagementDuration": 276055,
         "totalEngagementHours": 76.7,
-        "lat": 79.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 1.4
       },
       {
@@ -14290,9 +14892,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 99,
         "screenPageViews": 700,
         "eventCount": 9449,
+        "userEngagementDuration": 151002,
         "totalEngagementHours": 41.9,
-        "lat": 64.0,
-        "lon": 33.0,
         "shareOfUsActiveUsersPct": 1.4
       },
       {
@@ -14302,9 +14903,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 113,
         "screenPageViews": 606,
         "eventCount": 5888,
+        "userEngagementDuration": 203784,
         "totalEngagementHours": 56.6,
-        "lat": 83.0,
-        "lon": 20.0,
         "shareOfUsActiveUsersPct": 1.3
       },
       {
@@ -14314,9 +14914,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 62,
         "screenPageViews": 475,
         "eventCount": 10317,
+        "userEngagementDuration": 139959,
         "totalEngagementHours": 38.9,
-        "lat": 45.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 1.1
       },
       {
@@ -14326,9 +14925,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 112,
         "screenPageViews": 835,
         "eventCount": 25627,
+        "userEngagementDuration": 465716,
         "totalEngagementHours": 129.4,
-        "lat": 17.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 1.1
       },
       {
@@ -14338,9 +14936,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 99,
         "screenPageViews": 546,
         "eventCount": 5570,
+        "userEngagementDuration": 165445,
         "totalEngagementHours": 46.0,
-        "lat": 59.0,
-        "lon": 46.0,
         "shareOfUsActiveUsersPct": 0.9
       },
       {
@@ -14350,9 +14947,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 73,
         "screenPageViews": 512,
         "eventCount": 5201,
+        "userEngagementDuration": 125148,
         "totalEngagementHours": 34.8,
-        "lat": 23.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 0.8
       },
       {
@@ -14362,9 +14958,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 62,
         "screenPageViews": 923,
         "eventCount": 13719,
+        "userEngagementDuration": 320341,
         "totalEngagementHours": 89.0,
-        "lat": 22.0,
-        "lon": 16.0,
         "shareOfUsActiveUsersPct": 0.7
       },
       {
@@ -14374,9 +14969,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 56,
         "screenPageViews": 364,
         "eventCount": 7225,
+        "userEngagementDuration": 111409,
         "totalEngagementHours": 30.9,
-        "lat": 72.0,
-        "lon": 30.0,
         "shareOfUsActiveUsersPct": 0.7
       },
       {
@@ -14386,9 +14980,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 49,
         "screenPageViews": 375,
         "eventCount": 2992,
+        "userEngagementDuration": 74132,
         "totalEngagementHours": 20.6,
-        "lat": 53.0,
-        "lon": 24.0,
         "shareOfUsActiveUsersPct": 0.7
       },
       {
@@ -14398,9 +14991,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 39,
         "screenPageViews": 399,
         "eventCount": 2356,
+        "userEngagementDuration": 111837,
         "totalEngagementHours": 31.1,
-        "lat": 45.0,
-        "lon": 24.0,
         "shareOfUsActiveUsersPct": 0.6
       },
       {
@@ -14410,9 +15002,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 61,
         "screenPageViews": 372,
         "eventCount": 5753,
+        "userEngagementDuration": 212352,
         "totalEngagementHours": 59.0,
-        "lat": 85.0,
-        "lon": 8.0,
         "shareOfUsActiveUsersPct": 0.5
       },
       {
@@ -14422,9 +15013,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 40,
         "screenPageViews": 273,
         "eventCount": 6456,
+        "userEngagementDuration": 72960,
         "totalEngagementHours": 20.3,
-        "lat": 84.0,
-        "lon": 15.0,
         "shareOfUsActiveUsersPct": 0.5
       },
       {
@@ -14434,9 +15024,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 33,
         "screenPageViews": 213,
         "eventCount": 4605,
+        "userEngagementDuration": 59273,
         "totalEngagementHours": 16.5,
-        "lat": 32.0,
-        "lon": 42.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -14446,9 +15035,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 30,
         "screenPageViews": 135,
         "eventCount": 1575,
+        "userEngagementDuration": 59322,
         "totalEngagementHours": 16.5,
-        "lat": 79.0,
-        "lon": 29.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -14458,9 +15046,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 17,
         "screenPageViews": 120,
         "eventCount": 1105,
+        "userEngagementDuration": 70490,
         "totalEngagementHours": 19.6,
-        "lat": 7.0,
-        "lon": 56.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -14470,9 +15057,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 31,
         "screenPageViews": 201,
         "eventCount": 4139,
+        "userEngagementDuration": 116129,
         "totalEngagementHours": 32.3,
-        "lat": 85.0,
-        "lon": 19.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -14482,9 +15068,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 22,
         "screenPageViews": 138,
         "eventCount": 745,
+        "userEngagementDuration": 12574,
         "totalEngagementHours": 3.5,
-        "lat": 44.0,
-        "lon": 17.0,
         "shareOfUsActiveUsersPct": 0.3
       },
       {
@@ -14494,9 +15079,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 10,
         "screenPageViews": 61,
         "eventCount": 165,
+        "userEngagementDuration": 726,
         "totalEngagementHours": 0.2,
-        "lat": 80.0,
-        "lon": 27.0,
         "shareOfUsActiveUsersPct": 0.3
       },
       {
@@ -14506,9 +15090,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 38,
         "screenPageViews": 200,
         "eventCount": 4163,
+        "userEngagementDuration": 93779,
         "totalEngagementHours": 26.0,
-        "lat": 18.0,
-        "lon": 56.0,
         "shareOfUsActiveUsersPct": 0.3
       },
       {
@@ -14518,9 +15101,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 12,
         "screenPageViews": 111,
         "eventCount": 863,
+        "userEngagementDuration": 55213,
         "totalEngagementHours": 15.3,
-        "lat": 29.0,
-        "lon": 10.0,
         "shareOfUsActiveUsersPct": 0.2
       },
       {
@@ -14530,9 +15112,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 10,
         "screenPageViews": 62,
         "eventCount": 644,
+        "userEngagementDuration": 11156,
         "totalEngagementHours": 3.1,
-        "lat": 44.0,
-        "lon": 10.0,
         "shareOfUsActiveUsersPct": 0.1
       },
       {
@@ -14542,9 +15123,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 6,
         "screenPageViews": 37,
         "eventCount": 178,
+        "userEngagementDuration": 5552,
         "totalEngagementHours": 1.5,
-        "lat": 30.0,
-        "lon": 20.0,
         "shareOfUsActiveUsersPct": 0.1
       },
       {
@@ -14554,9 +15134,805 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 10,
         "screenPageViews": 80,
         "eventCount": 288,
+        "userEngagementDuration": 14528,
         "totalEngagementHours": 4.0,
-        "lat": 82.0,
-        "lon": 13.0,
+        "shareOfUsActiveUsersPct": 0.1
+      }
+    ],
+    "topCities": [
+      {
+        "city": "New York",
+        "region": "New York",
+        "activeUsers": 97,
+        "sessions": 183,
+        "engagedSessions": 146,
+        "screenPageViews": 861,
+        "engagementRate": 79.8
+      },
+      {
+        "city": "Los Angeles",
+        "region": "California",
+        "activeUsers": 87,
+        "sessions": 193,
+        "engagedSessions": 146,
+        "screenPageViews": 808,
+        "engagementRate": 75.6
+      },
+      {
+        "city": "Chicago",
+        "region": "Illinois",
+        "activeUsers": 76,
+        "sessions": 188,
+        "engagedSessions": 156,
+        "screenPageViews": 646,
+        "engagementRate": 83.0
+      },
+      {
+        "city": "Houston",
+        "region": "Texas",
+        "activeUsers": 75,
+        "sessions": 163,
+        "engagedSessions": 125,
+        "screenPageViews": 906,
+        "engagementRate": 76.7
+      },
+      {
+        "city": "Atlanta",
+        "region": "Georgia",
+        "activeUsers": 63,
+        "sessions": 137,
+        "engagedSessions": 101,
+        "screenPageViews": 387,
+        "engagementRate": 73.7
+      },
+      {
+        "city": "Phoenix",
+        "region": "Arizona",
+        "activeUsers": 55,
+        "sessions": 107,
+        "engagedSessions": 84,
+        "screenPageViews": 593,
+        "engagementRate": 78.5
+      },
+      {
+        "city": "Dallas",
+        "region": "Texas",
+        "activeUsers": 44,
+        "sessions": 59,
+        "engagedSessions": 44,
+        "screenPageViews": 235,
+        "engagementRate": 74.6
+      },
+      {
+        "city": "Philadelphia",
+        "region": "Pennsylvania",
+        "activeUsers": 41,
+        "sessions": 101,
+        "engagedSessions": 72,
+        "screenPageViews": 418,
+        "engagementRate": 71.3
+      },
+      {
+        "city": "Seattle",
+        "region": "Washington",
+        "activeUsers": 39,
+        "sessions": 56,
+        "engagedSessions": 46,
+        "screenPageViews": 338,
+        "engagementRate": 82.1
+      },
+      {
+        "city": "Las Vegas Valley",
+        "region": "Nevada",
+        "activeUsers": 37,
+        "sessions": 99,
+        "engagedSessions": 86,
+        "screenPageViews": 625,
+        "engagementRate": 86.9
+      },
+      {
+        "city": "Detroit",
+        "region": "Michigan",
+        "activeUsers": 31,
+        "sessions": 49,
+        "engagedSessions": 36,
+        "screenPageViews": 215,
+        "engagementRate": 73.5
+      },
+      {
+        "city": "Charlotte",
+        "region": "North Carolina",
+        "activeUsers": 30,
+        "sessions": 91,
+        "engagedSessions": 80,
+        "screenPageViews": 503,
+        "engagementRate": 87.9
+      },
+      {
+        "city": "Minneapolis",
+        "region": "Minnesota",
+        "activeUsers": 30,
+        "sessions": 57,
+        "engagedSessions": 41,
+        "screenPageViews": 184,
+        "engagementRate": 71.9
+      },
+      {
+        "city": "San Francisco",
+        "region": "California",
+        "activeUsers": 30,
+        "sessions": 58,
+        "engagedSessions": 37,
+        "screenPageViews": 141,
+        "engagementRate": 63.8
+      },
+      {
+        "city": "Fort Worth",
+        "region": "Texas",
+        "activeUsers": 29,
+        "sessions": 50,
+        "engagedSessions": 32,
+        "screenPageViews": 288,
+        "engagementRate": 64.0
+      },
+      {
+        "city": "Indianapolis",
+        "region": "Indiana",
+        "activeUsers": 28,
+        "sessions": 66,
+        "engagedSessions": 52,
+        "screenPageViews": 263,
+        "engagementRate": 78.8
+      },
+      {
+        "city": "Denver",
+        "region": "Colorado",
+        "activeUsers": 27,
+        "sessions": 48,
+        "engagedSessions": 36,
+        "screenPageViews": 139,
+        "engagementRate": 75.0
+      },
+      {
+        "city": "Austin",
+        "region": "Texas",
+        "activeUsers": 26,
+        "sessions": 58,
+        "engagedSessions": 53,
+        "screenPageViews": 256,
+        "engagementRate": 91.4
+      },
+      {
+        "city": "Orlando",
+        "region": "Florida",
+        "activeUsers": 26,
+        "sessions": 54,
+        "engagedSessions": 45,
+        "screenPageViews": 313,
+        "engagementRate": 83.3
+      },
+      {
+        "city": "Jacksonville",
+        "region": "Florida",
+        "activeUsers": 25,
+        "sessions": 48,
+        "engagedSessions": 28,
+        "screenPageViews": 231,
+        "engagementRate": 58.3
+      },
+      {
+        "city": "Portland",
+        "region": "Oregon",
+        "activeUsers": 25,
+        "sessions": 39,
+        "engagedSessions": 28,
+        "screenPageViews": 160,
+        "engagementRate": 71.8
+      },
+      {
+        "city": "San Antonio",
+        "region": "Texas",
+        "activeUsers": 24,
+        "sessions": 56,
+        "engagedSessions": 46,
+        "screenPageViews": 168,
+        "engagementRate": 82.1
+      },
+      {
+        "city": "Columbus",
+        "region": "Ohio",
+        "activeUsers": 23,
+        "sessions": 39,
+        "engagedSessions": 29,
+        "screenPageViews": 185,
+        "engagementRate": 74.4
+      },
+      {
+        "city": "Oklahoma City",
+        "region": "Oklahoma",
+        "activeUsers": 23,
+        "sessions": 73,
+        "engagedSessions": 64,
+        "screenPageViews": 357,
+        "engagementRate": 87.7
+      },
+      {
+        "city": "Pittsburgh",
+        "region": "Pennsylvania",
+        "activeUsers": 23,
+        "sessions": 35,
+        "engagedSessions": 23,
+        "screenPageViews": 140,
+        "engagementRate": 65.7
+      }
+    ],
+    "usTotals": {
+      "activeUsers": 4544,
+      "sessions": 10433,
+      "engagedSessions": 8555,
+      "userEngagementDuration": 22188105,
+      "totalEngagementHours": 6163.4
+    },
+    "rows": [
+      {
+        "state": "Texas",
+        "activeUsers": 418,
+        "sessions": 920,
+        "engagedSessions": 756,
+        "screenPageViews": 4517,
+        "eventCount": 72483,
+        "userEngagementDuration": 1606518,
+        "totalEngagementHours": 446.3,
+        "shareOfUsActiveUsersPct": 9.2
+      },
+      {
+        "state": "California",
+        "activeUsers": 415,
+        "sessions": 881,
+        "engagedSessions": 692,
+        "screenPageViews": 5009,
+        "eventCount": 81808,
+        "userEngagementDuration": 2776587,
+        "totalEngagementHours": 771.3,
+        "shareOfUsActiveUsersPct": 9.1
+      },
+      {
+        "state": "Florida",
+        "activeUsers": 301,
+        "sessions": 729,
+        "engagedSessions": 606,
+        "screenPageViews": 3740,
+        "eventCount": 74646,
+        "userEngagementDuration": 1555896,
+        "totalEngagementHours": 432.2,
+        "shareOfUsActiveUsersPct": 6.6
+      },
+      {
+        "state": "New York",
+        "activeUsers": 216,
+        "sessions": 538,
+        "engagedSessions": 457,
+        "screenPageViews": 2586,
+        "eventCount": 51749,
+        "userEngagementDuration": 1000123,
+        "totalEngagementHours": 277.8,
+        "shareOfUsActiveUsersPct": 4.8
+      },
+      {
+        "state": "Ohio",
+        "activeUsers": 189,
+        "sessions": 540,
+        "engagedSessions": 437,
+        "screenPageViews": 2488,
+        "eventCount": 47133,
+        "userEngagementDuration": 1199727,
+        "totalEngagementHours": 333.3,
+        "shareOfUsActiveUsersPct": 4.2
+      },
+      {
+        "state": "Pennsylvania",
+        "activeUsers": 188,
+        "sessions": 437,
+        "engagedSessions": 340,
+        "screenPageViews": 1931,
+        "eventCount": 35986,
+        "userEngagementDuration": 707271,
+        "totalEngagementHours": 196.5,
+        "shareOfUsActiveUsersPct": 4.1
+      },
+      {
+        "state": "Illinois",
+        "activeUsers": 179,
+        "sessions": 495,
+        "engagedSessions": 422,
+        "screenPageViews": 2186,
+        "eventCount": 23749,
+        "userEngagementDuration": 540882,
+        "totalEngagementHours": 150.2,
+        "shareOfUsActiveUsersPct": 3.9
+      },
+      {
+        "state": "Georgia",
+        "activeUsers": 161,
+        "sessions": 409,
+        "engagedSessions": 332,
+        "screenPageViews": 1611,
+        "eventCount": 27444,
+        "userEngagementDuration": 731956,
+        "totalEngagementHours": 203.3,
+        "shareOfUsActiveUsersPct": 3.5
+      },
+      {
+        "state": "North Carolina",
+        "activeUsers": 146,
+        "sessions": 333,
+        "engagedSessions": 279,
+        "screenPageViews": 1789,
+        "eventCount": 33727,
+        "userEngagementDuration": 595312,
+        "totalEngagementHours": 165.4,
+        "shareOfUsActiveUsersPct": 3.2
+      },
+      {
+        "state": "Michigan",
+        "activeUsers": 138,
+        "sessions": 347,
+        "engagedSessions": 285,
+        "screenPageViews": 1681,
+        "eventCount": 18897,
+        "userEngagementDuration": 470554,
+        "totalEngagementHours": 130.7,
+        "shareOfUsActiveUsersPct": 3.0
+      },
+      {
+        "state": "Virginia",
+        "activeUsers": 127,
+        "sessions": 248,
+        "engagedSessions": 200,
+        "screenPageViews": 1091,
+        "eventCount": 16728,
+        "userEngagementDuration": 729557,
+        "totalEngagementHours": 202.7,
+        "shareOfUsActiveUsersPct": 2.8
+      },
+      {
+        "state": "Tennessee",
+        "activeUsers": 124,
+        "sessions": 259,
+        "engagedSessions": 227,
+        "screenPageViews": 1349,
+        "eventCount": 20244,
+        "userEngagementDuration": 679476,
+        "totalEngagementHours": 188.7,
+        "shareOfUsActiveUsersPct": 2.7
+      },
+      {
+        "state": "Arizona",
+        "activeUsers": 118,
+        "sessions": 272,
+        "engagedSessions": 218,
+        "screenPageViews": 1508,
+        "eventCount": 30579,
+        "userEngagementDuration": 504086,
+        "totalEngagementHours": 140.0,
+        "shareOfUsActiveUsersPct": 2.6
+      },
+      {
+        "state": "Washington",
+        "activeUsers": 118,
+        "sessions": 196,
+        "engagedSessions": 163,
+        "screenPageViews": 1013,
+        "eventCount": 9848,
+        "userEngagementDuration": 235188,
+        "totalEngagementHours": 65.3,
+        "shareOfUsActiveUsersPct": 2.6
+      },
+      {
+        "state": "Minnesota",
+        "activeUsers": 111,
+        "sessions": 296,
+        "engagedSessions": 253,
+        "screenPageViews": 1477,
+        "eventCount": 37082,
+        "userEngagementDuration": 1404941,
+        "totalEngagementHours": 390.3,
+        "shareOfUsActiveUsersPct": 2.4
+      },
+      {
+        "state": "Missouri",
+        "activeUsers": 88,
+        "sessions": 196,
+        "engagedSessions": 155,
+        "screenPageViews": 874,
+        "eventCount": 15174,
+        "userEngagementDuration": 229731,
+        "totalEngagementHours": 63.8,
+        "shareOfUsActiveUsersPct": 1.9
+      },
+      {
+        "state": "Indiana",
+        "activeUsers": 87,
+        "sessions": 184,
+        "engagedSessions": 144,
+        "screenPageViews": 998,
+        "eventCount": 17139,
+        "userEngagementDuration": 330099,
+        "totalEngagementHours": 91.7,
+        "shareOfUsActiveUsersPct": 1.9
+      },
+      {
+        "state": "Colorado",
+        "activeUsers": 83,
+        "sessions": 177,
+        "engagedSessions": 136,
+        "screenPageViews": 796,
+        "eventCount": 15186,
+        "userEngagementDuration": 274623,
+        "totalEngagementHours": 76.3,
+        "shareOfUsActiveUsersPct": 1.8
+      },
+      {
+        "state": "Oklahoma",
+        "activeUsers": 83,
+        "sessions": 190,
+        "engagedSessions": 162,
+        "screenPageViews": 1019,
+        "eventCount": 19842,
+        "userEngagementDuration": 379308,
+        "totalEngagementHours": 105.4,
+        "shareOfUsActiveUsersPct": 1.8
+      },
+      {
+        "state": "Alabama",
+        "activeUsers": 81,
+        "sessions": 147,
+        "engagedSessions": 119,
+        "screenPageViews": 709,
+        "eventCount": 12491,
+        "userEngagementDuration": 229156,
+        "totalEngagementHours": 63.7,
+        "shareOfUsActiveUsersPct": 1.8
+      },
+      {
+        "state": "Oregon",
+        "activeUsers": 81,
+        "sessions": 124,
+        "engagedSessions": 86,
+        "screenPageViews": 553,
+        "eventCount": 7807,
+        "userEngagementDuration": 311341,
+        "totalEngagementHours": 86.5,
+        "shareOfUsActiveUsersPct": 1.8
+      },
+      {
+        "state": "Wisconsin",
+        "activeUsers": 78,
+        "sessions": 178,
+        "engagedSessions": 144,
+        "screenPageViews": 870,
+        "eventCount": 44785,
+        "userEngagementDuration": 712489,
+        "totalEngagementHours": 197.9,
+        "shareOfUsActiveUsersPct": 1.7
+      },
+      {
+        "state": "Massachusetts",
+        "activeUsers": 77,
+        "sessions": 212,
+        "engagedSessions": 190,
+        "screenPageViews": 1002,
+        "eventCount": 31771,
+        "userEngagementDuration": 612648,
+        "totalEngagementHours": 170.2,
+        "shareOfUsActiveUsersPct": 1.7
+      },
+      {
+        "state": "South Carolina",
+        "activeUsers": 71,
+        "sessions": 204,
+        "engagedSessions": 172,
+        "screenPageViews": 983,
+        "eventCount": 13542,
+        "userEngagementDuration": 299596,
+        "totalEngagementHours": 83.2,
+        "shareOfUsActiveUsersPct": 1.6
+      },
+      {
+        "state": "New Jersey",
+        "activeUsers": 69,
+        "sessions": 195,
+        "engagedSessions": 165,
+        "screenPageViews": 861,
+        "eventCount": 10396,
+        "userEngagementDuration": 408646,
+        "totalEngagementHours": 113.5,
+        "shareOfUsActiveUsersPct": 1.5
+      },
+      {
+        "state": "Arkansas",
+        "activeUsers": 66,
+        "sessions": 139,
+        "engagedSessions": 120,
+        "screenPageViews": 706,
+        "eventCount": 21865,
+        "userEngagementDuration": 365816,
+        "totalEngagementHours": 101.6,
+        "shareOfUsActiveUsersPct": 1.5
+      },
+      {
+        "state": "Louisiana",
+        "activeUsers": 66,
+        "sessions": 101,
+        "engagedSessions": 86,
+        "screenPageViews": 504,
+        "eventCount": 21113,
+        "userEngagementDuration": 367696,
+        "totalEngagementHours": 102.1,
+        "shareOfUsActiveUsersPct": 1.5
+      },
+      {
+        "state": "Maryland",
+        "activeUsers": 65,
+        "sessions": 144,
+        "engagedSessions": 125,
+        "screenPageViews": 840,
+        "eventCount": 8634,
+        "userEngagementDuration": 276055,
+        "totalEngagementHours": 76.7,
+        "shareOfUsActiveUsersPct": 1.4
+      },
+      {
+        "state": "Kentucky",
+        "activeUsers": 62,
+        "sessions": 137,
+        "engagedSessions": 99,
+        "screenPageViews": 700,
+        "eventCount": 9449,
+        "userEngagementDuration": 151002,
+        "totalEngagementHours": 41.9,
+        "shareOfUsActiveUsersPct": 1.4
+      },
+      {
+        "state": "Connecticut",
+        "activeUsers": 59,
+        "sessions": 128,
+        "engagedSessions": 113,
+        "screenPageViews": 606,
+        "eventCount": 5888,
+        "userEngagementDuration": 203784,
+        "totalEngagementHours": 56.6,
+        "shareOfUsActiveUsersPct": 1.3
+      },
+      {
+        "state": "Kansas",
+        "activeUsers": 49,
+        "sessions": 87,
+        "engagedSessions": 62,
+        "screenPageViews": 475,
+        "eventCount": 10317,
+        "userEngagementDuration": 139959,
+        "totalEngagementHours": 38.9,
+        "shareOfUsActiveUsersPct": 1.1
+      },
+      {
+        "state": "Nevada",
+        "activeUsers": 49,
+        "sessions": 134,
+        "engagedSessions": 112,
+        "screenPageViews": 835,
+        "eventCount": 25627,
+        "userEngagementDuration": 465716,
+        "totalEngagementHours": 129.4,
+        "shareOfUsActiveUsersPct": 1.1
+      },
+      {
+        "state": "Mississippi",
+        "activeUsers": 41,
+        "sessions": 116,
+        "engagedSessions": 99,
+        "screenPageViews": 546,
+        "eventCount": 5570,
+        "userEngagementDuration": 165445,
+        "totalEngagementHours": 46.0,
+        "shareOfUsActiveUsersPct": 0.9
+      },
+      {
+        "state": "Utah",
+        "activeUsers": 38,
+        "sessions": 88,
+        "engagedSessions": 73,
+        "screenPageViews": 512,
+        "eventCount": 5201,
+        "userEngagementDuration": 125148,
+        "totalEngagementHours": 34.8,
+        "shareOfUsActiveUsersPct": 0.8
+      },
+      {
+        "state": "Idaho",
+        "activeUsers": 34,
+        "sessions": 73,
+        "engagedSessions": 62,
+        "screenPageViews": 923,
+        "eventCount": 13719,
+        "userEngagementDuration": 320341,
+        "totalEngagementHours": 89.0,
+        "shareOfUsActiveUsersPct": 0.7
+      },
+      {
+        "state": "West Virginia",
+        "activeUsers": 33,
+        "sessions": 69,
+        "engagedSessions": 56,
+        "screenPageViews": 364,
+        "eventCount": 7225,
+        "userEngagementDuration": 111409,
+        "totalEngagementHours": 30.9,
+        "shareOfUsActiveUsersPct": 0.7
+      },
+      {
+        "state": "Iowa",
+        "activeUsers": 32,
+        "sessions": 64,
+        "engagedSessions": 49,
+        "screenPageViews": 375,
+        "eventCount": 2992,
+        "userEngagementDuration": 74132,
+        "totalEngagementHours": 20.6,
+        "shareOfUsActiveUsersPct": 0.7
+      },
+      {
+        "state": "Nebraska",
+        "activeUsers": 25,
+        "sessions": 49,
+        "engagedSessions": 39,
+        "screenPageViews": 399,
+        "eventCount": 2356,
+        "userEngagementDuration": 111837,
+        "totalEngagementHours": 31.1,
+        "shareOfUsActiveUsersPct": 0.6
+      },
+      {
+        "state": "Maine",
+        "activeUsers": 24,
+        "sessions": 84,
+        "engagedSessions": 61,
+        "screenPageViews": 372,
+        "eventCount": 5753,
+        "userEngagementDuration": 212352,
+        "totalEngagementHours": 59.0,
+        "shareOfUsActiveUsersPct": 0.5
+      },
+      {
+        "state": "New Hampshire",
+        "activeUsers": 23,
+        "sessions": 44,
+        "engagedSessions": 40,
+        "screenPageViews": 273,
+        "eventCount": 6456,
+        "userEngagementDuration": 72960,
+        "totalEngagementHours": 20.3,
+        "shareOfUsActiveUsersPct": 0.5
+      },
+      {
+        "state": "New Mexico",
+        "activeUsers": 20,
+        "sessions": 44,
+        "engagedSessions": 33,
+        "screenPageViews": 213,
+        "eventCount": 4605,
+        "userEngagementDuration": 59273,
+        "totalEngagementHours": 16.5,
+        "shareOfUsActiveUsersPct": 0.4
+      },
+      {
+        "state": "District of Columbia",
+        "activeUsers": 18,
+        "sessions": 36,
+        "engagedSessions": 30,
+        "screenPageViews": 135,
+        "eventCount": 1575,
+        "userEngagementDuration": 59322,
+        "totalEngagementHours": 16.5,
+        "shareOfUsActiveUsersPct": 0.4
+      },
+      {
+        "state": "Alaska",
+        "activeUsers": 16,
+        "sessions": 24,
+        "engagedSessions": 17,
+        "screenPageViews": 120,
+        "eventCount": 1105,
+        "userEngagementDuration": 70490,
+        "totalEngagementHours": 19.6,
+        "shareOfUsActiveUsersPct": 0.4
+      },
+      {
+        "state": "Rhode Island",
+        "activeUsers": 16,
+        "sessions": 34,
+        "engagedSessions": 31,
+        "screenPageViews": 201,
+        "eventCount": 4139,
+        "userEngagementDuration": 116129,
+        "totalEngagementHours": 32.3,
+        "shareOfUsActiveUsersPct": 0.4
+      },
+      {
+        "state": "South Dakota",
+        "activeUsers": 15,
+        "sessions": 26,
+        "engagedSessions": 22,
+        "screenPageViews": 138,
+        "eventCount": 745,
+        "userEngagementDuration": 12574,
+        "totalEngagementHours": 3.5,
+        "shareOfUsActiveUsersPct": 0.3
+      },
+      {
+        "state": "Delaware",
+        "activeUsers": 12,
+        "sessions": 14,
+        "engagedSessions": 10,
+        "screenPageViews": 61,
+        "eventCount": 165,
+        "userEngagementDuration": 726,
+        "totalEngagementHours": 0.2,
+        "shareOfUsActiveUsersPct": 0.3
+      },
+      {
+        "state": "Hawaii",
+        "activeUsers": 12,
+        "sessions": 49,
+        "engagedSessions": 38,
+        "screenPageViews": 200,
+        "eventCount": 4163,
+        "userEngagementDuration": 93779,
+        "totalEngagementHours": 26.0,
+        "shareOfUsActiveUsersPct": 0.3
+      },
+      {
+        "state": "Montana",
+        "activeUsers": 8,
+        "sessions": 13,
+        "engagedSessions": 12,
+        "screenPageViews": 111,
+        "eventCount": 863,
+        "userEngagementDuration": 55213,
+        "totalEngagementHours": 15.3,
+        "shareOfUsActiveUsersPct": 0.2
+      },
+      {
+        "state": "North Dakota",
+        "activeUsers": 6,
+        "sessions": 11,
+        "engagedSessions": 10,
+        "screenPageViews": 62,
+        "eventCount": 644,
+        "userEngagementDuration": 11156,
+        "totalEngagementHours": 3.1,
+        "shareOfUsActiveUsersPct": 0.1
+      },
+      {
+        "state": "Wyoming",
+        "activeUsers": 5,
+        "sessions": 8,
+        "engagedSessions": 6,
+        "screenPageViews": 37,
+        "eventCount": 178,
+        "userEngagementDuration": 5552,
+        "totalEngagementHours": 1.5,
+        "shareOfUsActiveUsersPct": 0.1
+      },
+      {
+        "state": "Vermont",
+        "activeUsers": 3,
+        "sessions": 10,
+        "engagedSessions": 10,
+        "screenPageViews": 80,
+        "eventCount": 288,
+        "userEngagementDuration": 14528,
+        "totalEngagementHours": 4.0,
         "shareOfUsActiveUsersPct": 0.1
       }
     ],
@@ -14568,9 +15944,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 756,
         "screenPageViews": 4517,
         "eventCount": 72483,
+        "userEngagementDuration": 1606518,
         "totalEngagementHours": 446.3,
-        "lat": 42.0,
-        "lon": 48.0,
         "shareOfUsActiveUsersPct": 9.2
       },
       {
@@ -14580,9 +15955,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 692,
         "screenPageViews": 5009,
         "eventCount": 81808,
+        "userEngagementDuration": 2776587,
         "totalEngagementHours": 771.3,
-        "lat": 12.0,
-        "lon": 34.0,
         "shareOfUsActiveUsersPct": 9.1
       },
       {
@@ -14592,9 +15966,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 606,
         "screenPageViews": 3740,
         "eventCount": 74646,
+        "userEngagementDuration": 1555896,
         "totalEngagementHours": 432.2,
-        "lat": 70.0,
-        "lon": 58.0,
         "shareOfUsActiveUsersPct": 6.6
       },
       {
@@ -14604,9 +15977,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 457,
         "screenPageViews": 2586,
         "eventCount": 51749,
+        "userEngagementDuration": 1000123,
         "totalEngagementHours": 277.8,
-        "lat": 79.0,
-        "lon": 16.0,
         "shareOfUsActiveUsersPct": 4.8
       },
       {
@@ -14616,9 +15988,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 437,
         "screenPageViews": 2488,
         "eventCount": 47133,
+        "userEngagementDuration": 1199727,
         "totalEngagementHours": 333.3,
-        "lat": 65.0,
-        "lon": 25.0,
         "shareOfUsActiveUsersPct": 4.2
       },
       {
@@ -14628,9 +15999,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 340,
         "screenPageViews": 1931,
         "eventCount": 35986,
+        "userEngagementDuration": 707271,
         "totalEngagementHours": 196.5,
-        "lat": 76.0,
-        "lon": 23.0,
         "shareOfUsActiveUsersPct": 4.1
       },
       {
@@ -14640,9 +16010,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 422,
         "screenPageViews": 2186,
         "eventCount": 23749,
+        "userEngagementDuration": 540882,
         "totalEngagementHours": 150.2,
-        "lat": 58.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 3.9
       },
       {
@@ -14652,9 +16021,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 332,
         "screenPageViews": 1611,
         "eventCount": 27444,
+        "userEngagementDuration": 731956,
         "totalEngagementHours": 203.3,
-        "lat": 65.0,
-        "lon": 46.0,
         "shareOfUsActiveUsersPct": 3.5
       },
       {
@@ -14664,9 +16032,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 279,
         "screenPageViews": 1789,
         "eventCount": 33727,
+        "userEngagementDuration": 595312,
         "totalEngagementHours": 165.4,
-        "lat": 73.0,
-        "lon": 39.0,
         "shareOfUsActiveUsersPct": 3.2
       },
       {
@@ -14676,9 +16043,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 285,
         "screenPageViews": 1681,
         "eventCount": 18897,
+        "userEngagementDuration": 470554,
         "totalEngagementHours": 130.7,
-        "lat": 62.0,
-        "lon": 18.0,
         "shareOfUsActiveUsersPct": 3.0
       },
       {
@@ -14688,9 +16054,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 200,
         "screenPageViews": 1091,
         "eventCount": 16728,
+        "userEngagementDuration": 729557,
         "totalEngagementHours": 202.7,
-        "lat": 75.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 2.8
       },
       {
@@ -14700,9 +16065,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 227,
         "screenPageViews": 1349,
         "eventCount": 20244,
+        "userEngagementDuration": 679476,
         "totalEngagementHours": 188.7,
-        "lat": 62.0,
-        "lon": 39.0,
         "shareOfUsActiveUsersPct": 2.7
       },
       {
@@ -14712,9 +16076,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 218,
         "screenPageViews": 1508,
         "eventCount": 30579,
+        "userEngagementDuration": 504086,
         "totalEngagementHours": 140.0,
-        "lat": 24.0,
-        "lon": 42.0,
         "shareOfUsActiveUsersPct": 2.6
       },
       {
@@ -14724,9 +16087,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 163,
         "screenPageViews": 1013,
         "eventCount": 9848,
+        "userEngagementDuration": 235188,
         "totalEngagementHours": 65.3,
-        "lat": 15.0,
-        "lon": 6.0,
         "shareOfUsActiveUsersPct": 2.6
       },
       {
@@ -14736,9 +16098,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 253,
         "screenPageViews": 1477,
         "eventCount": 37082,
+        "userEngagementDuration": 1404941,
         "totalEngagementHours": 390.3,
-        "lat": 51.0,
-        "lon": 14.0,
         "shareOfUsActiveUsersPct": 2.4
       },
       {
@@ -14748,9 +16109,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 155,
         "screenPageViews": 874,
         "eventCount": 15174,
+        "userEngagementDuration": 229731,
         "totalEngagementHours": 63.8,
-        "lat": 54.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 1.9
       },
       {
@@ -14760,9 +16120,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 144,
         "screenPageViews": 998,
         "eventCount": 17139,
+        "userEngagementDuration": 330099,
         "totalEngagementHours": 91.7,
-        "lat": 61.0,
-        "lon": 27.0,
         "shareOfUsActiveUsersPct": 1.9
       },
       {
@@ -14772,9 +16131,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 136,
         "screenPageViews": 796,
         "eventCount": 15186,
+        "userEngagementDuration": 274623,
         "totalEngagementHours": 76.3,
-        "lat": 34.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14784,9 +16142,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 162,
         "screenPageViews": 1019,
         "eventCount": 19842,
+        "userEngagementDuration": 379308,
         "totalEngagementHours": 105.4,
-        "lat": 46.0,
-        "lon": 40.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14796,9 +16153,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 119,
         "screenPageViews": 709,
         "eventCount": 12491,
+        "userEngagementDuration": 229156,
         "totalEngagementHours": 63.7,
-        "lat": 61.0,
-        "lon": 46.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14808,9 +16164,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 86,
         "screenPageViews": 553,
         "eventCount": 7807,
+        "userEngagementDuration": 311341,
         "totalEngagementHours": 86.5,
-        "lat": 14.0,
-        "lon": 15.0,
         "shareOfUsActiveUsersPct": 1.8
       },
       {
@@ -14820,9 +16175,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 144,
         "screenPageViews": 870,
         "eventCount": 44785,
+        "userEngagementDuration": 712489,
         "totalEngagementHours": 197.9,
-        "lat": 55.0,
-        "lon": 16.0,
         "shareOfUsActiveUsersPct": 1.7
       },
       {
@@ -14832,9 +16186,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 190,
         "screenPageViews": 1002,
         "eventCount": 31771,
+        "userEngagementDuration": 612648,
         "totalEngagementHours": 170.2,
-        "lat": 84.0,
-        "lon": 18.0,
         "shareOfUsActiveUsersPct": 1.7
       },
       {
@@ -14844,9 +16197,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 172,
         "screenPageViews": 983,
         "eventCount": 13542,
+        "userEngagementDuration": 299596,
         "totalEngagementHours": 83.2,
-        "lat": 70.0,
-        "lon": 43.0,
         "shareOfUsActiveUsersPct": 1.6
       },
       {
@@ -14856,9 +16208,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 165,
         "screenPageViews": 861,
         "eventCount": 10396,
+        "userEngagementDuration": 408646,
         "totalEngagementHours": 113.5,
-        "lat": 80.0,
-        "lon": 24.0,
         "shareOfUsActiveUsersPct": 1.5
       },
       {
@@ -14868,9 +16219,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 120,
         "screenPageViews": 706,
         "eventCount": 21865,
+        "userEngagementDuration": 365816,
         "totalEngagementHours": 101.6,
-        "lat": 56.0,
-        "lon": 42.0,
         "shareOfUsActiveUsersPct": 1.5
       },
       {
@@ -14880,9 +16230,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 86,
         "screenPageViews": 504,
         "eventCount": 21113,
+        "userEngagementDuration": 367696,
         "totalEngagementHours": 102.1,
-        "lat": 56.0,
-        "lon": 50.0,
         "shareOfUsActiveUsersPct": 1.5
       },
       {
@@ -14892,9 +16241,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 125,
         "screenPageViews": 840,
         "eventCount": 8634,
+        "userEngagementDuration": 276055,
         "totalEngagementHours": 76.7,
-        "lat": 79.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 1.4
       },
       {
@@ -14904,9 +16252,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 99,
         "screenPageViews": 700,
         "eventCount": 9449,
+        "userEngagementDuration": 151002,
         "totalEngagementHours": 41.9,
-        "lat": 64.0,
-        "lon": 33.0,
         "shareOfUsActiveUsersPct": 1.4
       },
       {
@@ -14916,9 +16263,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 113,
         "screenPageViews": 606,
         "eventCount": 5888,
+        "userEngagementDuration": 203784,
         "totalEngagementHours": 56.6,
-        "lat": 83.0,
-        "lon": 20.0,
         "shareOfUsActiveUsersPct": 1.3
       },
       {
@@ -14928,9 +16274,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 62,
         "screenPageViews": 475,
         "eventCount": 10317,
+        "userEngagementDuration": 139959,
         "totalEngagementHours": 38.9,
-        "lat": 45.0,
-        "lon": 32.0,
         "shareOfUsActiveUsersPct": 1.1
       },
       {
@@ -14940,9 +16285,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 112,
         "screenPageViews": 835,
         "eventCount": 25627,
+        "userEngagementDuration": 465716,
         "totalEngagementHours": 129.4,
-        "lat": 17.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 1.1
       },
       {
@@ -14952,9 +16296,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 99,
         "screenPageViews": 546,
         "eventCount": 5570,
+        "userEngagementDuration": 165445,
         "totalEngagementHours": 46.0,
-        "lat": 59.0,
-        "lon": 46.0,
         "shareOfUsActiveUsersPct": 0.9
       },
       {
@@ -14964,9 +16307,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 73,
         "screenPageViews": 512,
         "eventCount": 5201,
+        "userEngagementDuration": 125148,
         "totalEngagementHours": 34.8,
-        "lat": 23.0,
-        "lon": 28.0,
         "shareOfUsActiveUsersPct": 0.8
       },
       {
@@ -14976,9 +16318,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 62,
         "screenPageViews": 923,
         "eventCount": 13719,
+        "userEngagementDuration": 320341,
         "totalEngagementHours": 89.0,
-        "lat": 22.0,
-        "lon": 16.0,
         "shareOfUsActiveUsersPct": 0.7
       },
       {
@@ -14988,9 +16329,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 56,
         "screenPageViews": 364,
         "eventCount": 7225,
+        "userEngagementDuration": 111409,
         "totalEngagementHours": 30.9,
-        "lat": 72.0,
-        "lon": 30.0,
         "shareOfUsActiveUsersPct": 0.7
       },
       {
@@ -15000,9 +16340,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 49,
         "screenPageViews": 375,
         "eventCount": 2992,
+        "userEngagementDuration": 74132,
         "totalEngagementHours": 20.6,
-        "lat": 53.0,
-        "lon": 24.0,
         "shareOfUsActiveUsersPct": 0.7
       },
       {
@@ -15012,9 +16351,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 39,
         "screenPageViews": 399,
         "eventCount": 2356,
+        "userEngagementDuration": 111837,
         "totalEngagementHours": 31.1,
-        "lat": 45.0,
-        "lon": 24.0,
         "shareOfUsActiveUsersPct": 0.6
       },
       {
@@ -15024,9 +16362,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 61,
         "screenPageViews": 372,
         "eventCount": 5753,
+        "userEngagementDuration": 212352,
         "totalEngagementHours": 59.0,
-        "lat": 85.0,
-        "lon": 8.0,
         "shareOfUsActiveUsersPct": 0.5
       },
       {
@@ -15036,9 +16373,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 40,
         "screenPageViews": 273,
         "eventCount": 6456,
+        "userEngagementDuration": 72960,
         "totalEngagementHours": 20.3,
-        "lat": 84.0,
-        "lon": 15.0,
         "shareOfUsActiveUsersPct": 0.5
       },
       {
@@ -15048,9 +16384,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 33,
         "screenPageViews": 213,
         "eventCount": 4605,
+        "userEngagementDuration": 59273,
         "totalEngagementHours": 16.5,
-        "lat": 32.0,
-        "lon": 42.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -15060,9 +16395,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 30,
         "screenPageViews": 135,
         "eventCount": 1575,
+        "userEngagementDuration": 59322,
         "totalEngagementHours": 16.5,
-        "lat": 79.0,
-        "lon": 29.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -15072,9 +16406,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 17,
         "screenPageViews": 120,
         "eventCount": 1105,
+        "userEngagementDuration": 70490,
         "totalEngagementHours": 19.6,
-        "lat": 7.0,
-        "lon": 56.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -15084,9 +16417,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 31,
         "screenPageViews": 201,
         "eventCount": 4139,
+        "userEngagementDuration": 116129,
         "totalEngagementHours": 32.3,
-        "lat": 85.0,
-        "lon": 19.0,
         "shareOfUsActiveUsersPct": 0.4
       },
       {
@@ -15096,9 +16428,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 22,
         "screenPageViews": 138,
         "eventCount": 745,
+        "userEngagementDuration": 12574,
         "totalEngagementHours": 3.5,
-        "lat": 44.0,
-        "lon": 17.0,
         "shareOfUsActiveUsersPct": 0.3
       },
       {
@@ -15108,9 +16439,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 10,
         "screenPageViews": 61,
         "eventCount": 165,
+        "userEngagementDuration": 726,
         "totalEngagementHours": 0.2,
-        "lat": 80.0,
-        "lon": 27.0,
         "shareOfUsActiveUsersPct": 0.3
       },
       {
@@ -15120,9 +16450,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 38,
         "screenPageViews": 200,
         "eventCount": 4163,
+        "userEngagementDuration": 93779,
         "totalEngagementHours": 26.0,
-        "lat": 18.0,
-        "lon": 56.0,
         "shareOfUsActiveUsersPct": 0.3
       },
       {
@@ -15132,9 +16461,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 12,
         "screenPageViews": 111,
         "eventCount": 863,
+        "userEngagementDuration": 55213,
         "totalEngagementHours": 15.3,
-        "lat": 29.0,
-        "lon": 10.0,
         "shareOfUsActiveUsersPct": 0.2
       },
       {
@@ -15144,9 +16472,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 10,
         "screenPageViews": 62,
         "eventCount": 644,
+        "userEngagementDuration": 11156,
         "totalEngagementHours": 3.1,
-        "lat": 44.0,
-        "lon": 10.0,
         "shareOfUsActiveUsersPct": 0.1
       },
       {
@@ -15156,9 +16483,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 6,
         "screenPageViews": 37,
         "eventCount": 178,
+        "userEngagementDuration": 5552,
         "totalEngagementHours": 1.5,
-        "lat": 30.0,
-        "lon": 20.0,
         "shareOfUsActiveUsersPct": 0.1
       },
       {
@@ -15168,13 +16494,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "engagedSessions": 10,
         "screenPageViews": 80,
         "eventCount": 288,
+        "userEngagementDuration": 14528,
         "totalEngagementHours": 4.0,
-        "lat": 82.0,
-        "lon": 13.0,
         "shareOfUsActiveUsersPct": 0.1
       }
     ],
-    "totalUsActiveUsers": 4544
+    "totalUsActiveUsers": 4544,
+    "caveat": "GA4 geography is derived from IP-based location and is directional, not exact. City/metro rows undercount users on VPNs, smart TVs, and carrier networks. Active users are not additive across states or cities.",
+    "methodology": "Internal GA4 pull, property 497892271. Dimensions region x country and city x region x country, filtered to United States for Aug 24-Aug 30, 2026. Engagement hours = userEngagementDuration / 3600.",
+    "note": ""
   },
   "auditNotes": [
     {
