@@ -19152,7 +19152,7 @@ function previousWeekCompare(card) {
 }
 
 function renderKpis() {
-  const grid = $('#kpi-grid');
+  const grid = document.querySelector('#kpi-grid');
   const groups = (data.scorecardGroups?.length
     ? data.scorecardGroups
     : [{ title: 'Weekly scorecard', eyebrow: 'Overview', definition: '', cards: data.scorecards }])
@@ -19194,7 +19194,7 @@ function renderKpis() {
 }
 
 function renderVisitSummary() {
-  const wrap = $('#visit-summary');
+  const wrap = document.querySelector('#visit-summary');
   if (!wrap) return;
   const summary = data.visitSummary;
   if (!summary?.weekly || !summary?.monthly) {
@@ -19263,7 +19263,7 @@ function chartPoints(rows, key, width, height, pad, maxOverride = null) {
 }
 
 function renderLineTrendChart(selector, rows) {
-  const svg = $(selector);
+  const svg = document.querySelector(selector);
   const chartRows = Array.isArray(rows) ? rows : (rows?.rows || []);
   if (!svg || !chartRows.length) return;
   const width = 820;
@@ -19297,19 +19297,19 @@ function renderLineTrendChart(selector, rows) {
 }
 
 function renderTrafficChart() {
-  const noteEl = $('#trend-note');
+  const noteEl = document.querySelector('#trend-note');
   if (noteEl) noteEl.textContent = data.appTrendNote || '';
   renderLineTrendChart('#traffic-chart', data.weeklyTrend || data.trend);
   renderLineTrendChart('#monthly-traffic-chart', data.monthlyTrend || data.trend);
   if (data.ytdTrend?.length) {
     renderLineTrendChart('#ytd-traffic-chart', data.ytdTrend);
-    const ytdNoteEl = $('#ytd-trend-note');
+    const ytdNoteEl = document.querySelector('#ytd-trend-note');
     if (ytdNoteEl) ytdNoteEl.textContent = data.ytdTrendNote || '';
   }
 }
 
 function renderPurchaseChart() {
-  const svg = $('#purchase-chart');
+  const svg = document.querySelector('#purchase-chart');
   const width = 420;
   const height = 160;
   const pad = { left: 22, right: 18, top: 18, bottom: 28 };
@@ -19341,8 +19341,8 @@ function renderPurchaseChart() {
 }
 
 function renderPlainEnglish() {
-  $('#generated-at').textContent = `Generated ${data.generatedAt}`;
-  $('#source-label').textContent = data.sourceLabel;
+  document.querySelector('#generated-at').textContent = `Generated ${data.generatedAt}`;
+  document.querySelector('#source-label').textContent = data.sourceLabel;
   const summary = data.plainEnglishSummary;
   const paidAssessment = summary?.paidAcquisitionAssessment;
   const paidAssessmentText = typeof paidAssessment === 'string'
@@ -19358,13 +19358,13 @@ function renderPlainEnglish() {
       ].filter(Boolean)
     : null;
   const insightItems = summaryItems?.length ? summaryItems : data.plainEnglishInsights || [];
-  $('#insights-list').innerHTML = insightItems
+  document.querySelector('#insights-list').innerHTML = insightItems
     .map((item, index) => `<li class="${index === 0 ? 'insight-overview' : ''}">${item}</li>`)
     .join('');
 }
 
 function renderPurchases() {
-  const wrap = $('#purchase-summary');
+  const wrap = document.querySelector('#purchase-summary');
   const sales = data.salesSummary;
   const tvod = data.tvodTitleRevenue;
   const appleDownloads = data.manualAppleDownloads;
@@ -19448,7 +19448,7 @@ function renderPurchases() {
       <p class="sales-net">Reconciliation: the fresh same-week visible payment-source check below is ${fmt.currency(headlineVisibleRevenue)} for ${escapeHtml(headlineVisibleRange)}. It combines only sources that refreshed for the same week and should not be added to the DotStudios total because those sources overlap.</p>
     </div>
   ` : '';
-  const salesSummaryEl = $('#sales-summary') || $('#purchase-summary');
+  const salesSummaryEl = document.querySelector('#sales-summary') || document.querySelector('#purchase-summary');
   if (!salesSummaryEl) return;
   salesSummaryEl.innerHTML = `
     ${tvodReconciliation}
@@ -19524,7 +19524,7 @@ function renderMetricList() {
     ['screenPageViews', 'Views'],
     ['eventCount', 'Events'],
   ];
-  $('#live-summary').innerHTML = keys
+  document.querySelector('#live-summary').innerHTML = keys
     .map(([key, label]) => {
       const livePeriod = selectedPeriod === 'weekToDate' ? live.weekToDate : live.current;
       const value = fmt.number(livePeriod?.[key] || 0);
@@ -19568,7 +19568,7 @@ function engagementHoursPerUser(row) {
 
 function renderUsagePlatformList(selector, rows) {
   const max = Math.max(...(rows || []).map((row) => row.activeUsers || 0), 1);
-  $(selector).innerHTML = (rows || [])
+  document.querySelector(selector).innerHTML = (rows || [])
     .map(
       (row) => `
         <article class="platform-share-card compact-card">
@@ -19591,7 +19591,7 @@ function renderUsagePlatformList(selector, rows) {
 
 function renderPlaybackList(selector, rows) {
   const max = Math.max(...(rows || []).map((row) => row.eventCount || 0), 1);
-  $(selector).innerHTML = (rows || [])
+  document.querySelector(selector).innerHTML = (rows || [])
     .map((row) => {
       const width = Math.max(3, ((row.eventCount || 0) / max) * 100);
       return `
@@ -19607,16 +19607,16 @@ function renderPlaybackList(selector, rows) {
 function renderContentUsage() {
   const usage = data.contentUsage;
   if (!usage) return;
-  $('#content-usage-period').textContent = usage.period;
-  $('#live-usage-note').textContent = usage.live.note;
-  $('#ondemand-usage-note').textContent = usage.onDemand.note;
-  $('#live-usage-cards').innerHTML = [
+  document.querySelector('#content-usage-period').textContent = usage.period;
+  document.querySelector('#live-usage-note').textContent = usage.live.note;
+  document.querySelector('#ondemand-usage-note').textContent = usage.onDemand.note;
+  document.querySelector('#live-usage-cards').innerHTML = [
     usageStat('Live active users', usage.live.total.activeUsers),
     usageStat('Live screen views', usage.live.total.screenPageViews),
     usageStat('Live play events', usage.live.playback.play || 0),
     usageStat('Live video starts', usage.live.playback.video_start || 0),
   ].join('');
-  $('#ondemand-usage-cards').innerHTML = [
+  document.querySelector('#ondemand-usage-cards').innerHTML = [
     usageStat('On Demand active users', usage.onDemand.total.activeUsers),
     usageStat('On Demand screen views', usage.onDemand.total.screenPageViews),
     usageStat('On Demand events', usage.onDemand.total.eventCount),
@@ -19640,10 +19640,10 @@ function renderContentUsage() {
 function renderAppSectionUsage() {
   const usage = data.appSectionUsage;
   if (!usage) return;
-  $('#section-usage-period').textContent = usage.period || data.periods.currentWeek.range;
-  $('#section-usage-note').textContent = usage.note || '';
+  document.querySelector('#section-usage-period').textContent = usage.period || data.periods.currentWeek.range;
+  document.querySelector('#section-usage-note').textContent = usage.note || '';
   const maxUsers = Math.max(...(usage.rows || []).map((row) => row.activeUsers || 0), 1);
-  $('#section-usage-list').innerHTML = (usage.rows || [])
+  document.querySelector('#section-usage-list').innerHTML = (usage.rows || [])
     .map((row) => {
       const width = Math.max(4, ((row.activeUsers || 0) / maxUsers) * 100);
       return `
@@ -19673,7 +19673,7 @@ function renderAppSectionUsage() {
 
 function renderRokuAppEngagement() {
   const report = data.rokuAppEngagement;
-  const section = $('#roku-app');
+  const section = document.querySelector('#roku-app');
   const metrics = report?.metrics || report;
   if (!section || !report || !metrics) {
     if (section) section.hidden = true;
@@ -19682,8 +19682,8 @@ function renderRokuAppEngagement() {
   section.hidden = false;
   const dateRange = report.dateLabels?.length ? `${report.dateLabels[0]}-${report.dateLabels.at(-1)}` : (report.reportPeriod || report.period);
   const reportRange = dateRange || report.reportPeriod || report.period || 'the latest Roku report';
-  $('#roku-app-period').textContent = dateRange || 'Latest Roku App Engagement report';
-  $('#roku-app-note').textContent =
+  document.querySelector('#roku-app-period').textContent = dateRange || 'Latest Roku App Engagement report';
+  document.querySelector('#roku-app-note').textContent =
     report.sourceDetail || report.note || report.source || 'Roku app metrics are parsed from the latest emailed Roku App Engagement PDF.';
   const netInstalls = metrics.netInstalls ?? (
     typeof metrics.newInstalls === 'number' && typeof metrics.uninstalls === 'number'
@@ -19699,7 +19699,7 @@ function renderRokuAppEngagement() {
     ['Avg min per viewer', metrics.avgMinPerViewer ?? metrics.avgMinutesPerViewer, fmt.minutes(metrics.avgMinPerViewer ?? metrics.avgMinutesPerViewer), `Average viewing time per Roku viewer for ${reportRange}`],
     ['Total hours streamed', metrics.totalHoursStreamed, fmt.number(metrics.totalHoursStreamed), `Total Roku app streaming hours for ${reportRange}`],
   ].filter(([, raw]) => raw !== undefined && raw !== null && raw !== '');
-  $('#roku-app-summary').innerHTML = cards
+  document.querySelector('#roku-app-summary').innerHTML = cards
     .map(([label, , value, detail]) => usageStat(label, value, detail))
     .join('');
 }
@@ -19720,7 +19720,7 @@ function barRows(selector, events, accent = false) {
       };
     })
     .filter(Boolean);
-  const target = $(selector);
+  const target = document.querySelector(selector);
   if (!target) return;
   if (!rows.length) {
     target.innerHTML = '<p class="panel-note">No matching GA4 event rows were returned for this period.</p>';
@@ -19747,7 +19747,7 @@ function renderEventLists() {
 }
 
 function renderDotStudiosAppAds() {
-  const section = $('#dotstudios-app-ads');
+  const section = document.querySelector('#dotstudios-app-ads');
   const summary = data.dotStudiosAppAds;
   if (!section) return;
   if (!summary || typeof summary !== 'object') {
@@ -19758,10 +19758,10 @@ function renderDotStudiosAppAds() {
 
   const totals = summary.totals || {};
   const period = summary.period || [summary.periodStart, summary.periodEnd].filter(Boolean).join(' to ') || 'Manual upload';
-  const periodEl = $('#dotstudios-app-ads-period');
+  const periodEl = document.querySelector('#dotstudios-app-ads-period');
   if (periodEl) periodEl.textContent = period;
 
-  const noteEl = $('#dotstudios-app-ads-note');
+  const noteEl = document.querySelector('#dotstudios-app-ads-note');
   if (noteEl) {
     noteEl.textContent =
       `${summary.source || 'DotStudios manual app ad-serving export'} · ${period}. ` +
@@ -19774,7 +19774,7 @@ function renderDotStudiosAppAds() {
     usageStat('Errors', fmt.number(totals.errors), `${fmt.percent(totals.errorRatePct)} of ad requests`),
     usageStat('Impressions / request', `${toFiniteNumber(totals.impressionsPerRequest) === null ? NOT_AVAILABLE : Number(totals.impressionsPerRequest).toFixed(2)}x`, 'Can exceed 1.0x when pods serve multiple ad impressions'),
   ];
-  const kpiEl = $('#dotstudios-app-ads-kpis');
+  const kpiEl = document.querySelector('#dotstudios-app-ads-kpis');
   if (kpiEl) kpiEl.innerHTML = kpis.join('');
 
   function rowLabel(row) {
@@ -19789,7 +19789,7 @@ function renderDotStudiosAppAds() {
 
   const devices = Array.isArray(summary.deviceSplit) ? summary.deviceSplit : [];
   const maxDeviceImpressions = Math.max(...devices.map((row) => toFiniteNumber(row.impressions) || 0), 1);
-  const deviceEl = $('#dotstudios-app-ads-devices');
+  const deviceEl = document.querySelector('#dotstudios-app-ads-devices');
   if (deviceEl) {
     deviceEl.innerHTML = devices
       .map((row) => {
@@ -19817,7 +19817,7 @@ function renderDotStudiosAppAds() {
   }
 
   const channels = Array.isArray(summary.topChannels) ? summary.topChannels : [];
-  const channelEl = $('#dotstudios-app-ads-channels');
+  const channelEl = document.querySelector('#dotstudios-app-ads-channels');
   if (channelEl) {
     channelEl.innerHTML = channels
       .slice(0, 8)
@@ -19834,7 +19834,7 @@ function renderDotStudiosAppAds() {
   }
 
   const videos = Array.isArray(summary.topVideos) ? summary.topVideos : [];
-  const videosEl = $('#dotstudios-app-ads-videos');
+  const videosEl = document.querySelector('#dotstudios-app-ads-videos');
   if (videosEl) {
     renderTable(
       '#dotstudios-app-ads-videos',
@@ -19852,7 +19852,7 @@ function renderDotStudiosAppAds() {
   }
 
   const daily = Array.isArray(summary.dailyTrend) ? summary.dailyTrend : [];
-  const dailyEl = $('#dotstudios-app-ads-daily');
+  const dailyEl = document.querySelector('#dotstudios-app-ads-daily');
   if (dailyEl) {
     renderTable(
       '#dotstudios-app-ads-daily',
@@ -19869,10 +19869,10 @@ function renderDotStudiosAppAds() {
     );
   }
 
-  const plainEl = $('#dotstudios-app-ads-plain');
+  const plainEl = document.querySelector('#dotstudios-app-ads-plain');
   if (plainEl) plainEl.textContent = summary.plainEnglish || '';
 
-  const caveatEl = $('#dotstudios-app-ads-caveats');
+  const caveatEl = document.querySelector('#dotstudios-app-ads-caveats');
   const caveats = Array.isArray(summary.caveats) ? summary.caveats : [];
   if (caveatEl) {
     caveatEl.innerHTML = caveats.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
@@ -19881,7 +19881,7 @@ function renderDotStudiosAppAds() {
 
 function renderTable(selector, headers, rows, mapper) {
   const tableRows = Array.isArray(rows) ? rows : (rows?.rows || []);
-  const target = $(selector);
+  const target = document.querySelector(selector);
   if (!target) return;
   target.innerHTML = `
     <table>
@@ -19893,9 +19893,9 @@ function renderTable(selector, headers, rows, mapper) {
 
 function renderPlatformMix() {
   const mix = data.platformMix;
-  const periodEl = $('#platform-mix-period');
-  const noteEl = $('#platform-note');
-  const target = $('#platform-mix');
+  const periodEl = document.querySelector('#platform-mix-period');
+  const noteEl = document.querySelector('#platform-note');
+  const target = document.querySelector('#platform-mix');
   if (!target) return;
 
   if (Array.isArray(mix)) {
@@ -20003,8 +20003,8 @@ function renderPlatformMix() {
 function renderTitleTables() {
   const viewership = data.titleViewership;
   if (!viewership) return;
-  $('#top-title-period').textContent = viewership.period;
-  $('#top-title-note').textContent = viewership.note;
+  document.querySelector('#top-title-period').textContent = viewership.period;
+  document.querySelector('#top-title-note').textContent = viewership.note;
   renderTable(
     '#top-titles-table',
     ['#', 'Program / show', 'Example titles rolled in', 'Play events', 'Total viewers'],
@@ -20017,8 +20017,8 @@ function renderTitleTables() {
       fmt.number(row.activeUsers),
     ],
   );
-  $('#top-video-period').textContent = viewership.period;
-  $('#top-video-note').textContent =
+  document.querySelector('#top-video-period').textContent = viewership.period;
+  document.querySelector('#top-video-note').textContent =
     'On-demand videos only. Live-channel (FAST/linear) viewing is excluded from this list and reported separately under Live channel usage. Individual video titles are ranked by GA4 play events, regardless of collection. Collection/show is the best available parent label inferred from GA4 channel_title or grouped title labels; blanks mean GA4 did not provide a reliable parent collection for that video.';
   renderTable(
     '#top-videos-table',
@@ -20037,7 +20037,7 @@ function renderTitleTables() {
 function renderTables() {
   const surface = data.surfaceBreakout?.currentWeek;
   if (surface) {
-    $('#surface-note').textContent = surface.note;
+    document.querySelector('#surface-note').textContent = surface.note;
     renderTable(
       '#surface-table',
       ['Surface', 'Users', 'Sessions', 'Eng. rate', 'Avg time/user'],
@@ -20053,7 +20053,7 @@ function renderTables() {
   }
   const platformTime = data.platformTime?.currentWeek;
   if (platformTime) {
-    $('#platform-time-note').textContent =
+    document.querySelector('#platform-time-note').textContent =
       'Per user = total weekly engaged time divided by active users. Per session = engaged time divided by visits/sessions.';
     renderTable(
       '#platform-time-table',
@@ -20108,14 +20108,14 @@ function contentRowLabel(row) {
 }
 
 function renderContentActivity() {
-  const readout = $('#content-readout');
+  const readout = document.querySelector('#content-readout');
   if (readout) {
     readout.innerHTML =
       'App activity is concentrated in app-lifecycle and video-playback screens: Splash, Intro, and On Demand draw the most users, ' +
       'while Live TV shows far higher events per user than any other screen — a sign of deep viewing sessions. ' +
       'Rows such as /landing, / (root), and /devices are web navigation or acquisition pages, not app platform audience.';
   }
-  const note = $('#content-note');
+  const note = document.querySelector('#content-note');
   if (note) {
     note.textContent =
       'GA4 is receiving app screen names (Splash, Intro, On Demand, PDP, Live, Player) but often not a clean page path, ' +
@@ -20143,7 +20143,7 @@ function renderContentActivity() {
 }
 
 function renderGaps() {
-  $('#gaps-list').innerHTML = data.instrumentationGaps.map((gap) => `<li>${gap}</li>`).join('');
+  document.querySelector('#gaps-list').innerHTML = data.instrumentationGaps.map((gap) => `<li>${gap}</li>`).join('');
 }
 
 function deviceLabel(device) {
@@ -20158,7 +20158,7 @@ function deviceLabel(device) {
 }
 
 function renderGoogleAds() {
-  const section = $('#google-ads');
+  const section = document.querySelector('#google-ads');
   const summary = data.googleAdsSummary;
   if (!section) return;
   if (!summary || typeof summary !== 'object') {
@@ -20167,10 +20167,10 @@ function renderGoogleAds() {
   }
   section.hidden = false;
 
-  $('#google-ads-period').textContent = summary.period || data.periods.currentWeek.range;
+  document.querySelector('#google-ads-period').textContent = summary.period || data.periods.currentWeek.range;
   const sourceLabel = summary.source || 'Google Ads connector';
   const accountBits = [summary.accountName, summary.accountId ? `account ${summary.accountId}` : null].filter(Boolean).join(' \u2014 ');
-  $('#google-ads-note').textContent =
+  document.querySelector('#google-ads-note').textContent =
     `${sourceLabel}${accountBits ? ` (${accountBits})` : ''}. This is Google Ads Android App Campaign data \u2014 pair it with GA4 viewing quality (above) to judge whether paid installs become viewers.`;
 
   const campaignCard = `
@@ -20186,7 +20186,7 @@ function renderGoogleAds() {
       </div>
     </div>
   `;
-  $('#google-ads-campaign').innerHTML = campaignCard;
+  document.querySelector('#google-ads-campaign').innerHTML = campaignCard;
 
   const kpiCards = [
     usageStat('Spend', fmt.currency(summary.cost), 'Total Google Ads spend for the period'),
@@ -20199,11 +20199,11 @@ function renderGoogleAds() {
     usageStat('Cost / conversion', fmt.currency(summary.costPerConversion), 'Spend divided by first-open conversions'),
     usageStat('All conversions', fmt.number(summary.allConversions), 'Includes secondary install / event conversions'),
   ];
-  $('#google-ads-kpis').innerHTML = kpiCards.join('');
+  document.querySelector('#google-ads-kpis').innerHTML = kpiCards.join('');
 
   const devices = Array.isArray(summary.deviceBreakout) ? summary.deviceBreakout : [];
   const totalImpressions = devices.reduce((sum, row) => sum + (toFiniteNumber(row.impressions) || 0), 0) || 1;
-  $('#google-ads-devices').innerHTML = devices
+  document.querySelector('#google-ads-devices').innerHTML = devices
     .map((row) => {
       const impressions = toFiniteNumber(row.impressions) || 0;
       const share = (impressions / totalImpressions) * 100;
@@ -20230,7 +20230,7 @@ function renderGoogleAds() {
     .join('');
 
   const actions = Array.isArray(summary.conversionActions) ? summary.conversionActions : [];
-  $('#google-ads-actions').innerHTML = actions
+  document.querySelector('#google-ads-actions').innerHTML = actions
     .map((row) => `
       <div class="google-ads-action-row">
         <header>
@@ -20244,7 +20244,7 @@ function renderGoogleAds() {
 
   const plain = summary.plainEnglish ||
     'Google Ads is the spend-side picture for the Android App Campaign. Read it next to GA4 to see whether paid installs become viewers, not just installers.';
-  $('#google-ads-plain').textContent = plain;
+  document.querySelector('#google-ads-plain').textContent = plain;
 }
 
 function ensureMetaAdsSection() {
@@ -20252,7 +20252,7 @@ function ensureMetaAdsSection() {
   if (section) return section;
   const googleAds = document.getElementById('google-ads');
   if (!googleAds) return null;
-  const sideNav = $('.side-nav');
+  const sideNav = document.querySelector('.side-nav');
   if (sideNav && !sideNav.querySelector('a[href="#meta-ads"]')) {
     const gaLink = sideNav.querySelector('a[href="#google-ads"]');
     const link = document.createElement('a');
@@ -20306,10 +20306,10 @@ function renderMetaAds() {
   }
   section.hidden = false;
 
-  const periodChip = $('#meta-ads-period');
+  const periodChip = document.querySelector('#meta-ads-period');
   if (periodChip) periodChip.textContent = summary.period || 'Latest Meta report';
 
-  const noteEl = $('#meta-ads-note');
+  const noteEl = document.querySelector('#meta-ads-note');
   if (noteEl) {
     noteEl.textContent =
       `${summary.source || 'Meta Ads via Forge One email report'}. ` +
@@ -20372,11 +20372,11 @@ function renderMetaAds() {
     usageStat('Total downloads', fmt.number(summary.totalDownloads), exactInt(summary.totalDownloads) ? `iOS + Android attributed to Meta · Exact: ${exactInt(summary.totalDownloads)}` : 'iOS + Android downloads attributed to Meta', exactInt(summary.totalDownloads) ? `Exact total downloads: ${exactInt(summary.totalDownloads)}` : ''),
     usageStat('Cost / download', blendedDisplay, 'Blended Meta cost per download (spend ÷ total downloads)', blendedCost === null ? '' : `Blended cost per download $${blendedCost.toFixed(4)}`),
   ];
-  const kpisEl = $('#meta-ads-kpis');
+  const kpisEl = document.querySelector('#meta-ads-kpis');
   if (kpisEl) kpisEl.innerHTML = kpiCards.join('');
 
   const campaigns = Array.isArray(summary.campaigns) ? summary.campaigns : [];
-  const campaignsEl = $('#meta-ads-campaigns');
+  const campaignsEl = document.querySelector('#meta-ads-campaigns');
   if (campaignsEl) {
     campaignsEl.innerHTML = campaigns.map((row, index) => `
       <div class="google-ads-action-row">
@@ -20390,7 +20390,7 @@ function renderMetaAds() {
   }
 
   const genders = Array.isArray(summary.genderBreakdown) ? summary.genderBreakdown : [];
-  const genderEl = $('#meta-ads-gender');
+  const genderEl = document.querySelector('#meta-ads-gender');
   if (genderEl) {
     genderEl.innerHTML = genders.map((row) => {
       const label = String(row.gender || 'unknown');
@@ -20409,7 +20409,7 @@ function renderMetaAds() {
 
   const ages = Array.isArray(summary.ageBreakdown) ? summary.ageBreakdown : [];
   const totalAgeSpend = ages.reduce((sum, row) => sum + (toFiniteNumber(row.spend) || 0), 0) || 1;
-  const ageEl = $('#meta-ads-age');
+  const ageEl = document.querySelector('#meta-ads-age');
   if (ageEl) {
     ageEl.innerHTML = ages.map((row) => {
       const spend = toFiniteNumber(row.spend) || 0;
@@ -20431,11 +20431,11 @@ function renderMetaAds() {
     }).join('');
   }
 
-  const interpEl = $('#meta-ads-interp');
+  const interpEl = document.querySelector('#meta-ads-interp');
   if (interpEl) interpEl.textContent = summary.paidAcquisitionInterpretation || '';
-  const plainEl = $('#meta-ads-plain');
+  const plainEl = document.querySelector('#meta-ads-plain');
   if (plainEl) plainEl.textContent = summary.plainEnglish || '';
-  const distEl = $('#meta-ads-distinction');
+  const distEl = document.querySelector('#meta-ads-distinction');
   if (distEl) {
     distEl.textContent = `${summary.inAppAdsDistinction || ''} ${summary.doubleCountingNote || ''}`.trim();
   }
@@ -20447,7 +20447,7 @@ function ensureYouTubeSection() {
   // Anchor after Meta Ads when present, otherwise after Google Ads.
   const anchor = document.getElementById('meta-ads') || document.getElementById('google-ads');
   if (!anchor) return null;
-  const sideNav = $('.side-nav');
+  const sideNav = document.querySelector('.side-nav');
   if (sideNav && !sideNav.querySelector('a[href="#youtube"]')) {
     const refLink = sideNav.querySelector('a[href="#meta-ads"]') || sideNav.querySelector('a[href="#google-ads"]');
     const link = document.createElement('a');
@@ -20501,10 +20501,10 @@ function renderYouTube() {
   }
   section.hidden = false;
 
-  const periodChip = $('#youtube-period');
+  const periodChip = document.querySelector('#youtube-period');
   if (periodChip) periodChip.textContent = `${summary.period} · latest available`;
 
-  const noteEl = $('#youtube-note');
+  const noteEl = document.querySelector('#youtube-note');
   if (noteEl) {
     noteEl.textContent =
       [summary.source, summary.periodNote, summary.comparisonNote].filter(Boolean).join(' ') + ' ' +
@@ -20552,7 +20552,7 @@ function renderYouTube() {
       detail: summary.ytdFreshnessNote || summary.ytdNote || 'Separate YouTube ad income; not TVOD sales',
     });
   }
-  const kpisEl = $('#youtube-kpis');
+  const kpisEl = document.querySelector('#youtube-kpis');
   if (kpisEl) {
     kpisEl.innerHTML = kpis
       .map((card) => usageStat(card.label, ytCardValue(card), `${card.detail}${ytDelta(card) ? ` · ${ytDelta(card)}` : ''}`))
@@ -20560,7 +20560,7 @@ function renderYouTube() {
   }
 
   const daily = Array.isArray(summary.dailyTrend) ? summary.dailyTrend : [];
-  const dailyEl = $('#youtube-daily');
+  const dailyEl = document.querySelector('#youtube-daily');
   if (dailyEl) {
     dailyEl.innerHTML = `
       <table>
@@ -20580,7 +20580,7 @@ function renderYouTube() {
   }
 
   const videos = Array.isArray(summary.topVideos) ? summary.topVideos : (Array.isArray(summary.topVideosCurrentPeriod) ? summary.topVideosCurrentPeriod : []);
-  const videosEl = $('#youtube-top-videos');
+  const videosEl = document.querySelector('#youtube-top-videos');
   if (videosEl) {
     videosEl.innerHTML = `
       <table>
@@ -20618,12 +20618,12 @@ function renderYouTube() {
         </div>`;
     }).join('');
   }
-  const trafficEl = $('#youtube-traffic');
+  const trafficEl = document.querySelector('#youtube-traffic');
   if (trafficEl) trafficEl.innerHTML = ytShareRows(summary.trafficSources);
-  const devicesEl = $('#youtube-devices');
+  const devicesEl = document.querySelector('#youtube-devices');
   if (devicesEl) devicesEl.innerHTML = ytShareRows(summary.deviceSplit);
 
-  const distEl = $('#youtube-distinction');
+  const distEl = document.querySelector('#youtube-distinction');
   if (distEl) distEl.textContent = summary.distinctionNote || '';
 }
 
@@ -20633,7 +20633,7 @@ function ensureUsGeographySection() {
   // Anchor after YouTube when present, otherwise after Meta/Google Ads.
   const anchor = document.getElementById('youtube') || document.getElementById('meta-ads') || document.getElementById('google-ads');
   if (!anchor) return null;
-  const sideNav = $('.side-nav');
+  const sideNav = document.querySelector('.side-nav');
   if (sideNav && !sideNav.querySelector('a[href="#us-geography"]')) {
     const refLink = sideNav.querySelector('a[href="#youtube"]') || sideNav.querySelector('a[href="#meta-ads"]') || sideNav.querySelector('a[href="#google-ads"]');
     const link = document.createElement('a');
@@ -20695,11 +20695,11 @@ function renderUsGeography() {
   }
   section.hidden = false;
 
-  const eyebrow = $('#us-geography-eyebrow');
+  const eyebrow = document.querySelector('#us-geography-eyebrow');
   if (eyebrow) eyebrow.textContent = geo.eyebrow || 'Where the ElectricNOW app & platform is used across the United States';
-  const periodChip = $('#us-geography-period');
+  const periodChip = document.querySelector('#us-geography-period');
   if (periodChip) periodChip.textContent = geo.freshness || geo.period || '';
-  const noteEl = $('#us-geography-note');
+  const noteEl = document.querySelector('#us-geography-note');
   if (noteEl) noteEl.textContent = `Source: ${geo.source}. ${geo.summaryLine || ''}`;
 
   const stateRowsForTotals = Array.isArray(geo.states) ? geo.states : [];
@@ -20721,7 +20721,7 @@ function renderUsGeography() {
   const totalEngagementHours = toFiniteNumber(t.totalEngagementHours);
   const activeUsers = toFiniteNumber(t.activeUsers);
   const avgHoursPerUser = totalEngagementHours !== null && activeUsers !== null && activeUsers > 0 ? totalEngagementHours / activeUsers : null;
-  const kpisEl = $('#us-geography-kpis');
+  const kpisEl = document.querySelector('#us-geography-kpis');
   if (kpisEl) {
     kpisEl.innerHTML = [
       usageStat('U.S. active users', t.activeUsers, 'State-rollup GA4 active users'),
@@ -20733,7 +20733,7 @@ function renderUsGeography() {
   }
 
   // Bubble map: proportional circles positioned at approximate state locations.
-  const mapEl = $('#us-geography-map');
+  const mapEl = document.querySelector('#us-geography-map');
   if (mapEl) {
     const fallbackCoords = {
       'Alabama': [61, 46, 'AL'], 'Alaska': [7, 56, 'AK'], 'Arizona': [24, 42, 'AZ'], 'Arkansas': [56, 42, 'AR'],
@@ -20782,10 +20782,10 @@ function renderUsGeography() {
         ${bubbles}
       </svg>`;
   }
-  const mapCaption = $('#us-geography-map-caption');
+  const mapCaption = document.querySelector('#us-geography-map-caption');
   if (mapCaption) mapCaption.textContent = 'Bubble size is proportional to GA4 active users by state (directional). Hover a bubble for exact figures. Alaska and Hawaii are shown as insets at lower-left.';
 
-  const statesEl = $('#us-geography-states');
+  const statesEl = document.querySelector('#us-geography-states');
   if (statesEl) {
     const rows = geo.states.filter((s) => s.activeUsers > 0).slice(0, 12);
     statesEl.innerHTML = `
@@ -20805,7 +20805,7 @@ function renderUsGeography() {
       </table>`;
   }
 
-  const citiesEl = $('#us-geography-cities');
+  const citiesEl = document.querySelector('#us-geography-cities');
   if (citiesEl) {
     const rows = (geo.topCities || []).slice(0, 12);
     citiesEl.innerHTML = `
@@ -20825,7 +20825,7 @@ function renderUsGeography() {
       </table>`;
   }
 
-  const tzPanel = $('#us-geography-timezones');
+  const tzPanel = document.querySelector('#us-geography-timezones');
   const tz = geo.timeZoneUsage;
   if (tzPanel) {
     const tzGroups = Array.isArray(tz)
@@ -20849,13 +20849,13 @@ function renderUsGeography() {
         : [];
     if (tzGroups.length) {
       tzPanel.hidden = false;
-      const labelEl = $('#us-geography-timezones-label');
+      const labelEl = document.querySelector('#us-geography-timezones-label');
       const tzLabel = !Array.isArray(tz) && tz && tz.label
         ? tz.label
         : 'Share of U.S. app users by time-zone grouping';
       if (labelEl) labelEl.textContent = tzLabel;
       const palette = ['rgba(56,189,248,0.85)', 'rgba(129,140,248,0.85)', 'rgba(52,211,153,0.85)'];
-      const barEl = $('#us-geography-timezones-bar');
+      const barEl = document.querySelector('#us-geography-timezones-bar');
       if (barEl) {
         barEl.innerHTML = tzGroups
           .map((grp, i) => {
@@ -20864,13 +20864,13 @@ function renderUsGeography() {
           })
           .join('');
       }
-      const chipsEl = $('#us-geography-timezones-chips');
+      const chipsEl = document.querySelector('#us-geography-timezones-chips');
       if (chipsEl) {
         chipsEl.innerHTML = tzGroups
           .map((grp) => usageStat(grp.name, fmt.percent(grp.pct), `${fmt.number(grp.sessions)} ${grp.metricLabel}`))
           .join('');
       }
-      const tzCaveatEl = $('#us-geography-timezones-caveat');
+      const tzCaveatEl = document.querySelector('#us-geography-timezones-caveat');
       const tzCaveat = !Array.isArray(tz) && tz && tz.caveat
         ? tz.caveat
         : 'Time-zone groups are directional and based on GA4 state-level app usage signals.';
@@ -20880,14 +20880,14 @@ function renderUsGeography() {
     }
   }
 
-  const caveatEl = $('#us-geography-caveat');
+  const caveatEl = document.querySelector('#us-geography-caveat');
   if (caveatEl) caveatEl.textContent = geo.caveat || '';
-  const methodEl = $('#us-geography-methodology');
+  const methodEl = document.querySelector('#us-geography-methodology');
   if (methodEl) methodEl.textContent = geo.methodologyNote || '';
 }
 
 function renderTvodTitleRevenue() {
-  const section = $('#tvod-title-revenue');
+  const section = document.querySelector('#tvod-title-revenue');
   const tv = data.tvodTitleRevenue;
   if (!section || !tv) {
     if (section) section.hidden = true;
@@ -20895,8 +20895,8 @@ function renderTvodTitleRevenue() {
   }
   section.hidden = false;
   const periodLabel = tv.period || (tv.periodStart && tv.periodEnd ? `${tv.periodStart} to ${tv.periodEnd}` : tv.periodStart ? `Since ${tv.periodStart}` : 'Cumulative since launch');
-  $('#tvod-title-revenue-period').textContent = periodLabel;
-  $('#tvod-title-revenue-note').textContent = tv.periodNote || tv.note || '';
+  document.querySelector('#tvod-title-revenue-period').textContent = periodLabel;
+  document.querySelector('#tvod-title-revenue-note').textContent = tv.periodNote || tv.note || '';
 
   const ru = tv.registeredUsers || {};
   const txn = tv.transactions || {};
@@ -20934,7 +20934,7 @@ function renderTvodTitleRevenue() {
       `${fmt.number(ytd.purchases)} purchases \u00b7 ${ytd.range || 'year to date'} \u00b7 not the DotStudios weekly export above. Understates the full year: no Google Play source before Aug 7, 2026.`,
     ]);
   }
-  $('#tvod-title-revenue-summary').innerHTML = cards
+  document.querySelector('#tvod-title-revenue-summary').innerHTML = cards
     .map(([label, value, detail]) => usageStat(label, value, detail))
     .join('');
 
@@ -20981,7 +20981,7 @@ function renderTvodTitleRevenue() {
 }
 
 function renderAll() {
-  $('#trend-period').textContent =
+  document.querySelector('#trend-period').textContent =
     selectedPeriod === 'weekToDate' ? data.periods.weekToDate.range : data.periods.currentWeek.range;
   renderVisitSummary();
   renderKpis();
@@ -21007,13 +21007,13 @@ function renderAll() {
 }
 
 function setPeriodOptions() {
-  $('#period-select option[value="currentWeek"]').textContent =
+  document.querySelector('#period-select option[value="currentWeek"]').textContent =
     `${data.periods.currentWeek.range} usage`;
-  $('#period-select option[value="weekToDate"]').textContent = `${data.periods.weekToDate.range} watch`;
+  document.querySelector('#period-select option[value="weekToDate"]').textContent = `${data.periods.weekToDate.range} watch`;
 }
 
 async function loadCurrentData() {
-  const status = $('#refresh-status');
+  const status = document.querySelector('#refresh-status');
   if (HOSTED_DATA_URL) {
     try {
       const separator = HOSTED_DATA_URL.includes('?') ? '&' : '?';
@@ -21052,16 +21052,16 @@ async function loadCurrentData() {
   }
 }
 
-$('#period-select').addEventListener('change', (event) => {
+document.querySelector('#period-select').addEventListener('change', (event) => {
   selectedPeriod = event.target.value;
   renderAll();
 });
 
-const refreshButton = $('#refresh-data');
+const refreshButton = document.querySelector('#refresh-data');
 if (refreshButton) {
   refreshButton.addEventListener('click', async () => {
-    const button = $('#refresh-data');
-    const status = $('#refresh-status');
+    const button = document.querySelector('#refresh-data');
+    const status = document.querySelector('#refresh-status');
     button.disabled = true;
     button.textContent = 'Updating...';
     status.textContent = HOSTED_DATA_URL ? 'Loading hosted data' : API_BASE ? 'Pulling GA4' : 'Using bundled dashboard data';
@@ -21086,7 +21086,7 @@ if (refreshButton) {
     _enPurgeLiveFromOnDemand(data);
       _enPurgeLiveFromOnDemand(data);
       selectedPeriod = 'currentWeek';
-      $('#period-select').value = selectedPeriod;
+      document.querySelector('#period-select').value = selectedPeriod;
       setPeriodOptions();
       renderAll();
       status.textContent = `Updated ${data.generatedAt}`;
@@ -21100,9 +21100,9 @@ if (refreshButton) {
   });
 }
 
-$('#plain-toggle').addEventListener('click', () => {
-  const panel = $('#plain-panel');
-  const button = $('#plain-toggle');
+document.querySelector('#plain-toggle').addEventListener('click', () => {
+  const panel = document.querySelector('#plain-panel');
+  const button = document.querySelector('#plain-toggle');
   const isVisible = panel.classList.toggle('is-visible');
   button.classList.toggle('is-active', isVisible);
   button.setAttribute('aria-expanded', String(isVisible));
