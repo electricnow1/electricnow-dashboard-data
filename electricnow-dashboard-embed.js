@@ -20923,6 +20923,17 @@ function renderTvodTitleRevenue() {
   if (revenueOverview.activeSubscribers != null) {
     cards.splice(3, 0, ['Active subscribers', fmt.number(revenueOverview.activeSubscribers), 'DotStudios Revenue Overview card']);
   }
+  // Year-to-date sales, surfaced here at the user's request. Labelled as ALL
+  // visible platform sources, not DotStudios, because every other card in this
+  // grid is the single-week DotStudios export.
+  const ytd = (data.salesSummary || {}).yearToDate;
+  if (ytd && ytd.purchaseRevenue != null) {
+    cards.push([
+      'Total sales year to date \u00b7 all visible sources',
+      fmt.currency(ytd.purchaseRevenue),
+      `${fmt.number(ytd.purchases)} purchases \u00b7 ${ytd.range || 'year to date'} \u00b7 not the DotStudios weekly export above. Understates the full year: no Google Play source before Aug 7, 2026.`,
+    ]);
+  }
   $('#tvod-title-revenue-summary').innerHTML = cards
     .map(([label, value, detail]) => usageStat(label, value, detail))
     .join('');
