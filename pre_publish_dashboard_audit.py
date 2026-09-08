@@ -75,6 +75,37 @@ def row_date(row: dict[str, Any]) -> datetime | None:
     return None
 
 
+
+def extract_js_functions(src: str) -> dict[str, str]:
+    """Map top-level `function name(` bodies (brace-matched) for parity checks."""
+    out: dict[str, str] = {}
+    for m in re.finditer(r"^(?:async )?function (\w+)\s*\(", src, re.M):
+        name, i = m.group(1), m.start()
+        j = src.find("{", i)
+        depth, k = 0, j
+        while k < len(src):
+            c = src[k]
+            if c == "{":
+                depth += 1
+            elif c == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            k += 1
+        out[name] = src[i:k + 1]
+    return out
+
+
+def manifest_for_parity(project_dir: Path) -> dict | None:
+    mp = project_dir / "published_artifacts.json"
+    if not mp.exists():
+        return None
+    try:
+        return json.loads(mp.read_text(encoding="utf-8")).get("rendererParity")
+    except json.JSONDecodeError:
+        return None
+
+
 def add(checks: list[Check], name: str, ok: bool, detail: str, severity: str = "error") -> None:
     checks.append(Check(name=name, status="pass" if ok else "fail", detail=detail, severity=severity))
 
@@ -1311,6 +1342,35 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
             embed_src.strip() in cbs_src,
             "code-block fallback must embed the embed.js renderer verbatim so the two "
             "cannot drift apart; regenerate with build_codeblock_safe.py")
+
+    # ---- Renderer parity: preview page (app.js) vs shareable ----------------
+    # 2026-09-08: the preview site was deployed from app.js, which the manifest
+    # itself listed as never-deployed, so it was never rendered by the gate. It
+    # had drifted from the shareable renderer and threw on object-wrapped
+    # {rows} data, blanking every section after "Where people are active".
+    # Every shared top-level function must now be identical (whitespace-
+    # normalised) except the explicitly allowed live-filter helpers.
+    parity = manifest_for_parity(project_dir)
+    if parity:
+        ref_path = project_dir / parity["reference"]
+        allowed = set(parity.get("allowedDifferences", []))
+        if not ref_path.exists():
+            add(checks, "renderer_parity_all_renderers", False, f"parity reference missing: {ref_path.name}")
+        else:
+            fr = extract_js_functions(ref_path.read_text(errors="ignore"))
+            for other in parity.get("compare", []):
+                o_path = project_dir / other
+                name = f"renderer_parity_{re.sub(r'[^a-z0-9]+', '_', Path(other).stem.lower())}_vs_embed"
+                if not o_path.exists():
+                    add(checks, name, False, f"parity target missing: {other}")
+                    continue
+                fo = extract_js_functions(o_path.read_text(errors="ignore"))
+                drift = sorted(n for n in fr if n in fo and n not in allowed
+                               and re.sub(r"\s+", " ", fr[n]) != re.sub(r"\s+", " ", fo[n]))
+                missing = sorted(n for n in fr if n not in fo and not n.startswith("_en"))
+                add(checks, name, not drift and not missing,
+                    f"{other} vs {ref_path.name}: {len(fo)} / {len(fr)} functions; "
+                    f"drifted={drift or 'none'}; missing={missing or 'none'}")
 
     # ---- The gate must have demonstrated it can fail ----------------------
     selftest_path = project_dir / "audit_selftest_result.json"

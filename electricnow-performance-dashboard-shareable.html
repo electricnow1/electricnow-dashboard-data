@@ -12181,11 +12181,11 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "key": "onDemandStartUsers",
           "label": "On-demand start users",
           "baseline": 1195,
-          "launchBaseline": 1069,
+          "launchBaseline": 674,
           "previousWeek": 1195,
           "current": 1221,
           "deltaPct": 2.1757322175732217,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 81.15727002967358,
           "deltaVsPreviousPct": 2.1757322175732217,
           "deltaType": "percent",
           "format": "number",
@@ -12200,17 +12200,18 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
           "definition": "Users with a video_start event where channel_title is NOT a live/FAST channel.",
-          "launchBaselineNote": "Launch-week value used the Live screen; from Sep 7, 2026 this card uses channel titles from live_channels.json, so the launch comparison is suppressed."
+          "launchBaselineOldDefinition": 1069,
+          "launchBaselineDefinitionNote": "Launch-week value (Apr 13-19, 2026) re-pulled from GA4 on Sep 8, 2026 with the same live/FAST channel_title roster used for this week's value, so the launch comparison is like-for-like. Internal GA4 pull, property 497892271."
         },
         {
           "key": "liveChannelViewers",
           "label": "Live channel viewers",
           "baseline": 526,
-          "launchBaseline": 121,
+          "launchBaseline": 452,
           "previousWeek": 526,
           "current": 539,
           "deltaPct": 2.4714828897338403,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 19.24778761061947,
           "deltaVsPreviousPct": 2.4714828897338403,
           "deltaType": "percent",
           "format": "number",
@@ -12225,7 +12226,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
           "definition": "Users with a video_start event on a live/FAST channel title.",
-          "launchBaselineNote": "Launch-week value used the Live screen; from Sep 7, 2026 this card uses channel titles from live_channels.json, so the launch comparison is suppressed."
+          "launchBaselineOldDefinition": 121,
+          "launchBaselineDefinitionNote": "Launch-week value (Apr 13-19, 2026) re-pulled from GA4 on Sep 8, 2026 with the same live/FAST channel_title roster used for this week's value, so the launch comparison is like-for-like. Internal GA4 pull, property 497892271."
         },
         {
           "key": "videoCompleteUsers",
@@ -12255,15 +12257,15 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "key": "livePlayEvents",
           "label": "Live play events",
           "baseline": 5807,
-          "launchBaseline": 3952,
+          "launchBaseline": 11700,
           "previousWeek": 5807,
           "current": 5153,
           "deltaPct": -11.262269674530739,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": -55.95726495726496,
           "deltaVsPreviousPct": -11.262269674530739,
           "deltaType": "percent",
           "format": "number",
-          "context": "play + video_play + video_start event counts on live/FAST channel titles. Live/FAST channels come from live_channels.json (57 names). Internal GA4 pull, property 497892271.",
+          "context": "play + video_play + video_start event counts on live/FAST channel titles. Live/FAST channels come from live_channels.json (57 names). Internal GA4 pull, property 497892271. Launch comparison uses the same roster definition (Apr 13-19, 2026 re-pulled Sep 8, 2026); at launch the app fired far more 'play' events per live session, so video_start (4,039 launch vs 3,546 now) is the steadier like-for-like signal.",
           "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 5807,
           "currentWeek": 5153,
@@ -12274,7 +12276,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
           "definition": "play + video_play + video_start event counts on live/FAST channel titles.",
-          "launchBaselineNote": "Launch-week value used the Live screen; from Sep 7, 2026 this card uses channel titles from live_channels.json, so the launch comparison is suppressed."
+          "launchBaselineOldDefinition": 3952,
+          "launchBaselineDefinitionNote": "Launch-week value (Apr 13-19, 2026) re-pulled from GA4 on Sep 8, 2026 with the same live/FAST channel_title roster used for this week's value, so the launch comparison is like-for-like. Internal GA4 pull, property 497892271. Caveat: launch week logged 7,661 'play' events on live channels versus 1,607 this week, so most of the drop is the app firing fewer 'play' events per session. Live video_start alone was 4,039 at launch vs 3,546 this week (-12%)."
         },
         {
           "key": "adRequestEvents",
@@ -19137,7 +19140,52 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "topChannelTitles": []
       }
     }
-  ]
+  ],
+  "launchBaselineMeta": {
+    "liveRosterRepull": {
+      "pulledAt": "2026-09-08T08:45:00-07:00",
+      "launchWeek": "Apr 13-19, 2026",
+      "rosterNamesQueried": 53,
+      "liveRows": {
+        "play": [
+          460,
+          7661
+        ],
+        "video_start": [
+          452,
+          4039
+        ],
+        "video_complete": [
+          1,
+          21
+        ]
+      },
+      "onDemandRows": {
+        "play": [
+          684,
+          13842
+        ],
+        "video_start": [
+          674,
+          6109
+        ],
+        "video_play": [
+          253,
+          3147
+        ],
+        "ads_request": [
+          242,
+          7762
+        ],
+        "video_complete": [
+          173,
+          2097
+        ]
+      },
+      "source": "Internal GA4 pull, property 497892271",
+      "note": "Launch-week value (Apr 13-19, 2026) re-pulled from GA4 on Sep 8, 2026 with the same live/FAST channel_title roster used for this week's value, so the launch comparison is like-for-like. Internal GA4 pull, property 497892271."
+    }
+  }
 }
 
 let data = window.DASHBOARD_DATA || window.ELECTRICNOW_DASHBOARD_DATA;
@@ -19288,8 +19336,8 @@ function valueForCard(card) {
 }
 
 function deltaText(card, value) {
-  if (card.deltaType === 'points') return fmt.points(value);
-  return fmt.delta(value);
+  if (card.deltaType === 'minutes') return fmt.minuteDelta(value);
+  return card.deltaType === 'points' ? fmt.points(value) : fmt.delta(value);
 }
 
 // The launch-baseline comparison divides by the card's launchBaseline value.
@@ -19637,11 +19685,11 @@ function renderPurchases() {
       ${sourceBreakout ? `<ul class="sales-source-list">${sourceBreakout}</ul>` : ''}
     </div>
     <div class="sales-stat-grid">
-      ${yearToDate ? `<div class="sales-stat sales-stat-ytd" id="sales-ytd-card">
+      ${sales.yearToDate ? `<div class="sales-stat sales-stat-ytd" id="sales-ytd-card">
         <span>Sales year to date</span>
-        <strong>${fmt.currency(yearToDate.purchaseRevenue)}</strong>
-        <em>${escapeHtml(yearToDate.range || '')} · ${fmt.number(yearToDate.purchases)} purchases</em>
-        <em class="sales-stat-footnote">${escapeHtml(yearToDate.caveat || yearToDate.note || '')}</em>
+        <strong>${fmt.currency(sales.yearToDate.purchaseRevenue)}</strong>
+        <em>${escapeHtml(sales.yearToDate.range || '')} · ${fmt.number(sales.yearToDate.purchases)} purchases</em>
+        <em class="sales-stat-footnote">${escapeHtml(sales.yearToDate.caveat || sales.yearToDate.note || '')}</em>
       </div>` : ''}
       <div class="sales-stat baseline-set">
         <span>Latest Stripe source check</span>
@@ -20185,7 +20233,7 @@ function renderTitleTables() {
   document.querySelector('#top-title-note').textContent = viewership.note;
   renderTable(
     '#top-titles-table',
-    ['#', 'Program / show', 'Example titles rolled in', 'Video starts', 'Total viewers'],
+    ['#', 'Program / show', 'Example titles rolled in', 'Play events', 'Total viewers'],
     viewership.topPrograms || viewership.topVideoTitles,
     (row) => [
       `<strong>${row.rank}</strong>`,
@@ -20197,10 +20245,10 @@ function renderTitleTables() {
   );
   document.querySelector('#top-video-period').textContent = viewership.period;
   document.querySelector('#top-video-note').textContent =
-    viewership.topVideoTitlesNote || viewership.note || 'On-demand videos only. Live-channel (FAST/linear) viewing is excluded from this list and reported separately under Live channel usage.';
+    'On-demand videos only. Live-channel (FAST/linear) viewing is excluded from this list and reported separately under Live channel usage. Individual video titles are ranked by GA4 play events, regardless of collection. Collection/show is the best available parent label inferred from GA4 channel_title or grouped title labels; blanks mean GA4 did not provide a reliable parent collection for that video.';
   renderTable(
     '#top-videos-table',
-    ['#', 'Collection / show', 'GA4 title / season label', 'Video starts', 'Total viewers'],
+    ['#', 'Collection / show', 'Individual video', 'Play events', 'Total viewers'],
     viewership.topVideoTitles || [],
     (row) => [
       `<strong>${row.rank}</strong>`,
@@ -20548,7 +20596,7 @@ function renderMetaAds() {
     usageStat('Android downloads', fmt.number(summary.androidDownloads), countDetail(deltas.androidDownloadsPct, exactInt(summary.androidDownloads), 'Play Store installs attributed to Meta'), exactInt(summary.androidDownloads) ? `Exact Android downloads: ${exactInt(summary.androidDownloads)}` : ''),
     usageStat('Cost / Android download', fmt.currency(summary.costPerAndroidDownload), deltaLabel(deltas.costPerAndroidDownloadPct) || 'Meta spend divided by Android downloads'),
     usageStat('Total downloads', fmt.number(summary.totalDownloads), exactInt(summary.totalDownloads) ? `iOS + Android attributed to Meta · Exact: ${exactInt(summary.totalDownloads)}` : 'iOS + Android downloads attributed to Meta', exactInt(summary.totalDownloads) ? `Exact total downloads: ${exactInt(summary.totalDownloads)}` : ''),
-    usageStat('Cost / download', blendedDisplay, 'Blended Meta cost per download (spend ÷ total downloads)', blendedCost === null ? '' : `Blended cost per download ${blendedCost.toFixed(4)}`),
+    usageStat('Cost / download', blendedDisplay, 'Blended Meta cost per download (spend ÷ total downloads)', blendedCost === null ? '' : `Blended cost per download $${blendedCost.toFixed(4)}`),
   ];
   const kpisEl = document.querySelector('#meta-ads-kpis');
   if (kpisEl) kpisEl.innerHTML = kpiCards.join('');
@@ -21101,16 +21149,15 @@ function renderTvodTitleRevenue() {
   if (revenueOverview.activeSubscribers != null) {
     cards.splice(3, 0, ['Active subscribers', fmt.number(revenueOverview.activeSubscribers), 'DotStudios Revenue Overview card']);
   }
-  // Year-to-date sales, surfaced here at the user's request. It is deliberately
-  // labelled as ALL visible platform sources, not DotStudios, because every
-  // other card in this grid is the single-week DotStudios export and this one
-  // is a Jan-to-date blend of Stripe, Apple, Roku and DotStudios.
+  // Year-to-date sales, surfaced here at the user's request. Labelled as ALL
+  // visible platform sources, not DotStudios, because every other card in this
+  // grid is the single-week DotStudios export.
   const ytd = (data.salesSummary || {}).yearToDate;
   if (ytd && ytd.purchaseRevenue != null) {
     cards.push([
-      'Total sales year to date · all visible sources',
+      'Total sales year to date \u00b7 all visible sources',
       fmt.currency(ytd.purchaseRevenue),
-      `${fmt.number(ytd.purchases)} purchases · ${ytd.range || 'year to date'} · not the DotStudios weekly export above. Understates the full year: no Google Play source before Aug 7, 2026.`,
+      `${fmt.number(ytd.purchases)} purchases \u00b7 ${ytd.range || 'year to date'} \u00b7 not the DotStudios weekly export above. Understates the full year: no Google Play source before Aug 7, 2026.`,
     ]);
   }
   document.querySelector('#tvod-title-revenue-summary').innerHTML = cards
@@ -21296,6 +21343,7 @@ document.querySelector('#plain-toggle').addEventListener('click', () => {
 });
 
 if (data) {
+  setPeriodOptions(); // bundled-data path must label the period selector too (2026-09-08 preview defect)
   renderAll();
 }
 loadCurrentData();
