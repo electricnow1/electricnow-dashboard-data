@@ -15,7 +15,7 @@
   appendFontLink('stylesheet', 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
   const style = document.createElement('style');
-  style.textContent = "#electricnow-dashboard-embed {\n  --bg: #050a12;\n  --surface: #0a1524;\n  --surface-2: #0f2138;\n  --surface-3: #132b48;\n  --border: rgba(255, 255, 255, 0.11);\n  --border-strong: rgba(255, 255, 255, 0.18);\n  --text: #f6f9ff;\n  --muted: #9fb3ca;\n  --faint: #667f9d;\n  --primary: #2f81d7;\n  --primary-2: #68b7ff;\n  --good: #69d895;\n  --bad: #ff6f85;\n  --warn: #ffc857;\n  --shadow: 0 22px 70px rgba(0, 0, 0, 0.42);\n  --radius: 14px;\n  --radius-sm: 10px;\n  --font-ui: 'Inter', system-ui, sans-serif;\n  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;\n  --embed-top-buffer: 32px;\n}\n#electricnow-dashboard-embed *,\n#electricnow-dashboard-embed *::before,\n#electricnow-dashboard-embed *::after {\n  box-sizing: border-box;\n}\n#electricnow-dashboard-embed,\n#electricnow-dashboard-embed {\n  min-height: 100%;\n  max-width: 100%;\n  overflow-x: hidden;\n}\n#electricnow-dashboard-embed {\n  margin: 0;\n  background:\n    radial-gradient(circle at 12% 12%, rgba(47, 129, 215, 0.22), transparent 26rem),\n    radial-gradient(circle at 88% 18%, rgba(104, 183, 255, 0.12), transparent 28rem),\n    var(--bg);\n  color: var(--text);\n  font-family: var(--font-ui);\n  font-size: 15px;\n  line-height: 1.45;\n  overflow-x: hidden;\n}\n#electricnow-dashboard-embed,\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n  background:\n    radial-gradient(circle at 12% 12%, rgba(47, 129, 215, 0.22), transparent 26rem),\n    radial-gradient(circle at 88% 18%, rgba(104, 183, 255, 0.12), transparent 28rem),\n    var(--bg) !important;\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed a {\n  color: inherit !important;\n}\n#electricnow-dashboard-embed button,\n#electricnow-dashboard-embed select {\n  font: inherit;\n}\n#electricnow-dashboard-embed .skip-link {\n  position: fixed;\n  left: 16px;\n  top: 16px;\n  z-index: 1000;\n  transform: translateY(-160%);\n  background: var(--primary);\n  color: #fff;\n  padding: 10px 14px;\n  border-radius: 999px;\n}\n#electricnow-dashboard-embed .skip-link:focus {\n  transform: translateY(0);\n}\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n  max-width: 100vw;\n  overflow-x: hidden;\n  display: grid;\n  grid-template-columns: 280px minmax(0, 1fr);\n  grid-template-rows: minmax(104px, auto) minmax(0, 1fr);\n  min-height: 100vh;\n  padding-top: var(--embed-top-buffer);\n}\n#electricnow-dashboard-embed .sidebar {\n  grid-row: 1 / -1;\n  position: sticky;\n  top: var(--embed-top-buffer);\n  height: calc(100vh - var(--embed-top-buffer));\n  display: flex;\n  flex-direction: column;\n  gap: 24px;\n  border-right: 1px solid var(--border);\n  background: #050a12 !important;\n  padding: 24px;\n  overflow-y: auto;\n  overscroll-behavior: contain;\n}\n#electricnow-dashboard-embed .brand {\n  display: grid;\n  grid-template-columns: 48px 1fr;\n  gap: 12px;\n  align-items: center;\n  text-decoration: none;\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed .brand-mark {\n  width: 48px;\n  border-radius: 4px;\n  background: linear-gradient(135deg, #2367b2, #d9ebff);\n  color: #fff;\n  padding: 7px;\n}\n#electricnow-dashboard-embed .brand span {\n  display: grid;\n  gap: 0;\n}\n#electricnow-dashboard-embed .brand strong {\n  font-family: var(--font-display);\n  font-size: 25px;\n  line-height: 0.82;\n  letter-spacing: 0.22em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .brand small,\n#electricnow-dashboard-embed .source-card span,\n#electricnow-dashboard-embed .eyebrow,\n#electricnow-dashboard-embed .select-label {\n  color: var(--primary-2) !important;\n  font-family: var(--font-display);\n  font-size: 13px;\n  font-weight: 800;\n  letter-spacing: 0.13em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .side-nav {\n  display: grid;\n  gap: 6px;\n}\n#electricnow-dashboard-embed .side-nav a {\n  min-height: 42px;\n  display: flex;\n  align-items: center;\n  border-radius: var(--radius-sm);\n  color: var(--muted) !important;\n  padding: 0 12px;\n  text-decoration: none;\n}\n#electricnow-dashboard-embed .side-nav a:hover,\n#electricnow-dashboard-embed .side-nav a:focus-visible {\n  background: var(--surface-2);\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed .source-card {\n  margin-top: auto;\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  background: #0f2138 !important;\n  padding: 16px;\n}\n#electricnow-dashboard-embed .source-card strong {\n  display: block;\n  margin-top: 6px;\n}\n#electricnow-dashboard-embed .source-card p {\n  margin: 8px 0 0;\n  color: var(--muted);\n  font-size: 13px;\n  overflow-wrap: anywhere;\n}\n#electricnow-dashboard-embed .topbar {\n  position: sticky;\n  top: var(--embed-top-buffer);\n  z-index: 20;\n  display: flex;\n  align-items: flex-start;\n  justify-content: space-between;\n  gap: 16px;\n  border-bottom: 1px solid var(--border);\n  background: #070d17 !important;\n  backdrop-filter: blur(14px);\n  padding: 18px 28px;\n}\n#electricnow-dashboard-embed .topbar > div:first-child {\n  min-width: 0;\n  flex: 1 1 360px;\n}\n#electricnow-dashboard-embed .topbar h1 {\n  color: var(--text) !important;\n  margin: 2px 0 0;\n  font-family: var(--font-display);\n  font-size: clamp(26px, 2.35vw, 34px);\n  line-height: 0.98;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .topbar-actions {\n  flex: 0 1 520px;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: flex-end;\n  align-items: center;\n  gap: 10px;\n}\n#electricnow-dashboard-embed select,\n#electricnow-dashboard-embed .ghost-button {\n  min-height: 42px;\n  border: 1px solid var(--border-strong);\n  border-radius: 999px;\n  background: #0f2138 !important;\n  color: var(--text) !important;\n  padding: 0 14px;\n}\n#electricnow-dashboard-embed .ghost-button {\n  cursor: pointer;\n}\n#electricnow-dashboard-embed .ghost-button:disabled {\n  cursor: wait;\n  opacity: 0.55;\n}\n#electricnow-dashboard-embed .refresh-button {\n  border-color: rgba(104, 183, 255, 0.42);\n}\n#electricnow-dashboard-embed .refresh-status {\n  min-width: 130px;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .ghost-button.is-active,\n#electricnow-dashboard-embed .ghost-button:hover {\n  background: var(--primary);\n  border-color: var(--primary);\n}\n#electricnow-dashboard-embed .main {\n  padding: 28px 28px 96px;\n  min-width: 0;\n  background: #050a12 !important;\n}\n#electricnow-dashboard-embed .hero-panel,\n#electricnow-dashboard-embed .panel,\n#electricnow-dashboard-embed .plain-panel,\n#electricnow-dashboard-embed .kpi-card {\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  background:\n    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0)),\n    #0a1524 !important;\n  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);\n}\n#electricnow-dashboard-embed .hero-panel {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr) 260px;\n  align-items: end;\n  gap: 24px;\n  background:\n    linear-gradient(135deg, rgba(47, 129, 215, 0.28), rgba(10, 21, 36, 0.96) 55%),\n    #0a1524 !important;\n  padding: clamp(24px, 4vw, 42px);\n}\n#electricnow-dashboard-embed .hero-panel h2,\n#electricnow-dashboard-embed .plain-panel h2,\n#electricnow-dashboard-embed .panel h2 {\n  color: var(--text) !important;\n  margin: 4px 0 0;\n  font-family: var(--font-display);\n  font-size: clamp(25px, 3vw, 34px);\n  line-height: 1.08;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .panel h3,\n#electricnow-dashboard-embed .subsection-header h3 {\n  color: var(--text) !important;\n  margin: 18px 0 10px;\n  font-family: var(--font-display);\n  font-size: 22px;\n  line-height: 0.95;\n  letter-spacing: 0.05em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .subsection-header {\n  margin-top: 28px;\n  border-top: 1px solid var(--border);\n  padding-top: 20px;\n}\n#electricnow-dashboard-embed .panel-note {\n  margin: 0 0 16px;\n  color: var(--muted);\n  font-size: 13px;\n  max-width: 860px;\n}\n#electricnow-dashboard-embed .topbar h1,\n#electricnow-dashboard-embed .hero-panel h2,\n#electricnow-dashboard-embed .plain-panel h2,\n#electricnow-dashboard-embed .panel h2,\n#electricnow-dashboard-embed .panel h3,\n#electricnow-dashboard-embed .subsection-header h3 {\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed .eyebrow,\n#electricnow-dashboard-embed .select-label,\n#electricnow-dashboard-embed .source-card span,\n#electricnow-dashboard-embed .brand small {\n  color: var(--primary-2) !important;\n}\n#electricnow-dashboard-embed .hero-panel p {\n  max-width: 72ch;\n  margin: 14px 0 0;\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .hero-meta {\n  display: grid;\n  gap: 4px;\n  justify-items: end;\n  color: var(--muted);\n  text-align: right;\n}\n#electricnow-dashboard-embed .hero-meta strong {\n  color: var(--text);\n}\n#electricnow-dashboard-embed .visit-strip {\n  display: grid;\n  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);\n  gap: 16px;\n  margin-top: 18px;\n  border: 1px solid var(--border-strong);\n  border-radius: var(--radius);\n  background:\n    linear-gradient(135deg, rgba(47, 129, 215, 0.20), rgba(10, 21, 36, 0.96)),\n    var(--surface);\n  box-shadow: var(--shadow);\n  padding: 20px;\n}\n#electricnow-dashboard-embed .visit-strip-header h2 {\n  margin: 2px 0 8px;\n  color: var(--text);\n  font-family: var(--font-display);\n  font-size: clamp(26px, 3vw, 38px);\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .visit-strip-header p:not(.eyebrow),\n#electricnow-dashboard-embed .visit-source,\n#electricnow-dashboard-embed .visit-card p {\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .visit-card-grid {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 12px;\n}\n#electricnow-dashboard-embed .visit-card {\n  display: grid;\n  gap: 10px;\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(5, 10, 18, 0.46);\n  padding: 16px;\n}\n#electricnow-dashboard-embed .visit-card span {\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 13px;\n  font-weight: 800;\n  letter-spacing: 0.13em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .visit-card strong {\n  color: var(--text);\n  font-family: var(--font-display);\n  font-size: clamp(42px, 5vw, 64px);\n  line-height: 0.9;\n  letter-spacing: 0.02em;\n}\n#electricnow-dashboard-embed .visit-card-meta {\n  display: grid;\n  gap: 6px;\n  align-items: start;\n}\n#electricnow-dashboard-embed .visit-card small {\n  display: block;\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .visit-card-meta .delta {\n  display: inline-flex;\n  width: fit-content;\n  max-width: 100%;\n  white-space: normal;\n}\n#electricnow-dashboard-embed .visit-card p,\n#electricnow-dashboard-embed .visit-source {\n  margin: 0;\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .visit-source {\n  grid-column: 1 / -1;\n}\n#electricnow-dashboard-embed .plain-panel {\n  display: none;\n  grid-template-columns: 240px 1fr;\n  gap: 24px;\n  margin-top: 18px;\n  padding: 20px;\n}\n#electricnow-dashboard-embed .plain-panel.is-visible {\n  display: grid;\n}\n#electricnow-dashboard-embed .plain-panel:focus {\n  outline: 2px solid rgba(104, 183, 255, 0.75);\n  outline-offset: 4px;\n}\n#electricnow-dashboard-embed .plain-panel ul {\n  display: grid;\n  gap: 10px;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n#electricnow-dashboard-embed .plain-panel li,\n#electricnow-dashboard-embed .gap-list li {\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .plain-panel li.insight-overview {\n  color: var(--text);\n  font-size: 1.03rem;\n  line-height: 1.55;\n}\n#electricnow-dashboard-embed .kpi-grid {\n  display: grid;\n  gap: 18px;\n  margin-top: 18px;\n}\n#electricnow-dashboard-embed .kpi-group {\n  border: 1px solid var(--border);\n  border-radius: 18px;\n  background: #08111e !important;\n  padding: 16px;\n  box-shadow: var(--shadow);\n}\n#electricnow-dashboard-embed .kpi-group-header {\n  display: flex;\n  align-items: flex-start;\n  justify-content: space-between;\n  gap: 18px;\n  margin-bottom: 12px;\n}\n#electricnow-dashboard-embed .kpi-group-header h3 {\n  margin: 0;\n  color: var(--text) !important;\n  font-family: var(--font-display);\n  font-size: 23px;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .kpi-group-header > p {\n  max-width: 620px;\n  margin: 0;\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .kpi-group-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));\n  gap: 12px;\n}\n#electricnow-dashboard-embed .kpi-card {\n  min-height: 320px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  padding: 16px;\n}\n#electricnow-dashboard-embed .kpi-card span,\n#electricnow-dashboard-embed .metric-row span,\n#electricnow-dashboard-embed .table-wrap th {\n  color: var(--faint);\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .kpi-card span {\n  min-height: 32px;\n  display: block;\n}\n#electricnow-dashboard-embed .kpi-card strong {\n  display: block;\n  margin-top: 8px;\n  font-family: var(--font-display);\n  font-size: 34px;\n  line-height: 0.95;\n  letter-spacing: 0.03em;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .kpi-card p {\n  margin: 12px 0 0;\n  color: var(--muted);\n  font-size: 12px;\n  line-height: 1.4;\n}\n#electricnow-dashboard-embed .kpi-compare-grid {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr) auto;\n  gap: 8px;\n  align-items: center;\n  margin-top: 14px;\n  border-top: 1px solid var(--border);\n  padding-top: 12px;\n}\n#electricnow-dashboard-embed .kpi-compare-grid small {\n  color: var(--faint);\n  font-size: 11px;\n  font-weight: 700;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .delta {\n  display: inline-flex;\n  align-self: flex-start;\n  margin-top: 12px;\n  border-radius: 999px;\n  background: rgba(255, 255, 255, 0.06);\n  color: var(--muted);\n  padding: 4px 8px;\n  font-size: 12px;\n  font-weight: 700;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .delta.up {\n  color: var(--good);\n}\n#electricnow-dashboard-embed .delta.down {\n  color: var(--bad);\n}\n#electricnow-dashboard-embed .delta.baseline-unavailable {\n  color: var(--muted);\n  font-weight: 600;\n  font-style: italic;\n}\n#electricnow-dashboard-embed .dashboard-grid {\n  display: grid;\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n  gap: 18px;\n  margin-top: 18px;\n}\n#electricnow-dashboard-embed .span-4 {\n  grid-column: span 4;\n}\n#electricnow-dashboard-embed .span-6 {\n  grid-column: span 6;\n}\n#electricnow-dashboard-embed .span-8 {\n  grid-column: span 8;\n}\n#electricnow-dashboard-embed .panel {\n  min-width: 0;\n  padding: 18px;\n}\n#electricnow-dashboard-embed .panel-header {\n  display: flex;\n  justify-content: space-between;\n  gap: 16px;\n  align-items: start;\n  margin-bottom: 16px;\n}\n#electricnow-dashboard-embed .period-chip {\n  border: 1px solid var(--border);\n  border-radius: 999px;\n  color: var(--muted);\n  padding: 6px 10px;\n  font-size: 12px;\n  white-space: nowrap;\n}\n#electricnow-dashboard-embed .chart-wrap,\n#electricnow-dashboard-embed .mini-chart-wrap {\n  width: 100%;\n  overflow: hidden;\n}\n#electricnow-dashboard-embed .chart-wrap + h3 {\n  margin-top: 24px;\n}\n#electricnow-dashboard-embed .chart-legend {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px 18px;\n  margin-top: 12px;\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .chart-note {\n  margin: 10px 0 0;\n  padding: 10px 12px;\n  border-left: 3px solid var(--warn);\n  background: rgba(255, 255, 255, 0.03);\n  border-radius: 8px;\n  color: var(--muted);\n  font-size: 13px;\n  line-height: 1.5;\n}\n#electricnow-dashboard-embed .chart-note:empty {\n  display: none;\n}\n#electricnow-dashboard-embed .chart-legend span {\n  display: inline-flex;\n  gap: 7px;\n  align-items: center;\n}\n#electricnow-dashboard-embed .legend-swatch {\n  width: 22px;\n  height: 4px;\n  border-radius: 999px;\n  display: inline-block;\n}\n#electricnow-dashboard-embed .legend-blue {\n  background: var(--primary-2);\n}\n#electricnow-dashboard-embed .legend-green {\n  background: var(--good);\n}\n#electricnow-dashboard-embed svg {\n  width: 100%;\n  height: auto;\n}\n#electricnow-dashboard-embed .axis {\n  stroke: rgba(255, 255, 255, 0.12);\n}\n#electricnow-dashboard-embed .chart-label {\n  fill: var(--muted);\n  font-size: 12px;\n  font-family: var(--font-ui);\n}\n#electricnow-dashboard-embed .chart-end-label {\n  font-family: var(--font-ui);\n  font-size: 12px;\n  font-weight: 800;\n  paint-order: stroke;\n  stroke: var(--surface);\n  stroke-width: 4px;\n}\n#electricnow-dashboard-embed .active-end {\n  fill: var(--primary-2);\n}\n#electricnow-dashboard-embed .engaged-end {\n  fill: var(--good);\n}\n#electricnow-dashboard-embed .line-active {\n  fill: none;\n  stroke: var(--primary-2);\n  stroke-width: 4;\n}\n#electricnow-dashboard-embed .line-engaged {\n  fill: none;\n  stroke: var(--good);\n  stroke-width: 4;\n}\n#electricnow-dashboard-embed .line-purchase {\n  fill: none;\n  stroke: var(--warn);\n  stroke-width: 4;\n}\n#electricnow-dashboard-embed .area-fill {\n  fill: rgba(104, 183, 255, 0.12);\n}\n#electricnow-dashboard-embed .purchase-summary {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .sales-summary {\n  display: grid;\n  gap: 14px;\n  margin-bottom: 16px;\n}\n#electricnow-dashboard-embed .sales-callout {\n  border: 1px solid rgba(255, 200, 87, 0.28);\n  border-radius: var(--radius-sm);\n  background: linear-gradient(135deg, rgba(255, 200, 87, 0.15), rgba(47, 129, 215, 0.1));\n  padding: 14px;\n}\n#electricnow-dashboard-embed .sales-callout-secondary {\n  border-color: rgba(56, 189, 248, 0.34);\n  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(129, 140, 248, 0.1));\n}\n#electricnow-dashboard-embed .sales-callout span,\n#electricnow-dashboard-embed .sales-stat span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-callout strong {\n  display: block;\n  margin-top: 5px;\n  font-family: var(--font-display);\n  font-size: 30px;\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-callout p,\n#electricnow-dashboard-embed .sales-note,\n#electricnow-dashboard-embed .sales-source,\n#electricnow-dashboard-embed .sales-stat em {\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .sales-callout p,\n#electricnow-dashboard-embed .sales-source,\n#electricnow-dashboard-embed .sales-note {\n  margin: 8px 0 0;\n}\n#electricnow-dashboard-embed .sales-source {\n  border-left: 2px solid rgba(104, 183, 255, 0.45);\n  padding-left: 10px;\n}\n#electricnow-dashboard-embed .sales-source-list {\n  display: grid;\n  gap: 6px;\n  margin: 14px 0 0;\n  padding: 0;\n  list-style: none;\n}\n#electricnow-dashboard-embed .sales-source-list li {\n  display: flex;\n  justify-content: space-between;\n  gap: 14px;\n  padding: 8px 0;\n  border-top: 1px solid rgba(255, 255, 255, 0.08);\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .sales-source-list li strong {\n  color: var(--text);\n  font-size: 12px;\n  text-align: right;\n}\n#electricnow-dashboard-embed .sales-stat-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  gap: 10px;\n}\n#electricnow-dashboard-embed .sales-stat {\n  min-width: 0;\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.58);\n  padding: 12px;\n}\n#electricnow-dashboard-embed .sales-stat strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 26px;\n  line-height: 1;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-stat.baseline-set strong {\n  color: var(--good);\n  font-size: 24px;\n}\n#electricnow-dashboard-embed .sales-stat.sales-stat-ytd {\n  border-color: rgba(104, 183, 255, 0.55);\n  background: rgba(20, 46, 78, 0.85);\n}\n#electricnow-dashboard-embed .sales-stat.sales-stat-ytd span {\n  color: #68b7ff;\n}\n#electricnow-dashboard-embed .sales-stat.sales-stat-ytd strong {\n  color: #ffffff;\n  font-size: 28px;\n}\n#electricnow-dashboard-embed .sales-stat-footnote {\n  display: block;\n  margin-top: 4px;\n  font-size: 10px;\n  line-height: 1.3;\n  opacity: 0.85;\n}\n#electricnow-dashboard-embed .sales-audit-recent {\n  border-color: rgba(255, 197, 66, 0.4);\n}\n#electricnow-dashboard-embed .sales-audit {\n  border: 1px solid rgba(104, 183, 255, 0.34);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.72);\n  padding: 14px;\n}\n#electricnow-dashboard-embed .sales-audit span {\n  display: block;\n  color: var(--warn);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-audit strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 28px;\n  line-height: 1;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-audit p,\n#electricnow-dashboard-embed .sales-audit small {\n  display: block;\n  margin: 8px 0 0;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .purchase-row,\n#electricnow-dashboard-embed .metric-row {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  gap: 12px;\n  align-items: center;\n  border-bottom: 1px solid var(--border);\n  padding-block: 10px;\n}\n#electricnow-dashboard-embed .purchase-row:last-child,\n#electricnow-dashboard-embed .metric-row:last-child {\n  border-bottom: 0;\n}\n#electricnow-dashboard-embed .purchase-row strong,\n#electricnow-dashboard-embed .metric-row strong {\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .not-tracked {\n  color: var(--warn);\n}\n#electricnow-dashboard-embed .purchase-point-label {\n  fill: var(--text);\n  font-size: 11px;\n  font-weight: 700;\n}\n#electricnow-dashboard-embed .metric-list {\n  display: grid;\n}\n#electricnow-dashboard-embed .usage-card-grid {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 10px;\n  margin-bottom: 18px;\n}\n#electricnow-dashboard-embed .roku-engagement-grid {\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  margin-bottom: 0;\n}\n#electricnow-dashboard-embed .usage-stat {\n  border: 1px solid rgba(104, 183, 255, 0.18);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.52);\n  padding: 14px;\n}\n#electricnow-dashboard-embed .usage-stat span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .usage-stat strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 32px;\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .usage-stat em {\n  display: block;\n  margin-top: 5px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .platform-mix {\n  display: grid;\n  gap: 14px;\n  margin-bottom: 18px;\n}\n#electricnow-dashboard-embed .platform-total {\n  border: 1px solid rgba(104, 183, 255, 0.22);\n  border-radius: var(--radius-sm);\n  background: linear-gradient(135deg, rgba(47, 129, 215, 0.18), rgba(15, 33, 56, 0.45));\n  padding: 14px;\n}\n#electricnow-dashboard-embed .platform-total span,\n#electricnow-dashboard-embed .coming-platforms span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .platform-total strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 36px;\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n}\n#electricnow-dashboard-embed .platform-total em,\n#electricnow-dashboard-embed .platform-share-card span,\n#electricnow-dashboard-embed .platform-share-card p,\n#electricnow-dashboard-embed .platform-note {\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .platform-share-list {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .section-usage-list {\n  display: grid;\n  grid-template-columns: repeat(5, minmax(0, 1fr));\n  gap: 12px;\n}\n#electricnow-dashboard-embed .section-usage-card {\n  min-width: 0;\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.62);\n  padding: 14px;\n}\n#electricnow-dashboard-embed .section-usage-card header {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .section-usage-card span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.13em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .section-usage-card strong,\n#electricnow-dashboard-embed .section-usage-card b {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  line-height: 0.98;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .section-usage-card strong {\n  font-size: 28px;\n}\n#electricnow-dashboard-embed .section-usage-card b {\n  color: var(--good);\n  font-size: 18px;\n  text-align: left;\n  white-space: normal;\n}\n#electricnow-dashboard-embed .section-metrics {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 8px;\n  margin-top: 12px;\n}\n#electricnow-dashboard-embed .section-metrics em {\n  border: 1px solid rgba(255, 255, 255, 0.08);\n  border-radius: 999px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n  padding: 5px 8px;\n}\n#electricnow-dashboard-embed .section-usage-card p {\n  margin: 12px 0 0;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .platform-share-card {\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.52);\n  padding: 12px;\n}\n#electricnow-dashboard-embed .platform-share-card.is-untracked {\n  border-style: dashed;\n  background: rgba(255, 199, 95, 0.08);\n}\n#electricnow-dashboard-embed .platform-share-card header {\n  display: flex;\n  justify-content: space-between;\n  gap: 16px;\n  align-items: start;\n}\n#electricnow-dashboard-embed .platform-share-card strong,\n#electricnow-dashboard-embed .platform-share-card b {\n  color: var(--text) !important;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .platform-share-card strong {\n  display: block;\n}\n#electricnow-dashboard-embed .platform-share-card b {\n  font-family: var(--font-display);\n  font-size: 24px;\n  line-height: 1;\n}\n#electricnow-dashboard-embed .platform-share-card.is-untracked b {\n  color: var(--warn) !important;\n}\n#electricnow-dashboard-embed .share-track {\n  height: 9px;\n  margin-top: 10px;\n  border-radius: 999px;\n  background: rgba(255, 255, 255, 0.08);\n  overflow: hidden;\n}\n#electricnow-dashboard-embed .share-fill {\n  height: 100%;\n  border-radius: inherit;\n  background: linear-gradient(90deg, var(--primary), var(--primary-2));\n}\n#electricnow-dashboard-embed .platform-share-card p {\n  margin: 8px 0 0;\n}\n#electricnow-dashboard-embed .compact-card {\n  padding: 10px;\n}\n#electricnow-dashboard-embed .compact-card header {\n  align-items: center;\n}\n#electricnow-dashboard-embed .compact-card b {\n  font-size: 20px;\n}\n#electricnow-dashboard-embed .coming-platforms {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  align-items: center;\n  border-top: 1px solid var(--border);\n  padding-top: 12px;\n}\n#electricnow-dashboard-embed .coming-platforms span {\n  margin-right: 4px;\n}\n#electricnow-dashboard-embed .coming-platforms em {\n  border: 1px solid var(--border);\n  border-radius: 999px;\n  color: var(--muted);\n  padding: 4px 9px;\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .platform-note {\n  margin: 0 0 16px;\n}\n#electricnow-dashboard-embed .bar-list {\n  display: grid;\n  gap: 13px;\n}\n#electricnow-dashboard-embed .bar-row {\n  display: grid;\n  gap: 7px;\n}\n#electricnow-dashboard-embed .bar-row header {\n  display: flex;\n  justify-content: space-between;\n  gap: 12px;\n}\n#electricnow-dashboard-embed .bar-row span {\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .bar-track {\n  height: 9px;\n  border-radius: 999px;\n  background: rgba(255, 255, 255, 0.08);\n  overflow: hidden;\n}\n#electricnow-dashboard-embed .bar-fill {\n  height: 100%;\n  border-radius: inherit;\n  background: linear-gradient(90deg, var(--primary), var(--primary-2));\n}\n#electricnow-dashboard-embed .table-wrap {\n  overflow-x: auto;\n  max-width: 100%;\n}\n#electricnow-dashboard-embed table {\n  width: 100%;\n  border-collapse: collapse;\n  min-width: 520px;\n}\n#electricnow-dashboard-embed .title-table table {\n  min-width: 720px;\n}\n#electricnow-dashboard-embed th,\n#electricnow-dashboard-embed td {\n  border-bottom: 1px solid var(--border);\n  padding: 10px 8px;\n  text-align: left;\n  vertical-align: top;\n}\n#electricnow-dashboard-embed td {\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed td strong {\n  color: var(--text);\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .gap-list {\n  display: grid;\n  gap: 10px;\n  margin: 0;\n  padding-left: 18px;\n}\n#electricnow-dashboard-embed :focus-visible {\n  outline: 2px solid var(--primary-2);\n  outline-offset: 3px;\n}\n@media (max-width: 1180px) {\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n    grid-template-columns: 1fr;\n    grid-template-rows: auto auto 1fr;\n  }\n#electricnow-dashboard-embed .sidebar {\n    position: static;\n    height: auto;\n    grid-row: auto;\n  }\n#electricnow-dashboard-embed .side-nav {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n#electricnow-dashboard-embed .source-card {\n    margin-top: 0;\n  }\n#electricnow-dashboard-embed .kpi-grid {\n    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  }\n#electricnow-dashboard-embed .section-usage-list {\n    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  }\n\n\n}\n@media (max-width: 820px) {\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n    overflow-x: hidden;\n  }\n#electricnow-dashboard-embed .sidebar,\n#electricnow-dashboard-embed .topbar,\n#electricnow-dashboard-embed .main {\n    min-width: 0;\n    width: 100%;\n  }\n#electricnow-dashboard-embed .topbar,\n#electricnow-dashboard-embed .hero-panel,\n#electricnow-dashboard-embed .visit-strip,\n#electricnow-dashboard-embed .plain-panel {\n    grid-template-columns: 1fr;\n  }\n#electricnow-dashboard-embed .plain-panel.is-visible {\n    margin: 18px 0 22px;\n    border-color: rgba(104, 183, 255, 0.62);\n    background:\n      linear-gradient(135deg, rgba(47, 129, 215, 0.22), rgba(10, 21, 36, 0.96) 48%),\n      #0a1524 !important;\n    box-shadow: 0 0 0 1px rgba(104, 183, 255, 0.16), 0 18px 48px rgba(0, 0, 0, 0.28);\n    scroll-margin-top: 14px;\n  }\n#electricnow-dashboard-embed .topbar {\n    align-items: stretch;\n  }\n#electricnow-dashboard-embed .topbar-actions {\n    justify-content: flex-start;\n  }\n#electricnow-dashboard-embed .kpi-group-header {\n    display: block;\n  }\n#electricnow-dashboard-embed .kpi-group-header > p {\n    margin-top: 8px;\n  }\n#electricnow-dashboard-embed .hero-meta {\n    justify-items: start;\n    text-align: left;\n  }\n#electricnow-dashboard-embed .main {\n    padding: 16px;\n  }\n#electricnow-dashboard-embed .kpi-grid,\n#electricnow-dashboard-embed .dashboard-grid,\n#electricnow-dashboard-embed .visit-card-grid,\n#electricnow-dashboard-embed .section-usage-list,\n#electricnow-dashboard-embed .side-nav {\n    grid-template-columns: 1fr;\n  }\n#electricnow-dashboard-embed .source-card {\n    max-width: 100%;\n  }\n#electricnow-dashboard-embed .span-4,\n#electricnow-dashboard-embed .span-6,\n#electricnow-dashboard-embed .span-8 {\n    grid-column: auto;\n  }\n\n\n}\n@media (max-width: 520px) {\n#electricnow-dashboard-embed .sidebar {\n    padding: 20px 16px;\n  }\n#electricnow-dashboard-embed .brand {\n    grid-template-columns: 48px minmax(0, 1fr);\n  }\n#electricnow-dashboard-embed .brand strong {\n    font-size: 23px;\n    letter-spacing: 0.18em;\n  }\n#electricnow-dashboard-embed .topbar-actions {\n    display: grid;\n    grid-template-columns: 1fr;\n    justify-items: stretch;\n  }\n#electricnow-dashboard-embed select,\n#electricnow-dashboard-embed .ghost-button {\n    width: 100%;\n    max-width: 100%;\n  }\n#electricnow-dashboard-embed .kpi-grid {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n#electricnow-dashboard-embed /* ===== Google Ads section ===== */\n.google-ads-panel .panel-note {\n  margin-bottom: 14px;\n}\n#electricnow-dashboard-embed .google-ads-campaign {\n  margin-bottom: 16px;\n}\n#electricnow-dashboard-embed .google-ads-campaign-card {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 18px;\n  justify-content: space-between;\n  align-items: flex-start;\n  border: 1px solid rgba(104, 183, 255, 0.22);\n  border-radius: var(--radius-sm);\n  background: linear-gradient(135deg, rgba(47, 129, 215, 0.18), rgba(15, 33, 56, 0.45));\n  padding: 14px 16px;\n}\n#electricnow-dashboard-embed .google-ads-campaign-card span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .google-ads-campaign-card strong {\n  display: block;\n  margin-top: 4px;\n  font-family: var(--font-display);\n  font-size: 20px;\n  line-height: 1.1;\n  letter-spacing: 0.02em;\n  color: var(--text);\n}\n#electricnow-dashboard-embed .google-ads-campaign-card em {\n  display: block;\n  margin-top: 4px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .google-ads-campaign-meta {\n  text-align: right;\n  min-width: 160px;\n}\n#electricnow-dashboard-embed .google-ads-kpis {\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  margin-bottom: 22px;\n}\n@media (max-width: 900px) {\n#electricnow-dashboard-embed .google-ads-kpis {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n\n}\n@media (max-width: 560px) {\n#electricnow-dashboard-embed .google-ads-kpis {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n#electricnow-dashboard-embed .google-ads-split {\n  display: grid;\n  grid-template-columns: 1.3fr 1fr;\n  gap: 20px;\n  margin-bottom: 14px;\n}\n@media (max-width: 900px) {\n#electricnow-dashboard-embed .google-ads-split {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n#electricnow-dashboard-embed .google-ads-device-list,\n#electricnow-dashboard-embed .google-ads-action-list {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .google-ads-device-row,\n#electricnow-dashboard-embed .google-ads-action-row {\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.62);\n  padding: 12px 14px;\n}\n#electricnow-dashboard-embed .google-ads-device-row header,\n#electricnow-dashboard-embed .google-ads-action-row header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .google-ads-device-row header span,\n#electricnow-dashboard-embed .google-ads-action-row header span {\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .google-ads-device-row header strong,\n#electricnow-dashboard-embed .google-ads-action-row header strong {\n  font-family: var(--font-display);\n  font-size: 18px;\n  letter-spacing: 0.02em;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .google-ads-device-row .share-track {\n  margin: 8px 0 8px;\n}\n#electricnow-dashboard-embed .google-ads-device-metrics {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 6px 14px;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .google-ads-device-metrics em {\n  font-style: normal;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .google-ads-action-row em {\n  display: block;\n  margin-top: 6px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .google-ads-context {\n  margin-top: 6px;\n  padding: 12px 14px;\n  border-left: 3px solid var(--warn);\n  background: rgba(255, 200, 87, 0.06);\n  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;\n  color: var(--text);\n}\n#electricnow-dashboard-embed .dotstudios-ads-panel {\n  border-color: rgba(104, 183, 255, 0.22);\n}\n#electricnow-dashboard-embed .dotstudios-ads-kpis {\n  margin: 16px 0 18px;\n}\n#electricnow-dashboard-embed .dotstudios-ads-caveats {\n  display: grid;\n  gap: 8px;\n  margin: 16px 0 0;\n  padding: 14px 16px 14px 30px;\n  border: 1px solid rgba(255, 200, 87, 0.22);\n  border-radius: var(--radius-sm);\n  background: rgba(255, 200, 87, 0.07);\n  color: var(--muted);\n  font-size: 12px;\n  line-height: 1.45;\n}\n#electricnow-dashboard-embed .dotstudios-ads-caveats li::marker {\n  color: var(--primary-2);\n}\n#electricnow-dashboard-embed /* US audience geography section */\n.us-geo-map-wrap {\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.5);\n  padding: 16px;\n  margin: 14px 0;\n}\n#electricnow-dashboard-embed .us-geo-map svg {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n#electricnow-dashboard-embed .us-geo-map-bg {\n  fill: rgba(10, 21, 36, 0.6);\n  stroke: var(--border);\n  stroke-width: 0.3;\n}\n#electricnow-dashboard-embed .us-geo-bubble circle {\n  transition: opacity 0.15s ease;\n}\n#electricnow-dashboard-embed .us-geo-bubble:hover circle {\n  opacity: 0.85;\n  stroke-width: 0.6;\n}\n#electricnow-dashboard-embed .us-geo-bubble-label {\n  fill: var(--text);\n  font-family: var(--font-ui);\n  font-size: 2px;\n  font-weight: 700;\n  pointer-events: none;\n}\n#electricnow-dashboard-embed .us-geo-map-caption {\n  color: var(--faint);\n  font-size: 12px;\n  margin: 10px 2px 0;\n}\n#electricnow-dashboard-embed .us-geo-tables {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 20px;\n  margin-bottom: 14px;\n}\n@media (max-width: 900px) {\n#electricnow-dashboard-embed .us-geo-tables {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n\n";
+  style.textContent = "#electricnow-dashboard-embed {\n  --bg: #050a12;\n  --surface: #0a1524;\n  --surface-2: #0f2138;\n  --surface-3: #132b48;\n  --border: rgba(255, 255, 255, 0.11);\n  --border-strong: rgba(255, 255, 255, 0.18);\n  --text: #f6f9ff;\n  --muted: #9fb3ca;\n  --faint: #667f9d;\n  --primary: #2f81d7;\n  --primary-2: #68b7ff;\n  --good: #69d895;\n  --bad: #ff6f85;\n  --warn: #ffc857;\n  --shadow: 0 22px 70px rgba(0, 0, 0, 0.42);\n  --radius: 14px;\n  --radius-sm: 10px;\n  --font-ui: 'Inter', system-ui, sans-serif;\n  --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;\n  --embed-top-buffer: 32px;\n}\n#electricnow-dashboard-embed *,\n#electricnow-dashboard-embed *::before,\n#electricnow-dashboard-embed *::after {\n  box-sizing: border-box;\n}\n#electricnow-dashboard-embed,\n#electricnow-dashboard-embed {\n  min-height: 100%;\n  max-width: 100%;\n  overflow-x: hidden;\n}\n#electricnow-dashboard-embed {\n  margin: 0;\n  background:\n    radial-gradient(circle at 12% 12%, rgba(47, 129, 215, 0.22), transparent 26rem),\n    radial-gradient(circle at 88% 18%, rgba(104, 183, 255, 0.12), transparent 28rem),\n    var(--bg);\n  color: var(--text);\n  font-family: var(--font-ui);\n  font-size: 15px;\n  line-height: 1.45;\n  overflow-x: hidden;\n}\n#electricnow-dashboard-embed,\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n  background:\n    radial-gradient(circle at 12% 12%, rgba(47, 129, 215, 0.22), transparent 26rem),\n    radial-gradient(circle at 88% 18%, rgba(104, 183, 255, 0.12), transparent 28rem),\n    var(--bg) !important;\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed a {\n  color: inherit !important;\n}\n#electricnow-dashboard-embed button,\n#electricnow-dashboard-embed select {\n  font: inherit;\n}\n#electricnow-dashboard-embed .skip-link {\n  position: fixed;\n  left: 16px;\n  top: 16px;\n  z-index: 1000;\n  transform: translateY(-160%);\n  background: var(--primary);\n  color: #fff;\n  padding: 10px 14px;\n  border-radius: 999px;\n}\n#electricnow-dashboard-embed .skip-link:focus {\n  transform: translateY(0);\n}\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n  max-width: 100vw;\n  overflow-x: hidden;\n  display: grid;\n  grid-template-columns: 280px minmax(0, 1fr);\n  grid-template-rows: minmax(104px, auto) minmax(0, 1fr);\n  min-height: 100vh;\n  padding-top: var(--embed-top-buffer);\n}\n#electricnow-dashboard-embed .sidebar {\n  grid-row: 1 / -1;\n  position: sticky;\n  top: var(--embed-top-buffer);\n  height: calc(100vh - var(--embed-top-buffer));\n  display: flex;\n  flex-direction: column;\n  gap: 24px;\n  border-right: 1px solid var(--border);\n  background: #050a12 !important;\n  padding: 24px;\n  overflow-y: auto;\n  overscroll-behavior: contain;\n}\n#electricnow-dashboard-embed .brand {\n  display: grid;\n  grid-template-columns: 48px 1fr;\n  gap: 12px;\n  align-items: center;\n  text-decoration: none;\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed .brand-mark {\n  width: 48px;\n  border-radius: 4px;\n  background: linear-gradient(135deg, #2367b2, #d9ebff);\n  color: #fff;\n  padding: 7px;\n}\n#electricnow-dashboard-embed .brand span {\n  display: grid;\n  gap: 0;\n}\n#electricnow-dashboard-embed .brand strong {\n  font-family: var(--font-display);\n  font-size: 25px;\n  line-height: 0.82;\n  letter-spacing: 0.22em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .brand small,\n#electricnow-dashboard-embed .source-card span,\n#electricnow-dashboard-embed .eyebrow,\n#electricnow-dashboard-embed .select-label {\n  color: var(--primary-2) !important;\n  font-family: var(--font-display);\n  font-size: 13px;\n  font-weight: 800;\n  letter-spacing: 0.13em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .side-nav {\n  display: grid;\n  gap: 6px;\n}\n#electricnow-dashboard-embed .side-nav a {\n  min-height: 42px;\n  display: flex;\n  align-items: center;\n  border-radius: var(--radius-sm);\n  color: var(--muted) !important;\n  padding: 0 12px;\n  text-decoration: none;\n}\n#electricnow-dashboard-embed .side-nav a:hover,\n#electricnow-dashboard-embed .side-nav a:focus-visible {\n  background: var(--surface-2);\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed .source-card {\n  margin-top: auto;\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  background: #0f2138 !important;\n  padding: 16px;\n}\n#electricnow-dashboard-embed .source-card strong {\n  display: block;\n  margin-top: 6px;\n}\n#electricnow-dashboard-embed .source-card p {\n  margin: 8px 0 0;\n  color: var(--muted);\n  font-size: 13px;\n  overflow-wrap: anywhere;\n}\n#electricnow-dashboard-embed .topbar {\n  position: sticky;\n  top: var(--embed-top-buffer);\n  z-index: 20;\n  display: flex;\n  align-items: flex-start;\n  justify-content: space-between;\n  gap: 16px;\n  border-bottom: 1px solid var(--border);\n  background: #070d17 !important;\n  backdrop-filter: blur(14px);\n  padding: 18px 28px;\n}\n#electricnow-dashboard-embed .topbar > div:first-child {\n  min-width: 0;\n  flex: 1 1 360px;\n}\n#electricnow-dashboard-embed .topbar h1 {\n  color: var(--text) !important;\n  margin: 2px 0 0;\n  font-family: var(--font-display);\n  font-size: clamp(26px, 2.35vw, 34px);\n  line-height: 0.98;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .topbar-actions {\n  flex: 0 1 520px;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: flex-end;\n  align-items: center;\n  gap: 10px;\n}\n#electricnow-dashboard-embed select,\n#electricnow-dashboard-embed .ghost-button {\n  min-height: 42px;\n  border: 1px solid var(--border-strong);\n  border-radius: 999px;\n  background: #0f2138 !important;\n  color: var(--text) !important;\n  padding: 0 14px;\n}\n#electricnow-dashboard-embed .ghost-button {\n  cursor: pointer;\n}\n#electricnow-dashboard-embed .ghost-button:disabled {\n  cursor: wait;\n  opacity: 0.55;\n}\n#electricnow-dashboard-embed .refresh-button {\n  border-color: rgba(104, 183, 255, 0.42);\n}\n#electricnow-dashboard-embed .refresh-status {\n  min-width: 130px;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .ghost-button.is-active,\n#electricnow-dashboard-embed .ghost-button:hover {\n  background: var(--primary);\n  border-color: var(--primary);\n}\n#electricnow-dashboard-embed .main {\n  padding: 28px 28px 96px;\n  min-width: 0;\n  background: #050a12 !important;\n}\n#electricnow-dashboard-embed .hero-panel,\n#electricnow-dashboard-embed .panel,\n#electricnow-dashboard-embed .plain-panel,\n#electricnow-dashboard-embed .kpi-card {\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  background:\n    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0)),\n    #0a1524 !important;\n  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);\n}\n#electricnow-dashboard-embed .hero-panel {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr) 260px;\n  align-items: end;\n  gap: 24px;\n  background:\n    linear-gradient(135deg, rgba(47, 129, 215, 0.28), rgba(10, 21, 36, 0.96) 55%),\n    #0a1524 !important;\n  padding: clamp(24px, 4vw, 42px);\n}\n#electricnow-dashboard-embed .hero-panel h2,\n#electricnow-dashboard-embed .plain-panel h2,\n#electricnow-dashboard-embed .panel h2 {\n  color: var(--text) !important;\n  margin: 4px 0 0;\n  font-family: var(--font-display);\n  font-size: clamp(25px, 3vw, 34px);\n  line-height: 1.08;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .panel h3,\n#electricnow-dashboard-embed .subsection-header h3 {\n  color: var(--text) !important;\n  margin: 18px 0 10px;\n  font-family: var(--font-display);\n  font-size: 22px;\n  line-height: 0.95;\n  letter-spacing: 0.05em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .subsection-header {\n  margin-top: 28px;\n  border-top: 1px solid var(--border);\n  padding-top: 20px;\n}\n#electricnow-dashboard-embed .panel-note {\n  margin: 0 0 16px;\n  color: var(--muted);\n  font-size: 13px;\n  max-width: 860px;\n}\n#electricnow-dashboard-embed .topbar h1,\n#electricnow-dashboard-embed .hero-panel h2,\n#electricnow-dashboard-embed .plain-panel h2,\n#electricnow-dashboard-embed .panel h2,\n#electricnow-dashboard-embed .panel h3,\n#electricnow-dashboard-embed .subsection-header h3 {\n  color: var(--text) !important;\n}\n#electricnow-dashboard-embed .eyebrow,\n#electricnow-dashboard-embed .select-label,\n#electricnow-dashboard-embed .source-card span,\n#electricnow-dashboard-embed .brand small {\n  color: var(--primary-2) !important;\n}\n#electricnow-dashboard-embed .hero-panel p {\n  max-width: 72ch;\n  margin: 14px 0 0;\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .hero-meta {\n  display: grid;\n  gap: 4px;\n  justify-items: end;\n  color: var(--muted);\n  text-align: right;\n}\n#electricnow-dashboard-embed .hero-meta strong {\n  color: var(--text);\n}\n#electricnow-dashboard-embed .visit-strip {\n  display: grid;\n  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);\n  gap: 16px;\n  margin-top: 18px;\n  border: 1px solid var(--border-strong);\n  border-radius: var(--radius);\n  background:\n    linear-gradient(135deg, rgba(47, 129, 215, 0.20), rgba(10, 21, 36, 0.96)),\n    var(--surface);\n  box-shadow: var(--shadow);\n  padding: 20px;\n}\n#electricnow-dashboard-embed .visit-strip-header h2 {\n  margin: 2px 0 8px;\n  color: var(--text);\n  font-family: var(--font-display);\n  font-size: clamp(26px, 3vw, 38px);\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .visit-strip-header p:not(.eyebrow),\n#electricnow-dashboard-embed .visit-source,\n#electricnow-dashboard-embed .visit-card p {\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .visit-card-grid {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 12px;\n}\n#electricnow-dashboard-embed .visit-card {\n  display: grid;\n  gap: 10px;\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(5, 10, 18, 0.46);\n  padding: 16px;\n}\n#electricnow-dashboard-embed .visit-card span {\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 13px;\n  font-weight: 800;\n  letter-spacing: 0.13em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .visit-card strong {\n  color: var(--text);\n  font-family: var(--font-display);\n  font-size: clamp(42px, 5vw, 64px);\n  line-height: 0.9;\n  letter-spacing: 0.02em;\n}\n#electricnow-dashboard-embed .visit-card-meta {\n  display: grid;\n  gap: 6px;\n  align-items: start;\n}\n#electricnow-dashboard-embed .visit-card small {\n  display: block;\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .visit-card-meta .delta {\n  display: inline-flex;\n  width: fit-content;\n  max-width: 100%;\n  white-space: normal;\n}\n#electricnow-dashboard-embed .visit-card p,\n#electricnow-dashboard-embed .visit-source {\n  margin: 0;\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .visit-source {\n  grid-column: 1 / -1;\n}\n#electricnow-dashboard-embed .plain-panel {\n  display: none;\n  grid-template-columns: 240px 1fr;\n  gap: 24px;\n  margin-top: 18px;\n  padding: 20px;\n}\n#electricnow-dashboard-embed .plain-panel.is-visible {\n  display: grid;\n}\n#electricnow-dashboard-embed .plain-panel:focus {\n  outline: 2px solid rgba(104, 183, 255, 0.75);\n  outline-offset: 4px;\n}\n#electricnow-dashboard-embed .plain-panel ul {\n  display: grid;\n  gap: 10px;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n#electricnow-dashboard-embed .plain-panel li,\n#electricnow-dashboard-embed .gap-list li {\n  color: var(--muted);\n}\n#electricnow-dashboard-embed .plain-panel li.insight-overview {\n  color: var(--text);\n  font-size: 1.03rem;\n  line-height: 1.55;\n}\n#electricnow-dashboard-embed .kpi-grid {\n  display: grid;\n  gap: 18px;\n  margin-top: 18px;\n}\n#electricnow-dashboard-embed .kpi-group {\n  border: 1px solid var(--border);\n  border-radius: 18px;\n  background: #08111e !important;\n  padding: 16px;\n  box-shadow: var(--shadow);\n}\n#electricnow-dashboard-embed .kpi-group-header {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: flex-start;\n  justify-content: space-between;\n  gap: 18px;\n  margin-bottom: 12px;\n}\n#electricnow-dashboard-embed .kpi-group-header h3 {\n  margin: 0;\n  color: var(--text) !important;\n  font-family: var(--font-display);\n  font-size: 23px;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .kpi-group-header > p {\n  max-width: 620px;\n  margin: 0;\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .kpi-group-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));\n  gap: 12px;\n}\n#electricnow-dashboard-embed .kpi-card {\n  min-height: 320px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  padding: 16px;\n}\n#electricnow-dashboard-embed .kpi-card span,\n#electricnow-dashboard-embed .metric-row span,\n#electricnow-dashboard-embed .table-wrap th {\n  color: var(--faint);\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .kpi-card span {\n  min-height: 32px;\n  display: block;\n}\n#electricnow-dashboard-embed .kpi-card strong {\n  display: block;\n  margin-top: 8px;\n  font-family: var(--font-display);\n  font-size: 34px;\n  line-height: 0.95;\n  letter-spacing: 0.03em;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .kpi-card p {\n  margin: 12px 0 0;\n  color: var(--muted);\n  font-size: 12px;\n  line-height: 1.4;\n}\n#electricnow-dashboard-embed .kpi-compare-grid {\n  display: grid;\n  grid-template-columns: minmax(0, 1fr);\n  gap: 4px;\n  align-items: start;\n  justify-items: start;\n  margin-top: 14px;\n  border-top: 1px solid var(--border);\n  padding-top: 12px;\n}\n#electricnow-dashboard-embed .kpi-compare-grid small {\n  color: var(--faint);\n  font-size: 11px;\n  font-weight: 700;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .kpi-compare-grid .delta {\n  margin-top: 0;\n  margin-bottom: 6px;\n  justify-self: start;\n  max-width: 100%;\n  white-space: normal;\n  overflow-wrap: anywhere;\n}\n#electricnow-dashboard-embed .kpi-compare-grid small {\n  display: block;\n  line-height: 1.3;\n}\n\n#electricnow-dashboard-embed .delta {\n  display: inline-flex;\n  align-self: flex-start;\n  margin-top: 12px;\n  border-radius: 999px;\n  background: rgba(255, 255, 255, 0.06);\n  color: var(--muted);\n  padding: 4px 8px;\n  font-size: 12px;\n  font-weight: 700;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .delta.up {\n  color: var(--good);\n}\n#electricnow-dashboard-embed .delta.down {\n  color: var(--bad);\n}\n#electricnow-dashboard-embed .delta.baseline-unavailable {\n  color: var(--muted);\n  font-weight: 600;\n  font-style: italic;\n}\n#electricnow-dashboard-embed .dashboard-grid {\n  display: grid;\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n  gap: 18px;\n  margin-top: 18px;\n}\n#electricnow-dashboard-embed .span-4 {\n  grid-column: span 4;\n}\n#electricnow-dashboard-embed .span-6 {\n  grid-column: span 6;\n}\n#electricnow-dashboard-embed .span-8 {\n  grid-column: span 8;\n}\n#electricnow-dashboard-embed .panel {\n  min-width: 0;\n  padding: 18px;\n}\n#electricnow-dashboard-embed .panel-header {\n  display: flex;\n  justify-content: space-between;\n  gap: 16px;\n  align-items: start;\n  margin-bottom: 16px;\n}\n#electricnow-dashboard-embed .period-chip {\n  border: 1px solid var(--border);\n  border-radius: 999px;\n  color: var(--muted);\n  padding: 6px 10px;\n  font-size: 12px;\n  white-space: nowrap;\n}\n#electricnow-dashboard-embed .chart-wrap,\n#electricnow-dashboard-embed .mini-chart-wrap {\n  width: 100%;\n  overflow: hidden;\n}\n#electricnow-dashboard-embed .chart-wrap + h3 {\n  margin-top: 24px;\n}\n#electricnow-dashboard-embed .chart-legend {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px 18px;\n  margin-top: 12px;\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .chart-note {\n  margin: 10px 0 0;\n  padding: 10px 12px;\n  border-left: 3px solid var(--warn);\n  background: rgba(255, 255, 255, 0.03);\n  border-radius: 8px;\n  color: var(--muted);\n  font-size: 13px;\n  line-height: 1.5;\n}\n#electricnow-dashboard-embed .chart-note:empty {\n  display: none;\n}\n#electricnow-dashboard-embed .chart-legend span {\n  display: inline-flex;\n  gap: 7px;\n  align-items: center;\n}\n#electricnow-dashboard-embed .legend-swatch {\n  width: 22px;\n  height: 4px;\n  border-radius: 999px;\n  display: inline-block;\n}\n#electricnow-dashboard-embed .legend-blue {\n  background: var(--primary-2);\n}\n#electricnow-dashboard-embed .legend-green {\n  background: var(--good);\n}\n#electricnow-dashboard-embed svg {\n  width: 100%;\n  height: auto;\n}\n#electricnow-dashboard-embed .axis {\n  stroke: rgba(255, 255, 255, 0.12);\n}\n#electricnow-dashboard-embed .chart-label {\n  fill: var(--muted);\n  font-size: 12px;\n  font-family: var(--font-ui);\n}\n#electricnow-dashboard-embed .chart-end-label {\n  font-family: var(--font-ui);\n  font-size: 12px;\n  font-weight: 800;\n  paint-order: stroke;\n  stroke: var(--surface);\n  stroke-width: 4px;\n}\n#electricnow-dashboard-embed .active-end {\n  fill: var(--primary-2);\n}\n#electricnow-dashboard-embed .engaged-end {\n  fill: var(--good);\n}\n#electricnow-dashboard-embed .line-active {\n  fill: none;\n  stroke: var(--primary-2);\n  stroke-width: 4;\n}\n#electricnow-dashboard-embed .line-engaged {\n  fill: none;\n  stroke: var(--good);\n  stroke-width: 4;\n}\n#electricnow-dashboard-embed .line-purchase {\n  fill: none;\n  stroke: var(--warn);\n  stroke-width: 4;\n}\n#electricnow-dashboard-embed .area-fill {\n  fill: rgba(104, 183, 255, 0.12);\n}\n#electricnow-dashboard-embed .purchase-summary {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .sales-summary {\n  display: grid;\n  gap: 14px;\n  margin-bottom: 16px;\n}\n#electricnow-dashboard-embed .sales-callout {\n  border: 1px solid rgba(255, 200, 87, 0.28);\n  border-radius: var(--radius-sm);\n  background: linear-gradient(135deg, rgba(255, 200, 87, 0.15), rgba(47, 129, 215, 0.1));\n  padding: 14px;\n}\n#electricnow-dashboard-embed .sales-callout-secondary {\n  border-color: rgba(56, 189, 248, 0.34);\n  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(129, 140, 248, 0.1));\n}\n#electricnow-dashboard-embed .sales-callout span,\n#electricnow-dashboard-embed .sales-stat span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-callout strong {\n  display: block;\n  margin-top: 5px;\n  font-family: var(--font-display);\n  font-size: 30px;\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-callout p,\n#electricnow-dashboard-embed .sales-note,\n#electricnow-dashboard-embed .sales-source,\n#electricnow-dashboard-embed .sales-stat em {\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .sales-callout p,\n#electricnow-dashboard-embed .sales-source,\n#electricnow-dashboard-embed .sales-note {\n  margin: 8px 0 0;\n}\n#electricnow-dashboard-embed .sales-source {\n  border-left: 2px solid rgba(104, 183, 255, 0.45);\n  padding-left: 10px;\n}\n#electricnow-dashboard-embed .sales-source-list {\n  display: grid;\n  gap: 6px;\n  margin: 14px 0 0;\n  padding: 0;\n  list-style: none;\n}\n#electricnow-dashboard-embed .sales-source-list li {\n  display: flex;\n  justify-content: space-between;\n  gap: 14px;\n  padding: 8px 0;\n  border-top: 1px solid rgba(255, 255, 255, 0.08);\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .sales-source-list li strong {\n  color: var(--text);\n  font-size: 12px;\n  text-align: right;\n}\n#electricnow-dashboard-embed .sales-stat-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  gap: 10px;\n}\n#electricnow-dashboard-embed .sales-stat {\n  min-width: 0;\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.58);\n  padding: 12px;\n}\n#electricnow-dashboard-embed .sales-stat strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 26px;\n  line-height: 1;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-stat.baseline-set strong {\n  color: var(--good);\n  font-size: 24px;\n}\n#electricnow-dashboard-embed .sales-stat.sales-stat-ytd {\n  border-color: rgba(104, 183, 255, 0.55);\n  background: rgba(20, 46, 78, 0.85);\n}\n#electricnow-dashboard-embed .sales-stat.sales-stat-ytd span {\n  color: #68b7ff;\n}\n#electricnow-dashboard-embed .sales-stat.sales-stat-ytd strong {\n  color: #ffffff;\n  font-size: 28px;\n}\n#electricnow-dashboard-embed .sales-stat-footnote {\n  display: block;\n  margin-top: 4px;\n  font-size: 10px;\n  line-height: 1.3;\n  opacity: 0.85;\n}\n#electricnow-dashboard-embed .sales-audit-recent {\n  border-color: rgba(255, 197, 66, 0.4);\n}\n#electricnow-dashboard-embed .sales-audit {\n  border: 1px solid rgba(104, 183, 255, 0.34);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.72);\n  padding: 14px;\n}\n#electricnow-dashboard-embed .sales-audit span {\n  display: block;\n  color: var(--warn);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-audit strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 28px;\n  line-height: 1;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .sales-audit p,\n#electricnow-dashboard-embed .sales-audit small {\n  display: block;\n  margin: 8px 0 0;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .purchase-row,\n#electricnow-dashboard-embed .metric-row {\n  display: grid;\n  grid-template-columns: 1fr auto;\n  gap: 12px;\n  align-items: center;\n  border-bottom: 1px solid var(--border);\n  padding-block: 10px;\n}\n#electricnow-dashboard-embed .purchase-row:last-child,\n#electricnow-dashboard-embed .metric-row:last-child {\n  border-bottom: 0;\n}\n#electricnow-dashboard-embed .purchase-row strong,\n#electricnow-dashboard-embed .metric-row strong {\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .not-tracked {\n  color: var(--warn);\n}\n#electricnow-dashboard-embed .purchase-point-label {\n  fill: var(--text);\n  font-size: 11px;\n  font-weight: 700;\n}\n#electricnow-dashboard-embed .metric-list {\n  display: grid;\n}\n#electricnow-dashboard-embed .usage-card-grid {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 10px;\n  margin-bottom: 18px;\n}\n#electricnow-dashboard-embed .roku-engagement-grid {\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  margin-bottom: 0;\n}\n#electricnow-dashboard-embed .usage-stat {\n  border: 1px solid rgba(104, 183, 255, 0.18);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.52);\n  padding: 14px;\n}\n#electricnow-dashboard-embed .usage-stat span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .usage-stat strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 32px;\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .usage-stat em {\n  display: block;\n  margin-top: 5px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .platform-mix {\n  display: grid;\n  gap: 14px;\n  margin-bottom: 18px;\n}\n#electricnow-dashboard-embed .platform-total {\n  border: 1px solid rgba(104, 183, 255, 0.22);\n  border-radius: var(--radius-sm);\n  background: linear-gradient(135deg, rgba(47, 129, 215, 0.18), rgba(15, 33, 56, 0.45));\n  padding: 14px;\n}\n#electricnow-dashboard-embed .platform-total span,\n#electricnow-dashboard-embed .coming-platforms span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .platform-total strong {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  font-size: 36px;\n  line-height: 0.95;\n  letter-spacing: 0.04em;\n}\n#electricnow-dashboard-embed .platform-total em,\n#electricnow-dashboard-embed .platform-share-card span,\n#electricnow-dashboard-embed .platform-share-card p,\n#electricnow-dashboard-embed .platform-note {\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .platform-share-list {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .section-usage-list {\n  display: grid;\n  grid-template-columns: repeat(5, minmax(0, 1fr));\n  gap: 12px;\n}\n#electricnow-dashboard-embed .section-usage-card {\n  min-width: 0;\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.62);\n  padding: 14px;\n}\n#electricnow-dashboard-embed .section-usage-card header {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .section-usage-card span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.13em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .section-usage-card strong,\n#electricnow-dashboard-embed .section-usage-card b {\n  display: block;\n  margin-top: 6px;\n  font-family: var(--font-display);\n  line-height: 0.98;\n  letter-spacing: 0.04em;\n  text-transform: uppercase;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .section-usage-card strong {\n  font-size: 28px;\n}\n#electricnow-dashboard-embed .section-usage-card b {\n  color: var(--good);\n  font-size: 18px;\n  text-align: left;\n  white-space: normal;\n}\n#electricnow-dashboard-embed .section-metrics {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 8px;\n  margin-top: 12px;\n}\n#electricnow-dashboard-embed .section-metrics em {\n  border: 1px solid rgba(255, 255, 255, 0.08);\n  border-radius: 999px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n  padding: 5px 8px;\n}\n#electricnow-dashboard-embed .section-usage-card p {\n  margin: 12px 0 0;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .platform-share-card {\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.52);\n  padding: 12px;\n}\n#electricnow-dashboard-embed .platform-share-card.is-untracked {\n  border-style: dashed;\n  background: rgba(255, 199, 95, 0.08);\n}\n#electricnow-dashboard-embed .platform-share-card header {\n  display: flex;\n  justify-content: space-between;\n  gap: 16px;\n  align-items: start;\n}\n#electricnow-dashboard-embed .platform-share-card strong,\n#electricnow-dashboard-embed .platform-share-card b {\n  color: var(--text) !important;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .platform-share-card strong {\n  display: block;\n}\n#electricnow-dashboard-embed .platform-share-card b {\n  font-family: var(--font-display);\n  font-size: 24px;\n  line-height: 1;\n}\n#electricnow-dashboard-embed .platform-share-card.is-untracked b {\n  color: var(--warn) !important;\n}\n#electricnow-dashboard-embed .share-track {\n  height: 9px;\n  margin-top: 10px;\n  border-radius: 999px;\n  background: rgba(255, 255, 255, 0.08);\n  overflow: hidden;\n}\n#electricnow-dashboard-embed .share-fill {\n  height: 100%;\n  border-radius: inherit;\n  background: linear-gradient(90deg, var(--primary), var(--primary-2));\n}\n#electricnow-dashboard-embed .platform-share-card p {\n  margin: 8px 0 0;\n}\n#electricnow-dashboard-embed .compact-card {\n  padding: 10px;\n}\n#electricnow-dashboard-embed .compact-card header {\n  align-items: center;\n}\n#electricnow-dashboard-embed .compact-card b {\n  font-size: 20px;\n}\n#electricnow-dashboard-embed .coming-platforms {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  align-items: center;\n  border-top: 1px solid var(--border);\n  padding-top: 12px;\n}\n#electricnow-dashboard-embed .coming-platforms span {\n  margin-right: 4px;\n}\n#electricnow-dashboard-embed .coming-platforms em {\n  border: 1px solid var(--border);\n  border-radius: 999px;\n  color: var(--muted);\n  padding: 4px 9px;\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .platform-note {\n  margin: 0 0 16px;\n}\n#electricnow-dashboard-embed .bar-list {\n  display: grid;\n  gap: 13px;\n}\n#electricnow-dashboard-embed .bar-row {\n  display: grid;\n  gap: 7px;\n}\n#electricnow-dashboard-embed .bar-row header {\n  display: flex;\n  justify-content: space-between;\n  gap: 12px;\n}\n#electricnow-dashboard-embed .bar-row span {\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed .bar-track {\n  height: 9px;\n  border-radius: 999px;\n  background: rgba(255, 255, 255, 0.08);\n  overflow: hidden;\n}\n#electricnow-dashboard-embed .bar-fill {\n  height: 100%;\n  border-radius: inherit;\n  background: linear-gradient(90deg, var(--primary), var(--primary-2));\n}\n#electricnow-dashboard-embed .table-wrap {\n  overflow-x: auto;\n  max-width: 100%;\n}\n#electricnow-dashboard-embed table {\n  width: 100%;\n  border-collapse: collapse;\n  min-width: 520px;\n}\n#electricnow-dashboard-embed .title-table table {\n  min-width: 720px;\n}\n#electricnow-dashboard-embed th,\n#electricnow-dashboard-embed td {\n  border-bottom: 1px solid var(--border);\n  padding: 10px 8px;\n  text-align: left;\n  vertical-align: top;\n}\n#electricnow-dashboard-embed td {\n  color: var(--muted);\n  font-size: 13px;\n}\n#electricnow-dashboard-embed td strong {\n  color: var(--text);\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .gap-list {\n  display: grid;\n  gap: 10px;\n  margin: 0;\n  padding-left: 18px;\n}\n#electricnow-dashboard-embed :focus-visible {\n  outline: 2px solid var(--primary-2);\n  outline-offset: 3px;\n}\n@media (max-width: 1180px) {\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n    grid-template-columns: 1fr;\n    grid-template-rows: auto auto 1fr;\n  }\n#electricnow-dashboard-embed .sidebar {\n    position: static;\n    height: auto;\n    grid-row: auto;\n  }\n#electricnow-dashboard-embed .side-nav {\n    grid-template-columns: repeat(4, minmax(0, 1fr));\n  }\n#electricnow-dashboard-embed .source-card {\n    margin-top: 0;\n  }\n#electricnow-dashboard-embed .kpi-grid {\n    grid-template-columns: 1fr;\n  }\n#electricnow-dashboard-embed .section-usage-list {\n    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  }\n\n\n}\n@media (max-width: 820px) {\n#electricnow-dashboard-embed.app-shell, #electricnow-dashboard-embed .app-shell {\n    overflow-x: hidden;\n  }\n#electricnow-dashboard-embed .sidebar,\n#electricnow-dashboard-embed .topbar,\n#electricnow-dashboard-embed .main {\n    min-width: 0;\n    width: 100%;\n  }\n#electricnow-dashboard-embed .topbar,\n#electricnow-dashboard-embed .hero-panel,\n#electricnow-dashboard-embed .visit-strip,\n#electricnow-dashboard-embed .plain-panel {\n    grid-template-columns: 1fr;\n  }\n#electricnow-dashboard-embed .plain-panel.is-visible {\n    margin: 18px 0 22px;\n    border-color: rgba(104, 183, 255, 0.62);\n    background:\n      linear-gradient(135deg, rgba(47, 129, 215, 0.22), rgba(10, 21, 36, 0.96) 48%),\n      #0a1524 !important;\n    box-shadow: 0 0 0 1px rgba(104, 183, 255, 0.16), 0 18px 48px rgba(0, 0, 0, 0.28);\n    scroll-margin-top: 14px;\n  }\n#electricnow-dashboard-embed .topbar {\n    align-items: stretch;\n  }\n#electricnow-dashboard-embed .topbar-actions {\n    justify-content: flex-start;\n  }\n#electricnow-dashboard-embed .kpi-group-header {\n    display: block;\n  }\n#electricnow-dashboard-embed .kpi-group-header > p {\n    margin-top: 8px;\n  }\n#electricnow-dashboard-embed .hero-meta {\n    justify-items: start;\n    text-align: left;\n  }\n#electricnow-dashboard-embed .main {\n    padding: 16px;\n  }\n#electricnow-dashboard-embed .kpi-grid,\n#electricnow-dashboard-embed .dashboard-grid,\n#electricnow-dashboard-embed .visit-card-grid,\n#electricnow-dashboard-embed .section-usage-list,\n#electricnow-dashboard-embed .side-nav {\n    grid-template-columns: 1fr;\n  }\n#electricnow-dashboard-embed .source-card {\n    max-width: 100%;\n  }\n#electricnow-dashboard-embed .span-4,\n#electricnow-dashboard-embed .span-6,\n#electricnow-dashboard-embed .span-8 {\n    grid-column: auto;\n  }\n\n\n}\n@media (max-width: 520px) {\n#electricnow-dashboard-embed .sidebar {\n    padding: 20px 16px;\n  }\n#electricnow-dashboard-embed .brand {\n    grid-template-columns: 48px minmax(0, 1fr);\n  }\n#electricnow-dashboard-embed .brand strong {\n    font-size: 23px;\n    letter-spacing: 0.18em;\n  }\n#electricnow-dashboard-embed .topbar-actions {\n    display: grid;\n    grid-template-columns: 1fr;\n    justify-items: stretch;\n  }\n#electricnow-dashboard-embed select,\n#electricnow-dashboard-embed .ghost-button {\n    width: 100%;\n    max-width: 100%;\n  }\n#electricnow-dashboard-embed .kpi-grid {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n#electricnow-dashboard-embed /* ===== Google Ads section ===== */\n.google-ads-panel .panel-note {\n  margin-bottom: 14px;\n}\n#electricnow-dashboard-embed .google-ads-campaign {\n  margin-bottom: 16px;\n}\n#electricnow-dashboard-embed .google-ads-campaign-card {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 18px;\n  justify-content: space-between;\n  align-items: flex-start;\n  border: 1px solid rgba(104, 183, 255, 0.22);\n  border-radius: var(--radius-sm);\n  background: linear-gradient(135deg, rgba(47, 129, 215, 0.18), rgba(15, 33, 56, 0.45));\n  padding: 14px 16px;\n}\n#electricnow-dashboard-embed .google-ads-campaign-card span {\n  display: block;\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .google-ads-campaign-card strong {\n  display: block;\n  margin-top: 4px;\n  font-family: var(--font-display);\n  font-size: 20px;\n  line-height: 1.1;\n  letter-spacing: 0.02em;\n  color: var(--text);\n}\n#electricnow-dashboard-embed .google-ads-campaign-card em {\n  display: block;\n  margin-top: 4px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n}\n#electricnow-dashboard-embed .google-ads-campaign-meta {\n  text-align: right;\n  min-width: 160px;\n}\n#electricnow-dashboard-embed .google-ads-kpis {\n  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));\n  margin-bottom: 22px;\n}\n@media (max-width: 900px) {\n#electricnow-dashboard-embed .google-ads-kpis {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }\n\n\n}\n@media (max-width: 560px) {\n#electricnow-dashboard-embed .google-ads-kpis {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n#electricnow-dashboard-embed .google-ads-split {\n  display: grid;\n  grid-template-columns: 1.3fr 1fr;\n  gap: 20px;\n  margin-bottom: 14px;\n}\n@media (max-width: 900px) {\n#electricnow-dashboard-embed .google-ads-split {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n#electricnow-dashboard-embed .google-ads-device-list,\n#electricnow-dashboard-embed .google-ads-action-list {\n  display: grid;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .google-ads-device-row,\n#electricnow-dashboard-embed .google-ads-action-row {\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.62);\n  padding: 12px 14px;\n}\n#electricnow-dashboard-embed .google-ads-device-row header,\n#electricnow-dashboard-embed .google-ads-action-row header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n  gap: 10px;\n}\n#electricnow-dashboard-embed .google-ads-device-row header span,\n#electricnow-dashboard-embed .google-ads-action-row header span {\n  color: var(--primary-2);\n  font-family: var(--font-display);\n  font-size: 12px;\n  font-weight: 800;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n}\n#electricnow-dashboard-embed .google-ads-device-row header strong,\n#electricnow-dashboard-embed .google-ads-action-row header strong {\n  font-family: var(--font-display);\n  font-size: 18px;\n  letter-spacing: 0.02em;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .google-ads-device-row .share-track {\n  margin: 8px 0 8px;\n}\n#electricnow-dashboard-embed .google-ads-device-metrics {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 6px 14px;\n  color: var(--muted);\n  font-size: 12px;\n}\n#electricnow-dashboard-embed .google-ads-device-metrics em {\n  font-style: normal;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .google-ads-action-row em {\n  display: block;\n  margin-top: 6px;\n  color: var(--muted);\n  font-size: 12px;\n  font-style: normal;\n  font-variant-numeric: tabular-nums;\n}\n#electricnow-dashboard-embed .google-ads-context {\n  margin-top: 6px;\n  padding: 12px 14px;\n  border-left: 3px solid var(--warn);\n  background: rgba(255, 200, 87, 0.06);\n  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;\n  color: var(--text);\n}\n#electricnow-dashboard-embed .dotstudios-ads-panel {\n  border-color: rgba(104, 183, 255, 0.22);\n}\n#electricnow-dashboard-embed .dotstudios-ads-kpis {\n  margin: 16px 0 18px;\n}\n#electricnow-dashboard-embed .dotstudios-ads-caveats {\n  display: grid;\n  gap: 8px;\n  margin: 16px 0 0;\n  padding: 14px 16px 14px 30px;\n  border: 1px solid rgba(255, 200, 87, 0.22);\n  border-radius: var(--radius-sm);\n  background: rgba(255, 200, 87, 0.07);\n  color: var(--muted);\n  font-size: 12px;\n  line-height: 1.45;\n}\n#electricnow-dashboard-embed .dotstudios-ads-caveats li::marker {\n  color: var(--primary-2);\n}\n#electricnow-dashboard-embed /* US audience geography section */\n.us-geo-map-wrap {\n  border: 1px solid var(--border);\n  border-radius: var(--radius-sm);\n  background: rgba(15, 33, 56, 0.5);\n  padding: 16px;\n  margin: 14px 0;\n}\n#electricnow-dashboard-embed .us-geo-map svg {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n#electricnow-dashboard-embed .us-geo-map-bg {\n  fill: rgba(10, 21, 36, 0.6);\n  stroke: var(--border);\n  stroke-width: 0.3;\n}\n#electricnow-dashboard-embed .us-geo-bubble circle {\n  transition: opacity 0.15s ease;\n}\n#electricnow-dashboard-embed .us-geo-bubble:hover circle {\n  opacity: 0.85;\n  stroke-width: 0.6;\n}\n#electricnow-dashboard-embed .us-geo-bubble-label {\n  fill: var(--text);\n  font-family: var(--font-ui);\n  font-size: 2px;\n  font-weight: 700;\n  pointer-events: none;\n}\n#electricnow-dashboard-embed .us-geo-map-caption {\n  color: var(--faint);\n  font-size: 12px;\n  margin: 10px 2px 0;\n}\n#electricnow-dashboard-embed .us-geo-tables {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 20px;\n  margin-bottom: 14px;\n}\n@media (max-width: 900px) {\n#electricnow-dashboard-embed .us-geo-tables {\n    grid-template-columns: 1fr;\n  }\n\n\n}\n\n";
   document.head.appendChild(style);
 
   if (!document.getElementById('electricnow-dashboard-embed')) {
@@ -7981,76 +7981,447 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "title": "ElectricNOW",
           "plays": 2878,
           "activeUsers": 534,
+          "priorPlays": 3360,
+          "priorActiveUsers": 521,
+          "rosterStatus": "confirmed",
           "rank": 1
         },
         {
           "title": "Horror Asylum",
           "plays": 106,
           "activeUsers": 10,
+          "priorPlays": 34,
+          "priorActiveUsers": 14,
+          "rosterStatus": "confirmed",
           "rank": 2
         },
         {
           "title": "ElectricNOW en Español",
           "plays": 97,
           "activeUsers": 34,
+          "priorPlays": 158,
+          "priorActiveUsers": 38,
+          "rosterStatus": "confirmed",
           "rank": 3
         },
         {
           "title": "DARK MATTER TV",
           "plays": 61,
           "activeUsers": 11,
+          "priorPlays": 53,
+          "priorActiveUsers": 13,
+          "rosterStatus": "confirmed",
           "rank": 4
+        },
+        {
+          "title": "Grindhouse Gold",
+          "plays": 47,
+          "activeUsers": 10,
+          "priorPlays": 34,
+          "priorActiveUsers": 10,
+          "rosterStatus": "detected",
+          "rank": 5
         },
         {
           "title": "Stoner TV Network",
           "plays": 38,
           "activeUsers": 8,
-          "rank": 5
+          "priorPlays": 30,
+          "priorActiveUsers": 12,
+          "rosterStatus": "confirmed",
+          "rank": 6
+        },
+        {
+          "title": "a-z Classic Flix",
+          "plays": 31,
+          "activeUsers": 8,
+          "priorPlays": 26,
+          "priorActiveUsers": 9,
+          "rosterStatus": "detected",
+          "rank": 7
         },
         {
           "title": "Hollywood Classic Movies",
           "plays": 28,
           "activeUsers": 10,
-          "rank": 6
+          "priorPlays": 19,
+          "priorActiveUsers": 9,
+          "rosterStatus": "confirmed",
+          "rank": 8
         },
         {
           "title": "Kung Fu Movies",
           "plays": 25,
           "activeUsers": 12,
-          "rank": 7
+          "priorPlays": 38,
+          "priorActiveUsers": 10,
+          "rosterStatus": "confirmed",
+          "rank": 9
+        },
+        {
+          "title": "Ghost Dimension",
+          "plays": 23,
+          "activeUsers": 12,
+          "priorPlays": 25,
+          "priorActiveUsers": 13,
+          "rosterStatus": "detected",
+          "rank": 10
         },
         {
           "title": "ToonOvation",
           "plays": 21,
           "activeUsers": 10,
-          "rank": 8
+          "priorPlays": 32,
+          "priorActiveUsers": 16,
+          "rosterStatus": "confirmed",
+          "rank": 11
+        },
+        {
+          "title": "Cartoon Classics",
+          "plays": 15,
+          "activeUsers": 5,
+          "priorPlays": 17,
+          "priorActiveUsers": 11,
+          "rosterStatus": "detected",
+          "rank": 12
         },
         {
           "title": "spot on news",
           "plays": 13,
           "activeUsers": 10,
-          "rank": 9
+          "priorPlays": 15,
+          "priorActiveUsers": 7,
+          "rosterStatus": "confirmed",
+          "rank": 13
+        },
+        {
+          "title": "IndieBox",
+          "plays": 13,
+          "activeUsers": 5,
+          "priorPlays": 28,
+          "priorActiveUsers": 7,
+          "rosterStatus": "detected",
+          "rank": 14
+        },
+        {
+          "title": "Daily Flash",
+          "plays": 12,
+          "activeUsers": 7,
+          "priorPlays": 11,
+          "priorActiveUsers": 5,
+          "rosterStatus": "detected",
+          "rank": 15
+        },
+        {
+          "title": "Urban Action Channel",
+          "plays": 12,
+          "activeUsers": 6,
+          "priorPlays": 10,
+          "priorActiveUsers": 6,
+          "rosterStatus": "detected",
+          "rank": 16
         },
         {
           "title": "AMPD TV",
           "plays": 11,
           "activeUsers": 4,
-          "rank": 10
+          "priorPlays": 6,
+          "priorActiveUsers": 2,
+          "rosterStatus": "confirmed",
+          "rank": 17
         },
         {
           "title": "CinePast",
           "plays": 10,
           "activeUsers": 6,
-          "rank": 11
+          "priorPlays": 28,
+          "priorActiveUsers": 10,
+          "rosterStatus": "confirmed",
+          "rank": 18
+        },
+        {
+          "title": "Fancy A Movie",
+          "plays": 7,
+          "activeUsers": 5,
+          "priorPlays": 19,
+          "priorActiveUsers": 5,
+          "rosterStatus": "detected",
+          "rank": 19
         },
         {
           "title": "Colorized.TV",
           "plays": 6,
           "activeUsers": 6,
-          "rank": 12
+          "priorPlays": 10,
+          "priorActiveUsers": 6,
+          "rosterStatus": "confirmed",
+          "rank": 20
+        },
+        {
+          "title": "BayView Documentaries",
+          "plays": 6,
+          "activeUsers": 4,
+          "priorPlays": 12,
+          "priorActiveUsers": 5,
+          "rosterStatus": "detected",
+          "rank": 21
+        },
+        {
+          "title": "Box Cinema",
+          "plays": 5,
+          "activeUsers": 4,
+          "priorPlays": null,
+          "priorActiveUsers": null,
+          "rosterStatus": "detected",
+          "rank": 22
+        },
+        {
+          "title": "AMusic Channel",
+          "plays": 5,
+          "activeUsers": 3,
+          "priorPlays": 2,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 23
+        },
+        {
+          "title": "The Health Channel",
+          "plays": 5,
+          "activeUsers": 3,
+          "priorPlays": 5,
+          "priorActiveUsers": 4,
+          "rosterStatus": "detected",
+          "rank": 24
+        },
+        {
+          "title": "Cowboy Classics",
+          "plays": 4,
+          "activeUsers": 4,
+          "priorPlays": 4,
+          "priorActiveUsers": 3,
+          "rosterStatus": "detected",
+          "rank": 25
+        },
+        {
+          "title": "The Family TV Channel",
+          "plays": 4,
+          "activeUsers": 3,
+          "priorPlays": 5,
+          "priorActiveUsers": 5,
+          "rosterStatus": "detected",
+          "rank": 26
+        },
+        {
+          "title": "a-z Best Classic TV",
+          "plays": 4,
+          "activeUsers": 2,
+          "priorPlays": 3,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 27
+        },
+        {
+          "title": "Americana Television",
+          "plays": 4,
+          "activeUsers": 2,
+          "priorPlays": null,
+          "priorActiveUsers": null,
+          "rosterStatus": "detected",
+          "rank": 28
+        },
+        {
+          "title": "SportsTVPlus",
+          "plays": 4,
+          "activeUsers": 2,
+          "priorPlays": 3,
+          "priorActiveUsers": 1,
+          "rosterStatus": "detected",
+          "rank": 29
+        },
+        {
+          "title": "4ACETV CLASSIC HITS",
+          "plays": 4,
+          "activeUsers": 1,
+          "priorPlays": 9,
+          "priorActiveUsers": 4,
+          "rosterStatus": "detected",
+          "rank": 30
+        },
+        {
+          "title": "a-z Western Grit",
+          "plays": 3,
+          "activeUsers": 3,
+          "priorPlays": 7,
+          "priorActiveUsers": 6,
+          "rosterStatus": "detected",
+          "rank": 31
+        },
+        {
+          "title": "Boxing Spotlight",
+          "plays": 3,
+          "activeUsers": 3,
+          "priorPlays": 3,
+          "priorActiveUsers": 3,
+          "rosterStatus": "detected",
+          "rank": 32
+        },
+        {
+          "title": "FightTVPlus",
+          "plays": 3,
+          "activeUsers": 3,
+          "priorPlays": null,
+          "priorActiveUsers": null,
+          "rosterStatus": "detected",
+          "rank": 33
+        },
+        {
+          "title": "Fitness Rewind by Collage Video",
+          "plays": 3,
+          "activeUsers": 3,
+          "priorPlays": 2,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 34
+        },
+        {
+          "title": "Play Ibiza",
+          "plays": 3,
+          "activeUsers": 3,
+          "priorPlays": 2,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 35
+        },
+        {
+          "title": "4ACETV",
+          "plays": 3,
+          "activeUsers": 2,
+          "priorPlays": 3,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 36
+        },
+        {
+          "title": "Old West TV",
+          "plays": 3,
+          "activeUsers": 2,
+          "priorPlays": 7,
+          "priorActiveUsers": 4,
+          "rosterStatus": "detected",
+          "rank": 37
+        },
+        {
+          "title": "Rock Solid Wrestling TV",
+          "plays": 3,
+          "activeUsers": 1,
+          "priorPlays": 3,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 38
+        },
+        {
+          "title": "Box Playlist",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": null,
+          "priorActiveUsers": null,
+          "rosterStatus": "detected",
+          "rank": 39
+        },
+        {
+          "title": "Comercio TV",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": null,
+          "priorActiveUsers": null,
+          "rosterStatus": "detected",
+          "rank": 40
+        },
+        {
+          "title": "HIP HOP TV",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": 2,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 41
+        },
+        {
+          "title": "MomCave",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": 4,
+          "priorActiveUsers": 3,
+          "rosterStatus": "detected",
+          "rank": 42
+        },
+        {
+          "title": "NOMADslow tv",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": 3,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 43
+        },
+        {
+          "title": "POWERtube TV",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": 2,
+          "priorActiveUsers": 1,
+          "rosterStatus": "detected",
+          "rank": 44
+        },
+        {
+          "title": "Rockola Television",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": 3,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 45
+        },
+        {
+          "title": "Viajar TV",
+          "plays": 2,
+          "activeUsers": 2,
+          "priorPlays": 1,
+          "priorActiveUsers": 1,
+          "rosterStatus": "detected",
+          "rank": 46
+        },
+        {
+          "title": "Box Gamers",
+          "plays": 2,
+          "activeUsers": 1,
+          "priorPlays": 3,
+          "priorActiveUsers": 2,
+          "rosterStatus": "detected",
+          "rank": 47
+        },
+        {
+          "title": "MMA Futures",
+          "plays": 2,
+          "activeUsers": 1,
+          "priorPlays": 8,
+          "priorActiveUsers": 7,
+          "rosterStatus": "detected",
+          "rank": 48
+        },
+        {
+          "title": "Wrestling Spotlight",
+          "plays": 2,
+          "activeUsers": 1,
+          "priorPlays": null,
+          "priorActiveUsers": null,
+          "rosterStatus": "detected",
+          "rank": 49
         }
       ],
-      "note": "Internal GA4 pull, property 497892271, Aug 31-Sep 6, 2026. Live usage is based on GA4 screen name 'Live' plus playback events carried on that screen. In the Top 10 Live channels table, 'Play events' are GA4 video_start events grouped by channel title. Platform rows use each platform's own screen_view users and are not deduped across platforms."
+      "note": "Internal GA4 pull, property 497892271, Aug 31-Sep 6, 2026. Live usage is based on GA4 screen name 'Live' plus playback events carried on that screen. In the Live channels table, 'Play events' are GA4 video_start events grouped by channel title. Platform rows use each platform's own screen_view users and are not deduped across platforms.",
+      "topChannelsCount": 49,
+      "topChannelsRosterNote": "49 live/FAST channels with at least one GA4 video_start in Aug 31-Sep 6, 2026. Roster: live_channels.json (13 confirmed + 40 detected). 'Plays' are video_start events grouped by channel title; users are not additive across channels."
     },
     "onDemand": {
       "total": {
@@ -8087,8 +8458,8 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
   },
   "titleViewership": {
     "period": "Aug 31-Sep 6, 2026",
-    "note": "Fresh Internal GA4 pull, property 497892271 for Aug 31-Sep 6, 2026. Rows are GA4 channel_title values, which the app currently sends at season/collection level, not per episode - so 'Play events' counts video_start (playback initiations) for that collection. Total viewers is the largest single-label GA4 active-user count, not a sum, because users are not additive across labels. Live/FAST channels (ElectricNOW, ElectricNOW en Espanol, Stoner TV Network, DARK MATTER TV, ToonOvation, CinePast, AMPD TV, Colorized.TV, Horror Asylum, Hollywood Classic Movies) are excluded here and reported separately under Live channel usage. Episode-level reporting needs the app to send content_type, series_title, season, episode and video_id consistently.",
-    "topVideoTitlesNote": "Fresh Internal GA4 pull, property 497892271 for Aug 31-Sep 6, 2026. Rows are GA4 channel_title values, which the app currently sends at season/collection level, not per episode - so 'Play events' counts video_start (playback initiations) for that collection. Total viewers is the largest single-label GA4 active-user count, not a sum, because users are not additive across labels. Live/FAST channels (ElectricNOW, ElectricNOW en Espanol, Stoner TV Network, DARK MATTER TV, ToonOvation, CinePast, AMPD TV, Colorized.TV, Horror Asylum, Hollywood Classic Movies) are excluded here and reported separately under Live channel usage. Episode-level reporting needs the app to send content_type, series_title, season, episode and video_id consistently.",
+    "note": "Fresh Internal GA4 pull, property 497892271 for Aug 31-Sep 6, 2026. Rows are GA4 channel_title values, which the app currently sends at season/collection level, not per episode - so 'Play events' counts video_start (playback initiations) for that collection. Total viewers is the largest single-label GA4 active-user count, not a sum, because users are not additive across labels. Live/FAST channels are excluded here and reported separately under Live channel usage. The exclusion uses the shared roster in live_channels.json (13 team-confirmed channels plus 40 channels auto-detected from their GA4 event signature: video_start with no screen_view, video_progress, video_complete or ad-request events), so newly added FAST channels cannot leak into the on-demand lists. Episode-level reporting needs the app to send content_type, series_title, season, episode and video_id consistently.",
+    "topVideoTitlesNote": "Fresh Internal GA4 pull, property 497892271 for Aug 31-Sep 6, 2026. Rows are GA4 channel_title values, which the app currently sends at season/collection level, not per episode - so 'Play events' counts video_start (playback initiations) for that collection. Total viewers is the largest single-label GA4 active-user count, not a sum, because users are not additive across labels. Live/FAST channels are excluded here and reported separately under Live channel usage. The exclusion uses the shared roster in live_channels.json (13 team-confirmed channels plus 40 channels auto-detected from their GA4 event signature: video_start with no screen_view, video_progress, video_complete or ad-request events), so newly added FAST channels cannot leak into the on-demand lists. Episode-level reporting needs the app to send content_type, series_title, season, episode and video_id consistently.",
     "topPrograms": [
       {
         "rank": 1,
@@ -8262,19 +8633,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "rank": 13,
-        "program": "Grindhouse Gold",
-        "plays": 47,
-        "activeUsers": 10,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "Grindhouse Gold"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 14,
         "program": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
         "plays": 42,
         "activeUsers": 27,
@@ -8287,7 +8645,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 15,
+        "rank": 14,
         "program": "Checking Out: The Librarians: The Next Chapter",
         "plays": 41,
         "activeUsers": 11,
@@ -8300,7 +8658,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 16,
+        "rank": 15,
         "program": "The Immortal",
         "plays": 36,
         "activeUsers": 2,
@@ -8313,20 +8671,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 17,
-        "program": "a-z Classic Flix",
-        "plays": 31,
-        "activeUsers": 8,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "a-z Classic Flix"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 18,
+        "rank": 16,
         "program": "The Outpost",
         "plays": 26,
         "activeUsers": 6,
@@ -8340,20 +8685,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 19,
-        "program": "Ghost Dimension",
-        "plays": 23,
-        "activeUsers": 12,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "Ghost Dimension"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 20,
+        "rank": 17,
         "program": "The Messenger",
         "plays": 20,
         "activeUsers": 3,
@@ -8367,7 +8699,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 21,
+        "rank": 18,
         "program": "The Librarian: Quest for the Spear",
         "plays": 19,
         "activeUsers": 10,
@@ -8380,7 +8712,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 22,
+        "rank": 19,
         "program": "The Librarians: The Next Chapter at SDCC 2026",
         "plays": 16,
         "activeUsers": 12,
@@ -8393,7 +8725,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 23,
+        "rank": 20,
         "program": "The Librarians: The Next Chapter Season 2 Teaser",
         "plays": 15,
         "activeUsers": 7,
@@ -8406,20 +8738,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 24,
-        "program": "Cartoon Classics",
-        "plays": 15,
-        "activeUsers": 5,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "Cartoon Classics"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 25,
+        "rank": 21,
         "program": "The Librarian: Return to King Solomon's Mines",
         "plays": 13,
         "activeUsers": 6,
@@ -8432,20 +8751,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 26,
-        "program": "IndieBox",
-        "plays": 13,
-        "activeUsers": 5,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "IndieBox"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 27,
+        "rank": 22,
         "program": "Betty Boop Collection",
         "plays": 12,
         "activeUsers": 1,
@@ -8458,33 +8764,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 28,
-        "program": "Daily Flash",
-        "plays": 12,
-        "activeUsers": 7,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "Daily Flash"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 29,
-        "program": "Urban Action Channel",
-        "plays": 12,
-        "activeUsers": 6,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "Urban Action Channel"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 30,
+        "rank": 23,
         "program": "Mythica: A Quest for Heroes",
         "plays": 11,
         "activeUsers": 7,
@@ -8497,7 +8777,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 31,
+        "rank": 24,
         "program": "Casper the Friendly Ghost",
         "plays": 11,
         "activeUsers": 2,
@@ -8510,7 +8790,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 32,
+        "rank": 25,
         "program": "The Librarian: Curse of the Judas Chalice",
         "plays": 10,
         "activeUsers": 5,
@@ -8523,7 +8803,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 33,
+        "rank": 26,
         "program": "One Big Happy Family",
         "plays": 10,
         "activeUsers": 1,
@@ -8536,7 +8816,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 34,
+        "rank": 27,
         "program": "Generation Z",
         "plays": 9,
         "activeUsers": 6,
@@ -8549,7 +8829,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 35,
+        "rank": 28,
         "program": "The Librarians Cinemascope Movie",
         "plays": 9,
         "activeUsers": 4,
@@ -8562,7 +8842,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 36,
+        "rank": 29,
         "program": "The Poly Couple",
         "plays": 9,
         "activeUsers": 3,
@@ -8576,7 +8856,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 37,
+        "rank": 30,
         "program": "Flyboys",
         "plays": 8,
         "activeUsers": 5,
@@ -8589,7 +8869,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 38,
+        "rank": 31,
         "program": "Mythica: The Darkspore",
         "plays": 7,
         "activeUsers": 6,
@@ -8602,7 +8882,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 39,
+        "rank": 32,
         "program": "The Official Leverage: Redemption After Show - A Very Distinctive Podcast",
         "plays": 7,
         "activeUsers": 2,
@@ -8615,20 +8895,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 40,
-        "program": "Fancy A Movie",
-        "plays": 7,
-        "activeUsers": 5,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "Fancy A Movie"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 41,
+        "rank": 33,
         "program": "Bad Samaritan",
         "plays": 6,
         "activeUsers": 3,
@@ -8641,7 +8908,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 42,
+        "rank": 34,
         "program": "A World of Worlds",
         "plays": 6,
         "activeUsers": 2,
@@ -8654,7 +8921,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 43,
+        "rank": 35,
         "program": "Los Bibliotecarios",
         "plays": 6,
         "activeUsers": 2,
@@ -8667,7 +8934,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 44,
+        "rank": 36,
         "program": "The Librarians and the Crown of King Arthur in Cinemascope",
         "plays": 6,
         "activeUsers": 3,
@@ -8680,7 +8947,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 45,
+        "rank": 37,
         "program": "Solar Impact",
         "plays": 6,
         "activeUsers": 5,
@@ -8693,7 +8960,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 46,
+        "rank": 38,
         "program": "Alpha Code",
         "plays": 6,
         "activeUsers": 2,
@@ -8706,7 +8973,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 47,
+        "rank": 39,
         "program": "ElectricCon Fan Convention",
         "plays": 6,
         "activeUsers": 3,
@@ -8719,20 +8986,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 48,
-        "program": "BayView Documentaries",
-        "plays": 6,
-        "activeUsers": 4,
-        "viewerMethod": "ga4_channel_title_video_start_max_users",
-        "rawLabelCount": 1,
-        "examples": [
-          "BayView Documentaries"
-        ],
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 49,
+        "rank": 40,
         "program": "The Triangle Night 1",
         "plays": 5,
         "activeUsers": 3,
@@ -8745,7 +8999,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 50,
+        "rank": 41,
         "program": "Dominion: The Last Star Warrior",
         "plays": 5,
         "activeUsers": 2,
@@ -9031,16 +9285,6 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
       },
       {
         "rank": 28,
-        "title": "Grindhouse Gold",
-        "group": "Grindhouse Gold",
-        "plays": 47,
-        "activeUsers": 10,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 29,
         "title": "Checking Out: The Librarians Next Chapter",
         "group": "Checking Out: The Librarians Next Chapter",
         "plays": 45,
@@ -9050,7 +9294,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 30,
+        "rank": 29,
         "title": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
         "group": "The Librarians: The Next Chapter Season 2 Aug 2nd on TNT",
         "plays": 42,
@@ -9060,7 +9304,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 31,
+        "rank": 30,
         "title": "Checking Out: The Librarians: The Next Chapter - Season 2",
         "group": "Checking Out: The Librarians: The Next Chapter",
         "plays": 41,
@@ -9070,7 +9314,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 32,
+        "rank": 31,
         "title": "Leverage - Season 5",
         "group": "Leverage",
         "plays": 37,
@@ -9080,7 +9324,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 33,
+        "rank": 32,
         "title": "The Immortal",
         "group": "The Immortal",
         "plays": 36,
@@ -9090,7 +9334,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 34,
+        "rank": 33,
         "title": "After the Ark - Season 3",
         "group": "After the Ark",
         "plays": 33,
@@ -9100,7 +9344,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 35,
+        "rank": 34,
         "title": "The Librarians - Season 2",
         "group": "The Librarians",
         "plays": 32,
@@ -9110,7 +9354,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 36,
+        "rank": 35,
         "title": "Leverage: Redemption - Season 2",
         "group": "Leverage: Redemption",
         "plays": 31,
@@ -9120,17 +9364,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 37,
-        "title": "a-z Classic Flix",
-        "group": "a-z Classic Flix",
-        "plays": 31,
-        "activeUsers": 8,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 38,
+        "rank": 36,
         "title": "After the Ark - Season 1",
         "group": "After the Ark",
         "plays": 30,
@@ -9140,17 +9374,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 39,
-        "title": "Ghost Dimension",
-        "group": "Ghost Dimension",
-        "plays": 23,
-        "activeUsers": 12,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 40,
+        "rank": 37,
         "title": "The Librarian: Quest for the Spear",
         "group": "The Librarian: Quest for the Spear",
         "plays": 19,
@@ -9160,7 +9384,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 41,
+        "rank": 38,
         "title": "The Librarians: The Next Chapter at SDCC 2026",
         "group": "The Librarians: The Next Chapter at SDCC 2026",
         "plays": 16,
@@ -9170,7 +9394,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 42,
+        "rank": 39,
         "title": "The Messenger - Season 1",
         "group": "The Messenger",
         "plays": 16,
@@ -9180,7 +9404,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 43,
+        "rank": 40,
         "title": "The Librarians: The Next Chapter Season 2 Teaser",
         "group": "The Librarians: The Next Chapter Season 2 Teaser",
         "plays": 15,
@@ -9190,7 +9414,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 44,
+        "rank": 41,
         "title": "The Outpost",
         "group": "The Outpost",
         "plays": 15,
@@ -9200,17 +9424,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 45,
-        "title": "Cartoon Classics",
-        "group": "Cartoon Classics",
-        "plays": 15,
-        "activeUsers": 5,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 46,
+        "rank": 42,
         "title": "The Librarian: Return to King Solomon's Mines",
         "group": "The Librarian: Return to King Solomon's Mines",
         "plays": 13,
@@ -9220,41 +9434,11 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "period": "Aug 31-Sep 6, 2026"
       },
       {
-        "rank": 47,
-        "title": "IndieBox",
-        "group": "IndieBox",
-        "plays": 13,
-        "activeUsers": 5,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 48,
+        "rank": 43,
         "title": "Betty Boop Collection",
         "group": "Betty Boop Collection",
         "plays": 12,
         "activeUsers": 1,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 49,
-        "title": "Daily Flash",
-        "group": "Daily Flash",
-        "plays": 12,
-        "activeUsers": 7,
-        "screenPageViews": 0,
-        "source": "Internal GA4 pull, property 497892271",
-        "period": "Aug 31-Sep 6, 2026"
-      },
-      {
-        "rank": 50,
-        "title": "Urban Action Channel",
-        "group": "Urban Action Channel",
-        "plays": 12,
-        "activeUsers": 6,
         "screenPageViews": 0,
         "source": "Internal GA4 pull, property 497892271",
         "period": "Aug 31-Sep 6, 2026"
@@ -9412,7 +9596,73 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
         "activeUsers": 1
       }
     ],
-    "source": "Internal GA4 pull, property 497892271"
+    "source": "Internal GA4 pull, property 497892271",
+    "liveChannelRoster": {
+      "file": "live_channels.json",
+      "confirmed": 13,
+      "detected": 40,
+      "updated": "2026-09-07",
+      "names": [
+        "ElectricNOW",
+        "ElectricNOW en Español",
+        "ElectricNOW en Espanol",
+        "Stoner TV Network",
+        "Hollywood Classic Movies",
+        "ToonOvation",
+        "CinePast",
+        "AMPD TV",
+        "DARK MATTER TV",
+        "Colorized.TV",
+        "Horror Asylum",
+        "Kung Fu Movies",
+        "Spot On News",
+        "Grindhouse Gold",
+        "a-z Classic Flix",
+        "IndieBox",
+        "Ghost Dimension",
+        "Fancy A Movie",
+        "Cartoon Classics",
+        "Urban Action Channel",
+        "BayView Documentaries",
+        "Daily Flash",
+        "4ACETV CLASSIC HITS",
+        "MMA Futures",
+        "Old West TV",
+        "a-z Western Grit",
+        "The Health Channel",
+        "AMusic Channel",
+        "Box Cinema",
+        "The Family TV Channel",
+        "a-z Best Classic TV",
+        "Americana Television",
+        "Cowboy Classics",
+        "SportsTVPlus",
+        "MomCave",
+        "Historias de Corazón",
+        "4ACETV",
+        "Rock Solid Wrestling TV",
+        "Box Gamers",
+        "Boxing Spotlight",
+        "FightTVPlus",
+        "Fitness Rewind by Collage Video",
+        "Play Ibiza",
+        "Rockola Television",
+        "NOMADslow tv",
+        "Wrestling Spotlight",
+        "Comercio TV",
+        "Box Playlist",
+        "HIP HOP TV",
+        "POWERtube TV",
+        "Viajar TV",
+        "Ray Harryhausen Collection",
+        "Nigbati TV",
+        "Celebrity Scene",
+        "Mor2CTV",
+        "DJ Central TV",
+        "Beyond The Score"
+      ],
+      "rule": "Renderers must drop any on-demand row whose program/title/group/example matches one of these names (case-insensitive, accents ignored)."
+    }
   },
   "metaCampaignContext": {
     "source": "ENow-TV-April-1st-May-3rd-Meta-Ads.xlsx, Raw Data Report!A1:W361",
@@ -9733,14 +9983,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 1614,
           "current": 1622,
           "deltaPct": 0.49566294919454773,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 40.43290043290043,
           "deltaVsPreviousPct": 0.49566294919454773,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered a video_start event (on-demand or live) in the week. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 1614,
           "currentWeek": 1622,
           "changePct": 0.49566294919454773,
@@ -9749,8 +9997,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "Users who triggered a video_start event (on-demand or live) in the week.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "Users who triggered a video_start event (on-demand or live) in the week."
         },
         {
           "key": "totalEngagementHours",
@@ -9813,14 +10060,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 2453,
           "current": 2316,
           "deltaPct": -5.584997961679576,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 49.70911441499677,
           "deltaVsPreviousPct": -5.584997961679576,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 active users on platform = Android + iOS (summed; small overlap possible). Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 2453,
           "currentWeek": 2316,
           "changePct": -5.584997961679576,
@@ -9829,8 +10074,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "GA4 active users on platform = Android + iOS (summed; small overlap possible).",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "GA4 active users on platform = Android + iOS (summed; small overlap possible)."
         },
         {
           "key": "appSessions",
@@ -9840,14 +10084,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 5155,
           "current": 5022,
           "deltaPct": -2.580019398642095,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 73.83177570093457,
           "deltaVsPreviousPct": -2.580019398642095,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 sessions on platform = Android + iOS. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 5155,
           "currentWeek": 5022,
           "changePct": -2.580019398642095,
@@ -9856,8 +10098,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "GA4 sessions on platform = Android + iOS.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "GA4 sessions on platform = Android + iOS."
         },
         {
           "key": "appEngagementRate",
@@ -9867,14 +10108,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 83.82153249272551,
           "current": 84.10991636798089,
           "deltaPct": 0.2883838752553771,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 3.147645686084033,
           "deltaVsPreviousPct": 0.2883838752553771,
           "deltaType": "points",
           "format": "percent",
           "context": "Engaged sessions / sessions on platform = Android + iOS, in percent. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 83.82153249272551,
           "currentWeek": 84.10991636798089,
           "changePct": 0.2883838752553771,
@@ -9883,8 +10122,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "Engaged sessions / sessions on platform = Android + iOS, in percent.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "Engaged sessions / sessions on platform = Android + iOS, in percent."
         }
       ]
     },
@@ -9901,14 +10139,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 1614,
           "current": 1622,
           "deltaPct": 0.49566294919454773,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 40.43290043290043,
           "deltaVsPreviousPct": 0.49566294919454773,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered a video_start event (on-demand or live) in the week. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 1614,
           "currentWeek": 1622,
           "changePct": 0.49566294919454773,
@@ -9917,62 +10153,57 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "Users who triggered a video_start event (on-demand or live) in the week.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "Users who triggered a video_start event (on-demand or live) in the week."
         },
         {
           "key": "onDemandStartUsers",
           "label": "On-demand start users",
-          "baseline": 1235,
+          "baseline": 1195,
           "launchBaseline": 1069,
-          "previousWeek": 1235,
-          "current": 1235,
-          "deltaPct": 0.0,
+          "previousWeek": 1195,
+          "current": 1221,
+          "deltaPct": 2.1757322175732217,
           "deltaVsLaunchPct": null,
-          "deltaVsPreviousPct": 0.0,
+          "deltaVsPreviousPct": 2.1757322175732217,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users with a video_start event where channel_title is NOT a live/FAST channel. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
-          "previous": 1235,
-          "currentWeek": 1235,
-          "changePct": 0.0,
-          "deltaVsBaselinePct": 0.0,
-          "direction": "flat",
+          "context": "Users with a video_start event where channel_title is NOT a live/FAST channel. Live/FAST channels come from live_channels.json (57 names). Internal GA4 pull, property 497892271.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
+          "previous": 1195,
+          "currentWeek": 1221,
+          "changePct": 2.1757322175732217,
+          "deltaVsBaselinePct": 2.1757322175732217,
+          "direction": "up",
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
           "definition": "Users with a video_start event where channel_title is NOT a live/FAST channel.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "launchBaselineNote": "Launch-week value used the Live screen; from Sep 7, 2026 this card uses channel titles from live_channels.json, so the launch comparison is suppressed."
         },
         {
           "key": "liveChannelViewers",
           "label": "Live channel viewers",
-          "baseline": 525,
+          "baseline": 526,
           "launchBaseline": 121,
-          "previousWeek": 525,
+          "previousWeek": 526,
           "current": 539,
-          "deltaPct": 2.666666666666667,
+          "deltaPct": 2.4714828897338403,
           "deltaVsLaunchPct": null,
-          "deltaVsPreviousPct": 2.666666666666667,
+          "deltaVsPreviousPct": 2.4714828897338403,
           "deltaType": "percent",
           "format": "number",
-          "context": "Users with a video_start event on a live/FAST channel title. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
-          "previous": 525,
+          "context": "Users with a video_start event on a live/FAST channel title. Live/FAST channels come from live_channels.json (57 names). Internal GA4 pull, property 497892271.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
+          "previous": 526,
           "currentWeek": 539,
-          "changePct": 2.666666666666667,
-          "deltaVsBaselinePct": 2.666666666666667,
+          "changePct": 2.4714828897338403,
+          "deltaVsBaselinePct": 2.4714828897338403,
           "direction": "up",
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
           "definition": "Users with a video_start event on a live/FAST channel title.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "launchBaselineNote": "Launch-week value used the Live screen; from Sep 7, 2026 this card uses channel titles from live_channels.json, so the launch comparison is suppressed."
         },
         {
           "key": "videoCompleteUsers",
@@ -9982,14 +10213,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 519,
           "current": 539,
           "deltaPct": 3.8535645472061653,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 146.1187214611872,
           "deltaVsPreviousPct": 3.8535645472061653,
           "deltaType": "percent",
           "format": "number",
           "context": "Users who triggered a video_complete event in the week. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 519,
           "currentWeek": 539,
           "changePct": 3.8535645472061653,
@@ -9998,35 +10227,32 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "Users who triggered a video_complete event in the week.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "Users who triggered a video_complete event in the week."
         },
         {
           "key": "livePlayEvents",
           "label": "Live play events",
-          "baseline": 5297,
+          "baseline": 5807,
           "launchBaseline": 3952,
-          "previousWeek": 5297,
-          "current": 4753,
-          "deltaPct": -10.269964130639984,
+          "previousWeek": 5807,
+          "current": 5153,
+          "deltaPct": -11.262269674530739,
           "deltaVsLaunchPct": null,
-          "deltaVsPreviousPct": -10.269964130639984,
+          "deltaVsPreviousPct": -11.262269674530739,
           "deltaType": "percent",
           "format": "number",
-          "context": "play + video_play + video_start event counts on live/FAST channel titles. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
-          "previous": 5297,
-          "currentWeek": 4753,
-          "changePct": -10.269964130639984,
-          "deltaVsBaselinePct": -10.269964130639984,
+          "context": "play + video_play + video_start event counts on live/FAST channel titles. Live/FAST channels come from live_channels.json (57 names). Internal GA4 pull, property 497892271.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
+          "previous": 5807,
+          "currentWeek": 5153,
+          "changePct": -11.262269674530739,
+          "deltaVsBaselinePct": -11.262269674530739,
           "direction": "down",
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
           "definition": "play + video_play + video_start event counts on live/FAST channel titles.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "launchBaselineNote": "Launch-week value used the Live screen; from Sep 7, 2026 this card uses channel titles from live_channels.json, so the launch comparison is suppressed."
         },
         {
           "key": "adRequestEvents",
@@ -10036,14 +10262,12 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "previousWeek": 21851,
           "current": 25260,
           "deltaPct": 15.601116653700059,
-          "deltaVsLaunchPct": null,
+          "deltaVsLaunchPct": 138.54943809613752,
           "deltaVsPreviousPct": 15.601116653700059,
           "deltaType": "percent",
           "format": "number",
           "context": "GA4 ads_request events = ElectricNOW IN-APP ad requests, not paid-campaign metrics. Internal GA4 pull, property 497892271.",
-          "dataPeriod": "through Aug 23, 2026",
-          "status": "stale_preserved_no_fresh_pull",
-          "staleNote": "Preserved from the last successful pull; not refreshed for Aug 24-Aug 30, 2026. Treat as prior-period context.",
+          "dataPeriod": "Aug 31-Sep 6, 2026",
           "previous": 21851,
           "currentWeek": 25260,
           "changePct": 15.601116653700059,
@@ -10052,8 +10276,7 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
           "period": "Aug 31-Sep 6, 2026",
           "comparisonPeriod": "Aug 24-Aug 30, 2026",
           "sourceLabel": "Internal GA4 pull, property 497892271",
-          "definition": "GA4 ads_request events = ElectricNOW IN-APP ad requests, not paid-campaign metrics.",
-          "launchBaselineNote": "Launch baseline predates the explicit event definition used from Sep 7, 2026; launch comparison suppressed."
+          "definition": "GA4 ads_request events = ElectricNOW IN-APP ad requests, not paid-campaign metrics."
         }
       ]
     },
@@ -16862,7 +17085,37 @@ window.ELECTRICNOW_DASHBOARD_DATA = {
     "seriesStartRationale": "GA4 property 497892271 has pre-Apr data but tracking was ramping (Jan 75 active users, Feb 323, Mar 1,136), so earlier weeks are not comparable. Apr 13, 2026 is the launch-baseline week.",
     "caveat": "activeUsers is not additive across days; each week is its own GA4 request. GA4 revises recent weeks, so the latest point can move slightly on re-pull.",
     "lastPatched": "2026-09-07 22:49"
-  }
+  },
+  "corrections": [
+    {
+      "date": "2026-09-07",
+      "id": "live_roster_and_cards_fix",
+      "summary": "Live/FAST channels removed from on-demand lists using shared roster + GA4 signature; refreshed behavior cards un-staled; live split cards re-pulled with full roster; live top-channels rebuilt.",
+      "removedFromOnDemand": {
+        "topPrograms": [
+          "Grindhouse Gold",
+          "a-z Classic Flix",
+          "Ghost Dimension",
+          "Cartoon Classics",
+          "IndieBox",
+          "Daily Flash",
+          "Urban Action Channel",
+          "Fancy A Movie",
+          "BayView Documentaries"
+        ],
+        "topVideoTitles": [
+          "Grindhouse Gold",
+          "a-z Classic Flix",
+          "Ghost Dimension",
+          "Cartoon Classics",
+          "IndieBox",
+          "Daily Flash",
+          "Urban Action Channel"
+        ],
+        "topChannelTitles": []
+      }
+    }
+  ]
 }
 let data = window.DASHBOARD_DATA || window.ELECTRICNOW_DASHBOARD_DATA;
 function _enRowIsLive(row) {
@@ -16877,6 +17130,41 @@ function _enRowIsLive(row) {
   ].filter(Boolean).join(' ').toLowerCase();
   return /trc live|live channel|roku live|fast channel|linear channel|linear live/.test(text);
 }
+
+// ---- Data-driven live/FAST roster filter (2026-09-07) ----
+// The writer ships the full roster in titleViewership.liveChannelRoster.names
+// (live_channels.json). Any on-demand row whose name matches is dropped here as
+// a second line of defense, so a writer regression cannot reach the page.
+function _enRosterNorm(v) {
+  if (v == null) return '';
+  let s = String(v);
+  try { s = s.normalize('NFKD').replace(/[\u0300-\u036f]/g, ''); } catch (e) {}
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+// Built-in copy of live_channels.json (regenerated by the patch script) so the
+// filter also works against a data file that predates the roster field.
+const _EN_LIVE_ROSTER_BUILTIN = ["ElectricNOW", "ElectricNOW en Español", "ElectricNOW en Espanol", "Stoner TV Network", "Hollywood Classic Movies", "ToonOvation", "CinePast", "AMPD TV", "DARK MATTER TV", "Colorized.TV", "Horror Asylum", "Kung Fu Movies", "Spot On News", "Grindhouse Gold", "a-z Classic Flix", "IndieBox", "Ghost Dimension", "Fancy A Movie", "Cartoon Classics", "Urban Action Channel", "BayView Documentaries", "Daily Flash", "4ACETV CLASSIC HITS", "MMA Futures", "Old West TV", "a-z Western Grit", "The Health Channel", "AMusic Channel", "Box Cinema", "The Family TV Channel", "a-z Best Classic TV", "Americana Television", "Cowboy Classics", "SportsTVPlus", "MomCave", "Historias de Corazón", "4ACETV", "Rock Solid Wrestling TV", "Box Gamers", "Boxing Spotlight", "FightTVPlus", "Fitness Rewind by Collage Video", "Play Ibiza", "Rockola Television", "NOMADslow tv", "Wrestling Spotlight", "Comercio TV", "Box Playlist", "HIP HOP TV", "POWERtube TV", "Viajar TV", "Ray Harryhausen Collection", "Nigbati TV", "Celebrity Scene", "Mor2CTV", "DJ Central TV", "Beyond The Score"];
+function _enPurgeRosterRows(payload) {
+  const tv = payload && payload.titleViewership;
+  const fromData = tv && tv.liveChannelRoster && Array.isArray(tv.liveChannelRoster.names) ? tv.liveChannelRoster.names : [];
+  const names = _EN_LIVE_ROSTER_BUILTIN.concat(fromData);
+  if (!tv || !names.length) return payload;
+  const set = new Set(names.map(_enRosterNorm).filter(Boolean));
+  const fields = ['program', 'title', 'group', 'channelTitle', 'channel_title', 'label', 'show', 'collection'];
+  const rowIsLive = (row) => {
+    if (!row || typeof row !== 'object') return false;
+    for (const f of fields) { if (f in row && set.has(_enRosterNorm(row[f]))) return true; }
+    if (Array.isArray(row.examples)) { for (const ex of row.examples) { if (set.has(_enRosterNorm(ex))) return true; } }
+    return false;
+  };
+  for (const key of ['topPrograms', 'topVideoTitles', 'topChannelTitles']) {
+    if (!Array.isArray(tv[key])) continue;
+    const kept = tv[key].filter((r) => !rowIsLive(r));
+    kept.forEach((r, i) => { if (r && typeof r === 'object') r.rank = i + 1; });
+    tv[key] = kept;
+  }
+  return payload;
+}
 function _enPurgeLiveFromOnDemand(payload) {
   if (!payload || typeof payload !== 'object') return payload;
   const tv = payload.tvodTitleRevenue;
@@ -16885,6 +17173,7 @@ function _enPurgeLiveFromOnDemand(payload) {
       if (Array.isArray(tv[key])) tv[key] = tv[key].filter((row) => !_enRowIsLive(row));
     });
   }
+  _enPurgeRosterRows(payload);
   return payload;
 }
 _enPurgeLiveFromOnDemand(data);
@@ -16995,6 +17284,9 @@ function launchBaselineCompare(card) {
   if (hasDelta) {
     return { cls: deltaClass(delta), text: deltaText(card, delta) };
   }
+  if (card.launchBaselineNote) {
+    return { cls: 'baseline-unavailable', text: 'definition changed', title: card.launchBaselineNote };
+  }
   return { cls: '', text: 'not tracked at launch' };
 }
 
@@ -17040,7 +17332,7 @@ function renderKpis() {
           <strong>${valueForCard(card)}</strong>
           <div class="kpi-compare-grid" aria-label="${card.label} comparisons">
             <small>vs launch baseline</small>
-            <em class="delta ${launchBaselineCompare(card).cls}">${launchBaselineCompare(card).text}</em>
+            <em class="delta ${launchBaselineCompare(card).cls}"${launchBaselineCompare(card).title ? ` title="${escapeHtml(launchBaselineCompare(card).title)}"` : ''}>${launchBaselineCompare(card).text}</em>
             <small>vs previous 7 days</small>
             <em class="delta ${previousWeekCompare(card).cls}">${previousWeekCompare(card).text}</em>
           </div>
@@ -18883,6 +19175,7 @@ async function loadCurrentData() {
       const response = await fetch(`${HOSTED_DATA_URL}${separator}v=${Date.now()}`, { cache: 'no-store' });
       if (!response.ok) throw new Error(`Hosted data failed (${response.status})`);
       data = await response.json();
+      window.ELECTRICNOW_DASHBOARD_DATA = data; // keep the page global equal to what is rendered (audit reads it)
     _enPurgeLiveFromOnDemand(data);
       _enPurgeLiveFromOnDemand(data);
       setPeriodOptions();
@@ -18946,6 +19239,7 @@ if (refreshButton) {
       const response = await fetch(`${API_BASE}/api/refresh`, { cache: 'no-store' });
       if (!response.ok) throw new Error(`Refresh failed (${response.status})`);
       data = await response.json();
+      window.ELECTRICNOW_DASHBOARD_DATA = data; // keep the page global equal to what is rendered (audit reads it)
     _enPurgeLiveFromOnDemand(data);
       _enPurgeLiveFromOnDemand(data);
       selectedPeriod = 'currentWeek';
