@@ -1,6 +1,6 @@
 {
  "_doc": "Shared live/FAST channel roster for the ElectricNOW dashboard. Every script that splits live channels from on-demand titles MUST read this file (never keep a private copy). 'confirmed' = channels named by the team; 'detected' = channel_title values whose GA4 event signature is live-only (video_start present; none of screen_view, video_progress, video_complete, vmap_ad_request/loaded, ads_*; >=2 starts in a recent week; no season/trailer naming). detection_rule is also applied at refresh time so newly launched channels do not leak into on-demand lists before the team confirms them. 'legacy_seed' = channels that were in the renderer's 2026-05-28 defensive seed list but had no GA4 starts in the two weeks checked; kept so they cannot reappear.",
- "updated": "2026-09-07",
+ "updated": "2026-09-14",
  "confirmed": [
   "ElectricNOW",
   "ElectricNOW en Español",
@@ -56,7 +56,9 @@
   "POWERtube TV",
   "Viajar TV",
   "Ray Harryhausen Collection",
-  "Nigbati TV"
+  "Nigbati TV",
+  "BEST (Black Enterprise Streaming Television)",
+  "HITS MEXICANOS"
  ],
  "detection_rule": {
   "requires_event": "video_start",
@@ -115,7 +117,9 @@
   "POWERtube TV",
   "Viajar TV",
   "Ray Harryhausen Collection",
-  "Nigbati TV"
+  "Nigbati TV",
+  "BEST (Black Enterprise Streaming Television)",
+  "HITS MEXICANOS"
  ],
  "legacy_seed": [
   "Celebrity Scene",
