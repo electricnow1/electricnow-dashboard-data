@@ -1959,7 +1959,7 @@ window.DASHBOARD_DATA = {
     "period": "Sep 28-Oct 4, 2026",
     "metric": "Active users",
     "totalViewers": 3276,
-    "note": "GA4 stream audience is for Sep 28-Oct 4. DotStudios device-view rows are STALE Sep 21-Sep 27 snapshots, not this week. Views and active users are different metrics; users can appear in multiple streams.",
+    "note": "GA4 stream active users and separate DotStudios device-view signals for Sep 28-Oct 4. Different metrics; do not add.",
     "groups": [
       {
         "platform": "Web",
@@ -2016,17 +2016,15 @@ window.DASHBOARD_DATA = {
         "category": "Connected TV",
         "tracked": true,
         "activeUsers": null,
-        "sharePct": 9.2,
+        "sharePct": 5.4,
         "sessions": null,
         "engagedSessions": null,
-        "detail": "STALE prior snapshot: DotStudios video-views export shows 1,298 Amazon / Fire TV views for Sep 21-Sep 27, 2026, equal to 9.2% of 14,079 DotStudios video views. This is not a GA4 active-user count.",
-        "views": 1298,
+        "detail": "Fresh DotStudios Sep 28-Oct 4, 2026: 698 firetv views, not GA4 active users.",
+        "views": 698,
         "metricLabel": "views",
-        "sourceLabel": "DotStudios (stale prior week)",
-        "sourcePeriod": "Sep 21-Sep 27, 2026",
-        "status": "stale_preserved_no_fresh_pull",
-        "staleNote": "STALE prior snapshot: DotStudios video-views export shows 1,298 Amazon / Fire TV views for Sep 21-Sep 27, 2026, equal to 9.2% of 14,079 DotStudios video views. This is not a GA4 active-user count.",
-        "note": "STALE prior snapshot: DotStudios video-views export shows 1,298 Amazon / Fire TV views for Sep 21-Sep 27, 2026, equal to 9.2% of 14,079 DotStudios video views. This is not a GA4 active-user count."
+        "sourcePeriod": "Sep 28-Oct 4, 2026",
+        "status": "fresh_manual",
+        "sourceLabel": "DotStudios"
       },
       {
         "platform": "Apple TV",
@@ -2036,14 +2034,12 @@ window.DASHBOARD_DATA = {
         "sharePct": 1.4,
         "sessions": null,
         "engagedSessions": null,
-        "detail": "STALE prior snapshot: DotStudios video-views export shows 200 Apple TV views for Sep 21-Sep 27, 2026, equal to 1.4% of 14,079 DotStudios video views. This is not a GA4 active-user count.",
-        "views": 200,
+        "detail": "Fresh DotStudios Sep 28-Oct 4, 2026: 182 appletv views, not GA4 active users.",
+        "views": 182,
         "metricLabel": "views",
-        "sourceLabel": "DotStudios (stale prior week)",
-        "sourcePeriod": "Sep 21-Sep 27, 2026",
-        "status": "stale_preserved_no_fresh_pull",
-        "staleNote": "STALE prior snapshot: DotStudios video-views export shows 200 Apple TV views for Sep 21-Sep 27, 2026, equal to 1.4% of 14,079 DotStudios video views. This is not a GA4 active-user count.",
-        "note": "STALE prior snapshot: DotStudios video-views export shows 200 Apple TV views for Sep 21-Sep 27, 2026, equal to 1.4% of 14,079 DotStudios video views. This is not a GA4 active-user count."
+        "sourcePeriod": "Sep 28-Oct 4, 2026",
+        "status": "fresh_manual",
+        "sourceLabel": "DotStudios"
       }
     ],
     "comingSoon": [
@@ -3013,16 +3009,19 @@ window.DASHBOARD_DATA = {
     }
   },
   "plainEnglishInsights": [
-    "On-demand video starters increased 3.1% to 896, while engaged minutes per platform user remain above launch (31.9 then versus 95.3 now). Platform users changed -2.5% and sessions +0.4%. Overall video starters and live activity softened. This week's total TVOD trend cannot be assessed because fresh DotStudios, Apple and Stripe sales are unavailable.",
+    "On-demand video starters increased 3.1% to 896, while engaged minutes per platform user remain above launch (31.9 then versus 95.3 now). Platform users changed -2.5% and sessions +0.4%. Overall video starters and live activity softened. Apple free downloads rose 18.6% to 83, and DotStudios TVOD transactions rose to 24 from 23, while TVOD dollars eased 6.5% to $448.75.",
     "Internal GA4 pull, property 497892271: 3,205 platform users, 8,240 sessions, 5,089.7 engaged hours; engagement rate 80.69% versus 81.27% prior. Prior week re-pulled; late processing revises earlier totals.",
     "Viewing: 1,189 video-start users versus 1,241; on-demand starters 896 versus 869; live channel viewers 437 versus 477; live play events 4,696 versus 6,064. Groups overlap; do not add. Live/FAST names excluded from on-demand lists.",
     "Fresh Roku Sales: Sep 28-Oct 4, 2026, 2 purchases / $41.98. App Engagement: Sep 27-Oct 3 (Sun-Sat, one-day offset), 3,078 hours, 336 average daily viewers, 78.56 minutes/viewer, 141 installs / 88 uninstalls. Separate from GA4; TRC off-app excluded.",
-    "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
+    "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
     "TVOD interpretation: season passes bring revenue forward because owners need not repurchase each episode. Lower later sales alone would not establish weaker app conversion. Continued sales would support ongoing demand, not prove redesign causality; use matched release age and eligible-buyer conversion. The proposed 80%-within-48-hours rule remains unverified.",
     "Verdict: paid acquisition needs proof of viewing; last reported Roku costs were concerning. (1) Current paid installs cannot be linked to durable platform growth with available data. (2) Historical Roku best CPI above $60 was too expensive; historical Meta $11.31/download still needs retention proof. Current CPC, CTR and first-open/download cost trends are unavailable because Google is quota-blocked and Meta reporting is stale. (3) No fresh campaign, platform, age, gender or device breakdown proves improving targeting. (4) Meta remains the more promising limited test per Nathan, not a verified current winner over Google. (5) Overall viewing and purchase movements are not attributed to paid users; current sales coverage is incomplete. True ROAS cannot be stated without reconciled ad-server revenue. Paid-campaign impressions are separate from in-app ad impressions. (6) Confirm Roku pause and Meta status; separate iOS/Android and retargeting, test show-led creative, optimize first play and seven-day return, and exclude weak-viewing segments.",
     "Fresh partial YouTube: Sep 28 through 2026-10-03, 6 available days; matched against Sep 21 through 2026-09-26. Not added to app sales or in-app ad delivery.",
-    "Next actions: Patrick and Nathan: confirm Roku pause/Meta restart and supply fresh Meta-only campaign, age, gender and platform reports. Patrick and Nathan: use limited separate iOS/Android and cold/retargeting tests; do not scale on installs alone. Emma, Sydney, Christina and Breanna: compare 15/30-second Ark-led creative with the app sizzle, using distinct tags. Michael: verify first-play and seven-day-return tracking, diagnose viewing declines and reconcile Ionic revenue versus ad events. Team: upload fresh DotStudios/Apple exports and reconnect Stripe; assess TVOD by release stage and eligible non-owners, not raw weekly sales alone."
+    "Next actions: Patrick and Nathan: confirm Roku pause/Meta restart and supply fresh Meta-only campaign, age, gender and platform reports. Patrick and Nathan: use limited separate iOS/Android and cold/retargeting tests; do not scale on installs alone. Emma, Sydney, Christina and Breanna: compare 15/30-second Ark-led creative with the app sizzle, using distinct tags. Michael: verify first-play and seven-day-return tracking, diagnose viewing declines and reconcile Ionic revenue versus ad events. Team: reconcile worldwide Apple sales and ad-server revenue; assess TVOD by release stage and eligible non-owners, not raw weekly sales alone.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "Visible platform sales: Stripe $111.94 + Roku $41.98 + Apple U.S. $128.93 = $282.85. Partial coverage, not total ElectricNOW sales: Apple outside U.S., Google Play and other channels may be missing; includes $8 Stripe subscription. Never add overlapping DotStudios $448.75.",
+    "DotStudios: 704 installs (+5.9%), 423 updates (-26.6%), 12,953 reported views (-8.0%). In-app ad delivery: 31,082 requests, 23,530 impressions (-12.9%), 3,219 errors. Vendor ad counts are a delivery cross-check, not paid-campaign impressions or verified ad revenue."
   ],
   "instrumentationGaps": [
     "No separate GA4 event found for go_ad_free_click yet.",
@@ -3035,48 +3034,215 @@ window.DASHBOARD_DATA = {
   ],
   "salesSummary": {
     "sourceLabel": "Visible platform sales: mixed source dates",
-    "sourceDetail": "Only Roku has fresh sales this week ($41.98). Stripe, Apple and DotStudios are preserved prior snapshots, not a current combined total. Visible platform sales are not total ElectricNOW sales; missing platforms and overlapping sources remain.",
+    "sourceDetail": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners. Visible platform sales: Stripe $111.94 + Roku $41.98 + Apple U.S. $128.93 = $282.85. Partial coverage, not total ElectricNOW sales: Apple outside U.S., Google Play and other channels may be missing; includes $8 Stripe subscription. Never add overlapping DotStudios $448.75.",
     "stripe": {
+      "status": "fresh",
       "sourceLabel": "Stripe connector source check",
-      "sourceDetail": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
+      "sourceDetail": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+      "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
       "connectorStatus": "CONNECTED_FRESH_CHARGE_LIST",
-      "latestSevenDay": {
-        "label": "Stripe connector source check",
-        "range": "Sep 21-Sep 27, 2026",
-        "purchases": 10,
-        "purchaseRevenue": 255.92,
-        "developerRevShare": 255.92,
-        "note": "DotStudios TVOD: 23 purchases / $479.74, down 27.7% in value from 31 / $663.66. Stripe-visible sales: 10 charges / $255.92, including $88 of subscription-creation charges; DotStudios web is 7 / $146.93, a $108.99 scope/timing difference requiring reconciliation. Roku: 1 / $20.99 matches DotStudios Roku. Apple current U.S.-only sales cannot reconcile worldwide DotStudios Apple. These are overlapping checks, not additive to DotStudios."
-      },
       "currentWeek": {
-        "period": "Sep 21-Sep 27, 2026",
-        "gross": 255.92,
-        "transactions": 10,
+        "start": "2026-09-28",
+        "end": "2026-10-04",
+        "transactions": 6,
+        "gross": 111.94,
         "refunds": 0.0,
-        "net": 255.92,
-        "source": "Stripe connector charge list"
-      },
-      "priorWeek": {
-        "transactions": 2,
-        "grossUsd": 41.98,
-        "refundsUsd": 0.0,
-        "netUsd": 41.98,
+        "net": 111.94,
+        "failedAttempts": 9,
+        "subscriptionCharges": 1,
+        "subscriptionGross": 8.0,
         "daily": [
           {
-            "date": "2026-09-14",
+            "date": "2026-09-28",
             "transactions": 1,
-            "grossUsd": 20.99
+            "gross": 8.0
           },
           {
-            "date": "2026-09-17",
+            "date": "2026-09-29",
             "transactions": 1,
-            "grossUsd": 20.99
+            "gross": 20.99
+          },
+          {
+            "date": "2026-10-01",
+            "transactions": 2,
+            "gross": 40.97
+          },
+          {
+            "date": "2026-10-02",
+            "transactions": 1,
+            "gross": 20.99
+          },
+          {
+            "date": "2026-10-03",
+            "transactions": 1,
+            "gross": 20.99
           }
-        ]
+        ],
+        "payments": [
+          {
+            "date": "2026-10-03",
+            "createdAt": "2026-10-03T20:07:47-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-10-02",
+            "createdAt": "2026-10-02T16:36:04-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-10-01",
+            "createdAt": "2026-10-01T11:24:49-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-10-01",
+            "createdAt": "2026-10-01T11:14:46-07:00",
+            "amount": 19.98,
+            "description": "Customer User - Purchase Bundle 20: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-29",
+            "createdAt": "2026-09-29T18:37:42-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-28",
+            "createdAt": "2026-09-28T05:56:17-07:00",
+            "amount": 8.0,
+            "description": "Subscription creation",
+            "source": "Stripe"
+          }
+        ],
+        "period": "Sep 28-Oct 4, 2026"
       },
-      "status": "stale_preserved_no_fresh_pull",
-      "staleNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+      "priorWeek": {
+        "start": "2026-09-21",
+        "end": "2026-09-27",
+        "transactions": 10,
+        "gross": 255.92,
+        "refunds": 0.0,
+        "net": 255.92,
+        "failedAttempts": 0,
+        "subscriptionCharges": 2,
+        "subscriptionGross": 88.0,
+        "daily": [
+          {
+            "date": "2026-09-21",
+            "transactions": 1,
+            "gross": 20.99
+          },
+          {
+            "date": "2026-09-22",
+            "transactions": 2,
+            "gross": 41.98
+          },
+          {
+            "date": "2026-09-23",
+            "transactions": 3,
+            "gross": 62.97
+          },
+          {
+            "date": "2026-09-24",
+            "transactions": 2,
+            "gross": 88.0
+          },
+          {
+            "date": "2026-09-27",
+            "transactions": 2,
+            "gross": 41.98
+          }
+        ],
+        "payments": [
+          {
+            "date": "2026-09-27",
+            "createdAt": "2026-09-27T17:37:18-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-27",
+            "createdAt": "2026-09-27T14:27:40-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-24",
+            "createdAt": "2026-09-24T12:36:22-07:00",
+            "amount": 80.0,
+            "description": "Subscription creation",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-24",
+            "createdAt": "2026-09-24T12:35:52-07:00",
+            "amount": 8.0,
+            "description": "Subscription creation",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-23",
+            "createdAt": "2026-09-23T17:49:15-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-23",
+            "createdAt": "2026-09-23T09:07:26-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-23",
+            "createdAt": "2026-09-23T03:50:32-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-22",
+            "createdAt": "2026-09-22T13:31:39-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-22",
+            "createdAt": "2026-09-22T08:37:53-07:00",
+            "amount": 20.99,
+            "description": "Anonymous Customer - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-21",
+            "createdAt": "2026-09-21T12:56:51-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          }
+        ],
+        "period": "Sep 21-Sep 27, 2026"
+      },
+      "latestSevenDay": {
+        "label": "Stripe successful charges (includes subscriptions)",
+        "range": "Sep 28-Oct 4, 2026",
+        "purchases": 6,
+        "purchaseRevenue": 111.94,
+        "developerRevShare": 111.94,
+        "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand."
+      }
     },
     "roku": {
       "sourceLabel": "Roku-visible sales",
@@ -3443,7 +3609,7 @@ window.DASHBOARD_DATA = {
     },
     "apple": {
       "sourceLabel": "Apple App Store manual sales/download snapshot",
-      "sourceDetail": "Apple current sales are UNITED STATES ONLY: $187.91, versus $285.88 U.S.-only last week (-34.3%). Worldwide current sales unavailable; last worldwide snapshot $350.48 for Sep 14-20 is preserved as historical, not current. Units screenshot: 79 total units = 70 free downloads + 9 in-app units; no country filter visible. Free downloads fell 10.3%; total units fell 15.1%. In-app units are not unique buyers; transaction count not reported. Exact daily unit values and updates were not supplied.",
+      "sourceDetail": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
       "snapshotRange": "Sep 14-Sep 20, 2026",
       "yearToDate": {
         "label": "Apple manual gross sales this year",
@@ -3610,160 +3776,155 @@ window.DASHBOARD_DATA = {
         "note": "Purchase count includes only individually visible Apple transaction rows. The latest aggregate Apple screenshot is counted in revenue but not in purchase count because the screenshot does not show transactions."
       },
       "lastWeek": {
-        "range": "Sep 14-Sep 20, 2026",
-        "period": "Sep 14-Sep 20, 2026",
-        "purchases": null,
-        "purchaseRevenue": 285.88,
-        "downloads": 78,
-        "totalUnits": 93,
-        "inAppUnits": 15,
-        "note": "Prior U.S.-only sales for like-for-like regional comparison."
-      },
-      "latestSnapshot": {
-        "label": "Apple prior snapshot (STALE): Sep 21-Sep 27, U.S. sales only",
         "range": "Sep 21-Sep 27, 2026",
         "period": "Sep 21-Sep 27, 2026",
         "purchases": null,
         "purchaseRevenue": 187.91,
-        "developerRevShare": null,
         "downloads": 70,
-        "freeDownloads": 70,
         "totalUnits": 79,
         "inAppUnits": 9,
-        "status": "stale_preserved_no_fresh_pull",
-        "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported.",
-        "salesGeography": "United States only",
-        "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported."
+        "note": "Prior U.S.-only comparison."
+      },
+      "latestSnapshot": {
+        "label": "Apple current snapshot: U.S. sales only",
+        "range": "Sep 28-Oct 4, 2026",
+        "period": "Sep 28-Oct 4, 2026",
+        "purchases": null,
+        "purchaseRevenue": 128.93,
+        "developerRevShare": null,
+        "downloads": 83,
+        "freeDownloads": 83,
+        "totalUnits": 90,
+        "inAppUnits": 7,
+        "status": "fresh_manual_partial_geography",
+        "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+        "salesGeography": "United States only"
       },
       "dailyTrend": [
         {
-          "date": "2026-09-21",
-          "rawDate": "20260921",
-          "purchaseRevenue": 40.98,
-          "salesGross": 40.98,
-          "geography": "United States only"
-        },
-        {
-          "date": "2026-09-22",
-          "rawDate": "20260922",
-          "purchaseRevenue": 20.99,
-          "salesGross": 20.99,
-          "geography": "United States only"
-        },
-        {
-          "date": "2026-09-23",
-          "rawDate": "20260923",
-          "purchaseRevenue": 62.97,
-          "salesGross": 62.97,
-          "geography": "United States only"
-        },
-        {
-          "date": "2026-09-24",
-          "rawDate": "20260924",
-          "purchaseRevenue": 41.98,
-          "salesGross": 41.98,
-          "geography": "United States only"
-        },
-        {
-          "date": "2026-09-25",
-          "rawDate": "20260925",
-          "purchaseRevenue": 20.99,
-          "salesGross": 20.99,
-          "geography": "United States only"
-        },
-        {
-          "date": "2026-09-26",
-          "rawDate": "20260926",
+          "date": "2026-09-28",
+          "rawDate": "20260928",
           "purchaseRevenue": 0,
           "salesGross": 0,
           "geography": "United States only"
         },
         {
-          "date": "2026-09-27",
-          "rawDate": "20260927",
+          "date": "2026-09-29",
+          "rawDate": "20260929",
           "purchaseRevenue": 0,
           "salesGross": 0,
+          "geography": "United States only"
+        },
+        {
+          "date": "2026-09-30",
+          "rawDate": "20260930",
+          "purchaseRevenue": 20.99,
+          "salesGross": 20.99,
+          "geography": "United States only"
+        },
+        {
+          "date": "2026-10-01",
+          "rawDate": "20261001",
+          "purchaseRevenue": 0,
+          "salesGross": 0,
+          "geography": "United States only"
+        },
+        {
+          "date": "2026-10-02",
+          "rawDate": "20261002",
+          "purchaseRevenue": 20.99,
+          "salesGross": 20.99,
+          "geography": "United States only"
+        },
+        {
+          "date": "2026-10-03",
+          "rawDate": "20261003",
+          "purchaseRevenue": 20.99,
+          "salesGross": 20.99,
+          "geography": "United States only"
+        },
+        {
+          "date": "2026-10-04",
+          "rawDate": "20261004",
+          "purchaseRevenue": 65.96,
+          "salesGross": 65.96,
           "geography": "United States only"
         }
       ],
       "latestSevenDay": {
-        "label": "Apple prior snapshot (STALE): Sep 21-Sep 27, U.S. sales only",
-        "range": "Sep 21-Sep 27, 2026",
-        "period": "Sep 21-Sep 27, 2026",
+        "label": "Apple current snapshot: U.S. sales only",
+        "range": "Sep 28-Oct 4, 2026",
+        "period": "Sep 28-Oct 4, 2026",
         "purchases": null,
-        "purchaseRevenue": 187.91,
+        "purchaseRevenue": 128.93,
         "developerRevShare": null,
-        "downloads": 70,
-        "freeDownloads": 70,
-        "totalUnits": 79,
-        "inAppUnits": 9,
-        "status": "stale_preserved_no_fresh_pull",
-        "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported.",
-        "salesGeography": "United States only",
-        "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported."
+        "downloads": 83,
+        "freeDownloads": 83,
+        "totalUnits": 90,
+        "inAppUnits": 7,
+        "status": "fresh_manual_partial_geography",
+        "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+        "salesGeography": "United States only"
       },
       "currentWeek": {
-        "label": "Apple prior snapshot (STALE): Sep 21-Sep 27, U.S. sales only",
-        "range": "Sep 21-Sep 27, 2026",
-        "period": "Sep 21-Sep 27, 2026",
+        "label": "Apple current snapshot: U.S. sales only",
+        "range": "Sep 28-Oct 4, 2026",
+        "period": "Sep 28-Oct 4, 2026",
         "purchases": null,
-        "purchaseRevenue": 187.91,
+        "purchaseRevenue": 128.93,
         "developerRevShare": null,
-        "downloads": 70,
-        "freeDownloads": 70,
-        "totalUnits": 79,
-        "inAppUnits": 9,
-        "status": "stale_preserved_no_fresh_pull",
-        "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported.",
-        "salesGeography": "United States only",
-        "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported."
+        "downloads": 83,
+        "freeDownloads": 83,
+        "totalUnits": 90,
+        "inAppUnits": 7,
+        "status": "fresh_manual_partial_geography",
+        "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+        "salesGeography": "United States only"
       },
       "weekToDate": {
-        "label": "Apple prior snapshot (STALE): Sep 21-Sep 27, U.S. sales only",
-        "range": "Sep 21-Sep 27, 2026",
-        "period": "Sep 21-Sep 27, 2026",
+        "label": "Apple current snapshot: U.S. sales only",
+        "range": "Sep 28-Oct 4, 2026",
+        "period": "Sep 28-Oct 4, 2026",
         "purchases": null,
-        "purchaseRevenue": 187.91,
+        "purchaseRevenue": 128.93,
         "developerRevShare": null,
-        "downloads": 70,
-        "freeDownloads": 70,
-        "totalUnits": 79,
-        "inAppUnits": 9,
-        "status": "stale_preserved_no_fresh_pull",
-        "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported.",
-        "salesGeography": "United States only",
-        "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. Transaction count not reported."
+        "downloads": 83,
+        "freeDownloads": 83,
+        "totalUnits": 90,
+        "inAppUnits": 7,
+        "status": "fresh_manual_partial_geography",
+        "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+        "salesGeography": "United States only"
       },
       "deltas": {
-        "salesGrossPct": -34.26962361830138,
-        "unitsPct": -15.053763440860216,
-        "freeDownloadsPct": -10.256410256410255,
-        "inAppUnitsPct": -40,
-        "comparisonPeriod": "Sep 14-Sep 20, 2026",
+        "salesGrossPct": -31.387366292374004,
+        "unitsPct": 13.924050632911392,
+        "freeDownloadsPct": 18.571428571428573,
+        "inAppUnitsPct": -22.22222222222222,
+        "comparisonPeriod": "Sep 21-Sep 27, 2026",
         "geography": "United States only"
       },
-      "period": "Sep 21-Sep 27, 2026",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "dailyTrendNote": "Exact U.S.-only sales amounts; daily unit values unavailable.",
+      "period": "Sep 28-Oct 4, 2026",
+      "dailyTrendNote": "Exact U.S.-only sales amounts; daily units unavailable.",
       "lastWorldwideSnapshot": {
         "period": "Sep 14-Sep 20, 2026",
         "purchaseRevenue": 350.48,
         "status": "stale_historical_context",
         "note": "Worldwide current week not supplied."
       },
-      "status": "stale_preserved_no_fresh_pull",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual_partial_geography",
+      "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
     },
     "sourceBreakout": [
       {
         "source": "Stripe",
-        "purchases": 10,
-        "purchaseRevenue": 255.92,
-        "developerRevShare": 255.92,
-        "detail": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-        "status": "stale_preserved_no_fresh_pull",
-        "staleNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-        "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "purchases": 6,
+        "purchaseRevenue": 111.94,
+        "developerRevShare": 111.94,
+        "detail": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+        "status": "fresh",
+        "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+        "sourceDetail": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand."
       },
       {
         "source": "Roku",
@@ -3787,11 +3948,8 @@ window.DASHBOARD_DATA = {
         "rowId": "current-visible-partial",
         "source": "Visible platform sales (Apple U.S. only; partial)",
         "purchases": null,
-        "purchaseRevenue": 464.82,
-        "detail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-        "status": "stale_preserved_no_fresh_pull",
-        "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-        "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+        "purchaseRevenue": 282.85,
+        "detail": "Visible platform sales: Stripe $111.94 + Roku $41.98 + Apple U.S. $128.93 = $282.85. Partial coverage, not total ElectricNOW sales: Apple outside U.S., Google Play and other channels may be missing; includes $8 Stripe subscription. Never add overlapping DotStudios $448.75."
       }
     ],
     "baselineWindow": {
@@ -5486,140 +5644,141 @@ window.DASHBOARD_DATA = {
       "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
     },
     "monthToDate": {
-      "label": "Stripe source check: latest seven days",
-      "range": "Sep 21-Sep 27, 2026",
-      "purchases": 10,
-      "purchaseRevenue": 255.92,
-      "developerRevShare": 255.92,
+      "label": "Stripe latest complete week (not month-to-date)",
+      "range": "Sep 28-Oct 4, 2026",
+      "purchases": 6,
+      "purchaseRevenue": 111.94,
+      "developerRevShare": 111.94,
       "payments": [
         {
-          "date": "2026-09-21",
-          "createdAt": "2026-09-21",
+          "date": "2026-10-03",
+          "createdAt": "2026-10-03T20:07:47-07:00",
           "amount": 20.99,
-          "description": "Stripe: 1 payments",
+          "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe"
         },
         {
-          "date": "2026-09-22",
-          "createdAt": "2026-09-22",
-          "amount": 41.98,
-          "description": "Stripe: 2 payments",
+          "date": "2026-10-02",
+          "createdAt": "2026-10-02T16:36:04-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe"
         },
         {
-          "date": "2026-09-23",
-          "createdAt": "2026-09-23",
-          "amount": 62.97,
-          "description": "Stripe: 3 payments",
+          "date": "2026-10-01",
+          "createdAt": "2026-10-01T11:24:49-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
           "source": "Stripe"
         },
         {
-          "date": "2026-09-24",
-          "createdAt": "2026-09-24",
-          "amount": 88.0,
-          "description": "Stripe: 2 payments",
+          "date": "2026-10-01",
+          "createdAt": "2026-10-01T11:14:46-07:00",
+          "amount": 19.98,
+          "description": "Customer User - Purchase Bundle 20: Signup payment",
           "source": "Stripe"
         },
         {
-          "date": "2026-09-27",
-          "createdAt": "2026-09-27",
-          "amount": 41.98,
-          "description": "Stripe: 2 payments",
+          "date": "2026-09-29",
+          "createdAt": "2026-09-29T18:37:42-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "2026-09-28",
+          "createdAt": "2026-09-28T05:56:17-07:00",
+          "amount": 8.0,
+          "description": "Subscription creation",
           "source": "Stripe"
         }
       ],
-      "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "status": "stale_preserved_no_fresh_pull",
-      "staleNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "sourceDetail": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+      "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+      "status": "fresh"
     },
     "lastWeek": {
-      "label": "Prior snapshot (stale): Apple current snapshot: U.S. sales only",
-      "range": "Sep 21-Sep 27, 2026",
-      "period": "Sep 21-Sep 27, 2026",
+      "label": "Apple current snapshot: U.S. sales only",
+      "range": "Sep 28-Oct 4, 2026",
+      "period": "Sep 28-Oct 4, 2026",
       "purchases": null,
-      "purchaseRevenue": 187.91,
+      "purchaseRevenue": 128.93,
       "developerRevShare": null,
-      "downloads": 70,
-      "freeDownloads": 70,
-      "totalUnits": 79,
-      "inAppUnits": 9,
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "salesGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "downloads": 83,
+      "freeDownloads": 83,
+      "totalUnits": 90,
+      "inAppUnits": 7,
+      "status": "fresh_manual_partial_geography",
+      "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+      "salesGeography": "United States only"
     },
     "thisWeek": {
-      "period": "Sep 21-Sep 27, 2026",
-      "range": "Sep 21-Sep 27, 2026",
-      "label": "Prior snapshot (stale): DotStudios current-week TVOD",
-      "gross": 479.74,
-      "net": 479.74,
-      "transactions": 23,
-      "purchases": 23,
-      "paidTransactions": 23,
-      "knownFreshVisibleTransactions": 23,
-      "purchaseRevenue": 479.74,
+      "period": "Sep 28-Oct 4, 2026",
+      "range": "Sep 28-Oct 4, 2026",
+      "label": "DotStudios current-week TVOD",
+      "gross": 448.75,
+      "net": 448.75,
+      "transactions": 24,
+      "purchases": 24,
+      "paidTransactions": 24,
+      "knownFreshVisibleTransactions": 24,
+      "purchaseRevenue": 448.75,
       "source": "DotStudios manual export",
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "priorPeriod": "Sep 14-Sep 20, 2026",
-      "deltaVsPriorPct": -27.712985564897686,
-      "dotStudiosTvodGross": 479.74,
-      "dotStudiosTvodTransactions": 23,
-      "appleManualSnapshotGross": 187.91,
-      "appleManualSnapshotDownloads": 70,
-      "appleManualSnapshotPeriod": "Sep 21-Sep 27, 2026",
-      "appleManualSnapshotGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+      "priorPeriod": "Sep 21-Sep 27, 2026",
+      "deltaVsPriorPct": -6.459749030724978,
+      "dotStudiosTvodGross": 448.75,
+      "dotStudiosTvodTransactions": 24,
+      "appleManualSnapshotGross": 128.93,
+      "appleManualSnapshotDownloads": 83,
+      "appleManualSnapshotPeriod": "Sep 28-Oct 4, 2026",
+      "appleManualSnapshotGeography": "United States only"
     },
     "currentCompleteWeek": {
-      "period": "Sep 21-Sep 27, 2026",
-      "range": "Sep 21-Sep 27, 2026",
-      "label": "Prior snapshot (stale): DotStudios current-week TVOD",
-      "gross": 479.74,
-      "net": 479.74,
-      "transactions": 23,
-      "purchases": 23,
-      "paidTransactions": 23,
-      "knownFreshVisibleTransactions": 23,
-      "purchaseRevenue": 479.74,
+      "period": "Sep 28-Oct 4, 2026",
+      "range": "Sep 28-Oct 4, 2026",
+      "label": "DotStudios current-week TVOD",
+      "gross": 448.75,
+      "net": 448.75,
+      "transactions": 24,
+      "purchases": 24,
+      "paidTransactions": 24,
+      "knownFreshVisibleTransactions": 24,
+      "purchaseRevenue": 448.75,
       "source": "DotStudios manual export",
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "priorPeriod": "Sep 14-Sep 20, 2026",
-      "deltaVsPriorPct": -27.712985564897686,
-      "dotStudiosTvodGross": 479.74,
-      "dotStudiosTvodTransactions": 23,
-      "appleManualSnapshotGross": 187.91,
-      "appleManualSnapshotDownloads": 70,
-      "appleManualSnapshotPeriod": "Sep 21-Sep 27, 2026",
-      "appleManualSnapshotGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+      "priorPeriod": "Sep 21-Sep 27, 2026",
+      "deltaVsPriorPct": -6.459749030724978,
+      "dotStudiosTvodGross": 448.75,
+      "dotStudiosTvodTransactions": 24,
+      "appleManualSnapshotGross": 128.93,
+      "appleManualSnapshotDownloads": 83,
+      "appleManualSnapshotPeriod": "Sep 28-Oct 4, 2026",
+      "appleManualSnapshotGeography": "United States only"
     },
     "weekToDate": {
-      "period": "Sep 21-Sep 27, 2026",
-      "range": "Sep 21-Sep 27, 2026",
-      "label": "Prior snapshot (stale): DotStudios current-week TVOD",
-      "gross": 479.74,
-      "net": 479.74,
-      "transactions": 23,
-      "purchases": 23,
-      "paidTransactions": 23,
-      "knownFreshVisibleTransactions": 23,
-      "purchaseRevenue": 479.74,
+      "period": "Sep 28-Oct 4, 2026",
+      "range": "Sep 28-Oct 4, 2026",
+      "label": "DotStudios current-week TVOD",
+      "gross": 448.75,
+      "net": 448.75,
+      "transactions": 24,
+      "purchases": 24,
+      "paidTransactions": 24,
+      "knownFreshVisibleTransactions": 24,
+      "purchaseRevenue": 448.75,
       "source": "DotStudios manual export",
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "priorPeriod": "Sep 14-Sep 20, 2026",
-      "deltaVsPriorPct": -27.712985564897686,
-      "dotStudiosTvodGross": 479.74,
-      "dotStudiosTvodTransactions": 23,
-      "appleManualSnapshotGross": 187.91,
-      "appleManualSnapshotDownloads": 70,
-      "appleManualSnapshotPeriod": "Sep 21-Sep 27, 2026",
-      "appleManualSnapshotGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+      "priorPeriod": "Sep 21-Sep 27, 2026",
+      "deltaVsPriorPct": -6.459749030724978,
+      "dotStudiosTvodGross": 448.75,
+      "dotStudiosTvodTransactions": 24,
+      "appleManualSnapshotGross": 128.93,
+      "appleManualSnapshotDownloads": 83,
+      "appleManualSnapshotPeriod": "Sep 28-Oct 4, 2026",
+      "appleManualSnapshotGeography": "United States only"
     },
     "recent12Days": {
       "label": "Prior snapshot (stale): Stripe source check: latest seven days",
@@ -5802,44 +5961,46 @@ window.DASHBOARD_DATA = {
     ],
     "recentPayments": [
       {
-        "date": "2026-09-21",
-        "createdAt": "2026-09-21",
+        "date": "2026-10-03",
+        "createdAt": "2026-10-03T20:07:47-07:00",
         "amount": 20.99,
-        "description": "Stripe: 1 payments",
-        "source": "Stripe",
-        "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "description": "Customer User - Season Pass: Signup payment",
+        "source": "Stripe"
       },
       {
-        "date": "2026-09-22",
-        "createdAt": "2026-09-22",
-        "amount": 41.98,
-        "description": "Stripe: 2 payments",
-        "source": "Stripe",
-        "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "date": "2026-10-02",
+        "createdAt": "2026-10-02T16:36:04-07:00",
+        "amount": 20.99,
+        "description": "Customer User - Season Pass: Signup payment",
+        "source": "Stripe"
       },
       {
-        "date": "2026-09-23",
-        "createdAt": "2026-09-23",
-        "amount": 62.97,
-        "description": "Stripe: 3 payments",
-        "source": "Stripe",
-        "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "date": "2026-10-01",
+        "createdAt": "2026-10-01T11:24:49-07:00",
+        "amount": 20.99,
+        "description": "Customer User - Season Pass: Signup payment",
+        "source": "Stripe"
       },
       {
-        "date": "2026-09-24",
-        "createdAt": "2026-09-24",
-        "amount": 88.0,
-        "description": "Stripe: 2 payments",
-        "source": "Stripe",
-        "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "date": "2026-10-01",
+        "createdAt": "2026-10-01T11:14:46-07:00",
+        "amount": 19.98,
+        "description": "Customer User - Purchase Bundle 20: Signup payment",
+        "source": "Stripe"
       },
       {
-        "date": "2026-09-27",
-        "createdAt": "2026-09-27",
-        "amount": 41.98,
-        "description": "Stripe: 2 payments",
-        "source": "Stripe",
-        "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "date": "2026-09-29",
+        "createdAt": "2026-09-29T18:37:42-07:00",
+        "amount": 20.99,
+        "description": "Customer User - Season Pass: Signup payment",
+        "source": "Stripe"
+      },
+      {
+        "date": "2026-09-28",
+        "createdAt": "2026-09-28T05:56:17-07:00",
+        "amount": 8.0,
+        "description": "Subscription creation",
+        "source": "Stripe"
       }
     ],
     "dailyTrend": [
@@ -6971,162 +7132,324 @@ window.DASHBOARD_DATA = {
         "developerRevShare": 0
       },
       {
-        "date": "Sep 21",
+        "date": "2026-09-21",
         "rawDate": "20260921",
         "purchases": 1,
-        "purchaseRevenue": 20.99,
-        "developerRevShare": 20.99
+        "purchaseRevenue": 20.99
       },
       {
-        "date": "Sep 22",
+        "date": "2026-09-22",
         "rawDate": "20260922",
         "purchases": 2,
-        "purchaseRevenue": 41.98,
-        "developerRevShare": 41.98
+        "purchaseRevenue": 41.98
       },
       {
-        "date": "Sep 23",
+        "date": "2026-09-23",
         "rawDate": "20260923",
         "purchases": 3,
-        "purchaseRevenue": 62.97,
-        "developerRevShare": 62.97
+        "purchaseRevenue": 62.97
       },
       {
-        "date": "Sep 24",
+        "date": "2026-09-24",
         "rawDate": "20260924",
         "purchases": 2,
-        "purchaseRevenue": 88.0,
-        "developerRevShare": 88.0
+        "purchaseRevenue": 88.0
       },
       {
-        "date": "Sep 25",
-        "rawDate": "20260925",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0
-      },
-      {
-        "date": "Sep 26",
-        "rawDate": "20260926",
-        "purchases": 0,
-        "purchaseRevenue": 0,
-        "developerRevShare": 0
-      },
-      {
-        "date": "Sep 27",
+        "date": "2026-09-27",
         "rawDate": "20260927",
         "purchases": 2,
-        "purchaseRevenue": 41.98,
-        "developerRevShare": 41.98
+        "purchaseRevenue": 41.98
+      },
+      {
+        "date": "2026-09-28",
+        "rawDate": "20260928",
+        "purchases": 1,
+        "purchaseRevenue": 8.0
+      },
+      {
+        "date": "2026-09-29",
+        "rawDate": "20260929",
+        "purchases": 1,
+        "purchaseRevenue": 20.99
+      },
+      {
+        "date": "2026-10-01",
+        "rawDate": "20261001",
+        "purchases": 2,
+        "purchaseRevenue": 40.97
+      },
+      {
+        "date": "2026-10-02",
+        "rawDate": "20261002",
+        "purchases": 1,
+        "purchaseRevenue": 20.99
+      },
+      {
+        "date": "2026-10-03",
+        "rawDate": "20261003",
+        "purchases": 1,
+        "purchaseRevenue": 20.99
       }
     ],
-    "note": "Only Roku has fresh sales this week ($41.98). Stripe, Apple and DotStudios are preserved prior snapshots, not a current combined total. Visible platform sales are not total ElectricNOW sales; missing platforms and overlapping sources remain.",
+    "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners. Visible platform sales: Stripe $111.94 + Roku $41.98 + Apple U.S. $128.93 = $282.85. Partial coverage, not total ElectricNOW sales: Apple outside U.S., Google Play and other channels may be missing; includes $8 Stripe subscription. Never add overlapping DotStudios $448.75.",
     "latestSevenDayVisibleSales": {
-      "period": "Sep 21-Sep 27, 2026",
-      "range": "Sep 21-Sep 27, 2026",
-      "label": "Prior snapshot (stale): DotStudios current-week TVOD",
-      "gross": 479.74,
-      "net": 479.74,
-      "transactions": 23,
-      "purchases": 23,
-      "paidTransactions": 23,
-      "knownFreshVisibleTransactions": 23,
-      "purchaseRevenue": 479.74,
+      "period": "Sep 28-Oct 4, 2026",
+      "range": "Sep 28-Oct 4, 2026",
+      "label": "DotStudios current-week TVOD",
+      "gross": 448.75,
+      "net": 448.75,
+      "transactions": 24,
+      "purchases": 24,
+      "paidTransactions": 24,
+      "knownFreshVisibleTransactions": 24,
+      "purchaseRevenue": 448.75,
       "source": "DotStudios manual export",
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "priorPeriod": "Sep 14-Sep 20, 2026",
-      "deltaVsPriorPct": -27.712985564897686,
-      "dotStudiosTvodGross": 479.74,
-      "dotStudiosTvodTransactions": 23,
-      "appleManualSnapshotGross": 187.91,
-      "appleManualSnapshotDownloads": 70,
-      "appleManualSnapshotPeriod": "Sep 21-Sep 27, 2026",
-      "appleManualSnapshotGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+      "priorPeriod": "Sep 21-Sep 27, 2026",
+      "deltaVsPriorPct": -6.459749030724978,
+      "dotStudiosTvodGross": 448.75,
+      "dotStudiosTvodTransactions": 24,
+      "appleManualSnapshotGross": 128.93,
+      "appleManualSnapshotDownloads": 83,
+      "appleManualSnapshotPeriod": "Sep 28-Oct 4, 2026",
+      "appleManualSnapshotGeography": "United States only"
     },
     "dotStudiosTvod": {
-      "period": "Sep 21-Sep 27, 2026",
-      "range": "Sep 21-Sep 27, 2026",
-      "label": "Prior snapshot (stale): DotStudios current-week TVOD",
-      "gross": 479.74,
-      "net": 479.74,
-      "transactions": 23,
-      "purchases": 23,
-      "paidTransactions": 23,
-      "knownFreshVisibleTransactions": 23,
-      "purchaseRevenue": 479.74,
+      "period": "Sep 28-Oct 4, 2026",
+      "range": "Sep 28-Oct 4, 2026",
+      "label": "DotStudios current-week TVOD",
+      "gross": 448.75,
+      "net": 448.75,
+      "transactions": 24,
+      "purchases": 24,
+      "paidTransactions": 24,
+      "knownFreshVisibleTransactions": 24,
+      "purchaseRevenue": 448.75,
       "source": "DotStudios manual export",
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "priorPeriod": "Sep 14-Sep 20, 2026",
-      "deltaVsPriorPct": -27.712985564897686,
-      "dotStudiosTvodGross": 479.74,
-      "dotStudiosTvodTransactions": 23,
-      "appleManualSnapshotGross": 187.91,
-      "appleManualSnapshotDownloads": 70,
-      "appleManualSnapshotPeriod": "Sep 21-Sep 27, 2026",
-      "appleManualSnapshotGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+      "priorPeriod": "Sep 21-Sep 27, 2026",
+      "deltaVsPriorPct": -6.459749030724978,
+      "dotStudiosTvodGross": 448.75,
+      "dotStudiosTvodTransactions": 24,
+      "appleManualSnapshotGross": 128.93,
+      "appleManualSnapshotDownloads": 83,
+      "appleManualSnapshotPeriod": "Sep 28-Oct 4, 2026",
+      "appleManualSnapshotGeography": "United States only"
     },
     "appleManual": {
-      "period": "Sep 21-Sep 27, 2026",
-      "salesGross": 187.91,
-      "downloads": 70,
-      "totalUnits": 79,
-      "freeDownloads": 70,
-      "inAppUnits": 9,
-      "status": "stale_preserved_no_fresh_pull",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "salesGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "period": "Sep 28-Oct 4, 2026",
+      "salesGross": 128.93,
+      "downloads": 83,
+      "totalUnits": 90,
+      "freeDownloads": 83,
+      "inAppUnits": 7,
+      "status": "fresh_manual_partial_geography",
+      "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+      "salesGeography": "United States only"
     },
     "visiblePlatformSalesDefinition": "DotStudios current-week TVOD is the broadest current visible sales view. Stripe, Roku, and Apple are platform/source checks and overlap DotStudios rows; Google Play and other channels may still be incomplete.",
-    "reconciliationNote": "Only Roku has fresh sales this week ($41.98). Stripe, Apple and DotStudios are preserved prior snapshots, not a current combined total. Visible platform sales are not total ElectricNOW sales; missing platforms and overlapping sources remain.",
+    "reconciliationNote": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
     "stripeConnectorCheck": {
-      "period": "Sep 21-Sep 27, 2026",
-      "gross": 255.92,
-      "transactions": 10,
+      "start": "2026-09-28",
+      "end": "2026-10-04",
+      "transactions": 6,
+      "gross": 111.94,
       "refunds": 0.0,
-      "net": 255.92,
-      "source": "Stripe connector charge list",
-      "status": "stale_preserved_no_fresh_pull",
-      "hasMore": false,
+      "net": 111.94,
+      "failedAttempts": 9,
+      "subscriptionCharges": 1,
+      "subscriptionGross": 8.0,
       "daily": [
         {
-          "date": "2026-09-21",
+          "date": "2026-09-28",
+          "transactions": 1,
+          "gross": 8.0
+        },
+        {
+          "date": "2026-09-29",
           "transactions": 1,
           "gross": 20.99
         },
         {
-          "date": "2026-09-22",
+          "date": "2026-10-01",
           "transactions": 2,
-          "gross": 41.98
+          "gross": 40.97
         },
         {
-          "date": "2026-09-23",
-          "transactions": 3,
-          "gross": 62.97
+          "date": "2026-10-02",
+          "transactions": 1,
+          "gross": 20.99
         },
         {
-          "date": "2026-09-24",
-          "transactions": 2,
-          "gross": 88.0
-        },
-        {
-          "date": "2026-09-27",
-          "transactions": 2,
-          "gross": 41.98
+          "date": "2026-10-03",
+          "transactions": 1,
+          "gross": 20.99
         }
       ],
+      "payments": [
+        {
+          "date": "2026-10-03",
+          "createdAt": "2026-10-03T20:07:47-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "2026-10-02",
+          "createdAt": "2026-10-02T16:36:04-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "2026-10-01",
+          "createdAt": "2026-10-01T11:24:49-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "2026-10-01",
+          "createdAt": "2026-10-01T11:14:46-07:00",
+          "amount": 19.98,
+          "description": "Customer User - Purchase Bundle 20: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "2026-09-29",
+          "createdAt": "2026-09-29T18:37:42-07:00",
+          "amount": 20.99,
+          "description": "Customer User - Season Pass: Signup payment",
+          "source": "Stripe"
+        },
+        {
+          "date": "2026-09-28",
+          "createdAt": "2026-09-28T05:56:17-07:00",
+          "amount": 8.0,
+          "description": "Subscription creation",
+          "source": "Stripe"
+        }
+      ],
+      "period": "Sep 28-Oct 4, 2026",
+      "status": "fresh",
+      "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+      "source": "Stripe live charge list",
+      "hasMore": true,
+      "coverageComplete": true,
       "priorPeriod": {
-        "period": "Sep 14-Sep 20, 2026",
-        "gross": 41.98,
-        "transactions": 2
-      },
-      "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "staleNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "sourceDetail": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+        "start": "2026-09-21",
+        "end": "2026-09-27",
+        "transactions": 10,
+        "gross": 255.92,
+        "refunds": 0.0,
+        "net": 255.92,
+        "failedAttempts": 0,
+        "subscriptionCharges": 2,
+        "subscriptionGross": 88.0,
+        "daily": [
+          {
+            "date": "2026-09-21",
+            "transactions": 1,
+            "gross": 20.99
+          },
+          {
+            "date": "2026-09-22",
+            "transactions": 2,
+            "gross": 41.98
+          },
+          {
+            "date": "2026-09-23",
+            "transactions": 3,
+            "gross": 62.97
+          },
+          {
+            "date": "2026-09-24",
+            "transactions": 2,
+            "gross": 88.0
+          },
+          {
+            "date": "2026-09-27",
+            "transactions": 2,
+            "gross": 41.98
+          }
+        ],
+        "payments": [
+          {
+            "date": "2026-09-27",
+            "createdAt": "2026-09-27T17:37:18-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-27",
+            "createdAt": "2026-09-27T14:27:40-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-24",
+            "createdAt": "2026-09-24T12:36:22-07:00",
+            "amount": 80.0,
+            "description": "Subscription creation",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-24",
+            "createdAt": "2026-09-24T12:35:52-07:00",
+            "amount": 8.0,
+            "description": "Subscription creation",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-23",
+            "createdAt": "2026-09-23T17:49:15-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-23",
+            "createdAt": "2026-09-23T09:07:26-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-23",
+            "createdAt": "2026-09-23T03:50:32-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-22",
+            "createdAt": "2026-09-22T13:31:39-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-22",
+            "createdAt": "2026-09-22T08:37:53-07:00",
+            "amount": 20.99,
+            "description": "Anonymous Customer - Season Pass: Signup payment",
+            "source": "Stripe"
+          },
+          {
+            "date": "2026-09-21",
+            "createdAt": "2026-09-21T12:56:51-07:00",
+            "amount": 20.99,
+            "description": "Customer User - Season Pass: Signup payment",
+            "source": "Stripe"
+          }
+        ],
+        "period": "Sep 21-Sep 27, 2026"
+      }
     },
     "rokuSalesActivity": {
       "period": "Sep 28-Oct 4, 2026",
@@ -7159,14 +7482,17 @@ window.DASHBOARD_DATA = {
     },
     "visiblePlatformSalesCurrentWeek": {
       "period": "Sep 28-Oct 4, 2026",
-      "purchaseRevenue": 41.98,
-      "purchases": 2,
-      "label": "Fresh visible sales: Roku only",
+      "purchaseRevenue": 282.85,
+      "purchases": null,
+      "stripeGross": 111.94,
+      "rokuGross": 41.98,
+      "appleUSGross": 128.93,
+      "label": "Visible platform sales (Apple U.S. only; partial)",
       "status": "partial_coverage",
-      "note": "Only Roku has fresh sales this week ($41.98). Stripe, Apple and DotStudios are preserved prior snapshots, not a current combined total. Visible platform sales are not total ElectricNOW sales; missing platforms and overlapping sources remain."
+      "note": "Visible platform sales: Stripe $111.94 + Roku $41.98 + Apple U.S. $128.93 = $282.85. Partial coverage, not total ElectricNOW sales: Apple outside U.S., Google Play and other channels may be missing; includes $8 Stripe subscription. Never add overlapping DotStudios $448.75."
     },
-    "recentPaymentsNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-    "staleNote": "Only Roku has fresh sales this week ($41.98). Stripe, Apple and DotStudios are preserved prior snapshots, not a current combined total. Visible platform sales are not total ElectricNOW sales; missing platforms and overlapping sources remain."
+    "recentPaymentsNote": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+    "staleNote": "Historical year-to-date and legacy sales windows remain dated prior snapshots; current source cards are fresh."
   },
   "contentUsage": {
     "period": "Sep 28-Oct 4, 2026",
@@ -10794,108 +11120,105 @@ window.DASHBOARD_DATA = {
     }
   },
   "manualAppleSalesUpdate": {
-    "downloads": 70,
-    "displayDownloads": "70",
+    "downloads": 83,
+    "displayDownloads": "83",
     "updates": null,
     "displayUpdates": null,
-    "inAppUnits": 9,
-    "totalUnits": 79,
-    "dailyAverage": 11.285714285714286,
-    "start": "2026-09-21",
-    "end": "2026-09-27",
-    "period": "Sep 21-Sep 27, 2026",
-    "priorDownloads": 78,
-    "priorPeriod": "Sep 14-Sep 20, 2026",
-    "deltaPct": -10.256410256410255,
+    "inAppUnits": 7,
+    "totalUnits": 90,
+    "dailyAverage": 12.857142857142858,
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "period": "Sep 28-Oct 4, 2026",
+    "priorDownloads": 70,
+    "priorPeriod": "Sep 21-Sep 27, 2026",
+    "deltaPct": 18.571428571428573,
     "product": "ElectricNOW",
     "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
     "territories": [
       {
         "territory": "No country filter visible on units screenshot",
-        "downloads": 70,
-        "deltaPct": -10.256410256410255
+        "downloads": 83,
+        "deltaPct": 18.571428571428573
       }
     ],
-    "sourceLabel": "Prior snapshot (stale): Apple current snapshot: U.S. sales only",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
     "sourceScreenshots": [
       {
         "metric": "units",
-        "path": "/home/user/workspace/uploaded_attachments/8f7cdf53ff5b4e06b68bb7b5c2818b52/image.jpeg"
+        "path": "/home/user/.perplexity/attachments/bc78b589bf7e496dbf4e46e867ac8efd/image.jpeg"
       },
       {
         "metric": "sales",
-        "path": "/home/user/workspace/uploaded_attachments/8f7cdf53ff5b4e06b68bb7b5c2818b52/image-1.jpeg"
+        "path": "/home/user/.perplexity/attachments/bc78b589bf7e496dbf4e46e867ac8efd/image-1.jpeg"
       }
     ],
-    "salesGross": 187.91,
+    "salesGross": 128.93,
     "salesEstimatedNet70Pct": null,
     "salesDaily": [
       {
-        "date": "2026-09-21",
-        "rawDate": "20260921",
-        "purchaseRevenue": 40.98,
-        "salesGross": 40.98,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-22",
-        "rawDate": "20260922",
-        "purchaseRevenue": 20.99,
-        "salesGross": 20.99,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-23",
-        "rawDate": "20260923",
-        "purchaseRevenue": 62.97,
-        "salesGross": 62.97,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-24",
-        "rawDate": "20260924",
-        "purchaseRevenue": 41.98,
-        "salesGross": 41.98,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-25",
-        "rawDate": "20260925",
-        "purchaseRevenue": 20.99,
-        "salesGross": 20.99,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-26",
-        "rawDate": "20260926",
+        "date": "2026-09-28",
+        "rawDate": "20260928",
         "purchaseRevenue": 0,
         "salesGross": 0,
         "geography": "United States only"
       },
       {
-        "date": "2026-09-27",
-        "rawDate": "20260927",
+        "date": "2026-09-29",
+        "rawDate": "20260929",
         "purchaseRevenue": 0,
         "salesGross": 0,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-09-30",
+        "rawDate": "20260930",
+        "purchaseRevenue": 20.99,
+        "salesGross": 20.99,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-01",
+        "rawDate": "20261001",
+        "purchaseRevenue": 0,
+        "salesGross": 0,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-02",
+        "rawDate": "20261002",
+        "purchaseRevenue": 20.99,
+        "salesGross": 20.99,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-03",
+        "rawDate": "20261003",
+        "purchaseRevenue": 20.99,
+        "salesGross": 20.99,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-04",
+        "rawDate": "20261004",
+        "purchaseRevenue": 65.96,
+        "salesGross": 65.96,
         "geography": "United States only"
       }
     ],
     "downloadsDaily": [],
-    "salesDeltaPct": -34.26962361830138,
-    "updatedAtUtc": "2026-09-28T19:46:37.385314+00:00",
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "priorTotalUnits": 93,
-    "priorInAppUnits": 15,
-    "priorSalesGross": 285.88,
+    "salesDeltaPct": -31.387366292374004,
+    "updatedAtUtc": "2026-10-05T20:06:53.945810+00:00",
+    "priorTotalUnits": 79,
+    "priorInAppUnits": 9,
+    "priorSalesGross": 187.91,
     "downloadsDailyNote": "Daily bars have no exact values; not estimated.",
-    "status": "stale_preserved_no_fresh_pull",
-    "salesComparisonPeriod": "Sep 14-Sep 20, 2026",
-    "freeDownloads": 70,
+    "status": "fresh_manual_partial_geography",
+    "salesComparisonPeriod": "Sep 21-Sep 27, 2026",
+    "freeDownloads": 83,
     "dailyUnitsStatus": "not_provided_in_source",
     "paidUnits": 0,
-    "grossRevenue": 187.91,
-    "salesGrossUS": 187.91,
+    "grossRevenue": 128.93,
+    "salesGrossUS": 128.93,
     "salesGeography": "United States only",
     "worldwideSalesGross": null,
     "priorWorldwideSnapshot": {
@@ -10903,7 +11226,9 @@ window.DASHBOARD_DATA = {
       "salesGross": 350.48,
       "status": "stale_historical_context"
     },
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "sourceLabel": "Apple current snapshot: U.S. sales only",
+    "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "sourceDetail": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
   },
   "googleAdsSummary": {
     "source": "Google Ads connector (API v25)",
@@ -13976,7 +14301,7 @@ window.DASHBOARD_DATA = {
       "Patrick and Nathan: use limited separate iOS/Android and cold/retargeting tests; do not scale on installs alone.",
       "Emma, Sydney, Christina and Breanna: compare 15/30-second Ark-led creative with the app sizzle, using distinct tags.",
       "Michael: verify first-play and seven-day-return tracking, diagnose viewing declines and reconcile Ionic revenue versus ad events.",
-      "Team: upload fresh DotStudios/Apple exports and reconnect Stripe; assess TVOD by release stage and eligible non-owners, not raw weekly sales alone."
+      "Team: upload fresh DotStudios/Apple exports; assess TVOD by release stage and eligible non-owners, not raw weekly sales alone."
     ],
     "googleAdsStatus": "stale_preserved_no_fresh_pull",
     "googleAdsNote": "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero.",
@@ -14299,108 +14624,105 @@ window.DASHBOARD_DATA = {
     "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
   },
   "manualAppleDownloads": {
-    "downloads": 70,
-    "displayDownloads": "70",
+    "downloads": 83,
+    "displayDownloads": "83",
     "updates": null,
     "displayUpdates": null,
-    "inAppUnits": 9,
-    "totalUnits": 79,
-    "dailyAverage": 11.285714285714286,
-    "start": "2026-09-21",
-    "end": "2026-09-27",
-    "period": "Sep 21-Sep 27, 2026",
-    "priorDownloads": 78,
-    "priorPeriod": "Sep 14-Sep 20, 2026",
-    "deltaPct": -10.256410256410255,
+    "inAppUnits": 7,
+    "totalUnits": 90,
+    "dailyAverage": 12.857142857142858,
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "period": "Sep 28-Oct 4, 2026",
+    "priorDownloads": 70,
+    "priorPeriod": "Sep 21-Sep 27, 2026",
+    "deltaPct": 18.571428571428573,
     "product": "ElectricNOW",
     "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
     "territories": [
       {
         "territory": "No country filter visible on units screenshot",
-        "downloads": 70,
-        "deltaPct": -10.256410256410255
+        "downloads": 83,
+        "deltaPct": 18.571428571428573
       }
     ],
-    "sourceLabel": "Prior snapshot (stale): Apple current snapshot: U.S. sales only",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
     "sourceScreenshots": [
       {
         "metric": "units",
-        "path": "/home/user/workspace/uploaded_attachments/8f7cdf53ff5b4e06b68bb7b5c2818b52/image.jpeg"
+        "path": "/home/user/.perplexity/attachments/bc78b589bf7e496dbf4e46e867ac8efd/image.jpeg"
       },
       {
         "metric": "sales",
-        "path": "/home/user/workspace/uploaded_attachments/8f7cdf53ff5b4e06b68bb7b5c2818b52/image-1.jpeg"
+        "path": "/home/user/.perplexity/attachments/bc78b589bf7e496dbf4e46e867ac8efd/image-1.jpeg"
       }
     ],
-    "salesGross": 187.91,
+    "salesGross": 128.93,
     "salesEstimatedNet70Pct": null,
     "salesDaily": [
       {
-        "date": "2026-09-21",
-        "rawDate": "20260921",
-        "purchaseRevenue": 40.98,
-        "salesGross": 40.98,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-22",
-        "rawDate": "20260922",
-        "purchaseRevenue": 20.99,
-        "salesGross": 20.99,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-23",
-        "rawDate": "20260923",
-        "purchaseRevenue": 62.97,
-        "salesGross": 62.97,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-24",
-        "rawDate": "20260924",
-        "purchaseRevenue": 41.98,
-        "salesGross": 41.98,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-25",
-        "rawDate": "20260925",
-        "purchaseRevenue": 20.99,
-        "salesGross": 20.99,
-        "geography": "United States only"
-      },
-      {
-        "date": "2026-09-26",
-        "rawDate": "20260926",
+        "date": "2026-09-28",
+        "rawDate": "20260928",
         "purchaseRevenue": 0,
         "salesGross": 0,
         "geography": "United States only"
       },
       {
-        "date": "2026-09-27",
-        "rawDate": "20260927",
+        "date": "2026-09-29",
+        "rawDate": "20260929",
         "purchaseRevenue": 0,
         "salesGross": 0,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-09-30",
+        "rawDate": "20260930",
+        "purchaseRevenue": 20.99,
+        "salesGross": 20.99,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-01",
+        "rawDate": "20261001",
+        "purchaseRevenue": 0,
+        "salesGross": 0,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-02",
+        "rawDate": "20261002",
+        "purchaseRevenue": 20.99,
+        "salesGross": 20.99,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-03",
+        "rawDate": "20261003",
+        "purchaseRevenue": 20.99,
+        "salesGross": 20.99,
+        "geography": "United States only"
+      },
+      {
+        "date": "2026-10-04",
+        "rawDate": "20261004",
+        "purchaseRevenue": 65.96,
+        "salesGross": 65.96,
         "geography": "United States only"
       }
     ],
     "downloadsDaily": [],
-    "salesDeltaPct": -34.26962361830138,
-    "updatedAtUtc": "2026-09-28T19:46:37.385314+00:00",
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "priorTotalUnits": 93,
-    "priorInAppUnits": 15,
-    "priorSalesGross": 285.88,
+    "salesDeltaPct": -31.387366292374004,
+    "updatedAtUtc": "2026-10-05T20:06:53.945810+00:00",
+    "priorTotalUnits": 79,
+    "priorInAppUnits": 9,
+    "priorSalesGross": 187.91,
     "downloadsDailyNote": "Daily bars have no exact values; not estimated.",
-    "status": "stale_preserved_no_fresh_pull",
-    "salesComparisonPeriod": "Sep 14-Sep 20, 2026",
-    "freeDownloads": 70,
+    "status": "fresh_manual_partial_geography",
+    "salesComparisonPeriod": "Sep 21-Sep 27, 2026",
+    "freeDownloads": 83,
     "dailyUnitsStatus": "not_provided_in_source",
     "paidUnits": 0,
-    "grossRevenue": 187.91,
-    "salesGrossUS": 187.91,
+    "grossRevenue": 128.93,
+    "salesGrossUS": 128.93,
     "salesGeography": "United States only",
     "worldwideSalesGross": null,
     "priorWorldwideSnapshot": {
@@ -14408,7 +14730,9 @@ window.DASHBOARD_DATA = {
       "salesGross": 350.48,
       "status": "stale_historical_context"
     },
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "sourceLabel": "Apple current snapshot: U.S. sales only",
+    "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "sourceDetail": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
   },
   "manualDataPatch": {
     "updatedAt": "2026-10-05 13:00 PDT",
@@ -14556,17 +14880,20 @@ window.DASHBOARD_DATA = {
   "plainEnglishSummary": {
     "period": "Sep 28-Oct 4, 2026",
     "comparisonPeriod": "Sep 21-Sep 27, 2026",
-    "overview": "On-demand video starters increased 3.1% to 896, while engaged minutes per platform user remain above launch (31.9 then versus 95.3 now). Platform users changed -2.5% and sessions +0.4%. Overall video starters and live activity softened. This week's total TVOD trend cannot be assessed because fresh DotStudios, Apple and Stripe sales are unavailable.",
+    "overview": "On-demand video starters increased 3.1% to 896, while engaged minutes per platform user remain above launch (31.9 then versus 95.3 now). Platform users changed -2.5% and sessions +0.4%. Overall video starters and live activity softened. Apple free downloads rose 18.6% to 83, and DotStudios TVOD transactions rose to 24 from 23, while TVOD dollars eased 6.5% to $448.75.",
     "bullets": [
       "Internal GA4 pull, property 497892271: 3,205 platform users, 8,240 sessions, 5,089.7 engaged hours; engagement rate 80.69% versus 81.27% prior. Prior week re-pulled; late processing revises earlier totals.",
       "Viewing: 1,189 video-start users versus 1,241; on-demand starters 896 versus 869; live channel viewers 437 versus 477; live play events 4,696 versus 6,064. Groups overlap; do not add. Live/FAST names excluded from on-demand lists.",
       "Fresh Roku Sales: Sep 28-Oct 4, 2026, 2 purchases / $41.98. App Engagement: Sep 27-Oct 3 (Sun-Sat, one-day offset), 3,078 hours, 336 average daily viewers, 78.56 minutes/viewer, 141 installs / 88 uninstalls. Separate from GA4; TRC off-app excluded.",
-      "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
+      "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
       "TVOD interpretation: season passes bring revenue forward because owners need not repurchase each episode. Lower later sales alone would not establish weaker app conversion. Continued sales would support ongoing demand, not prove redesign causality; use matched release age and eligible-buyer conversion. The proposed 80%-within-48-hours rule remains unverified.",
       "Verdict: paid acquisition needs proof of viewing; last reported Roku costs were concerning. (1) Current paid installs cannot be linked to durable platform growth with available data. (2) Historical Roku best CPI above $60 was too expensive; historical Meta $11.31/download still needs retention proof. Current CPC, CTR and first-open/download cost trends are unavailable because Google is quota-blocked and Meta reporting is stale. (3) No fresh campaign, platform, age, gender or device breakdown proves improving targeting. (4) Meta remains the more promising limited test per Nathan, not a verified current winner over Google. (5) Overall viewing and purchase movements are not attributed to paid users; current sales coverage is incomplete. True ROAS cannot be stated without reconciled ad-server revenue. Paid-campaign impressions are separate from in-app ad impressions. (6) Confirm Roku pause and Meta status; separate iOS/Android and retargeting, test show-led creative, optimize first play and seven-day return, and exclude weak-viewing segments.",
       "Fresh partial YouTube: Sep 28 through 2026-10-03, 6 available days; matched against Sep 21 through 2026-09-26. Not added to app sales or in-app ad delivery.",
-      "Next actions: Patrick and Nathan: confirm Roku pause/Meta restart and supply fresh Meta-only campaign, age, gender and platform reports. Patrick and Nathan: use limited separate iOS/Android and cold/retargeting tests; do not scale on installs alone. Emma, Sydney, Christina and Breanna: compare 15/30-second Ark-led creative with the app sizzle, using distinct tags. Michael: verify first-play and seven-day-return tracking, diagnose viewing declines and reconcile Ionic revenue versus ad events. Team: upload fresh DotStudios/Apple exports and reconnect Stripe; assess TVOD by release stage and eligible non-owners, not raw weekly sales alone."
+      "Next actions: Patrick and Nathan: confirm Roku pause/Meta restart and supply fresh Meta-only campaign, age, gender and platform reports. Patrick and Nathan: use limited separate iOS/Android and cold/retargeting tests; do not scale on installs alone. Emma, Sydney, Christina and Breanna: compare 15/30-second Ark-led creative with the app sizzle, using distinct tags. Michael: verify first-play and seven-day-return tracking, diagnose viewing declines and reconcile Ionic revenue versus ad events. Team: reconcile worldwide Apple sales and ad-server revenue; assess TVOD by release stage and eligible non-owners, not raw weekly sales alone.",
+      "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+      "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+      "Visible platform sales: Stripe $111.94 + Roku $41.98 + Apple U.S. $128.93 = $282.85. Partial coverage, not total ElectricNOW sales: Apple outside U.S., Google Play and other channels may be missing; includes $8 Stripe subscription. Never add overlapping DotStudios $448.75.",
+      "DotStudios: 704 installs (+5.9%), 423 updates (-26.6%), 12,953 reported views (-8.0%). In-app ad delivery: 31,082 requests, 23,530 impressions (-12.9%), 3,219 errors. Vendor ad counts are a delivery cross-check, not paid-campaign impressions or verified ad revenue."
     ],
     "paidAcquisitionAssessment": {
       "verdict": "needs proof of viewing; historical Roku costs concerning",
@@ -17504,672 +17831,740 @@ window.DASHBOARD_DATA = {
   "tvodTitleRevenue": {
     "title": "TVOD Title Revenue & Registered Users",
     "eyebrow": "User-provided DotStudios TVOD dashboard export — aggregate only",
-    "source": "DotStudios revenue-transactions-3.csv",
-    "emailDate": "2026-09-28",
-    "periodStart": "2026-09-21",
-    "periodEnd": "2026-09-27",
-    "period": "Sep 21-Sep 27, 2026",
-    "periodNote": "Fresh DotStudios revenue-transactions-3.csv export for Sep 21-Sep 27, 2026. The export contains 23 paid line-item TVOD transactions totaling $479.74 gross/net (prior week: 31 transactions / $663.66). Do not add it to Stripe/Roku/Apple because platform sources overlap.",
+    "source": "DotStudios revenue-transactions-4.csv",
+    "emailDate": "2026-10-05",
+    "periodStart": "2026-09-28",
+    "periodEnd": "2026-10-04",
+    "period": "Sep 28-Oct 4, 2026",
+    "periodNote": "Fresh DotStudios revenue-transactions-4.csv export for Sep 28-Oct 4, 2026. The export contains 24 paid line-item TVOD transactions totaling $448.75 gross/net (prior week: 23 transactions / $479.74). Do not add it to Stripe/Roku/Apple because platform sources overlap.",
     "registeredUsers": {
       "total": 7914,
       "active": 7814
     },
     "registeredUsersNote": "Registered-user count preserved from the last Michael Johnson/DotStudios email; this Aug 17-Aug 23 TVOD CSV contains transactions only.",
     "transactions": {
-      "totalRows": 23,
-      "paidTransactions": 23,
+      "totalRows": 24,
+      "paidTransactions": 24,
       "refundTransactions": 0,
-      "latestSevenDayPaidTransactions": 23
+      "latestSevenDayPaidTransactions": 24
     },
     "netRevenue": {
-      "tvodSalesExportPaidGross": 479.74,
-      "tvodSalesExportPaidNet": 479.74,
+      "tvodSalesExportPaidGross": 448.75,
+      "tvodSalesExportPaidNet": 448.75,
       "refundsGross": 0,
       "refundsNet": 0,
-      "netIncludingRefunds": 479.74,
-      "latestSevenDayGross": 479.74,
-      "latestSevenDayNet": 479.74
+      "netIncludingRefunds": 448.75,
+      "latestSevenDayGross": 448.75,
+      "latestSevenDayNet": 448.75
     },
     "familyTotals": [
       {
         "family": "The Ark",
-        "transactions": 18,
-        "gross": 374.79,
-        "net": 374.79,
-        "shareOfPaidNetPct": 78.1,
-        "shareOfTransactionsPct": 78.3
+        "transactions": 12,
+        "gross": 251.88,
+        "net": 251.88,
+        "shareOfPaidNetPct": 56.1,
+        "shareOfTransactionsPct": 50.0
       },
       {
         "family": "The Librarians",
-        "transactions": 5,
-        "gross": 104.95,
-        "net": 104.95,
-        "shareOfPaidNetPct": 21.9,
-        "shareOfTransactionsPct": 21.7
+        "transactions": 8,
+        "gross": 148.91,
+        "net": 148.91,
+        "shareOfPaidNetPct": 33.2,
+        "shareOfTransactionsPct": 33.3
+      },
+      {
+        "family": "Other",
+        "transactions": 1,
+        "gross": 20.99,
+        "net": 20.99,
+        "shareOfPaidNetPct": 4.7,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "family": "Somewhere in Montana",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99,
+        "shareOfPaidNetPct": 3.3,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "family": "Almost Paradise - Season 2",
+        "transactions": 1,
+        "gross": 9.99,
+        "net": 9.99,
+        "shareOfPaidNetPct": 2.2,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "family": "Una Gran Familia Feliz",
+        "transactions": 1,
+        "gross": 1.99,
+        "net": 1.99,
+        "shareOfPaidNetPct": 0.4,
+        "shareOfTransactionsPct": 4.2
       }
     ],
     "titleFamilySummary": {
-      "arkTransactions": 18,
-      "arkGross": 374.79,
-      "arkNet": 374.79,
-      "librariansTransactions": 5,
-      "librariansGross": 104.95,
-      "librariansNet": 104.95,
-      "arkShareOfPaidNetPct": 78.1,
-      "librariansShareOfPaidNetPct": 21.9
+      "arkTransactions": 12,
+      "arkGross": 251.88,
+      "arkNet": 251.88,
+      "librariansTransactions": 8,
+      "librariansGross": 148.91,
+      "librariansNet": 148.91,
+      "arkShareOfPaidNetPct": 56.1,
+      "librariansShareOfPaidNetPct": 33.2
     },
     "topTitlesByNet": [
       {
         "title": "The Ark - Season 3",
-        "transactions": 15,
-        "gross": 314.85,
-        "net": 314.85,
-        "shareOfPaidNetPct": 65.6,
-        "shareOfTransactionsPct": 65.2
+        "transactions": 12,
+        "gross": 251.88,
+        "net": 251.88,
+        "shareOfPaidNetPct": 56.1,
+        "shareOfTransactionsPct": 50.0
       },
       {
         "title": "The Librarians: The Next Chapter Season 2",
-        "transactions": 5,
-        "gross": 104.95,
-        "net": 104.95,
-        "shareOfPaidNetPct": 21.9,
-        "shareOfTransactionsPct": 21.7
+        "transactions": 6,
+        "gross": 125.94,
+        "net": 125.94,
+        "shareOfPaidNetPct": 28.1,
+        "shareOfTransactionsPct": 25.0
       },
       {
-        "title": "The Ark - Season 2",
-        "transactions": 2,
-        "gross": 39.96,
-        "net": 39.96,
-        "shareOfPaidNetPct": 8.3,
-        "shareOfTransactionsPct": 8.7
+        "title": "",
+        "transactions": 1,
+        "gross": 20.99,
+        "net": 20.99,
+        "shareOfPaidNetPct": 4.7,
+        "shareOfTransactionsPct": 4.2
       },
       {
-        "title": "The Ark - Season 1",
+        "title": "Parent The Librarians: The Next Chapter",
         "transactions": 1,
         "gross": 19.98,
         "net": 19.98,
-        "shareOfPaidNetPct": 4.2,
-        "shareOfTransactionsPct": 4.3
+        "shareOfPaidNetPct": 4.5,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "title": "Somewhere in Montana",
+        "transactions": 1,
+        "gross": 14.99,
+        "net": 14.99,
+        "shareOfPaidNetPct": 3.3,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "title": "Almost Paradise - Season 2",
+        "transactions": 1,
+        "gross": 9.99,
+        "net": 9.99,
+        "shareOfPaidNetPct": 2.2,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "title": "The Librarians Cinemascope Movie",
+        "transactions": 1,
+        "gross": 2.99,
+        "net": 2.99,
+        "shareOfPaidNetPct": 0.7,
+        "shareOfTransactionsPct": 4.2
+      },
+      {
+        "title": "Una Gran Familia Feliz",
+        "transactions": 1,
+        "gross": 1.99,
+        "net": 1.99,
+        "shareOfPaidNetPct": 0.4,
+        "shareOfTransactionsPct": 4.2
       }
     ],
     "channelBreakout": [
       {
         "channel": "apple",
-        "transactions": 8,
-        "gross": 166.91,
-        "net": 166.91,
-        "shareOfPaidNetPct": 34.8,
-        "shareOfTransactionsPct": 34.8
-      },
-      {
-        "channel": "web",
         "transactions": 7,
-        "gross": 146.93,
-        "net": 146.93,
-        "shareOfPaidNetPct": 30.6,
-        "shareOfTransactionsPct": 30.4
+        "gross": 128.93,
+        "net": 128.93,
+        "shareOfPaidNetPct": 28.7,
+        "shareOfTransactionsPct": 29.2
       },
       {
         "channel": "android",
-        "transactions": 7,
-        "gross": 144.91,
-        "net": 144.91,
-        "shareOfPaidNetPct": 30.2,
-        "shareOfTransactionsPct": 30.4
+        "transactions": 6,
+        "gross": 125.94,
+        "net": 125.94,
+        "shareOfPaidNetPct": 28.1,
+        "shareOfTransactionsPct": 25.0
+      },
+      {
+        "channel": "web",
+        "transactions": 5,
+        "gross": 103.94,
+        "net": 103.94,
+        "shareOfPaidNetPct": 23.2,
+        "shareOfTransactionsPct": 20.8
       },
       {
         "channel": "roku",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98,
+        "shareOfPaidNetPct": 9.4,
+        "shareOfTransactionsPct": 8.3
+      },
+      {
+        "channel": "vizio",
+        "transactions": 3,
+        "gross": 26.97,
+        "net": 26.97,
+        "shareOfPaidNetPct": 6.0,
+        "shareOfTransactionsPct": 12.5
+      },
+      {
+        "channel": "unknown",
         "transactions": 1,
         "gross": 20.99,
         "net": 20.99,
-        "shareOfPaidNetPct": 4.4,
-        "shareOfTransactionsPct": 4.3
+        "shareOfPaidNetPct": 4.7,
+        "shareOfTransactionsPct": 4.2
       }
     ],
     "daily": [
       {
-        "date": "2026-09-21",
-        "label": "Sep 21",
-        "transactions": 2,
-        "gross": 40.97,
-        "net": 40.97
+        "date": "2026-09-28",
+        "label": "Sep 28",
+        "transactions": 4,
+        "gross": 47.96,
+        "net": 47.96
       },
       {
-        "date": "2026-09-22",
-        "label": "Sep 22",
+        "date": "2026-09-29",
+        "label": "Sep 29",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98
+      },
+      {
+        "date": "2026-09-30",
+        "label": "Sep 30",
+        "transactions": 2,
+        "gross": 41.98,
+        "net": 41.98
+      },
+      {
+        "date": "2026-10-01",
+        "label": "Oct 1",
+        "transactions": 3,
+        "gross": 61.96,
+        "net": 61.96
+      },
+      {
+        "date": "2026-10-02",
+        "label": "Oct 2",
         "transactions": 3,
         "gross": 62.97,
         "net": 62.97
       },
       {
-        "date": "2026-09-23",
-        "label": "Sep 23",
-        "transactions": 6,
-        "gross": 125.94,
-        "net": 125.94
-      },
-      {
-        "date": "2026-09-24",
-        "label": "Sep 24",
-        "transactions": 5,
-        "gross": 104.95,
-        "net": 104.95
-      },
-      {
-        "date": "2026-09-25",
-        "label": "Sep 25",
+        "date": "2026-10-03",
+        "label": "Oct 3",
         "transactions": 2,
-        "gross": 40.97,
-        "net": 40.97
+        "gross": 41.98,
+        "net": 41.98
       },
       {
-        "date": "2026-09-26",
-        "label": "Sep 26",
-        "transactions": 1,
-        "gross": 20.99,
-        "net": 20.99
-      },
-      {
-        "date": "2026-09-27",
-        "label": "Sep 27",
-        "transactions": 4,
-        "gross": 82.95,
-        "net": 82.95
+        "date": "2026-10-04",
+        "label": "Oct 4",
+        "transactions": 8,
+        "gross": 149.92,
+        "net": 149.92
       }
     ],
     "reconciliationNote": "DotStudios is the broadest current TVOD dashboard export. Stripe, Apple, and Roku are overlapping checks/slices, not additive sales sources.",
     "priorPeriod": {
-      "period": "Sep 14-Sep 20, 2026",
-      "paidTransactions": 31,
-      "net": 663.66
+      "period": "Sep 21-Sep 27, 2026",
+      "paidTransactions": 23,
+      "net": 479.74
     },
-    "deltaVsPriorNetPct": -27.71,
-    "deltaVsPriorTransactionsPct": -25.81,
-    "status": "stale_preserved_no_fresh_pull",
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "sourceLabel": "Prior snapshot (stale): tvodTitleRevenue",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "deltaVsPriorNetPct": -6.46,
+    "deltaVsPriorTransactionsPct": 4.35,
+    "status": "fresh_manual",
+    "sourceLabel": "Fresh DotStudios TVOD",
+    "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "sourceDetail": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners."
   },
   "weeklyTrendNote": "Fresh GA4 daily rows for Sep 28-Oct 4, 2026; property 497892271.",
   "dotStudiosAppAds": {
-    "source": "DotStudios ad-metrics-3.csv",
+    "source": "DotStudios ad-metrics-4.csv",
     "sourceType": "manual_dotstudios_export",
-    "sourceFileLabel": "DotStudios app ad-serving export uploaded Sep 28, 2026",
-    "period": "Sep 21-Sep 27, 2026",
+    "sourceFileLabel": "DotStudios ad-metrics-4.csv uploaded October 5, 2026",
+    "period": "Sep 28-Oct 4, 2026",
     "date_range": [
-      "2026-09-21",
-      "2026-09-27"
+      "2026-09-28",
+      "2026-10-04"
     ],
-    "rows": 327,
+    "rows": 299,
     "totals": {
-      "requests": 31722,
-      "impressions": 27024,
-      "errors": 2536,
-      "impressionsPerRequest": 0.85,
-      "impressionsPerRequestPct": 85.19,
-      "errorRatePct": 7.99,
-      "avgAdsPerPod": 0.85
+      "requests": 31082,
+      "impressions": 23530,
+      "errors": 3219,
+      "impressionsPerRequest": 0.76,
+      "impressionsPerRequestPct": 75.7,
+      "errorRatePct": 10.36,
+      "avgAdsPerPod": 0.76
     },
     "dailyTrend": [
       {
-        "requests": 2566,
-        "impressions": 2506,
-        "errors": 142,
-        "impressionsPerRequest": 0.98,
-        "impressionsPerRequestPct": 97.66,
-        "errorRatePct": 5.53,
-        "avgAdsPerPod": 0.98,
-        "date": "2026-09-21",
-        "label": "2026-09-21"
+        "requests": 2797,
+        "impressions": 2385,
+        "errors": 223,
+        "impressionsPerRequest": 0.85,
+        "impressionsPerRequestPct": 85.27,
+        "errorRatePct": 7.97,
+        "avgAdsPerPod": 0.85,
+        "date": "2026-09-28",
+        "label": "2026-09-28"
       },
       {
-        "requests": 4173,
-        "impressions": 4041,
-        "errors": 295,
-        "impressionsPerRequest": 0.97,
-        "impressionsPerRequestPct": 96.84,
-        "errorRatePct": 7.07,
-        "avgAdsPerPod": 0.97,
-        "date": "2026-09-22",
-        "label": "2026-09-22"
+        "requests": 3464,
+        "impressions": 2597,
+        "errors": 272,
+        "impressionsPerRequest": 0.75,
+        "impressionsPerRequestPct": 74.97,
+        "errorRatePct": 7.85,
+        "avgAdsPerPod": 0.75,
+        "date": "2026-09-29",
+        "label": "2026-09-29"
       },
       {
-        "requests": 3974,
-        "impressions": 3824,
-        "errors": 199,
-        "impressionsPerRequest": 0.96,
-        "impressionsPerRequestPct": 96.23,
-        "errorRatePct": 5.01,
-        "avgAdsPerPod": 0.96,
-        "date": "2026-09-23",
-        "label": "2026-09-23"
+        "requests": 3384,
+        "impressions": 2917,
+        "errors": 288,
+        "impressionsPerRequest": 0.86,
+        "impressionsPerRequestPct": 86.2,
+        "errorRatePct": 8.51,
+        "avgAdsPerPod": 0.86,
+        "date": "2026-09-30",
+        "label": "2026-09-30"
       },
       {
-        "requests": 4613,
-        "impressions": 4267,
-        "errors": 366,
+        "requests": 3228,
+        "impressions": 2977,
+        "errors": 252,
         "impressionsPerRequest": 0.92,
-        "impressionsPerRequestPct": 92.5,
-        "errorRatePct": 7.93,
+        "impressionsPerRequestPct": 92.22,
+        "errorRatePct": 7.81,
         "avgAdsPerPod": 0.92,
-        "date": "2026-09-24",
-        "label": "2026-09-24"
+        "date": "2026-10-01",
+        "label": "2026-10-01"
       },
       {
-        "requests": 7163,
-        "impressions": 4850,
-        "errors": 747,
-        "impressionsPerRequest": 0.68,
-        "impressionsPerRequestPct": 67.71,
-        "errorRatePct": 10.43,
-        "avgAdsPerPod": 0.68,
-        "date": "2026-09-25",
-        "label": "2026-09-25"
+        "requests": 5635,
+        "impressions": 3799,
+        "errors": 645,
+        "impressionsPerRequest": 0.67,
+        "impressionsPerRequestPct": 67.42,
+        "errorRatePct": 11.45,
+        "avgAdsPerPod": 0.67,
+        "date": "2026-10-02",
+        "label": "2026-10-02"
       },
       {
-        "requests": 4309,
-        "impressions": 3740,
-        "errors": 247,
-        "impressionsPerRequest": 0.87,
-        "impressionsPerRequestPct": 86.8,
-        "errorRatePct": 5.73,
-        "avgAdsPerPod": 0.87,
-        "date": "2026-09-26",
-        "label": "2026-09-26"
+        "requests": 7329,
+        "impressions": 5078,
+        "errors": 833,
+        "impressionsPerRequest": 0.69,
+        "impressionsPerRequestPct": 69.29,
+        "errorRatePct": 11.37,
+        "avgAdsPerPod": 0.69,
+        "date": "2026-10-03",
+        "label": "2026-10-03"
       },
       {
-        "requests": 4924,
-        "impressions": 3796,
-        "errors": 540,
-        "impressionsPerRequest": 0.77,
-        "impressionsPerRequestPct": 77.09,
-        "errorRatePct": 10.97,
-        "avgAdsPerPod": 0.77,
-        "date": "2026-09-27",
-        "label": "2026-09-27"
+        "requests": 5245,
+        "impressions": 3777,
+        "errors": 706,
+        "impressionsPerRequest": 0.72,
+        "impressionsPerRequestPct": 72.01,
+        "errorRatePct": 13.46,
+        "avgAdsPerPod": 0.72,
+        "date": "2026-10-04",
+        "label": "2026-10-04"
       }
     ],
     "deviceSplit": [
       {
-        "requests": 19384,
-        "impressions": 15095,
-        "errors": 2323,
-        "impressionsPerRequest": 0.78,
-        "impressionsPerRequestPct": 77.87,
-        "errorRatePct": 11.98,
-        "avgAdsPerPod": 0.78,
+        "requests": 17673,
+        "impressions": 10603,
+        "errors": 2864,
+        "impressionsPerRequest": 0.6,
+        "impressionsPerRequestPct": 60.0,
+        "errorRatePct": 16.21,
+        "avgAdsPerPod": 0.6,
         "device": "roku",
         "label": "roku"
       },
       {
-        "requests": 5094,
-        "impressions": 4814,
-        "errors": 97,
+        "requests": 5727,
+        "impressions": 5430,
+        "errors": 148,
         "impressionsPerRequest": 0.95,
-        "impressionsPerRequestPct": 94.5,
-        "errorRatePct": 1.9,
+        "impressionsPerRequestPct": 94.81,
+        "errorRatePct": 2.58,
         "avgAdsPerPod": 0.95,
         "device": "android",
         "label": "android"
       },
       {
-        "requests": 4407,
-        "impressions": 4293,
-        "errors": 44,
-        "impressionsPerRequest": 0.97,
-        "impressionsPerRequestPct": 97.41,
-        "errorRatePct": 1.0,
-        "avgAdsPerPod": 0.97,
+        "requests": 4734,
+        "impressions": 4623,
+        "errors": 190,
+        "impressionsPerRequest": 0.98,
+        "impressionsPerRequestPct": 97.66,
+        "errorRatePct": 4.01,
+        "avgAdsPerPod": 0.98,
         "device": "ios",
         "label": "ios"
       },
       {
-        "requests": 1150,
-        "impressions": 1144,
-        "errors": 50,
-        "impressionsPerRequest": 0.99,
-        "impressionsPerRequestPct": 99.48,
-        "errorRatePct": 4.35,
-        "avgAdsPerPod": 0.99,
-        "device": "appletv",
-        "label": "appletv"
-      },
-      {
-        "requests": 862,
-        "impressions": 842,
-        "errors": 0,
-        "impressionsPerRequest": 0.98,
-        "impressionsPerRequestPct": 97.68,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 0.98,
+        "requests": 1481,
+        "impressions": 1424,
+        "errors": 7,
+        "impressionsPerRequest": 0.96,
+        "impressionsPerRequestPct": 96.15,
+        "errorRatePct": 0.47,
+        "avgAdsPerPod": 0.96,
         "device": "androidtv",
         "label": "androidtv"
       },
       {
-        "requests": 813,
-        "impressions": 795,
+        "requests": 1037,
+        "impressions": 1036,
         "errors": 0,
-        "impressionsPerRequest": 0.98,
-        "impressionsPerRequestPct": 97.79,
+        "impressionsPerRequest": 1.0,
+        "impressionsPerRequestPct": 99.9,
         "errorRatePct": 0.0,
-        "avgAdsPerPod": 0.98,
+        "avgAdsPerPod": 1.0,
+        "device": "appletv",
+        "label": "appletv"
+      },
+      {
+        "requests": 415,
+        "impressions": 403,
+        "errors": 0,
+        "impressionsPerRequest": 0.97,
+        "impressionsPerRequestPct": 97.11,
+        "errorRatePct": 0.0,
+        "avgAdsPerPod": 0.97,
         "device": "firetv",
         "label": "firetv"
       },
       {
-        "requests": 12,
-        "impressions": 41,
-        "errors": 22,
-        "impressionsPerRequest": 3.42,
-        "impressionsPerRequestPct": 341.67,
-        "errorRatePct": 183.33,
-        "avgAdsPerPod": 3.42,
+        "requests": 15,
+        "impressions": 11,
+        "errors": 10,
+        "impressionsPerRequest": 0.73,
+        "impressionsPerRequestPct": 73.33,
+        "errorRatePct": 66.67,
+        "avgAdsPerPod": 0.73,
         "device": "vizio",
         "label": "vizio"
       }
     ],
     "topChannels": [
       {
-        "requests": 3435,
-        "impressions": 3364,
-        "errors": 60,
+        "requests": 3028,
+        "impressions": 2968,
+        "errors": 90,
         "impressionsPerRequest": 0.98,
-        "impressionsPerRequestPct": 97.93,
-        "errorRatePct": 1.75,
+        "impressionsPerRequestPct": 98.02,
+        "errorRatePct": 2.97,
         "avgAdsPerPod": 0.98,
         "channel": "Leverage",
         "label": "Leverage"
       },
       {
-        "requests": 2609,
-        "impressions": 2516,
-        "errors": 8,
-        "impressionsPerRequest": 0.96,
-        "impressionsPerRequestPct": 96.44,
-        "errorRatePct": 0.31,
-        "avgAdsPerPod": 0.96,
+        "requests": 3046,
+        "impressions": 2900,
+        "errors": 85,
+        "impressionsPerRequest": 0.95,
+        "impressionsPerRequestPct": 95.21,
+        "errorRatePct": 2.79,
+        "avgAdsPerPod": 0.95,
         "channel": "The Ark",
         "label": "The Ark"
       },
       {
-        "requests": 2644,
-        "impressions": 2474,
-        "errors": 172,
-        "impressionsPerRequest": 0.94,
-        "impressionsPerRequestPct": 93.57,
-        "errorRatePct": 6.51,
-        "avgAdsPerPod": 0.94,
-        "channel": "Leverage: Redemption - Season 3",
-        "label": "Leverage: Redemption - Season 3"
-      },
-      {
-        "requests": 2507,
-        "impressions": 1940,
-        "errors": 285,
-        "impressionsPerRequest": 0.77,
-        "impressionsPerRequestPct": 77.38,
-        "errorRatePct": 11.37,
-        "avgAdsPerPod": 0.77,
-        "channel": "The Librarians - Season 3",
-        "label": "The Librarians - Season 3"
-      },
-      {
-        "requests": 1860,
-        "impressions": 1803,
-        "errors": 56,
-        "impressionsPerRequest": 0.97,
-        "impressionsPerRequestPct": 96.94,
-        "errorRatePct": 3.01,
-        "avgAdsPerPod": 0.97,
-        "channel": "The Librarians (Full Series)",
-        "label": "The Librarians (Full Series)"
-      },
-      {
-        "requests": 3769,
-        "impressions": 1598,
-        "errors": 595,
-        "impressionsPerRequest": 0.42,
-        "impressionsPerRequestPct": 42.4,
-        "errorRatePct": 15.79,
-        "avgAdsPerPod": 0.42,
-        "channel": "The Librarians - Season 4",
-        "label": "The Librarians - Season 4"
-      },
-      {
-        "requests": 1926,
-        "impressions": 1588,
-        "errors": 148,
-        "impressionsPerRequest": 0.82,
-        "impressionsPerRequestPct": 82.45,
-        "errorRatePct": 7.68,
-        "avgAdsPerPod": 0.82,
-        "channel": "The Librarians - Season 2",
-        "label": "The Librarians - Season 2"
-      },
-      {
-        "requests": 1520,
-        "impressions": 1311,
-        "errors": 111,
-        "impressionsPerRequest": 0.86,
-        "impressionsPerRequestPct": 86.25,
-        "errorRatePct": 7.3,
-        "avgAdsPerPod": 0.86,
-        "channel": "The Librarians - Season 1",
-        "label": "The Librarians - Season 1"
-      },
-      {
-        "requests": 1288,
-        "impressions": 1277,
-        "errors": 152,
-        "impressionsPerRequest": 0.99,
-        "impressionsPerRequestPct": 99.15,
-        "errorRatePct": 11.8,
-        "avgAdsPerPod": 0.99,
-        "channel": "Almost Paradise - Season 1",
-        "label": "Almost Paradise - Season 1"
-      },
-      {
-        "requests": 1014,
-        "impressions": 989,
-        "errors": 11,
+        "requests": 1882,
+        "impressions": 1852,
+        "errors": 17,
         "impressionsPerRequest": 0.98,
-        "impressionsPerRequestPct": 97.53,
-        "errorRatePct": 1.08,
+        "impressionsPerRequestPct": 98.41,
+        "errorRatePct": 0.9,
         "avgAdsPerPod": 0.98,
         "channel": "Leverage: Redemption",
         "label": "Leverage: Redemption"
       },
       {
-        "requests": 1090,
-        "impressions": 953,
-        "errors": 124,
-        "impressionsPerRequest": 0.87,
-        "impressionsPerRequestPct": 87.43,
-        "errorRatePct": 11.38,
-        "avgAdsPerPod": 0.87,
+        "requests": 1724,
+        "impressions": 1562,
+        "errors": 181,
+        "impressionsPerRequest": 0.91,
+        "impressionsPerRequestPct": 90.6,
+        "errorRatePct": 10.5,
+        "avgAdsPerPod": 0.91,
+        "channel": "Leverage: Redemption - Season 3",
+        "label": "Leverage: Redemption - Season 3"
+      },
+      {
+        "requests": 1230,
+        "impressions": 1195,
+        "errors": 50,
+        "impressionsPerRequest": 0.97,
+        "impressionsPerRequestPct": 97.15,
+        "errorRatePct": 4.07,
+        "avgAdsPerPod": 0.97,
+        "channel": "The Librarians (Full Series)",
+        "label": "The Librarians (Full Series)"
+      },
+      {
+        "requests": 1486,
+        "impressions": 1137,
+        "errors": 234,
+        "impressionsPerRequest": 0.77,
+        "impressionsPerRequestPct": 76.51,
+        "errorRatePct": 15.75,
+        "avgAdsPerPod": 0.77,
+        "channel": "Almost Paradise - Season 1",
+        "label": "Almost Paradise - Season 1"
+      },
+      {
+        "requests": 1902,
+        "impressions": 1045,
+        "errors": 319,
+        "impressionsPerRequest": 0.55,
+        "impressionsPerRequestPct": 54.94,
+        "errorRatePct": 16.77,
+        "avgAdsPerPod": 0.55,
         "channel": "The Ark - Season 2",
         "label": "The Ark - Season 2"
       },
       {
-        "requests": 836,
-        "impressions": 813,
-        "errors": 143,
-        "impressionsPerRequest": 0.97,
-        "impressionsPerRequestPct": 97.25,
-        "errorRatePct": 17.11,
-        "avgAdsPerPod": 0.97,
-        "channel": "Almost Paradise - Season 2",
-        "label": "Almost Paradise - Season 2"
+        "requests": 1313,
+        "impressions": 1042,
+        "errors": 167,
+        "impressionsPerRequest": 0.79,
+        "impressionsPerRequestPct": 79.36,
+        "errorRatePct": 12.72,
+        "avgAdsPerPod": 0.79,
+        "channel": "Leverage - Season 3",
+        "label": "Leverage - Season 3"
+      },
+      {
+        "requests": 3327,
+        "impressions": 927,
+        "errors": 606,
+        "impressionsPerRequest": 0.28,
+        "impressionsPerRequestPct": 27.86,
+        "errorRatePct": 18.21,
+        "avgAdsPerPod": 0.28,
+        "channel": "The Librarians - Season 2",
+        "label": "The Librarians - Season 2"
+      },
+      {
+        "requests": 898,
+        "impressions": 890,
+        "errors": 2,
+        "impressionsPerRequest": 0.99,
+        "impressionsPerRequestPct": 99.11,
+        "errorRatePct": 0.22,
+        "avgAdsPerPod": 0.99,
+        "channel": "Almost Paradise (Season 1 & 2)",
+        "label": "Almost Paradise (Season 1 & 2)"
+      },
+      {
+        "requests": 1333,
+        "impressions": 856,
+        "errors": 196,
+        "impressionsPerRequest": 0.64,
+        "impressionsPerRequestPct": 64.22,
+        "errorRatePct": 14.7,
+        "avgAdsPerPod": 0.64,
+        "channel": "The Librarians - Season 1",
+        "label": "The Librarians - Season 1"
+      },
+      {
+        "requests": 1131,
+        "impressions": 855,
+        "errors": 144,
+        "impressionsPerRequest": 0.76,
+        "impressionsPerRequestPct": 75.6,
+        "errorRatePct": 12.73,
+        "avgAdsPerPod": 0.76,
+        "channel": "Leverage - Season 4",
+        "label": "Leverage - Season 4"
       }
     ],
     "topCountries": [
       {
-        "requests": 30293,
-        "impressions": 25646,
-        "errors": 2503,
-        "impressionsPerRequest": 0.85,
-        "impressionsPerRequestPct": 84.66,
-        "errorRatePct": 8.26,
-        "avgAdsPerPod": 0.85,
+        "requests": 30502,
+        "impressions": 23045,
+        "errors": 3178,
+        "impressionsPerRequest": 0.76,
+        "impressionsPerRequestPct": 75.55,
+        "errorRatePct": 10.42,
+        "avgAdsPerPod": 0.76,
         "country": "United States",
         "label": "United States"
       },
       {
-        "requests": 1388,
-        "impressions": 1337,
-        "errors": 33,
-        "impressionsPerRequest": 0.96,
-        "impressionsPerRequestPct": 96.33,
-        "errorRatePct": 2.38,
-        "avgAdsPerPod": 0.96,
+        "requests": 465,
+        "impressions": 416,
+        "errors": 17,
+        "impressionsPerRequest": 0.89,
+        "impressionsPerRequestPct": 89.46,
+        "errorRatePct": 3.66,
+        "avgAdsPerPod": 0.89,
         "country": "Australia",
         "label": "Australia"
       },
       {
-        "requests": 37,
-        "impressions": 37,
-        "errors": 0,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 100.0,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 1.0,
-        "country": "Dominican Republic",
-        "label": "Dominican Republic"
+        "requests": 107,
+        "impressions": 65,
+        "errors": 19,
+        "impressionsPerRequest": 0.61,
+        "impressionsPerRequestPct": 60.75,
+        "errorRatePct": 17.76,
+        "avgAdsPerPod": 0.61,
+        "country": "Canada",
+        "label": "Canada"
       },
       {
-        "requests": 3,
-        "impressions": 3,
-        "errors": 0,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 100.0,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 1.0,
-        "country": "U.S. Virgin Islands",
-        "label": "U.S. Virgin Islands"
-      },
-      {
-        "requests": 1,
-        "impressions": 1,
-        "errors": 0,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 100.0,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 1.0,
-        "country": "Portugal",
-        "label": "Portugal"
+        "requests": 8,
+        "impressions": 4,
+        "errors": 5,
+        "impressionsPerRequest": 0.5,
+        "impressionsPerRequestPct": 50.0,
+        "errorRatePct": 62.5,
+        "avgAdsPerPod": 0.5,
+        "country": "India",
+        "label": "India"
       }
     ],
     "topVideos": [
       {
-        "requests": 1274,
-        "impressions": 1268,
-        "errors": 148,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 99.53,
-        "errorRatePct": 11.62,
-        "avgAdsPerPod": 1.0,
-        "videoTitle": "And the Trial of the Triangle (The Librarians - Season 3)",
-        "label": "And the Trial of the Triangle (The Librarians - Season 3)"
-      },
-      {
-        "requests": 1248,
-        "impressions": 1120,
-        "errors": 51,
-        "impressionsPerRequest": 0.9,
-        "impressionsPerRequestPct": 89.74,
-        "errorRatePct": 4.09,
-        "avgAdsPerPod": 0.9,
+        "requests": 1046,
+        "impressions": 900,
+        "errors": 65,
+        "impressionsPerRequest": 0.86,
+        "impressionsPerRequestPct": 86.04,
+        "errorRatePct": 6.21,
+        "avgAdsPerPod": 0.86,
         "videoTitle": "(not set) (Leverage: Redemption - Season 3)",
         "label": "(not set) (Leverage: Redemption - Season 3)"
       },
       {
-        "requests": 864,
-        "impressions": 862,
-        "errors": 26,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 99.77,
-        "errorRatePct": 3.01,
-        "avgAdsPerPod": 1.0,
-        "videoTitle": "And the Infernal Contract (The Librarians - Season 2)",
-        "label": "And the Infernal Contract (The Librarians - Season 2)"
-      },
-      {
-        "requests": 854,
-        "impressions": 829,
-        "errors": 7,
-        "impressionsPerRequest": 0.97,
-        "impressionsPerRequestPct": 97.07,
-        "errorRatePct": 0.82,
-        "avgAdsPerPod": 0.97,
-        "videoTitle": "(not set) (The Ark)",
-        "label": "(not set) (The Ark)"
-      },
-      {
-        "requests": 887,
-        "impressions": 701,
-        "errors": 61,
-        "impressionsPerRequest": 0.79,
-        "impressionsPerRequestPct": 79.03,
-        "errorRatePct": 6.88,
-        "avgAdsPerPod": 0.79,
+        "requests": 1236,
+        "impressions": 799,
+        "errors": 176,
+        "impressionsPerRequest": 0.65,
+        "impressionsPerRequestPct": 64.64,
+        "errorRatePct": 14.24,
+        "avgAdsPerPod": 0.65,
         "videoTitle": "And the Loom of Fate (The Librarians - Season 1)",
         "label": "And the Loom of Fate (The Librarians - Season 1)"
       },
       {
-        "requests": 651,
-        "impressions": 651,
-        "errors": 80,
+        "requests": 1541,
+        "impressions": 780,
+        "errors": 276,
+        "impressionsPerRequest": 0.51,
+        "impressionsPerRequestPct": 50.62,
+        "errorRatePct": 17.91,
+        "avgAdsPerPod": 0.51,
+        "videoTitle": "Fortunate (The Ark - Season 2)",
+        "label": "Fortunate (The Ark - Season 2)"
+      },
+      {
+        "requests": 670,
+        "impressions": 662,
+        "errors": 4,
+        "impressionsPerRequest": 0.99,
+        "impressionsPerRequestPct": 98.81,
+        "errorRatePct": 0.6,
+        "avgAdsPerPod": 0.99,
+        "videoTitle": "(not set) (Leverage: Redemption)",
+        "label": "(not set) (Leverage: Redemption)"
+      },
+      {
+        "requests": 620,
+        "impressions": 590,
+        "errors": 22,
+        "impressionsPerRequest": 0.95,
+        "impressionsPerRequestPct": 95.16,
+        "errorRatePct": 3.55,
+        "avgAdsPerPod": 0.95,
+        "videoTitle": "(not set) (The Ark)",
+        "label": "(not set) (The Ark)"
+      },
+      {
+        "requests": 795,
+        "impressions": 583,
+        "errors": 92,
+        "impressionsPerRequest": 0.73,
+        "impressionsPerRequestPct": 73.33,
+        "errorRatePct": 11.57,
+        "avgAdsPerPod": 0.73,
+        "videoTitle": "The Morning After Job (Leverage - Season 3)",
+        "label": "The Morning After Job (Leverage - Season 3)"
+      },
+      {
+        "requests": 559,
+        "impressions": 535,
+        "errors": 46,
+        "impressionsPerRequest": 0.96,
+        "impressionsPerRequestPct": 95.71,
+        "errorRatePct": 8.23,
+        "avgAdsPerPod": 0.96,
+        "videoTitle": "The Office Job (Leverage - Season 4)",
+        "label": "The Office Job (Leverage - Season 4)"
+      },
+      {
+        "requests": 505,
+        "impressions": 504,
+        "errors": 77,
+        "impressionsPerRequest": 1.0,
+        "impressionsPerRequestPct": 99.8,
+        "errorRatePct": 15.25,
+        "avgAdsPerPod": 1.0,
+        "videoTitle": "The Side Job (Leverage: Redemption - Season 3)",
+        "label": "The Side Job (Leverage: Redemption - Season 3)"
+      },
+      {
+        "requests": 426,
+        "impressions": 422,
+        "errors": 6,
+        "impressionsPerRequest": 0.99,
+        "impressionsPerRequestPct": 99.06,
+        "errorRatePct": 1.41,
+        "avgAdsPerPod": 0.99,
+        "videoTitle": "The Tap-Out Job (Leverage)",
+        "label": "The Tap-Out Job (Leverage)"
+      },
+      {
+        "requests": 412,
+        "impressions": 412,
+        "errors": 28,
         "impressionsPerRequest": 1.0,
         "impressionsPerRequestPct": 100.0,
-        "errorRatePct": 12.29,
+        "errorRatePct": 6.8,
         "avgAdsPerPod": 1.0,
-        "videoTitle": "And the Hidden Sanctuary (The Librarians - Season 4)",
-        "label": "And the Hidden Sanctuary (The Librarians - Season 4)"
-      },
-      {
-        "requests": 598,
-        "impressions": 599,
-        "errors": 68,
-        "impressionsPerRequest": 1.0,
-        "impressionsPerRequestPct": 100.17,
-        "errorRatePct": 11.37,
-        "avgAdsPerPod": 1.0,
-        "videoTitle": "Lone Wolf (Almost Paradise - Season 1)",
-        "label": "Lone Wolf (Almost Paradise - Season 1)"
-      },
-      {
-        "requests": 673,
-        "impressions": 594,
-        "errors": 49,
-        "impressionsPerRequest": 0.88,
-        "impressionsPerRequestPct": 88.26,
-        "errorRatePct": 7.28,
-        "avgAdsPerPod": 0.88,
-        "videoTitle": "Pretty Big Deal (The Ark - Season 2)",
-        "label": "Pretty Big Deal (The Ark - Season 2)"
-      },
-      {
-        "requests": 599,
-        "impressions": 577,
-        "errors": 103,
-        "impressionsPerRequest": 0.96,
-        "impressionsPerRequestPct": 96.33,
-        "errorRatePct": 17.2,
-        "avgAdsPerPod": 0.96,
-        "videoTitle": "And the Graves of Time (The Librarians - Season 4)",
-        "label": "And the Graves of Time (The Librarians - Season 4)"
-      },
-      {
-        "requests": 523,
-        "impressions": 519,
-        "errors": 0,
-        "impressionsPerRequest": 0.99,
-        "impressionsPerRequestPct": 99.24,
-        "errorRatePct": 0.0,
-        "avgAdsPerPod": 0.99,
-        "videoTitle": "Get Out and Push (The Ark)",
-        "label": "Get Out and Push (The Ark)"
+        "videoTitle": "The Miracle Job (Leverage)",
+        "label": "The Miracle Job (Leverage)"
       }
     ],
     "caveats": [
@@ -18177,74 +18572,77 @@ window.DASHBOARD_DATA = {
       "No ad revenue/yield in this export; do not infer ROAS or ad income. Michael Johnson (Sep 8) said DotStudios ad metrics are inaccurate; the Ionic report is the revenue source of record.",
       "Rows with 0 requests but errors > 0 are ad calls that failed before a request was counted; they inflate error totals and are reported separately."
     ],
-    "plainEnglish": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable. DotStudios app ad-serving data shows 27,024 in-app ad impressions from 31,722 ad requests for Sep 21-Sep 27, 2026, with 2,536 errors. Compared with the last fresh export (Sep 14-Sep 20, 2026: 32,625 impressions), impressions are -17.2%. Roku delivered 15,095 impressions and non-Roku platforms 11,929 (last fresh export: 14,162). These are ElectricNOW IN-APP ad impressions, not paid-campaign impressions, and no ad revenue is included. Michael Johnson has said the DotStudios ad numbers are not accurate and Ionic is the revenue source, so treat this as a delivery cross-check only.",
-    "status": "stale_preserved_no_fresh_pull",
+    "plainEnglish": "DotStudios app ad-serving data shows 23,530 in-app ad impressions from 31,082 ad requests for Sep 28-Oct 4, 2026, with 3,219 errors. Compared with the last fresh export (Sep 21-Sep 27, 2026: 27,024 impressions), impressions are -12.9%. Roku delivered 10,603 impressions and non-Roku platforms 12,927 (last fresh export: 11,929). These are ElectricNOW IN-APP ad impressions, not paid-campaign impressions, and no ad revenue is included. Michael Johnson has said the DotStudios ad numbers are not accurate and Ionic is the revenue source, so treat this as a delivery cross-check only.",
+    "status": "fresh_manual",
     "dataFreshness": "manual_current",
-    "updatedAt": "2026-09-28T19:46:37.385314+00:00",
-    "periodStart": "2026-09-21",
-    "periodEnd": "2026-09-27",
-    "freshness": "Fresh manual DotStudios app ad-serving export integrated for Sep 21-Sep 27, 2026.",
+    "updatedAt": "2026-10-05T20:06:53.945810+00:00",
+    "periodStart": "2026-09-28",
+    "periodEnd": "2026-10-04",
+    "freshness": "Fresh manual DotStudios app ad-serving export integrated for Sep 28-Oct 4, 2026.",
     "adRevenueAvailable": false,
     "revenueCaveat": "No ad-server revenue or yield was included in this DotStudios CSV; this section measures in-app ad delivery, not true ad-sales revenue.",
-    "dataPeriod": "Sep 21-Sep 27, 2026",
+    "dataPeriod": "Sep 28-Oct 4, 2026",
     "alerts": [
-      "Non-Roku in-app ad delivery resumed for Sep 21-Sep 27, 2026: 11,929 impressions on 12,338 non-Roku requests."
+      "Non-Roku in-app ad delivery resumed for Sep 28-Oct 4, 2026: 12,927 impressions on 13,409 non-Roku requests."
     ],
     "zeroRequestErrorRows": {
       "count": 1,
-      "errors": 15,
+      "errors": 4,
       "byDevice": {
-        "appletv": 15
+        "ios": 4
       }
     },
     "lastFreshExport": {
-      "period": "Sep 14-Sep 20, 2026",
-      "requests": 33847,
-      "impressions": 32625,
-      "errors": 2205
+      "period": "Sep 21-Sep 27, 2026",
+      "requests": 31722,
+      "impressions": 27024,
+      "errors": 2536
     },
     "deltaVsLastFresh": {
-      "impressionsPct": -17.2,
-      "requestsPct": -6.3,
-      "errorsPct": 15.0
+      "impressionsPct": -12.9,
+      "requestsPct": -2.0,
+      "errorsPct": 26.9
     },
     "gapNote": null,
     "priorFreshByDevice": {
       "roku": {
-        "requests": 19077,
-        "impressions": 18463,
-        "errors": 2061
+        "requests": 19384,
+        "impressions": 15095,
+        "errors": 2323
       },
       "android": {
-        "requests": 5907,
-        "impressions": 5555,
-        "errors": 87
+        "requests": 5094,
+        "impressions": 4814,
+        "errors": 97
       },
       "ios": {
-        "requests": 4527,
-        "impressions": 4348,
+        "requests": 4407,
+        "impressions": 4293,
+        "errors": 44
+      },
+      "appletv": {
+        "requests": 1150,
+        "impressions": 1144,
         "errors": 50
       },
       "androidtv": {
-        "requests": 1929,
-        "impressions": 1874,
-        "errors": 4
-      },
-      "appletv": {
-        "requests": 1516,
-        "impressions": 1514,
+        "requests": 862,
+        "impressions": 842,
         "errors": 0
       },
       "firetv": {
-        "requests": 891,
-        "impressions": 871,
-        "errors": 3
+        "requests": 813,
+        "impressions": 795,
+        "errors": 0
+      },
+      "vizio": {
+        "requests": 12,
+        "impressions": 41,
+        "errors": 22
       }
     },
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "sourceLabel": "Prior snapshot (stale): dotStudiosAppAds",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "sourceLabel": "Fresh DotStudios manual export",
+    "sourceDetail": "User upload October 5; Sep 28-Oct 4, 2026"
   },
   "sourceStatus": {
     "ga4": {
@@ -18253,13 +18651,13 @@ window.DASHBOARD_DATA = {
       "source": "Internal GA4 pull, property 497892271"
     },
     "stripe": {
-      "status": "stale_preserved_no_fresh_pull",
-      "period": "Sep 21-Sep 27, 2026",
-      "gross": 255.92,
-      "transactions": 10,
+      "status": "fresh",
+      "period": "Sep 28-Oct 4, 2026",
+      "gross": 111.94,
+      "transactions": 6,
       "source": "Stripe connector charge list",
-      "staleNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+      "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+      "sourceDetail": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand."
     },
     "rokuSales": {
       "status": "fresh",
@@ -18278,27 +18676,25 @@ window.DASHBOARD_DATA = {
       "note": "TRC Live Percent of Unique Viewers / Average Session reports are excluded from app and platform usage."
     },
     "appleManual": {
-      "status": "stale_preserved_no_fresh_pull",
-      "period": "Sep 21-Sep 27, 2026",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "salesGross": 187.91,
-      "downloads": 70,
-      "totalUnits": 79,
-      "inAppUnits": 9,
+      "status": "fresh_manual_partial_geography",
+      "period": "Sep 28-Oct 4, 2026",
+      "salesGross": 128.93,
+      "downloads": 83,
+      "totalUnits": 90,
+      "inAppUnits": 7,
       "salesGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
     },
     "dotStudiosAppAds": {
-      "status": "stale_preserved_no_fresh_pull",
-      "period": "Sep 21-Sep 27, 2026",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "period": "Sep 28-Oct 4, 2026",
+      "note": "Fresh four DotStudios exports uploaded October 5."
     },
     "googleAds": {
       "status": "stale_preserved_no_fresh_pull",
       "period": "Sep 14-Sep 20, 2026",
       "note": "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero.",
-      "attemptedPeriod": "Sep 21-Sep 27, 2026",
+      "attemptedPeriod": "Sep 28-Oct 4, 2026",
       "staleNote": "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero."
     },
     "metaAds": {
@@ -18316,16 +18712,21 @@ window.DASHBOARD_DATA = {
   },
   "refreshAuditNotes": [
     "Sep 28-Oct 4, 2026 refresh on Oct 5, 2026.",
-    "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
+    "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
     "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero.",
     "STALE quantitative Meta data: latest measured flight remains Aug 4-Aug 26, 2026. Oct 5 Outlook search found no newer Nathan report. Sep 21 recommendation to pause Roku and test show-led Meta is historical and implementation remains unconfirmed.",
     "Fresh Roku Sales: Sep 28-Oct 4, 2026, 2 purchases / $41.98. App Engagement: Sep 27-Oct 3 (Sun-Sat, one-day offset), 3,078 hours, 336 average daily viewers, 78.56 minutes/viewer, 141 installs / 88 uninstalls. Separate from GA4; TRC off-app excluded.",
-    "Fresh partial YouTube: Sep 28 through 2026-10-03, 6 available days; matched against Sep 21 through 2026-09-26. Not added to app sales or in-app ad delivery."
+    "Fresh partial YouTube: Sep 28 through 2026-10-03, 6 available days; matched against Sep 21 through 2026-09-26. Not added to app sales or in-app ad delivery.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
   ],
   "connectorStatus": {
     "GA4": "Fresh property 497892271 for Sep 28-Oct 4, 2026",
-    "Stripe": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
+    "Stripe": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
     "Outlook/Roku emails": "Fresh Roku Sales: Sep 28-Oct 4, 2026, 2 purchases / $41.98. App Engagement: Sep 27-Oct 3 (Sun-Sat, one-day offset), 3,078 hours, 336 average daily viewers, 78.56 minutes/viewer, 141 installs / 88 uninstalls. Separate from GA4; TRC off-app excluded.",
     "Google Ads": "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero.",
     "Meta Ads": "STALE quantitative Meta data: latest measured flight remains Aug 4-Aug 26, 2026. Oct 5 Outlook search found no newer Nathan report. Sep 21 recommendation to pause Roku and test show-led Meta is historical and implementation remains unconfirmed.",
@@ -18380,17 +18781,22 @@ window.DASHBOARD_DATA = {
   },
   "updateNotes": [
     "Sep 28-Oct 4, 2026 refresh on Oct 5, 2026.",
-    "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
+    "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
     "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero.",
     "STALE quantitative Meta data: latest measured flight remains Aug 4-Aug 26, 2026. Oct 5 Outlook search found no newer Nathan report. Sep 21 recommendation to pause Roku and test show-led Meta is historical and implementation remains unconfirmed.",
     "Fresh Roku Sales: Sep 28-Oct 4, 2026, 2 purchases / $41.98. App Engagement: Sep 27-Oct 3 (Sun-Sat, one-day offset), 3,078 hours, 336 average daily viewers, 78.56 minutes/viewer, 141 installs / 88 uninstalls. Separate from GA4; TRC off-app excluded.",
-    "Fresh partial YouTube: Sep 28 through 2026-10-03, 6 available days; matched against Sep 21 through 2026-09-26. Not added to app sales or in-app ad delivery."
+    "Fresh partial YouTube: Sep 28 through 2026-10-03, 6 available days; matched against Sep 21 through 2026-09-26. Not added to app sales or in-app ad delivery.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported.",
+    "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
   ],
   "monthlyTrendNote": "Rolling 28-day trend covers Jul 24-Aug 20, 2026 and compares against Jun 26-Jul 23, 2026 where summary comparisons are available.",
   "lastUpdated": "October 5, 2026 (Pacific)",
-  "lastUpdatedIso": "2026-10-05T19:49:29.216874+00:00",
-  "generatedAtIso": "2026-10-05T19:49:29.216874+00:00",
+  "lastUpdatedIso": "2026-10-05T20:06:53.945810+00:00",
+  "generatedAtIso": "2026-10-05T20:06:53.945810+00:00",
   "reportingPeriod": "Sep 28-Oct 4, 2026",
   "rolling28Summary": {
     "period": "Sep 7-Oct 4, 2026",
@@ -18649,13 +19055,13 @@ window.DASHBOARD_DATA = {
       "source": "Internal GA4 pull, property 497892271"
     },
     "stripe": {
-      "status": "stale_preserved_no_fresh_pull",
-      "period": "Sep 21-Sep 27, 2026",
-      "gross": 255.92,
-      "transactions": 10,
+      "status": "fresh",
+      "period": "Sep 28-Oct 4, 2026",
+      "gross": 111.94,
+      "transactions": 6,
       "source": "Stripe connector charge list",
-      "staleNote": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero.",
-      "note": "STALE: Stripe disconnected on Oct 5; authorization requested. Last successful Sep 21-Sep 27, 2026 charge data retained (10 / $255.92); current sales unknown, not zero."
+      "note": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand.",
+      "sourceDetail": "Fresh Stripe, Sep 28-Oct 4, 2026: 6 successful charges / $111.94, including 1 subscription-creation charge(s) / $8.00; 9 failed attempts excluded. Prior week: 10 / $255.92. Refunds on these charges $0.00; before processing fees. Stripe-visible charges are not all TVOD; compare release stage and season-pass ownership before judging demand."
     },
     "rokuSales": {
       "status": "fresh",
@@ -18674,27 +19080,25 @@ window.DASHBOARD_DATA = {
       "note": "TRC Live Percent of Unique Viewers / Average Session reports are excluded from app and platform usage."
     },
     "appleManual": {
-      "status": "stale_preserved_no_fresh_pull",
-      "period": "Sep 21-Sep 27, 2026",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "salesGross": 187.91,
-      "downloads": 70,
-      "totalUnits": 79,
-      "inAppUnits": 9,
+      "status": "fresh_manual_partial_geography",
+      "period": "Sep 28-Oct 4, 2026",
+      "salesGross": 128.93,
+      "downloads": 83,
+      "totalUnits": 90,
+      "inAppUnits": 7,
       "salesGeography": "United States only",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "note": "Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
     },
     "dotStudiosAppAds": {
-      "status": "stale_preserved_no_fresh_pull",
-      "period": "Sep 21-Sep 27, 2026",
-      "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-      "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+      "status": "fresh_manual",
+      "period": "Sep 28-Oct 4, 2026",
+      "note": "Fresh four DotStudios exports uploaded October 5."
     },
     "googleAds": {
       "status": "stale_preserved_no_fresh_pull",
       "period": "Sep 14-Sep 20, 2026",
       "note": "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero.",
-      "attemptedPeriod": "Sep 21-Sep 27, 2026",
+      "attemptedPeriod": "Sep 28-Oct 4, 2026",
       "staleNote": "STALE: Oct 5 Google Ads developer quota RESOURCE_EXHAUSTED blocked Sep 28-Oct 4 reporting. Last verified Sep 14-Sep 20, 2026 zero-delivery figures preserved; current spend, impressions, clicks and first-open conversions unknown, not zero."
     },
     "metaAds": {
@@ -18758,185 +19162,179 @@ window.DASHBOARD_DATA = {
     ]
   },
   "lastManualSourceUpdate": {
-    "updatedAt": "2026-09-28T19:35:59.406725+00:00",
+    "updatedAt": "2026-10-05T20:06:53.945810+00:00",
+    "period": "Sep 28-Oct 4, 2026",
+    "status": "fresh_manual",
     "sources": [
       "DotStudios TVOD",
       "DotStudios app installs",
       "DotStudios video views",
-      "DotStudios app ad-serving",
-      "Apple manual snapshot"
+      "DotStudios in-app ad metrics",
+      "Apple units and U.S.-only sales"
     ],
-    "period": "Sep 21-Sep 27, 2026",
-    "summary": "DotStudios TVOD overlaps Apple/Stripe/Roku/Android/Web; source check only, never summed as total ElectricNOW sales.; Video views for Sep 21-Sep 27, 2026 are GA4-sourced within the DotStudios export (Source column = google_analytics); treat as viewing depth, not additive to GA4 property 497892271 headline metrics. Export dates cluster on the last days of the range, so do not chart it as a daily series.; In-app ad delivery figures are ad-server delivery only; keep separate from GA4 ads_impression events and from Meta/Google paid-campaign impressions. Ionic, GA4 and DotStudios impression counts a",
-    "caveat": "Manual exports supplied by Michael/DotStudios; kept separate from GA4, paid-campaign impressions, YouTube, Roku, Stripe.",
-    "dotStudiosTvodPeriod": "Sep 21-Sep 27, 2026",
-    "status": "stale_preserved_no_fresh_pull",
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "sourceLabel": "Prior snapshot (stale): lastManualSourceUpdate",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "summary": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners. Fresh Apple Connect Sep 28-Oct 4: 90 total units = 83 free downloads + 7 in-app units; downloads +18.6% versus 70, in-app units -22.2% versus 9. U.S.-ONLY sales $128.93 versus $187.91 (-31.4%). Worldwide sales, updates and exact daily units unavailable; no bar heights estimated. In-app units are not unique buyers; transaction count not reported."
   },
   "dotStudiosAppInstalls": {
-    "source": "DotStudios app-installs-summary-3.csv",
+    "source": "DotStudios app-installs-summary-4.csv",
     "sourceType": "manual_dotstudios_export",
-    "period": "Sep 21-Sep 27, 2026",
-    "periodStart": "2026-09-21",
-    "periodEnd": "2026-09-27",
-    "updatedAt": "2026-09-28T19:46:37.385314+00:00",
-    "status": "stale_preserved_no_fresh_pull",
+    "period": "Sep 28-Oct 4, 2026",
+    "periodStart": "2026-09-28",
+    "periodEnd": "2026-10-04",
+    "updatedAt": "2026-10-05T20:06:53.945810+00:00",
+    "status": "fresh_manual",
     "totals": {
-      "installs": 665,
-      "updates": 576,
-      "totalEvents": 1241,
-      "users": 1237,
-      "events": 1241
+      "installs": 704,
+      "updates": 423,
+      "totalEvents": 1127,
+      "users": 1107,
+      "events": 1127
     },
     "byPlatform": {
-      "web": 377,
-      "Android": 157,
-      "iOS": 131
+      "web": 404,
+      "iOS": 138,
+      "Android": 162
     },
     "platformBreakout": [
       {
         "Platform": "web",
-        "installs": 377,
-        "updates": 249,
-        "totalEvents": 626,
-        "users": 623,
-        "shareOfInstallsPct": 56.7
+        "installs": 404,
+        "updates": 160,
+        "totalEvents": 564,
+        "users": 549,
+        "shareOfInstallsPct": 57.4
       },
       {
         "Platform": "Android",
-        "installs": 157,
-        "updates": 133,
-        "totalEvents": 290,
-        "users": 289,
-        "shareOfInstallsPct": 23.6
+        "installs": 162,
+        "updates": 101,
+        "totalEvents": 263,
+        "users": 259,
+        "shareOfInstallsPct": 23.0
       },
       {
         "Platform": "iOS",
-        "installs": 131,
-        "updates": 194,
-        "totalEvents": 325,
-        "users": 325,
-        "shareOfInstallsPct": 19.7
+        "installs": 138,
+        "updates": 162,
+        "totalEvents": 300,
+        "users": 299,
+        "shareOfInstallsPct": 19.6
       }
     ],
     "byDeviceCategory": {
-      "smart tv": 369,
-      "mobile": 194,
-      "tablet": 40,
-      "desktop": 62
+      "smart tv": 379,
+      "mobile": 215,
+      "tablet": 49,
+      "desktop": 61
     },
     "deviceBreakout": [
       {
         "Device Category": "smart tv",
-        "installs": 369,
-        "updates": 290,
-        "users": 658,
-        "shareOfInstallsPct": 55.5
+        "installs": 379,
+        "updates": 189,
+        "users": 553,
+        "shareOfInstallsPct": 53.8
       },
       {
         "Device Category": "mobile",
-        "installs": 194,
-        "updates": 233,
-        "users": 426,
-        "shareOfInstallsPct": 29.2
+        "installs": 215,
+        "updates": 197,
+        "users": 408,
+        "shareOfInstallsPct": 30.5
       },
       {
         "Device Category": "desktop",
-        "installs": 62,
-        "updates": 0,
-        "users": 60,
-        "shareOfInstallsPct": 9.3
+        "installs": 61,
+        "updates": 5,
+        "users": 65,
+        "shareOfInstallsPct": 8.7
       },
       {
         "Device Category": "tablet",
-        "installs": 40,
-        "updates": 53,
-        "users": 93,
-        "shareOfInstallsPct": 6.0
+        "installs": 49,
+        "updates": 32,
+        "users": 81,
+        "shareOfInstallsPct": 7.0
       }
     ],
     "byCountry": {
       "United States": {
-        "installs": 588,
-        "updates": 567,
-        "events": 1155,
-        "users": 1153,
-        "cities": 596
-      },
-      "Puerto Rico": {
-        "installs": 2,
-        "updates": 0,
-        "events": 2,
-        "users": 2,
-        "cities": 2
+        "installs": 630,
+        "updates": 413,
+        "events": 1043,
+        "users": 1024,
+        "cities": 558
       },
       "Unknown": {
-        "installs": 62,
-        "updates": 0,
-        "events": 62,
-        "users": 60,
+        "installs": 61,
+        "updates": 5,
+        "events": 66,
+        "users": 65,
         "cities": 0
       },
-      "Serbia": {
+      "Australia": {
+        "installs": 4,
+        "updates": 2,
+        "events": 6,
+        "users": 6,
+        "cities": 5
+      },
+      "Japan": {
+        "installs": 3,
+        "updates": 0,
+        "events": 3,
+        "users": 3,
+        "cities": 1
+      },
+      "Canada": {
         "installs": 1,
         "updates": 0,
         "events": 1,
         "users": 1,
         "cities": 1
       },
-      "Dominican Republic": {
+      "India": {
+        "installs": 1,
+        "updates": 0,
+        "events": 1,
+        "users": 1,
+        "cities": 1
+      },
+      "United Kingdom": {
         "installs": 2,
         "updates": 0,
         "events": 2,
         "users": 2,
         "cities": 2
       },
-      "Australia": {
-        "installs": 6,
-        "updates": 7,
-        "events": 13,
-        "users": 13,
-        "cities": 5
-      },
-      "Norway": {
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1
-      },
-      "Lithuania": {
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1
-      },
-      "Switzerland": {
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1
-      },
-      "Portugal": {
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1
-      },
-      "Indonesia": {
+      "Mexico": {
         "installs": 0,
         "updates": 1,
         "events": 1,
         "users": 1,
         "cities": 1
       },
-      "Japan": {
+      "Puerto Rico": {
+        "installs": 0,
+        "updates": 1,
+        "events": 1,
+        "users": 1,
+        "cities": 1
+      },
+      "Italy": {
+        "installs": 1,
+        "updates": 0,
+        "events": 1,
+        "users": 1,
+        "cities": 1
+      },
+      "Kuwait": {
+        "installs": 1,
+        "updates": 0,
+        "events": 1,
+        "users": 1,
+        "cities": 1
+      },
+      "Egypt": {
         "installs": 0,
         "updates": 1,
         "events": 1,
@@ -18947,106 +19345,76 @@ window.DASHBOARD_DATA = {
     "countryBreakout": [
       {
         "Country": "United States",
-        "installs": 588,
-        "updates": 567,
-        "events": 1155,
-        "users": 1153,
-        "cities": 596,
-        "totalEvents": 1155,
-        "shareOfInstallsPct": 88.42105263157895
-      },
-      {
-        "Country": "Puerto Rico",
-        "installs": 2,
-        "updates": 0,
-        "events": 2,
-        "users": 2,
-        "cities": 2,
-        "totalEvents": 2,
-        "shareOfInstallsPct": 0.30075187969924816
+        "installs": 630,
+        "updates": 413,
+        "events": 1043,
+        "users": 1024,
+        "cities": 558,
+        "totalEvents": 1043,
+        "shareOfInstallsPct": 89.48863636363636
       },
       {
         "Country": "Unknown",
-        "installs": 62,
-        "updates": 0,
-        "events": 62,
-        "users": 60,
+        "installs": 61,
+        "updates": 5,
+        "events": 66,
+        "users": 65,
         "cities": 0,
-        "totalEvents": 62,
-        "shareOfInstallsPct": 9.323308270676693
+        "totalEvents": 66,
+        "shareOfInstallsPct": 8.664772727272728
       },
       {
-        "Country": "Serbia",
+        "Country": "Australia",
+        "installs": 4,
+        "updates": 2,
+        "events": 6,
+        "users": 6,
+        "cities": 5,
+        "totalEvents": 6,
+        "shareOfInstallsPct": 0.5681818181818182
+      },
+      {
+        "Country": "Japan",
+        "installs": 3,
+        "updates": 0,
+        "events": 3,
+        "users": 3,
+        "cities": 1,
+        "totalEvents": 3,
+        "shareOfInstallsPct": 0.4261363636363636
+      },
+      {
+        "Country": "Canada",
         "installs": 1,
         "updates": 0,
         "events": 1,
         "users": 1,
         "cities": 1,
         "totalEvents": 1,
-        "shareOfInstallsPct": 0.15037593984962408
+        "shareOfInstallsPct": 0.14204545454545456
       },
       {
-        "Country": "Dominican Republic",
+        "Country": "India",
+        "installs": 1,
+        "updates": 0,
+        "events": 1,
+        "users": 1,
+        "cities": 1,
+        "totalEvents": 1,
+        "shareOfInstallsPct": 0.14204545454545456
+      },
+      {
+        "Country": "United Kingdom",
         "installs": 2,
         "updates": 0,
         "events": 2,
         "users": 2,
         "cities": 2,
         "totalEvents": 2,
-        "shareOfInstallsPct": 0.30075187969924816
+        "shareOfInstallsPct": 0.2840909090909091
       },
       {
-        "Country": "Australia",
-        "installs": 6,
-        "updates": 7,
-        "events": 13,
-        "users": 13,
-        "cities": 5,
-        "totalEvents": 13,
-        "shareOfInstallsPct": 0.9022556390977444
-      },
-      {
-        "Country": "Norway",
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1,
-        "totalEvents": 1,
-        "shareOfInstallsPct": 0.15037593984962408
-      },
-      {
-        "Country": "Lithuania",
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1,
-        "totalEvents": 1,
-        "shareOfInstallsPct": 0.15037593984962408
-      },
-      {
-        "Country": "Switzerland",
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1,
-        "totalEvents": 1,
-        "shareOfInstallsPct": 0.15037593984962408
-      },
-      {
-        "Country": "Portugal",
-        "installs": 1,
-        "updates": 0,
-        "events": 1,
-        "users": 1,
-        "cities": 1,
-        "totalEvents": 1,
-        "shareOfInstallsPct": 0.15037593984962408
-      },
-      {
-        "Country": "Indonesia",
+        "Country": "Mexico",
         "installs": 0,
         "updates": 1,
         "events": 1,
@@ -19056,7 +19424,37 @@ window.DASHBOARD_DATA = {
         "shareOfInstallsPct": 0.0
       },
       {
-        "Country": "Japan",
+        "Country": "Puerto Rico",
+        "installs": 0,
+        "updates": 1,
+        "events": 1,
+        "users": 1,
+        "cities": 1,
+        "totalEvents": 1,
+        "shareOfInstallsPct": 0.0
+      },
+      {
+        "Country": "Italy",
+        "installs": 1,
+        "updates": 0,
+        "events": 1,
+        "users": 1,
+        "cities": 1,
+        "totalEvents": 1,
+        "shareOfInstallsPct": 0.14204545454545456
+      },
+      {
+        "Country": "Kuwait",
+        "installs": 1,
+        "updates": 0,
+        "events": 1,
+        "users": 1,
+        "cities": 1,
+        "totalEvents": 1,
+        "shareOfInstallsPct": 0.14204545454545456
+      },
+      {
+        "Country": "Egypt",
         "installs": 0,
         "updates": 1,
         "events": 1,
@@ -19066,183 +19464,181 @@ window.DASHBOARD_DATA = {
         "shareOfInstallsPct": 0.0
       }
     ],
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
     "file": "manual_dotstudios/2026-09-14/app-installs-summary-6.csv",
-    "installs": 665,
-    "updates": 576,
-    "events": 1241,
-    "users": 1237,
-    "priorInstalls": 726,
-    "priorUpdates": 635,
-    "usInstalls": 588,
+    "installs": 704,
+    "updates": 423,
+    "events": 1127,
+    "users": 1107,
+    "priorInstalls": 665,
+    "priorUpdates": 576,
+    "usInstalls": 630,
     "prior": {
-      "period": "Sep 14-Sep 20, 2026",
-      "installs": 726,
-      "updates": 635
+      "period": "Sep 21-Sep 27, 2026",
+      "installs": 665,
+      "updates": 576
     },
-    "installsDeltaPct": -8.402203856749312,
-    "updatesDeltaPct": -9.291338582677165,
+    "installsDeltaPct": 5.864661654135339,
+    "updatesDeltaPct": -26.5625,
     "byPlatformDetail": {
       "web": {
-        "installs": 377,
-        "updates": 249,
-        "events": 626,
-        "users": 623
-      },
-      "Android": {
-        "installs": 157,
-        "updates": 133,
-        "events": 290,
-        "users": 289
+        "installs": 404,
+        "updates": 160,
+        "events": 564,
+        "users": 549
       },
       "iOS": {
-        "installs": 131,
-        "updates": 194,
-        "events": 325,
-        "users": 325
+        "installs": 138,
+        "updates": 162,
+        "events": 300,
+        "users": 299
+      },
+      "Android": {
+        "installs": 162,
+        "updates": 101,
+        "events": 263,
+        "users": 259
       }
     },
     "byDeviceCategoryDetail": {
       "smart tv": {
-        "installs": 369,
-        "updates": 290,
-        "events": 659,
-        "users": 658
+        "installs": 379,
+        "updates": 189,
+        "events": 568,
+        "users": 553
       },
       "mobile": {
-        "installs": 194,
-        "updates": 233,
-        "events": 427,
-        "users": 426
+        "installs": 215,
+        "updates": 197,
+        "events": 412,
+        "users": 408
       },
       "tablet": {
-        "installs": 40,
-        "updates": 53,
-        "events": 93,
-        "users": 93
+        "installs": 49,
+        "updates": 32,
+        "events": 81,
+        "users": 81
       },
       "desktop": {
-        "installs": 62,
-        "updates": 0,
-        "events": 62,
-        "users": 60
+        "installs": 61,
+        "updates": 5,
+        "events": 66,
+        "users": 65
       }
     },
     "comparisonPeriod": "Sep 7-Sep 13, 2026 (last uploaded export; overlapping window)",
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "sourceLabel": "Prior snapshot (stale): dotStudiosAppInstalls",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "sourceLabel": "Fresh DotStudios manual export",
+    "sourceDetail": "User upload October 5; Sep 28-Oct 4, 2026"
   },
   "dotStudiosVideoViews": {
-    "source": "DotStudios video-views-3.csv",
+    "source": "DotStudios video-views-4.csv",
     "sourceType": "manual_dotstudios_export",
-    "period": "Sep 21-Sep 27, 2026",
-    "periodStart": "2026-09-21",
-    "periodEnd": "2026-09-27",
-    "updatedAt": "2026-09-28T19:46:37.385314+00:00",
-    "status": "stale_preserved_no_fresh_pull",
-    "rowCount": 553,
-    "totalViews": 14079,
+    "period": "Sep 28-Oct 4, 2026",
+    "periodStart": "2026-09-28",
+    "periodEnd": "2026-10-04",
+    "updatedAt": "2026-10-05T20:06:53.945810+00:00",
+    "status": "fresh_manual",
+    "rowCount": 531,
+    "totalViews": 12953,
     "daily": [
       {
-        "date": "2026-09-21",
-        "label": "Sep 21",
-        "views": 39,
+        "date": "2026-09-28",
+        "label": "Sep 28",
+        "views": 31,
+        "shareOfViewsPct": 0.2
+      },
+      {
+        "date": "2026-09-29",
+        "label": "Sep 29",
+        "views": 38,
         "shareOfViewsPct": 0.3
       },
       {
-        "date": "2026-09-22",
-        "label": "Sep 22",
-        "views": 64,
-        "shareOfViewsPct": 0.5
-      },
-      {
-        "date": "2026-09-23",
-        "label": "Sep 23",
-        "views": 46,
-        "shareOfViewsPct": 0.3
-      },
-      {
-        "date": "2026-09-24",
-        "label": "Sep 24",
+        "date": "2026-09-30",
+        "label": "Sep 30",
         "views": 67,
         "shareOfViewsPct": 0.5
       },
       {
-        "date": "2026-09-25",
-        "label": "Sep 25",
-        "views": 147,
-        "shareOfViewsPct": 1.0
+        "date": "2026-10-01",
+        "label": "Oct 1",
+        "views": 111,
+        "shareOfViewsPct": 0.9
       },
       {
-        "date": "2026-09-26",
-        "label": "Sep 26",
-        "views": 2338,
-        "shareOfViewsPct": 16.6
+        "date": "2026-10-02",
+        "label": "Oct 2",
+        "views": 277,
+        "shareOfViewsPct": 2.1
       },
       {
-        "date": "2026-09-27",
-        "label": "Sep 27",
-        "views": 11378,
-        "shareOfViewsPct": 80.8
+        "date": "2026-10-03",
+        "label": "Oct 3",
+        "views": 515,
+        "shareOfViewsPct": 4.0
+      },
+      {
+        "date": "2026-10-04",
+        "label": "Oct 4",
+        "views": 11914,
+        "shareOfViewsPct": 92.0
       }
     ],
     "byDevice": {
-      "roku": 4723,
-      "desktop_web": 3582,
-      "android": 1841,
-      "firetv": 1298,
-      "ios": 1254,
-      "androidtv": 951,
-      "mobileweb": 204,
-      "appletv": 200,
-      "vizio": 26
+      "roku": 4342,
+      "desktop_web": 3636,
+      "android": 1516,
+      "ios": 1131,
+      "androidtv": 1066,
+      "firetv": 698,
+      "mobileweb": 341,
+      "appletv": 182,
+      "vizio": 41
     },
     "deviceBreakout": [
       {
         "Device": "roku",
-        "views": 4723,
+        "views": 4342,
         "shareOfViewsPct": 33.5
       },
       {
         "Device": "desktop_web",
-        "views": 3582,
-        "shareOfViewsPct": 25.4
+        "views": 3636,
+        "shareOfViewsPct": 28.1
       },
       {
         "Device": "android",
-        "views": 1841,
-        "shareOfViewsPct": 13.1
-      },
-      {
-        "Device": "firetv",
-        "views": 1298,
-        "shareOfViewsPct": 9.2
+        "views": 1516,
+        "shareOfViewsPct": 11.7
       },
       {
         "Device": "ios",
-        "views": 1254,
-        "shareOfViewsPct": 8.9
+        "views": 1131,
+        "shareOfViewsPct": 8.7
       },
       {
         "Device": "androidtv",
-        "views": 951,
-        "shareOfViewsPct": 6.8
+        "views": 1066,
+        "shareOfViewsPct": 8.2
+      },
+      {
+        "Device": "firetv",
+        "views": 698,
+        "shareOfViewsPct": 5.4
       },
       {
         "Device": "mobileweb",
-        "views": 204,
-        "shareOfViewsPct": 1.4
+        "views": 341,
+        "shareOfViewsPct": 2.6
       },
       {
         "Device": "appletv",
-        "views": 200,
+        "views": 182,
         "shareOfViewsPct": 1.4
       },
       {
         "Device": "vizio",
-        "views": 26,
-        "shareOfViewsPct": 0.2
+        "views": 41,
+        "shareOfViewsPct": 0.3
       }
     ],
     "appleTvViews": 241,
@@ -19436,14 +19832,14 @@ window.DASHBOARD_DATA = {
       }
     ],
     "topTitles": {
-      "ElectricNOW": 4381,
-      "The Ark": 2385,
-      "The Librarians": 1969,
-      "Topper": 1688,
-      "Leverage": 1510,
-      "ElectricNOW en Español": 148,
-      "Grindhouse Gold": 106,
-      "Almost Paradise (Season 1 & 2)": 103
+      "ElectricNOW": 3889,
+      "The Ark": 2360,
+      "The Librarians": 1869,
+      "William Shatner's: A Twist in the Tale": 1692,
+      "Leverage": 1515,
+      "Almost Paradise - Season 1": 197,
+      "ElectricNOW en Español": 173,
+      "Almost Paradise - Season 2": 110
     },
     "sourceColumnValues": [
       {
@@ -19452,21 +19848,20 @@ window.DASHBOARD_DATA = {
         "shareOfViewsPct": 100.0
       }
     ],
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
+    "note": "Device Breakdown is a packed 'device: n; device: n' string, not a column - parse by splitting on ';' then rsplit ':'. Device sums tie exactly to Total Views for this export.",
     "file": "manual_dotstudios/2026-09-14/video-views-7.csv",
     "rows": 552,
-    "priorTotalViews": 14693,
-    "deltaPct": -4.18,
-    "ctvViews": 7198,
-    "ctvSharePct": 51.1,
-    "priorCtvSharePct": 48.6,
+    "priorTotalViews": 14079,
+    "deltaPct": -8.0,
+    "ctvViews": 6329,
+    "ctvSharePct": 48.9,
+    "priorCtvSharePct": 51.1,
     "caveat": "DotStudios video views are the vendor's player-side count and are not GA4 active users or sessions. Daily rows in this export are not evenly attributed across the week, so do not chart them as a daily trend.",
     "sources": {
-      "google_analytics": 553
+      "google_analytics": 531
     },
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "sourceLabel": "Prior snapshot (stale): dotStudiosVideoViews",
-    "sourceDetail": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "sourceLabel": "Fresh DotStudios manual export",
+    "sourceDetail": "User upload October 5; Sep 28-Oct 4, 2026"
   },
   "rokuSalesActivity": {
     "period": "Sep 28-Oct 4, 2026",
@@ -19527,28 +19922,27 @@ window.DASHBOARD_DATA = {
     "trcExclusionNote": "Roku TRC emails are for the separate Roku live-channel surface outside the ElectricNOW app and are excluded from app/platform usage."
   },
   "visibleSourceWeek": {
-    "period": "Sep 21-Sep 27, 2026",
-    "range": "Sep 21-Sep 27, 2026",
-    "label": "Prior snapshot (stale): DotStudios current-week TVOD",
-    "gross": 479.74,
-    "net": 479.74,
-    "transactions": 23,
-    "purchases": 23,
-    "paidTransactions": 23,
-    "knownFreshVisibleTransactions": 23,
-    "purchaseRevenue": 479.74,
+    "period": "Sep 28-Oct 4, 2026",
+    "range": "Sep 28-Oct 4, 2026",
+    "label": "DotStudios current-week TVOD",
+    "gross": 448.75,
+    "net": 448.75,
+    "transactions": 24,
+    "purchases": 24,
+    "paidTransactions": 24,
+    "knownFreshVisibleTransactions": 24,
+    "purchaseRevenue": 448.75,
     "source": "DotStudios manual export",
-    "status": "stale_preserved_no_fresh_pull",
-    "note": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable.",
-    "priorPeriod": "Sep 14-Sep 20, 2026",
-    "deltaVsPriorPct": -27.712985564897686,
-    "dotStudiosTvodGross": 479.74,
-    "dotStudiosTvodTransactions": 23,
-    "appleManualSnapshotGross": 187.91,
-    "appleManualSnapshotDownloads": 70,
-    "appleManualSnapshotPeriod": "Sep 21-Sep 27, 2026",
-    "appleManualSnapshotGeography": "United States only",
-    "staleNote": "STALE: no new Apple or DotStudios uploads for Sep 28-Oct 4. Preserved Sep 21-Sep 27, 2026 values; NOT current-week results. Apple sales remain U.S.-only; worldwide sales and Apple updates unavailable."
+    "status": "fresh_manual",
+    "note": "DotStudios TVOD: 24 paid transactions / $448.75 versus 23 / $479.74 (+4.3% transactions, -6.5% dollars). Stripe TVOD-like charges $103.94 match DotStudios web $103.94; Stripe also includes $8 subscription revenue. Roku $41.98 matches DotStudios Roku, and Apple U.S. $128.93 matches DotStudios Apple subtotal. Keep overlapping sources separate. Continued season-pass sales support ongoing demand, not proof of redesign causality; compare release age and eligible non-owners.",
+    "priorPeriod": "Sep 21-Sep 27, 2026",
+    "deltaVsPriorPct": -6.459749030724978,
+    "dotStudiosTvodGross": 448.75,
+    "dotStudiosTvodTransactions": 24,
+    "appleManualSnapshotGross": 128.93,
+    "appleManualSnapshotDownloads": 83,
+    "appleManualSnapshotPeriod": "Sep 28-Oct 4, 2026",
+    "appleManualSnapshotGeography": "United States only"
   },
   "_renderContract": {
     "normalizedAt": "2026-10-05 19:34 ",
