@@ -6081,27 +6081,94 @@
     },
     "onDemand": {
       "total": {
-        "screenPageViews": 27,
-        "activeUsers": 4,
-        "eventCount": 46
+        "activeUsers": 554,
+        "screenPageViews": null,
+        "eventCount": 7798
       },
       "platforms": [
         {
-          "platform": "Android",
-          "screen": "On Demand",
-          "screenPageViews": 19,
-          "activeUsers": 2,
-          "eventCount": 30
+          "platform": "Web",
+          "screen": "On-demand video",
+          "activeUsers": 256,
+          "screenPageViews": null,
+          "eventCount": 6244
         },
         {
           "platform": "iOS",
-          "screen": "On Demand",
-          "screenPageViews": 8,
-          "activeUsers": 2,
-          "eventCount": 16
+          "screen": "On-demand video",
+          "activeUsers": 133,
+          "screenPageViews": null,
+          "eventCount": 438
+        },
+        {
+          "platform": "Android",
+          "screen": "On-demand video",
+          "activeUsers": 130,
+          "screenPageViews": null,
+          "eventCount": 1116
         }
       ],
-      "note": "Internal GA4 pull, property 497892271, Oct 19-Oct 25, 2026. The GA4 screen literally named 'On Demand' now records almost no traffic (27 screen views this week versus 7,142 in late July), because on-demand browsing is tracked under Home Page, PDP and Player screens (see App section usage above). Treat this panel as a legacy screen-name check, not the on-demand audience; user count is a sum of platform rows, not deduped."
+      "note": "Internal GA4 pull, property 497892271, Oct 19-Oct 25, 2026. On-demand viewers are people who started an on-demand video (live/FAST channels excluded): 554 this week versus 838 the week before (-33.9%); 186 finished an on-demand video (306 the week before). Platform rows are people per platform; someone using two platforms counts in both, and GA4 leaves a few users without a platform, so rows need not add to 554. The old GA4 screen named 'On Demand' recorded only 4 users and 27 screen views because browsing now happens on the Home, title-detail and Player screens; it is not the audience.",
+      "viewing": {
+        "period": "Oct 19-Oct 25, 2026",
+        "comparisonPeriod": "Oct 12-Oct 18, 2026",
+        "definition": "Users with a video_start event whose channel_title is not a live/FAST channel (live_channels.json roster). Same definition as the Viewing Behavior 'On-demand start users' scorecard.",
+        "source": "Internal GA4 pull, property 497892271, pulled Oct 27, 2026 (all days final)",
+        "viewers": 554,
+        "starts": 7798,
+        "finishers": 186,
+        "completes": 3110,
+        "prior": {
+          "viewers": 838,
+          "starts": 9196,
+          "finishers": 306
+        },
+        "platforms": [
+          {
+            "platform": "Web",
+            "viewers": 256,
+            "starts": 6244,
+            "priorViewers": 433
+          },
+          {
+            "platform": "iOS",
+            "viewers": 133,
+            "starts": 438,
+            "priorViewers": 190
+          },
+          {
+            "platform": "Android",
+            "viewers": 130,
+            "starts": 1116,
+            "priorViewers": 194
+          }
+        ]
+      },
+      "legacyScreen": {
+        "screen": "On Demand",
+        "total": {
+          "screenPageViews": 27,
+          "activeUsers": 4,
+          "eventCount": 46
+        },
+        "platforms": [
+          {
+            "platform": "Android",
+            "screen": "On Demand",
+            "screenPageViews": 19,
+            "activeUsers": 2,
+            "eventCount": 30
+          },
+          {
+            "platform": "iOS",
+            "screen": "On Demand",
+            "screenPageViews": 8,
+            "activeUsers": 2,
+            "eventCount": 16
+          }
+        ],
+        "note": "Legacy GA4 screen-name count. Not the on-demand audience; do not headline."
+      }
     },
     "status": "fresh"
   },
@@ -7511,44 +7578,47 @@
     "staleNote": "STALE quantitative Meta data: latest measured flight remains Aug 4-Aug 26, 2026. Oct 26 Outlook search found no newer Meta-only report from Nathan (none since Oct 5; the only new Nathan thread is an Oct 17 Roku Ads Manager payment-card issue, with a $5k Roku ad credit to spend through November). Sep 21 recommendation to pause Roku and test show-led Meta is historical; implementation remains unconfirmed."
   },
   "appUsage": {
-    "launchBaseline": {
-      "range": "Apr 13-Apr 19, 2026",
-      "appActiveUsers": 1547,
-      "appSessions": 2889,
-      "appEngagedSessions": 2339,
-      "appEngagementRate": 80.96227068189685,
-      "viewingUsers": 730,
-      "viewingShare": 47.18810601163542,
-      "onDemandStartUsers": 699,
-      "onDemandStartEvents": 2508,
-      "liveChannelViewers": 46,
-      "livePlayEvents": 1673
-    },
-    "previousWeek": {
-      "range": "Jul 20-Jul 26, 2026",
-      "appActiveUsers": 1902,
-      "appSessions": 4084,
-      "appEngagedSessions": 3127,
-      "appEngagementRate": 76.56709108716943,
-      "viewingUsers": 854,
-      "viewingShare": 44.900105152471085,
-      "onDemandStartUsers": 818,
-      "onDemandStartEvents": 4173,
-      "liveChannelViewers": 45,
-      "livePlayEvents": 1162
-    },
-    "currentWeek": {
-      "range": "Jul 27-Aug 2, 2026",
-      "appActiveUsers": 2775,
-      "appSessions": 5977,
-      "appEngagedSessions": 4992,
-      "appEngagementRate": 83.5201606156935,
-      "viewingUsers": 1345,
-      "viewingShare": 48.468468468468465,
-      "onDemandStartUsers": 1297,
-      "onDemandStartEvents": 5919,
-      "liveChannelViewers": 71,
-      "livePlayEvents": 1388
+    "note": "Archived Apr/Jul 2026 blocks (not current, not rendered). Current figures are in scorecardGroups.",
+    "archive": {
+      "week Apr 13-Apr 19, 2026": {
+        "range": "Apr 13-Apr 19, 2026",
+        "appActiveUsers": 1547,
+        "appSessions": 2889,
+        "appEngagedSessions": 2339,
+        "appEngagementRate": 80.96227068189685,
+        "viewingUsers": 730,
+        "viewingShare": 47.18810601163542,
+        "onDemandStartUsers": 699,
+        "onDemandStartEvents": 2508,
+        "liveChannelViewers": 46,
+        "livePlayEvents": 1673
+      },
+      "week Jul 20-Jul 26, 2026": {
+        "range": "Jul 20-Jul 26, 2026",
+        "appActiveUsers": 1902,
+        "appSessions": 4084,
+        "appEngagedSessions": 3127,
+        "appEngagementRate": 76.56709108716943,
+        "viewingUsers": 854,
+        "viewingShare": 44.900105152471085,
+        "onDemandStartUsers": 818,
+        "onDemandStartEvents": 4173,
+        "liveChannelViewers": 45,
+        "livePlayEvents": 1162
+      },
+      "week Jul 27-Aug 2, 2026": {
+        "range": "Jul 27-Aug 2, 2026",
+        "appActiveUsers": 2775,
+        "appSessions": 5977,
+        "appEngagedSessions": 4992,
+        "appEngagementRate": 83.5201606156935,
+        "viewingUsers": 1345,
+        "viewingShare": 48.468468468468465,
+        "onDemandStartUsers": 1297,
+        "onDemandStartEvents": 5919,
+        "liveChannelViewers": 71,
+        "livePlayEvents": 1388
+      }
     }
   },
   "platformTime": {
@@ -7674,42 +7744,45 @@
     }
   },
   "acquisitionSummary": {
-    "launchBaseline": {
-      "range": "Apr 13-Apr 19, 2026",
-      "totalGa4ActiveUsers": 8739,
-      "totalGa4Sessions": 13421,
-      "totalGa4EngagementRate": 59.310036509947096,
-      "landingPageUsers": 1045,
-      "landingPageSessions": 1485,
-      "devicesPageUsers": 2028,
-      "devicesPageSessions": 2119,
-      "paidSocialUsers": 4441,
-      "paidSocialSessions": 4547
+    "archive": {
+      "week Apr 13-Apr 19, 2026": {
+        "range": "Apr 13-Apr 19, 2026",
+        "totalGa4ActiveUsers": 8739,
+        "totalGa4Sessions": 13421,
+        "totalGa4EngagementRate": 59.310036509947096,
+        "landingPageUsers": 1045,
+        "landingPageSessions": 1485,
+        "devicesPageUsers": 2028,
+        "devicesPageSessions": 2119,
+        "paidSocialUsers": 4441,
+        "paidSocialSessions": 4547
+      },
+      "week Jul 20-Jul 26, 2026": {
+        "range": "Jul 20-Jul 26, 2026",
+        "totalGa4ActiveUsers": 3544,
+        "totalGa4Sessions": 9899,
+        "totalGa4EngagementRate": 76.94716638044247,
+        "landingPageUsers": 148,
+        "landingPageSessions": 329,
+        "devicesPageUsers": 45,
+        "devicesPageSessions": 47,
+        "paidSocialUsers": 252,
+        "paidSocialSessions": 338
+      },
+      "week Jul 27-Aug 2, 2026": {
+        "range": "Jul 27-Aug 2, 2026",
+        "totalGa4ActiveUsers": 5702,
+        "totalGa4Sessions": 14519,
+        "totalGa4EngagementRate": 79.39252014601557,
+        "landingPageUsers": 569,
+        "landingPageSessions": 885,
+        "devicesPageUsers": 89,
+        "devicesPageSessions": 92,
+        "paidSocialUsers": 317,
+        "paidSocialSessions": 433
+      }
     },
-    "previousWeek": {
-      "range": "Jul 20-Jul 26, 2026",
-      "totalGa4ActiveUsers": 3544,
-      "totalGa4Sessions": 9899,
-      "totalGa4EngagementRate": 76.94716638044247,
-      "landingPageUsers": 148,
-      "landingPageSessions": 329,
-      "devicesPageUsers": 45,
-      "devicesPageSessions": 47,
-      "paidSocialUsers": 252,
-      "paidSocialSessions": 338
-    },
-    "currentWeek": {
-      "range": "Jul 27-Aug 2, 2026",
-      "totalGa4ActiveUsers": 5702,
-      "totalGa4Sessions": 14519,
-      "totalGa4EngagementRate": 79.39252014601557,
-      "landingPageUsers": 569,
-      "landingPageSessions": 885,
-      "devicesPageUsers": 89,
-      "devicesPageSessions": 92,
-      "paidSocialUsers": 317,
-      "paidSocialSessions": 433
-    }
+    "note": "Archived Apr/Jul 2026 blocks (not current, not rendered). Current figures are in scorecardGroups."
   },
   "viewingBehavior": {
     "launchBaseline": {
@@ -7738,7 +7811,7 @@
       "videoCompleteUsers": 306.0,
       "videoCompleteEvents": 3213.0,
       "onDemandStartUsers": 838.0,
-      "onDemandStartEvents": 24116,
+      "onDemandStartEvents": 9196,
       "liveChannelViewers": 429.0,
       "livePlayEvents": 5495.0,
       "adRequestEvents": 34230.0
@@ -7753,10 +7826,13 @@
       "videoCompleteUsers": 187.0,
       "videoCompleteEvents": 3113.0,
       "onDemandStartUsers": 554.0,
-      "onDemandStartEvents": 24377,
+      "onDemandStartEvents": 7798,
       "liveChannelViewers": 377.0,
       "livePlayEvents": 5043.0,
       "adRequestEvents": 35453.0
+    },
+    "fieldNotes": {
+      "onDemandStartEvents": "GA4 video_start event count, live/FAST channels excluded (Oct 27 fix: previously held an inflated mixed-event count)."
     }
   },
   "scorecardGroups": [
@@ -16979,7 +17055,7 @@
   "monthlyTrendNote": "Rolling 28-day trend covers Sep 28-Oct 25, 2026 and compares against Aug 31-Sep 27, 2026 where summary comparisons are available.",
   "lastUpdated": "October 27, 2026 (Pacific; GA4 re-pulled)",
   "lastUpdatedIso": "2026-10-27T13:54:27.553506+00:00",
-  "generatedAtIso": "2026-10-27T14:22:29.170307+00:00",
+  "generatedAtIso": "2026-10-27T15:27:29.577199+00:00",
   "reportingPeriod": "Oct 19-Oct 25, 2026",
   "rolling28Summary": {
     "period": "Sep 28-Oct 25, 2026",

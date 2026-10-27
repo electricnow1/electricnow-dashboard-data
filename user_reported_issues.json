@@ -1,0 +1,125 @@
+[
+ {
+  "id": "2026-10-27-daily-chart-vs-7pct",
+  "date": "2026-10-27",
+  "summary": "Daily App Trend chart showed improvement while the dashboard said -7% (preliminary GA4 Sunday published).",
+  "controls": [
+   "data_preliminary_last_day",
+   "v2_c2_sunday_moved_43pct",
+   "v2_c9_one_day_spike"
+  ]
+ },
+ {
+  "id": "2026-10-27-stale-captions",
+  "date": "2026-10-27",
+  "summary": "Chart captions named an old window ('week ending Aug 20').",
+  "controls": [
+   "data_app_trend_week_ending_old",
+   "data_monthly_note_old"
+  ]
+ },
+ {
+  "id": "2026-10-27-fresh-fresh",
+  "date": "2026-10-27",
+  "summary": "'Fresh fresh' doubled label.",
+  "controls": [
+   "data_fresh_fresh"
+  ]
+ },
+ {
+  "id": "2026-10-27-live-delta-basis",
+  "date": "2026-10-27",
+  "summary": "Live TV '+259.7% vs previous 7 days' was really vs launch.",
+  "controls": [
+   "data_live_deltas_vs_launch",
+   "v2_c6_live_basis_launch",
+   "v2_c6_live_label_missing"
+  ]
+ },
+ {
+  "id": "2026-10-27-readout-hardcoded",
+  "date": "2026-10-27",
+  "summary": "Content readout named screens that were not the top screens (hardcoded sentence).",
+  "controls": [
+   "data_readout_wrong_screens",
+   "v2_c7_hardcoded_claim_in_renderer"
+  ]
+ },
+ {
+  "id": "2026-10-27-not-reported",
+  "date": "2026-10-27",
+  "summary": "'Not reported purchases' shown on a card.",
+  "controls": [
+   "data_visible_count_null"
+  ]
+ },
+ {
+  "id": "2026-10-27-dup-paragraph",
+  "date": "2026-10-27",
+  "summary": "Same paragraph twice in the sales card. Oct 27 (2): also a paragraph repeated inside another (paid verdict, Apple and DotStudios notes).",
+  "controls": [
+   "data_duplicate_paragraph",
+   "v2_rendered_paragraph_repeated_inside_another"
+  ]
+ },
+ {
+  "id": "2026-10-27-empty-tables",
+  "date": "2026-10-27",
+  "summary": "Empty 'Net revenue by channel' table.",
+  "controls": [
+   "data_channels_empty"
+  ]
+ },
+ {
+  "id": "2026-10-27-stale-followup",
+  "date": "2026-10-27",
+  "summary": "Stale August YouTube line in developer follow-ups.",
+  "controls": [
+   "data_stale_youtube_followup"
+  ]
+ },
+ {
+  "id": "2026-10-27-email-preliminary",
+  "date": "2026-10-27",
+  "summary": "Oct 26 weekly email sent with preliminary numbers the dashboard later corrected.",
+  "controls": [
+   "v2_c1_oct26_email_preliminary_numbers",
+   "v2_c1_built_from_other_build",
+   "v2_c1_no_fresh_repull"
+  ]
+ },
+ {
+  "id": "2026-10-27-rules-blind-spots",
+  "date": "2026-10-27",
+  "summary": "Audit rules were followed but missed problems; 11 checks added.",
+  "controls": [
+   "v2_c3_live_is_older_build_same_period",
+   "v2_c4_untraced_prose_number",
+   "v2_c5_scorecard_disagrees",
+   "v2_c8_revision_not_disclosed",
+   "v2_c10_manual_old_period"
+  ]
+ },
+ {
+  "id": "2026-10-27-rolling-export",
+  "date": "2026-10-27",
+  "summary": "DotStudios exports for Oct 20-26 arrived for the Oct 19-25 week; must not be published as that week.",
+  "controls": [
+   "v2_c10_rolling_export_window"
+  ]
+ },
+ {
+  "id": "2026-10-27-ondemand-card-4-users",
+  "date": "2026-10-27",
+  "summary": "On Demand Usage card headlined 4 active users (legacy 'On Demand' screen count); real on-demand viewers were 554. Data also held 24,377 on-demand starts (real 7,798) and a stale Jul 27-Aug 2 appUsage.currentWeek block.",
+  "controls": [
+   "v2_c12_ondemand_legacy_headline",
+   "v2_c12_ondemand_viewers_disagree",
+   "v2_c12_ondemand_old_period",
+   "v2_c12_ondemand_events_inflated",
+   "v2_c12_stale_currentweek_block",
+   "v2_c12_renderer_legacy_label",
+   "v2_c12_rendered_page_shows_4_users"
+  ]
+ }
+]
