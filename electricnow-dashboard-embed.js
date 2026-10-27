@@ -18692,13 +18692,32 @@ function renderPlainEnglish() {
     ? [
         summary.overview || summary.overall,
         ...(Array.isArray(summary.bullets) ? summary.bullets : []),
-        paidAssessmentText,
+        // skip the closing verdict when a bullet already carries it (it printed twice before Oct 27)
+        paidAssessmentText && !(summary.bullets || []).some((b) => paidAssessment?.summary && String(b).includes(paidAssessment.summary.slice(0, 160)))
+          ? paidAssessmentText : null,
       ].filter(Boolean)
     : null;
   const insightItems = summaryItems?.length ? summaryItems : data.plainEnglishInsights || [];
   document.querySelector('#insights-list').innerHTML = insightItems
     .map((item, index) => `<li class="${index === 0 ? 'insight-overview' : ''}">${item}</li>`)
     .join('');
+}
+
+// Oct 27, 2026: never print the same long note twice in one card (Apple and DotStudios notes repeated in Purchases)
+function _enDedupeText(root) {
+  if (!root) return;
+  const seen = [];
+  root.querySelectorAll('p, em.sales-stat-footnote').forEach((el) => {
+    let t = (el.textContent || '').trim();
+    for (const s of seen) {
+      if (t.includes(s)) t = t.replace(s, '').trim();
+    }
+    if (t !== (el.textContent || '').trim()) {
+      if (!t) { el.remove(); return; }
+      el.textContent = t;
+    }
+    if (t.length > 80) seen.push(t);
+  });
 }
 
 function renderPurchases() {
@@ -18840,6 +18859,7 @@ function renderPurchases() {
     ${sales.sourceDetail ? `<p class="sales-source">${sales.sourceDetail}</p>` : ''}
     <p class="sales-note">${sales.note}</p>
   `;
+  _enDedupeText(salesSummaryEl);
   wrap.innerHTML = data.purchaseFunnel
     .map((row) => {
       const value = selectedPeriod === 'weekToDate' ? row.weekToDate : row.current;
