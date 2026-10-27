@@ -349,3 +349,28 @@ hosted copy wins ties, so the gate's injected test data is still the one rendere
 
 **Proven:** with both data URLs forced to return the Oct 26 preliminary file, the page kept the Oct 27 data and showed no
 2,727. The real live loader then rendered 2,535 users, 48 free Apple downloads and the revision note, each paragraph once.
+
+## Addendum — October 27, 2026 (4): check 12, the On Demand card shows the real audience
+
+**Why:** the user saw "On Demand active users: 4" and asked whether only four people watched on demand. The card was
+headlining the legacy GA4 screen literally named "On Demand", which browsing no longer uses. The real figure, the same
+one the Viewing Behavior scorecard already showed, was 554 people who started an on-demand video (live/FAST excluded).
+
+**Check 12 (`ondemand_card_presents_audience`, in the main gate) fails if:**
+- `contentUsage.onDemand.viewing` is missing, or its period is not the current week;
+- the card's viewers (this week and prior week) differ from the `onDemandStartUsers` scorecard;
+- on-demand viewers are under 5% or over 100% of all video-start users, or on-demand starts exceed all video starts;
+- `onDemand.total.activeUsers` is not the audience (so even an older cached renderer cannot headline the legacy count);
+- `viewingBehavior.*.onDemandStartEvents` exceeds total video starts or differs from the card (it held 24,377 vs 7,798 real);
+- any data block named `currentWeek` carries an older range (found `appUsage` and `acquisitionSummary` still on Jul 27-Aug 2);
+- any renderer copy does not headline `On-demand viewers`.
+**Rendered-page check** (`rendered_ondemand_card_shows_audience` in `audit_rendered_text.py`): the first stat under
+ON DEMAND USAGE must be ON-DEMAND VIEWERS with a plausible number, and "On Demand active users" must not appear.
+
+**Self-tests (8):** legacy headline, card vs scorecard, old period, inflated events, stale currentWeek block, renderer
+legacy label, and the real Oct 26/27 page text (shows 4) must each FAIL; current data must PASS. Registered in
+`user_reported_issues.json` as `2026-10-27-ondemand-card-4-users`.
+
+**Weekly data step:** each refresh must write `contentUsage.onDemand.viewing` from the same GA4 pull as the scorecard
+(video_start / video_complete users and events with channel_title not in live_channels.json, overall and by platform,
+current and prior week), labelled "Internal GA4 pull, property 497892271".
