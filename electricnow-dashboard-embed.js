@@ -20390,9 +20390,19 @@ async function loadCurrentData() {
   if (HOSTED_DATA_URL) {
     try {
       const separator = HOSTED_DATA_URL.includes('?') ? '&' : '?';
-      const response = await fetch(`${HOSTED_DATA_URL}${separator}v=${Date.now()}`, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`Hosted data failed (${response.status})`);
-      data = await response.json();
+      // Newest-wins: CDN branch caches can serve an older commit. Fetch the CDN copy and the GitHub copy,
+      // and never replace bundled/loaded data with anything older (by generatedAtIso).
+      const _enUrls = [`${HOSTED_DATA_URL}${separator}v=${Date.now()}`];
+      if (/cdn\.jsdelivr\.net\/gh\/electricnow1\/electricnow-dashboard-data@main\//.test(HOSTED_DATA_URL)) {
+        _enUrls.push(`https://raw.githubusercontent.com/electricnow1/electricnow-dashboard-data/main/dashboard-data.json?v=${Date.now()}`);
+      }
+      const _enGot = (await Promise.all(_enUrls.map(u => fetch(u, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null)))).filter(Boolean);
+      const _enTs = d => (d && d.generatedAtIso ? Date.parse(d.generatedAtIso) || 0 : 0);
+      let _enBest = _enGot[0] || data || null; // primary hosted copy wins ties
+      for (const d of [..._enGot.slice(1), data]) { if (d && (!_enBest || _enTs(d) > _enTs(_enBest))) _enBest = d; }
+      if (!_enBest) throw new Error('Hosted data failed');
+      if (_enBest === data && _enGot.length) console.warn('ElectricNOW: hosted data older than bundled data; keeping bundled', _enGot.map(d => d.generatedAtIso));
+      data = _enBest;
       window.ELECTRICNOW_DASHBOARD_DATA = data; // keep the page global equal to what is rendered (audit reads it)
     _enPurgeLiveFromOnDemand(data);
       _enPurgeLiveFromOnDemand(data);
