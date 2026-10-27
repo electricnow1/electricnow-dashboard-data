@@ -2,6 +2,45 @@
 
 Last updated: September 1, 2026
 
+## TVOD commentary requirement added October 3, 2026
+
+Before writing dashboard sales conclusions, read `TVOD_ANALYSIS_POLICY.md`.
+Separate release-cycle/season-pass effects from app purchase conversion. Weekly
+declines alone do not establish weaker purchase motivation. Continued later sales
+are encouraging, but do not prove redesign causality. The proposed 80%-within-48-
+hours rule remains unverified and must not be presented as an industry benchmark.
+Verify title-specific premiere, finale and digital-availability dates before
+describing a measured release-cycle effect; preserve all actual sales declines.
+
+## Calculation contract added September 20, 2026
+
+“Base” always means April 13–19, 2026, the launch week explicitly selected by
+the user. Never alias baseline to previousWeek. Time cards show actual launch
+minutes, actual current minutes, and the percentage change from launch.
+Previous-week change remains separately labeled. Percentage-point differences
+for rates are not percentage changes.
+
+`calculation_contract.py` runs at regeneration and in the publishing gate.
+It validates comparison arithmetic, exact seconds-to-minutes denominators,
+app-section and platform averages, ad ratios and subtotals, TVOD transaction
+and revenue subtotals, Apple daily units, YouTube daily totals, install totals,
+paid-efficiency ratios, and platform shares. The browser verifier checks the
+actual time-card text against independent expected values. Negative controls
+must catch wrong baseline dates, incorrect deltas, wrong time denominators,
+and percentages labeled as minutes.
+
+Repull launch, current and previous platform totals using the SAME pagePath
+exclusion: `^/(landing|devices|roku|ios|android|apple-tv|fire-tv)(/|$)`,
+case insensitive, negated. Use GA4 aggregate queries; never subtract per-page
+active users or sum platform users to derive a deduplicated audience. Grouped
+app-section averages require a deduplicated whole-group query; taking the max
+of per-screen users is not a valid denominator. Raw audit queries are preserved
+under `cron_tracking/0b0f51ad/calculation_audit_20260920`.
+
+The rolling 28-day context and detailed per-platform diagnostic rows currently
+remain property-wide, explicitly labeled as including acquisition traffic.
+They are not interchangeable with the acquisition-excluded weekly headline.
+
 ## Why this document exists
 
 Patrick has caught obvious, visible dashboard defects by eye — a blank page, a
@@ -231,3 +270,69 @@ Rules now enforced:
 2. Renderer parity: `renderer_parity_<renderer>_vs_embed` fails if any function shared with `electricnow-dashboard-embed.js` has drifted or is missing in `app.js` or the shareable HTML. Allowed differences are listed under `rendererParity.allowedDifferences` in the manifest. Fix drift by porting the embed version; never by adding to the allow-list.
 3. The self-test includes `preview_control_unmutated` (must PASS), `preview_rows_map_crash` (re-breaks renderTable, must FAIL) and `preview_renderer_drift` (must FAIL). 24 cases total; blind spots must be none.
 4. Launch-baseline comparisons must use the same metric definition as the current value. When a definition changes, re-pull the launch week (Apr 13-19, 2026) under the new definition and store `launchBaselineDefinitionNote`; the `definition changed` badge is only a temporary fallback until that re-pull is done.
+
+## Addendum — October 27, 2026
+
+**Why:** The Oct 26 run passed every rule (383 checks, 0 failures, self-test with no blind spots, live verified) and still published a
+daily chart with a preliminary Oct 25 spike (772 users; GA4 later revised it to 539), stale trend captions ("week ending Aug 20, 2026"),
+"Fresh Fresh" labels, a Live TV card that compared against launch while saying "vs previous 7 days" (+259.7%), a screen narrative naming
+On Demand (4 users) as a top screen, a "Not reported" purchase count, repeated paragraphs and empty tables. The rules were in force; they had
+blind spots. These additions close them.
+
+**New data checks** (`audit_content_integrity.py`, run inside `audit_rendered_freshness.py` and therefore inside the main gate):
+1. `trend_notes_name_current_window` — trend captions must name the current window, including single dates and year-less ranges.
+2. `no_stale_single_date_or_yearless_followups` — "week ending <old date>" anywhere; old dates in Developer follow-up without context.
+3. `no_repeated_adjacent_words`, `no_float_formatted_counts_in_prose` ("3,017.0").
+4. `no_duplicate_paragraphs_in_card`.
+5. `week_over_week_deltas_use_prior_week_and_are_plausible` — Live TV deltas recomputed from the prior week; anything over ±150% fails unless whitelisted with a reason.
+6. `narrative_top_screens_match_data` — the screen-ranking sentence is generated from data (`contentReadout`) and checked against the top screens.
+7. `last_day_ga4_not_preliminary` — if the last day's engagement rate is under 60% of the rest of the week, GA4 is still processing: re-pull the week before publishing.
+8. `live_card_definitions_reconciled` — Live channel usage and the Live play events scorecard must disclose their different definitions.
+9. `no_empty_rendered_counts_or_tables` — no "Not reported purchases" when dollars exist; no empty table when source rows exist.
+
+**New rendered-page check** (`audit_rendered_text.py <text dump>`): run on the real rendered page text (with the candidate data substituted
+for the hosted URL). Fails on repeated words, repeated paragraphs/sentences, "Not reported purchases", hardcoded stale narrative,
+week-over-week deltas over ±150%, and empty tables/lists.
+
+**Self-test:** 12 new data controls plus 6 rendered-text controls (run against the Oct 26 page text saved at
+`cron_tracking/0b0f51ad/audit_20261027/rendered_text_published_a3d59c6.txt`) must each FAIL. 49 cases total, 0 blind spots.
+
+**Live check:** because the period string alone cannot tell an old copy from a corrected one, confirm the live JSON `generatedAt`
+matches the candidate after `verify_live_publish.py`.
+
+**Order (unchanged, with the new step):** regen → audit_selftest.py → pre_publish_dashboard_audit.py → audit_rendered_text.py on the
+rendered dump → git push → verify_live_publish.py + generatedAt match.
+
+## Addendum — October 27, 2026 (2): eleven blind-spot checks
+
+**Why:** after the Oct 27 fix the user asked what else could slip through. Eleven gaps were found and each now has a check
+(`audit_blindspots_v2.py`, run inside the main gate) and at least one self-test that recreates the real failure and must FAIL
+(`selftest_blindspots_v2.py`, run by `audit_selftest.py`).
+
+1. **Weekly email gate** (`audit_weekly_email.py --body <txt> --built-from <json>`): the email may be sent only if the live JSON is the
+   build it was made from, the live data passes every content check, a Sat/Sun re-pull under 2 hours old passed, every number in the body
+   traces to the live data, and the GA4 label and week dates are present. The builder must read dashboard values only — no separate GA4 pull.
+2. **Weekend re-pull** (`ga4_tail_repull.py`): re-pull the last two days from GA4 497892271 after regen and again before the email;
+   any users/sessions/engaged-sessions change over 3% fails and the week is rebuilt.
+3. **Live identity**: `verify_live_publish.py` now compares the sha256 of every CDN file with the pushed file and the live `generatedAtIso`.
+   A matching period is not enough.
+4. **Every prose number traces to data**, including derived percentages and differences. IDs, names, addresses and timestamps are excluded.
+   Limitation: the data holds ~39,000 values, so a random invented 4-digit number matches one by chance about 38% of the time; stale and
+   preliminary numbers are caught, and check 5 covers headline metrics exactly.
+5. **Same metric, same value**: a registry of where each headline metric appears (scorecards, totals, audience, prose); all must match.
+   A different definition shown alongside (YTD property-wide users) must be labelled.
+6. **Comparison basis**: every scorecard change is recomputed against `comparisonPeriod`/`baselinePeriod`; Live TV must carry
+   `deltasBasis` naming the prior week and `deltasLabel`, which the renderer now displays.
+7. **No claims typed into renderer code**: quoted text with dates, counts, percentages or claim words in app.js/index.html/embed/shareable
+   must be on the reviewed `renderer_literal_allowlist.json` (one entry: the period-menu placeholder).
+8. **Revisions to past weeks disclosed**: `cron_tracking/0b0f51ad/published_history.json` stores what was published per week;
+   a >5% change to the prior week needs a `ga4Revisions` entry and both numbers in the summary. Run `record_published_history.py` after each verified publish.
+9. **One-day spikes/drops explained**: any day above 2× or below 0.4× the week's median needs `trend.anomalyNotes[date]`.
+10. **Manual sources cover the week**: uploaded exports/screenshots marked fresh must cover the dashboard week (vendor Sun-Sat offsets only
+    when labelled); export rows must sit inside the week; "Fresh …, <range>" text must name the current week.
+11. **Every user-reported issue has a test**: `user_reported_issues.json` lists each issue and its self-test cases; the self-test fails if any
+    is missing or not caught.
+
+**Order:** regen → `ga4_tail_repull.py` → `audit_selftest.py` (0 blind spots) → `pre_publish_dashboard_audit.py` (0 failures, 5 viewports)
+→ `audit_rendered_text.py` → git push → `verify_live_publish.py` (now includes identity) → `record_published_history.py`.
+Weekly email: `ga4_tail_repull.py` again → build from the live dashboard JSON → `audit_weekly_email.py` → send only on pass.

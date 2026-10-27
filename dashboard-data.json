@@ -1,5 +1,5 @@
 {
-  "generatedAt": "October 27, 2026 (Pacific; GA4 re-pulled)",
+  "generatedAt": "October 27, 2026 (Pacific; GA4 re-pulled; Apple Oct 19-25 added)",
   "property": "properties/497892271",
   "sourceLabel": "Internal GA4 pull, property 497892271, plus labeled connector and manual sources (Stripe, Roku email, Apple manual, DotStudios, Google Ads, Meta, YouTube).",
   "periods": {
@@ -460,7 +460,8 @@
         "activeUsers": 588
       }
     ],
-    "note": "GA4 property 497892271 only. Landing-page traffic is treated as acquisition only, not platform audience. Revised by the Oct 27 GA4 re-pull (Oct 25 was preliminary in the first pull)."
+    "note": "GA4 property 497892271 only. Landing-page traffic is treated as acquisition only, not platform audience. Revised by the Oct 27 GA4 re-pull (Oct 25 was preliminary in the first pull).",
+    "anomalyNotes": {}
   },
   "eventCards": [
     {
@@ -3014,19 +3015,20 @@
       "screenPageViews": -31.48457047539616,
       "eventCount": -27.35508355267185
     },
-    "deltasBasis": "vs previous 7 days (Oct 12-Oct 18, 2026); launch comparison in launchDeltas"
+    "deltasBasis": "vs previous 7 days (Oct 12-Oct 18, 2026); launch comparison in launchDeltas",
+    "deltasLabel": "vs previous 7 days"
   },
   "plainEnglishInsights": [
     "Viewers who stayed watched longer: engaged minutes per platform user rose 11.7% to 111.2 (more than triple launch week's 31.9), Roku viewers averaged 82.85 minutes each (+3.6%), in-app ad impressions rose 4.1% to 22,514, and YouTube is reconnected and reached 65,000 subscribers. Reach and sales fell, though: platform users -16.2% to 2,535, sessions -16.0% to 6,453, video-start users -23.3% to 870, on-demand starters -33.9% to 554, and live channel viewers -12.1% to 377. DotStudios TVOD fell 28.9% to $314.85 (15 Season Passes), visible platform sales (Stripe + Roku + Apple) fell 21.0% to $301.86, Roku sales halved to 3 / $62.97, and DotStudios installs fell 18.0% to 486. Cumulative DotStudios net sales now total $18,647.55 (Mar 25-Oct 25).",
-    "Internal GA4 pull, property 497892271: 2,535 platform users, 6,453 sessions, 4,696.5 engaged hours (-6.4%); engagement rate 81.08% versus 82.36% prior. The re-pulled prior week is lower than published last week (3,024 users versus 3,259; web sessions 4,791 versus 5,308) while its engaged sessions rose, which looks like GA4 later removing low-quality web traffic; the same happened to this week: GA4's first pull on Oct 26 still included late-processing data, and the Oct 27 re-pull revised web sessions from 4,224 to 3,877 (the Oct 25 daily spike was preliminary). Landing-page traffic is excluded from the headline and counts as acquisition only.",
+    "Internal GA4 pull, property 497892271: 2,535 platform users, 6,453 sessions, 4,696.5 engaged hours (-6.4%); engagement rate 81.08% versus 82.36% prior. The re-pulled prior week is lower than published last week (3,024 users versus 3,259; sessions 7,682 versus 8,253, including web sessions 4,791 versus 5,308) while its engaged sessions rose, which looks like GA4 later removing low-quality web traffic; the same happened to this week: GA4's first pull on Oct 26 still included late-processing data, and the Oct 27 re-pull revised web sessions from 4,224 to 3,877 (the Oct 25 daily spike was preliminary). Landing-page traffic is excluded from the headline and counts as acquisition only.",
     "Viewing: 870 video-start users versus 1,135; on-demand starters 554 versus 838; live channel viewers 377 versus 429; live play events 5,043 versus 5,495; video-complete users 187 versus 306. Groups overlap; do not add. Live/FAST names excluded from on-demand lists.",
     "Verdict: paid acquisition still needs proof of viewing; historical Roku costs were concerning. (1) Paid ads are not shown to be growing the platform: users fell 16.2%, sessions 16.0% and DotStudios installs 18.0% with no measurable paid delivery, so paid campaigns are not currently driving growth or installs. (2) Current acquisition costs are unknown: Google Ads reported zero delivery (0 impressions, $0 spend) for Oct 19-25, and Meta reporting is stale (last flight Aug 4-26, $11.31 per download); historical Roku best cost per install above $60 was too expensive. (3) No fresh campaign, platform, age, gender or device breakdown shows targeting narrowing. (4) Meta remains the more promising limited test per Nathan, not a verified current winner over Google; no Meta-only report has arrived since Oct 5. (5) Paid spend cannot be tied to this week's sales or viewing; true ROAS cannot be stated without reconciled ad-server revenue and complete sales coverage. Paid-campaign impressions are separate from in-app ad impressions (22,514 delivered in the app this week). (6) Tests: confirm Roku pause and Meta status; decide whether to relaunch a measured Google test; separate iOS/Android and retargeting; test show-led creative; optimize first play and seven-day return; exclude weak-viewing segments.",
     "Fresh Google Ads, account 4342267711, Oct 19-Oct 25, 2026: 0 paid-campaign impressions, 0 clicks, $0 spend, 0 conversions (prior week Oct 12-Oct 18 also zero). 122 campaigns: 1 enabled (PCSM - ElectricNow App Promotion - Android) with no reported delivery; the rest paused or removed. The second delayed retry after the Oct 26 rate limit succeeded. Zero is a real reported value, not missing data.",
     "Fresh Roku Sales: Oct 19-Oct 25, 2026, 3 purchases / $62.97 (prior week 6 / $113.94); matches DotStudios Roku 3 / $62.97. App Engagement: Oct 18-Oct 24 (Sun-Sat, one-day offset), 2,323 hours, 240 average daily viewers, 82.85 minutes/viewer, 102 installs / 69 uninstalls (prior 2,828 hours, 303 viewers, 79.96 min). Separate from GA4; TRC off-app excluded.",
     "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
     "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97.",
-    "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
-    "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing, and Apple uses its Oct 18-Oct 24 window. Never add overlapping DotStudios $314.85.",
+    "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing. Apple now covers the same Oct 19-Oct 25 week. Never add overlapping DotStudios $314.85.",
     "DotStudios: 486 installs (-18.0% vs 593; Android 84, web 278, iOS 124), 318 updates (-7.3% vs 343), 10,774 reported views (-13.4% vs 12,434); TV devices were 55.3% of views versus 51.0%. In-app ad delivery: 34,786 requests (+7.8% vs 32,274), 22,514 impressions (+4.1% vs 21,618), 4,841 errors (+5.4% vs 4,595); fill 64.7% versus 67.0%. Vendor in-app ad counts are a delivery cross-check, not paid-campaign impressions or verified ad revenue.",
     "Cumulative sales: DotStudios exported net sales: $30,389.76 in 1,701 charge rows less $11,727.22 in 797 adjustment rows and $14.99 in one refund = $18,647.55. Export transaction dates: Mar 25-Oct 25, 2026 (full ledger through Oct 4 plus the Oct 5-11, Oct 12-18 and Oct 19-25 weekly exports). January 1-March 24 coverage is not established by this file. Charges are not unique buyers or net retained revenue; never add Stripe, Apple or Roku, which overlap.",
     "Fresh partial YouTube: Oct 19 through Oct 24, 6 available days; matched against Oct 12 through Oct 17. YouTube Analytics reconnected this week (it needed re-authorization on Oct 19). Not added to app sales or in-app ad delivery. YouTube views fell 12.3% like-for-like (194,344 versus 221,676 over six matched days); net subscribers +148.",
@@ -3042,7 +3044,7 @@
   ],
   "salesSummary": {
     "sourceLabel": "Visible platform sales: mixed source dates",
-    "sourceDetail": "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97. Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing, and Apple uses its Oct 18-Oct 24 window. Never add overlapping DotStudios $314.85.",
+    "sourceDetail": "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97. Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing. Apple now covers the same Oct 19-Oct 25 week. Never add overlapping DotStudios $314.85.",
     "stripe": {
       "status": "fresh",
       "sourceLabel": "Stripe connector source check",
@@ -3371,7 +3373,7 @@
     },
     "apple": {
       "sourceLabel": "Apple App Store manual sales/download snapshot",
-      "sourceDetail": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "sourceDetail": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
       "snapshotRange": "Sep 14-Sep 20, 2026",
       "yearToDate": {
         "label": "Apple manual gross sales this year",
@@ -3548,28 +3550,22 @@
         "note": "Prior-week Apple comparison."
       },
       "latestSnapshot": {
-        "label": "Apple App Store Connect: total sales (Oct 18-Oct 24 window)",
+        "label": "Apple App Store Connect: total sales (Oct 19-Oct 25)",
         "range": "Oct 19-Oct 25, 2026",
         "period": "Oct 19-Oct 25, 2026",
-        "applePeriod": "Oct 18-Oct 24, 2026",
+        "applePeriod": "Oct 19-Oct 25, 2026",
         "purchases": null,
         "purchaseRevenue": 104.95,
         "developerRevShare": null,
-        "downloads": 59,
-        "freeDownloads": 59,
-        "totalUnits": 64,
+        "downloads": 48,
+        "freeDownloads": 48,
+        "totalUnits": 53,
         "inAppUnits": 5,
         "status": "fresh_manual",
-        "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+        "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
         "salesGeography": "Apple Total Sales view"
       },
       "dailyTrend": [
-        {
-          "date": "2026-10-18",
-          "rawDate": "20261018",
-          "purchaseRevenue": 0.0,
-          "salesGross": 0.0
-        },
         {
           "date": "2026-10-19",
           "rawDate": "20261019",
@@ -3605,65 +3601,71 @@
           "rawDate": "20261024",
           "purchaseRevenue": 20.99,
           "salesGross": 20.99
+        },
+        {
+          "date": "2026-10-25",
+          "rawDate": "20261025",
+          "purchaseRevenue": 0.0,
+          "salesGross": 0.0
         }
       ],
       "latestSevenDay": {
-        "label": "Apple App Store Connect: total sales (Oct 18-Oct 24 window)",
+        "label": "Apple App Store Connect: total sales (Oct 19-Oct 25)",
         "range": "Oct 19-Oct 25, 2026",
         "period": "Oct 19-Oct 25, 2026",
-        "applePeriod": "Oct 18-Oct 24, 2026",
+        "applePeriod": "Oct 19-Oct 25, 2026",
         "purchases": null,
         "purchaseRevenue": 104.95,
         "developerRevShare": null,
-        "downloads": 59,
-        "freeDownloads": 59,
-        "totalUnits": 64,
+        "downloads": 48,
+        "freeDownloads": 48,
+        "totalUnits": 53,
         "inAppUnits": 5,
         "status": "fresh_manual",
-        "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+        "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
         "salesGeography": "Apple Total Sales view"
       },
       "currentWeek": {
-        "label": "Apple App Store Connect: total sales (Oct 18-Oct 24 window)",
+        "label": "Apple App Store Connect: total sales (Oct 19-Oct 25)",
         "range": "Oct 19-Oct 25, 2026",
         "period": "Oct 19-Oct 25, 2026",
-        "applePeriod": "Oct 18-Oct 24, 2026",
+        "applePeriod": "Oct 19-Oct 25, 2026",
         "purchases": null,
         "purchaseRevenue": 104.95,
         "developerRevShare": null,
-        "downloads": 59,
-        "freeDownloads": 59,
-        "totalUnits": 64,
+        "downloads": 48,
+        "freeDownloads": 48,
+        "totalUnits": 53,
         "inAppUnits": 5,
         "status": "fresh_manual",
-        "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+        "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
         "salesGeography": "Apple Total Sales view"
       },
       "weekToDate": {
-        "label": "Apple App Store Connect: total sales (Oct 18-Oct 24 window)",
+        "label": "Apple App Store Connect: total sales (Oct 19-Oct 25)",
         "range": "Oct 19-Oct 25, 2026",
         "period": "Oct 19-Oct 25, 2026",
-        "applePeriod": "Oct 18-Oct 24, 2026",
+        "applePeriod": "Oct 19-Oct 25, 2026",
         "purchases": null,
         "purchaseRevenue": 104.95,
         "developerRevShare": null,
-        "downloads": 59,
-        "freeDownloads": 59,
-        "totalUnits": 64,
+        "downloads": 48,
+        "freeDownloads": 48,
+        "totalUnits": 53,
         "inAppUnits": 5,
         "status": "fresh_manual",
-        "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+        "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
         "salesGeography": "Apple Total Sales view"
       },
       "deltas": {
         "salesGrossPct": -48.80987220758951,
-        "unitsPct": -4.477611940298507,
-        "freeDownloadsPct": -4.838709677419355,
+        "unitsPct": -20.8955223880597,
+        "freeDownloadsPct": -22.58064516129032,
         "inAppUnitsPct": 0.0,
         "comparisonPeriod": "Oct 12-Oct 18, 2026"
       },
       "period": "Oct 19-Oct 25, 2026",
-      "dailyTrendNote": "Exact Apple daily sales amounts from the Purchase Bundle 21 day view (Oct 18-Oct 24); daily units not listed.",
+      "dailyTrendNote": "Exact Apple daily sales amounts from the Purchase Bundle 21 day view (Oct 19-Oct 25); daily units not listed.",
       "lastWorldwideSnapshot": {
         "period": "Sep 14-Sep 20, 2026",
         "purchaseRevenue": 350.48,
@@ -3671,7 +3673,7 @@
         "note": "Worldwide current week not supplied."
       },
       "status": "fresh_manual",
-      "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers."
+      "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers."
     },
     "sourceBreakout": [
       {
@@ -3708,7 +3710,7 @@
         "source": "Visible platform sales (Stripe + Roku + Apple; partial)",
         "purchases": 14,
         "purchaseRevenue": 301.86,
-        "detail": "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing, and Apple uses its Oct 18-Oct 24 window. Never add overlapping DotStudios $314.85.",
+        "detail": "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing. Apple now covers the same Oct 19-Oct 25 week. Never add overlapping DotStudios $314.85.",
         "countLabel": "purchases + 1 Stripe update"
       }
     ],
@@ -3873,10 +3875,10 @@
       "status": "fresh"
     },
     "lastWeek": {
-      "label": "Apple App Store Connect: total sales (Oct 18-Oct 24 window)",
+      "label": "Apple App Store Connect: total sales (Oct 19-Oct 25)",
       "range": "Oct 19-Oct 25, 2026",
       "period": "Oct 19-Oct 25, 2026",
-      "applePeriod": "Oct 18-Oct 24, 2026",
+      "applePeriod": "Oct 19-Oct 25, 2026",
       "purchases": null,
       "purchaseRevenue": 104.95,
       "developerRevShare": null,
@@ -3885,7 +3887,7 @@
       "totalUnits": 64,
       "inAppUnits": 5,
       "status": "fresh_manual",
-      "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
       "salesGeography": "Apple Total Sales view"
     },
     "thisWeek": {
@@ -3910,8 +3912,8 @@
       "dotStudiosTvodGross": 314.85,
       "dotStudiosTvodTransactions": 15,
       "appleManualSnapshotGross": 104.95,
-      "appleManualSnapshotDownloads": 59,
-      "appleManualSnapshotPeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+      "appleManualSnapshotDownloads": 48,
+      "appleManualSnapshotPeriod": "Oct 19-Oct 25, 2026",
       "appleManualSnapshotGeography": "Apple Total Sales view"
     },
     "currentCompleteWeek": {
@@ -3936,8 +3938,8 @@
       "dotStudiosTvodGross": 314.85,
       "dotStudiosTvodTransactions": 15,
       "appleManualSnapshotGross": 104.95,
-      "appleManualSnapshotDownloads": 59,
-      "appleManualSnapshotPeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+      "appleManualSnapshotDownloads": 48,
+      "appleManualSnapshotPeriod": "Oct 19-Oct 25, 2026",
       "appleManualSnapshotGeography": "Apple Total Sales view"
     },
     "weekToDate": {
@@ -3962,8 +3964,8 @@
       "dotStudiosTvodGross": 314.85,
       "dotStudiosTvodTransactions": 15,
       "appleManualSnapshotGross": 104.95,
-      "appleManualSnapshotDownloads": 59,
-      "appleManualSnapshotPeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+      "appleManualSnapshotDownloads": 48,
+      "appleManualSnapshotPeriod": "Oct 19-Oct 25, 2026",
       "appleManualSnapshotGeography": "Apple Total Sales view"
     },
     "recent12Days": {
@@ -5468,8 +5470,8 @@
       "dotStudiosTvodGross": 314.85,
       "dotStudiosTvodTransactions": 15,
       "appleManualSnapshotGross": 104.95,
-      "appleManualSnapshotDownloads": 59,
-      "appleManualSnapshotPeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+      "appleManualSnapshotDownloads": 48,
+      "appleManualSnapshotPeriod": "Oct 19-Oct 25, 2026",
       "appleManualSnapshotGeography": "Apple Total Sales view"
     },
     "dotStudiosTvod": {
@@ -5494,20 +5496,20 @@
       "dotStudiosTvodGross": 314.85,
       "dotStudiosTvodTransactions": 15,
       "appleManualSnapshotGross": 104.95,
-      "appleManualSnapshotDownloads": 59,
-      "appleManualSnapshotPeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+      "appleManualSnapshotDownloads": 48,
+      "appleManualSnapshotPeriod": "Oct 19-Oct 25, 2026",
       "appleManualSnapshotGeography": "Apple Total Sales view"
     },
     "appleManual": {
       "period": "Oct 19-Oct 25, 2026",
-      "applePeriod": "Oct 18-Oct 24, 2026",
+      "applePeriod": "Oct 19-Oct 25, 2026",
       "salesGross": 104.95,
-      "downloads": 59,
-      "totalUnits": 64,
-      "freeDownloads": 59,
+      "downloads": 48,
+      "totalUnits": 53,
+      "freeDownloads": 48,
       "inAppUnits": 5,
       "status": "fresh_manual",
-      "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
       "salesGeography": "Apple Total Sales view"
     },
     "visiblePlatformSalesDefinition": "DotStudios current-week TVOD is the broadest current visible sales view. Stripe, Roku, and Apple are platform/source checks and overlap DotStudios rows; Google Play and other channels may still be incomplete.",
@@ -5671,10 +5673,20 @@
       "appleGross": 104.95,
       "label": "Visible platform sales (Stripe + Roku + Apple; partial)",
       "status": "partial_coverage",
-      "note": "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing, and Apple uses its Oct 18-Oct 24 window. Never add overlapping DotStudios $314.85. Count: 14 purchases (6 Stripe Season Passes + 3 Roku + 5 Apple in-app units) plus one $8.00 Stripe subscription update included in the dollars."
+      "note": "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing. Apple now covers the same Oct 19-Oct 25 week. Never add overlapping DotStudios $314.85. Count: 14 purchases (6 Stripe Season Passes + 3 Roku + 5 Apple in-app units) plus one $8.00 Stripe subscription update included in the dollars."
     },
     "recentPaymentsNote": "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
-    "staleNote": "Historical legacy sales windows remain dated prior snapshots; current source cards are fresh."
+    "staleNote": "Historical legacy sales windows remain dated prior snapshots; current source cards are fresh.",
+    "visiblePlatformSalesPriorWeek": {
+      "period": "Oct 12-Oct 18, 2026",
+      "purchaseRevenue": 381.93,
+      "stripeGross": 62.97,
+      "rokuGross": 113.94,
+      "appleGross": 205.02,
+      "label": "Visible platform sales, prior week (Stripe + Roku + Apple)",
+      "status": "fresh",
+      "note": "Stripe $62.97 + Roku $113.94 + Apple $205.02 = $381.93 (Oct 12-Oct 18). Visible platform sales, not total sales."
+    }
   },
   "contentUsage": {
     "period": "Oct 19-Oct 25, 2026",
@@ -9291,45 +9303,39 @@
     }
   },
   "manualAppleSalesUpdate": {
-    "downloads": 59,
+    "downloads": 48,
     "displayDownloads": "59",
     "updates": null,
     "displayUpdates": null,
     "inAppUnits": 5,
-    "totalUnits": 64,
-    "dailyAverage": 9.142857142857142,
-    "start": "2026-10-18",
-    "end": "2026-10-24",
-    "period": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+    "totalUnits": 53,
+    "dailyAverage": 7.6,
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "period": "Oct 19-Oct 25, 2026",
     "priorDownloads": 62,
     "priorPeriod": "Oct 12-Oct 18, 2026",
-    "deltaPct": -4.838709677419355,
+    "deltaPct": -22.58064516129032,
     "product": "ElectricNOW",
     "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
     "territories": [],
     "sourceScreenshots": [
       {
-        "metric": "Purchase Bundle 21 daily sales",
-        "path": "manual_apple/2026-10-26/apple_bundle21_daily_oct18_24.jpeg"
-      },
-      {
-        "metric": "total sales",
-        "path": "manual_apple/2026-10-26/apple_total_sales_oct18_24.jpeg"
-      },
-      {
         "metric": "units",
-        "path": "manual_apple/2026-10-26/apple_units_oct18_24.jpeg"
+        "path": "manual_apple/2026-10-27/apple_units_oct19_25.jpeg"
+      },
+      {
+        "metric": "Purchase Bundle 21 daily sales",
+        "path": "manual_apple/2026-10-27/apple_bundle21_daily_oct19_25.jpeg"
+      },
+      {
+        "metric": "total sales (Oct 26 screenshot; unchanged $104.95)",
+        "path": "manual_apple/2026-10-26/apple_total_sales_oct18_24.jpeg"
       }
     ],
     "salesGross": 104.95,
     "salesEstimatedNet70Pct": null,
     "salesDaily": [
-      {
-        "date": "2026-10-18",
-        "rawDate": "20261018",
-        "purchaseRevenue": 0.0,
-        "salesGross": 0.0
-      },
       {
         "date": "2026-10-19",
         "rawDate": "20261019",
@@ -9365,18 +9371,24 @@
         "rawDate": "20261024",
         "purchaseRevenue": 20.99,
         "salesGross": 20.99
+      },
+      {
+        "date": "2026-10-25",
+        "rawDate": "20261025",
+        "purchaseRevenue": 0.0,
+        "salesGross": 0.0
       }
     ],
     "downloadsDaily": [],
     "salesDeltaPct": -48.80987220758951,
-    "updatedAtUtc": "2026-10-27T13:40:39.806631+00:00",
+    "updatedAtUtc": "2026-10-27T14:17:31.817887+00:00",
     "priorTotalUnits": 67,
     "priorInAppUnits": 5,
     "priorSalesGross": 205.02,
     "downloadsDailyNote": "Apple showed daily units only as a bar chart this week; exact daily values not listed, so no daily unit series is shown.",
     "status": "fresh_manual",
     "salesComparisonPeriod": "Oct 12-Oct 18, 2026",
-    "freeDownloads": 59,
+    "freeDownloads": 48,
     "dailyUnitsStatus": "not_provided_in_source",
     "paidUnits": 0,
     "grossRevenue": 104.95,
@@ -9388,9 +9400,9 @@
       "salesGross": 350.48,
       "status": "stale_historical_context"
     },
-    "sourceLabel": "Apple App Store Connect snapshot (user screenshots Oct 26)",
-    "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
-    "sourceDetail": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "sourceLabel": "Apple App Store Connect snapshot (user screenshots Oct 27)",
+    "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "sourceDetail": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
     "dashboardWeek": "Oct 19-Oct 25, 2026",
     "periodNote": "Apple's 7-day view ends Oct 24, one day before the dashboard week ends.",
     "territoriesNote": "Territory split not provided this week."
@@ -12813,45 +12825,39 @@
     "note": "GA4 detected $29.98 of Android in-app purchase activity on May 21, 2026 across 2 in_app_purchase events (1 Android mobile in Philadelphia at appVersion 16.019; 1 Android smart TV in Vancouver, WA at appVersion 16.026). This is most likely Google Play / Android billing. It is shown separately from Stripe, Roku, and the manual Apple App Store snapshot and is NOT included in visible platform sales until it is reconciled with Google Play Console."
   },
   "manualAppleDownloads": {
-    "downloads": 59,
+    "downloads": 48,
     "displayDownloads": "59",
     "updates": null,
     "displayUpdates": null,
     "inAppUnits": 5,
-    "totalUnits": 64,
-    "dailyAverage": 9.1,
-    "start": "2026-10-18",
-    "end": "2026-10-24",
-    "period": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+    "totalUnits": 53,
+    "dailyAverage": 7.6,
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "period": "Oct 19-Oct 25, 2026",
     "priorDownloads": 62,
     "priorPeriod": "Oct 12-Oct 18, 2026",
-    "deltaPct": -4.838709677419355,
+    "deltaPct": -22.58064516129032,
     "product": "ElectricNOW",
     "platform": "iOS/watchOS/tvOS (+ macOS categories at 0)",
     "territories": [],
     "sourceScreenshots": [
       {
-        "metric": "Purchase Bundle 21 daily sales",
-        "path": "manual_apple/2026-10-26/apple_bundle21_daily_oct18_24.jpeg"
-      },
-      {
-        "metric": "total sales",
-        "path": "manual_apple/2026-10-26/apple_total_sales_oct18_24.jpeg"
-      },
-      {
         "metric": "units",
-        "path": "manual_apple/2026-10-26/apple_units_oct18_24.jpeg"
+        "path": "manual_apple/2026-10-27/apple_units_oct19_25.jpeg"
+      },
+      {
+        "metric": "Purchase Bundle 21 daily sales",
+        "path": "manual_apple/2026-10-27/apple_bundle21_daily_oct19_25.jpeg"
+      },
+      {
+        "metric": "total sales (Oct 26 screenshot; unchanged $104.95)",
+        "path": "manual_apple/2026-10-26/apple_total_sales_oct18_24.jpeg"
       }
     ],
     "salesGross": 104.95,
     "salesEstimatedNet70Pct": null,
     "salesDaily": [
-      {
-        "date": "2026-10-18",
-        "rawDate": "20261018",
-        "purchaseRevenue": 0.0,
-        "salesGross": 0.0
-      },
       {
         "date": "2026-10-19",
         "rawDate": "20261019",
@@ -12887,18 +12893,24 @@
         "rawDate": "20261024",
         "purchaseRevenue": 20.99,
         "salesGross": 20.99
+      },
+      {
+        "date": "2026-10-25",
+        "rawDate": "20261025",
+        "purchaseRevenue": 0.0,
+        "salesGross": 0.0
       }
     ],
     "downloadsDaily": [],
     "salesDeltaPct": -48.80987220758951,
-    "updatedAtUtc": "2026-10-27T13:40:39.806631+00:00",
+    "updatedAtUtc": "2026-10-27T14:17:31.817868+00:00",
     "priorTotalUnits": 67,
     "priorInAppUnits": 5,
     "priorSalesGross": 205.02,
     "downloadsDailyNote": "Apple showed daily units only as a bar chart this week; exact daily values not listed, so no daily unit series is shown.",
     "status": "fresh_manual",
     "salesComparisonPeriod": "Oct 12-Oct 18, 2026",
-    "freeDownloads": 59,
+    "freeDownloads": 48,
     "dailyUnitsStatus": "not_provided_in_source",
     "paidUnits": 0,
     "grossRevenue": 104.95,
@@ -12910,9 +12922,9 @@
       "salesGross": 350.48,
       "status": "stale_historical_context"
     },
-    "sourceLabel": "Apple App Store Connect snapshot (user screenshots Oct 26)",
-    "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
-    "sourceDetail": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "sourceLabel": "Apple App Store Connect snapshot (user screenshots Oct 27)",
+    "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "sourceDetail": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
     "dashboardWeek": "Oct 19-Oct 25, 2026",
     "periodNote": "Apple's 7-day view ends Oct 24, one day before the dashboard week ends.",
     "territoriesNote": "Territory split not provided this week."
@@ -13014,27 +13026,27 @@
     },
     "apple": {
       "status": "fresh_manual",
-      "period": "Oct 18-Oct 24, 2026",
-      "periodNote": "Apple's 7-day Trends view ends Oct 24 (Sun-Sat), one day earlier than the dashboard week Oct 19-25; Oct 25 not yet shown by Apple.",
-      "units": 64,
-      "unitsDeltaPct": -3.0,
-      "freeDownloads": 59,
-      "freeDownloadsDeltaPct": -1.7,
+      "period": "Oct 19-Oct 25, 2026",
+      "periodNote": "Apple's 7-day view now matches the dashboard week Oct 19-25 (user screenshots Oct 27).",
+      "units": 53,
+      "unitsDeltaPct": -20.9,
+      "freeDownloads": 48,
+      "freeDownloadsDeltaPct": -22.6,
       "inAppUnits": 5,
-      "inAppUnitsDeltaPct": -16.7,
+      "inAppUnitsDeltaPct": 0.0,
       "paidUnits": 0,
-      "dailyAverage": 9,
-      "appleComparisonPeriod": "Oct 11-Oct 17, 2026 (Apple 7D comparison)",
+      "dailyAverage": 8,
+      "appleComparisonPeriod": "Oct 12-Oct 18, 2026 (Apple 7D comparison)",
       "salesGross": 104.95,
       "salesScope": "Apple Total Sales view: In-App Purchases $104.95 (Apps $0, App Bundles $0); all from Purchase Bundle 21",
       "salesDaily": {
-        "2026-10-18": 0.0,
         "2026-10-19": 20.99,
         "2026-10-20": 0.0,
         "2026-10-21": 62.97,
         "2026-10-22": 0.0,
         "2026-10-23": 0.0,
-        "2026-10-24": 20.99
+        "2026-10-24": 20.99,
+        "2026-10-25": 0.0
       },
       "dotStudiosAppleOct19_25": {
         "purchases": 3,
@@ -13049,15 +13061,13 @@
       "updates": null,
       "transactionCount": null,
       "screenshots": [
-        "manual_apple/2026-10-26/apple_bundle21_daily_oct18_24.jpeg",
-        "manual_apple/2026-10-26/apple_total_sales_oct18_24.jpeg",
-        "manual_apple/2026-10-26/apple_units_oct18_24.jpeg"
+        "manual_apple/2026-10-27/apple_units_oct19_25.jpeg",
+        "manual_apple/2026-10-27/apple_bundle21_daily_oct19_25.jpeg",
+        "manual_apple/2026-10-26/apple_total_sales_oct18_24.jpeg"
       ],
-      "note": "Apple Connect Oct 18-24: 64 total units = 59 free downloads (-1.7%) + 5 in-app units (-16.7%), total -3.0% versus Apple prior 7 days. Purchase Bundle 21 sales $104.95 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99). Total Sales screen confirms $104.95, all In-App Purchases (-53.6% versus Apple's Oct 11-17 window; -48.8% versus $205.02 for Oct 12-18). Transaction count not reported; updates not provided.",
-      "stagedAt": "2026-10-26T14:01:38.565708+00:00",
+      "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "stagedAt": "2026-10-27T14:17:31.817897+00:00",
       "salesTotalConfirmed": true,
-      "appleSalesDeltaPct": -53.6,
-      "appleSalesComparisonNote": "Apple compares with its own Oct 11-17 window (~$226); versus the dashboard prior week Oct 12-18 ($205.02) the change is -48.8%.",
       "priorSalesGross": 205.02,
       "salesDeltaPct": -48.8
     },
@@ -13096,15 +13106,15 @@
     "comparisonPeriod": "Oct 12-Oct 18, 2026",
     "overview": "Viewers who stayed watched longer: engaged minutes per platform user rose 11.7% to 111.2 (more than triple launch week's 31.9), Roku viewers averaged 82.85 minutes each (+3.6%), in-app ad impressions rose 4.1% to 22,514, and YouTube is reconnected and reached 65,000 subscribers. Reach and sales fell, though: platform users -16.2% to 2,535, sessions -16.0% to 6,453, video-start users -23.3% to 870, on-demand starters -33.9% to 554, and live channel viewers -12.1% to 377. DotStudios TVOD fell 28.9% to $314.85 (15 Season Passes), visible platform sales (Stripe + Roku + Apple) fell 21.0% to $301.86, Roku sales halved to 3 / $62.97, and DotStudios installs fell 18.0% to 486. Cumulative DotStudios net sales now total $18,647.55 (Mar 25-Oct 25).",
     "bullets": [
-      "Internal GA4 pull, property 497892271: 2,535 platform users, 6,453 sessions, 4,696.5 engaged hours (-6.4%); engagement rate 81.08% versus 82.36% prior. The re-pulled prior week is lower than published last week (3,024 users versus 3,259; web sessions 4,791 versus 5,308) while its engaged sessions rose, which looks like GA4 later removing low-quality web traffic; the same happened to this week: GA4's first pull on Oct 26 still included late-processing data, and the Oct 27 re-pull revised web sessions from 4,224 to 3,877 (the Oct 25 daily spike was preliminary). Landing-page traffic is excluded from the headline and counts as acquisition only.",
+      "Internal GA4 pull, property 497892271: 2,535 platform users, 6,453 sessions, 4,696.5 engaged hours (-6.4%); engagement rate 81.08% versus 82.36% prior. The re-pulled prior week is lower than published last week (3,024 users versus 3,259; sessions 7,682 versus 8,253, including web sessions 4,791 versus 5,308) while its engaged sessions rose, which looks like GA4 later removing low-quality web traffic; the same happened to this week: GA4's first pull on Oct 26 still included late-processing data, and the Oct 27 re-pull revised web sessions from 4,224 to 3,877 (the Oct 25 daily spike was preliminary). Landing-page traffic is excluded from the headline and counts as acquisition only.",
       "Viewing: 870 video-start users versus 1,135; on-demand starters 554 versus 838; live channel viewers 377 versus 429; live play events 5,043 versus 5,495; video-complete users 187 versus 306. Groups overlap; do not add. Live/FAST names excluded from on-demand lists.",
       "Verdict: paid acquisition still needs proof of viewing; historical Roku costs were concerning. (1) Paid ads are not shown to be growing the platform: users fell 16.2%, sessions 16.0% and DotStudios installs 18.0% with no measurable paid delivery, so paid campaigns are not currently driving growth or installs. (2) Current acquisition costs are unknown: Google Ads reported zero delivery (0 impressions, $0 spend) for Oct 19-25, and Meta reporting is stale (last flight Aug 4-26, $11.31 per download); historical Roku best cost per install above $60 was too expensive. (3) No fresh campaign, platform, age, gender or device breakdown shows targeting narrowing. (4) Meta remains the more promising limited test per Nathan, not a verified current winner over Google; no Meta-only report has arrived since Oct 5. (5) Paid spend cannot be tied to this week's sales or viewing; true ROAS cannot be stated without reconciled ad-server revenue and complete sales coverage. Paid-campaign impressions are separate from in-app ad impressions (22,514 delivered in the app this week). (6) Tests: confirm Roku pause and Meta status; decide whether to relaunch a measured Google test; separate iOS/Android and retargeting; test show-led creative; optimize first play and seven-day return; exclude weak-viewing segments.",
       "Fresh Google Ads, account 4342267711, Oct 19-Oct 25, 2026: 0 paid-campaign impressions, 0 clicks, $0 spend, 0 conversions (prior week Oct 12-Oct 18 also zero). 122 campaigns: 1 enabled (PCSM - ElectricNow App Promotion - Android) with no reported delivery; the rest paused or removed. The second delayed retry after the Oct 26 rate limit succeeded. Zero is a real reported value, not missing data.",
       "Fresh Roku Sales: Oct 19-Oct 25, 2026, 3 purchases / $62.97 (prior week 6 / $113.94); matches DotStudios Roku 3 / $62.97. App Engagement: Oct 18-Oct 24 (Sun-Sat, one-day offset), 2,323 hours, 240 average daily viewers, 82.85 minutes/viewer, 102 installs / 69 uninstalls (prior 2,828 hours, 303 viewers, 79.96 min). Separate from GA4; TRC off-app excluded.",
       "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
       "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97.",
-      "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
-      "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing, and Apple uses its Oct 18-Oct 24 window. Never add overlapping DotStudios $314.85.",
+      "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "Visible platform sales: Stripe $133.94 + Roku $62.97 + Apple $104.95 = $301.86, versus $381.93 last week (-21.0%). Visible platform sales, not total ElectricNOW sales: Google Play/Android ($83.96 in DotStudios) and other channels are missing. Apple now covers the same Oct 19-Oct 25 week. Never add overlapping DotStudios $314.85.",
       "DotStudios: 486 installs (-18.0% vs 593; Android 84, web 278, iOS 124), 318 updates (-7.3% vs 343), 10,774 reported views (-13.4% vs 12,434); TV devices were 55.3% of views versus 51.0%. In-app ad delivery: 34,786 requests (+7.8% vs 32,274), 22,514 impressions (+4.1% vs 21,618), 4,841 errors (+5.4% vs 4,595); fill 64.7% versus 67.0%. Vendor in-app ad counts are a delivery cross-check, not paid-campaign impressions or verified ad revenue.",
       "Cumulative sales: DotStudios exported net sales: $30,389.76 in 1,701 charge rows less $11,727.22 in 797 adjustment rows and $14.99 in one refund = $18,647.55. Export transaction dates: Mar 25-Oct 25, 2026 (full ledger through Oct 4 plus the Oct 5-11, Oct 12-18 and Oct 19-25 weekly exports). January 1-March 24 coverage is not established by this file. Charges are not unique buyers or net retained revenue; never add Stripe, Apple or Roku, which overlap.",
       "Fresh partial YouTube: Oct 19 through Oct 24, 6 available days; matched against Oct 12 through Oct 17. YouTube Analytics reconnected this week (it needed re-authorization on Oct 19). Not added to app sales or in-app ad delivery. YouTube views fell 12.3% like-for-like (194,344 versus 221,676 over six matched days); net subscribers +148.",
@@ -16835,7 +16845,7 @@
       "transactions": 7,
       "source": "Stripe connector charge list",
       "note": "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
-      "sourceDetail": "Fresh Stripe, Oct 12-Oct 18, 2026: 3 successful charges / $62.97, 0 subscription charges; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. Matches DotStudios web net 3 / $62.97; DotStudios' $14.99 Somewhere in Montana web purchase on Oct 14 was reversed the same day and never appears in Stripe."
+      "sourceDetail": "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase."
     },
     "rokuSales": {
       "status": "fresh",
@@ -16857,12 +16867,12 @@
       "status": "fresh_manual",
       "period": "Oct 19-Oct 25, 2026",
       "salesGross": 104.95,
-      "downloads": 59,
-      "totalUnits": 64,
+      "downloads": 48,
+      "totalUnits": 53,
       "inAppUnits": 5,
       "salesGeography": "United States only",
-      "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
-      "applePeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)"
+      "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "applePeriod": "Oct 19-Oct 25, 2026"
     },
     "dotStudiosAppAds": {
       "status": "fresh_manual",
@@ -16893,7 +16903,7 @@
     "Fresh Roku Sales: Oct 19-Oct 25, 2026, 3 purchases / $62.97 (prior week 6 / $113.94); matches DotStudios Roku 3 / $62.97. App Engagement: Oct 18-Oct 24 (Sun-Sat, one-day offset), 2,323 hours, 240 average daily viewers, 82.85 minutes/viewer, 102 installs / 69 uninstalls (prior 2,828 hours, 303 viewers, 79.96 min). Separate from GA4; TRC off-app excluded.",
     "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
     "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97.",
-    "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
     "Fresh partial YouTube: Oct 19 through Oct 24, 6 available days; matched against Oct 12 through Oct 17. YouTube Analytics reconnected this week (it needed re-authorization on Oct 19). Not added to app sales or in-app ad delivery.",
     "STALE quantitative Meta data: latest measured flight remains Aug 4-Aug 26, 2026. Oct 26 Outlook search found no newer Meta-only report from Nathan (none since Oct 5; the only new Nathan thread is an Oct 17 Roku Ads Manager payment-card issue, with a $5k Roku ad credit to spend through November). Sep 21 recommendation to pause Roku and test show-led Meta is historical; implementation remains unconfirmed.",
     "DotStudios exported net sales: $30,389.76 in 1,701 charge rows less $11,727.22 in 797 adjustment rows and $14.99 in one refund = $18,647.55. Export transaction dates: Mar 25-Oct 25, 2026 (full ledger through Oct 4 plus the Oct 5-11, Oct 12-18 and Oct 19-25 weekly exports). January 1-March 24 coverage is not established by this file. Charges are not unique buyers or net retained revenue; never add Stripe, Apple or Roku, which overlap.",
@@ -16960,7 +16970,7 @@
     "Fresh Roku Sales: Oct 19-Oct 25, 2026, 3 purchases / $62.97 (prior week 6 / $113.94); matches DotStudios Roku 3 / $62.97. App Engagement: Oct 18-Oct 24 (Sun-Sat, one-day offset), 2,323 hours, 240 average daily viewers, 82.85 minutes/viewer, 102 installs / 69 uninstalls (prior 2,828 hours, 303 viewers, 79.96 min). Separate from GA4; TRC off-app excluded.",
     "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
     "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97.",
-    "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+    "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
     "Fresh partial YouTube: Oct 19 through Oct 24, 6 available days; matched against Oct 12 through Oct 17. YouTube Analytics reconnected this week (it needed re-authorization on Oct 19). Not added to app sales or in-app ad delivery.",
     "STALE quantitative Meta data: latest measured flight remains Aug 4-Aug 26, 2026. Oct 26 Outlook search found no newer Meta-only report from Nathan (none since Oct 5; the only new Nathan thread is an Oct 17 Roku Ads Manager payment-card issue, with a $5k Roku ad credit to spend through November). Sep 21 recommendation to pause Roku and test show-led Meta is historical; implementation remains unconfirmed.",
     "DotStudios exported net sales: $30,389.76 in 1,701 charge rows less $11,727.22 in 797 adjustment rows and $14.99 in one refund = $18,647.55. Export transaction dates: Mar 25-Oct 25, 2026 (full ledger through Oct 4 plus the Oct 5-11, Oct 12-18 and Oct 19-25 weekly exports). January 1-March 24 coverage is not established by this file. Charges are not unique buyers or net retained revenue; never add Stripe, Apple or Roku, which overlap.",
@@ -16969,7 +16979,7 @@
   "monthlyTrendNote": "Rolling 28-day trend covers Sep 28-Oct 25, 2026 and compares against Aug 31-Sep 27, 2026 where summary comparisons are available.",
   "lastUpdated": "October 27, 2026 (Pacific; GA4 re-pulled)",
   "lastUpdatedIso": "2026-10-27T13:54:27.553506+00:00",
-  "generatedAtIso": "2026-10-27T13:54:27.553506+00:00",
+  "generatedAtIso": "2026-10-27T14:22:29.170307+00:00",
   "reportingPeriod": "Oct 19-Oct 25, 2026",
   "rolling28Summary": {
     "period": "Sep 28-Oct 25, 2026",
@@ -17224,7 +17234,7 @@
       "transactions": 7,
       "source": "Stripe connector charge list",
       "note": "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase.",
-      "sourceDetail": "Fresh Stripe, Oct 12-Oct 18, 2026: 3 successful charges / $62.97, 0 subscription charges; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. Matches DotStudios web net 3 / $62.97; DotStudios' $14.99 Somewhere in Montana web purchase on Oct 14 was reversed the same day and never appears in Stripe."
+      "sourceDetail": "Fresh Stripe, Oct 19-Oct 25, 2026: 7 successful charges / $133.94, 6 Season Pass charges plus 1 $8.00 subscription update; 0 failed attempts. Prior week: 3 / $62.97. Refunds $0.00; before processing fees. DotStudios web shows 5 / $104.95 because DotStudios dates are UTC: Stripe's Oct 25 6:32 PM PT Season Pass falls on Oct 26 UTC, and the $8.00 subscription update is not a TVOD purchase."
     },
     "rokuSales": {
       "status": "fresh",
@@ -17246,12 +17256,12 @@
       "status": "fresh_manual",
       "period": "Oct 19-Oct 25, 2026",
       "salesGross": 104.95,
-      "downloads": 59,
-      "totalUnits": 64,
+      "downloads": 48,
+      "totalUnits": 53,
       "inAppUnits": 5,
       "salesGeography": "United States only",
-      "note": "Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
-      "applePeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)"
+      "note": "Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers.",
+      "applePeriod": "Oct 19-Oct 25, 2026"
     },
     "dotStudiosAppAds": {
       "status": "fresh_manual",
@@ -17335,7 +17345,7 @@
       "DotStudios in-app ad metrics",
       "Apple units and in-app purchase sales"
     ],
-    "summary": "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97. Fresh Apple Connect, Apple's Oct 18-Oct 24 window (Sun-Sat; Apple does not yet show Oct 25): 64 total units = 59 free downloads + 5 in-app units (total -3.0%, free -1.7%, in-app -16.7% versus Apple's prior 7 days). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99), -48.8% versus $205.02 for Oct 12-Oct 18 (Apple's own comparison: -53.6% versus its Oct 11-17 window). DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers."
+    "summary": "DotStudios TVOD: 15 purchases / $314.85 net from 15 buyers versus 18 / $442.80 (-16.7% purchases, -28.9% dollars); 15 charge rows, no adjustments. By device: web 5 / $104.95, Android 4 / $83.96, Roku 3 / $62.97, Apple 3 / $62.97. Roku $62.97 matches DotStudios Roku exactly. Stripe $133.94 is 6 Season Passes plus an $8.00 subscription update; DotStudios web is 5 / $104.95 because its dates are UTC (Stripe Oct 25 6:32 PM PT = Oct 26 UTC). Apple reports 5 purchases / $104.95 versus DotStudios Apple 3 / $62.97. Keep overlapping sources separate. All 15 were $20.99 Season Passes: The Ark Season 3 12 / $251.88 and The Librarians: The Next Chapter Season 2 3 / $62.97. Fresh Apple Connect, Oct 19-Oct 25, 2026 (same week as the dashboard): 53 total units = 48 free downloads + 5 in-app units (total -20.9%, free -22.6%, in-app 0.0% versus Oct 12-Oct 18: 67 / 62 / 5). Apple In-App Purchases $104.95, all Purchase Bundle 21 (Oct 19 $20.99, Oct 21 $62.97, Oct 24 $20.99; Oct 25 $0), -48.8% versus $205.02 for Oct 12-Oct 18. DotStudios shows 3 Apple purchases / $62.97 for Oct 19-25; Apple shows 2 more ($41.98, Oct 21 and Oct 24) - unexplained timing or attribution, so the two sources stay separate. Transaction count not reported; updates not provided; daily units shown only as a bar chart; in-app units are not unique buyers."
   },
   "dotStudiosAppInstalls": {
     "source": "DotStudios app-installs-summary-7.csv",
@@ -18066,8 +18076,8 @@
     "dotStudiosTvodGross": 314.85,
     "dotStudiosTvodTransactions": 15,
     "appleManualSnapshotGross": 104.95,
-    "appleManualSnapshotDownloads": 59,
-    "appleManualSnapshotPeriod": "Oct 18-Oct 24, 2026 (Apple Sun-Sat window)",
+    "appleManualSnapshotDownloads": 48,
+    "appleManualSnapshotPeriod": "Oct 19-Oct 25, 2026",
     "appleManualSnapshotGeography": "Apple Total Sales view"
   },
   "_renderContract": {
@@ -18187,5 +18197,62 @@
     "youtube-devices": "YouTube did not return device rows for this partial Oct 19-Oct 24 window.",
     "meta-ads-gender": "No gender breakdown in Nathan’s latest Meta-only report (stale: Aug 4-26).",
     "meta-ads-age": "No age breakdown in Nathan’s latest Meta-only report (stale: Aug 4-26)."
-  }
+  },
+  "ga4Revisions": [
+    {
+      "period": "Oct 12-Oct 18, 2026",
+      "metric": "activeUsers",
+      "published": 3259,
+      "revised": 3024,
+      "publishedOn": "2026-10-19",
+      "revisedOn": "2026-10-26",
+      "scope": "platform users (landing pages excluded)"
+    },
+    {
+      "period": "Oct 12-Oct 18, 2026",
+      "metric": "sessions",
+      "published": 8253,
+      "revised": 7682,
+      "publishedOn": "2026-10-19",
+      "revisedOn": "2026-10-26",
+      "scope": "platform sessions"
+    },
+    {
+      "period": "Oct 12-Oct 18, 2026",
+      "metric": "webSessions",
+      "published": 5308,
+      "revised": 4791,
+      "publishedOn": "2026-10-19",
+      "revisedOn": "2026-10-26",
+      "scope": "web sessions"
+    },
+    {
+      "period": "Oct 19-Oct 25, 2026",
+      "metric": "webSessions",
+      "published": 4224,
+      "revised": 3877,
+      "publishedOn": "2026-10-26",
+      "revisedOn": "2026-10-27",
+      "scope": "web sessions; first pull included late-processing Oct 25 data"
+    },
+    {
+      "period": "Oct 19-Oct 25, 2026",
+      "metric": "activeUsers",
+      "published": 2727,
+      "revised": 2535,
+      "publishedOn": "2026-10-26",
+      "revisedOn": "2026-10-27",
+      "scope": "platform users; first pull included late-processing Oct 25 data"
+    },
+    {
+      "period": "Oct 19-Oct 25, 2026",
+      "metric": "sessions",
+      "published": 6736,
+      "revised": 6453,
+      "publishedOn": "2026-10-26",
+      "revisedOn": "2026-10-27",
+      "scope": "platform sessions"
+    }
+  ],
+  "ga4RevisionsNote": "GA4 keeps processing for 24-72 hours; first-pull values that were published and later revised are kept here so every revision mentioned on the dashboard traces to data."
 }

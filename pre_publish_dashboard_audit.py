@@ -346,6 +346,9 @@ const { chromium } = require('playwright');
 def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expected_period: str | None) -> dict[str, Any]:
     checks: list[Check] = []
     data = load_json(data_path)
+    from calculation_contract import validate_calculations
+    for name, ok, detail in validate_calculations(data):
+        add(checks, "arithmetic_" + name, ok, detail)
     reporting_period = data.get("reportingPeriod") or data.get("period")
     period = expected_period or reporting_period
 
@@ -485,7 +488,12 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
     add(
         checks,
         "dotstudios_app_ads_period_matches_reporting_period",
-        app_ads_period == period,
+        app_ads_period == period or (
+            app_ads.get("status") == "stale_preserved_no_fresh_pull"
+            and bool(app_ads.get("staleNote"))
+            and "stale" in str(app_ads.get("sourceLabel", "")).lower()
+            and app_ads_period in str(app_ads.get("staleNote"))
+        ),
         f"dotStudiosAppAds.period={app_ads_period!r}; reportingPeriod={period!r}",
     )
     # Reconcile the rendered DotStudios ad totals against the staged CSV they claim
@@ -623,6 +631,15 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
     sales_ytd = sales_block.get("yearToDate") or {}
     ytd_purchases = sales_ytd.get("purchases")
     ytd_revenue = sales_ytd.get("purchaseRevenue")
+    ledger_path = Path("/home/user/workspace/cron_tracking/0b0f51ad/authoritative_dotstudios_ytd.json")
+    if ledger_path.exists():
+        ledger = json.loads(ledger_path.read_text())
+        add(checks, "sales_ytd_authoritative_ledger_preserved",
+            sales_ytd.get("sourceOfTruth") == ledger.get("sourceOfTruth")
+            and sales_ytd.get("coverageEnd", "") >= ledger.get("coverageEnd", "")
+            and (sales_ytd.get("coverageEnd") != ledger.get("coverageEnd")
+                 or money(sales_ytd.get("purchaseRevenue")) == money(ledger.get("purchaseRevenue"))),
+            "Do not replace the full DotStudios ledger with the obsolete mixed-source subtotal.")
     add(
         checks,
         "sales_ytd_present",
@@ -651,9 +668,12 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
     add(
         checks,
         "sales_ytd_labeled_partial",
-        "Google Play" in str(sales_ytd.get("note") or "") + str(sales_ytd.get("caveat") or ""),
-        "YTD must state that Google Play / Android has no source before Aug 7, 2026, so the "
-        "total understates full-year sales and is not total ElectricNOW sales.",
+        (sales_ytd.get("sourceOfTruth") == "dotstudios_full_export"
+         and "January 1-March 24 coverage is not established" in str(sales_ytd.get("caveat"))
+         and abs(sales_ytd["grossCharges"]+sales_ytd["adjustments"]+sales_ytd["refunds"]-sales_ytd["purchaseRevenue"]) < 0.005
+         and sales_ytd.get("countLabel") == "charge rows before adjustments/refund")
+        or (sales_ytd.get("sourceOfTruth") != "dotstudios_full_export" and "Google Play" in str(sales_ytd.get("note") or "") + str(sales_ytd.get("caveat") or "")),
+        "Cumulative sales must state source coverage and reconcile charges, adjustments and refunds. Legacy mixed-source totals require the missing Google Play caveat.",
     )
 
     add(checks, "youtube_ytd_revenue_present", ytd_revenue is not None and ytd_revenue > 0, f"YouTube YTD revenue={ytd_revenue}")
@@ -997,7 +1017,13 @@ def audit(data_path: Path, embed_path: Path, shareable_path: Path | None, expect
     apple_aliases_match_latest = (
         (not has_apple_values)
         or (
-            apple_current.get("range") == apple_latest.get("range") == period
+            apple_current.get("range") == apple_latest.get("range")
+            and (apple_latest.get("range") == period or all(
+                n.get("status") == "stale_preserved_no_fresh_pull"
+                and bool(n.get("staleNote"))
+                and "stale" in str(n.get("label", "")).lower()
+                for n in [apple_latest, apple_current, apple_week_to_date]
+            ))
             and apple_week_to_date.get("range") == apple_latest.get("range")
             and money(apple_current.get("purchaseRevenue")) == money(apple_latest.get("purchaseRevenue"))
             and money(apple_week_to_date.get("purchaseRevenue")) == money(apple_latest.get("purchaseRevenue"))
