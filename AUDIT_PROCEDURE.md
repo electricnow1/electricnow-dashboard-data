@@ -336,3 +336,16 @@ rendered dump → git push → verify_live_publish.py + generatedAt match.
 **Order:** regen → `ga4_tail_repull.py` → `audit_selftest.py` (0 blind spots) → `pre_publish_dashboard_audit.py` (0 failures, 5 viewports)
 → `audit_rendered_text.py` → git push → `verify_live_publish.py` (now includes identity) → `record_published_history.py`.
 Weekly email: `ga4_tail_repull.py` again → build from the live dashboard JSON → `audit_weekly_email.py` → send only on pass.
+
+## Addendum — October 27, 2026 (3): CDN served last week's preliminary data
+
+**What happened:** after the 15:00 UTC purge, jsDelivr's `@main` copy of `dashboard-data.json` reverted to the Oct 26
+preliminary build (a3d59c6; 2,727 users), and the renderer replaced its own up-to-date built-in data with it. The
+period still read "Oct 19-Oct 25, 2026", so only the new identity check (check 3) caught it.
+
+**Fix (commit 4e69ac4, all four renderer copies):** the renderer now fetches both the CDN copy and the GitHub copy of the
+data and renders the newest by `generatedAtIso`; it never replaces its built-in data with an older file. The primary
+hosted copy wins ties, so the gate's injected test data is still the one rendered.
+
+**Proven:** with both data URLs forced to return the Oct 26 preliminary file, the page kept the Oct 27 data and showed no
+2,727. The real live loader then rendered 2,535 users, 48 free Apple downloads and the revision note, each paragraph once.
